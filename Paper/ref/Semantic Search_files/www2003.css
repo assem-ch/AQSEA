@@ -1,0 +1,203 @@
+body {
+    background: #ffffff;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+
+div.authors { 
+    text-align: center 
+}
+
+div.author { 
+    margin-top:10pt;
+    margin-bottom:10pt;
+}
+
+div.copyright {
+    text-indent:0em;
+    font-size:10pt;
+    font-family:Helvetica;
+}
+
+span.title {
+    font-style:italic;
+}
+
+
+h1 {
+    text-align:left;
+    font-size:16pt;
+    font-family:Times;
+    font-weight:bold;
+    margin-top:10pt;
+    margin-bottom:10pt;
+}
+
+h2 {
+    text-align:left;
+    font-size:14pt;
+    font-family:Times;
+    font-weight:bold;
+    margin-top:14pt;
+    margin-bottom:8pt;
+}
+
+h3 {
+    text-align:justify;
+    font-size:12pt;
+    font-family:Times;
+    font-weight:bold;
+    margin-top:12pt;
+    margin-bottom:8pt;
+}
+
+h4 {
+    text-align:justify;
+    font-size:10pt;
+    font-family:Times;
+    color:black;
+    font-weight:bold;
+    margin-top:4pt;
+    margin-bottom:2pt;
+}
+
+h5 {
+    text-align:justify;
+    font-size:10pt;
+    font-family:Times;
+    color:black;
+    font-weight:bold;
+    font-style:italic;
+    margin-top:4pt;
+    margin-bottom:2pt;
+}
+
+h1.title { 
+    text-align: center;
+    font-size:20pt 
+}
+
+h1.author { 
+    text-align: center;
+    margin-top:0pt;
+    margin-bottom:0pt;
+    font-size:14pt;
+}
+
+h2.affiliation { 
+    text-align: center;
+    margin-top:0pt;
+    margin-bottom:0pt;
+    font-size:12pt;
+}
+
+h3.email { 
+    text-align: center;
+    margin-top:0pt;
+    margin-bottom:0pt;
+    font-size:11pt;
+}
+
+
+li {
+    text-align:justify;
+    font-size:10pt;
+    font-family:Times;
+    color:black;
+    text-indent: 0em;
+    margin-top:4pt;
+    margin-bottom:4pt;
+
+}
+
+div.image {
+    text-align:center;
+    margin-top:10pt;
+    margin-bottom:10pt;
+}
+
+div.table {
+    text-align:center;
+    margin-top:10pt;
+    margin-bottom:10pt;
+}
+
+p {
+    TEXT-INDENT: 1em; 
+    font-size:10pt;
+    font-family:Times;
+    color:black;
+    margin-top:4pt;
+    margin-bottom:2pt;
+}
+
+p.noindent {
+    TEXT-INDENT: 0em; 
+}
+
+p.image {
+    text-align:center;
+}
+
+p.caption {
+    text-align:center;
+    font-size:10pt;
+    font-family:Times;
+    font-weight:bold;
+    color:black;
+    margin-top:1pt;
+    margin-bottom:1pt;
+}
+
+blockquote {
+    color:black;
+    indent:20;
+    padding:0
+}
+
+pre {
+    text-align:left;
+    font-size:10pt;
+    font-family:Courier;
+    color:darkblue;
+}
+
+
+table {
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:4pt;
+    font-size:10pt;
+    font-family:Times;
+    color:black;
+    cell-spacing:4%;
+    border-collapse:collapse;
+    border: 1px solid brown;
+    margin-bottom:10pt;
+}
+
+td {
+    font-size:10pt;
+    font-family:Times;
+    border: 1px solid brown;
+    padding: 2pt;
+    vertical-align:baseline
+}
+
+th {
+    text-align:center;
+    font-size:10pt;
+    font-family:Times;
+    color:green;
+    border: 1px solid brown;
+    padding: 2pt;
+    vertical-align:baseline
+}
+
+tr {
+    font-size:10pt;
+    font-family:Times;
+    color:black;
+}
+

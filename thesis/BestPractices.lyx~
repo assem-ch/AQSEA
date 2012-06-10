@@ -1,0 +1,1067 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass extreport
+\begin_preamble
+ \usepackage{styles/esi_memoire}
+\usepackage{notoccite}
+\makenomenclature
+\usepackage{multicol} 
+\end_preamble
+\use_default_options true
+\begin_modules
+hanging
+minimalistic
+fixltx2e
+initials
+fix-cm
+\end_modules
+\maintain_unincluded_children true
+\language french
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 1
+\output_sync_macro "\synctex=1"
+\bibtex_command bibtex8
+\index_command default
+\float_placement H
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref true
+\pdf_title "Creation d'un outil d'administration de solutions BI"
+\pdf_author "Afifi Sohaib, Tadjine Zineb"
+\pdf_subject "projet de fin d'études (5I)"
+\pdf_keywords "Business intilligence, SQL Server, SSAS, SSIS, SSRS "
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 3
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_amsmath 0
+\use_esint 0
+\use_mhchem 0
+\use_mathdots 0
+\cite_engine natbib_authoryear
+\use_bibtopic true
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3cm
+\topmargin 3cm
+\rightmargin 3cm
+\bottommargin 3cm
+\secnumdepth 3
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language swedish
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\bullet 1 0 9 -1
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter*
+Annexe D 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+Les Best Practices
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%
+\backslash
+begin{multicols}{2}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La liste des Best Practices utilisés par l'outil est la suivante :
+\end_layout
+
+\begin_layout Section*
+D.1 Analysis Services 
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Account or Time attribute types defined in a non-matching dimension type.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+An Account or Time dimension has no matching attribute defined.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Attribute hierarchy enabled for high cardinality non-key attribute.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Attribute/Dimension type mismatch.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Default measure for perspective not in the perspective.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Define attribute relationsips as 'Rigid' where possible.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Diamond-shape relationship detected.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Dimension has no attribute defined with the same type.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Encountered a parent-child dimension with more than 500,000 members.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Excessive amount of memory preallocated to Analysis Services.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Flight Recorder enabled for SQL Server Analysis Services.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Measure group defined with no partition.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Measure groups with zero dimensional overlap detected in cube.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Mismatched dimension attribute types detected in dimension.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+More than three parent-child dimensions with custom rollups defined.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+No default member defined for non-aggregatable attribute.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+No Time dimension detected.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Non-numeric key column for high cardinality attribute.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Non-Standard Attribute Relationship name detected.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Non-standard value detected for Analysis Services memory configuration.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Possible incorrect order of levels defined in hierarchy.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Proactive Caching set for a partition without a processing query.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Proactive Caching set for dimension without a processing query.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Process Thread Pool Max limit above recommended limit.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Process Thread Pool Minimum is below the recommended limit.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Redundant attribute relationships detected.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+ROLAP storage or OnlineMode set to immediate for dimension with custom rollup
+ definition detected.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Server is ignoring duplicate key errors.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Server is running a build with a known regression.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Server not configured for optimal concurrent query throughput.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Single attribute dimensions detected.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Slice not set on a ROLAP partition, or a partition where proactive caching
+ is enabled and ROLAP storage may occur.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+UnknownMember set to hidden.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Use MOLAP storage for dimensions that participate in semi-additive measure
+ groups.
+\end_layout
+
+\begin_layout Section*
+D.2 Database Engine 
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+A required Windows fix to avoid sparse file related problems is missing.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Agent Token Replacement.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Asymmetric Keys check.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Auditing Login failures in SQL Server.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Authentication Mode.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Autogrow Failed or took a long time.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Backups outdated for databases.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Conflicting affinity mask settings detected.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Critical SQL database inconsistency errors found.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Data and Log files on the same volume.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Database availability errors detected in this instance of SQL Server.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Database consistency check not current.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Database files and backups exist on the same volume.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Database have Auto Shrink option enabled.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Databases exist without CHECKSUM protection.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Databases have Auto Close option enabled.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Databases using simple recovery model.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Databases with high number of VLF present.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Default extended event health session not in expected state.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Degree of parallelism not set to recommended value.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Detected presence of older versions of SQLNCLI .
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Disk partition starting offset may be incorrect.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Distributed and cross-database transactions are not supported on databases
+ using database mirroring.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+File System needs tuning for better FILESTREAM performance.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Guest Permissions.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+HAL reports firmware corrupted memory.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+I/O Delay Problems reported by SQL Server.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+I/O requests are successful when retried.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Invalid startup parameters specified for SQL Server.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Lightweight Pooling is enabled.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Linked server memory leak fix is missing.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Locks configuration not dynamic.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+LSI_SAS drivers needs update.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Missing Tempdb errors fix or trace flag.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+MSDTC settings not configured optimally.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Non-default max worker threads value configured.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Non-default network packet size in use.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Operating System files and drivers need update for working set trimming.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Permission on the Binn folder.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Permission on the Data folder.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Potential security issue with legacy DTS stored procedures.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Public Server permissions.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Server Exception or Hang detected on server.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Significant Portion of SQL Server Memory Has Been Paged Out.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+SQL Database file may have sparse attribute set incorrectly.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+SQL incorrect results fix missing.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+SQL login password policy strength and password expiry.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+SQL Server Admin role membership check.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+SQL Server Agent Proxy Account.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+SQL Server error logs are very big.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+SQL Server installed on PDC/BDC.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+SQLCLR needs additional memory configuration.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+SQL tempdb database not configured optimally.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+SQL Server Memory settings are incorrect.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Storport driver fix from KBA 940467 missing.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Storport driver fix from KBA 950903 missing.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Symmetric Keys check.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+This system experienced unexpected shutdowns.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+This system experienced problems related to I/O requests.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Transparent database encryption certificate.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Trustworthy bit is an unrecommended value.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Unrecommended SQL Server Agent service account.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Unrecommended SQL Server FDHOST Launcher service account.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Unrecommended SQL Server Engine service account detected.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Unsupported .NET framework assemblies present.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Use Database Mail instead of SQL Mail.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+User database collation different from model.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Very low blocked process threshold setting detected.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Windows API calls intercepted.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Windows service pack not at recommended level.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Winsock LSP loaded into SQL.
+\end_layout
+
+\begin_layout Section*
+D.3 Integration Services 
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+ActiveX Script task detected in package.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Integration Services logging table found in system database(s) master and/or
+ msdb.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Integration Services memory dump(s) detected.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Logging task missing for package.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Unrecommended Integration Services service account detected.
+\end_layout
+
+\begin_layout Section*
+D.4 Reporting Services 
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+HTTP Logging is not enabled.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Missing Extended Protection Settings.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+NTLM authentication may fail for local connections.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+RSWindowsNegotiate is missing from your configuration.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Verbose logging is enabled.
+\end_layout
+
+\begin_layout Section*
+D.5 Replication 
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Merge Replication Health Check.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Replication Cleanup and Retention Health Check.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Replication Latency Threshold violations.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Replication Pub and Sub out of sync (Constraint Violations).
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Replication Pub and Sub out of sync (Data Validation).
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Replication Pub and Sub out of sync (Skipped Transactions).
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Replication Timeout Alerts.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Subscriptions Approaching Expiration.
+\end_layout
+
+\begin_layout Section*
+D.6 Setup 
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Installer cache is missing for the SQL Server installation.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+SQL Server WMI Provider Health Check.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+Unsupported Operating System Version Detected.
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing single
+
+\size small
+WOW64 not supported for SQL Failover Clustering.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%
+\backslash
+end{multicols}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

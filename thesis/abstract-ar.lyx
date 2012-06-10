@@ -1,0 +1,312 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\date{}
+%==================
+%\usepackage{hyperref}
+
+\usepackage{setspace}
+\usepackage{fontspec}
+\usepackage[RTLdocument]{bidi}
+\usepackage{polyglossia}
+\usepackage{color}
+\def\BSML{\begin{center}\char"FB51 \char"FB52 \char"FB53\end{center}}
+
+\rhead{\thepage}
+\lhead{\footnotesize\it{\leftmark}}
+\chead{\footnotesize\it}
+\cfoot{}
+
+\setdefaultlanguage[numerals=mashriq]{arabic}
+%\setdefaultlanguage[numerals=maghrib]{arabic} %for arabic numerals but produce errors with sections and subsections
+%\selectbackgroundlanguage{arabic}
+%\setmainlanguage{arabic}
+\setmainlanguage{english}
+\setotherlanguage{arabic}
+%\setotherlanguage{englsih}
+\newfontfamily\arabicfont[Script=Arabic,Scale=1.5,Mapping=arabicdigits]{Scheherazade}
+%Mapping=arabicdigits will allow digits to be in Hindi, if ommitted digits will be in arabic i.e. 1234 and so on
+%=======================================
+%\usepackage[xetex]{hyperref}
+%\usepackage[xetex,unicode=true]{hyperref}
+%======================================
+%I do not know what this do- i think it allow lyx to poit to the figure itself
+%\usepackage[figure]{hypcap}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 150
+\font_tt_scale 150
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing double
+\use_hyperref false
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle false
+\papersize b5paper
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3.5cm
+\topmargin 3.5cm
+\rightmargin 2.5cm
+\bottommargin 3cm
+\secnumdepth -1
+\tocdepth 2
+\paragraph_separation skip
+\defskip bigskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle fancy
+\bullet 1 0 7 -1
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+
+\lang french
+Résumé
+\end_layout
+
+\begin_layout Standard
+
+\lang french
+Cette idée de recherche est sur un moteur de recherche coranique, qui offre
+ des services de recherche avancée, dans l'ensemble des informations que
+ contient le Saint Coran, et cela en prenant en considération la morphologie
+ de la langue arabe et les propriétés du texte coranique.
+ Elle doit être fondée sur les méthodes modernes de recherche d'information
+ pour obtenir une bonne stabilité et une recherche à grande vitesse.
+ Il serait très utile pour les chercheurs et il pourrait être généralisé
+ pour couvrir L'ensemble du contenu en arabe.
+ Cette proposition de recherche est liée à certains projets de l'Université
+ de Leeds, comme le corpus coranique arabe, c'est leur travail complémentaire.
+ L'indexation et la recherche avancées signifie la personnalisation des
+ phases d'indexation et de recherche pour trouver de nouvelles fonctionnalités
+ de recherche.
+ Ces fonctionnalités peuvent être classées comme: requêtes avancées, amélioratio
+ns de sortie, aspects linguistiques, systèmes de suggestion, fonctionnalités
+ spécifiques du Coran, et requêtes sémantiques.
+ L’objectif principal de ce travail est de regarder à travers les fonctionnalité
+s existantes: étude des spécifications et possibilités, en personnalisant
+ les anciennes, et en trouvant des nouvelles si nécessaire et si possible.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang french
+Mots clés : 
+\series default
+Indexation/Recherche, Arabe, Saint Coran, Recherche d'information, Moteurs
+ de recherche.
+ 
+\end_layout
+
+\begin_layout Section*
+A
+\series bold
+bstract
+\end_layout
+
+\begin_layout Standard
+This research idea is about an advanced Quranic search engine that offers
+ advanced search services in the whole information that Holy Quran contains
+ taking into consideration the morphology of Arabic language the properties
+ of the Quranic text.
+ It must be based on the modern approaches of information retrieval to get
+ a good-stability and a high-speed search.
+ It would be very useful for searchers and it could be generalized to cover
+ all Arabic content.
+ This research proposal is related to some projects of Leeds University
+ as the Arabic Quranic Corpus; it's the complementary work of them.
+ Advanced indexing/search means the customization of Indexing/Searching
+ phases to figure out new search features.
+ These features can be classified to: advanced query, output improvements,
+ linguistic features, suggestion systems, Quranic Specific Features, and
+ Semantic Queries.
+ The main goal of this work is to look through the existing features: studying
+ specifications and possibilities, customizing the old ones, and figuring
+ out new ones if needed and possible.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Keywords :
+\series default
+ Indexing/Search, Arabic, Holy Quran, Information retrieval, Search engines.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+
+\lang arabic_arabi
+ملخّص
+\end_layout
+
+\begin_layout Standard
+
+\lang arabic_arabi
+تدور فكرة هذا البحث حول محرك بحث يوفر خدمات البحث المتقدّم في المعلومات
+ الضخمة التي يزخر بها القرآن الكريم وذلك أخذا بعين الاعتبار مرفولوجيا اللغة
+ العربية ومميزات النص القرآني.
+ يجب أن يبنى العمل على الأسس الحديثة لعلم استخراج المعلومات لتحقيق استقرار
+ كبير وسرعة عالية للبحث.هذا المحرك فيه فائدة جمّة لدارسي القرآن الكريم واللغة
+ العربية ويمكن تعميمه لتغطية كل المحتوى العربي.لهذا العمل علاقة ببعض مشاريع
+ جامعة ليدز كالمدونة القرآنية العربية ويمكن اعتباره عملا مكمّلا لها.
+ البحث والفهرسة المتقدمان يعنيان تخصيص مرحلتيهما لإيجاد ميزات بحث جديدة
+ التي بالإمكان تقسيمها إلى: عبارات البحث المتقدّمة، تحسينات الإخراج، الميزات
+ اللغوية، أنظمة الاقتراحات، الميزات القرآنية الخاصة، العبارات الدلالية.
+ الهدف الرئيسي هو دراسة مواصفات وإمكانات ميزات البحث الموجودة ثم ترقيتها
+ أو إيجاد ميزات جديدة إن كان ذلك ممكنا و لازما.
+\lang english
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang arabic_arabi
+كلمات مفتاحية:
+\series default
+ بحث/فهرسة، العربية، القرآن، استخراج المعلومات، محركات البحث.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

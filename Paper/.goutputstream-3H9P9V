@@ -1,0 +1,734 @@
+% This file was created with JabRef 2.7b2.
+% Encoding: Cp1252
+
+@incollection {springerlink:10.1007/978-3-642-00958-7_1,
+   author = {Croft, W.},
+   affiliation = {Computer Science Department, University of Massachusetts Amherst},
+   title = {Query Evolution},
+   booktitle = {Advances in Information Retrieval},
+   series = {Lecture Notes in Computer Science},
+   editor = {Boughanem, Mohand and Berrut, Catherine and Mothe, Josiane and Soule-Dupuy, Chantal},
+   publisher = {Springer Berlin / Heidelberg},
+   isbn = {978-3-642-00957-0},
+   keyword = {Computer Science},
+   pages = {1-1},
+   volume = {5478},
+   url = {http://dx.doi.org/10.1007/978-3-642-00958-7_1},
+   note = {10.1007/978-3-642-00958-7_1},
+   year = {2009}
+}
+
+
+@book{Shah07,
+  author        = "Sunita Shah",
+  title         = "ARABIC: A profile",
+  publisher     = "London SIG Bilingualis",
+  address       = "London, UK",
+  year          = "2007"
+}
+
+@WEB{Whoosh,
+  key = {Whoosh},
+  link = {http://whoosh.ca},
+  title = {Le site web de la bibliothèque Whoosh},
+  year = { 2010}
+}
+
+@WEB{mbayan,
+  key = {Midād lbayān},
+  link = {http://mbayan.net/},
+  title = {o\begin{Arabic}\raggedleft  مداد-البيان-مشروع-قاعدة-بيانات-قرآنية \end{Arabic}},
+  year = { 2011}
+}
+
+
+@WEB{jQuery,
+  key = {jQuery},
+  link = {http://jquery.com/},
+  title = {jQuery: The write less, do more, JavaScript library},
+  year = { 29 April 2010}
+}
+
+@WEB{Json.org,
+  key = {Json.org},
+  link = {http://json.org/json-fr.html},
+  title = {Présentation de JSON},
+  year = { 2011}
+}
+@WEB{Django,
+  key = {Django},
+  link = {https://docs.djangoproject.com},
+  title = {Django Documentations},
+  year = { 2011}
+}
+
+@WEB{Oss-watch,
+  key = {Oss-watch},
+  link = {http://www.oss-watch.ac.uk/resources/whoneedssource.xml},
+  title = {OSS watch, Benefits of open source code},
+  year = { 2011}
+}
+
+@WEB{Python,
+  key = {Python},
+  link = {http://python.org,},
+  title = {Le site web officiel du Python},
+  year = { 2010}
+}
+
+@WEB{Qurany,
+  key = {Qurany},
+  link = {http://quranytopics.appspot.com/},
+  title = {Qurany Concepts tool},
+  year = { 2011}
+}
+
+@WEB{Corpus,
+  key = {Corpus},
+  link = {http://corpus.quran.com},
+  title = {Quranic Arabic Corpus},
+  year = { 2009}
+}
+
+@WEB{Alawfa,
+  key = {Alawfa},
+  link = {http://alawfa.com},
+  title = {Alawfa - Quranic Search Engine},
+  year = { 2011}
+}
+
+@WEB{Zekr,
+  key = {Zekr},
+  link = {http://Zekr.org},
+  title = {Zekr - Quran Study tool},
+  year = { 2011}
+}
+
+@WEB{Almonaqeb alcorani,
+  key = {Almonaqeb alcorani},
+  link = {http://www.holyquran.net/search/sindex.php},
+  title = {Al-monaqeb al-corani},
+  year = { 2011}
+}
+
+@WEB{Tanzil,
+  key = {Tanzil},
+  link = {http://www.tanzil.info},
+  title = {Quranic Arabic Corpus},
+  year = {2011}
+} 
+
+@WEB{Islamweb,
+  key = {Islamweb},
+  link = {http://www.islamweb.net/},
+  title = {Punctuation Symbols for Waqf},
+  year = {2011}
+}
+
+
+
+@MASTERSTHESIS{ Jabri,
+  author = { Youssef Jabri},
+  title = {The Arabi system - TEX writes in Arabic and Farsi},
+  school = {Ecole Nationale des Sciences Appliquées,Oujda, Morocco},
+  type = {Thèse},
+}
+
+
+@MASTERSTHESIS{ Amr08,
+  author = {Karima Amrouche},
+  title = {Passage à l'echelle en Recherche d'Information : Methode d-elagage pour la reduction de l'espace de recherche},
+  school = {Institut National de Formation en Informatique (I.N.I),Alger},
+  year = {2008},
+  type = {Thèse},
+}
+@MASTERSTHESIS{ Dah06,
+  author = {Fouad Dahak},
+  title = {Indexation des documents semi-structures : Proposition d-une approche basee sur le fichier inverse et le Trie},
+  school = {Institut National de Formation en Informatique (I.N.I),Alger},
+  year = {2006},
+  type = {Thèse},
+
+}
+@MASTERSTHESIS{ Mes08,
+  author = {Slim Mesfar},
+  title = {ANALYSE MORPHO-SYNTAXIQUE AUTOMATIQUE ET RECONNAISSANCE DES ENTITES NOMMEES EN ARABE STANDARD},
+  school = {Université de Franche-Comté},
+  year = {2008},
+  type = {Thèse},
+
+}
+
+
+@MASTERSTHESIS{ Aba09,
+  author = {Ali Abar and Mounir Boughanem},
+  title = {La capitalisation du profil des experts du CENEAP sur la base de la classification des etudes},
+  school = {Institut National de Formation en Informatique (I.N.I),Alger},
+  year = {2009},
+  type = {Thèse},
+
+}
+
+@MASTERSTHESIS{ Hach97,
+  author = {Mabrouka Elhachani},
+  title = {L'indexation automatique},
+  school = {Ecole Nationale Superieure des Sciences de l'Information et des Bibliotheques (ENSSIB)},
+  year = {1997},
+  type = {Thèse},
+
+}
+
+@MASTERSTHESIS{Zer08,
+  author = { Taha Zerrouki },
+  title = {Un modèle de mushaf électronique},
+  school = {ESI},
+  year = {2005},
+  type = {Memoire de magister },
+
+}
+
+@MASTERSTHESIS{ Hadj08,
+  author = {Mohamed Hadjhenni},
+  title = {Approche ontologique pour la modélisation sémantique, l'indexation et l'interrogation des documents Coraniques},
+  school = {ESI},
+  year = {2008},
+  type = {Memoire de magister },
+
+}
+@BOOK{Han98,
+  title = {Traitement des fonds de Laboratoires : Indexation Principes},
+  year = {1998},
+  author = {Hanka Hensens and Orstom Montpellier }
+}
+
+
+@BOOK{Cha90,
+  title = {L'indexation documentaire, de l''analyse conceptuelle humaine a l'analyse morphosyntaxique},
+  year = {1990},
+  author = { J. Chaumier and  M. Dejean }
+}
+
+@BOOK{Lel92,
+  title = {Information retrieval based on neural unsupervised extraction of thematic fuzzy clusters},
+  year = {1992},
+  author = {A. Lelu and C. Francois}
+}
+
+@BOOK{Bou79,
+  title = {In Lockheed Information Systems},
+  year = {1979},
+  author = {C. Bourne and B. Anderson}
+}
+
+
+@BOOK{Sal71,
+  title = {The SMART Retrieval System - Experiment in Automatic Document Processing},
+  year = {1971},
+  author = {G. Salton},
+
+}
+
+
+@book{Ber08,
+  title={Hibernate Search in Action},
+  author={Emmanuel Bernard and John Griffin },
+  publisher = {MANNING},
+  year={2008}
+}
+
+@MISC{Pom97,
+  title={Indexation , article du Dictionnaire encyclopedique de l'information et de la documentation},
+  author={Paul-Dominique Pomart and Eric Sutter},
+  publisher = {Nathan},
+  year={1997}
+}
+@book{Lar03,
+  title={Le système verbal de l'arabe classique},
+  author={P. Larcher},
+  publisher = {Publications de l'Université de Provence, Collection Didactilangue },
+  year={2003}
+}
+
+@book{BG03,
+  title={Grammaire de l’arabe classique (morphologie et syntaxe)},
+  author={R. Blachère and M.Gaudefroy-Demombynes
+},
+  publisher = {G.P. Maisonneuve \& Larose, Editeurs à Paris},
+  year={1975}
+}
+
+@book{Chr09,
+  title={An Introduction to Information Retrieval},
+  author={Christopher D. Manning and  Prabhakar Raghavan and Hinrich Schutze},
+  publisher = {Cambridge University Press},
+  year={2009}
+}
+@book{Nej07,
+  title={Recherche documentaire sur le web},
+  author={Youssef Nejjari},
+  year={2007}
+}
+
+@book{Menu00,
+  title={Informatique (Theorie)},
+  author={ Nicolas Menu},
+  year={2000}
+}
+
+@book{Gro02,
+  title={IR Basics of Inverted Index},
+  author={ Grossman and Frieder and Goharian},
+  year={2002}
+}
+@ARTICLE{Alk93,
+  author = {Ibrahim AlKharashi},
+  title = {A Web Search Engine for Indexing, Searching and Publishing Arabic Bibliographic Databases},
+  
+  year={1999},
+  publisher={King Abdulaziz City for Science and Technology}
+}
+@ARTICLE{GB75,
+  author = {R. Gaudefroy  and  M. Demombynes Blachère},
+  title = {Grammaire de l'arabe classique (Morphologie et syntaxe)},
+  year={1975},
+  publisher={éd. G.P.Maisonneuve et Larose}
+}
+@ARTICLE{Alk99,
+  author = {Ibrahim AlKharashi},
+  title = {A Web Search Engine for Indexing, Searching and Publishing Arabic Bibliographic Databases},
+  year={1999},
+  publisher={King Abdulaziz City for Science and Technology}
+}
+
+@ARTICLE{CPCZ06,
+  author = {Ghinwa Choueiter and Daniel Povey and Stanley F. Chen and  Geoffrey Zweig },
+  title = {MORPHEME-BASED LANGUAGE MODELING FOR ARABIC LVCSR},
+  year={2006},
+  publisher={MIT CS and AI Laboratory 32 Vassar St., Cambridge, MA 02139 et IBM T. J. Watson Research Center Yorktown Heights, NY 10598}
+}
+
+@ARTICLE{Gru93,
+  author = {Thomas R. Gruber},
+  title = {A Translation Approach to Portable Ontology Specification},
+  
+  year={1993},
+  publisher={KNOWLEDGE SYSTEMS LABORATORY - Computer Science Department - Stanford University , California}
+}
+@ARTICLE{Arv08,
+  author = {
+Fredrik Arvidsso and 
+Annika Flycht-Eriksso},
+  title = {
+Ontologies },
+  
+  year={ 2008},
+
+}
+
+@ARTICLE{San08,
+  author = {Majed Sanan},
+  title = {Etude des methodes de la recherche d'information et de l'indexation sur les documents electroniques : cas de la langue arabe},
+  
+  year={2008},
+  publisher={Universite Paris VIII – Saint Denis}
+}
+
+@ARTICLE{Tan04,
+  author = {Hunqiang Tang and Sandhya  Dwarkadas},
+  title = {Hybrid Global Local Indexing for Efficient Peer to Peer Information Retrieval},
+  
+  year={2004},
+  publisher={University of Rochester, San Francisco, California}
+}
+
+@ARTICLE{Jal02,
+  author = {Radwan Jalam and Chauchat Jean Hugues},
+  title = {Pourquoi les n-grammes permettent de classer des textes? Recherche de mots-clefs pertinents a l'aide des n-grammes caracteristiques},
+  
+  year={2002},
+  publisher={JADT 2002 : 6es Journees internationales d'Analyse statistique des Donnees Textuelles,France}
+}
+
+@ARTICLE{Gref95,
+  author = {G. Grefenstette},
+  title = {Comparing Two Language Identification Schemes},
+  
+  year={1995},
+  publisher={JADT 95 : Proceedings of the 3rd International Conference on the Statistical Analysis of Textual Data,Rome, Italy }
+}
+
+@ARTICLE{Brin98,
+  author = { Sergey  Brin and Lawrence Page},
+
+
+  title = {The Anatomy of a Large-Scale Hypertextual Web Search Engine},
+  
+  year={1998},
+  publisher={Stanford University}
+}
+@ARTICLE{Cha89,
+  author = {Ghislaine Chartron and  Sylvie Dalbin and Marie-Gaelle Monteil and  Monique Verillon},
+  title = {Indexation manuelle et indexation automatique. Depasser les oppositions},
+  
+  year={1989},
+  publisher={Documentaliste, vol. 26, n° 4-5, juillet-octobre 1989, p.181-187}
+}
+
+@ARTICLE{All08,
+  author = {Kamel Allab and  Abdelkrim Doufene},
+  title = {Classification Automatique de Documents XML},
+  
+  year={2008},
+
+}
+
+@ARTICLE{Mus,
+  author = {El Hadi Widad Mustafa},
+  title = {Indexation humaine et indexation automatisee : la place du terme et de son environnement},
+  publisher={UFR IDIST/CERSATES, UMR 8529}
+}
+
+@book{Abu09,
+  author = {M.B. Abulhajjaj},
+  title = {Semantic Web - the next revolution},
+  year = {2009},
+
+}
+
+@book{Ment08,
+  author = {Marc Mentre},
+  title = {Les moteurs de recherche semantique : un pas dans le web 3.0},
+  year = {2008},
+
+}
+
+
+
+@PHDTHESIS{Sau05,
+  author = {Karen Sauvagnat},
+  title = {Modele flexible pour la Recherche d'Information dans des corpus de documents semi-structures},
+  school = {Universite Paul Sabatier, Toulouse, France},
+  year = {2005},
+  type = {Thèse de doctorat},
+
+}
+
+@PHDTHESIS{Berrut97,
+  author = {C. Berrut},
+  title = {Indexation des donnees multimedia, utilisation dans le cadre d-un systeme de recherche d-informations},
+  school = {Université Joseph Fourier},
+  year = {1997},
+  type = {Thése de doctorat},
+
+}
+@PHDTHESIS{Den04,
+  author = {L. Denoyer},
+  title = {Apprentissage et inference statistique dans les bases de documents structures : Application aux corpus de documents textuels},
+  school = {Université de Paris 6, France},
+  year = {2004},
+  type = {Thése de doctorat},
+
+}
+
+@PHDTHESIS{Mathias02,
+  author = {G Mathias},
+  title = {Indexation et interrogation de chemins de lecture en contexte pour la Recherche d'Information Structuree sur le Web},
+  school = {Université JOSEPH FOURIER},
+  year = {2002},
+  type = {Thése de doctorat},
+
+}
+
+@PHDTHESIS{Denos97,
+  author = {N. Denos},
+  title = {Modelisation de la pertinence en recherche d'information : modèle conceptuel, formalisation et application},
+  school = {Université Joseph Fourier},
+  year = {1997},
+  type = {Thèse },
+
+}
+
+
+@BOOK{Maylan2001,
+  title = {Introduction theorique a la gestion de donnees textuelles},
+  year = {2001},
+  author = {Ed Meylan},
+  publisher = {Haute Ecole Specialisee de Suisse Occidentale}
+
+}
+
+@BOOK{Goglin1998,
+  title = {La construction du datawarehouse, du datamart au dataweb (2 {\'E}d.)},
+  publisher = {Nouvelles Technologies Informatiques,Ed. HERMES},
+  year = {2001},
+  author = {Jean-François Goglin},
+  owner = {sohaib},
+  timestamp = {2010.11.07}
+}
+
+@ARTICLE{CRM2008,
+  author = {G�raldine Graf and Julien Stern},
+  title = {Le CRM analytique, Les outils d'analyse OLAP et le Data Mining},
+  journal = {Seminaire : Customer Relationship Management},
+  year = {Avril 2008}
+}
+
+@BOOK{Ian2010,
+  title = {Programming CSharp 4.0},
+  publisher = {O'reilly},
+  year = {2010},
+  author = {Ian Griffiths and Matthew Adams and Jesse Liberty},
+  edition = {6},
+  owner = {sohaib},
+  timestamp = {2011.01.15}
+}
+
+@BOOK{guckenheimer2006software,
+  title = {Software Engineering with Microsoft Visual Studio Team System (Microsoft
+	.NET Development Series)},
+  publisher = {Addison-Wesley Professional},
+  year = {2006},
+  author = {Guckenheimer, S. and Perez, J.J.}
+}
+
+@BOOK{DavidJHand2001,
+  title = {Principles of Data Mining},
+  publisher = {Cambridge, The MIT Press},
+  year = {2001},
+  author = {David J Hand and Heikki Mannila and Padhraic Smyth},
+  owner = {sohaib},
+  timestamp = {2010.11.18}
+}
+
+@THESIS{2tup,
+  author = {Aouel Bassim Kazi and Zakaria Rostane},
+  school = {Universit� Abou Bekr Belkaid de Tlemcen},
+  title = {Suivie des enseignements du LMD par application de la m�thode 2TUP},
+  year = {2007}
+}
+
+@ARTICLE{kercher2001authentication,
+  author = {Kercher, J. and Jezierski, E.},
+  title = {Authentication in ASP .NET: .NET security guidance},
+  journal = {MSDN Magazine},
+  year = {2001}
+}
+
+@BOOK{Kimball2000,
+  title = {Concevoir et déployer un data warehouse},
+  publisher = {Eyrolles},
+  year = {2000},
+  author = {Ralph Kimball},
+  owner = {sohaib},
+  timestamp = {2010.11.07}
+}
+
+@BOOK{Kimball1997,
+  title = {Entrepôt de données},
+  publisher = {International Thomson Publishing, France},
+  year = {1997},
+  author = {Ralph Kimball},
+  owner = {sohaib},
+  timestamp = {2010.11.07}
+}
+
+@BOOK{R.Kimball1996,
+  title = {The data warehouse toolkit},
+  publisher = {John Wiley and Sons},
+  year = {1996},
+  author = {Ralph Kimball},
+  owner = {sohaib},
+  timestamp = {2010.11.07}
+}
+
+@BOOK{Kimball2005,
+  title = {Le Data Warehouse Guide de conduite de projet},
+  publisher = {Eyrolles},
+  year = {2005},
+  author = {Ralph Kimball and L. Reeves and M. Ross and W. THORNTHWAITE},
+  owner = {sohaib},
+  timestamp = {2010.11.07}
+}
+
+@ARTICLE{[Lebraty-2010],
+  author = {Jean-Fabrice Lebraty},
+  title = {les systèmes decisionnels},
+  journal = {Vuibert},
+  year = {2006},
+  number = {halshs-00264398},
+  institution = {HAL},
+  type = {Post-Print},
+  url = {http://ideas.repec.org/p/hal/journl/halshs-00264398.html}
+}
+
+@ARTICLE{Fabrice2006,
+  author = {Jean-Fabrice Lebraty},
+  title = {Les systèmes decisionnels},
+  journal = {HAL (Hyper articles en ligne)},
+  year = {2006},
+  owner = {sohaib},
+  timestamp = {2010.11.07}
+}
+
+@CONFERENCE{M.Golfarelli1998,
+  author = {M.Golfarelli and D.Maio and S.Rizzi},
+  title = {Conceptual Design of Data Warehouses from E/R Schemes},
+  booktitle = {of the 31st Hawaii International Conference on System Sciences, Kona
+	(Hawaii, USA)},
+  year = {1998},
+  owner = {sohaib},
+  timestamp = {2010.11.07}
+}
+
+@BOOK{RIAServices,
+  title = {WCF RIA Services Documentation},
+  publisher = {Microsoft Corporation},
+  year = {2010},
+  author = {Microsoft},
+  owner = {sohaib},
+  timestamp = {2011.05.20}
+}
+
+@BOOK{Nakache2008,
+  title = {Data warehouse et Data mining},
+  publisher = {Conservatoire Nationale des Arts et M�tiers de Lille},
+  year = {2008},
+  author = {Didier Nakache},
+  owner = {sohaib},
+  timestamp = {2010.11.07}
+}
+
+@ARTICLE{[BObject-2004],
+  author = {Thierry Nicault},
+  title = {Session Business Objects},
+  journal = {EEMEA},
+  year = {2004},
+  owner = {sohaib}
+}
+
+@BOOK{Nieuwbourgavec2002,
+  title = {Quel Système décisionnel pour les entreprises Agiles},
+  publisher = {Microsoft press},
+  year = {Septembre 2002},
+  author = {Philippe Nieuwbourgavec},
+  owner = {sohaib},
+  timestamp = {2010.11.07}
+}
+
+@BOOK{[Pezziardi2010],
+  title = {L'informatique Conviviale, Le Lean Management peut-il transformer
+	l'entreprise ?},
+  publisher = {Eyrolles},
+  year = {2010},
+  author = {Pierre Pezziardi},
+  journal = {Eyrolles},
+  owner = {sohaib},
+  timestamp = {2010.11.03}
+}
+
+@ARTICLE{[PrattZangari2008],
+  author = { Lorien Pratt and Mark Zangari},
+  title = { The new science of decision engineering},
+  journal = {Telecom Asia},
+  year = {September 2008},
+  owner = {sohaib},
+  timestamp = {2010.11.03}
+}
+
+@BOOK{Pyle1999,
+  title = {Data Preparation for Data Mining},
+  publisher = {The Morgan Kaufmann Series in Data Management Systems},
+  year = {1999},
+  author = {Dorian Pyle},
+  owner = {sohaib},
+  timestamp = {2010.11.18}
+}
+
+@BOOK{UML2parlaPratique,
+  title = {Uml2 par la pratique},
+  publisher = {Eyrolles},
+  year = {2006},
+  author = {Pascal Rock},
+  edition = {5},
+
+  owner = {sohaib},
+  timestamp = {2011.01.15}
+}
+@book{withee2009microsoft,
+  title={Microsoft Business Intelligence For Dummies},
+  author={Withee, K.},
+  year={2009},
+  publisher={For Dummies}
+}
+@book{larson2006delivering,
+  title={Delivering Business Intelligence with Microsoft SQL Server 2005},
+  author={Larson, B.},
+  year={2006},
+  publisher={McGraw-Hill Osborne Media}
+}
+
+@book{Meh73,
+  title={\begin{Arabic}\raggedleft  تاريخ-القرآن-الكريم \end{Arabic}},
+  author={Muhammed Salem Mahssin},
+  year={1973},
+  publisher={\begin{Arabic}\raggedleft دار-الأصفهاني-للطباعة-بجدة \end{Arabic}}
+}
+
+@book{Khm04,
+  title={\begin{Arabic}\raggedleft حركة-التأليف-المعجمي-في-مفردات-القرآن \end{Arabic}},
+  author={Ahmed Hassan Khmissi},
+  year={2004},
+  publisher={\begin{Arabic}\raggedleft مجلة-التراث-العربي-دمشق \end{Arabic}}
+}
+
+@book{BnJ,
+  title={\begin{Arabic}\raggedleft منهجية-تعاونية-لإنجاز-موسوعة-إلكترونية-شاملة-للقرآن-الكريم-وعلومه \end{Arabic}},
+  author={Muhammed BenJammaa}, 
+  publisher={\begin{Arabic}\raggedleft مجمع-الملك-فهد-لطباعة-المصحف-الشريف \end{Arabic}}
+}
+
+@book{Mia,
+  title={\begin{Arabic}\raggedleft توظيف-التقنيات-الحاسوبية-لإعداد-فهارس-هامة-ومبتكرة-لخدمة-القرآن-الكريم-وعلومه \end{Arabic}},
+  author={Sulaiman Ben Abdellah Mayaman}, 
+  publisher={\begin{Arabic}\raggedleft مجمع-الملك-فهد-لطباعة-المصحف-الشريف \end{Arabic}}
+}
+
+@book{Khe,
+  title={\begin{Arabic}\raggedleft عرض-أولي-لمشروع-مداد-البيان-في-خدمة-القرآن-الكريم \end{Arabic}},
+  author={Muhammed Zaki Muhammed Khedar}, 
+  
+}
+
+@book{Naw75,
+  title={\begin{Arabic}\raggedleft الإعجاز-العددي-للقرآن-الكريم \end{Arabic}},
+  author={Abderrezzaq Nawfal},
+ year={1975}
+}
+@book{Nass89,
+  title={\begin{Arabic}\raggedleft قاموس-المفردات-المتضادة-انجليزي-عربي \end{Arabic}},
+  author={Kaddem Adel Nasser},
+ year={1989}
+}
+@book{Alj91,
+  title={\begin{Arabic}\raggedleft الألفاظ-المختلفة-في-المعاني-المؤتلفة \end{Arabic}},
+  author={Jammeleddine Aljayyani},
+ year={1991}
+}
+
+@book{Alb09,
+  title={\begin{Arabic}\raggedleft محركات-البحث-في-النصوص-العربية-وصفحات-الأنترنت \end{Arabic}},
+  author={Merouane Albawwab},
+  year={2009},
+  publisher={\begin{Arabic}\raggedleft مجمع-اللغة-العربية-دمشق \end{Arabic}}
+}
+
+‫ِ
+
+
+
+
+@comment{jabref-meta: pdfDirectory:D:\\Esi-Documents\\5I\\BI\\Rapport\
+\4;}
+
+@comment{jabref-entrytype: Thesis: req[] opt[]}
+

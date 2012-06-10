@@ -1,0 +1,364 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass extreport
+\begin_preamble
+
+ 
+\usepackage{styles/esi_memoire}
+\end_preamble
+\use_default_options true
+\begin_modules
+hanging
+minimalistic
+initials
+fix-cm
+fixltx2e
+\end_modules
+\maintain_unincluded_children false
+\language french
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref true
+\pdf_title "Creation d'un outil d'administration de solutions BI"
+\pdf_author "Afifi Sohaib, Tadjine Zineb"
+\pdf_subject "Thesis"
+\pdf_keywords "Business intilligence, SQL Server, SSAS, SSIS, SSRS "
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 4
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_amsmath 0
+\use_esint 0
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic true
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3cm
+\topmargin 3cm
+\rightmargin 3cm
+\bottommargin 3cm
+\secnumdepth 3
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language swedish
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\bullet 1 0 9 -1
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter*
+Conclusion générale
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{part}{Conclusion Générale}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Afin de clarifier notre vision sur le travail, nous avons fait trois chapitres
+ ponctués par des travaux connexes différents et nombreux, chacun dans un
+ chapitre approprié.
+ Il s'agit de la recherche dans le Saint Coran, c'est pourquoi nous avons
+ introduit un chapitre pour parler du Coran: ses propriétés, ses index et
+ ses ontologies.
+ Le Coran est révélé en Arabe et c'est le livre le plus influent dans l'avanceme
+nt de la langue arabe.
+ Nous ajoutons donc un chapitre sur la langue arabe qui parle de son orthographi
+e et sa morphologie.
+ Le troisième chapitre porte sur le fonctionnement des moteurs des recherches
+ en en detaillant les différentes étapes : Exploration, Indexation, Interrogatio
+n.
+ Enfin, on a cité aussi la nouvelle approche de la recherche qui est l’approche
+ sémantique.
+ 
+\end_layout
+
+\begin_layout Standard
+Notre objectif principal est de regarder à travers les fonctionnalités existante
+s de recherche dans le Coran: étudier les spécifications et les possibilités,
+ en personnalisant les anciennes, et à trouver des nouvelles si nécessaire
+ et si possible.
+ Notre travail doit être basé sur des approches modernes de recherche d'informat
+ion pour obtenir une bonne stabilité et une recherche à grande vitesse.
+\end_layout
+
+\begin_layout Standard
+Cette proposition de recherche est liée à certains projets de l'université
+ de Leeds, ces projets sont les suivants: 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Arabic Quranic Corpus,
+\series default
+ est une ressource linguistique annotée qui montre la grammaire arabe, la
+ syntaxe et la morphologie de chaque mot dans le Coran.
+ Ce corpus est realisé par 
+\noun on
+Kais Dukes
+\noun default
+ en 2009 à l’école d’informatique, l'université de Leeds.
+ Cet index est disponible sur l'internet avec d'autres index simplifiés
+ sous la licence GPL (GNU Public License).
+ Nous en aurons besoin pour la réalisation de certains aspects linguistiques
+ par les informations qu'il contient.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Qurany Concepts Tool
+\series default
+, est un outil complet qui couvre tous les thèmes et les concepts mentionnés
+ dans le Coran.
+ Cet outil est faite par 
+\noun on
+Noorhan Abbas
+\noun default
+ de l'université de Leeds.
+ Mise en œuvre basée sur la structure dictionnaire de Python.
+ Nous en aurons besoin pour la recherche thématique.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Quranic Concepts Ontology, 
+\series default
+utilise la représentation des connaissances pour définir les concepts clés
+ dans le Coran, et montre les relations entre ces concepts en utilisant
+ la logique des prédicats.
+ Nous pourrions utilisé ce système pour la suggestion de mots-clés relatifs.
+\end_layout
+
+\begin_layout Standard
+Notre travail a besoin d'une version électronique de Coran pour l'indexer
+ .
+ Nous trouvons que le projet Tanzil est le plus authentique, il est passé
+ par plusieurs phases de vérification et vérifié manuellement par une équipe
+ spécialisée.
+\end_layout
+
+\begin_layout Standard
+Notre plan est la construction d'un noyau de recherche simple.
+ Ce dernier doit être extensible et propre.
+ Cela pourrait être fait sur la base d'une bibliothèque Whoosh qui est une
+ bibliothèque de programmation pour créer un moteur de recherche, il est
+ évident pour les besoins d’études.
+\end_layout
+
+\begin_layout Standard
+Ensuite nous passerons à travers le traitement de texte, faire quelques
+ améliorations comme: la normalisation personnalisées en Uthmani script,
+ la lemmatisation en prévenant les marques de récitation et se basant sur
+ les index manuels.
+ Aussi nous allons réfléchir à la mise en œuvre de ces nouvelles fonctionnalités
+:
+\end_layout
+
+\begin_layout Itemize
+La résolution des références des pronoms, par exemple “
+\series bold
+\lang arabic_arabi
+لا اله الا هو
+\series default
+\lang french
+
+\begin_inset Quotes srd
+\end_inset
+
+, 
+\series bold
+\lang arabic_arabi
+هو
+\series default
+\lang french
+ est la référence de 
+\series bold
+\lang arabic_arabi
+الله
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang french
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+;
+\end_layout
+
+\begin_layout Itemize
+La considération des différentes significations, par exemple 
+\lang arabic_arabi
+ 
+\series bold
+رب
+\series default
+ّ
+\lang french
+ avec le sens "
+\series bold
+dieu
+\series default
+" et non pas le sens de "
+\series bold
+maître
+\series default
+" 
+\end_layout
+
+\begin_layout Itemize
+Respecter l’écriture Uthmani des mots clés pendant la recherche .
+\end_layout
+
+\begin_layout Itemize
+La recherche des valeurs numériques, par exemple 
+\series bold
+309
+\series default
+ remplacée by
+\lang arabic_arabi
+ 
+\series bold
+تسعمائة و تسعة
+\series default
+ 
+\end_layout
+
+\begin_layout Standard
+Aussi, nous allons améliorer les phases de traitement des requêtes afin
+ de mieux s'accorder aux dérivations et aux propriétés de la langue Arabe.
+ Nous suggérons d'introduire de nouveaux Jokers (pour la recherche par expressio
+ns régulières) spéciales pour l'arabe par exemple, un Joker pour des lettres
+ et un autre pour diacritiques.
+ Nous devons également avoir la capacité pour un utilisateur de limiter
+ la famille d'un mot arabe en basant en ces propriétés.
+ 
+\end_layout
+
+\begin_layout Standard
+Nous allons rechercher sur les meilleures méthodes de calcul pour recueillir
+ des statistiques coranique.
+ Quelles statistiques peut-on prélever? Avons-nous besoin des index manuels?
+ Et comment le faire avec une meilleure précision? 
+\end_layout
+
+\begin_layout Standard
+Outre, nous allons essayer de réaliser un moteur de recherche plein vocalisé
+ ce qui est très important pour obtenir la précision de recherche et des
+ statistiques.
+ 
+\end_layout
+
+\begin_layout Standard
+Enfin, étudier les possibilités de mise à niveau du moteur de recherche
+ vers un moteur de recherche sémantique.
+ La recherche sémantique vise à améliorer l'exactitude de recherche par
+ la compréhension de l'intention de chercheur et la signification contextuelle
+ des termes tels qu'ils apparaissent dans le Coran pour générer des résultats
+ plus pertinents.
+\end_layout
+
+\begin_layout Standard
+Pour atteindre nos objectives, nous supposons d'utiliser certaines technologies
+ pour l'implémentation.
+ Nous prenons d'abord le choix du langage de programmation Python parce
+ qu'il est sous une licence open source et librement distribué, indépendant
+ de toute plate forme.
+ Il support l’unicode naturellement, en conséquence nous aurons pas besoin
+ d'outils supplémentaires pour pouvoir manipuler la langue arabe ; Il ya
+ une bibliothèque pythonique pour l'indexation / recherche appelé Whoosh,
+ elle est pure Python, Rapide et supporte l’unicode.
+ Pour montrer les fonctionnalités que nous avons entrain d’implémenter,
+ nous devant faire une interface web dynamique simple et efficace.
+ C’est pour ça, on utiliser AJAX pour récupérer les donnée de l'API en le
+ format de donnée Json.
+ Nous avons suggéré Json car est un format texte léger complètement indépendant
+ de tout langage, Il est facile à lire ou à écrire pour les humains.
+ Il est aisément analysable ou générable par les machines.
+\end_layout
+
+\begin_layout Standard
+Le projet sera Open Source afin que nous pouvons recevoir les feedbacks
+ de la communauté open source et ceci rend plus facile la fixation des bogues
+ et accélére la tâche de développement.
+ l'Open source protègent également le projet de l'abandon et réduire le
+ coût de mise en œuvre.
+ 
+\end_layout
+
+\end_body
+\end_document

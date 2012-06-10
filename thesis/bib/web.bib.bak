@@ -1,0 +1,123 @@
+
+@WEB{Inmoncif,
+  key = {Inmoncif},
+  link = {http://www.inmoncif.com/about/},
+  owner = {sohaib},
+  timestamp = {2011.01.15},
+  title = {Corporate Information Factory},
+  
+  year = {Consulté en Janvier 2011}
+}
+
+@WEB{MDWorld,
+  owner = {sohaib},
+  timestamp = {2011.03.05},
+  title = {MDWorld Sarl-ITAlgeria},
+  link = {http://www.mdworld-dz.com/site/?page=presentation},
+  year = {Consulté en Janvier 2011}
+}
+
+@WEB{Glossaire,
+  key = {Glossaire},
+  link = {http://www.fsa.ulaval.ca/simkaid/glossaire.htm},
+  title = {Glossaire sur les systèmes d'information marketing},
+  year = {Consulté en Février 2011}
+}
+
+@WEB{FormationsSAS,
+  key = {FormationsSAS},
+  link = {http://www.formations-sas.fr/data-warehouse},
+  owner = {sohaib},
+  timestamp = {2010.11.07},
+  title = {Formations SAS web site},
+  
+  year = {Consulté en decembre 2010}
+}
+
+@WEB{journalNet,
+  key = {JournalNet},
+  owner = {sohaib},
+  timestamp = {2011.01.15},
+  title = {Le journal du net},
+  link = {http://lejournaldunet .com},
+  year = {Consulté en decembre 2010}
+}
+
+@WEB{piloter.org,
+  key = {Piloter.ORG},
+  owner = {sohaib},
+  timestamp = {2011.01.15},
+  title = {Piloter web site},
+  link = {http://www.piloter.org/business-intelligence},
+  year = {Consulté en decembre 2010}
+}
+
+@WEB{SAP.COM,
+  key = {SAP.COM},
+  
+  owner = {sohaib},
+  timestamp = {2011.01.15},
+  title = {SAP Corporation},
+  link = {http://sap.com},
+  year = {Consulté en decembre 2010}
+}
+
+@WEB{MSDN01,
+  key = {MSDN01},
+  link = {http://msdn.microsoft.com/fr-fr/library/ms182517(VS.80).aspx},
+  owner = {sohaib},
+  timestamp = {2011.04.18},
+  title = {Structure de tests unitaires},
+  year = {Consulté en 2011}
+}
+
+@WEB{MSDN02,
+  key = {MSDN02},
+  link = {http://msdn.microsoft.com/fr-fr/library/ff648341.aspx},
+  owner = {sohaib},
+  timestamp = {2011.04.18},
+  title = {How To: Protect Forms Authentication in ASP.NET 2.0},
+  year = {Consulté en 2011}
+}
+
+@WEB{MSDN03,
+  key = {MSDN03},
+  link = {http://msdn.microsoft.com/fr-fr/library/bb385914.aspx},
+  owner = {sohaib},
+  timestamp = {2011.04.18},
+  title = {Valeurs de la métrique du code},
+  year = {Consulté en 2011}
+}
+
+@WEB{TECHNET01,
+  key = {TECHNET01},
+  link = {http://technet.microsoft.com/en-us/library/cc966416.aspx},
+  owner = {sohaib},
+  timestamp = {2011.04.18},
+  title = {Project REAL Technical Overview},
+  year = {Consulté en 2011}
+}
+
+@WEB{Wiki01,
+  key = {Wiki01},
+  link = {http://fr.wikipedia.org/wiki/Testd%27int%C3%A9gration},
+  owner = {sohaib},
+  timestamp = {2011.04.18},
+  title = {Test d'intégration},
+  year = {Consulté en 2011}
+}
+
+@WEB{TheBIVerdict,
+  key = {TheBIVerdict},
+  link = {http://www.olapreport.com},
+  owner = {sohaib},
+  timestamp = {2010.11.18},
+  title = {The BI Verdict},
+  year = {Consulté en 2010}
+}
+
+@comment{jabref-meta: pdfDirectory:D:\\Esi-Documents\\5I\\BI\\Rapport\
+\4\\from zyneb\\8mai\\sources;}
+
+@comment{jabref-entrytype: Web: req[] opt[]}
+

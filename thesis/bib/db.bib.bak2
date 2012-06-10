@@ -1,0 +1,399 @@
+%%
+%% WinShell 3.3.1.12
+%% http://www.winshell.org/
+%%
+
+% Strings
+
+
+% Preamble
+
+
+% BibTeX Entries
+@thesis{2tup,
+ author               = {Aouel Bassim Kazi and Zakaria Rostane},
+ school               = {Université Abou Bekr Belkaid de Tlemcen},
+ title                = {Suivie des enseignements du LMD par application de la méthode 2TUP},
+ year                 = {2007},
+ }
+
+@book{[Devisy-2002],
+ author               = {Devisy},
+ owner                = {sohaib},
+ timestamp            = {2010.11.03},
+ title                = {Livre blanc e-Business Intelligence, l'effet internet sur le décisionnel},
+ year                 = {2002},
+ }
+
+@article{[Goglin-2009],
+ author               = {Jean-François Goglin},
+ owner                = {sohaib},
+ timestamp            = {2010.11.03},
+ title                = {La construction du datawarehouse, du datamart au dataweb},
+ year                 = {2009},
+ }
+
+@article{[RASNote2011],
+ author               = {Rita L. Sallam and James Richardson and John Hagerty and Bill Hostmann},
+ owner                = {sohaib},
+ timestamp            = {2010.11.03},
+ journal 			  = {IDC},
+ title                = {Magic Quadrant for Business Intelligence Platforms Gartner RAS Core Research Note},
+ year                 = {2011},
+ }
+@article{[VendorShares2010],
+ author               = {Dan Vesset},
+ owner                = {sohaib},
+ timestamp            = {2010.11.03},
+ journal 			  = {IDC},
+ title                = {EXCERPT World wide Business Intelligence Tools 2009 Vendor Shares},
+ year                 = {Juin 2010},
+ } 
+@article{[BITools-2009],
+ author               = {Robert Woolley and David Fletcher},
+ owner                = {sohaib},
+ timestamp            = {2010.11.03},
+ title                = {Enterprise Business Intelligence (BI) Tool Standards and Guidelines},
+ year                 = {2009},
+ }
+@article{[BObject-2004],
+ author               = {Thierry Nicault},
+ owner                = {sohaib},
+ journal           	 = {EEMEA},
+ title                = {Session Business Objects},
+ year                 = {2004},
+ }
+ 
+@book{[Lebraty-2010],
+ author               = {Jean-Fabrice Lebraty},
+ owner                = {sohaib},
+ timestamp            = {2010.11.03},
+ title                = {les systèmes decisionnels},
+ year                 = {2010},
+ }
+
+@book{AlainBaccini2003,
+ author               = {Alain Baccini and Philippe Besse},
+ owner                = {sohaib},
+ publisher            = {Université de Toulouse},
+ timestamp            = {2010.11.18},
+ title                = {Data mining I},
+ year                 = {2003},
+ }
+
+@mastersthesis{Chouder2007,
+ author               = {Lamri Chouder},
+ owner                = {sohaib},
+ school               = {Institut National de Formation en Informatique (I.N.I)},
+ timestamp            = {2010.11.07},
+ title                = {Entrepôt Distribué de Données},
+ type                 = {Thèse de Magistère},
+ year                 = {2007},
+ }
+
+@article{CRM2008,
+ author               = {Géraldine Graf  and Julien Stern },
+ journal              = {Seminaire : Customer Relationship Management },
+ title                = {Le CRM analytique, Les outils d'analyse OLAP et le Data Mining},
+ year                 = {Avril 2008},
+ }
+
+@book{Daniel2005,
+ author               = {Thierry Vallaud},
+ editor               = {Vuibert},
+ owner                = {sohaib},
+ timestamp            = {2010.11.18},
+ title                = {Des données à la connaissance : Une introduction au data-mining},
+ year                 = {2005},
+ }
+
+@book{DavidJHand2001,
+ author               = {David J Hand and Heikki Mannila and Padhraic Smyth},
+ editor               = {The MIT Press},
+ owner                = {sohaib},
+ timestamp            = {2010.11.18},
+ title                = {Principles of Data Mining},
+ year                 = {2001},
+ }
+
+@book{Dresner2001,
+ author               = {H. Dresner},
+ owner                = {sohaib},
+ publisher            = {Gartner Group},
+ timestamp            = {2010.11.07},
+ title                = {BI : Making the Data Make Sens},
+ year                 = {2001},
+ }
+
+@book{Edelstein1999,
+ author               = {Edelstein},
+ editor               = {Two Crows Corp},
+ journal              = {statsoft},
+ owner                = {sohaib},
+ publisher            = {Potoma},
+ timestamp            = {2010.11.18},
+ title                = {Introduction to data mining and knowledge discovery},
+ year                 = {1999},
+ }
+
+@article{Fabrice2006,
+ author               = {Jean-Fabrice Lebraty},
+ owner                = {sohaib},
+ timestamp            = {2010.11.07},
+ title                = {Les systèmes decisionnels},
+ year                 = {2006},
+ }
+
+@phdthesis{Favre2007,
+ author               = {Cécile Favre},
+ owner                = {sohaib},
+ school               = {Université Lumière-Lyon2, Lyon, France},
+ timestamp            = {2010.11.07},
+ title                = {Evolution de schémas dans les entrepôts de données : mise à jour de hiérarchies de dimension pour la personnalisation des analyses},
+ type                 = {Thèse de doctorat},
+ year                 = {2007},
+ }
+
+@phdthesis{Fioletthese,
+ author               = {Valerie Fiolet},
+ owner                = {sohaib},
+ school               = {Université des sciences et technologies de Lille, France},
+ timestamp            = {2010.11.07},
+ title                = {Allgorithmes distribués d'éxtraction de connaissances},
+ type                 = {Thèse de doctorat},
+ year                 = {2006},
+ }
+ 
+ 
+@web{FormationsSAS,
+ link                 = {http://www.formations-sas.fr/data-warehouse},
+ owner                = {sohaib},
+ timestamp            = {2010.11.07},
+ title                = {Formations SAS web site},
+ url                  = {http://www.formations-sas.fr/data-warehouse},
+ year                 = {Consulté en decembre 2010},
+ }
+
+@book{FrankValle2006,
+ author               = {Pascal Rock and Frank Vallé},
+ edition              = {4},
+ owner                = {sohaib},
+ publisher            = {Eyrolss},
+ timestamp            = {2011.01.15},
+ title                = {Uml2 en action de l'analyse des besoins à la conception},
+ year                 = {2006},
+ }
+
+@web{Glossaire,
+ link                 = {http://www.fsa.ulaval.ca/simkaid/glossaire.htm},
+ title                = {Glossaire sur les systèmes d'information marketing},
+ year                 = {Consulté en Février 2011},
+ }
+
+@book{Goglin1998,
+ author               = {Jean-François Goglin},
+ editor               = {Ed. HERMES},
+ owner                = {sohaib},
+ publisher            = {Nouvelles Technologies Informatiques},
+ timestamp            = {2010.11.07},
+ title                = {La construction du datawarehouse, du datamart au dataweb},
+ year                 = {1998},
+ }
+
+@web{Inmoncif,
+ link                 = {http://www.inmoncif.com/about/},
+ owner                = {sohaib},
+ timestamp            = {2011.01.15},
+ title                = {Corporate Information Factory},
+ url                  = {http://fr.wikipedia.org/wiki/[todo3]},
+ year                 = {Consulté en Janvier 2011},
+ }
+
+@web{journalNet,
+ link                 = {http://LE journal du net .com},
+ owner                = {sohaib},
+ timestamp            = {2011.01.15},
+ title                = {Le journal du net},
+ url                  = {http://LE journal du net .com},
+ year                 = {Consulté en decembre 2010},
+ }
+
+@book{Kimball1997,
+ author               = {Ralph Kimball},
+ owner                = {sohaib},
+ publisher            = {International Thomson Publishing, France},
+ timestamp            = {2010.11.07},
+ title                = {Entrepôt de données},
+ year                 = {1997},
+ }
+
+@book{Kimball2000,
+ author               = {Ralph Kimball},
+ editor               = {Eyrolles, France},
+ owner                = {sohaib},
+ timestamp            = {2010.11.07},
+ title                = {Concevoir et déployer un data warehouse},
+ year                 = {2000},
+ }
+
+@book{Kimball2005,
+ author               = {Ralph Kimball},
+ editor               = {Groupe Eyroles},
+ owner                = {sohaib},
+ timestamp            = {2010.11.07},
+ title                = {Le Data Warehouse Guide de conduite de projet},
+ year                 = {2005},
+ }
+
+@conference{M.Golfarelli1998,
+ author               = {M.Golfarelli and D.Maio and S.Rizzi},
+ booktitle            = {of the 31st Hawaii International Conference on System Sciences, Kona (Hawaii, USA)},
+ owner                = {sohaib},
+ timestamp            = {2010.11.07},
+ title                = {Conceptual Design of Data Warehouses from E/R Schemes},
+ year                 = {1998},
+ }
+
+@book{MacLennan2005,
+ author               = {ZhaoHui Tang and Jamie MacLennan},
+ owner                = {sohaib},
+ publisher            = {Wiley publishing inc, Indiana},
+ timestamp            = {2010.11.18},
+ title                = {DataMining with Microsoft SqlServer 2005},
+ year                 = {2005},
+ }
+
+@article{MarketDynamicsBI2008,
+ author               = {Kurt Schlegel and Dan Sommer},
+ journal              = {Gartner BI Summit,Amsterdam},
+ owner                = {sohaib},
+ timestamp            = {2011.01.15},
+ title                = {Market Dynamics in BI},
+ year                 = {2008},
+ }
+
+@misc{Michael2004,
+ author               = {Michael Delobeau},
+ owner                = {sohaib},
+ timestamp            = {2010.11.07},
+ title                = {Cour datawarehouse},
+ year                 = {2004},
+ }
+
+@article{MichelAbbey2002,
+ author               = {Michel Abbey and Mike Corey and Lan Abramson},
+ journal              = {Campus Press, USA},
+ owner                = {sohaib},
+ timestamp            = {2010.11.07},
+ title                = {Oracle 9i, Notion fundamentals},
+ year                 = {2002},
+ }
+
+@book{Nakache2008,
+ author               = {Didier Nakache},
+ owner                = {sohaib},
+ publisher            = {Conservatoire Nationale des Arts et Métiers de Lille},
+ timestamp            = {2010.11.07},
+ title                = {Data warehouse et Data mining},
+ year                 = {2008},
+ }
+
+@book{Nieuwbourgavec2002,
+ __markedentry        = {[sohaib]},
+ author               = {Philippe Nieuwbourgavec},
+ owner                = {sohaib},
+ publisher            = {Microsoft press},
+ timestamp            = {2010.11.07},
+ title                = {La participation active de l'équipe Business Intelligence de Microsoft: Angélica Reyes, Ronan Le Guen et Yohann Evrard, Système décisionnel pour les entreprises Agiles},
+ year                 = {2002},
+ }
+
+@web{piloter.org,
+ link                 = {http://Piloter.org[--todo]},
+ owner                = {sohaib},
+ timestamp            = {2011.01.15},
+ title                = {Piloter web site},
+ url                  = {http://Piloter.org[--todo]},
+ year                 = {Consulté en decembre 2010},
+ }
+
+@book{Pyle1999,
+ author               = {Dorian Pyle},
+ editor               = {The Morgan Kaufmann Series in Data Management Systems},
+ owner                = {sohaib},
+ timestamp            = {2010.11.18},
+ title                = {Data Preparation for Data Mining},
+ year                 = {1999},
+ }
+
+@book{R.Kimball1996,
+ author               = {Ralph Kimball},
+ owner                = {sohaib},
+ publisher            = {John Wiley and Sons},
+ timestamp            = {2010.11.07},
+ title                = {The data warehouse toolkit},
+ year                 = {1996},
+ }
+
+@web{SAP.COM,
+ link                 = {http://sap.com},
+ owner                = {sohaib},
+ timestamp            = {2011.01.15},
+ title                = {SAP Corporation},
+ url                  = {http://sap.com},
+ year                 = {Consulté en decembre 2010},
+ }
+
+@book{SPTonySmith2010,
+ author               = {Seth Bates and Tony Smith},
+ owner                = {sohaib},
+ publisher            = {Apress},
+ timestamp            = {2011.01.15},
+ title                = {SharePoint 2010 User Guide: Learning Microsoft Business Collaboration Platform},
+ year                 = {2010},
+ }
+
+@web{TheBIVerdict,
+ link                 = {http://www.olapreport.com},
+ owner                = {sohaib},
+ timestamp            = {2010.11.18},
+ title                = {The BI Verdict},
+ year                 = {Consulté en 2010},
+ }
+
+@book{UML2parlaPratique,
+ author               = {Pascal Rock},
+ edition              = {5},
+ owner                = {sohaib},
+ publisher            = {Eyrolss},
+ timestamp            = {2011.01.15},
+ title                = {Uml2 par la pratique},
+ year                 = {2006},
+ }
+
+@web{Wikipedia2,
+ link                 = {http://fr.wikipedia.org/wiki/[todo2]},
+ owner                = {sohaib},
+ timestamp            = {2011.01.15},
+ title                = {Wikipedia},
+ url                  = {http://fr.wikipedia.org/wiki/[todo]},
+ year                 = {2010},
+ }
+
+@web{Wikipedia3,
+ link                 = {http://fr.wikipedia.org/wiki/[todo3]},
+ owner                = {sohaib},
+ timestamp            = {2011.01.15},
+ title                = {Wikipedia},
+ url                  = {http://fr.wikipedia.org/wiki/[todo3]},
+ year                 = {2010},
+ }
+
+@web{Wikipedia4,
+ link                 = {http://fr.wikipedia.org/wiki/[todo]},
+ owner                = {sohaib},
+ timestamp            = {2011.01.15},
+ title                = {Wikipedia},
+ url                  = {http://fr.wikipedia.org/wiki/[todo]},
+ year                 = {2010},
+ }

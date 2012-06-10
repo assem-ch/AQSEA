@@ -1,0 +1,23 @@
+#% Do not delete the line below; configure depends on this
+# \DeclareLaTeXClass[report, styles/esi_memoire.sty]{report (esi_memoire)}
+# Report textclass definition file. Taken from initial LyX source code
+# Author : Matthias Ettrich <ettrich@informatik.uni-tuebingen.de>
+# Transposed by Pascal André <andre@via.ecp.fr>
+# Heavily modifed and enhanced by serveral developers.
+Preamble     
+	\usepackage{./styles/esi_memoire}
+EndPreamble
+Format 30
+Input stdclass.inc
+Input numreport.inc
+
+
+
+Style Bibliography
+	TopSep                4
+	LabelString           "Bibliography"
+	LabelFont
+	  Series              Bold
+	  Size                Huge
+	EndFont
+End

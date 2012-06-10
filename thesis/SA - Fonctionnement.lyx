@@ -1,0 +1,3592 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass extreport
+\begin_preamble
+ \usepackage{styles/esi_memoire}
+\end_preamble
+\use_default_options true
+\begin_modules
+hanging
+minimalistic
+initials
+customHeadersFooters
+endnotes
+\end_modules
+\maintain_unincluded_children false
+\language french
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf true
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref true
+\pdf_title "Advanced  Search Engine in Holy Quran"
+\pdf_author "Assem Chelli"
+\pdf_subject "Thesis"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 4
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_amsmath 0
+\use_esint 0
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\boxbgcolor #005500
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3cm
+\topmargin 3cm
+\rightmargin 3cm
+\bottommargin 3cm
+\secnumdepth 3
+\tocdepth 4
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language swedish
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\bullet 1 0 9 -1
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%
+\backslash
+setcounter{chapter}{2}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\color black
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{chapter}{0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagenumbering{arabic} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+
+\color black
+Fonctionnement des moteurs de recherche 
+\begin_inset CommandInset label
+LatexCommand label
+name "chapitre3"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\color black
+\begin_inset Preview
+
+\begin_layout Standard
+\begin_inset Preview
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+epigraph{
+\backslash
+textit{How could the world beat a path to your door when the path was uncharted,
+ uncatalogued, and could be discovered only serendipitously?}}{
+\backslash
+textit{Paul Gilster, Digital Literacy}}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\color black
+Introduction 
+\end_layout
+
+\begin_layout Standard
+
+\color black
+Notre travail rentre dans le domaine de la recherche d’informations, car
+ il vise à concevoir un moteur de recherche, dans ce chapitre nous allons
+ aborder comment les moteurs de recherche fonctionnent en expliquant ses
+ principaux composants.
+\end_layout
+
+\begin_layout Standard
+
+\color black
+L’exploration est la partie qui alimente le moteur de recherche par les
+ documents qu’elle collecte, mais avec le volume d’informations qui devient
+ de plus en plus grand, il est nécessaire de développer des méthodes de
+ recherche, seule l’indexation est en mesure d’accélérer la recherche dans
+ des systèmes très volumineux tels que le Web, car elle anticipe la recherche
+ en extrayant les mots clés et en les organisant.
+\end_layout
+
+\begin_layout Standard
+
+\color black
+Pour que les résultats de la recherche soient satisfaisants, on doit bien
+ calculer la pertinence des résultats par rapport à la requête, cela est
+ effectué au cours de l’interrogation.
+ L’interrogation doit aussi permettre d’exprimer des questions simples aussi
+ bien que des questions complexes.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\color black
+La qualité de la recherche est directement liée à la qualité de l’exploration,
+ l’indexation et l’interrogation, ces trois opérations peuvent donc être
+ considérées comme étant le cœur de moteur de recherche, l’objectif de ce
+ chapitre est de définir les principaux concepts de ce domaine, en commençant
+ par définir l’exploration, puis étudier l’indexation, ses méthodes et ses
+ étapes, ensuite nous expliquerons le processus de l’interrogation et la
+ notion de pertinence.
+ 
+\end_layout
+
+\begin_layout Section
+
+\color black
+Définitions
+\end_layout
+
+\begin_layout Subsection
+
+\color black
+Mot clé (keyword)
+\end_layout
+
+\begin_layout Standard
+
+\color black
+Mot ou groupe de mots choisi en vue de représenter le contenu d’un document,
+ et de le retrouver lors d’une recherche documentaire.
+ Il peut être issu du document (titre, texte, résumé,...) ou d’un vocabulaire
+ contrôlé.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Han98"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\color black
+Descripteur (descriptor) 
+\end_layout
+
+\begin_layout Standard
+
+\color black
+Mot clé choisi parmi un ensemble de termes équivalents pour représenter
+ sans ambiguïté un concept.
+ Il fait en général partie d’un vocabulaire organisé et hiérarchisé de type
+ "thésaurus".
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Han98"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\color black
+Document 
+\end_layout
+
+\begin_layout Standard
+
+\color black
+Un document peut être un texte, un morceau de texte, une page web, une image,
+ une bande vidéo, etc.
+ On appelle document toute unité qui peut constituer une réponse à une requête
+ d’utilisateur.
+ Pour les documents textuels, il existe beaucoup de formes quant à leur
+ spécification.
+ Un document peut être un texte sans aucune structuration (on l’appelle
+ aussi plein texte) ; il peut aussi être un texte avec une partie structurée
+ (document partiellement structuré ou semi structuré) ou complètement structuré.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Amr08"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\color black
+Requête 
+\end_layout
+
+\begin_layout Standard
+
+\color black
+Une requête exprime le besoin d’information d’un utilisateur.
+ Divers types de langages d’interrogation ont été proposés pour formuler
+ une requête.
+ Une requête peut être exprimée : 
+\end_layout
+
+\begin_layout Itemize
+
+\color black
+En langage naturel ou quasi naturel (exemple, "trouver toutes les usines
+ de fabrication de voitures et leurs adresses”)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Sal71"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\color black
+Dans un format structuré, appelé aussi interrogation en langage booléen
+ (exemple, ”voitures et marque et usines”) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bou79"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\color black
+En langage graphique à partir d’une interface graphique 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Lel92"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\color black
+Pertinence (Relevance)
+\end_layout
+
+\begin_layout Standard
+
+\color black
+Relevance est un mot qui signifie tout simplement de renvoyer l'information
+ considérée comme la plus utile au sommet d'une liste de résultats.
+ Si la définition est simple, obtenir un programme à la pertinence d'ordinateur
+ n'est pas une tâche facile, principalement parce que la notion d'utilité
+ est difficile pour une machine de comprendre.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ber08"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\color black
+Les moteurs de recherche
+\end_layout
+
+\begin_layout Standard
+
+\color black
+Un moteur de recherche est un logiciel permettant de retrouver des ressources
+ (pages web, images, vidéo, fichiers, informations ...
+ etc.) associées à des mots quelconques.
+ Certains sites web offrent un moteur de recherche comme principale fonctionnali
+té ; on appelle alors moteur de recherche le site lui-même (Google, Yahoo,
+ Bing… sont des moteurs de recherche).
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Nej07"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\color black
+Un moteur de recherche est aussi un outil de recherche sur le web constitué
+ de « robots », qui parcourent les sites à intervalles réguliers et de façon
+ automatique (sans intervention humaine, ce qui les distingue des annuaires
+ URL- Uniform Resource Locator-).
+ Ils suivent les liens hypertextes (qui relient les pages les unes aux autres)
+ rencontrés sur chaque page atteinte.
+ Chaque page identifiée est alors indexée dans une base de données, accessible
+ ensuite par les internautes à partir de mots-clés.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "San08"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\color black
+Les moteurs de recherche sont classables en 2 catégories : 
+\end_layout
+
+\begin_layout Itemize
+
+\color black
+Moteur de recherche à indexation automatique 
+\end_layout
+
+\begin_layout Itemize
+
+\color black
+Moteur de recherche à inscription
+\end_layout
+
+\begin_layout Standard
+
+\color black
+L’indexation automatique part du principe que les pages web contiennent
+ des marques spécifiques suivies du sujet de la page.
+ Altavista, par exemple, un moteur à indexation automatique scanne le web
+ en permanence et repère ces codes puis indexe les pages en questions dans
+ une grosse base de données.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\color black
+Les moteurs à inscription eux, partent du principe que quelqu’un qui vient
+ de terminer un site web va remplir un formulaire spécifiant l’adresse de
+ son site et le sujet traité puis va envoyer son formulaire au moteur de
+ recherche en question qui, lui, l’indexera.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Menu00"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\color black
+Les moteurs de recherche ne s'appliquent pas qu’à Internet : certains moteurs
+ sont des logiciels installés sur un ordinateur personnel.
+ Ce sont des moteurs dits desktop qui combinent la recherche parmi les fichiers
+ stockés sur le PC et la recherche parmi les sites web — on peut citer par
+ exemple Exalead Desktop, Google Desktop et Copernic Desktop Search…etc.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\color black
+En décembre 2004, Dr.
+
+\noun on
+ Tim Berners Lee
+\noun default
+ (l’inventeur du World Wide Web) a parlé d'un nouveau projet : “Web sémantique”
+ qui se base sur l'idée de traitement d’informations disponibles sur le
+ web automatiquement en fonction de leurs significations ; et le motif que
+ 80% du Web contient actuellement des textes destinés à être lus et compris
+ par les humains.
+ Alors que les programmes informatiques, les navigateurs Web et les programmes
+ de recherche sont incapables de comprendre ce contenu, ils sont donc incapables
+ d’accélérer la recherche et le développement web sémantique liée.
+ Dans moins de deux ans de l'article de M.
+ Lee, les Premiers fondations de Web sémantique ont été formées, elles semblaien
+t conduire le monde vers une nouvelle révolution dans l’internet bouleversant
+ une grande partie des constantes actuelles et prévues des changements profonds
+ dans les méthodes des moteurs de recherche.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Abu09"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\color black
+De prime abord, rien ne distingue un moteur de recherche “classique”, d’un
+ moteur de recherche “sémantique”.
+ Même interface sobre, avec une zone de texte au centre de la page, dans
+ laquelle l’utilisateur peut entrer sa requête.
+ En fait, la différence réside dans le mode de recherche.
+ Un moteur “classique”, type Google, fonctionne de la manière suivante :
+ ses robots indexent les “mots” dans les pages qu’ils parcourent.
+ Ces mots sont ensuite rangés dans une gigantesque base de données.
+ Les requêtes que les utilisateurs font sont des recherches dans ce “dictionnair
+e géant”, un algorithme permettant de classer et présenter les résultats
+ selon un certain ordre de pertinence.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ment08"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\color black
+Recherche plein texte (Full-text search )
+\end_layout
+
+\begin_layout Standard
+
+\color black
+La recherche plein texte est une technologie basée sur la recherche de documents
+ qui correspondent à un ensemble de mots.
+\end_layout
+
+\begin_layout Standard
+
+\color black
+Bien qu'elle semble aussi bête, la recherche plein texte est en fait est
+ plus commune que l’on ne pense, nous l’avons probablement utilisé aujourd'hui.
+ La plupart des moteurs de recherche Internet comme Google, Yahoo et Altavista
+ utilisent des moteurs de recherche plein texte au cœur de leur service.
+ La différence entre chacune d'entre eux est les secrets de recette (et
+ parfois pas si secret), tels que l'algorithme de Google PageRank.
+ PageRank modifie l'importance d’une page web donnée (au niveau des résultats)
+ en fonction du nombre de pages web qui pointent vers elle et à quel point
+ ils sont importants.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\color black
+Mais attention, ces moteurs de recherche Web sont beaucoup plus qu’un noyau
+ de recherche plein texte : ils ont une interface Web UI, explorent le Web
+ pour trouver des nouvelles pages ou des pages existantes et ainsi de suite.
+ Ils fournissent des spécifications d’entreprises en se basant sur le noyau
+ d'un moteur de recherche plein texte.
+ Étant donné un ensemble de mots (la requête), l'objectif principal de la
+ recherche plein texte est de donner accès à tous les documents correspondants
+ à ces mots.
+ Puisque l'analyse séquentielle de tous les documents pour trouver les mots
+ correspondants est très inefficace, un moteur de recherche plein texte
+ (son noyau) est divisé en deux opérations principales : l'indexation des
+ informations dans un format efficace et la rechercher des informations
+ pertinentes à partir de cet index pré-calculé.
+ De la définition, on peut voir clairement que la notion de mot est au cœur
+ de la recherche plein texte, c’est la pièce atomique d'information que
+ le moteur manipule.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ber08"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\color black
+Exploration 
+\end_layout
+
+\begin_layout Standard
+
+\color black
+L’exploration (Web crawling en anglais) est le processus par lequel nous
+ recueillons des pages du Web, afin de les indexer et soutenir un moteur
+ de recherche.
+ L'objectif de l'exploration est de recueillir rapidement et efficacement
+ autant de pages web utiles que possible avec la structure des liens qui
+ les interconnecte.
+ L’explorateur est parfois nommé araignée (spider).
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Chr09"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\color black
+Ce processus se situe dans une phase qui précède l’indexation, voir la figure:
+ 
+\end_layout
+
+\begin_layout Standard
+
+\color black
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\color black
+\begin_inset Graphics
+	filename figures/Exploaration.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\color black
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Le robot d’exploration dans un moteur de recherche web
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\color black
+Les caractéristiques des robots d'exploration
+\end_layout
+
+\begin_layout Standard
+
+\color black
+Les caractéristiques des robots d'exploration son devisées en deux catégories
+ : les caractéristiques qu’un robot d'exploration doit fournir (obligatoirement)
+ et les caractéristiques qu'il devrait fournir (moins importantes).
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Chr09"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+
+\color black
+Les caractéristiques obligatoires 
+\end_layout
+
+\begin_layout Subparagraph
+
+\color black
+La robustesse :
+\end_layout
+
+\begin_layout Standard
+
+\color black
+Le Web contient les serveurs qui créent des pièges d'araignée, ce sont des
+ générateurs de pages web qui provoquent une confusion dans les robots d'explora
+tion pour qu’ils restent coincés en cherchant un nombre infini de pages
+ dans un domaine particulier.
+ Les robots d'exploration doivent être conçus pour résister à ces pièges.
+ Certains de ces pièges peuvent être dus à la mauvaise conception du cite.
+ 
+\end_layout
+
+\begin_layout Subparagraph
+
+\color black
+La politesse :
+\end_layout
+
+\begin_layout Standard
+
+\color black
+Les serveurs web ont des politiques implicites et explicites pour réglementer
+ la vitesse à laquelle un robot d'exploration peut les visiter.
+ Ces politiques de politesse doivent être respectées.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+
+\color black
+Les caractéristiques moins importantes 
+\end_layout
+
+\begin_layout Subparagraph
+
+\color black
+Distribué :
+\end_layout
+
+\begin_layout Standard
+
+\color black
+Le robot d'exploration devrait avoir la capacité d'exécuter de manière ‘distribu
+ée’ sur plusieurs machines.
+\end_layout
+
+\begin_layout Subparagraph
+
+\color black
+Evolutif : 
+\end_layout
+
+\begin_layout Standard
+
+\color black
+L'architecture du robot d'exploration devrait permettre l'élargissement
+ de la vitesse d'exploration en ajoutant des machines supplémentaires et
+ de bande passante.
+\end_layout
+
+\begin_layout Subparagraph
+
+\color black
+Performance et efficacité :
+\end_layout
+
+\begin_layout Standard
+
+\color black
+Le système d’exploration devrait faire un usage efficace des différentes
+ ressources du système, tels que le processeur, le stockage et la bande
+ passante du réseau.
+\end_layout
+
+\begin_layout Subparagraph
+
+\color black
+La qualité :
+\end_layout
+
+\begin_layout Standard
+
+\color black
+Etant donné qu'une grande partie des pages web sont d'une utilité médiocre
+ pour servir les besoins des requêtes des utilisateurs, le robot d'exploration
+ devrait être biaisé à la récupération des pages "utiles" tout d'abord.
+\end_layout
+
+\begin_layout Subparagraph
+
+\color black
+La nouveauté :
+\end_layout
+
+\begin_layout Standard
+
+\color black
+Dans de nombreuses applications, le robot devrait fonctionner en mode continu:
+ il devrait obtenir de nouveaux exemplaires des pages déjà téléchargées.
+ Un explorateur de moteur de recherche, par exemple, peut ainsi faire en
+ sorte que l'index du moteur de recherche contient une représentation assez
+ récente de chaque page web indexée.
+ Pour une telle exploration continue, un robot d'exploration doit être en
+ mesure d'explorer une page avec une fréquence qui se rapproche du taux
+ de changement de cette page.
+\end_layout
+
+\begin_layout Subparagraph
+
+\color black
+L’extensibilité :
+\end_layout
+
+\begin_layout Standard
+
+\color black
+Les robots d'exploration devraient être conçu pour pouvoir évoluer à plusieurs
+ égards : faire face aux nouveaux formats de données, de nouveaux protocoles
+ de chercher, et ainsi de suite.
+ Cela exige que l'architecture du robot d'exploration soit modulaire.
+ 
+\end_layout
+
+\begin_layout Section
+
+\color black
+Indexation
+\end_layout
+
+\begin_layout Standard
+
+\color black
+Pour que le coût de la recherche soit acceptable, il convient d’effectuer
+ une étape primordiale sur la base documentaire.
+ Cette étape consiste à analyser chaque document de la collection afin de
+ créer un ensemble de mots-clés : on parle de l’étape d’indexation.
+ Ces mots-clés seront plus facilement exploitables par le système lors du
+ processus ultérieur de recherche.
+ L’indexation permet ainsi de créer une représentation des documents dans
+ le système.
+ Son objectif est de trouver les concepts les plus importants du document
+ (ou de la requête), qui formeront le descripteur du document.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Sau05"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\color black
+Définition
+\end_layout
+
+\begin_layout Standard
+
+\color black
+L’indexation n’a pas une seule définition, la norme AFNOR NF Z 47-102 1996
+ définit l’indexation comme «l’opération qui consiste à décrire et à caractérise
+r un document à l’aide de représentations des concepts contenus dans ce
+ document, c’est-à dire à transcrire en langage documentaire les concepts
+ après les avoir extraits du document par une analyse ».
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Aba09"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\noun on
+\color black
+Pomart
+\noun default
+ et 
+\noun on
+alii 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Pom97"
+
+\end_inset
+
+
+\noun default
+ définissent l’indexation comme étant une opération ayant « pour but de
+ faciliter l’accès au contenu de documents ou d’un ensemble de documents
+ à partir d’un sujet ou d’une combinaison de sujets (ou toutes autres entrées
+ utiles à la recherche).
+ Cela s’applique aussi bien à l’élaboration d’index situés généralement
+ en fin d’ouvrage qu’à l’usage des langages documentaires pour analyser
+ le contenu d’une collection de documents et permettre par la suite, grâce
+ aux fichiers où à la banque de données ainsi alimentée, la recherche des
+ informations répondant à une préoccupation particulière.
+ Ainsi la notion d’indexation se trouve t elle au cœur de la pratique documentai
+re : elle constitue l’opération centrale du traitement des documents au
+ sein de la chaîne documentaire classique (repérage, et acquisition des
+ documents ; traitement et exploitation ; recherche et diffusion) ».
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Mus"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\color black
+L’indexation est le plus souvent utilisée pour effectuer des recherches
+ d’informations.
+ Mais elle peut servir également dans d’autres domaines tels que la classificati
+on automatique des documents, proposer des mots-clés, faire une synthèse
+ automatique des documents, calculer les co-occurrentes des termes, générer
+ des résumés automatiquement, etc.
+ (voir la figure)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Aba09"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\color black
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\color black
+\begin_inset Graphics
+	filename Indexing.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\color black
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Processus d’indexation
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\color black
+Modes d’indexation 
+\end_layout
+
+\begin_layout Subsubsection
+
+\color black
+L’indexation manuelle 
+\end_layout
+
+\begin_layout Standard
+
+\color black
+L’indexation manuelle est réalisée par l'expert humain (documentaliste ou
+ spécialiste du domaine) qui analyse le contenu du texte pour identifier
+ les termes représentatifs du document.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\color black
+L’indexation manuelle garantit une meilleure pertinence dans les réponses,
+ car elle permet de repérer d’une façon plus précise les mots clés décrivant
+ un document.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\color black
+Elle présente toutefois plusieurs inconvénients, il y a le problème du vocabulai
+re utilisé et la dépendance par rapport à l’état de connaissance de l’indexeur
+ sur le sujet c’est-à-dire le même document peut être indexé de plusieurs
+ manières (selon la vision de la personne qui fait l’indexation), et un
+ indexeur à deux moments différents peut présenter deux termes distincts
+ pour représenter le même concept.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\color black
+L’inconvénient majeur de cette méthode reste le coût en matière du temps,
+ cette méthode n’est pas donc appropriée quand le nombre de documents à
+ indexer est important.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Sau05,Aba09,Amr08"
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\color black
+L’indexation manuelle se base sur quatre points essentiels 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Cha89"
+
+\end_inset
+
+ : 
+\end_layout
+
+\begin_layout Itemize
+
+\color black
+la lecture du document dans son intégralité pour l'élaboration de l'indexation
+ ; 
+\end_layout
+
+\begin_layout Itemize
+
+\color black
+la prise en compte de choix des descripteurs, des objectifs du centre de
+ documentation (applications) et des besoins des utilisateurs ;
+\end_layout
+
+\begin_layout Itemize
+
+\color black
+la complémentarité permanente entre les termes de l'indexation manuelle
+ et le résumé; 
+\end_layout
+
+\begin_layout Itemize
+
+\color black
+en l'absence de descripteur approprié, et lorsque l'émergence d'un nouveau
+ concept n'est pas suffisamment explicite pour proposer un candidat descripteur,
+ la possibilité d'utiliser un descripteur voisin ou générique
+\end_layout
+
+\begin_layout Standard
+
+\color black
+On a donc assez vite pensé à avoir recours à l’ordinateur.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Mus"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+
+\color black
+L’indexation automatique
+\end_layout
+
+\begin_layout Standard
+
+\color black
+L’indexation automatique, que nous décrivons en détail dans ce qui suit,
+ regroupe un ensemble de traitements automatisés sur un document.
+ On distingue : l’extraction automatique des mots des documents, l’élimination
+ des mots vides, la lemmatisation (radicalisation ou normalisation), le
+ repérage de groupes de mots, la pondération des mots et enfin la création
+ de l’index.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Sau05"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\color black
+La première approche d’indexation automatique KWIC (Key-Word In Context)
+ a été introduite par 
+\noun on
+Luhn
+\noun default
+ (1957).
+ Il a été question ensuite de pondérer les index.
+ Aux débuts de la recherche d’information, les méthodes statistiques ont
+ été fondées sur la fréquence de termes dans le document.
+ Plus tard, cette mesure a été étendue pour tenir compte de la spécificité
+ d’un terme pour le document.
+ À cette fin, d’autres méthodes ont été exploitées, telles que 2-Poisson
+ (Nie, 2003).
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Mus"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\color black
+Les systèmes d’indexation automatique utilisent plusieurs méthodes d’analyse
+ : 
+\end_layout
+
+\begin_layout Paragraph
+
+\color black
+Analyse linguistique : 
+\end_layout
+
+\begin_layout Standard
+
+\color black
+Technologie issue du « text mining », cette dernière consiste à mettre en
+ œuvre un modèle simplifié des théories linguistiques dans des systèmes
+ informatiques d’apprentissage.
+ Cela fait partie du domaine de l’intelligence artificielle.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "All08"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\color black
+La méthode linguistique est composé de plusieurs modules d’analyses linguistique
+s : morphologique, lexical, syntaxique et pragmatique.
+ Le fait que certains systèmes d’indexation utilisent les techniques du
+ traitement automatique des langues, démontre la pertinence d’une approche
+ linguistique.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Hach97"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+
+\color black
+Analyse statistique : 
+\end_layout
+
+\begin_layout Standard
+
+\color black
+L’initiateur des méthodes d’indexation automatique est H.P.
+ 
+\noun on
+Luhn
+\noun default
+ avec son célèbre article “The automatic creation of literature abstracts”
+ paru en 1958 dans le “Journal of Research and Development” d’IBM.
+ Il déclare : « (...) au lieu de tirer l’information au hasard comme le fait
+ normalement le lecteur, la nouvelle méthode automatique choisit les phrases
+ d’un article qui représentent le mieux l’information pertinente ».
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Cha90"
+
+\end_inset
+
+, H.
+ P.
+ 
+\noun on
+Luhn
+\noun default
+ ouvrit la voie aux travaux sur l’indexation automatique par voisinage appelée
+ aussi méthode statistique.
+\end_layout
+
+\begin_layout Standard
+
+\color black
+L’indexation automatique comporte les étapes suivantes 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "All08"
+
+\end_inset
+
+ : 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\color black
+Extraction des mots simples 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\color black
+Extraction des termes (tokenization) : les règles d’extraction dépendent
+ de la langue.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\color black
+Suppression des mots vides (stop words) : ce sont des mots trop fréquents
+ mais inutiles.
+ Exemple : le, un, de, or, on, il… 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\color black
+Normalisation 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\color black
+Lemmatisation (radicalisation) : par exemple inter + classe + ment, ici
+ le radical est classe.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\color black
+Règles de transformation : suppression des terminaisons des pluriels.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\color black
+Troncature : choisir une valeur optimale de troncature des mots.
+ Il vaut mieux tronquer les suffixes.
+ Il n’y a pas de règle absolue pour cela.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\color black
+L’indexation automatique permet 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Hadj08"
+
+\end_inset
+
+: 
+\end_layout
+
+\begin_layout Itemize
+
+\color black
+de limiter les choix parfois subjectifs de l’indexeur.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\color black
+d’alléger le travail requis par une indexation manuelle.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\color black
+d’éviter les incohérences résultant des interprétations différentes entre
+ plusieurs indexeurs.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\color black
+de réaliser une recherche exhaustive des sujets traités dans l’information
+ analysée.
+\end_layout
+
+\begin_layout Subsubsection
+
+\color black
+L’indexation semi-automatique 
+\end_layout
+
+\begin_layout Standard
+
+\color black
+Les deux techniques précédentes peuvent être combinées, un premier processus
+ automatique permet d'extraire les termes du document.
+ Cependant le choix final reste au spécialiste du domaine ou au documentaliste
+ pour établir les relations sémantiques entre les mots clés et choisir les
+ termes significatifs en utilisant un thésaurus ou une base terminologique,
+ qui est une liste organisée de descripteurs (mots clés) obéissant à des
+ règles terminologiques propres.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\color black
+On peut mentionner comme un exemple de cette technique les deux logiciels
+ : SINTEX et ALEXDOC qui utilisent l’indexation assistée par ordinateur.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Aba09,Sau05,Hadj08"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\color black
+Les formes d'index
+\end_layout
+
+\begin_layout Standard
+
+\color black
+L’index est la sortie du processus d’indexation, il existe plusieurs types
+ d’index selon la technique utilisé et la fonction souhaitée :
+\end_layout
+
+\begin_layout Subsubsection
+
+\color black
+Document Index 
+\end_layout
+
+\begin_layout Standard
+
+\color black
+L'index des documents conserve des informations sur chaque document.
+ Il est un index ISAM (Index sequential access mode) d'une largeur fixe,
+ ordonné par l'ID du document.
+ Les informations stockées dans chaque entrée comprennent des données, une
+ somme de contrôle de documents et diverses statistiques.
+ Si le document a été exploré, il contient aussi un pointeur vers un fichier
+ d'une largeur variable appelé les informations du document qui contient
+ l'URL et le titre.
+ Cette décision de conception a été guidée par le désir d'avoir une structure
+ de données relativement compact, et la possibilité de chercher un enregistremen
+t dans une seule parcoure du disque, lors d'une interrogation .
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Brin98"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\color black
+Le tableau suivant est une illustration simplifiée d'un index des documents
+ : 
+\end_layout
+
+\begin_layout Standard
+
+\color black
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\color black
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+Document ID
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+Texte
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+Lien
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+Document 1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+The cow says moo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+/ex/doc1.txt
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+Document 2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+The cat and the hat
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+/ex/doc2.txt
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+Document 3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+The dish ran away with the spoon
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+/ex/doc3.txt
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\color black
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Document Index
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+
+\color black
+Forward Index 
+\end_layout
+
+\begin_layout Standard
+
+\color black
+L'index transmis stocke une liste de mots pour chaque document.
+ Ce qui suit est une forme simplifiée de forward index :
+\end_layout
+
+\begin_layout Standard
+
+\color black
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\color black
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+Document ID
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+Mots
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+Document 1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+the, cow, says, moo
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+Document 2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+the, cat, and, the, hat 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+Document 3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+the, dish, ran, away, with, the, spoon
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\color black
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Forward Index
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ La raison derrière le développement d'un index transmis est, pendant que
+ les documents sont parcourus, il est préférable de stocker immédiatement
+ les mots par document.
+ La délinéation active un système de traitement asynchrone, ce qui contourne
+ partiellement l’index inversé en goulot d'étranglement .
+ L’index transmis est sauvegardé pour le transformer en un index inversé.
+ L'indice à terme est essentiellement une liste de couples constitués d'un
+ document et un mot, collectés par le document.
+ La conversion de l’index transmis en un index inversé n'est qu'une question
+ de trier les couples par les mots.
+ A cet égard, l'index inversé est un mot-triés de l’index transmis.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Brin98"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+
+\color black
+Inverted index 
+\end_layout
+
+\begin_layout Standard
+
+\color black
+Plusieurs moteurs de recherche intègrent un index inversé lors de l'évaluation
+ d'une requête de recherche pour localiser rapidement des documents qui
+ comportent les mots dans la requête et puis les classer par pertinence.
+ Puisque l’index inversé sauvegarde la liste des documents contenant chaque
+ mot, le moteur de recherche peut utiliser un accès direct pour trouver
+ les documents associés à chaque mot dans une requête afin de récupérer
+ les documents qui répondent rapidement.
+ Le tableau suivant est une illustration simplifiée d'un index inversé :
+ 
+\end_layout
+
+\begin_layout Standard
+
+\color black
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\color black
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+Mot
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+Documents
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+ the
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+Document 1, Document 3, Document 4, Document 5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+cow
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+Document 2, Document 3, Document 4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+says
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+Document 5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+ moo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+Document 7
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\color black
+\begin_inset Caption
+
+\begin_layout Plain Layout
+ Inverted Index
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\color black
+Cet index ne peut déterminer que si un mot existe dans un document particulier,
+ car il ne stocke aucune information concernant la fréquence ou la position
+ du mot, il est donc considéré comme un index de booléen.
+ Un tel index décide quels sont les documents qui correspondent à une requête,
+ mais ne les classe pas.
+ Dans certains modèles, l'index comprend des informations supplémentaires
+ telles que la fréquence de chaque mot dans chaque document ou les positions
+ d'un mot dans chaque document.
+ Les renseignements de position permettent à l'algorithme de recherche d’identif
+ier le voisinage du mot pour supporter la recherche de phrases.
+ La fréquence peut être utilisée pour aider dans le classement de la pertinence
+ des documents par rapport à la requête.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Gro02,Tan04"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+
+\color black
+N-gram index
+\end_layout
+
+\begin_layout Standard
+
+\color black
+Un n-gramme est une séquence de n caractères consécutifs.
+ Pour un document quelconque, l’ensemble des n-grammes (en général n prend
+ les valeurs 2 ou 3) qu’on peut générer est le résultat qu’on obtient en
+ déplaçant une fenêtre de n cases sur le corps de texte.
+ Ce déplacement se fait par étapes, une étape correspond à un caractère.
+ Ensuite on compte les fréquences des n-grammes trouvés.
+ Par exemple
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+
+\color black
+le caractère “_” est utilisé à la place des blancs, pour faciliter la lecture.
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Jal02"
+
+\end_inset
+
+la phrase
+\emph on
+ "La nourrice nourrit le nourrisson"
+\emph default
+ se représente par :
+\end_layout
+
+\begin_layout Standard
+
+\color black
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\color black
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="14">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+…
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+n-grammes
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+la_
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+a_n
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+_no
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+nou
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+our
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+urr
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+rri
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+ ric
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+ice
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+_ce
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+e_n
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+rit
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+…
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+Fréquences
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+…
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\color black
+\begin_inset Caption
+
+\begin_layout Plain Layout
+N-gram index
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ L’un des avantages des n-grammes est la capture automatique des racines
+ les plus fréquentes 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Gref95"
+
+\end_inset
+
+: dans l’exemple précédent, grâce aux techniques basées sur les n-grammes
+ nous trouvons la racine commune de : Nourrir, nourri, nourrit, nourrissez,
+ nourriture, etc.
+\end_layout
+
+\begin_layout Standard
+
+\color black
+La tolérance aux fautes d’orthographes et aux déformations est également
+ une propriété importante.
+ Enfin, ces techniques n’ont pas besoin d’éliminer les mots-outils (Stop
+ Words) ni de procéder à la lemmatisation, ni au stemming.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "San08"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\color black
+Stockage de l’index 
+\end_layout
+
+\begin_layout Standard
+
+\color black
+Le stockage des structures d’index est caractérisé essentiellement par la
+ taille de l’index et l’organisation des éléments de celui-ci.
+ Les structures d'index varient largement dans leur consommation d'espace
+ qui est étroitement liée à l’organisation des données dans l’index.
+\end_layout
+
+\begin_layout Standard
+
+\color black
+Cette organisation a un impact significatif sur la latence de recherche.
+ Plus les éléments liés sont près les uns des autres dans l’espace de stockage
+ moins est la latence de recherche, c’est ce qu’on appelle le concept de
+ localité.
+ Il est également très important que l’index puisse tenir dans la mémoire
+ centrale, cela évite les accès disque au système et réduit considérablement
+ la latence de recherche.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\color black
+L’index idéal est donc celui qui occupe moins d’espace et qui permet de
+ réduire au maximum la latence de recherche.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Dah06"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\color black
+Mise à jour d’index 
+\end_layout
+
+\begin_layout Standard
+
+\color black
+Par mise à jour d’index on entend le comportement de l’index face aux changement
+s que subit la base de données.
+ Des changements qui peuvent être des insertions, des modifications ou des
+ suppressions.
+ Et ceci peut concerner les documents comme les nœuds des documents.
+ Un index peut être plus ou moins capable de s'adapter à ces changements.
+ Cette adaptation peut se présenter sous trois formes :
+\end_layout
+
+\begin_layout Subsubsection
+
+\color black
+Mise à jour incrémentale 
+\end_layout
+
+\begin_layout Standard
+
+\color black
+Dans le cas d’une mise à jour incrémentale (également appelée par augmentation)
+ la structure de l'index est mise à jour en lui rajoutant les index des
+ nouvelles données (documents ou nœuds à indexer) sans modifier ceux qui
+ existent déjà.
+ Le nombre de changements supportés est cependant, souvent limité, dans
+ ce cas.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Dah06"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+
+\color black
+Mise à jour progressive 
+\end_layout
+
+\begin_layout Standard
+
+\color black
+Dans le premier cas la structure de l'index existante peut être modifiée
+ et les modifications sont limitées uniquement à une petite partie de l'index.
+ Cet index supporte donc des mises à jour progressives.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Dah06"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+
+\color black
+Mise à jour globale 
+\end_layout
+
+\begin_layout Standard
+
+\color black
+Le troisième cas, et le plus défavorable, c’est quand la structure de l'index
+ entière doit être reconstruite à partir de zéro.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Dah06"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\color black
+Les étapes d’indexation
+\end_layout
+
+\begin_layout Standard
+
+\color black
+Le processus d’indexation se compose des étapes suivantes :
+\end_layout
+
+\begin_layout Subsubsection
+
+\color black
+Extraction des mots-clés (Tokenization)
+\end_layout
+
+\begin_layout Standard
+
+\color black
+L’extraction des mots-clés est une étape qui peut sembler triviale au premier
+ abord, et qui pourtant constituera la base de tout le reste du processus
+ d’indexation.
+ Il faut donc que cette phase soit d’une qualité maximale.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Maylan2001"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\color black
+Certains systèmes de recherche d’information utilisent une liste de mots-clés
+ prédéfinie.
+ Cette liste est conçue manuellement et, dans la plus part des cas, construite
+ par rapport à un thème spécifique.
+ Cette méthode permet entre autre de contrôler la taille des index.
+ L’utilisation d’une extraction automatique des mots-clés ou l’utilisation
+ d’une liste de mots-clés prédéfinie, détermine le type d’indexation.
+ Orientée document dans le premier cas et orientée requête dans le second
+ .
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Berrut97,Dah06"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+
+\color black
+Normalisation des mots-clés
+\end_layout
+
+\begin_layout Standard
+
+\color black
+Ce traitement consiste à retrouver pour un mot sa forme normalisée (généralement
+ le masculin pour les noms, l’infinitif pour les verbes, le masculin singulier
+ pour les adjectifs, etc.).
+ Ainsi, dans l’index ne sont conservées que les formes normalisées, ce qui
+ offre un gain de place appréciable, mais surtout, si le même traitement
+ est effectué sur la requête, cela permet d’être beaucoup plus souple et
+ rapide dans la recherche: par exemple, si l’utilisateur effectue une recherche
+ avec un verbe, les documents comportant ce verbe dans toutes ses formes
+ conjuguées seront pris en compte, et pas seulement les documents contenant
+ le verbe dans la forme fournie par l’utilisateur.
+ Cette étape est également appelée « traitement morphologique des mots-clés
+ » 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Den04"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\color black
+Cette phase peut également être enrichie avec un traitement syntaxique et
+ sémantique des mots-clés.
+ Le premier consiste à identifier et regrouper un ensemble de mots dont
+ la signification dépend de leur union.
+ Par exemple, les mots « maison blanche » ne signifient habituellement pas
+ qu’on a affaire à une maison qui est blanche, mais plutôt au siège de la
+ présidence des États-Unis.
+ Elle consiste aussi à éliminer des ambiguïtés comme par exemple les problèmes
+ d’homographie.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\color black
+Le traitement sémantique
+\begin_inset Note Comment
+status collapsed
+
+\begin_layout Plain Layout
+
+\color black
+This is very important, it's what you need for semantic search
+\end_layout
+
+\end_inset
+
+ a pour but de faire des distinctions entres les différents sens possibles
+ d’un même mot (polysémie).
+ Par exemple, cette phase permet de différencier le mot « pièce » qui peut
+ correspondre à une pièce de monnaie par exemple, ou à une pièce dans une
+ maison.
+ C’est une tâche ardue qui n’est pas aujourd’hui bien maîtrisée et dont
+ l’intérêt en termes de hausse des performances des systèmes n’est pas toujours
+ démontré.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Dah06"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+
+\color black
+Élimination des mots vides 
+\end_layout
+
+\begin_layout Standard
+
+\color black
+Cette étape revêt une importance certaine dans la mesure où elle constitue
+ un facteur d’une grande influence dans la précision de la recherche.
+ Le fait de ne pas éliminer les mots vides provoque inévitablement du bruit.
+ L’élimination des mots vides qui sont des mots du langage courant et qui
+ ne contiennent pas beaucoup d'information sémantique doit se faire aussi
+ bien à l’indexation qu’à l’interrogation (élimination des mots vides de
+ la requête).
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Dah06"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+
+\color black
+La pondération 
+\end_layout
+
+\begin_layout Standard
+
+\color black
+Cette étape est entièrement dépendante du modèle de recherche d’information
+ utilisé.
+ Elle permet de définir l’importance qu’a un terme dans un document donné,
+ elle est également utilisée pour filtrer l’index résultant du processus
+ d’indexation (c’est-à-dire : éliminer les index dont le poids est inférieur
+ à un certain seuil).
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Dah06"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\color black
+De manière générale, la majorité des formules de pondération des termes
+ est construite par combinaison de deux facteurs.
+ Un facteur de pondération locale quantifiant la représentativité locale
+ d’un terme dans le document, et un second facteur de pondération globale
+ mesurant la représentativité globale du terme vis-à-vis de la collection
+ des documents.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Amr08"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\color black
+Il y a deux types de pondération : 
+\end_layout
+
+\begin_layout Paragraph
+
+\color black
+Pondération locale 
+\end_layout
+
+\begin_layout Standard
+
+\color black
+La pondération locale prend en considération les informations locales du
+ terme qui ne dépendent que du document.
+ Elle correspond généralement à une fonction de la fréquence d'apparition
+ du terme dans le document, notée 
+\series bold
+tf
+\series default
+ 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "TF"
+description "Term Frequency"
+
+\end_inset
+
+(
+\emph on
+Term Frequency
+\emph default
+).
+ Un terme qui apparaît fréquemment dans un document sera considéré comme
+ pertinent pour décrire son contenu.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Dah06"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+
+\color black
+Pondération globale 
+\end_layout
+
+\begin_layout Standard
+
+\color black
+La pondération globale mesure l'importance d'un terme au sein de l'ensemble
+ des documents de la collection.
+ Elle vise à représenter son caractère discriminant ou en d’autres termes
+ sa capacité à différencier les documents de la collection.
+ En effet, un terme apparaissant dans peu de documents est considéré comme
+ plus discriminant et doit être privilégié par rapport à un terme présent
+ dans de nombreux documents.
+ Le calcul de la pondération globale s'appuie sur le nombre de documents
+ de la collection dans lesquels un terme apparaît.
+ L'une des mesures les plus utilisées est 
+\series bold
+l’idf 
+\series default
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "IDF"
+description "Inverse Document Frequency"
+
+\end_inset
+
+(
+\emph on
+Inverse Document Frequency
+\emph default
+), représentée par la formule suivante:
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\color black
+\begin_inset Formula $Idf=\log(\frac{N}{n_{i}})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\color black
+Où i n est le nombre de documents contenant le terme i t i et N le nombre
+ total de documents dans la collection.
+\end_layout
+
+\begin_layout Standard
+
+\color black
+La mesure 
+\series bold
+tf *idf
+\series default
+ donne une bonne approximation de l’importance d’un terme dans le document,
+ particulièrement dans les corpus de documents de taille homogène.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Dah06"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\color black
+Interrogation 
+\end_layout
+
+\begin_layout Standard
+
+\color black
+L'interrogation est la phase d'interaction entre le système et l'utilisateur.
+ Ce dernier exprime son besoin d'information via un langage de requête que
+ le système va se charger de traduire.
+ Cette traduction se fait selon le modèle de requête et a pour but de comprendre
+ les besoins de l'utilisateur et de les exprimer dans un formalisme similaire
+ à celui mis en œuvre lors de l'indexation des documents.
+ Ce processus fournit une requête interne.
+ Suite à cette phase de compréhension de la requête, un modèle de correspondance
+ calcule la correspondance entre la requête interne et chaque index des
+ documents.
+ Ce calcul, établi par la fonction de correspondance, a classiquement pour
+ résultat une liste ordonnée des documents de la base.
+ Il faut, à ce niveau, établir une comparaison sémantique (et non une égalité)
+ entre les concepts figurants dans un document et ceux figurants dans la
+ requête.
+\end_layout
+
+\begin_layout Standard
+
+\color black
+La comparaison entre requête et document aboutit rarement à des équivalences
+ strictes, mais plutôt à des équivalences partielles : le document correspond
+ à une partie seulement de la requête.
+ Le premier document de la liste renvoyée par le système est celui qui est
+ considéré par le système comme le plus pertinent, c’est-à-dire celui qui
+ répond le mieux à la requête, toujours d'après le système.
+ Le dernier document est celui qui est considéré par le système comme le
+ moins pertinent.
+ Cette notion de pertinence repose sur la proximité entre les besoins exprimés
+ par l'utilisateur et les résultats fournis par le système.
+ On différencie la pertinence utilisateur de la pertinence système.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Dah06"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\color black
+La notion de pertinence 
+\end_layout
+
+\begin_layout Standard
+
+\color black
+Pertinence est une notion centrale de l’interrogation car toutes les évaluations
+ s'articulent autour de cette notion.
+ Mais c'est aussi la notion la plus mal connue, malgré de nombreuses études
+ portant sur cette notion tel que celle figurant dans.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Denos97"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\color black
+Voyons quelques définitions de la pertinence pour avoir une idée de la divergenc
+e.
+ La pertinence est: 
+\end_layout
+
+\begin_layout Itemize
+
+\color black
+La correspondance entre un document et une requête, une mesure d'informativité
+ du document à la requête; 
+\end_layout
+
+\begin_layout Itemize
+
+\color black
+Un degré de relation (chevauchement, relativité, …) entre le document et
+ la requête; 
+\end_layout
+
+\begin_layout Itemize
+
+\color black
+Un degré de la surprise qu'apporte un document, qui a un rapport avec le
+ besoin de l'utilisateur; 
+\end_layout
+
+\begin_layout Itemize
+
+\color black
+Une mesure d'utilité du document pour l'utilisateur; …etc.
+\end_layout
+
+\begin_layout Standard
+
+\color black
+Même dans ces définitions, les notions utilisées (informativité, relativité,
+ surprise, …) restent très vagues et ceci, parce que les utilisateurs ont
+ des besoins très variés.
+ Ils ont aussi des critères très différents pour juger si un document est
+ pertinent.
+ Donc, la notion de pertinence est utilisée pour recouvrir un très vaste
+ éventail de critères et de relations.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\color black
+Dans la suite, nous appelons pertinence système l'ensemble des principes
+ qui sous-tendent la fonction de correspondance (donc le document est jugé
+ pertinent par le système) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Denos97"
+
+\end_inset
+
+, par opposition à la pertinence utilisateur, qui correspond à l'ensemble
+ des jugements de pertinence que produit l’utilisateur qui utilise le système
+ (le document est jugé pertinent par l’utilisateur).
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Dah06"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\color black
+Fonction de similarité 
+\end_layout
+
+\begin_layout Standard
+
+\color black
+La comparaison entre le document et la requête revient à calculer un score,
+ supposé représenter la pertinence du document vis-à-vis de la requête.
+ Cette valeur est calculée à partir d’une fonction ou d’une probabilité
+ de similarité notée 
+\series bold
+rsv(q,d)
+\series default
+ 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "RSV"
+description "Retrieval Status Value"
+
+\end_inset
+
+ (
+\emph on
+retrieval status value
+\emph default
+), où 
+\series bold
+q 
+\series default
+est une requête et 
+\series bold
+d 
+\series default
+un document et dont la formule de calcul dépend entièrement du modèle de
+ recherche d’information utilisé.
+ Cette mesure tient compte du poids des termes dans les documents, déterminé
+ en fonction d’analyses statistiques et probabilistes.
+ La fonction d’appariement est très étroitement liée aux opérations d’indexation
+ et de pondération des termes de la requête et des documents du corpus.
+ D’une façon générale, l’appariement document - requête et le modèle d’indexatio
+n permet de caractériser et d’identifier un modèle de recherche d’information.
+ La fonction de similarité permet ensuite d’ordonner les documents renvoyés
+ à l’utilisateur.
+ La qualité de cet ordonnancement est primordiale.
+ En effet, l’utilisateur se contente généralement d’examiner les premiers
+ documents renvoyés (les 10 ou 20 premiers).
+ Si les documents recherchés ne sont pas présents dans cette tranche, l’utilisat
+eur considérera le tri comme mauvais vis-à-vis de sa requête.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\color black
+Le but de tout tri est donc évidemment de rapprocher la pertinence système
+ de la pertinence utilisateur (qui comme nous l’avons vu précédemment, est
+ fortement subjective) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Sau05,Dah06"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\color black
+La modélisation de la connaissance
+\end_layout
+
+\begin_layout Standard
+
+\color black
+Selon 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Mathias02,Berrut97"
+
+\end_inset
+
+la modélisation de la connaissance apparaît sous la forme d’un thésaurus,
+ et sert de référence aussi bien au processus d’interrogation qu’au processus
+ d’indexation.
+ Le processus d’interrogation l’utilise afin d’augmenter ou de restreindre
+ les requêtes des utilisateurs, agissant ainsi directement sur le nombre
+ et la qualité des réponses données par le système.
+ Le processus d’indexation l’utilise essentiellement comme norme de définition
+ des termes d’indexation 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Dah06"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+
+\color black
+Le processus d’interrogation 
+\end_layout
+
+\begin_layout Standard
+
+\color black
+La recherche tient une requête de l’utilisateur et retourne efficacement
+ la liste des résultats correspondants classés par pertinence.
+ Comme l'indexation, la recherche est un processus à plusieurs étapes, comme
+ le montre la figure.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\color black
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\color black
+\begin_inset Graphics
+	filename Processus d'interrogation.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\color black
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Le processus d’interrogation
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\color black
+La première opération 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+
+\color black
+These Three operations are importants
+\end_layout
+
+\end_inset
+
+consiste à l’établissement de la requête.
+ Le moyen d'exprimer la requête est : 
+\end_layout
+
+\begin_layout Enumerate
+
+\color black
+Basé sur les chaines de caractères : langage d’interrogation basé sur le
+ texte.
+ En fonction de l’objectif, un tel langage peut être aussi simple que la
+ manipulation des mots ou aussi complexe que d'avoir des opérateurs booléens,
+ des opérateurs de rapprochement, restriction de champ, et bien plus encore!
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\color black
+Basé sur une API de programmation : pour une requête avancées et étroitement
+ contrôlée, une API de programmation est très approprié.
+ elle donne au développeur un moyen souple pour exprimer des requêtes complexes
+ et décider comment exposer la flexibilité de la requête aux utilisateurs
+ (ça peut être une fonction exposée avec une interface de la REST
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+
+\color black
+Une manière de construire une application pour les systèmes distribués.
+\end_layout
+
+\end_inset
+
+ 
+\emph on
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "REST"
+description "REpresentational State Transfer"
+
+\end_inset
+
+ Representational State Transfer
+\emph default
+).
+ 
+\end_layout
+
+\begin_layout Standard
+
+\color black
+Certains outils vont concentrer sur la requête basée sur les chaines de
+ caractères, d'autres sur l'API de programmation, et d'autres sur les deux.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\color black
+La deuxième opération, appelons-la 
+\emph on
+l’analyse
+\emph default
+, est chargé de prendre des phrases ou des listes de mots et les applique
+ l'opération similaire à celle du moment d'indexation (classer en mots,
+ radicaux, ou description phonétique).
+ Ceci est crucial car le résultat de cette opération est le langage en commun
+ que indexation et la recherche utilisent pour parler entre eux, et se trouve
+ d’être celui stocké dans l'index.
+ Si la même série d'opérations n’est pas appliquée, la recherche ne trouvera
+ pas les mots indexés, ce qui n’est pas si utile! 
+\end_layout
+
+\begin_layout Standard
+
+\color black
+Basé sur le langage commun entre l'indexation et la recherche, la troisième
+ opération (recherche de documents) lit les index et recherche l’information
+ d'index associées à chaque mot correspondant.
+ N'oublions pas que pour chaque mot, l'index peut stocker la liste des documents
+ correspondants, la fréquence, les positions du mot dans un document, et
+ ainsi de suite.
+ L'accord implicite ici est que le document en lui-même n'est pas chargé,
+ et c'est une des raisons pour laquelle la recherche à texte intégral (full-text
+ search) est efficace : le document n'a pas à être chargé pour savoir s'il
+ correspond.
+ L'opération suivante (filtrer et trier) traitera les informations récupérées
+ à partir de l'index et construira la liste des documents (ou plus précisément,
+ les gestionnaires ‘handlers’ de documents).
+ A partir des informations disponibles (les documents correspondants par
+ mot, la fréquence du mot, et la position du mot), le moteur de recherche
+ est en mesure d'exclure les documents de la liste.
+ Plus important encore, il est capable de calculer le score de chaque document.
+ Plus son score est élevé, plus un document sera dans la liste des résultats.
+ Jetons un regard sur certains facteurs qui influent sur sa valeur :
+\end_layout
+
+\begin_layout Itemize
+
+\color black
+Dans une requête qui comporte plusieurs mots, plus ils sont proche dans
+ un document, plus le rang (rank) est supérieur.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\color black
+Dans une requête comportant plusieurs mots, plus on les trouve dans un document
+ unique, plus le rang est supérieur.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\color black
+Plus la fréquence d'un mot dans un document est supérieure, plus le rang
+ est supérieur.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\color black
+Selon la façon dont la requête est exprimée et comment le produit calcule
+ le score, ces règles peuvent s'appliquer ou non.
+ Cette liste est là pour donner une idée de ce qui peut affecter le score,
+ donc la pertinence d'un document.
+ Une fois la liste ordonnée des documents est prête, le moteur de recherche
+ à plein texte expose les résultats à l'utilisateur à travers une API 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "API"
+description "Application Programming Interface\\\\"
+
+\end_inset
+
+de programmation ou dans une page web.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ber08"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Section
+L’approche sémantique 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Todo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Important if you continue to improve this side
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\color black
+Conclusion
+\end_layout
+
+\begin_layout Standard
+
+\color black
+Dans ce chapitre, l’étude a porté sur le mécanisme de travail des moteurs
+ de recherche web et des systèmes de recherche d’information, en se basant
+ sur l’indexation en raison de son importance.
+ En effet, elle constitue l’étape la plus importante dans le processus de
+ recherche car elle permet l’extraction et le traitement des mots clés.
+\end_layout
+
+\begin_layout Standard
+
+\color black
+L’interrogation ne constitue pas seulement la phase d’interaction entre
+ les utilisateurs est le système, mais calcule aussi la correspondance entre
+ la requête et les documents pour fournir les résultats les plus pertinents.
+ 
+\end_layout
+
+\end_body
+\end_document

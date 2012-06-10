@@ -1,0 +1,19 @@
+# \DeclareLaTeXClass[report, esi_memoire.sty]{report (esi_memoire)}
+
+Preamble     
+	\usepackage{./styles/esi_memoire}
+EndPreamble
+Format 30
+Input stdclass.inc
+Input numreport.inc
+
+
+
+Style Bibliography
+	TopSep                4
+	LabelString           "Bibliography"
+	LabelFont
+	  Series              Bold
+	  Size                Huge
+	EndFont
+End

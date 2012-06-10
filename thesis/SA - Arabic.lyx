@@ -1,0 +1,5319 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass extreport
+\begin_preamble
+ \usepackage{styles/esi_memoire}
+\end_preamble
+\use_default_options true
+\begin_modules
+hanging
+minimalistic
+initials
+customHeadersFooters
+endnotes
+\end_modules
+\maintain_unincluded_children false
+\language french
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf true
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 1
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref true
+\pdf_title "Advanced  Search Engine in Holy Quran"
+\pdf_author "Assem Chelli"
+\pdf_subject "Thesis"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 4
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_amsmath 0
+\use_esint 0
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\boxbgcolor #005500
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3cm
+\topmargin 3cm
+\rightmargin 3cm
+\bottommargin 3cm
+\secnumdepth 3
+\tocdepth 4
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language swedish
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\bullet 1 0 9 -1
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%
+\backslash
+setcounter{chapter}{1}
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+pagenumbering{arabic} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{chapter}{0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagenumbering{arabic} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Arabic Language  
+\begin_inset CommandInset label
+LatexCommand label
+name "chapitre1"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Preview
+
+\begin_layout Standard
+\begin_inset Preview
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\backslash
+epigraph{
+\backslash
+raggedleft
+\backslash
+textit{أنا البحر في أعماقه الدرّ كامن   }}{
+\backslash
+raggedright
+\backslash
+textit{حافظ ابراهيم}}
+\backslash
+end{Arabic}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+[+Annotation Layers]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Introduction 
+\end_layout
+
+\begin_layout Standard
+Arabe (
+\series bold
+\lang arabic_arabi
+العربية
+\series default
+\lang french
+ al-arabiyyah) est un nom appliqué à des descendants de la langue arabe
+ classique du 6e siècle après JC, le plus utilisé dans le Coran, le livre
+ sacré musulman.
+ L'arabe est une langue sémitique centrale, étroitement liés à l'hébreu
+ moderne et l'Aramai Langues
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Modern Aramaic, languages are varieties of Aramaic that are spoken vernaculars
+ in the medieval to modern era, evolving out of Middle Aramaic dialects
+ around AD 1200.
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Dans ce chapitre, nous allons parler de l'orthographie et la morphologie
+ de la langue arabe qui sont particuliers.
+ aussi nous allons parler de certaines ambiguïtés peut etre apparaissent
+ en arabe provoquer l'absence de vocalisation.
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+[Steps of informatization] + amliorer
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+L’orthographie
+\end_layout
+
+\begin_layout Standard
+L'écriture arabe est l'un des scripts les plus utilisés sur la terre.
+ Il domine dans les pays arabes, bien sûr, mais a une place spéciale pour
+ tous les musulmans parce que c'est le script utilisé pour écrire le Coran,
+ le livre saint des musulmans.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Jabri"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Elle est écrite de droite à gauche comme toutes les autres langues sémitiques.
+ Son alphabet a vingt-neuf
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Les scientistes de la langue arabe considèrent le hamza comme une lettre
+\end_layout
+
+\end_inset
+
+ lettres consonnes, trois d'entre elles (
+\series bold
+\lang arabic_arabi
+ا و ي
+\series default
+ 
+\lang french
+) sont considérées comme des signes de diacritiques.
+ Optionnellement, l’une des trois diacritiques 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+ 
+\series bold
+\lang arabic_arabi
+علامات الشكل
+\family roman
+\series medium
+\shape up
+\size small
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang french
+ 
+\end_layout
+
+\end_inset
+
+ (
+\begin_inset Graphics
+	filename diacritics.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+ ) peut être placée après certains caractères pour lever l’ambiguïté (dans
+ la prononciation et/ou le sens) quand elle se pose.
+ Dans un texte arabe totalement vocalisé , l'absence des diacritiques peut
+ être considérée comme une sokōune (silence) (
+\begin_inset Graphics
+	filename symbole.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+ ).
+ Dans certains cas, une lettre doublée, peut être remplacé par une seule
+ lettre avec le tashdeed (renforcement) (
+\begin_inset Graphics
+	filename Tashdid.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+ ) placé au-dessus.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Alk99"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En outre, il nous importe de signaler que la notion de lettre capitale et
+ lettre minuscule n'existent pas, l'écriture arabe est dite monocamérale.
+ En addition, l’arabe est une langue semi cursive ; la plupart des lettres
+ s'attachent entre elles, leurs graphies diffèrent selon qu'elles soient
+ précédées et/ou suivies d'autres lettres ou qu'elles soient isolées.
+ Seulement six d’entre-elles ne s'attachent jamais à la lettre suivante
+ : 
+\lang arabic_arabi
+(
+\series bold
+ا, د, ذ, ر, ز, و
+\series default
+)
+\lang french
+ et une seule lettre ne s'attache jamais : (
+\series bold
+\lang arabic_arabi
+ء
+\series default
+\lang french
+) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "MES08"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Lettre
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Graphies 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+hamza
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+
+\series bold
+ء
+\series default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Wâw
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+
+\series bold
+ـو و
+\series default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ayn
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+
+\series bold
+ع عـ ـعـ ـع 
+\series default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+3 types de lettre arabes : une graphie, deux graphies, quatre graphies
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Lexicography 
+\end_layout
+
+\begin_layout Standard
+La grammaire traditionnelle arabe ne connaît que trois sous-ensembles :
+ noms, verbes et particules.
+ 
+\end_layout
+
+\begin_layout Subsection
+Les verbes
+\end_layout
+
+\begin_layout Standard
+Un verbe est une entité exprimant un sens dépendant du temps.
+ La majorité des verbes arabes sont formés sur des radicaux de 3 consonnes
+ tel est le cas du verbe
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang arabic_arabi
+كَتَبَ
+\lang french
+ (kataba – écrire) et éventuellement 4 consonnes tel est le cas du verbe
+ 
+\lang arabic_arabi
+دَحْرَجَ
+\lang french
+ (dahrağa – glisser, faire glisser).
+ Ces racines peuvent donner naissance à plusieurs schèmes ou patrons à la
+ suite d’une ou plusieurs transformations morphologiques (par exemple, le
+ redoublement d’une consonne, l’allongement d’une voyelle, l’adjonction
+ d’un morphème, etc.), il s’agit dans ce cas de racines à schème augmenté.
+\end_layout
+
+\begin_layout Standard
+Plusieurs études linguistiques ont été menées sur le système verbal en arabe,
+ voir 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Lar03"
+
+\end_inset
+
+.
+ Dans cette section, il nous importe d’introduire un classement des verbes
+ selon leurs radicaux :
+\end_layout
+
+\begin_layout Subsubsection
+Les verbes à racine simple 
+\end_layout
+
+\begin_layout Standard
+Les verbes à racine simple ont une base à trois consonnes appelées consonnes
+ radicales.
+ Ces verbes sont associés au schème verbal "
+\lang arabic_arabi
+فَعَلَ
+\lang french
+" (fa‛ala).
+ Lorsqu’aucune des consonnes radicales du verbe n’est une voyelle longue,
+ il est dit sain.
+ Ces radicaux peuvent comporter de causes de transformation ou défectuosité
+ ( 
+\lang arabic_arabi
+عِلَّة
+\lang french
+ ), nous citons :
+\end_layout
+
+\begin_layout Itemize
+La présence d’un glide "
+\lang arabic_arabi
+ أ
+\lang french
+" (á – hamzä), "
+\lang arabic_arabi
+ ي
+\lang french
+" (y - yâ’) ou " 
+\lang arabic_arabi
+و
+\lang french
+" (w – wâw) parmi les consonnes du radical.
+ Selon la position de ce glide, nous distinguons différents types de verbes
+ : 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Si l’une des consonnes radicales est " 
+\lang arabic_arabi
+أ
+\lang french
+" (á – hamzä), indépendamment de sa position => verbe mahmuz
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+ 
+\lang arabic_arabi
+مَهْموز
+\lang french
+ 
+\end_layout
+
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Itemize
+la 1ère consonne radicale est un "
+\lang arabic_arabi
+ و
+\lang french
+" (w) ou " 
+\lang arabic_arabi
+ي
+\lang french
+" (y) => verbe mital
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+ 
+\lang arabic_arabi
+مِثَال
+\lang french
+ 
+\end_layout
+
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Itemize
+la 2ème consonne radicale est un " 
+\lang arabic_arabi
+و
+\lang french
+" (w) ou " 
+\lang arabic_arabi
+ي
+\lang french
+" (y) => verbe ağwaf
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+
+\lang arabic_arabi
+ أَجْوَف
+\lang french
+ 
+\end_layout
+
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Itemize
+la 3ème consonne radicale est un "
+\lang arabic_arabi
+ و
+\lang french
+" (w) ou " 
+\lang arabic_arabi
+ي
+\lang french
+" (y) => verbe naāqis
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+ 
+\lang arabic_arabi
+نَاقِص
+\lang french
+ 
+\end_layout
+
+\end_inset
+
+; 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+La présence de deux consonnes identiques en deuxième et troisième position
+ du radical => verbe mudaā‛af
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+ 
+\lang arabic_arabi
+مُضَاعَف
+\lang french
+ 
+\end_layout
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Les verbes à racine augmentée :
+\end_layout
+
+\begin_layout Standard
+Aux schèmes simples, décrits ci-dessus, vient s’ajouter une dizaine de schèmes
+ verbaux augmentés.
+ Ces schèmes sont formés à partir de racines simples par un ensemble d’opération
+s morphologiques pour donner un sens particulier aux verbes résultats, nous
+ citons : 
+\end_layout
+
+\begin_layout Itemize
+
+\lang arabic_arabi
+فَعَّلَ 
+\lang french
+(fa‛‛ala)
+\end_layout
+
+\begin_layout Itemize
+
+\lang arabic_arabi
+فَاعَلَ 
+\lang french
+(faā‛ala)
+\end_layout
+
+\begin_layout Itemize
+
+\lang arabic_arabi
+أَفْعَلَ 
+\lang french
+(áfa‛ala)
+\end_layout
+
+\begin_layout Itemize
+
+\lang arabic_arabi
+تَفَعَّلَ 
+\lang french
+(tafa‛‛ala)
+\end_layout
+
+\begin_layout Itemize
+
+\lang arabic_arabi
+تَفَاعَلَ 
+\lang french
+(tafaā‛ala)
+\end_layout
+
+\begin_layout Itemize
+
+\lang arabic_arabi
+اِفْتَعَلَ 
+\lang french
+(ìfta‛ala)
+\end_layout
+
+\begin_layout Itemize
+
+\lang arabic_arabi
+اِنْفَعَلَ 
+\lang french
+(ìnfa‛ala)
+\end_layout
+
+\begin_layout Itemize
+
+\lang arabic_arabi
+اِسْتَفْعَلَ 
+\lang french
+(ìstaf‛ala)
+\end_layout
+
+\begin_layout Subsection
+Les noms
+\end_layout
+
+\begin_layout Standard
+Le système morphologique des noms arabes distingue trois sous-catégories
+ : 
+\end_layout
+
+\begin_layout Subsubsection
+Les noms primitifs : 
+\end_layout
+
+\begin_layout Standard
+ce sont des noms qui ne peuvent pas être rattachés à une racine verbale.
+ Ils paraissent bien constituer le glossaire fondamental de la langue concrète.
+ Exemple : 
+\lang arabic_arabi
+رَأْس
+\lang french
+ (raás – tête),
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang arabic_arabi
+كُرْسِيّ 
+\lang french
+(kursiyy – siège),
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang arabic_arabi
+كَبْش
+\lang french
+ (kabš – bélier) etc.
+ Dans cette catégorie, nous incluons aussi les noms à racine bilitère tels
+ que :
+\lang arabic_arabi
+ دم
+\lang french
+ (dam - sang), 
+\lang arabic_arabi
+فم
+\lang french
+ (fam - bouche), 
+\lang arabic_arabi
+أب
+\lang french
+ (áab – père),
+\lang arabic_arabi
+ أخ
+\lang french
+ (áh – frère), etc.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Les noms dérivés ou déverbaux : 
+\end_layout
+
+\begin_layout Standard
+ce sont les noms qui peuvent être dérivès à partir d’une racine verbale.
+ Le nombre et la nature de ces formes varient selon le statut du verbe auquel
+ ils se rattachent.
+ En tant que noms, ils peuvent recevoir les marques du cas, du genre et
+ de l’indétermination.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Les nombres :
+\end_layout
+
+\begin_layout Standard
+cette catégorie de noms est constituée par les numéraux simples représentant
+ les unités : de " 
+\lang arabic_arabi
+صفر
+\lang french
+ " (sifr- zéro, 0) à " 
+\lang arabic_arabi
+تسعة
+\lang french
+ " (tis‛at – neuf, 9) ; les dizaines : " 
+\lang arabic_arabi
+عشرة
+\lang french
+ " (‛ašarat – dix,10) , 
+\begin_inset Quotes sld
+\end_inset
+
+ 
+\lang arabic_arabi
+عشرون
+\lang french
+ 
+\begin_inset Quotes sld
+\end_inset
+
+(‛išruwn – vingt, 20), …et " 
+\lang arabic_arabi
+تسعون
+\lang french
+ " (tis‛uwn – quatre-vingt-dix, 90) ; les centaines, etc.
+ ainsi que les numéraux composés tels que les cardinaux de "
+\lang arabic_arabi
+ أَحَد عَشَر
+\lang french
+ " (áahada ‛ašara - onze, 11) à " 
+\lang arabic_arabi
+تسعة عَشَر
+\lang french
+ " (tis‛at ‛ašara - dix-neuf,19).
+ 
+\end_layout
+
+\begin_layout Standard
+Dans leur décomposition, les grammairiens arabes ont assimilé les adjectifs
+ à des noms vu qu’ils y prennent presque toutes les formes morphologiques
+ ; ils peuvent, par exemple, être définis ou indéfinis et se fléchir suivant
+ le cas, le nombre et le genre.
+\end_layout
+
+\begin_layout Subsubsection
+Les noms démonstratifs (ásmaā’ íšaārat)
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+ 
+\lang arabic_arabi
+أسماء إشارة
+\lang french
+ 
+\end_layout
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+Ils représentent une sous-catégorie de nom exprimant une idée de démonstration.
+ Ils permettent d'indiquer que l'objet représenté se trouve, soit dans le
+ texte, soit dans l'espace ou le temps, défini par la situation d'énonciation.
+ Ils existent deux sous-ensembles : les démonstratifs de proximité (par
+ exemple : " 
+\lang arabic_arabi
+هَذا
+\lang french
+ " (hadaā – celui-ci), " 
+\lang arabic_arabi
+هَؤُلاء
+\lang french
+ " (haẃulaā’ – ceux-ci) et les démonstratifs d’éloignement (par exemple
+ : " 
+\lang arabic_arabi
+ذلِكَ
+\lang french
+ " (dalika – celui-là), " 
+\lang arabic_arabi
+أُولائِكَ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang french
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+" (ùuwlaāýika – ceux-là), etc.).
+ Les démonstratifs ne sont déclinables qu’au duel.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Les noms relatifs (ásmaā’ mawsuwlat)
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+ 
+\lang arabic_arabi
+أسماء موصولة
+\end_layout
+
+\end_inset
+
+ :
+\end_layout
+
+\begin_layout Standard
+Ils se rapportent au nom ou au pronom personnel qui les précède et que nous
+ désignons par antécédent.
+ Les relatifs s’accordent avec l’antécédent et ne sont déclinables qu’au
+ duel (comme les démonstratifs).
+ Parmi les pronoms relatifs, nous citons : " 
+\lang arabic_arabi
+الَّذي
+\lang french
+ " (al-ladiy - celui), " 
+\lang arabic_arabi
+اللتَيْنِ 
+\lang french
+" (al-latayni – celles, féminin, duel), " 
+\lang arabic_arabi
+اللذينَ 
+\lang french
+" (al- ladayni – ceux, masculin, pluriel), etc.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Les pronoms personnels (damaāýir munfasilat)
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang arabic_arabi
+ضمائر منفصلة
+\lang french
+ 
+\end_layout
+
+\end_inset
+
+: 
+\end_layout
+
+\begin_layout Standard
+ils servent à désigner les trois types de personnes grammaticales :
+\end_layout
+
+\begin_layout Itemize
+la première personne, c'est-à-dire, l'énonciateur ou locuteur : " 
+\lang arabic_arabi
+أَنَا 
+\lang french
+" (ánaā - je) ou " 
+\lang arabic_arabi
+نَحْنُ
+\lang french
+ "
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(nahnu – nous) ; 
+\end_layout
+
+\begin_layout Itemize
+la deuxième personne, c'est-à-dire, le destinataire ou interlocuteur : "
+ 
+\lang arabic_arabi
+أَنْتَ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang french
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+" (áanta – tu, masculin), "
+\lang arabic_arabi
+ أَنْتِ 
+\lang french
+" (áanti – tu, féminin), " 
+\lang arabic_arabi
+أَنْتُمَا
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang french
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+" (áantumaā – vous, duel), " 
+\lang arabic_arabi
+أَنْتُمْ
+\lang french
+ " (áantum – vous, masculin, pluriel), " 
+\lang arabic_arabi
+أَنْتُنَّ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang french
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+" (áantunna – vous, féminin, pluriel); 
+\end_layout
+
+\begin_layout Itemize
+la troisième personne, c'est-à-dire, la personne absente, celle dont on
+ parle : "
+\lang arabic_arabi
+ هُوَ 
+\lang french
+" (huwa – il), 
+\lang arabic_arabi
+هِيَ
+\lang french
+ " " (hiya – elle), " 
+\lang arabic_arabi
+هُمَا
+\lang french
+ " (humaā – ils, duel), " 
+\lang arabic_arabi
+هُمْ
+\lang french
+ " (hum – ils), "
+\lang arabic_arabi
+ هُن 
+\lang french
+" (hunna – elles) ;
+\end_layout
+
+\begin_layout Subsection
+Les mots outils
+\end_layout
+
+\begin_layout Standard
+Les mots outils sont des entités qui servent à situer des faits ou des objets
+ par rapport au temps ou au lieu.
+ Ils jouent également un rôle clé dans la cohérence et l'enchaînement d'un
+ texte.
+ Par exemple, nous avons des particules qui désignent un temps : 
+\end_layout
+
+\begin_layout Itemize
+
+\lang arabic_arabi
+بعد
+\lang french
+ (ba‛da – après) 
+\end_layout
+
+\begin_layout Itemize
+
+\lang arabic_arabi
+قبل
+\lang french
+ ٫ (qabla – avant)٫ 
+\end_layout
+
+\begin_layout Itemize
+
+\lang arabic_arabi
+منذ
+\lang french
+ (mundu – depuis) 
+\end_layout
+
+\begin_layout Standard
+ou un lieu tel que 
+\end_layout
+
+\begin_layout Itemize
+
+\lang arabic_arabi
+حيث
+\lang french
+ (haytu – où),….
+ 
+\end_layout
+
+\begin_layout Standard
+Selon leur sémantique et leur fonction dans la phrase, ils peuvent jouer
+ un rôle important dans l’interprétation d’une phrase en exprimant une introduct
+ion, explication, conséquence, etc.
+ [Kadri et Benyamina, 1992].
+ Les mots outils incluent différentes catégories, nous citons : 
+\end_layout
+
+\begin_layout Itemize
+Les prépositions : par exemple, " 
+\lang arabic_arabi
+فِي
+\lang french
+ " (fiy – dans) ou " 
+\lang arabic_arabi
+عَلَى
+\lang french
+ " (‛alaą – sur); 
+\end_layout
+
+\begin_layout Itemize
+Les conjonctions de coordination : par exemple, "
+\lang arabic_arabi
+ ثُمَّ 
+\lang french
+" (tumma – ensuite, puis) ;
+\end_layout
+
+\begin_layout Itemize
+Les adverbes : par exemple, " 
+\lang arabic_arabi
+أَبَدًا
+\lang french
+ " (abadã – jamais) ou " 
+\lang arabic_arabi
+بِشكْلٍ عَادِي
+\lang french
+" (bišaklĩ ‛aādiyyĩ – normalement, de façon normale) ; 
+\end_layout
+
+\begin_layout Itemize
+Les quantificateurs : par exemple, "
+\lang arabic_arabi
+ آُلّ 
+\lang french
+" (kulla – tout) ou " 
+\lang arabic_arabi
+بَعْض
+\lang french
+ " (ba‛da – un peu) ; 
+\end_layout
+
+\begin_layout Itemize
+Etc.
+ 
+\end_layout
+
+\begin_layout Standard
+Les mots outils se répartissent en sous-groupes : ceux qui sont variables
+ (quantificateurs) et ceux qui sont invariables (adverbes, prépositions,
+ etc.).
+\end_layout
+
+\begin_layout Section
+La morphologie
+\end_layout
+
+\begin_layout Standard
+L’arabe est une langue flexionnelle.
+ Elle emploie, pour la conjugaison du verbe et la déclinaison du nom, des
+ indices d’aspect, de mode, de temps, de personne, de genre, de nombre et
+ de cas, qui sont en général des suffixes et préfixes 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "GB75"
+
+\end_inset
+
+.
+ Généralement, ces marques flexionnelles permettent de distinguer :
+\end_layout
+
+\begin_layout Itemize
+Le mode des verbes : par exemple, pour le verbe "
+\lang arabic_arabi
+ 
+\series bold
+ذهَبَ 
+\series default
+\lang french
+" (dahaba – aller), les formes à l’accompli sont repérables à l’aide de
+ leurs suffixes tel que "
+\lang arabic_arabi
+ 
+\series bold
+ذهَبْتُ 
+\series default
+\lang french
+" (dahabatu – je suis allé) ou de leurs préfixations tel que "
+\lang arabic_arabi
+ 
+\series bold
+أَذهَبُ 
+\series default
+\lang french
+" (áadhabu – je vais) ; 
+\end_layout
+
+\begin_layout Itemize
+La fonction des noms à l’aide des suffixations tels que "
+\series bold
+\lang arabic_arabi
+ رَجُلانِ 
+\series default
+\lang french
+" (rağulaáni – deux hommes au nominatif) ou "
+\series bold
+\lang arabic_arabi
+ رَجُلَيْنِ 
+\series default
+\lang french
+" (rağulayni – deux hommes à l’accusatif ou génitif).
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Mes08"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Il y a plusieurs catégories de langages flexionnels, et l’arabes est exactement
+ de la catégorie des langues à "brisure interne" : dans cette catégorie
+ de langues, les consonnes indiquent le sens et les voyelles marquent la
+ flexion du mot, ce système se rencontre surtout dans les langues sémitiques
+ (ex : arabe , hébreux) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "CPCZ06"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Morphologiquement, la langue arabe est très riche et fondée sur la structure
+ de patterns et racines , la plupart des mots arabes sont générés à partir
+ d’un ensemble fini de racines (environ 7000 racines) transformés en utilisant
+ un ou plusieurs patterns (environ 400-500).
+ Théoriquement, une seule racine arabe peut générer des centaines de mots
+ (substantif, verbes, …).
+ Un mot arabe peut exister sous une centaine de formes dans cent profilés
+ en un texte normal en ajoutant certains suffixes et préfixes (principalement
+ considérées comme des mots vides en langue anglaise).
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Alk99"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Classification of affixes.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Classification d’affixes en Arabe
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Morphologie flexionnelle 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Mes08"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+L’arabe est une langue flexionnelle.
+ Elle emploie, pour la conjugaison du verbe et la déclinaison du nom, des
+ indices d’aspect, de mode, de temps, de personne, de genre, de nombre et
+ de cas, qui sont en général des suffixes et préfixes 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "BG03"
+
+\end_inset
+
+.
+ Généralement, ces marques flexionnelles permettent de distinguer : 
+\end_layout
+
+\begin_layout Itemize
+le mode des verbes : par exemple, pour le verbe " 
+\lang arabic_arabi
+ذهَبَ 
+\lang french
+" (dahaba – aller), les formes à l’accompli sont repérables à l’aide de
+ leurs suffixes tel que " 
+\lang arabic_arabi
+ذهَبْتُ 
+\lang french
+" (dahabatu – je suis allé) ou de leurs préfixations tel que " 
+\lang arabic_arabi
+أَذهَبُ 
+\lang french
+" (áadhabu – je vais) ; 
+\end_layout
+
+\begin_layout Itemize
+la fonction des noms à l’aide des suffixations tels que "
+\lang arabic_arabi
+ رَجُلانِ 
+\lang french
+" (rağulaáni – deux hommes au nominatif) ou " 
+\lang arabic_arabi
+رَجُلَيْنِ 
+\lang french
+" (rağulayni – deux hommes à l’accusatif ou génitif).
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Flexion des verbes 
+\end_layout
+
+\begin_layout Standard
+La conjugaison des verbes décrit la variation de leurs formes en fonction
+ des circonstances.
+ Généralement, la conjugaison regroupe un certain nombre de valeurs dont
+ : 
+\end_layout
+
+\begin_layout Itemize
+La valeur aspectuelle : L’aspect est un trait grammatical associé, le plus
+ souvent, au verbe pour indiquer la façon dont le procès ou l'état exprimé
+ par le verbe est envisagé du point de vue de son développement (commencement,
+ déroulement, achèvement, évolution globale, etc.), indépendamment du moment
+ où l’on parle ; 
+\end_layout
+
+\begin_layout Itemize
+La valeur modale : Le mode dénote la manière dont l'action exprimée par
+ le verbe est conçue et présentée.
+ L'action peut être mise en doute, affirmée comme réelle ou éventuelle.
+ Ils se combinent à la sémantique des verbes et par là créent les aspects
+ ;
+\end_layout
+
+\begin_layout Itemize
+La valeur temporelle : Le temps est un trait grammatical permettant de situer
+ un fait (qui peut être un état ou une action) dans l'axe du temps de l'énonciat
+ion par rapport à trois repères : passé, présent et le futur.
+ Les indications temporelles sont souvent accompagnées d'indications aspectuelle
+s qui lui sont plus ou moins liées.
+\end_layout
+
+\begin_layout Standard
+Ces trois principales valeurs sont étroitement liées [Chairet, 1996]; elles
+ permettent de décrire deux formes fondamentales du verbe : 
+\end_layout
+
+\begin_layout Itemize
+al-maádi 
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+ 
+\lang arabic_arabi
+الماضي
+\lang french
+ 
+\end_layout
+
+\end_inset
+
+: il indique que le déroulement de l’action exprimée par le verbe est achevé,
+ ce qui implique le passé.
+ Il se caractérise par une suffixation des marques de la personne, du genre,
+ du nombre et du mode à la racine verbale.
+ Par exemple, pour le pluriel féminin du verbe "
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang arabic_arabi
+كَتَبَ
+\lang french
+ " (kataba – écrire), nous ajoutons le suffixe "
+\lang arabic_arabi
+ نَ 
+\lang french
+" pour avoir la forme "
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang arabic_arabi
+كَتَبْنَ
+\lang french
+ " (katabna - elles ont écrit) et pour le pluriel masculin, nous ajoutons
+ le suffixe "
+\lang arabic_arabi
+ وا
+\lang french
+ " pour avoir la forme "
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang arabic_arabi
+كَتَبُوا
+\lang french
+ " (katabuwá, ils ont écrit) ; 
+\end_layout
+
+\begin_layout Itemize
+al-mudaára‛ 
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+
+\lang arabic_arabi
+المضارع
+\lang french
+ 
+\end_layout
+
+\end_inset
+
+: il signale un déroulement inachevé, ce qui peut impliquer le présent.
+ Il se caractérise par une préfixation de ses éléments ainsi qu’une ou plusieurs
+ infixations sous forme de duplication de lettres ou de substitution de
+ voyelles.
+ Par exemple, pour le verbe "
+\lang arabic_arabi
+ مَدَّ 
+\lang french
+" (madda – tendre), nous pouvons obtenir " 
+\lang arabic_arabi
+أَمُدُّ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang french
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+" (áamuddu – je tends) ou " 
+\lang arabic_arabi
+يَمْدُدْن
+\lang french
+ " (yamdudna – elles tendent).Il inclut deux types de flexions modales :
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+L’inaccompli indicatif de mode réel où le locuteur énonce le caractère réel
+ (rélisé, devant être réalisé, en cours de réalisation, etc.) de l’action
+ ou l’état exprimé par le verbe ;
+\end_layout
+
+\begin_layout Itemize
+L’inaccompli subjonctif et apocopé de mode potentiel où le locuteur se contente
+ d’énoncer la nature possible ou virtuelle de l’action ou l’état exprimé
+ par le verbe.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+L'impératif : il exprime l’ordre, le commandement, la défense ou l’exhortation
+ et dont les éléments n’existent qu’à la 2ème personne au singulier, féminin
+ duel et pluriel ; 
+\end_layout
+
+\begin_layout Standard
+Les formes ainsi obtenues peuvent combiner des valeurs aspectuelles, modales
+ et temporelles bien que, dans l’usage moderne, l’aspect temporel semble
+ être plus saillant.
+ [Larcher, 2003].
+\end_layout
+
+\begin_layout Subsubsection
+Flexion des noms
+\end_layout
+
+\begin_layout Standard
+En arabe, la déclinaison des noms comporte trois cas : " 
+\lang arabic_arabi
+مَرْفُوع
+\lang french
+ " (marfou‛ - nominatif), " 
+\lang arabic_arabi
+منْصُوب
+\lang french
+ " (mansuwb – accusatif) et " 
+\lang arabic_arabi
+مجْرور
+\lang french
+ " (mağruwr – génitif).
+ A l’exception de certains cas particuliers, les noms sont " 
+\lang arabic_arabi
+معرّبة
+\lang french
+ " (mu‛arrabat - déclinables) et se mettent à l’un de ces trois cas suivant
+ leur fonction dans la phrase.
+ Sur le plan de la graphie, le cas ne correspond qu’à un élément graphique
+ adjoint à la fin des formes nominales.
+ Le système nominal de l’arabe admet différents systèmes de déclinaison
+ suivant la nature de la forme (simple, diptotes, etc.) et le nombre de celle-ci
+ (singulier, duel ou pluriel).
+ Nous pouvons distinguer : 
+\end_layout
+
+\begin_layout Paragraph
+Déclinaison du nom au singulier : 
+\end_layout
+
+\begin_layout Subparagraph
+Déclinaison de base à trois cas : 
+\end_layout
+
+\begin_layout Standard
+C’est le cas le plus fréquent, il prend la voyelle "
+\lang arabic_arabi
+ ضَمَّة 
+\lang french
+" (dammat – u) comme une marque du nominatif, la "
+\lang arabic_arabi
+ فَتْحَة
+\lang french
+ " (fathat – a) à l’accusatif et la "
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang arabic_arabi
+كَسْرَة
+\lang french
+ – " (kasrat – i) au génitif.
+ Quand le nom est indéfini, le tanwîn apparaît marqué respectivement par
+ les trois signes diacritiques : " " (ũ – un), " " (ã - an) et " " (ĩ –
+ in).
+ A l’accusatif indéfini, excepté le cas des noms qui se terminent par "
+ 
+\lang arabic_arabi
+ة
+\lang french
+ " (at) ou par " 
+\lang arabic_arabi
+ا
+\lang french
+ " (ā’), un álif «
+\lang arabic_arabi
+ ا 
+\lang french
+» (ā) vient renforcer le tanwîn " " (an) : par exemple, à l’accusatif indéfini,
+ le nom "
+\lang arabic_arabi
+ آِتَاب
+\lang french
+ " (kitaāb – livre) produit "
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang arabic_arabi
+كِتَابًا
+\lang french
+ " (kitaābãā – livre à l’accusatif indéfini) et le nom " 
+\lang arabic_arabi
+جَزِيرَة
+\lang french
+ " (ğaziyrat – île) produit 
+\lang arabic_arabi
+جَزِيرَةً"
+\lang french
+ " (ğaziyratã – île à l’accusatif indéfini).
+ 
+\end_layout
+
+\begin_layout Subparagraph
+Déclinaison des diptotes : 
+\end_layout
+
+\begin_layout Standard
+Les diptotes sont les noms qui, indéfinis grammaticalement, n’acceptent
+ pas de tanwîn et prennent la même marque à l’accusatif et le génitif, soit
+ la " 
+\lang arabic_arabi
+فَتْحَة
+\lang french
+ " (fathat – a).
+ Par contre, quand ils sont définis, ils suivent la déclinaison de base
+ à trois cas.
+ C’est le cas des noms féminins qui se terminent par " 
+\lang arabic_arabi
+اء
+\lang french
+ " (ā’) tel que " 
+\lang arabic_arabi
+صحْرَاء
+\lang french
+ " (sahraā’ – désert), les adjectifs masculins de couleurs ayant pour schème
+ " 
+\lang arabic_arabi
+أَفْعل
+\lang french
+ " (af‛al) tel que "
+\lang arabic_arabi
+ أحْمَر
+\lang french
+ " (áhmar – rouge) et ceux qui sont féminins de schème " 
+\lang arabic_arabi
+فَعْلَاء
+\lang french
+ " (fa‛laā’) tel que " 
+\lang arabic_arabi
+بَيْضَاء
+\lang french
+ " (baydaā’ – blanche) 
+\end_layout
+
+\begin_layout Subparagraph
+Déclinaison des cinq noms : 
+\end_layout
+
+\begin_layout Standard
+Les cinq noms sont : 
+\end_layout
+
+\begin_layout Itemize
+les 3 noms : "
+\lang arabic_arabi
+ أبو
+\lang french
+ "(áabuw - père), "
+\lang arabic_arabi
+ أخو
+\lang french
+ " (áhuw - frère) et "
+\lang arabic_arabi
+ حمو
+\lang french
+ " (hamuw - beau-père) ; 
+\end_layout
+
+\begin_layout Itemize
+une variante de "
+\lang arabic_arabi
+ فَم
+\lang french
+ " (fam – bouche) : " 
+\lang arabic_arabi
+فَا
+\lang french
+" ,"
+\lang arabic_arabi
+فو
+\lang french
+ " et " ; "
+\lang arabic_arabi
+فِي
+\lang french
+ 
+\end_layout
+
+\begin_layout Itemize
+le nom " 
+\lang arabic_arabi
+ذو
+\lang french
+ " (duw – possesseur).
+\end_layout
+
+\begin_layout Standard
+Ce sont des noms bilitères qui prolongent leur voyelle finale quand ils
+ sont définis par un complément.
+ 
+\end_layout
+
+\begin_layout Subparagraph
+Déclinaison de déverbaux de racines défectueuses : 
+\end_layout
+
+\begin_layout Standard
+Certains participes actifs et noms verbaux des verbes à racine défectueuse
+ tels que le participe actif " 
+\lang arabic_arabi
+مَاضٍ 
+\lang french
+" (maādĩ – passé) et le nom verbal " 
+\lang arabic_arabi
+تَخَلٍّ 
+\lang french
+" (tahallĩ - abondon) ne prennent la marque du cas qu’à l’accusatif: le
+ " 
+\lang arabic_arabi
+ي
+\lang french
+" (dernière lettre de la racine - y) est remplacé par le tanwîn (in) aux
+ nominatif et génitif indéfinis.
+ Quant aux participes passifs qui se terminent par " 
+\lang arabic_arabi
+ى
+\lang french
+" ou "
+\lang arabic_arabi
+ ا
+\lang french
+" tel que " 
+\lang arabic_arabi
+مُعْطًى
+\lang french
+ " (mu‛tãą – donné), ils perdent leur flexion casuelle.
+ Un tanwîn différencie le nom indéfini du nom défini.
+ A ce niveau, il nous importe de signaler que l’usage de cette règle de
+ déclinaison est abondonné.
+ En effet, dans les textes courants la forme du nom verbal "
+\lang arabic_arabi
+ قَاضٍ 
+\lang french
+" (qaādĩ – avocat) est, généralement, altérée en " 
+\lang arabic_arabi
+قَاضِي
+\lang french
+ " (qaādiy – avocat) par adjonction du glide " 
+\lang arabic_arabi
+ي
+\lang french
+" (y - yâ’) à la fin de la forme initiale.
+ 
+\end_layout
+
+\begin_layout Paragraph
+Déclinaison du nom au duel :
+\end_layout
+
+\begin_layout Standard
+Il existe en arabe "
+\lang arabic_arabi
+ المُثنَّى
+\lang french
+ " (al-mutannaą – le duel) pour désigner deux choses ou deux personnes.
+ Il prend la place entre le singulier (pour désigner une chose ou une personne)
+ et le pluriel (à partir de trois choses ou trois personnes).
+ Il s’agit d’une déclinaison avec deux alternatives où la marque du nominatif
+ est le " ا", et celle de l’accusatif et le génitif est le " ي".
+ Pour former le duel d’un nom indéfini ou défini par l’article, nous lui
+ suffixons : "
+\lang arabic_arabi
+ انِ 
+\lang french
+" (aāni) au nominatif et " 
+\lang arabic_arabi
+يْنِ 
+\lang french
+" (ayni) à l’accusatif et le génitif.
+ Par exemple, la forme duelle du nom "
+\lang arabic_arabi
+ سَيَّارَة
+\lang french
+ " (sayyaārat – une voiture) prend la forme " "
+\lang arabic_arabi
+سَيَّارَتانِ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang french
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Quotes sld
+\end_inset
+
+ (sayyaārataāni – deux voitures, au nominatif) ou "
+\lang arabic_arabi
+ سَيَّارَتَيْنِ 
+\lang french
+" (sayyaāratayni – deux voitures, accusatif et génitif) 
+\end_layout
+
+\begin_layout Standard
+Dans certains cas, notamment pour les mots dont la racine est défectueuse
+ ou qui se terminent par un "
+\lang arabic_arabi
+ ى
+\lang french
+" (ą), un " 
+\lang arabic_arabi
+و
+\lang french
+" (ą) ou une hamzä (‘), la terminaison du nom se transforme devant le suffixe
+ du duel.
+ En l’occurrence, la forme "
+\lang arabic_arabi
+ مَقْهَى 
+\lang french
+" (maqhaą – un café) a pour forme duelle 
+\lang arabic_arabi
+مَقْهَيَانِ
+\lang french
+" " (maqhayaāni – deux cafés) 
+\end_layout
+
+\begin_layout Paragraph
+Déclinaison du nom au pluriel :
+\end_layout
+
+\begin_layout Standard
+Il existe deux grandes catégories de pluriel en arabe : 
+\end_layout
+
+\begin_layout Subparagraph
+Les pluriels externes ou réguliers : 
+\end_layout
+
+\begin_layout Standard
+Les pluriels externes sont formés par l’ajout d’un suffixe au singulier
+ sans changement de la structure du mot.
+ Nous distinguons : 
+\end_layout
+
+\begin_layout Itemize
+Le pluriel externe masculin: Pour le pluriel masculin nous rajoutons les
+ deux lettres " 
+\lang arabic_arabi
+ين
+\lang french
+ " (iyna) ou "
+\lang arabic_arabi
+ ون 
+\lang french
+" (uwna) dépendamment de la position du mot dans la phrase (sujet ou complément
+ d’objet), exemple : " 
+\lang arabic_arabi
+مسلم 
+\lang french
+" (muslim - musulman) devient " 
+\lang arabic_arabi
+مسلمون
+\lang french
+ " (muslimuwna – musulmans, au nominatif) ou "
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang arabic_arabi
+مسلمين 
+\lang french
+" (muslimiyna – musulmans, accusatif ou génitif) ; 
+\end_layout
+
+\begin_layout Itemize
+Le pluriel externe féminin: De la même manière, nous rajoutons pour le pluriel
+ féminin le morphème " 
+\lang arabic_arabi
+ات
+\lang french
+ " (āt), exemple "
+\lang arabic_arabi
+ سَيَّارَة 
+\lang french
+" (sayyaārat – une voiture) devient " 
+\lang arabic_arabi
+سَيَّارَات
+\lang french
+ " (sayyaāraāt – des voitures).
+ 
+\end_layout
+
+\begin_layout Subparagraph
+Les pluriels internes ou brisés: 
+\end_layout
+
+\begin_layout Itemize
+Les pluriels internes sont désignés par pluriels brisés à cause des modification
+s et infixations qu’ils nécessitent par rapport à la forme du singulier,
+ à la différence de ce qui se passe avec les pluriels réguliers (masculin
+ et féminin).
+ Les formes du pluriel brisé sont nombreuses et généralement imprévisibles
+ ; elles suivent une diversité de règles complexes et dépendent du nom ;
+ par exemple : le nom "
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang arabic_arabi
+كَاتِب
+\lang french
+ " (kaātib – un écrivain) se transforme pour donner les deux formes plurielles
+ "
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang arabic_arabi
+كُتَّاب
+\lang french
+ " (kutteb – écrivains) ou "
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang arabic_arabi
+كَتَبَة
+\lang french
+ " (katabat – écrivains).
+ Notons aussi que les grammairiens arabes ont formulé des distinctions entre
+ pluriels de petit nombre et pluriels collectifs ; par exemple : le nom
+ " 
+\lang arabic_arabi
+شَهْر
+\lang french
+ " (šahr - mois) admet deux formes plurielles : " 
+\lang arabic_arabi
+أَشْهَر
+\lang french
+ " (ášhur - moins de 12 mois) et " 
+\lang arabic_arabi
+شُهُور
+\lang french
+ " (šuhuwr - au-delà) ; Seuls les pluriels externes suivent des déclinaisons
+ propres.
+ Les pluriels internes se rattachent aux déclinaisons du singulier (déclinaisons
+ de base à trois cas et diptotes).
+\end_layout
+
+\begin_layout Subsubsection
+Flexion des mots outils 
+\end_layout
+
+\begin_layout Standard
+Lorsqu’il s’agit de la flexion des particules, nous en distinguons deux
+ catégories :
+\end_layout
+
+\begin_layout Itemize
+Les mots outils non déclinables ou invariables: leurs formes sont constantes
+ et n’acceptent aucune déclinaison ; par exemple : "
+\lang arabic_arabi
+ عَلَى
+\lang french
+ " (‛alaą – sur), "
+\lang arabic_arabi
+ مُنْذ
+\lang french
+ " (mundu – depuis), etc.
+\end_layout
+
+\begin_layout Itemize
+Les mots outils déclinables ou variables : ils suivent le système de déclinaison
+ à trois cas selon leurs fonctions dans la phrase.
+ Par exemple, le quantificateur "
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang arabic_arabi
+كلّ 
+\lang french
+" (kull – tout) peut accepter les trois voyelles casuelles finales pour
+ désigner le nominatif, accusatif ou génitif selon sa fonction dans la phrase.
+ 
+\end_layout
+
+\begin_layout Subsection
+Morphologie dérivationnelle 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Mes08"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Tout verbe a dans son sillage des formes déverbales qui lui sont associées
+ et avec lesquelles il entretient des relations morphologiques, syntaxiques
+ et sémantiques stables.
+ Le nombre et la nature de ces formes varient selon le statut du verbe.
+ Dans le cas général, celui des verbes transitifs, les plus importants de
+ ces déverbaux sont :
+\end_layout
+
+\begin_layout Paragraph
+le nom verbal : 
+\end_layout
+
+\begin_layout Standard
+Le nom verbal est un nom abstrait formé sur la même racine que le verbe
+ auquel il est associé et exprime le même contenu sémantique que lui ; toutefois
+, il n’implique aucune notion de temps, d’aspect, de modalité, de personne,
+ ni même de voix.
+ Sémantiquement, il exprime une action, un état ou un processus selon le
+ sens du verbe auquel il est associé.
+ Tout verbe, quelque soit son type, a un nom verbal et il arrive qu’il en
+ ait plus d’un.
+ Les verbes augmentés en ont, généralement, un seul.
+ Par contre, ce n’est pas le cas pour les verbes simples qui peuvent avoir
+ jusqu’à 5 noms verbaux.
+ Par exemple, le verbe " 
+\lang arabic_arabi
+وَدَّ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang french
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+" (wadda – aimer) admet cinq noms verbaux différents qui expriment une «
+ affection » avec une certaine nuance sémantique : " 
+\lang arabic_arabi
+وَدٌّ
+\lang french
+ " (waddu)," 
+\lang arabic_arabi
+وُد
+\lang french
+ٌّ " (wuddu), "
+\lang arabic_arabi
+ وِدَادٌ 
+\lang french
+" (widaādu), "
+\lang arabic_arabi
+ وِدَادَةٌ 
+\lang french
+" (widaādat) et " 
+\lang arabic_arabi
+مَوَدَّة
+\lang french
+ " (mawaddat); 
+\end_layout
+
+\begin_layout Paragraph
+Le participe actif : 
+\end_layout
+
+\begin_layout Standard
+Le participe actif est un nom associé à tout verbe d’action (transitif ou
+ intransitif) et qui désigne l’agent du verbe c'est-à-dire celui qui fait
+ l’action, d’où la désignation nom d’agent donnée à ce déverbal.
+ Par exemple, les verbes à racine simple tel que " 
+\lang arabic_arabi
+ضَرَبَ 
+\lang french
+" (daraba – frapper) suivent le schème " 
+\lang arabic_arabi
+فَاعل
+\lang french
+ " (faā‛il) pour produire le participe actif "
+\lang arabic_arabi
+ ضَارِب
+\lang french
+ " (daārib – celui qui frappe) ; 
+\end_layout
+
+\begin_layout Paragraph
+le participe passif 
+\end_layout
+
+\begin_layout Standard
+Le particpe passif est un nom associé à tout verbe d’action transitif.
+ Il désigne le patient qui subit l’action ou le résultat de cette action,
+ d’où la désignation de nom de patient donnée à ce déverbal.
+ Par exemple, nous reprenons le cas du verbe à racine simple " 
+\lang arabic_arabi
+ضَرَبَ 
+\lang french
+" (daraba – frapper), il suit le schème "
+\lang arabic_arabi
+ مَفعول
+\lang french
+ " (maf‛uwl) pour produire le participe passif " 
+\lang arabic_arabi
+مَضْرُوب
+\lang french
+ "(madruwb – frappé) 
+\end_layout
+
+\begin_layout Standard
+Ces trois déverbaux sont ceux qui existent pour le plus grand nombre de
+ verbes.
+ Leurs formations obéissent, pour un type donné de verbe, à des règles extrêmeme
+nt générales.
+ Habituellement, nous assimilons le participe actif au participe présent
+ français et le participe passif au participe passé.
+ Cette assimilation n’occulte pas les propriétés spécifiques que ces déverbaux
+ ont en arabe.
+ Pour tous les verbes, simples et augmentés, les participes se forment sur
+ des schèmes stables ; ils ont, donc, un comportement morphologique d’une
+ grande régularité.
+ En tant que noms, les participes peuvent recevoir toutes les marques morphologi
+ques de cette classe : genre, déclinaison, nombre et détermination.
+ 
+\end_layout
+
+\begin_layout Standard
+Aux formes dérivées citées ci-dessus, s’ajoutent d’autres déverbaux dont
+ le rang d’utilisation est moins important : 
+\end_layout
+
+\begin_layout Paragraph
+le nom de lieu (ou de temps) 
+\end_layout
+
+\begin_layout Standard
+Le nom de lieu est un déverbal supposé désigner le lieu où se produit le
+ procès exprimé par le verbe comme le nom " 
+\lang arabic_arabi
+مَدْرَسَة
+\lang french
+ " (madrasat – école, lieu où on étudie) qui peut être généré à partir du
+ verbe "
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang arabic_arabi
+دَرَسَ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang french
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+" (darasa – étudier).
+ Lorsque le sémantisme du verbe se prête plutôt à une interprétation temporelle,
+ ce nom est dit nom de temps tel est le cas pour "
+\lang arabic_arabi
+ مَغْرِب
+\lang french
+ " (maġrib – moment du coucher du soleil) rattaché au verbe " 
+\lang arabic_arabi
+غَرَب
+\lang french
+ " (ġaraba – se coucher) ; 
+\end_layout
+
+\begin_layout Paragraph
+le nom d’instrument 
+\end_layout
+
+\begin_layout Standard
+Le nom d'instrument est un nom qui désigne l’instrument dont on se sert
+ pour exécuter l’action exprimée par le verbe.
+ Par exemple, le nom " 
+\lang arabic_arabi
+مُوَزِّع
+\lang french
+ " (muwazzi‛ – distributeur) peut être rattaché au verbe " 
+\lang arabic_arabi
+وَزَّع
+\lang french
+ " (wazza‛a – distribuer) ; 
+\end_layout
+
+\begin_layout Paragraph
+le nom d’une fois 
+\end_layout
+
+\begin_layout Standard
+Le nom d’une fois est un nom qui désigne une occurrence unique de l’action
+ exprimée par le verbe.
+ Il est généralement produit à partir d’une forme au singulier du nom verbal.
+ Par exemple, le nom " 
+\lang arabic_arabi
+ضَرْبَة 
+\lang french
+" (darabat – une frappe) peut être rattaché au verbe " 
+\lang arabic_arabi
+ضَرَبَ 
+\lang french
+" (daraba – frapper) ;
+\end_layout
+
+\begin_layout Paragraph
+le nom de manière :
+\end_layout
+
+\begin_layout Standard
+Le nom de manière est un nom qui est supposé servir à indiquer la manière
+ dont l’action exprimée par le verbe se réalise.
+ Pour les verbes augmentés, il n’est pas distinct du nom d’une fois.
+ Nous pouvons donner l’exemple de la phrase : " 
+\lang arabic_arabi
+جَلَسَت جِلْسَةَ الأَمِيرَة
+\lang french
+ " (ğalasat ğilsata al-amirat - elle s’assit à la manière d’une princesse).
+ 
+\end_layout
+
+\begin_layout Standard
+Contrairement aux verbes, les noms primitifs échappent au système dérivationnel.
+ Cependant, certaines règles peuvent être mises en place pour décrire les
+ gentilés et ethnonymes qui sont des noms ou adjectifs par lesquels nous
+ désignons des habitants d’un lieu, une nationalité, une identité nationale,
+ etc.
+\end_layout
+
+\begin_layout Section
+Les problèmes d’ambigüités 
+\end_layout
+
+\begin_layout Subsection
+L’absence de vocalisation
+\end_layout
+
+\begin_layout Standard
+La plupart des textes arabes sont écrits sans diacritiques, cela provoque
+ une confusion dans le sens, uniquement le contexte du texte peut lever
+ l’ambigüité.
+ Par conséquent, les logiciels basés seulement sur la graphie du mot ne
+ peuvent pas l’enlever.
+ 
+\end_layout
+
+\begin_layout Standard
+Si le texte contient le mot (
+\series bold
+\lang arabic_arabi
+ملك
+\series default
+\lang french
+), par exemple.
+ Comment on peut déterminer le sens de ce mot : Est-il (
+\series bold
+\lang arabic_arabi
+المَلَك
+\series default
+\lang french
+) ou (
+\series bold
+\lang arabic_arabi
+المُلك
+\series default
+\lang french
+) ou (
+\series bold
+\lang arabic_arabi
+المَلِك
+\series default
+\lang french
+) ? 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Alb09"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Le tableau suivant montre certains mots que ses sens changent en raison
+ du changement de diacritiques : 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+LR{Le mot sans diacritiques}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+LR{ Premier sens}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+LR{Deuxième sens}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+LR{Troisième sens}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+…
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+القدر 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+القَدْر 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+القِدْر
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+القَدَر 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+…
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+يحرم
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+يُحَرِّم
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+يُحْرِم
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+يَحْرُم
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+…
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+البر
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+البِر
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+البَرّ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+البُر
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+…
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+الحجر
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+الحِجْر
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+الحَجَر
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+الحَجْر
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+…
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+العرض
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+العَرْض
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+العِرْض
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+العَرَض
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+…
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+أم
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+أَم
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+أُم
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+أَمَّ
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+…
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+الملك
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+المَلِك
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+المَلَك
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+المُلْك
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+…
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+من
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+مِن
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+مَن
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+مَنّ
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+…
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Le changement de signification en changeant les diacritiques
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En plus de la confusion sur le sens du mot due à l'absence de diacritiques,
+ il y a une plus grande confusion sur la fonction du mot, aussi le contexte
+ du texte seulement peut l’éliminer.
+ Si le mot dans le texte
+\lang arabic_arabi
+ 
+\series bold
+(أخد)
+\series default
+\lang french
+, par exemple, les logiciels basés sur la graphie du mot seul ne peuvent
+ pas faire la distinction entre la forme active 
+\series bold
+\lang arabic_arabi
+(أَخَذَ)
+\series default
+\lang french
+ et la forme passive 
+\series bold
+\lang arabic_arabi
+(أُخِذَ)
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang french
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Alb09"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Le tableau suivant montre certains mots qui changent ses fonctions en raison
+ du changement de diacritiques d'alphabets :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="10" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+LR{Le mot sans diacritiques}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+LR{ Premier sens}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+LR{Deuxième  sens}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+ملك 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+(مَلِكٌ) اسم 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+(مَلَكَ) فعل...
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+من 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+(مَنْ) اسم موصول 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+(مِنْ) حرف جر...
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+عدوان
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+(عُدْوَان) مفرد
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+(عَدُوَّان) مثنى...
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+فرض
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+(فَرَضَ) فعل ماضٍ
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+(فَرْضٌ) مصدر...
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+عن 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+(عَنَّ) فعل ماضٍ
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+(عَنْ) حرف جر...
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+أدر 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+(أَدْرِ) مضارع مجزوم
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+(أَدِرْ) فعل أمر
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+أحسن
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+(أَحْسَنَ) فعل ماض
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+(أَحْسَنُ) اسم تفضيل...
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+علم
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+(عَلِمَ) فعل مجرَّد
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+(عَلَّمَ) فعل مزيد
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+غلبت
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+(غُلِبَتْ) مبني للمجهول
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+(غَلَبَتْ) مبني للمعلوم
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Le changement de fonction en changeant les diacritiques
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Les préfixes
+\end_layout
+
+\begin_layout Standard
+C’est un autre type de confusion, le mot peut être lu de plusieurs manières.
+ Par exemple : dans le mot (
+\lang arabic_arabi
+وعد
+\lang french
+), la lettre wâw 
+\lang arabic_arabi
+(واو)
+\lang french
+ peut appartenir au mot comme :
+\lang arabic_arabi
+ (وَعَدَ : أي الفعل وَعَدَ يَعِدُ)
+\lang french
+, ou bien n'appartient pas au mot comme : 
+\lang arabic_arabi
+(وَعَدَّ = وَ + عَدَّ : أي الفعل عَدَّ يَعُدُّ) 
+\end_layout
+
+\begin_layout Standard
+Ainsi, les logiciels basés seulement sur la graphie du mot, ne peuvent pas
+ faire la distinction entre ces deux cas.
+ Ce type de confusion n'existe pas dans la langue anglaise, par exemple
+ : La traduction de l’expression"
+\lang arabic_arabi
+والكتاب
+\lang french
+" en anglais est une phrase de 3 mots libres "and the book".
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Alb09"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La table suivante contient d’autres exemples de mots qui peuvent être lus
+ de deux façons : 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="8" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+LR{Le mot}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+LR{Première façon}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+LR{Deuxième façon}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+بطاقة
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+بِطَاقَة (اسم)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+بِطَاقَة = بـِ + طَاقَة (حرف جر + اسم)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+وهم
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+وَهْمٌ (مصدر)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+وَهُمْ = وَ + هُمْ (حرف عطف+ ضمير متصل)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ فرمت
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ فَرَمَتْ (من فَرَمَ يَفْرِمُ)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ فَرَمَتْ = فـَ + رَمَتْ (من رَمَى يَرْمِي)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ لسعت
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ لَسَعَتْ (من لَسَعَ يَلْسَعُ)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ لَسَعَتْ = لـَ + سَعَتْ (من سَعَى يَسْعَى)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+أبعث
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ أَبْعَثُ (فعل مضارع)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ أَبَعَثَ = أَ + بَعَثَ (همزة استفهام + فعل ماضٍ)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+كرب
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ كَرِبَ (فعل ماضٍ)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ كَرَبّ = كَ + رَبّ (حرف تشبيه + اسم)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ الحق
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ اِلْحَقْ (فعل أمر)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+الْحَقّ = الْ + حَقُّ (ال التعريف + اسم)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Des ambiguities des préfixes
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Les suffixes
+\end_layout
+
+\begin_layout Standard
+Les suffixes sont les pronoms relatifs (
+\lang arabic_arabi
+الضمائر المتصلة
+\lang french
+ ) au mot.
+ 
+\end_layout
+
+\begin_layout Standard
+La confusion ici ressemble à la confusion des préfixes, cette confusion
+ est que nous pouvons lire le mot de deux façons, selon que les lettres
+ appartiennent au mot ou non.
+ Par exemple, dans le mot (
+\lang arabic_arabi
+وله
+\lang french
+), la lettre ha’ (
+\lang arabic_arabi
+هاء
+\lang french
+) peut : 
+\end_layout
+
+\begin_layout Itemize
+appartenir au mot comme :
+\lang arabic_arabi
+( وَلِهَ : الفعل وَلِهَ يَوْلَهُ)
+\lang french
+ ; 
+\end_layout
+
+\begin_layout Itemize
+n’appartient pas au mot comme :
+\lang arabic_arabi
+ (وَلِّهِ = وَلِّ + ـهِ = فعل الأمر من وَلَّى يُوَلِّي)
+\lang french
+.
+ 
+\end_layout
+
+\begin_layout Standard
+De même que la confusion précédente, ce type de confusion n'existe pas dans
+ la langue anglaise, par exemple : La traduction de 
+\lang arabic_arabi
+" أَجَبْنَاهُ"
+\lang french
+ en anglais est une phrase de 3 mots séparés "we answered him".
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Alb09"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La table suivante contient d’autres exemples : 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="8" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+LR{Mot}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+LR{Première façon}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+LR{Deuxième façon}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+برك
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+بَرَكَ (فعل ماضٍ) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+بَرَّكَ = بَرَّ + كَ (فعل ماضٍ+ضمير متصل) 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+بكم 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+بُكْمٌ (جمع أبكم)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ بِكُمْ = بـِ + كُمْ (حرف جر+ضمير متصل)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+تلفن
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+تَلْفَنَ (فعل رباعي)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+تَلِفْنَ = تَلِفْ + نَ (فعل ماض+نون النسوة) 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+نبت 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+نَبَتَ (فعل ماضٍ)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+نَبَتْ = نَبَ + تْ (فعل ماضٍ من نبا ينبو + تاء التأنيث الساكنة) 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+برهن 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+بَرْهَنَ (فعل رباعي)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+بِرِّهِنَّ = بِرِّ + هِنَّ (اسم+ضمير متصل) 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+لي
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+لَيٌّ (مصدر لَوَى يَلْوِي) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+لِي = لـِ + ي (حرف جر+ضمير متصل) 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+همهم
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+هَمْهَمَ (فعل رباعي)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+هَمُّهُمْ = هَمُّ + هُمْ (اسم+ضمير متصل)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Des ambiguities des suffixes
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+L’informatisation de la langue Arabe
+\end_layout
+
+\begin_layout Standard
+Les logiciels informatiques ont été conçus, au début, pour servir les langues
+ latines, notamment l’anglais.
+ Puis ces techniques ont été adaptées pour tenir compte des autres langues
+ du monde, y compris la langue arabe.
+ Les spécifications d’écriture de certaines langues ont été influencées
+ par ça, en raison de la pression des évolutions technologiques.
+ Cependant, l'écriture arabe a persisté contre les effets de cette vague,
+ malgré les appels grandissants pour changer l'écriture arabe, sous le prétexte
+ de la simplification, la modernisation, ou la convenance.
+ 
+\end_layout
+
+\begin_layout Standard
+La sortie des lettres arabes sur les écrans et les imprimantes a passé par
+ plusieurs étapes, commençant par utiliser le même format pour chaque lettre
+ et les séparer par des espaces entre les lettres dans le mot.
+ Puis, en tenir compte du changement de la forme de la lettre en fonction
+ de sa position dans le mot : le premier, au milieu, le dernier ou séparé,
+ à travers l'analyse contextuelle, ensuite l’amélioration de l’apparence
+ des lettres par le développement de ses images et la modification de la
+ largeur d'affichage selon la lettre.
+ Puis la possibilité de marquer les diacritiques, de et la ligature composé
+ de deux caractères ou plus, 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Ligature arabe.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Ligature arabe du Lâm et álif.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Tout ceci a été réalisé grâce au développement des programmes professionnels
+ pour concevoir les polices.
+ Car les polices sophistiqués, telles que les polices réel ‘TrueType’ et
+ les police ouverts ‘OpenType’, conservent les spécifications des caractères
+ quel que soit la taille, ce qui donne une forme unique et naturelles.[Laz]
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\lang arabic_arabi
+(لزرق)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Traitement de la langue arabe sur l'ordinateur :
+\end_layout
+
+\begin_layout Standard
+Les lettres de la langue arabe sont représentées avec un seul symbole au
+ niveau de l’ordinateur, et ce symbole correspond à un seul emplacement
+ sur le clavier.
+ L’affichage de la lettre en sortie, peut se présenter différemment et cela
+ en fonction de l'emplacement de la lettre dans le mot.
+ 
+\end_layout
+
+\begin_layout Standard
+De ce fait, Il semble qu’il n'est pas nécessaire de faire correspondre la
+ forme du caractère introduit avec ce qui est enregistré à l'intérieur du
+ calculateur et avec ce qui est à imprimer.
+ 
+\end_layout
+
+\begin_layout Standard
+Lam-Alef n’a pas de place dans le tableau de l'alphabet arabe, mais il apparaît
+ comme une seule lettre lors de l'impression, cette lettre peut être introduite
+ à la fois, ou en cliquant sur Lam, et Alef à partir du clavier.
+ Et ce tôt d’intelligence interne ce trouve au niveau des systèmes d’arabisation
+ actuels.
+ 
+\end_layout
+
+\begin_layout Standard
+Cependant, il ya encore beaucoup de choses qui ont besoin d'attention à
+ cause des insuffisances de leurs traitements, on site par la suite quelques
+ unes : 
+\end_layout
+
+\begin_layout Subsubsection
+Ordre des lettres arabes
+\end_layout
+
+\begin_layout Standard
+Certains anciens linguistes arabes ont travaillé sur l’ordre des lettres
+ des dictionnaires arabes selon les sorties phonétiques des lettres.
+ Et cela sans aucun doute:
+\end_layout
+
+\begin_layout Enumerate
+Ordre Alphabetique : 
+\lang arabic_arabi
+أ.
+ ب.
+ ت.
+ ث.
+ ج.
+ ح.
+ خ.
+ د.
+ ذ.
+ ر.
+ ز.
+ س.
+ ش.
+ ص.
+ ض.
+ ط.
+ ظ.
+ ع.
+ غ.
+ ف.
+ ق.
+ ك.
+ ل.
+ م.
+ ن.
+ هـ.
+ و.
+ ي
+\end_layout
+
+\begin_layout Enumerate
+Ordre Abjad :
+\lang arabic_arabi
+ أ.
+ ب.
+ ج.
+ د.
+ هـ.
+ و.
+ ز.
+ ح.
+ ط.
+ ي.
+ ك.
+ ل.
+ م.
+ ن.
+ س.
+ ع.
+ ف.
+ ص.
+ ق.
+ ر.
+ ش.
+ ت.
+ ث.
+ خ.
+ ذ.
+ ض.
+ ظ.
+ غ.
+\end_layout
+
+\begin_layout Standard
+La plupart des dispositions des lettres arabes mentionnés ci-dessus repose
+ sur l'ordre alphabétique mais il ya plusieurs différences concernant la
+ mise des écarts entre ces lettres, et cela en utilisant des symboles ou
+ des lettres non-arabe.
+ Aussi le nombre des lettres de complémentarité (les formes de Hamza , Ta’
+ merboutta et Alef maqsoura … etc.
+ ) ainsi que leur position dans les dispositions n’est pas fixe.
+\end_layout
+
+\begin_layout Standard
+Un autre point est que la concaténation que considère les ordinateurs comme
+ lettres indépendantes sont aussi mises selon différents ordre dans les
+ différents dispositions.
+\end_layout
+
+\begin_layout Standard
+La mise des lettres selon une séquence particulière influe sur l'ordre des
+ mots incluant ces lettres.
+ L'emplacement de la Ta’ merboutta (avant Ta’ maftouha ou après) affecte
+ l'ordre des mots (
+\lang arabic_arabi
+قائمة، قائمتان
+\lang french
+).
+\end_layout
+
+\begin_layout Standard
+L'ordre de Hamza affecte sur les mots (comme 
+\lang arabic_arabi
+فاني، فأنك، فإنما، فآت، فئته
+\lang french
+).
+ Bien que ces mots contiennent Alef ou Hamza après le Fa’ , mais ils se
+ classent selon la séquence des types de hamza dans des différentes dispositions
+ des lettres.
+ 
+\end_layout
+
+\begin_layout Standard
+Ainsi que dans le cas de la discrétisation, par exemple, Fat-ha viens après
+ Damma dans certaines dispositions, Ce qui signifie que les mots contenant
+ une lettre Maftouh est avant ce même mot contenant une lettre Madmoum ,
+ même si le caractère qui suit le Madmoum se trouve avant celui qui suit
+ la lettre Maftouh dans les deux mots.
+ 
+\end_layout
+
+\begin_layout Standard
+Exemple sur ceci : (
+\lang arabic_arabi
+قَفَلَ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang french
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+vient avant 
+\lang arabic_arabi
+قُتِل
+\lang french
+ car la première Qaf est suivie d’une Fat-ha et une Fa’ , quand à la deuxième
+ Qaf est suivie d’une Damma et une Ta’ , malgré que Ta’ vient avant l Fa’
+ et malgré que l’ordonnancement de ces deux mot semble correct sans vocalisation.
+\end_layout
+
+\begin_layout Standard
+Et c’est la même chose concernant l'intensité (
+\lang arabic_arabi
+الشدة
+\lang french
+) , qui est considérée comme un caractères indépendants, et non pas une
+ répétition du caractère précédent.
+\end_layout
+
+\begin_layout Standard
+Certains des problèmes qui accompagnent ces situations ne sont pas certes
+ mises à jour ou résolus, et n’ont pas de solution linguistique ancienne
+ parce que ils sont dus à l'évolution de la technologie.
+ Et peu être que quelque uns de ces problèmes avais d’anciennes solutions
+ mais le fait de ne pas avoir recours à ces dernières a donné occasion aux
+ différentes interprétations.
+\end_layout
+
+\begin_layout Section
+Un algorithme proposé pour la recherche arabe 
+\end_layout
+
+\begin_layout Standard
+Cet algorithme est proposé par 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Alb09"
+
+\end_inset
+
+ .
+ Il est basé sur la fourniture de trois informations morphologiques aux
+ mots de l'index de moteur de recherche qui sont : la racine du mot, son
+ type et son pattern à l’exception de : noms propres, noms d’animaux, de
+ plante …, les mots étrangers arabisés, les particules tels que «
+\lang arabic_arabi
+ إذا 
+\lang french
+», « 
+\lang arabic_arabi
+لو
+\lang french
+ », les pronoms libres et les nombres.
+ Ces mots représentent environ 35% des mots de textes arabes.
+ Les informations morphologiques n’apparaissent pas dans les textes résultants,
+ mais le moteur de recherche les utilise dans ses opérations de recherches.
+ Les principaux avantages de cet algorithme sont : 
+\end_layout
+
+\begin_layout Paragraph
+Réduire le nombre de résultats : 
+\end_layout
+
+\begin_layout Standard
+l’un des avantages de l'algorithme de recherche par (racine, type, pattern)
+ est la réduction de nombre de résultats de la recherche en excluant les
+ résultats non requis.
+ Car lorsqu’on recherche un mot qui peut prendre deux formes où la présence
+ de l’une est beaucoup plus importante que de l'autre, les résultats de
+ la recherche avec la première forme dominent la seconde, et nous serons
+ en face d’un nombre de résultats tellement grand qu’on ne peut pas accéder
+ aux textes qui contiennent la seconde forme.
+ L’exemple suivant illustre cette situation : Si on cherche le mot «
+\lang arabic_arabi
+ وَفِيّ 
+\lang french
+», les moteurs de recherche basés sur le ciblage des mots clés donnent des
+ millions de résultats qui contient le mot «
+\lang arabic_arabi
+ وَفِيّ 
+\lang french
+» avec ses deux formes (
+\lang arabic_arabi
+و + في
+\lang french
+) qui est la forme la plus courante et 
+\lang arabic_arabi
+وَفِيّ 
+\lang french
+(de la fidélité) qui est la moins courante.
+ En revanche, avec la recherche (racine, type, pattern), on obtenir exclusivemen
+t les textes qui contiennent le mot « 
+\lang arabic_arabi
+وَفِيّ 
+\lang french
+».
+\end_layout
+
+\begin_layout Paragraph
+Eviter la divergence des résultats : 
+\end_layout
+
+\begin_layout Standard
+la recherche par (racine, type, pattern) restreint les résultats de la recherche
+ à la forme voulue du mot.
+ Vu qu’en recherchant un mot portant plusieurs formes, les résultats de
+ recherche comprendront la totalité de ces formes sans aucun ordre, ou séparatio
+n entre eux.
+ Il est impossible d’accéder aux textes qui contiennent le mot avec la forme
+ requise.
+ Exemple : Si on recherche le mot « 
+\lang arabic_arabi
+فَهْم
+\lang french
+ », les moteurs de recherche basés sur le ciblage des mots clés donnent
+ des millions de textes contenant ce mot avec ses différentes formes tels
+ que «
+\lang arabic_arabi
+ فَهْم
+\lang french
+ », «
+\lang arabic_arabi
+ فُهِّمَ 
+\lang french
+», «
+\lang arabic_arabi
+ فَهَمَّ 
+\lang french
+» … Tandis que la recherche par (racine, type, pattern) recherche avec la
+ racine (
+\lang arabic_arabi
+ف هـ م
+\lang french
+), le type (morphème) et le pattern (
+\lang arabic_arabi
+فَعْل
+\lang french
+) et on n’obtient en résultat que les textes qui contiennent le mot (
+\lang arabic_arabi
+فَهْم
+\lang french
+).
+ 
+\end_layout
+
+\begin_layout Paragraph
+Créer de nouveaux types de recherche :
+\end_layout
+
+\begin_layout Standard
+ces types de recherche sont générés en contrôlant l'une des trois composantes
+ : la racine, le type ou le pattern.
+ Voici un exemple : Si on recherche la racine (
+\lang arabic_arabi
+ح س ب
+\lang french
+), et le type (nom d’instrument) sans préciser le pattern, nous allons obtenir
+ les textes contenant les noms d’instrument décliné de cette racine, tels
+ que : «
+\lang arabic_arabi
+ حاسُوب 
+\lang french
+», «
+\lang arabic_arabi
+ مِحْسَب 
+\lang french
+», «
+\lang arabic_arabi
+ حاسِبَة 
+\lang french
+» … De cette façon, nous n’avons plus besoin de réinterroger autant de fois
+ qu’il ya de patterns.
+ En plus, on peut ne pas connaitre tous les patterns du nom d’instrument.
+ On note que la recherche (racine, type, pattern) est complémentaire à la
+ recherche basée sur le ciblage des mots clés.
+ Donc, on peut bénéficier des avantages des deux méthodes pour obtenir des
+ résultats efficaces.
+ L'exemple suivant montre comment profiter de ces deux types de recherche
+ : si on veut rechercher le mot « 
+\lang arabic_arabi
+مَلِك
+\lang french
+ » avec toutes ses formes, on demandera la recherche de la racine (
+\lang arabic_arabi
+م ل ك
+\lang french
+), le type (nom), et le pattern (verbe) en choisissant ‘pas de correspondance
+ de mot’.
+ On obtiendra les textes qui contiennent le mot (
+\lang arabic_arabi
+مَلِك
+\lang french
+), ainsi que les textes qui contiennent les mots 
+\lang arabic_arabi
+(وَمَلِكُهُ)
+\lang french
+, 
+\lang arabic_arabi
+(مَلِكُنا)
+\lang french
+, 
+\lang arabic_arabi
+(للمَلِك)
+\lang french
+ … Par contre, si nous voulons rechercher le mot 
+\lang arabic_arabi
+(مَلِك)
+\lang french
+ de cette façon seulement, on fait la même chose, mais en choisissant cette
+ fois-ci la correspondance de mot, on obtient seulement les textes qui contienne
+nt le mot 
+\lang arabic_arabi
+(مَلِك)
+\lang french
+.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Alb09"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Conclusion
+\end_layout
+
+\begin_layout Standard
+Nous avons explequé dans ce chapitre les propritiés orthographique et morphologi
+que de la langue Arabe en general .Aussi, nous citons quelques Ambiguites
+ que il peut etre apparu dans la manipulation automatique.
+ 
+\end_layout
+
+\begin_layout Standard
+Dans le chapitre suivant nous allons présenté ....
+ pour ....
+\end_layout
+
+\end_body
+\end_document

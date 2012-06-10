@@ -1,0 +1,234 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass extreport
+\begin_preamble
+ \usepackage{styles/esi_memoire}
+\end_preamble
+\use_default_options true
+\begin_modules
+fixltx2e
+hanging
+initials
+\end_modules
+\maintain_unincluded_children false
+\language french
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\author 674747384 "Assem Chelli" assem.ch@gmail.com
+\end_header
+
+\begin_body
+
+\begin_layout Chapter*
+
+\lang english
+Remerciements ()Acknowledgment
+\lang french
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{part}{Remerciements}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\family sans
+\begin_inset VSpace 10mm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+\align center
+
+\family sans
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\family sans
+change nous par me
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\family sans
+Avant tout nous remercions Dieu le tout puissant de nous avoir donné le
+ courage et nous avoir guidé pour pouvoir mener à bien ce modeste travail.
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+\align center
+
+\family sans
+Nos sincères remerciements s’adressent à la communité Arabe de Open Source
+ qui m'a offerte un grand support , plus particulièrement 
+\series bold
+\emph on
+Sabily Team
+\emph default
+ 
+\series default
+et
+\series bold
+\emph on
+ ...
+
+\series default
+\emph default
+ qui nous ont été d'un précieux apport afin de mener à beau et à bien ce
+ travail, et nous espérons être dignes de la confiance qu'ils ont placée
+ en nous.
+ 
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+\align center
+
+\family sans
+Nous tenons à remercier 
+\series bold
+\emph on
+Pr Balla Amar 
+\series default
+\emph default
+et
+\series bold
+\emph on
+ Mr.
+ Taha Zerrouki
+\series default
+\emph default
+ de nous avoir fait l’honneur de nous encadrer et pour sa disponibilité
+ au cours de ces 
+\change_deleted 674747384 1312900320
+neufs
+\change_unchanged
+ mois durant lesquels il nous a orienté avec ses conseils judicieux, et
+ ses critique constructives.
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+\align center
+
+\family sans
+Un grand Merci au corps enseignant ainsi qu’à l’administration de l’École
+ Nationale Supérieure d’Informatiques ESI qui ont veillé sur notre formation
+ et notre suivi durant tout le cursus d’étude.
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+\align center
+
+\family sans
+Nous adressons également nos remerciements à 
+\change_inserted 674747384 1312900373
+
+\series bold
+\emph on
+...
+
+\change_unchanged
+
+\series default
+ 
+\emph default
+qui a accepté de répondre à quelques unes de nos questions.
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+\align center
+
+\family sans
+Nous remercions également les membres du jury d’avoir accepté d’évaluer
+ notre modeste travail.
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+\align center
+
+\family sans
+Enfin nous adressons nos remerciements à tous ceux qui ont contribué par
+ leurs conseils ou leurs encouragements à l’aboutissement de ce travail,
+ à nos deux familles et amis pour leurs aides et soutiens.
+ 
+\end_layout
+
+\end_body
+\end_document

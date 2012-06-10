@@ -1,0 +1,3602 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass IEEEtran
+\begin_preamble
+% for subfigures/subtables
+\ifCLASSOPTIONcompsoc
+\usepackage[caption=false,font=normalsize,labelfont=sf,textfont=sf]{subfig}
+\else
+\usepackage[caption=false,font=footnotesize]{subfig}
+\fi
+
+\date{} % to prevent date form printing
+\usepackage{setspace}
+\usepackage{fontspec}
+%\usepackage[RTLdocument]{bidi}
+\usepackage{polyglossia}
+
+
+\setmainlanguage{english}
+\setotherlanguage[numerals=maghrib]{arabic}
+\newfontfamily\arabicfont[Script=Arabic,Scale=1.5]{Scheherazade}
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding default
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement tbh
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_title "Advanced Search in Quran:  Classification & Proposition of All Possible Features"
+\pdf_author "Assem Chelli"
+\pdf_keywords "Search Features, Quran, Query, Arabic, Information Retrieval, Search engines"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle false
+\pdf_quoted_options "pdfpagelayout=OneColumn, pdfnewwindow=true, pdfstartview=XYZ, plainpages=false"
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 0
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 2
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Advanced Search in Quran: Classification & Proposition of All Possible Features
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+google this book: Advances in Information Retrieval Croft W
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Author
+Assem
+\begin_inset space ~
+\end_inset
+
+Chelli, Amar
+\begin_inset space ~
+\end_inset
+
+Balla, and
+\begin_inset space ~
+\end_inset
+
+Taha
+\begin_inset space ~
+\end_inset
+
+Zerrouki,
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Assem
+\begin_inset space ~
+\end_inset
+
+Chelli, ESI - Algiers,
+\begin_inset CommandInset href
+LatexCommand href
+target "assem.ch@gmail.com"
+type "mailto:"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Amar
+\begin_inset space ~
+\end_inset
+
+Bala, ESI - Algiers, 
+\begin_inset CommandInset href
+LatexCommand href
+target "a_balla@esi.dz"
+type "mailto:"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Taha
+\begin_inset space ~
+\end_inset
+
+Zerrouki, ESI - Algiers, 
+\begin_inset CommandInset href
+LatexCommand href
+target "taha.zerrouki@gmail.com"
+type "mailto:"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Page headings
+workshop pre-conference 2012 LREC
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}{
+\end_layout
+
+\end_inset
+
+Assem Chelli et al.
+ : Advanced Search in Quran
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+left side}{right side
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Abstract
+The Quran is a sacred book to all Muslims which contains a variety of informatio
+n about all aspects of life: Scientific, Social, Historic and Political
+ based knowledge.
+ The Quran is extremly dynamic and consists of a unique structure within
+ a distinctive language.
+ It contains an immense , vast range of information, which can only extracted
+ in small parts.
+ The printed indexes can’t help much since many search processes waste the
+ time and the effort of the searcher.
+ The simple search using exact query doesn’t offer realistic options and
+ still highly inefficient to move toward the thematic search for example.
+ Due to this limitation, the need to find a more practical method to query
+ is evident.
+ Our proposal is to design an information retrieval system that fits to
+ the specific needs of the Quran.
+ But to realize this objective, we must first list and classify all the
+ search features that are possible and helpful, this paper has been written
+ to explain this point.
+ It contains a listing for all search features that we have collected and
+ a classification depending on the nature of feature.
+\end_layout
+
+\begin_layout Keywords
+Search Features, Quran, Query, Arabic, Information Retrieval, Search engines.
+\end_layout
+
+\begin_layout Section
+Introduction 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+add facetated search (thematic search), clustered search, ontology-based
+ search 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+IEEEPARstart{
+\end_layout
+
+\end_inset
+
+ Q
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}{
+\end_layout
+
+\end_inset
+
+uran
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+,in Arabic, means the read or the recitation.
+ Muslim scholars define it by: the words of Allah revealed to His Prophet
+ Muhammad, written in mushaf and transmitted by successive generations (
+\lang arabic_arabi
+التواتر
+\lang english
+)
+\lang french
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Meh73"
+
+\end_inset
+
+
+\lang english
+.
+ The Qur'an is also known by other names such as: Al-Furkān , Al-kitāb ,
+ Al-dhikr , Al-wahy and Al-rōuh .
+ It is the sacred book of Muslims and the first reference to Islamic law.
+ 
+\end_layout
+
+\begin_layout Standard
+Due to the large amount of information held in the Qur'an, it has become
+ extremely difficult for regular search engines to successfully extract
+ key information.
+ For example, When searching for a book a book related to English grammar,
+ you’ll simply Google it, select a PDF and download it .that’s all! Search
+ engines (like Google) are utilized generally on Latin letters and for searching
+ general information of document like content, title, author…etc.
+ However, searching through Qu'ranic text is a much more complex procedure
+ requiring a much more in depth solution as there is a lot of information
+ that needs to be extracted to fulfill Quran scholar's needs.
+ Before the creation of computer, Quran scholars were using printed lexicons
+ made manually.
+ The printed lexicons can’t help much since many search process waste the
+ time and the force of the searcher.
+ Each lexicon is written to reply to a specific query which is generally
+ simple.
+ Nowadays, there are applications that are specific for search needs; most
+ of applications that were developed for Quran had the search feature but
+ in a simply way: sequential search with regular expressions.
+ 
+\end_layout
+
+\begin_layout Standard
+The simple search using exact query doesn’t offer better options and still
+ inefficient to move toward Thematic search by example.
+ Full text search is the new approach of search that replaced the sequential
+ search and which is used in search engines
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Full text search evolution
+\end_layout
+
+\end_inset
+
+.
+ Unfortunately, this approach isn’t applied yet on Quran.
+ The question is why we need this approach? Why search engines? Do applications
+ of seach in Quran really need to be implemented as search engines? The
+ features of search that we’ll mention them in this paper will answer those
+ questions.
+ 
+\end_layout
+
+\begin_layout Standard
+Our proposal is about design a retrieval system that fit the Quran search
+ needs.
+ But to realize this objective, we must first list and classify all the
+ search features that are possible and helpful.
+ We wrote this paper to explain this point.
+ The paper contains a listing for all search features that we have collected
+ and a classification depending on the nature of feature and the way how
+ can be implemented.
+ 
+\end_layout
+
+\begin_layout Standard
+We’ll go through the problematic for a start.
+ Secondly, we’ll set out an initial classification and list all the search
+ features that we think that they are possible.
+ 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Furthermore, we’ll introduce the API of the project Alfanous - Quranic Search
+ Engine API - which demonstrates well some implemented search features.
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Section
+Problematic
+\end_layout
+
+\begin_layout Standard
+To clarify the vision about the problematic of this paper, we are describing
+ the challenges that face the search in Quran: 
+\end_layout
+
+\begin_layout Itemize
+First, as a general search need;
+\end_layout
+
+\begin_layout Itemize
+Second, as an Arabic search challenge; 
+\end_layout
+
+\begin_layout Itemize
+Third, Quran as a special source of information.
+ 
+\end_layout
+
+\begin_layout Standard
+We start explaining the first point, the search in Quran is by theory has
+ the same challenges of search in any other documents.
+ The search in documents has passed by different phases in its evolution
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+ref: search evolution, exact word, regular expression, sequencial search,
+ full text search, semantic aproche 
+\end_layout
+
+\end_inset
+
+.
+ At the beginning, the search was sequential based an exact keyword before
+ the regular expressions were introduced.
+ Full text search was invented to avoid the sequential search limitations
+ on huge documents.
+ The full text search introduces some new mechanisms for text analysis that
+ include tokenization, normalization, and stemming...etc.
+ Gathering Statistics make now a part of search process, it helps to improve
+ the order of results and the suggestions.
+ After the raising of the web semantic, the search is heading to a semantic
+ approach where the to improve search accuracy by understanding searcher
+ intent and the contextual meaning of terms as they appear in the searchable
+ dataspace to generate more relevant results
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+ref: semantic search, google the phrase 
+\end_layout
+
+\end_inset
+
+.
+ To get more user experience, the search engines try to improve the behavior
+ of showing the results by sorting it based on their relevance in the documents
+ , more sorting criteria, Highlighting the keywords, Pagination, Filtering
+ and Expanding
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+ref: Search engines highligh, pagunation
+\end_layout
+
+\end_inset
+
+.
+ Moreover, improve the query input by introducing different input methods
+ (ex: Vocal input) and suggesting related keywords.
+ Till now, most of these features are not implemented to use on Quran.
+ And many of them need to be customized to fit the Arabic properties that
+ what explained in the next point.
+ 
+\end_layout
+
+\begin_layout Standard
+Secondly, Quran’s language is considered as the classical Arabic
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Shah07"
+
+\end_inset
+
+.
+ Arabic is a specific language because its morphology and orthography
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+ref: google it arabic specific morphp and ortho
+\end_layout
+
+\end_inset
+
+, and this must be taken into consideration in text analyzing phases.
+ For instance, letters shaping (specially the Hamza 
+\lang arabic_arabi
+-ء-
+\lang english
+), the vocalization, the different levels of stemming and types of derivations...et
+c.
+ That must be taken into consideration in search features by example: the
+ regular expressions are badly misrepresenting the Arabic letters since
+ the vocalization diacritics are not distinct from letters.
+ The absence of vocalization issues some ambiguities 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Alb09"
+
+\end_inset
+
+ in understanding the words:
+\end_layout
+
+\begin_layout Itemize
+
+\lang arabic_arabi
+الملك؟ المَلَك, المَلِك، المُلْك 
+\end_layout
+
+\begin_layout Itemize
+
+\lang arabic_arabi
+وعد؟ وَعَدَ ، وَ+عَدَّ 
+\end_layout
+
+\begin_layout Itemize
+
+\lang arabic_arabi
+وله؟ وَلَه، وَلِّ+ه ، وَ+لَ+هُ 
+\end_layout
+
+\begin_layout Standard
+Trying to resolve these problems as a generic Arabic problem is really hard
+ since it hasn’t linguistic resources to make strict lexical analyzers
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+ref:Arabic google the phrase
+\end_layout
+
+\end_inset
+
+.
+ By the contrary, Quran has a limited count of words and that means that
+ it’s possible to write manually morphological indexes and use it to replace
+ lexical analyzers.
+ Finally, we explain in this point what the specific challenges faced in
+ search in order of the particular characteristic of Quran.
+ El-Mus-haf , the book of Quran, is written on the Uthmani script .
+ This last is full of recitation marks and spells some words in a different
+ way than the standard way.
+ By example, the word “
+\lang arabic_arabi
+بسطة
+\lang english
+” is spelled “
+\lang arabic_arabi
+بصطة
+\lang english
+” in Uthmani.
+ The Uthmani script requires considering its specifications in Text analyzing
+ phases: Normalization, Stemming.
+ Quran is structured in many analytic levels
+\lang french
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "BnJ"
+
+\end_inset
+
+
+\lang english
+:
+\end_layout
+
+\begin_layout Itemize
+Main structure: Sura, Aya, word, letter.
+\end_layout
+
+\begin_layout Itemize
+Special emplacements: Sura's start, Sura's end.
+ Aya's end.
+ Sajdah, Waqf , Facilah;
+\end_layout
+
+\begin_layout Itemize
+Mushaf structure: page, thumn, rubu', nisf, hizb, juz';
+\end_layout
+
+\begin_layout Itemize
+Quran writing: sawāmit, harakāt, hamza, diacritics, signes of distinction
+ between similar letters, phonetic signs;
+\end_layout
+
+\begin_layout Itemize
+Incorporeal structure: word, keyword, expression, objectif unit
+\end_layout
+
+\begin_layout Itemize
+Revelation: order, place, calender, cause, context...etc
+\lang french
+.
+
+\lang english
+ 
+\end_layout
+
+\begin_layout Standard
+The users may need to search, filter results or group them based on one
+ of those structures.
+ There are many sciences related to Quran, named Quranic Sciences: Tafsir,
+ Translation, Recitation, Similitude and Abrogation…etc.
+ 
+\end_layout
+
+\begin_layout Standard
+Next, we’ll propose an initial classification for the search features that
+ we have inspired from the problematic points.
+ 
+\end_layout
+
+\begin_layout Section
+Classification
+\end_layout
+
+\begin_layout Standard
+To make the listing of search features easier, we classified them in many
+ classes based on their objectives.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Advanced Query
+\series default
+: This class contains the modifications on simple Query in order to give
+ the user the ability of formulating his query in a précised way.
+ By example: Phrase search, Logical relations, Jokers.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Output Improvement
+\series default
+: Those are to improve the results before showing it to users.
+ The results must pass by many phases: Scoring, Sorting, Pagination, Highlightin
+g...etc.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Suggestion Systems
+\series default
+: This class contains all options that aims to offer a suggestion that help
+ users to correct, extend the results by improving the queries.
+ By example, suggest correction of misspelled keywords or suggest relative-words.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Linguistic Aspects
+\series default
+: This is about all features that are related to linguistic Aspects like
+ stemming, Selection&filtring stop words, normalization.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Quranic Options
+\series default
+: It’s related to the properties of the book and the information included
+ inside.
+ As we mentioned in the problematic, the book of Quran (al-mushaf) is written
+ in uthmani script full of diacritization symbols and structured in many
+ ways.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Semantic Queries
+\series default
+: Semantic approach is about to allow the users to pose their queries in
+ natural language to get more relevant results implicitly.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Statistical System
+\series default
+: This class covers all the statistical needs of users.
+ By example, searching the most frequented word.
+\end_layout
+
+\begin_layout Standard
+This is an initial classification; we have to improve it for a well exploit
+ of all possible search features.
+ 
+\end_layout
+
+\begin_layout Section
+Proposals
+\end_layout
+
+\begin_layout Standard
+In this point, we enlist all possible search features based on the classificatio
+n we mentioned before.
+ These entire features express a search need: general, related to Arabic
+ or related to Quran.
+ We have collected the basic ideas from: 
+\end_layout
+
+\begin_layout Itemize
+Classic & Semantic search engines: Google, 
+\end_layout
+
+\begin_layout Itemize
+Arabic search engines: Taya it, 
+\end_layout
+
+\begin_layout Itemize
+Quranic search tools: Zekr application, al-monaqeb alqurany, 
+\end_layout
+
+\begin_layout Itemize
+Indexing/Search programming libraries: Whoosh, Lucene 
+\end_layout
+
+\begin_layout Itemize
+Quranic Paper lexicons: The indexed mu'jam of words of the Holy Quran(
+\series bold
+\lang arabic_arabi
+ المعجم المفهرس لألفاظ القرآن الكريم
+\lang english
+) by 
+\series default
+\noun on
+Mohammed Fouad Abd El-bāki
+\end_layout
+
+\begin_layout Standard
+We have manipulated those ideas to fit the context of Arabic and Quran.
+ There are many features that are totally new , we propose them to fulfill
+ a search need or resolve a specific problem.
+ In addition to simple search, these are our proposals:
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Advanced Query
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\paragraph_spacing onehalf
+\align block
+
+\series bold
+Fielded search
+\series default
+: uses fieldname in the query to search in a specific field.
+ Helpful to search more information like surah names.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\align block
+
+\series bold
+\lang arabic_arabi
+سورة:
+\series default
+الفاتحة
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+\color black
+Logical relations
+\series default
+: to force the existence or absence of a keyword.
+ The most known relations are: AND for conjunction, OR for disjunction and
+ NOT for exception.
+ The relations can be grouped using parenthesis.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang arabic_arabi
+(الصلاة - الزكاة ) + سورة:البقرة 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Phrase search
+\series default
+: is a type of search that allows users to search for documents containing
+ an exact sentence or phrase.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang arabic_arabi
+”الحمد لله“ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Interval search: 
+\series default
+used to search an interval of values in the numerical field.
+ Helpful in fields like: Ayah ID, Page, Hizb, statistic fields.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang arabic_arabi
+رقم_الآية:[1 إلى 5]
+\lang english
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Regular expressions (Jokers): 
+\series default
+used to search a set of words that share some letters.
+ This feature can be used to search a part of a word.
+ In latin , there is two Jokers used largely : ? replaces one letter, *
+ replaces an undefined number of letters.
+ These jokers are inefficient in Arabic because the existence of vocalization
+ symbols which they are not letters, and Hamza(
+\lang arabic_arabi
+ء
+\lang english
+) letter that has different forms (different Unicode emplacements) 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+ref: Hamza different emplacement
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang arabic_arabi
+ب؟طة = بسطة، بصطة 
+\end_layout
+
+\begin_layout Itemize
+
+\lang arabic_arabi
+*نبي* = نبي ، النبيين ، الأنبياء ...
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Boosting:
+\series default
+ used to boost the relevance factor of any keywords.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang arabic_arabi
+سميع^2 بصير
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Combining features: 
+\series default
+search using a combination of the previous elementary features.
+\end_layout
+
+\begin_layout Itemize
+
+\lang arabic_arabi
+”*حمد لله“^2
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Output Improvments
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Pagination: 
+\series default
+dividing the results on pages.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+10, 20,50… results per page 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Sorting
+\series default
+: sort the results by various criteria such as:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Score 
+\end_layout
+
+\begin_layout Itemize
+Mushaf order 
+\end_layout
+
+\begin_layout Itemize
+Revelation order 
+\end_layout
+
+\begin_layout Itemize
+Numerical order of numeric fields 
+\end_layout
+
+\begin_layout Itemize
+Alphabitical or Abjad order of alphabetic fields 
+\end_layout
+
+\begin_layout Itemize
+A combination of the previous orders 
+\end_layout
+
+\begin_layout Standard
+for the alphabetical order ,we must consider the real order of:
+\end_layout
+
+\begin_layout Itemize
+Hamza forms : 
+\lang arabic_arabi
+ؤ ئ ء أ 
+\end_layout
+
+\begin_layout Itemize
+Ta’ forms: 
+\lang arabic_arabi
+ة ت 
+\end_layout
+
+\begin_layout Itemize
+Alef forms : 
+\lang arabic_arabi
+ى ا 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Highlight:
+\series default
+ used for distinction of searched keywords in Ayah.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang arabic_arabi
+الحمد 
+\lang english
+<style>
+\lang arabic_arabi
+لله 
+\lang english
+</style>
+\lang arabic_arabi
+رب العالمين
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Real time output
+\series default
+: used to avoid the time of user waiting ,and show the results directly
+ when retrieved.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Results grouping:
+\series default
+ the criteria can be used for grouping are: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+by similar Ayahs 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+[whats similar ayahs]
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+by Surahs
+\end_layout
+
+\begin_layout Itemize
+by subjects
+\end_layout
+
+\begin_layout Itemize
+by taffsir dependency 
+\end_layout
+
+\begin_layout Itemize
+by revelation events
+\end_layout
+
+\begin_layout Itemize
+by Quranic examples 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Uthmani script with full diacritical marks:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+[
+\lang arabic_arabi
+ ۞ لَّقَدْ كَانَ فِى يُوسُفَ وَإِخْوَتِهِۦٓ ءَايَٰتٌ لِّلسَّآئِلِين
+\lang english
+َ] 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+
+\series bold
+font me_Quran
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Suggestion Systems
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Vocalized spell correction
+\series default
+: offers alternatives for keywords when misspelled or appeared with a different
+ form in Quran.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang arabic_arabi
+أبرَاهَام: إبْرَاهِيم 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Semantically related keywords (Ontology-Based)
+\series default
+ : used as hints, generally based on domain ontologies
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang arabic_arabi
+يعقوب: يوسف، الأسباط، نبي...
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Different vocalization
+\series default
+: suggest all the possible vocalizations sorted by the frequencies.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang arabic_arabi
+الملك : المَلِك ، المُلْك، المَلَك ...
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Collocated words
+\series default
+: provides a completion based on the collocation statistics.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang arabic_arabi
+سميع : سميع عليم، سميع بصير 
+\end_layout
+
+\begin_layout Itemize
+
+\lang arabic_arabi
+الحمد: الحمد لله 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Different significations: 
+\series default
+used to limit a keyword on only one of their meanings.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang arabic_arabi
+رب: معنى 1 (إله)، معنى 2 (سيد)
+\end_layout
+
+\begin_layout Standard
+\SpecialChar \textcompwordmark{}
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Linguistic Aspects
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Partial vocalization search:
+\series default
+ gives user the opportunity to specify some diacritics and not all.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+_
+\lang arabic_arabi
+مـَلـك
+\lang english
+ to find 
+\lang arabic_arabi
+مـَلـِك
+\lang english
+, 
+\lang arabic_arabi
+مـَلـَك
+\lang english
+ … and ignore 
+\lang arabic_arabi
+مـُلـْك 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Multi-level derivation
+\series default
+: the Arabic words derivations can be devided to four levels : exact word
+ 
+\lang arabic_arabi
+فأسقيناكموه
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+, Word affixes removed (Lemma) 
+\lang arabic_arabi
+أسقينا
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+, Stem: 
+\lang arabic_arabi
+أسقى
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+, Root : 
+\lang arabic_arabi
+سقي
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+(word:
+\lang arabic_arabi
+سقي
+\lang english
+ , level: root) to find 
+\lang arabic_arabi
+يَسْقُونَ, نَسْقِي, وَيَسْقِينِ , يُسْقَوْنَ , وَيُسْقَوْنَ, وَسُقْيَاهَا
+ , وَأَسْقَيْنَاكُمْ , وَيُسْقَى , لَأَسْقَيْنَاهُمْ , وَنُسْقِيَهُ , فَأَسْقَيْ
+نَاكُمُوهُ , فَسَقَى , السِّقَايَةَ, نُسْقِيكُمْ, فَيَسْقِي, سِقَايَةَ,
+ تَسْقِي, سَقَيْتَ, يُسْقَى, اسْتَسْقَى, اسْتَسْقَاهُ, وَسُقُوا
+\lang english
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+(Word: 
+\lang arabic_arabi
+أسقينا
+\lang english
+, level: lemma) to find 
+\lang arabic_arabi
+وَأَسْقَيْنَاكُمْ , لَأَسْقَيْنَاهُمْ, فَأَسْقَيْنَاكُمُوهُ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Specific-derivations
+\series default
+: this is specification of the pervious feature .Since Arabic is fully flexional
+ , it has lot of derivation operations .
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Conjugation in Past tense of 
+\lang arabic_arabi
+قال
+\lang english
+ to find 
+\lang arabic_arabi
+قالت, قال, قالوا, قلن
+\lang english
+ ...
+ 
+\end_layout
+
+\begin_layout Itemize
+Conjugation in Imperative tense de 
+\lang arabic_arabi
+قال
+\lang english
+ to find 
+\lang arabic_arabi
+قولوا , قل
+\lang english
+ ...
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Word properties embedded query:
+\series default
+ offers a smart way to handle words families by filtering using a set of
+ properties like: root , lemma, type, part-of-speech, verb mood, verb form,
+ gender, person, number, voice…etc.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+{
+\lang arabic_arabi
+جذر:ملك، نوع:اسم، عدد: مفرد 
+\lang english
+} 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Numerical values substitution:
+\series default
+ this helps to retrieve numbers, even if appeared as words.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+309 replaces 
+\lang arabic_arabi
+ثلاثمائة وتسعة
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Consideration/Ignoring spell faults:
+\series default
+ especially for the letters that usually misspelled like Hamza(
+\lang arabic_arabi
+ء
+\lang english
+); The Hamza letter is hard to write its shape since its writing is based
+ on the vocalization of both of it and its antecedent.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang arabic_arabi
+مءصدة
+\lang english
+ replaces 
+\lang arabic_arabi
+مؤصدة
+\end_layout
+
+\begin_layout Itemize
+
+\lang arabic_arabi
+ضحي
+\lang english
+ replaces 
+\lang arabic_arabi
+ضحى
+\end_layout
+
+\begin_layout Itemize
+
+\lang arabic_arabi
+جنه
+\lang english
+ replaces 
+\lang arabic_arabi
+جنة
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Uthmani writing way:
+\series default
+ offers the user the ability of writing words not as it appeared in Uthmani
+ Mushaf .
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang arabic_arabi
+بصطة
+\lang english
+ replaces 
+\lang arabic_arabi
+بسطة
+\lang english
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\lang arabic_arabi
+نعمت
+\lang english
+ replaces 
+\lang arabic_arabi
+نعمة
+\lang english
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Resolving pronoun references: 
+\series default
+Pronouns usually refer to other words, called their antecedents because
+ they (should) come before the pronoun.
+ This feature gives the oppurtunity of search using the antecedents.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang arabic_arabi
+لا اله إلا هو, هو ⇤ الله
+\end_layout
+
+\begin_layout Standard
+\SpecialChar \textcompwordmark{}
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Quranic Options
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Recitations marks retrieving:
+\series default
+ helpful for Tajweed scholars.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang arabic_arabi
+سجدة : نعم 
+\end_layout
+
+\begin_layout Itemize
+
+\lang arabic_arabi
+نوع _سكتة:واجبة 
+\end_layout
+
+\begin_layout Itemize
+
+\lang arabic_arabi
+قلقلة:نعم 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Structural option
+\series default
+: since Quran is devided to parts () and the part to Hizbs and Hizb to Halfs
+ ...
+ till we get Ayas.There is also other structures of Quran such as to pages
+ ...etc.
+\end_layout
+
+\begin_layout Itemize
+
+\lang arabic_arabi
+صفحة: 1 
+\end_layout
+
+\begin_layout Itemize
+
+\lang arabic_arabi
+حزب :
+\numeric on
+60
+\numeric off
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Translation embedded search: 
+\series default
+helps users to search using words translations to other langugaes instead
+ of the native arabic text.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+{ text: mercy , lang: english , author: shekir }
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Similitudes search (
+\lang arabic_arabi
+المتشابهات
+\lang english
+)
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+ [def of mutashabih lafdi]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+_ 
+\lang arabic_arabi
+متشابهة
+\lang english
+ {55,13} 
+\begin_inset Newline newline
+\end_inset
+
+ [ 
+\lang arabic_arabi
+فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ
+\lang english
+] , 31 exact similitudes 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Examples search (
+\lang arabic_arabi
+الأمثال
+\lang english
+)
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+def of mathal qurany]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang arabic_arabi
+مثل في سورة:البقرة 
+\begin_inset Newline newline
+\end_inset
+
+ [ مَثَلُهُمْ كَمَثَلِ الَّذِي اسْتَوْقَدَ نَارًا فَلَمَّا أَضَاءَتْ مَا
+ حَوْلَهُ ذَهَبَ اللَّـهُ بِنُورِهِمْ وَتَرَكَهُمْ فِي ظُلُمَاتٍ لَا يُبْصِرُونَ
+] 
+\end_layout
+
+\begin_layout Standard
+\SpecialChar \textcompwordmark{}
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Semantic Queries
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Semantically related words
+\series default
+: there are several different kinds of semantic relations: Synonymy, Antonymy,
+ Hypernym, Hyponymy, Meronymy, Holonymy, Troponymy
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+ [ref]
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Syn(
+\lang arabic_arabi
+جنة
+\lang english
+ ) to search for 
+\lang arabic_arabi
+جنة, نعيم, فردوس
+\lang english
+ … 
+\end_layout
+
+\begin_layout Itemize
+Ant( 
+\lang arabic_arabi
+جنة
+\lang english
+) to search for 
+\lang arabic_arabi
+جحيم, سعير , جهنم, سقر
+\lang english
+ … 
+\end_layout
+
+\begin_layout Itemize
+Hypo( 
+\lang arabic_arabi
+جنة
+\lang english
+) to search for 
+\lang arabic_arabi
+عدن، فردوس
+\lang english
+ …
+\end_layout
+
+\begin_layout Itemize
+...
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Natural questions:
+\series default
+ this means to offer the option of forming the search query as a form of
+ an Arabic natural question .
+ the most used Arabic question words are: 
+\lang arabic_arabi
+هل؟ من؟ ما؟ أين؟ متى؟ لم؟ كم؟ أيّ؟ لمن؟ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang arabic_arabi
+من هم الأنبياء؟
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Newline newline
+\end_inset
+
+
+\lang english
+(Who are the prophets?)
+\lang arabic_arabi
+
+\begin_inset Newline newline
+\end_inset
+
+[ إِنَّا أَوْحَيْنَا إِلَيْكَ كَمَا أَوْحَيْنَا إِلَى نُوحٍ وَالنَّبِيِّينَ
+ مِنْ بَعْدِهِ وَأَوْحَيْنَا إِلَى إِبْرَاهِيمَ وَإِسْمَاعِيلَ وَإِسْحَاقَ
+ وَيَعْقُوبَ وَالْأَسْبَاطِ وَعِيسَى وَأَيُّوبَ وَيُونُسَ وَهَارُونَ وَسُلَيْمَا
+نَ وَآتَيْنَا دَاوُودَ زَبُورًا] - النساء 163 
+\end_layout
+
+\begin_layout Itemize
+
+\lang arabic_arabi
+ما هي الحطمة؟
+\begin_inset Newline newline
+\end_inset
+
+
+\lang english
+(What is Al-hottamat?)
+\lang arabic_arabi
+
+\begin_inset Newline newline
+\end_inset
+
+؟ [ نَارُ اللَّـهِ الْمُوقَدَةُ] - الهمزة 6 
+\end_layout
+
+\begin_layout Itemize
+
+\lang arabic_arabi
+أين غلبت/هزمت الروم؟
+\begin_inset Newline newline
+\end_inset
+
+
+\lang english
+(Where was Rome defeated?)
+\lang arabic_arabi
+
+\begin_inset Newline newline
+\end_inset
+
+ [فِي أَدْنَى الْأَرْضِ وَهُمْ مِنْ بَعْدِ غَلَبِهِمْ سَيَغْلِبُونَ] - الروم
+ 3 
+\end_layout
+
+\begin_layout Itemize
+
+\lang arabic_arabi
+كم مكث أصحاب الكهف؟
+\begin_inset Newline newline
+\end_inset
+
+
+\lang english
+(How much of time did People of Cave stay?)
+\lang arabic_arabi
+
+\begin_inset Newline newline
+\end_inset
+
+ [ وَلَبِثُوا فِي كَهْفِهِمْ ثَلَاثَ مِائَةٍ سِنِينَ وَازْدَادُوا تِسْعًا]
+ - الكهف 25 
+\end_layout
+
+\begin_layout Itemize
+
+\lang arabic_arabi
+متى يوم القيامة؟
+\begin_inset Newline newline
+\end_inset
+
+
+\lang english
+(When is the Day of Resurrection?)
+\lang arabic_arabi
+
+\begin_inset Newline newline
+\end_inset
+
+ [يَسْأَلُكَ النَّاسُ عَنِ السَّاعَةِ قُلْ إِنَّمَا عِلْمُهَا عِنْدَ اللَّـهِ
+ وَمَا يُدْرِيكَ لَعَلَّ السَّاعَةَ تَكُونُ قَرِيبًا] - الكهف 25 
+\end_layout
+
+\begin_layout Itemize
+
+\lang arabic_arabi
+كيف يتشكّل الجنين؟
+\begin_inset Newline newline
+\end_inset
+
+
+\lang english
+(How has the embryo be formed?)
+\begin_inset Newline newline
+\end_inset
+
+
+\lang arabic_arabi
+ [ثُمَّ خَلَقْنَا النُّطْفَةَ عَلَقَةً فَخَلَقْنَا الْعَلَقَةَ مُضْغَةً
+ فَخَلَقْنَا الْمُضْغَةَ عِظَامًا فَكَسَوْنَا الْعِظَامَ لَحْمًا ثُمَّ أَنْشَأْن
+َاهُ خَلْقًا آخَرَ فَتَبَارَكَ اللَّـهُ أَحْسَنُ الْخَالِقِينَ] - المؤمنون
+ 14 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Automatic diacritization : 
+\series default
+the absence of diacritics lead to the ambiguities that we’ve mentioned them
+ in Problematic.
+ This feature helps to pass over these ambiguities and try to resolve them
+ before executing the search process.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang arabic_arabi
+رسول من الله == رَسُول مِنَ اللهِ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Proper nouns search
+\series default
+: lot of  proper nouns are mentions clearly in Quran but some of them are
+ just referred to implecitly .
+ This feature is to search for proper nouns however mentioned : explicitly
+ or implicitly.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang arabic_arabi
+بنيامين؟
+\begin_inset Newline newline
+\end_inset
+
+ [ إِذْ قَالُوا لَيُوسُفُ 
+\series bold
+وَأَخُوه
+\series default
+ُ أَحَبُّ إِلَى أَبِينَا مِنَّا وَنَحْنُ عُصْبَةٌ إِنَّ أَبَانَا لَفِي ضَلَالٍ
+ مُبِينٍ] - المؤمنون 14 
+\end_layout
+
+\begin_layout Itemize
+
+\lang arabic_arabi
+أبو بكر/ الصديق؟ 
+\begin_inset Newline newline
+\end_inset
+
+[ثَانِيَ اثْنَيْنِ إِذْ هُمَا فِي الْغَارِ إِذْ يَقُولُ لِصَاحِبِهِ لَا
+ تَحْزَنْ إِنَّ اللَّـهَ مَعَنَا ] - التوبة 40 
+\end_layout
+
+\begin_layout Standard
+\SpecialChar \textcompwordmark{}
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Statistical System
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Unvocalized word frequency: 
+\series default
+this feature is about gathering the frequency of each word per ayahs ,per
+ surahs , per hizbs.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+How many words of 
+\begin_inset Quotes eld
+\end_inset
+
+
+\lang arabic_arabi
+الله
+\lang english
+
+\begin_inset Quotes erd
+\end_inset
+
+ in Sura 
+\lang arabic_arabi
+"المجادلة"
+\lang english
+?
+\end_layout
+
+\begin_layout Itemize
+What the first ten words which are the most frequently cited words in the
+ whole Quran? 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Vocalized word frequency: 
+\series default
+the same as the presvios feature but with consideration of diacritics.that
+ will make the difference for instance between 
+\lang arabic_arabi
+مِنْ 
+\lang english
+, 
+\lang arabic_arabi
+مَنْ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+and 
+\lang arabic_arabi
+مَنًََّ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Root/Stem/Lemma frequency: 
+\series default
+the same as the previous feature but use Root, Stem or Lemma as unit of
+ statistics instead of the vocalized word.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+How many the word of 
+\begin_inset Quotes eld
+\end_inset
+
+
+\lang arabic_arabi
+بحر
+\lang english
+
+\begin_inset Quotes erd
+\end_inset
+
+ and its derivations are mentioned in the whole Quran? the word 
+\begin_inset Quotes eld
+\end_inset
+
+
+\lang arabic_arabi
+بحار
+\lang english
+
+\begin_inset Quotes erd
+\end_inset
+
+ will be considered also.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Another Quranic units frequency: 
+\series default
+the statistics could be gathered based on many units otherwise the words
+ like letters,ayas, Recitation marks...etc.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+How many letters in the Sura 
+\begin_inset Quotes eld
+\end_inset
+
+
+\lang arabic_arabi
+طه
+\lang english
+
+\begin_inset Quotes erd
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Itemize
+What's the longest Ayah?
+\end_layout
+
+\begin_layout Itemize
+How many Marks of Sajda in the whole Quran?
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Listing Collocated words: 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Section
+Alfanous API as a prototype
+\end_layout
+
+\begin_layout Plain Layout
+To validate our vision about search features on Quran, we work in implementing
+ them through the API of Alfanous.
+ Alfanous is an open source project that aims to build an indexing/search
+ API in Quran and use it to develop different interfaces: Web, Desktop...etc.
+ Alfanous API is pure python, prototyped from the library whoosh which is
+ a fast, featureful full-text indexing and searching library implemented
+ in pure Python.
+ Programmers can use it to easily add search functionality to their applications
+ and websites.
+ Every part of how Whoosh works can be extended or replaced to meet specific
+ needs exactly.
+ The API helps the researchers and developers that working on Quran applications
+ and want to take the benefits of search.
+ Alfanous API is: 
+\end_layout
+
+\begin_layout Itemize
+Easy to use, by virtue of a JSON output system that interacts with the API.
+ This last can be used as a wrapping to other programming languages.
+\end_layout
+
+\begin_layout Itemize
+Easy to customize(prototyping), because the simplicity and clarity of code.
+\end_layout
+
+\begin_layout Itemize
+Free Open Source, developed under the license AGPL (Affero General Public
+ License).
+\end_layout
+
+\begin_layout Plain Layout
+We’ll show here some snippets of code for some available functions in Alfanous
+ API :
+\end_layout
+
+\begin_layout Enumerate
+Import the Quranic Search Engine and instantiate it.
+\begin_inset Newline newline
+\end_inset
+
+
+\family typewriter
+\size scriptsize
+\color red
+>>>
+\color inherit
+ 
+\color blue
+from
+\color inherit
+ alfanous.main 
+\color blue
+import
+\color inherit
+ QuranicSearchEngine\SpecialChar \textcompwordmark{}
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\color red
+>>>
+\color inherit
+ QSE = QuranicSearchEngine(
+\shape italic
+\color magenta
+"./indexes/main/"
+\shape default
+\color inherit
+)
+\begin_inset Newline newline
+\end_inset
+
+<__main__.QuranicSearchEngine instance at 
+\color red
+0xb77d168c
+\color inherit
+>
+\begin_inset Newline newline
+\end_inset
+
+
+\color red
+>>>
+\color inherit
+ QSE.OK
+\begin_inset Newline newline
+\end_inset
+
+
+\color blue
+True 
+\begin_inset Newline newline
+\end_inset
+
+\SpecialChar \textcompwordmark{}
+
+\end_layout
+
+\begin_layout Enumerate
+Make a search operation and browse the ayahs’ text.
+\begin_inset Newline newline
+\end_inset
+
+
+\family typewriter
+\size scriptsize
+\color red
+>>>
+\color inherit
+ results,_ =QSE.search_all(u
+\family default
+\shape italic
+"
+\lang arabic_arabi
+الحمد
+\lang english
+"
+\family typewriter
+\shape default
+) 
+\begin_inset Newline newline
+\end_inset
+
+
+\color red
+>>>
+\color inherit
+ 
+\color blue
+for
+\color inherit
+ r 
+\color blue
+in
+\color inherit
+ results: 
+\begin_inset Newline newline
+\end_inset
+
+
+\color red
+...
+
+\color inherit
+ 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\color blue
+print
+\color inherit
+ r[
+\shape italic
+\color magenta
+"aya"
+\shape default
+\color inherit
+]
+\begin_inset Newline newline
+\end_inset
+
+[
+\family default
+\lang arabic_arabi
+الحمد لله رب العالمين
+\family typewriter
+\lang english
+]
+\begin_inset Newline newline
+\end_inset
+
+
+\family default
+\size default
+\SpecialChar \textcompwordmark{}
+
+\end_layout
+
+\begin_layout Enumerate
+Show more information for each result: surah name, ayah number, and ayah
+ vocalized text.
+\begin_inset Newline newline
+\end_inset
+
+
+\family typewriter
+\size scriptsize
+\color red
+>>>
+\color inherit
+ 
+\color blue
+for
+\color inherit
+ r 
+\color blue
+in
+\color inherit
+ results:
+\begin_inset Newline newline
+\end_inset
+
+
+\color red
+...
+
+\color inherit
+ 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\color blue
+print
+\color inherit
+ r[
+\shape italic
+\color magenta
+"sura_name"
+\shape default
+\color inherit
+],
+\shape italic
+\color magenta
+":"
+\shape default
+\color inherit
+,r[
+\shape italic
+\color magenta
+"aya_id"
+\shape default
+\color inherit
+],
+\shape italic
+\color magenta
+":"
+\shape default
+\color inherit
+,r[
+\shape italic
+\color magenta
+"aya_"
+\shape default
+\color inherit
+] 
+\begin_inset Newline newline
+\end_inset
+
+
+\family default
+\lang arabic_arabi
+الفاتحة
+\family typewriter
+\lang english
+:
+\color red
+2
+\color inherit
+:
+\family default
+\lang arabic_arabi
+الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ
+\end_layout
+
+\begin_layout Enumerate
+Show the terms generated from a query.
+\begin_inset Newline newline
+\end_inset
+
+
+\family typewriter
+\size scriptsize
+\color red
+>>>
+\color inherit
+ _, terms = QSE.search_all(u
+\shape italic
+\color magenta
+"
+\family default
+\shape default
+\color inherit
+\lang arabic_arabi
+الحمد
+\family typewriter
+\shape italic
+\color magenta
+\lang english
+"
+\shape default
+\color inherit
+) 
+\begin_inset Newline newline
+\end_inset
+
+
+\color red
+>>>
+\color inherit
+ 
+\color blue
+print
+\color inherit
+ terms
+\begin_inset Newline newline
+\end_inset
+
+(
+\shape italic
+\color magenta
+"aya"
+\shape default
+\color inherit
+,u
+\shape italic
+\color magenta
+"
+\family default
+\shape default
+\color inherit
+\lang arabic_arabi
+الحمد
+\family typewriter
+\shape italic
+\color magenta
+\lang english
+"
+\shape default
+\color inherit
+)] 
+\begin_inset Newline newline
+\end_inset
+
+\SpecialChar \textcompwordmark{}
+
+\end_layout
+
+\begin_layout Enumerate
+Use the terms to highlight the ayah text.
+\begin_inset Newline newline
+\end_inset
+
+
+\family typewriter
+\size scriptsize
+\color red
+>>>
+\color inherit
+ Qhighlight(u
+\shape italic
+\color magenta
+"
+\family default
+\shape default
+\color inherit
+\lang arabic_arabi
+الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ
+\family typewriter
+\shape italic
+\color magenta
+\lang english
+"
+\shape default
+\color inherit
+, [u
+\shape italic
+\color magenta
+"
+\family default
+\shape default
+\color inherit
+\lang arabic_arabi
+الحمد
+\family typewriter
+\shape italic
+\color magenta
+\lang english
+"
+\shape default
+\color inherit
+, u
+\shape italic
+\color magenta
+"
+\family default
+\shape default
+\color inherit
+\lang arabic_arabi
+لله
+\family typewriter
+\shape italic
+\color magenta
+\lang english
+"
+\shape default
+\color inherit
+])
+\begin_inset Newline newline
+\end_inset
+
+<span style="color:red;font-size:100.0%"><b>
+\family default
+\lang arabic_arabi
+الْحَمْد
+\family typewriter
+ُ
+\lang english
+</b></span>
+\begin_inset Newline newline
+\end_inset
+
+<span style="color:green;font-size:100.0%"><b>
+\family default
+\lang arabic_arabi
+لِلَّـه
+\family typewriter
+ِ
+\lang english
+</b></span>
+\begin_inset Newline newline
+\end_inset
+
+
+\family default
+\lang arabic_arabi
+رَبِّ الْعَالَمِينَ
+\lang english
+
+\begin_inset Newline newline
+\end_inset
+
+\SpecialChar \textcompwordmark{}
+
+\end_layout
+
+\begin_layout Enumerate
+Show the estimated search time and the number of results.
+\begin_inset Newline newline
+\end_inset
+
+
+\family typewriter
+\size scriptsize
+\color red
+>>>
+\color inherit
+ 
+\color blue
+print
+\color inherit
+ 
+\shape italic
+\color magenta
+"time=%f,number=%d"
+\shape default
+\color inherit
+ 
+\color blue
+%
+\color inherit
+ (results.runtime,len(results))
+\begin_inset Newline newline
+\end_inset
+
+time=
+\color red
+0.100318
+\color inherit
+,number=
+\color red
+160
+\begin_inset Newline newline
+\end_inset
+
+\SpecialChar \textcompwordmark{}
+
+\end_layout
+
+\begin_layout Enumerate
+Suggest in the case of missing terms.
+\begin_inset Newline newline
+\end_inset
+
+
+\family typewriter
+\size scriptsize
+\color red
+>>>
+\color inherit
+ 
+\color blue
+for
+\color inherit
+ key, value 
+\color blue
+in
+\color inherit
+ QSE.suggest_all(u
+\shape italic
+\color magenta
+"
+\color green
+ 
+\family default
+\shape default
+\color inherit
+\lang arabic_arabi
+عاصمو
+\family typewriter
+\shape italic
+\color green
+\lang english
+ 
+\color magenta
+"
+\shape default
+\color inherit
+).items(): 
+\begin_inset Newline newline
+\end_inset
+
+
+\color red
+...
+
+\color inherit
+ 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+ 
+\color blue
+print 
+\color inherit
+key, 
+\shape italic
+\color magenta
+":"
+\shape default
+\color inherit
+, 
+\shape italic
+\color magenta
+","
+\shape default
+\color inherit
+.join(value)
+\begin_inset Newline newline
+\end_inset
+
+
+\family default
+\lang arabic_arabi
+عاصمو :عاصم
+\lang english
+
+\begin_inset Newline newline
+\end_inset
+
+\SpecialChar \textcompwordmark{}
+
+\end_layout
+
+\begin_layout Plain Layout
+In this table, we’ll mention some specific queries already implemented in
+ the API:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float table
+placement htbp
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Advanced Query in Alfanous
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="16" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Feature
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Syntax
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+simple search
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+سماكم
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+derivation level 1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+>
+\lang arabic_arabi
+سماكم
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+derivation level 2 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+>>
+\lang arabic_arabi
+سماكم
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+joker ? 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+ال؟لك
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+joker * 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+*
+\lang arabic_arabi
+نبي
+\lang english
+*
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+phrase 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+"
+\lang arabic_arabi
+رب العالمين
+\lang english
+"
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+logical relation : AND 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+الصلاة + الزكاة
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+logical relation : OR
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+الصلاة | الزكاة
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+logical relation : ANDNOT
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+الصلاة - الزكاة
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+synonyms
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+~السعير
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+fields
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+sura:
+\lang arabic_arabi
+الفاتحة
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+interval 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+sura_id:[112 to 114]
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+vocalization
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+'
+\lang arabic_arabi
+المَلك
+\lang english
+'
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+word properties tuple 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+{
+\lang arabic_arabi
+ملك,فعل
+\lang english
+}
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+transliteration: buckwalter
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+fawoqa
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Related Works
+\end_layout
+
+\begin_layout Standard
+There is lot of web applications and softwares that offer the service of
+ search in Quran but most of them are simple search using exact words.
+ We’ll mention some applications and websites that implemented some special
+ search features.
+ 
+\end_layout
+
+\begin_layout Paragraph*
+Alawfa 
+\end_layout
+
+\begin_layout Standard
+is a website that offers search in Quran and Hadith.
+ He has a fast retrieving method.
+ It offers the highlight, pagination.
+ The main disadvantage of Alawfa is that it doesn’t respect the specifics
+ of Arabic and Quran.
+ It searches only as exact word or as a part of word.
+\lang french
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Alawfa"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+Al-Monaqeb-Alqurany 
+\end_layout
+
+\begin_layout Standard
+is a search service of Quran included in the website
+\begin_inset CommandInset href
+LatexCommand href
+target " www.holyquran.net"
+
+\end_inset
+
+.
+ It offers a board for advanced search options that contains many useful
+ options
+\lang french
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Almonakkeb"
+
+\end_inset
+
+
+\lang english
+ : 
+\end_layout
+
+\begin_layout Itemize
+Transliteration 
+\end_layout
+
+\begin_layout Itemize
+Ignore/Consider Hamza spelling errors 
+\end_layout
+
+\begin_layout Itemize
+Limit the search in an interval of ayahs and surahs 
+\end_layout
+
+\begin_layout Itemize
+Search using Arabic words root 
+\end_layout
+
+\begin_layout Itemize
+Highlight & Pagination 
+\end_layout
+
+\begin_layout Description
+Zekr is a desktop application aimed to be an open platform Quran study tool
+ for simply browsing and researching on Quran and its translations.
+ It offers many sorting criteria like Relevance, Natural order, Revelation
+ order, Aya length.
+ Also, it offers browsing with Mushaf Structures: Hizb number, Surah name,.
+ It search using the exact word, the part of word, the arabic root 
+\lang french
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Zekr"
+
+\end_inset
+
+
+\lang english
+.
+\end_layout
+
+\begin_layout Description
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Description
+Quran.com is 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+ref to Quran.com
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Conclusion
+\end_layout
+
+\begin_layout Standard
+In this paper, we have enlisted the search features in Quran that it’s helpful.
+ To facilitate the enlisting, we have classified those features depending
+ on the nature of the problem.
+ That list will help us to make a detailed retrieval system that fit perfectly
+ the needs of the Quran.
+ Each feature has a different level of complexity: could be implemented
+ easily or may lead to vast problem that need a deeper study.
+\end_layout
+
+\begin_layout Appendices
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Don't add text here!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+\begin_inset Note Note
+status open
+
+\begin_layout Section*
+Acknowlegment
+\end_layout
+
+\begin_layout Plain Layout
+We would like to thank Alfanous Open Community for its support .
+ We thanks all who helps in verification of this paper especially: Nasrah
+ .
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Remember though that your final submission is supposed to have all the bibliogra
+phy entries embedded in the LaTeX-file.
+ This means you eventually have to copy the .bbl file into the latex file
+ and remove the bibtex lines.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "IEEEexample,web,db"
+options "IEEEtran"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

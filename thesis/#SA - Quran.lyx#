@@ -1,0 +1,11098 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass extreport
+\begin_preamble
+\usepackage{styles/esi_memoire}
+%\usepackage[T1]{fontenc}
+\end_preamble
+\use_default_options true
+\begin_modules
+hanging
+minimalistic
+initials
+customHeadersFooters
+endnotes
+\end_modules
+\maintain_unincluded_children false
+\language french
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf true
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref true
+\pdf_title "Advanced  Search Engine in Holy Quran"
+\pdf_author "Assem Chelli"
+\pdf_subject "Thesis"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 4
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_amsmath 0
+\use_esint 0
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\boxbgcolor #005500
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3cm
+\topmargin 3cm
+\rightmargin 3cm
+\bottommargin 3cm
+\secnumdepth 3
+\tocdepth 4
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language swedish
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\bullet 1 0 9 -1
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%
+\backslash
+setcounter{chapter}{0}
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+pagenumbering{arabic} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{chapter}{0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagenumbering{arabic} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Coran 
+\begin_inset CommandInset label
+LatexCommand label
+name "chapitre2"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Preview
+
+\begin_layout Standard
+\begin_inset Preview
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\backslash
+epigraph{
+\backslash
+raggedleft
+\backslash
+textit{  * الر كِتَابٌ أُحْكِمَتْ آيَاتُهُ ثُمَّ فُصِّلَتْ مِنْ لَدُنْ حَكِيمٍ
+ خَبِيرٍ   * }}{
+\backslash
+raggedright
+\backslash
+textit{سورة هود ، الآية  1}}
+\backslash
+end{Arabic}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status collapsed
+
+\begin_layout Plain Layout
+Remove unused ressources:: Filtrer all the section of indexes from taha's
+ et Midad elbayan, leave only Quranic Corpus, Tanzil et Qurany
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Introduction 
+\end_layout
+
+\begin_layout Standard
+Le Coran est le livre sacré des musulmans, il est la base de plusieurs sciences
+ et domaines, comme le tafssīr, la traduction, la récitation 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+
+\lang arabic_arabi
+التّلاوة
+\end_layout
+
+\end_inset
+
+ , etc.
+ Les informations contenues dans le texte coraniques sont les sources de
+ ces sciences, d’où la nécessité d’un puissant systeme de recherche qui
+ offre plein de fonctionnalités spécifiques au Coran.
+\end_layout
+
+\begin_layout Standard
+Notre sujet est de réaliser un tel systeme, donc dans ce chapitre, nous
+ allons d’abord préciser la définition du Coran et des documents coraniques,
+ puis nous verrons en bref les principales étapes de l’évolution du Coran
+ à travers le temps et comment il a été écrit, édité et informatisé, ensuite
+ nous allons étudier le mushaf et les sciences du Coran.
+ 
+\end_layout
+
+\begin_layout Standard
+Puis, nous verrons les bénéfices et les difficultés de l’informatisation
+ du Coran, notamment, le script othmani, la vérification et l'authentification
+ du mushaf et le besoin d’une référence coranique électronique standard.
+ 
+\end_layout
+
+\begin_layout Standard
+Encore, nous allons écrire sur les index informatisés et les ontologies
+ de coran, car nous en avons besoin dans notre recherche
+\end_layout
+
+\begin_layout Section
+Définitions
+\end_layout
+
+\begin_layout Subparagraph*
+Coran
+\end_layout
+
+\begin_layout Standard
+Le mot « 
+\emph on
+Coran 
+\emph default
+» ou « 
+\emph on
+Qur’an 
+\emph default
+», dans la langue arabe, veut dire récitation ou lecture, les savants musulmans
+ le définissent par : les paroles d’Allah révélées à son prophète Mohamed
+ , écrits dans les mushafs et transmis par générations successives
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+
+\lang arabic_arabi
+التّواتر
+\end_layout
+
+\end_inset
+
+.
+ Le Coran est aussi connu par d’autres noms tels que : Al-Furkān , Al-kitāb
+ , Al-dhikr , Al-wahy et Al-rōuh .
+ Il est le livre sacré des musulmans et la première référence de la législation
+ islamique.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Meh73"
+
+\end_inset
+
+
+\lang arabic_arabi
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+
+\lang arabic_arabi
+(محسين, 1973)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subparagraph
+Mushaf
+\end_layout
+
+\begin_layout Standard
+Le mushaf est le livre qui contient la totalité du Coran, le premier mushaf
+ est le mushaf que le calife ’Abu-Bakr d a rassemblé.
+ Les mushafs sont écrits selon le script othmani
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+ 
+\lang arabic_arabi
+الخطّ العثماني
+\lang french
+ 
+\end_layout
+
+\end_inset
+
+qui est un peu différent du script arabe standard 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+ 
+\lang arabic_arabi
+الخط الإملائي
+\lang french
+ 
+\end_layout
+
+\end_inset
+
+.
+ La traduction du Coran ne constitue en aucun cas un mushaf, car le Coran
+ fut révélé par Allah y en arabe dans sa forme comme dans son sens.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Hadj08"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subparagraph
+Document coranique 
+\end_layout
+
+\begin_layout Standard
+C’est un document qui peut correspondre à la totalité du contenu de Coran
+ (mushaf), ou bien à un extrait cohérent (ayas successives) du Coran en
+ langue arabe.
+ Ces extraits peuvent être utilisés comme des citations ou des exemples,
+ et souvent écrits en script arabe standard.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Hadj08"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subparagraph
+Al-mu'jam Coranique ( Lexique) 
+\end_layout
+
+\begin_layout Standard
+Le mu'jam est une référence qui contient des informations (sujets ou mots)
+ triées dans un certain ordre ainsi que leurs explications ou traductions,
+ le mu'jam peut être général (d'une langue par exemple) ou spécialisé.
+ Dans notre étude nous nous intéresserons aux ma'ājim spécialisés pour le
+ Coran.
+ 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+reference
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subparagraph
+L’index Coranique
+\end_layout
+
+\begin_layout Standard
+L’index est comme le mu'jam car il contient des mots triés, mais la différance
+ est que l’index n’explique pas les mots, mais il indique la position de
+ toutes ses occurrences pour qu’on puisse y accéder facilement.
+ Les index du Coran donnent la position par la sourate et l’aya contentant
+ un terme spécifique.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Khm04"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Structure du Coran
+\end_layout
+
+\begin_layout Standard
+Le Coran est constitué de 114 sourates, les sourates sont divisées en ayas,
+ en trouve dans le mushaf devant chaque aya son numéro, ce partitionnement
+ et le même depuis le premier mushaf, puisque l’ordre des sourates et des
+ ayas est précisé par le prophète
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+ref
+\end_layout
+
+\end_inset
+
+, cependant il existe d’autres fragmentations du mushaf adoptées par les
+ spécialistes du Coran afin de faciliter l’apprentissage et la récitation.
+ Les marques de ces fragmentations ne font pas partie du texte coranique,
+ et s’écrivent sur les marges.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Zer08"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La structure du Coran est constituée des niveaux analytiques suivants 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "BnJ"
+
+\end_inset
+
+: 
+\end_layout
+
+\begin_layout Itemize
+la structure principale : la sourate, l’aya, le mot et la lettre ; 
+\end_layout
+
+\begin_layout Itemize
+les emplacements spéciaux : le début de la sourate, la fin de la sourate,
+ fin de l’aya, virgule coranique
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang arabic_arabi
+فاصلة قرآنية
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang french
+ 
+\end_layout
+
+\end_inset
+
+, sajdah , waqf ; 
+\end_layout
+
+\begin_layout Itemize
+la structure du Coran: la page, le thumn, le rub’, le nisf, le hizb, le
+ juz’ ; 
+\end_layout
+
+\begin_layout Itemize
+ecriture du Coran: le script othmani, les al-sawāmit, les harakāt, Al-hamza,
+ l’écriture des mots, les diacritiques, des signes de distinction des lettres
+ similaires, certains signes phonétiques ; 
+\end_layout
+
+\begin_layout Itemize
+structure incorporelle : mot, mot-clé, expression, unité d'objectif ; La
+ révélation du Coran : la manière de révélation, l'ordre de révélation,
+ le lieu de révélation, le calendrier de révélation, les causes de révélation,
+ le contexte de révélation, etc.
+\end_layout
+
+\begin_layout Standard
+Voici quelques exemples des différents niveaux de fragmentation:
+\end_layout
+
+\begin_layout Subsection
+Fragmentation en sourates 
+\end_layout
+
+\begin_layout Standard
+C’est la fragmentation originale du Coran, chaque sourate comporte un nom,
+ la basmala , – à l’exception de sourate
+\emph on
+ El-Tawba
+\emph default
+ qui ne comporte pas de basmala – et un certain nombre d’ayas séparées par
+ un cercle qui contient le numéro de l’aya dans sa sourate, les sourates
+ sont caractérisées par : un nom, le nombre d’ayas, le type de la révélation
+ (Mecquoise
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+ 
+\lang arabic_arabi
+مكّيّة
+\lang french
+ 
+\end_layout
+
+\end_inset
+
+ ou Médinoise
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang arabic_arabi
+مدنيّة
+\end_layout
+
+\end_inset
+
+ ), l’ordre dans le mushaf et l’ordre selon la révélation .
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Zer08"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /media/0794243270/thesis/thesis/Frag_sourates.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+schéma explicatif de la fragmentation en sourates
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Fragmentation en ahzab
+\end_layout
+
+\begin_layout Standard
+Le Coran est fragmenté en 30 parties approximativement égales, chaque partie
+ s’appelle juz’, cela permet de répartir la lecture du Coran sur un mois,
+ chaque juz’ est devisé de son tour en deux parties, chacun s’appelle hizb
+ .
+ Ainsi, le nisf est un demi de hizb, et le rub’ est un demi de nisf, en
+ fin le thumn est un demi de rub’ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Zer08"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /media/0794243270/thesis/thesis/Frag_ahzab.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Schéma explicatif de la fragmentation en ahzab 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Fragmentation en manāzil
+\end_layout
+
+\begin_layout Standard
+Au Pakistan, le mushaf est divisé en sept parties appelées manāzil qui sont
+ les débuts des sourates suivantes 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Zer08"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Enumerate
+Sourate Al-fātiha ;
+\end_layout
+
+\begin_layout Enumerate
+Sourate Al-Māida ; 
+\end_layout
+
+\begin_layout Enumerate
+Sourate Yūnus ; 
+\end_layout
+
+\begin_layout Enumerate
+Sourate Al-Isra ; 
+\end_layout
+
+\begin_layout Enumerate
+Sourate Al-Chu’arā’ ; 
+\end_layout
+
+\begin_layout Enumerate
+Sourate As-Sāffāte ; 
+\end_layout
+
+\begin_layout Enumerate
+Sourate Quf .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /media/0794243270/thesis/thesis/Frag_manazil.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Schéma explicatif de la fragmentation en manāzil 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Fragmentation en ruku
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+'ate 
+\end_layout
+
+\begin_layout Standard
+Les sourates sont partitionnées dans les pays de semi continent indien selon
+ le sujet, chaque partie s’appelle ruku’, il est indiqué par une Âīn en
+ index 
+\lang arabic_arabi
+ع
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang french
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+et un autre sur la marge.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /media/0794243270/thesis/thesis/Frag_ruku3ate.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Schéma explicatif de la fragmentation en Ruku'
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Fragmentation en Stops (waqfs )
+\end_layout
+
+\begin_layout Standard
+Les marques du waqfs sont utilisés pour savoir quand on doit faire une pause
+ lors de la récitation du Coran, ces marques sont différents afin de distinguer
+ le type du waqf qui peut être : permises, préférables, interdites, etc.
+ On note que le marquage des waqfs diffère d’une rewayate à une autre, la
+ figure représente une référence des waqfs d’un mushaf en rewayate de Kaloun.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bou79,Zer08"
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Symbol
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+ (Unicode)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Type [Arabic]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Type [English]
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+م
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Waqf Lazim
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Obligatory Stop
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+قلى
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Waqf Awla
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Preferable Stop
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{\therefore\therefore}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ta`anuq Waqf
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Embrace Stop
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+ج 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Waqf Ja"iz 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Permissible Stop
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+لا 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+La Waqf 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No Stop
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+صلى 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Wasl Awla
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Preferable Continuation 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Waqfs types 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Islamweb"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+_
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Section
+Les sciences du Coran
+\end_layout
+
+\begin_layout Plain Layout
+Todo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+L’informatisation du Coran 
+\end_layout
+
+\begin_layout Standard
+La langue arabe a été utilisée dans les programmes informatiques depuis
+ les années soixante.
+ Le logiciel ‘Salsabīl’ fut le premier à traiter le Coran, et il a été sans
+ diacritiques à cause du bas niveau des logiciels à cette époque.
+ Mais après, les écrans à haut résolution de Mac OS ont permis l'introduction
+ des diacritiques et des polices arabe aux ordinateurs.
+\end_layout
+
+\begin_layout Standard
+Aujourd’hui, le développement des logiciels coraniques a une extrême importance
+ parmi tous les domaines de développement grâce à plusieurs facteurs, notamment
+ : 
+\end_layout
+
+\begin_layout Itemize
+Le grand intérêt des musulmans pour le Coran ; 
+\end_layout
+
+\begin_layout Itemize
+La pris en charge des systèmes d’exploitation de la langue arabe ;
+\end_layout
+
+\begin_layout Itemize
+L’intégration des symboles du Coran dans le system Unicode ; 
+\end_layout
+
+\begin_layout Itemize
+L’apparition des polices de caractères qui permettent d'écrire le mushaf
+ en script othmani.
+ 
+\end_layout
+
+\begin_layout Itemize
+Le passage de certains programmeurs au développement en source ouverte (Open
+ Source).
+ 
+\end_layout
+
+\begin_layout Itemize
+L’apparition des projets cumulatifs où chacun complète le travail de celui
+ qui le précède.
+\end_layout
+
+\begin_layout Standard
+L'informatisation du Coran mener à un ensemble d'avantages et ce sont quelques-u
+nes:
+\end_layout
+
+\begin_layout Subparagraph
+Rassembler les différentes sciences coraniques : 
+\end_layout
+
+\begin_layout Standard
+l’amélioration de l’accessibilité et du temps d’accès aux données est un
+ objectif essentiel de l’informatisation en général.
+ En particulier, l’informatisation du Coran facilite énormément l’apprentissage,
+ la récitation, la recherche, le tafssīr, la traduction, et l’enseignement
+ du Coran.
+ Les applications coraniques actuelles nous offrent la possibilité de passer
+ à travers tous ces sciences avec des simples cliques, en économisant de
+ temps et d’efforts que de chercher dans des livres.
+ Ces logiciels ne remplacent pas les livres et les façons d’apprentissage
+ traditionnels, mais ils les complémentent.
+ 
+\end_layout
+
+\begin_layout Subparagraph
+Vérifier les miracles numériques du Coran : 
+\end_layout
+
+\begin_layout Standard
+il existe un type de miracles coraniques, c’est les miracles basés sur les
+ statistiques effectués sur le Coran, par exemple :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Mot I
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nombre de répétitions
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Mot II
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+الدّنيا 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ 115
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+الآخرة
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+الملائكة
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+68
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+الشّياطين
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+الصّالحات
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+167 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+السّيئات
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+الشهر
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12 / 365
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+اليوم
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Miracles numériques
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Naw75"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+L’informatisation du Coran peut aider à vérifier ces miracles si vrais ou
+ falsifiés et découvrir d’autres miracles statistiques clairs, On note ici
+ qu’il existe de nombreuses tentatives modernes pour prouver les miracles
+ numériques dans le Coran qui ont rencontré une forte opposition de la part
+ des savants musulmans, en particulier, l’imposteur 
+\noun on
+Rachād Khalīfa
+\noun default
+ a prétendu être un prophète en se basant sur des observations des phénomènes
+ numériques de ce genre, mais ce qui nous concerne dans cette affaire en
+ tant que développeurs, c’est que nous allons fournir aux bons chercheurs
+ les outils de recherche nécessaires pour leur permettre d'obtenir des résultats
+ certains, et fondées sur des bases scientifiques.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Khe"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Subsubsection
+Les principaux problèmes d’informatisation
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Todo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Les index du Coran
+\end_layout
+
+\begin_layout Standard
+Au fil des siècles, les musulmans étaient très intéressés au Coran, par
+ le tafssīr, l'étude, la préservation, la récitation, et la calligraphie.
+ Le domaine des sciences coraniques été l’objet d’une grande attention.
+ Donc, des index ont été crées pour le vocabulaire du Coran, la recherche
+ des mots similaires et les différences entre eux, trouver leurs racines
+ et leurs dissimilitudes.
+ 
+\end_layout
+
+\begin_layout Standard
+Dans l'ère moderne, « 
+\emph on
+le mu'jam indexé des mots du Saint Coran
+\emph default
+ » par 
+\noun on
+Mohammed Fouad Abd El bāki 
+\noun default
+avait comblé une lacune importante dans la vitesse d’accès aux ayas du Coran
+ à partir de la racine du mot ou de rechercher n'importe quel mot à travers
+ la racine, le mu'jam indexe les noms et les verbes dans le Coran selon
+ la racine.
+\end_layout
+
+\begin_layout Standard
+Aujourd’hui, il y a eu de nombreuse voix appelant à l’informatisation de
+ tels index pour les utiliser dans les vastes domaines de l’informatiques,
+ y compris la recherche, ainsi plusieurs projets ont été lancés à cet effet
+ d’ou le sujet de cette section.
+ 
+\end_layout
+
+\begin_layout Subsection
+Historique des index du Coran 
+\end_layout
+
+\begin_layout Standard
+Beaucoup de savants musulmans sont intéressé par l’indexation du Coran en
+ développant les méthodes et en renouvelant la manière et le but.
+ Ils ont mis des index de termes coraniques et leurs positions dans le Coran,
+ puis ils ont construit des lexiques pour expliquer les significations de
+ ces mots après avoir rappelé les ayas dans lesquelles ils figurent.
+ Certains savants ont construit des lexiques spécialisés, chacun contient
+ le vocabulaire d’un seul sujet.
+\end_layout
+
+\begin_layout Standard
+L’évolution des index du Coran s’est faite en quatre étapes principales
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Khm04"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Subsubsection
+Indexation des mots du Coran 
+\end_layout
+
+\begin_layout Standard
+Le développement des index des mots du Coran est une nécessité, car ils
+ permettent aux chercheurs d'accéder facilement aux mots du Coran.
+ Les musulmans et les orientalistes se ont axé leurs recherches dans le
+ premier tiers du XXe siècle, au développement des index pour les mots du
+ Coran et les parties des ayas.
+ 
+\end_layout
+
+\begin_layout Standard
+Parmi les principaux ouvrages dans ce domaine nous citons : 
+\end_layout
+
+\begin_layout Itemize
+«
+\emph on
+ nujoum al-furkān fī atrāf al-coran
+\emph default
+ 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+ 
+\lang arabic_arabi
+نجوم الفرقان في أطراف القرآن
+\emph default
+\lang french
+ 
+\end_layout
+
+\end_inset
+
+» par l’orientaliste allemand 
+\noun on
+Leberecht Flugel
+\noun default
+ ; 
+\end_layout
+
+\begin_layout Itemize
+« 
+\emph on
+Le mu'jam des ayas du Coran
+\emph default
+ 
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+
+\emph on
+ 
+\emph default
+\lang arabic_arabi
+معجم آيات القرآن
+\lang french
+ 
+\end_layout
+
+\end_inset
+
+» par 
+\noun on
+Houssine Nassār
+\noun default
+ ; 
+\end_layout
+
+\begin_layout Itemize
+« 
+\emph on
+le mu'jam indexé des mots du Saint Coran
+\emph default
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang arabic_arabi
+المعجم المفهرس لألفاظ القرآن الكريم
+\lang french
+ 
+\end_layout
+
+\end_inset
+
+» par 
+\noun on
+Mohammed Fouad Abd El-bāki
+\noun default
+ .
+\end_layout
+
+\begin_layout Standard
+L’index de 
+\noun on
+Mohammed Fouad
+\noun default
+ est le plus important, il a bénéficié de l'expérience de 
+\noun on
+Flugel
+\noun default
+, a traduit son livre 
+\emph on
+nujoum al-furkān fī atrāf al-coran
+\emph default
+ et l’a perfectionné en éliminant les affixes des mots et en les arrangeant
+ par ordre alphabétique.
+ Son mu
+\emph on
+'
+\emph default
+jam « 
+\emph on
+Le mu'jam des ayas du Coran
+\emph default
+ » a été publié en 1945 en Egypte, et les numéros des ayas mentionnées dans
+ ce livre correspondaient bien au mushaf officiel.
+ Puis il a été édité dans plusieurs pays arabes et musulmans y compris Istanbul
+ en 1982.
+ 
+\end_layout
+
+\begin_layout Standard
+Ce livre a connu beaucoup de succès, néanmoins il ne contient pas les pronoms
+ et les particules
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Khm04"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Les ma'ājim des mots du Coran 
+\end_layout
+
+\begin_layout Standard
+Les index du Coran offrent la possibilité de trouver la position des mots,
+ puis le chercheur doit rechercher le tafssīr dans les livres appropriés
+ par lui-même, d’où le besoin de produire des ma
+\emph on
+'
+\emph default
+ājim qui donne les mots avec l’explication afin de rendre la recherche encore
+ plus souple.
+ 
+\end_layout
+
+\begin_layout Standard
+De nombreux travaux collectifs ont été lancés dans ce sens.
+ En 1941 Dr.
+ 
+\noun on
+Mohamed Hussein Heikal
+\noun default
+, membre de l'Académie de la Langue Arabe au Caire a proposé de mettre en
+ œuvre un mu'jam des termes du Coran.
+ En 1949, un comité a commencé à élaborer ce mu'jam en s’inspirant de celui
+ de 
+\noun on
+Mohammed Fouad Abd El-bāki
+\noun default
+.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Khm04"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Les ma'ājim des mots du Coran spécialisés 
+\end_layout
+
+\begin_layout Standard
+Les ma'ājim cités précédemment sont généraux, et il sera difficile de chercher
+ les ayas contenant des mots qui appartiennent à un domaine spécifique.
+ Cela a conduit à la création des ma'ājim spécialisés tels que « 
+\emph on
+le mu'jam de vocabulaire des plantes dans le Coran
+\emph default
+ » par le leader dans ce domaine 
+\noun on
+Mokhtar Fawzi Al-na’āl 
+\noun default
+, qui a achevé ensuite d’autres ma'ājim spécialisés pour l’homme, les animaux,
+ les éthiques, le commerce, etc.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Khm04"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Les index du Coran et l’ordinateur
+\end_layout
+
+\begin_layout Standard
+Quand l'ordinateur est entré dans la vie quotidienne des gens, il a fait
+ une révolution dans le monde de l’information.
+ Les savant musulman ont profité de ces services, et ils ont fait de lui
+ un excellant index pour le Coran.
+ En fait la vitesse et l’exactitude de l’ordinateur lui permettent de donner
+ rapidement l’emplacement et le nombre d’occurrences de n’importe quel mot
+ dans le Coran, il suffit seulement qu’on l’alimente avec les index et les
+ ma'ājim.
+ 
+\end_layout
+
+\begin_layout Subsection
+Classification des index
+\end_layout
+
+\begin_layout Standard
+Les Index existants diffèrent considérablement les uns des autres, nous
+ pouvons les classer en utilisant certain critères, y compris : l'objet
+ ou le but de chaque index et l'unité sur laquelle l'index se base ...
+ etc.
+ 
+\end_layout
+
+\begin_layout Standard
+Classées selon les critères cités ci-dessus, nous expliquerons les index,
+ existants ou possibles, les plus importants:
+\end_layout
+
+\begin_layout Subsubsection
+Par l’unité:
+\end_layout
+
+\begin_layout Standard
+Les index du Coran se basent sur plusieurs unités (voir la figure): 
+\end_layout
+
+\begin_layout Paragraph
+Le mot
+\end_layout
+
+\begin_layout Standard
+Ces index peuvent prendre deux aspects, le premier est grammatical, il consiste
+ à découper les mots selon leur structure fondamentale, en indiquant les
+ affixes et ces origines tels que la racine et le morphème.
+ Le deuxième aspect a pour but de faciliter la lecture du mushaf par un
+ index des mots dont l’écriture ce diffère entre le script othmani et le
+ script standard et un index des mots qui s’écrivent de la même manière
+ mais ce différent dans la prononciation.
+ 
+\end_layout
+
+\begin_layout Standard
+De même, pour faciliter la lecture des livres de sciences du Coran, un mu'jam
+ électronique des termes de sciences coraniques a été établis, et un autre
+ pour les sciences du Coran dans la sunna, parmi ces index il existe :
+\end_layout
+
+\begin_layout Enumerate
+Des index de tous les mots et en les reliant avec toutes leurs parties :
+ préfixes + noyau + affixes, ainsi qu’avec la racine, le morphème, le verbe
+ à l’infinitif ou la forme singulière dans le cas des mots pluriels, plus
+ les différentes informations flexionnelles , comme le type du mot est sa
+ fonction flexionnelle.
+ Ces index ont une utilité dans le traitement automatique du langage naturel.
+\end_layout
+
+\begin_layout Enumerate
+Un index des mots dont l’écriture ce diffère entre le script othmani et
+ le script standard, qui sont de 6419 mots, en reliant chaque entrée de
+ l’index avec les ayas et les mots qu’on veut atteindre dans les pages du
+ mushaf, en vue de faciliter la lecture dans le Coran pour les débutants
+ et ceux qui ne connaissent pas les règles d’écriture des mots en script
+ othmani.
+\end_layout
+
+\begin_layout Enumerate
+Un index des mots dont l’écriture ce diffère entre le script othmani et
+ le script standard (sans ceux reçus à partir des savants), qui sont de
+ 1318 mots, pour faciliter l'apprentissage, même après être reçu par les
+ savants, en les reliant avec les pages du mushaf et la récitation correcte
+ d'un célèbres récitant.
+ Cet index – comme son prédécesseur – vise les débutants dans la préservation
+ du Coran et ceux qui veulent le mémoriser.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Un Index des mots dont les structures (les lettres) se ressemblent mais
+ la prononciation varie en fonction de la forme convenue, avec distinction
+ entre la prononciation de ces mots et en les reliant avec les pages du
+ mushaf, plus la possibilité d'entendre selon le choix de l'utilisateur.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Mia"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Exemple d’index qui prend le mot comme unité, cet index va être détaillé
+ par la suite:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /media/0794243270/thesis/thesis/Par_mot.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Index prenant le mot comme unité [Arabic Quranic Corpus] 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+L’aya
+\end_layout
+
+\begin_layout Standard
+Ces index prend les ayas comme une unité d'indexation dans le but de les
+ classer par sujets et d’examiner la similarité et la coïncidence et élaborer
+ un mu'jam basé sur un analyseur morphologique des racines du Coran, ainsi
+ que de faire une indexation des débuts de mots des ayas, leurs fins 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+ 
+\lang arabic_arabi
+رؤوس الآيات
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang french
+ 
+\end_layout
+
+\end_inset
+
+, etc.
+ Voici quelques index comme exemple : 
+\end_layout
+
+\begin_layout Enumerate
+Un index de ayas du Coran et leurs emplacements dans le mushaf.
+\end_layout
+
+\begin_layout Enumerate
+Un arbre de thèmes complet et global constitué de plusieurs niveaux contenants
+ les sujets abordés par le Coran ainsi on obtient un index informatisé des
+ sujets du Coran qui relie chaque sujet principal ou secondaire avec les
+ ayas qui peuvent être placés sous ce sujet.
+ Cet index est considéré comme une excellente aide pour les prêcheurs, les
+ chercheurs et les étudiants en sciences islamiques pour accéder à toutes
+ les ayas d'un sujet ou sous-sujet lié au texte coranique.
+ A noter que l’aya peut être liée à plusieurs sous-sujets.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Un index des ayas identiques et similaires dans le Coran pour servir les
+ préservateurs du Coran et les chercheurs, où les ayas identiques et similaires
+ sont identifiées et liées en groupes textuels.
+ Ces ayas et passages sont accessibles à partir d’une liste des ayas identiques
+ et similaires pour chaque sourate (s’ils existent), et en choisissant une
+ aya (ou un passage) en peut accéder à la liste des ayas (ou passages) identique
+s ou similaires dans tout le Coran.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Un index des ayas coraniques disposées selon les lettres des premiers mots,
+ les fins des ayas et les deux derniers mots, pour faciliter à la fois l'accès
+ à n’importe quelle aya, et le processus de préservation et mémorisation
+ du Coran.
+\end_layout
+
+\begin_layout Enumerate
+Un index de l’abrogeant et l’abrogé parmi les ayas du Coran : comprend le
+ listage des ayas abrogeant ou abrogés dans les sourates du Coran, en reliant
+ ces ayas avec leurs emplacements dans les pages du Coran.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Mia"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /media/0794243270/thesis/thesis/Par_aya.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Index qui prend l’aya comme unité [Arabeyes Quran Model]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+La surate
+\end_layout
+
+\begin_layout Standard
+L’objet de base de ces index est les sourates du Coran de sorte qu’ils donnent
+ une idée générale sur les sourates, avec des informations suffisantes pour
+ acquérir ce qui doit être appris : des données de base des sourates et
+ leurs vertus
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+ 
+\lang arabic_arabi
+فضائل
+\end_layout
+
+\end_inset
+
+, les plus importantes bases et les sujets de ces index sont : 
+\end_layout
+
+\begin_layout Enumerate
+Un index (liste) de sourates du Coran et leurs emplacements dans le mushaf.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Un index de données de base des sourates, qui comprend la sourate, ses noms,
+ la raison d’attribution du nom, son type (mecquoise ou médinoise), son
+ ordre dans le mushaf, son ordre selon la révélation, sa précédente et sa
+ suivante (selon l’ordre de mushaf et de révélation).
+ 
+\end_layout
+
+\begin_layout Enumerate
+Un index des vertus des sourates coraniques dans la sunna du Prophète s,
+ avec la narration des hadiths dans le but de définir la sourate et ses
+ vertus.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Un index des clés 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+ 
+\lang arabic_arabi
+مفاتيح السّور
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang french
+ 
+\end_layout
+
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+des sourates du Coran, dont l'objectif est de définir la sourate en termes
+ de noms, la raison du nommage, la cause de révélation (si elle existe),
+ etc.
+ avec une présentation générale de la sourate, et des principales bases
+ et sujets qu’elle contient.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Un index de sujets pour chaque sourate du Coran afin de diviser la sourate
+ en sujets, chaque sujet comprend plusieurs ayas.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Mia"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Autre unités
+\end_layout
+
+\begin_layout Standard
+En plus des index mentionnés précédemment basés sur le mot, l’aya et la
+ sourate, il existe des index basés sur d'autres unités, y compris : 
+\end_layout
+
+\begin_layout Enumerate
+L’index grammatical basé sur les parties du mot, il fournit des informations
+ sur le type de chaque partie et ses caractéristiques grammaticales : si
+ elle est invariable ou fléchi , sa flexion , sa marque flexionnelle si
+ elle est fléchi et ainsi de suite.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ordre_Aff 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Num_Mot
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Haraka
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Affix
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2597
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+فتحة
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+فـ
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2597
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+فتحة
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+ـسـ
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2597
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+سكون
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+يكفي
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2597
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+فتحة
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+ك
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2597
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\backslash
+RL{
+\end_layout
+
+\end_inset
+
+سكون أو ضم عند التقاء الساكنين
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+هم
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Index basé sur parts des mots
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+L’index de syllabes ou unités phonétiques, il fournit des informations sur
+ la prononciation qui sont très utiles dans la science de récitation.
+ Aucun index de ce genre n’existe encore.
+ 
+\end_layout
+
+\begin_layout Enumerate
+L’index de phrases coraniques (voir le tableau), qui montre la manière de
+ division en phrases, car il est bien connu que l’aya du Coran ne représente
+ pas nécessairement une phrase.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang arabic_arabi
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Num
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Phrase
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ@ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ@الرَّحْمَنِ الرَّحِيمِ@مَالِكِ يَوْمِ
+ الدِّينِ@
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+إِيَّاكَ نَعْبُدُ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+وَإِيَّاكَ نَسْتَعِينُ@
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+ اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ@صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ
+ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلاَ الضَّالِّينَ@
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Index basé sur phrases – surate al-fātiha
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Par l'objet
+\end_layout
+
+\begin_layout Standard
+La science d'indexation a abordé le Coran à plusieurs égards.
+ De l’indexation de mots pour qu’un musulman puisse connaître l’aya une
+ fois qu’il connaît l’un de ses mots, à l’indexation des sujets qui prend
+ les ayas séparément, à d'autres index que nous citons comme suit : 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /media/0794243270/thesis/thesis/Classification_par_sujet.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+La classification des index par objet
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Les index syntaxiques
+\end_layout
+
+\begin_layout Standard
+Ce sont les index qui traitent les mots en termes de fonctionnalités de
+ la langue arabe pour montrer l’affixe du mot sa racine, son verbe s’il
+ est dérivé d’un verbe, sa forme singulière s’il est pluriel, etc.
+ Le but est de rechercher par mots et remplacer les analyseurs morphologiques
+ en effectuant la plupart de leurs fonctions.
+ Ces index sont construits avec ou sans la répétition de mots.
+ Parmi les meilleurs livres qui ont indexé le Coran le mu'jam de Pr.
+ 
+\noun on
+Muhammad Fuad Abd El-baqi
+\noun default
+ ainsi que le livre « 
+\emph on
+nujoum al-furkān fī atrāf al-coran
+\emph default
+ » et le livre « 
+\emph on
+murchid al-haïrān ilā ayāte al-coran
+\emph default
+ ».
+ L’index de mots par 
+\noun on
+Taha Zerrouki
+\noun default
+, le projet ‘
+\emph on
+Midād lbayān
+\emph default
+’ et le corpus coranique arabe par 
+\noun on
+Kais Dukes
+\noun default
+ peuvent être considérés de cette catégorie, nous allons les expliquer par
+ la suite dans ce chapitre.
+ 
+\end_layout
+
+\begin_layout Paragraph
+Les index sémantiques 
+\end_layout
+
+\begin_layout Standard
+Ce sont les index qui suit une approche sémantique, afin de relier des mots
+ du Coran avec leurs sens, la première base de données des significations
+ peut être considérée comme celles qui est fondée sur les racines, puisque
+ en termes de sens, les racines sont étroitement liés entre eux, par exemple,
+ les racines : « 
+\lang arabic_arabi
+جيء
+\lang french
+ », « 
+\lang arabic_arabi
+أتى
+\lang french
+», « 
+\lang arabic_arabi
+قدم
+\lang french
+ », «
+\lang arabic_arabi
+ حضر
+\lang french
+», « 
+\lang arabic_arabi
+وصل
+\lang french
+ », « 
+\lang arabic_arabi
+ولي
+\lang french
+» et «
+\lang arabic_arabi
+ دبر
+\lang french
+ » ainsi que : «
+\lang arabic_arabi
+ دخل
+\lang french
+ », « 
+\lang arabic_arabi
+ولج
+\lang french
+ », « 
+\lang arabic_arabi
+قبل
+\lang french
+», « 
+\lang arabic_arabi
+ورد
+\lang french
+ » et « 
+\lang arabic_arabi
+وصل
+\lang french
+» .
+ Sur cette base, les verbes se réunissent en groupes qu’on peut décrire
+ comme ‘rassembleurs généraux’, ensuite les diviser en plus petits groupes,
+ qui se caractérisent par un rassembleur plus particulier que le premier
+ et ainsi de suite.
+ Les groupes finaux n’ont pas toujours le même sens.
+ Il y a beaucoup d’ouvrages dans le patrimoine arabe, qui mentionnent des
+ mots de ce genre.
+ Il y a également des dictionnaires modernes qui donnent de tels groupes
+ et les mots étrangers correspondants.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Alj91,Nass89"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Les index des sujets
+\end_layout
+
+\begin_layout Standard
+Ce sont les index qui divisent le Coran en unités traitant le même sujet,
+ la division prend une forme de pyramide de sujets.
+ Parmi les livres qui ont indexé les sujets coraniques le livre «
+\emph on
+ zad al-moâllifīn min kitābi rabbi al-‘ālamin
+\emph default
+ » par 
+\noun on
+Abd Allah Mohammed Al-daruīche
+\noun default
+, et parmi les index de sujets qui ont été informatisés, l’index des sujets
+ -par 
+\emph on
+\noun on
+Taha Zerrouki-
+\emph default
+\noun default
+ et le projet 
+\emph on
+Qurany
+\emph default
+ -par 
+\noun on
+Mrs Noorhan Abbas
+\noun default
+- que nous allons aborder dans ce chapitre.
+ 
+\end_layout
+
+\begin_layout Paragraph
+Les index structurels 
+\end_layout
+
+\begin_layout Standard
+Ce sont les index qui mettent l'accent sur les relations entre les différentes
+ divisions du mushaf comme la division en ayas, sourates …, ou en thumns,
+ rub’ …, ou encore les divisions spéciales comme en ruku’, phrases … et
+ ainsi de suite (voir la figure).
+ Ces index sont fondés sur l’une des unités de la division.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /media/0794243270/thesis/thesis/Structures de coran.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Les différentes structures du Saint Coran
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Les index statistiques 
+\end_layout
+
+\begin_layout Standard
+Ce sont ceux qui visent principalement à recueillir des statistiques sur
+ les différentes unités du Coran à partir des lettres, cyclables, … jusqu’au
+ Coran comme un tout.
+ Parmi les statistiques possibles : le comptage du nombre, de la moyenne
+ et de la composante dominante.
+ 
+\end_layout
+
+\begin_layout Standard
+Ces index sont fondés sur l'élément qui représente la base de la statistique.
+ Un exemple de statistiques est le nombre de caractères dans les mots, dans
+ ces sourates et dans les ayats.
+ 
+\end_layout
+
+\begin_layout Subsection
+Projets de construction des index 
+\end_layout
+
+\begin_layout Standard
+Il existe beaucoup d’index de Coran qui varient d'index pour les mots à
+ des index pour les sujets et d'autres spécialisés … Mais leur plus grand
+ problème est qu’ils ne sont pas entrés dans le domaine de l’informatique,
+ puisque la plupart des ma'ājim sont imprimés, ou destinés à la lecture
+ ; seule une petite partie a été informatisée et publiée sur des fichiers
+ de stockage d'informations tels que XML, EXCEL ou sous forme de bases de
+ données.
+ Il y a des projets d’informatisation des index en cours de développement.
+ Parmi ces projets :
+\end_layout
+
+\begin_layout Subsubsection
+Midād lbayān 
+\end_layout
+
+\begin_layout Standard
+C’est un projet initié par le Dr.
+ 
+\noun on
+Mohamed Zaki Khadher
+\noun default
+ qui vise à construire une base de données coranique dans toute la mesure
+ du possible et décrit tout le détail du Coran à partir des plus petits
+ termes qui sont les syllabes du mot puis le mot, les expressions, les phrases,
+ les ayas et les sourates.
+ Cette base contient l’écriture, la prononciation, la morphologie, la grammaire,
+ et la signification 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Khe"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Midād lbayān
+\emph default
+ est considéré comme un grand accomplissement, il contient dans ses index
+ beaucoup de renseignements sur les mots coraniques et ses caractéristiques
+ et a également des perspectives d’ajout d'autres index pour étudier les
+ phrases du Coran, l'indexation des sujets, etc.
+ Les auteurs de projet 
+\emph on
+Midād lbayān
+\emph default
+ confirment que la base est destinée pour l’utilisation gratuite, mais ils
+ ne donnent pas plus de détails sur la licence utilisée.
+ Ils ne fournissent qu’un programme d’exposition manuelle de la base, sans
+ références.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "mbayan"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Nous allons aborder l'une des versions précédentes de la base de données,
+ en raison du manque d'accès à la version actuelle qu'elle contient dans
+ sa index principale: 
+\end_layout
+
+\begin_layout Enumerate
+Code séquentiel qui sert d’un index pour les mots (clé)
+\end_layout
+
+\begin_layout Enumerate
+Le noyau du mot
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+ 
+\lang arabic_arabi
+جذع الكلمة
+\lang french
+ 
+\end_layout
+
+\end_inset
+
+ et La racine du mot 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+ 
+\lang arabic_arabi
+جذر الكلمة
+\lang french
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Le mot en script standard (vocalisé ) et en script othmani 
+\end_layout
+
+\begin_layout Enumerate
+La list des préfixe du mot ( 4 au maximum )
+\end_layout
+
+\begin_layout Enumerate
+La list des suffixe du mot ( 3 au maximum )
+\end_layout
+
+\begin_layout Enumerate
+Le numéro de la sourate et de l’aya 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+resizebox{
+\backslash
+textwidth}{!}{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="14">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Seq
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Word
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Stem
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Root 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Othmani
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Prefix1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Prefix2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Prefix3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Prefix4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Postfix1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Postfix2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Postfix3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sura
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Aya
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+#
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+#
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+#
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+#
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+@
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+@
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+@
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+@
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+بِسْم
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+اسْم
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+سمى
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+ بِسْم
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+بِ ِ
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+اللَّه
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+اللَّه
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+ءله
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+ا?للَّهِ ِ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+الرَّحْمَن
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+رَحْمَن
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+رحم 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+ ا?لرَّحْمَ!ن ِ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+ال 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+الرَّحِيمِ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+رَحِيم
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+رحم
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+ا?لرَّحِيمِ
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+ال ِ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Aperçu sur l’index principal – Midād lbayān
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Les Index par M.Taha Zerrouki 
+\end_layout
+
+\begin_layout Standard
+C’est un effort individuel de Mr.
+
+\noun on
+ Taha Zerrouki
+\noun default
+ dans le cadre du projet de Coran et ses sciences, que notre travail en
+ fait partie, il a construit trois index.
+ Ce qui distingue son travaille est la diversité : d’un index pour les racines
+ à un l'index des sujets et un autre de synonymes.
+ Mais ils ne sont pas basés sur une unité claire (contrairement à 
+\emph on
+Midād lbayān
+\emph default
+ et au 
+\emph on
+corpus coranique arabe
+\emph default
+ qui sont basés sur les mots du Coran en prenant tous ses occurrences) cela
+ augmente la complexité et la probabilité d’erreur dans le processus de
+ jointure avec les autres bases de données.
+ 
+\end_layout
+
+\begin_layout Standard
+Il ya trois index, l'index du mot contient:
+\end_layout
+
+\begin_layout Enumerate
+Le mot original (clé)
+\end_layout
+
+\begin_layout Enumerate
+Le mot en script othmani 
+\end_layout
+
+\begin_layout Enumerate
+La racine
+\end_layout
+
+\begin_layout Enumerate
+Le morphème
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+ 
+\lang arabic_arabi
+المصدر 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Le type 
+\end_layout
+
+\begin_layout Enumerate
+Les pluriels
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+ 
+\lang arabic_arabi
+المثنى و الجمع
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Le féminin 
+\end_layout
+
+\begin_layout Enumerate
+Nom propre ou non 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+resizebox{
+\backslash
+textwidth}{!}{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="11">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Othmani
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Propre
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Muthanaa
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Féminine
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Pluriel
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Type 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Morphème
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Racine
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Original
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+البسط
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+اسم
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+بسط 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+بسط 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+البسط
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+مبسوط
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+مبسوطتان
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+مثنى
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+اسم 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+مبسوطة
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+بسط
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+مبسوطتان
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+فيبسطه
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+فعل 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+بسط
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+بسط
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+فيبسطه 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+يبسطوا
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+فعل
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+بسط
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+بسط
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+يبسطوا
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+باسقت
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+باسق
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+باسقات
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+جمع
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+اسم
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+باسقة
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+بسق
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+باسقات
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Aperçu sur l’index des mots – M.Taha Zerrouki
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Le deuxieme index est l'index de sujets, il contient:
+\end_layout
+
+\begin_layout Enumerate
+le theme
+\end_layout
+
+\begin_layout Enumerate
+le sous-thème 
+\end_layout
+
+\begin_layout Enumerate
+la rubrique 
+\end_layout
+
+\begin_layout Enumerate
+Le numéro de sourate 
+\end_layout
+
+\begin_layout Enumerate
+L'interval des ayates ( le debut et la fin)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="6">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+آية النهاية
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+آية البداية
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+رقم السورة
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+الباب
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+الموضوع
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+الفصل 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+93
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+16
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+مشيئته تعالى
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+صفات الله تعالى
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+أسماء الله تعالى وصفاته
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+54
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+17
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+مشيئته تعالى
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+صفات الله تعالى
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+أسماء الله تعالى وصفاته
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+272
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+عدله تعالى
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+صفات الله تعالى
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+أسماء الله تعالى وصفاته
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+281
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+عدله تعالى
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+صفات الله تعالى
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+أسماء الله تعالى وصفاته
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Aperçu sur l’index des sujets – M.Taha Zerrouki
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Le troisieme index est l’index des synonymes, il contient:
+\end_layout
+
+\begin_layout Enumerate
+Le type des mots du synonyme 
+\end_layout
+
+\begin_layout Enumerate
+La liste de synonymes 
+\end_layout
+
+\begin_layout Enumerate
+Une remarque
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="6">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+المفردات
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+النوع
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ملاحظة 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ عِير
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ إِبِل
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+اسم
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+جمع
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ هَرَب
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ نَاصَ
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ فَر
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ أَبِق
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ فعل
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ ألف
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+وَاِلْد
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+أَب
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+اسم
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+أَقْبَل
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+حَضَر
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+جَاء
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+أَتَى
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+فعل
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+فَضَّل
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+اصْطفى
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+اخْتَار
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+آثَر
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+فعل
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Aperçu de l’index des synonymes – M.Taha Zerrouki
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Qur’anic Arabic Corpus 
+\end_layout
+
+\begin_layout Standard
+Le corpus coranique arabe est une ressource linguistique annotée qui montre
+ la grammaire arabe, la syntaxe et la morphologie de chaque mot dans le
+ Coran, faite par 
+\noun on
+Kais Dukes
+\noun default
+ en 2009 à l’école d’informatique, Université de Leeds.
+ Cet Index est disponible sur Internet avec d'autres index simplifiés sous
+ la licence GPL
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "GPL"
+description "GNU Public License"
+
+\end_inset
+
+ (GNU Public License), mais il impose des restrictions supplémentaires lors
+ du téléchargement y compris l’interdiction de modification.
+ Le corpus coranique fournit des informations grammaticales précieuses sur
+ les mots du Coran sur lesquels l’index est basé, mais il les formule d'une
+ façon spéciale et complexe qui rend difficile leur extraction.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Corpus"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Nous allons aborder la version disponible en téléchargement, elle est en
+ format de XML et elle contient les information suivants:
+\end_layout
+
+\begin_layout Enumerate
+Le numéro de sourate dans le Coran, le numéro d'aya dans la sourate et le
+ numéro de mot dans l'aya (clé) 
+\end_layout
+
+\begin_layout Enumerate
+Le mot en script othmani (Unicode)
+\end_layout
+
+\begin_layout Enumerate
+Une expression codée qui décrit le mot morphologiquement et grammaticalement
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Enumerate
+, cette expression contient les tags suivants:
+\end_layout
+
+\begin_layout Enumerate
+details of tags / to do 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Todo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+resizebox{
+\backslash
+textwidth}{!}{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+chapter
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+verse
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+word
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+token
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+morphology
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+بِسْمِ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+bi+ POS:N LEM:{som ROOT:smw M GEN
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+ٱللَّهِ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+POS:PN LEM:{ll~ah GEN
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+ٱلرَّحْمَٰنِ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Al+ POS:ADJ LEM:r~aHoma`n ROOT:rHm MS GEN
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+ٱلرَّحِيمِ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Al+ POS:ADJ LEM:r~aHiym ROOT:rHm MS GEN
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Exemple d’index de morphologie – Qur’anic corpus
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Tanzil Project
+\end_layout
+
+\begin_layout Standard
+Tanzil est un projet coranique qui vise à fournir un texte précis du Coran
+ et hautement vérifié.
+ Il a été développé par 
+\noun on
+Hamid Zarrabi-Zadeh 
+\noun default
+et révisé par une équipe de vérification du texte.
+ Tanzil fournit plusieurs textes du Coran en deux grandes catégories décrites
+ ci-dessous : 
+\end_layout
+
+\begin_layout Enumerate
+Script othmani 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Othmani
+\series default
+ : texte du Coran en script othmani similaire au «
+\emph on
+ Mushaf Al-Madina 
+\emph default
+».
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Othmani minimal
+\series default
+ : texte en script othmani avec le minimum de signes de diacritiques et
+ de symboles.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Script simple 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Simple
+\series default
+ : le texte du Coran en script standard plein texte, recommandé pour l'affichage
+ et la recherche.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Simple amélioré
+\series default
+ : texte simple avec une meilleure démonstration d’ikhfā’ et d’idghām
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Des règles de tajwīd appliquées quand le noun as-sākina ou le tanwīn est
+ suivi par certaines lettres.des règles de tajwīd appliquées quand le noun
+ as-sākina ou le tanwīn est suivi par certaines lettres.
+\end_layout
+
+\end_inset
+
+ , simplifié pour la lecture.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Simple minimal
+\series default
+ : texte simple avec un nombre minimum de signes de diacritiques et de symboles.
+ Convenable pour l’intégration dans d'autres textes.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Simple propre
+\series default
+ : texte simple sans signes de diacritiques ou de symboles.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Convenable pour la recherche facile.
+ Tanzil fournit également certains index comme : 
+\end_layout
+
+\begin_layout Itemize
+index de la surate ;
+\end_layout
+
+\begin_layout Itemize
+index du sajdah ; 
+\end_layout
+
+\begin_layout Itemize
+index structurel en : 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Rub’ (on peut definir les hizbs , les nisfs a partir de cet index); 
+\end_layout
+
+\begin_layout Itemize
+Juz’ ; 
+\end_layout
+
+\begin_layout Itemize
+Manzil ; 
+\end_layout
+
+\begin_layout Itemize
+Ruku’ ; 
+\end_layout
+
+\begin_layout Itemize
+Page.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Tanzil est un projet libre à utiliser et téléchargeable sur son site public.
+ Il bénéficie d'une grande crédibilité vu qu’un groupe de chercheurs veille
+ à le vérifier
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Tanzil"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+resizebox{
+\backslash
+textwidth}{!}{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="10" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+sura index
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+sura name
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+aya index
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+aya texte
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+bismillah
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+الفاتحة
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\backslash
+RL{
+\end_layout
+
+\end_inset
+
+ بسم الله الرحمن الرحيم
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+الفاتحة
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\backslash
+RL{
+\end_layout
+
+\end_inset
+
+ الحمد لله رب العالمين 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+الفاتحة
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\backslash
+RL{
+\end_layout
+
+\end_inset
+
+ الرحمن الرحيم 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+الفاتحة
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\backslash
+RL{
+\end_layout
+
+\end_inset
+
+ مالك يوم الدين 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+الفاتحة
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\backslash
+RL{
+\end_layout
+
+\end_inset
+
+ إياك نعبد وإياك نستعين 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+الفاتحة
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\backslash
+RL{
+\end_layout
+
+\end_inset
+
+ اهدنا الصراط المستقيم 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+الفاتحة
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\backslash
+RL{
+\end_layout
+
+\end_inset
+
+ صراط الذين أنعمت عليهم غير المغضوب عليهم ولا الضالين 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+البقرة
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\backslash
+RL{
+\end_layout
+
+\end_inset
+
+ الم 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\backslash
+RL{
+\end_layout
+
+\end_inset
+
+بسم الله الرحمن الرحيم
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+...
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+...
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+...
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+...
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+...
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Exemple du Coran modèle simple propre – Tanzil.info
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+resizebox{
+\backslash
+textwidth}{!}{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="9">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+index
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ayas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+start
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+name
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+tname
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ename
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+type
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+order 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+rukus
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+الفاتحة
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Al-Faatiha
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The Opening
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Meccan
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+286
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+البقرة
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Al-Baqara
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The Cow
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Medinan
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+87
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+40
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+200
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+293
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic} 
+\backslash
+RL{آل عمران } 
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Aal-i-Imraan
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The Family of Imraan
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Medinan
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+89
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+176
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+493
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+النساء
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An-Nisaa
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The Women
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Medinan
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+92
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+24
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+…
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+…
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+…
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+…
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+…
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+…
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+…
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+…
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+…
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Exemple d’index de surate – Tanzil.info
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="15" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+index
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+sura
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+aya
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+type
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+206
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+recommended
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+15
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+recommended
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+16
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+50
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+recommended
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+17
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+109
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+recommended
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+19
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+58
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+recommended
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+22
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+18
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+recommended
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+22
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+77
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+recommended
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+60
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+recommended
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+27
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+26
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+recommended
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+32
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+15
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+obligatory
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+38
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+24
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+recommended
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+41
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+38
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+obligatory
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+53
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+62
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+obligatory
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+84
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+21
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+recommended
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+L'index de sajdah – Tanzil.info
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+index
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+sura
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+aya 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+26
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+44
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+60
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+75
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+...
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+...
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+...
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Exemple d'index de rub’ – Tanzil.info
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Qurany Concepts Tool
+\end_layout
+
+\begin_layout Standard
+Qurany Explorer is a comprehensive tool that covers all the themes and concepts
+ mentioned in the Quran.
+ Its made by Mrs.
+ 
+\noun on
+Noorhan Abbas
+\noun default
+ of Leeds univercity.
+ It is imported from 'Mushaf Al Tajweed' 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+
+\lang arabic_arabi
+ مصحف التجويد
+\lang french
+ 
+\end_layout
+
+\end_inset
+
+.
+ The 'Mushaf Al Tajweed' contains a comprehensive hierarchical index or
+ ontology of nearly 1200 concepts in the Quran.
+ It can be used to identify a precise concept and find the verses which
+ allude to this concept, with higher precision.
+ This index is made as a Python dictionary structure but its not available
+ in its raw format.its available only for browsing online hosted in googleapps
+ with the ID : quranytopics
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+http://quranytopics.appspot.com/
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Qurany"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Qurany topics are named in Arabic and English, distributed on 4 levels hierarchy
+ of topics .
+ The first level contains 15 topics which are:
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+Pillars of Islam (
+\lang arabic_arabi
+أركان الإسلام
+\lang american
+)
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+The Call for Allah (
+\lang arabic_arabi
+الدعوة إلى الله
+\lang american
+ )
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+The Holy Quran (
+\lang arabic_arabi
+القرآن الكريم
+\lang american
+)
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+Jihad (
+\lang arabic_arabi
+الجهاد
+\lang american
+)
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+Action(Work) (
+\lang arabic_arabi
+العمل
+\lang american
+)
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+Man and The Moral Relations (
+\lang arabic_arabi
+الإنسان والعلاقات الأخلاقية
+\lang american
+)
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+Man and The Social Relations (
+\lang arabic_arabi
+الإنسان والعلاقات الاجتماعية
+\lang american
+)
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+Organizing Financial Relationships (
+\lang arabic_arabi
+تنظيم العلاقات المالية
+\lang american
+)
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+Trade, Agriculture, Industry and Hunting (
+\lang arabic_arabi
+التجارة و الزراعة و الصناعة و الصيد
+\lang american
+ )
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+Judicial Relationships (
+\lang arabic_arabi
+العلاقات القضائية
+\lang american
+)
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+General and Political Relationships (
+\lang arabic_arabi
+العلاقات السياسية والعامة
+\lang american
+)
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+Science and Art (
+\lang arabic_arabi
+العلوم والفنون
+\lang american
+)
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+Religions (
+\lang arabic_arabi
+الديانات
+\lang american
+)
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+The Stories and the History (
+\lang arabic_arabi
+القصص والتاريخ
+\lang american
+)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /media/0794243270/thesis/thesis/Qurany Aperçu.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Aperçue sur Qurany 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Les ontologies de Coran
+\end_layout
+
+\begin_layout Standard
+An ontology formally represents knowledge as a set of concepts within a
+ domain, and the relationships between those concepts.
+ It can be used to reason about the entities within that domain, and may
+ be used to describe the domain.
+ In theory, an ontology is a "formal, explicit specification of a shared
+ conceptualisation"
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Gru93"
+
+\end_inset
+
+.
+ An ontology renders shared vocabulary and taxonomy, which models a domain
+ with the definition of objects and/or concepts, and their properties and
+ relations
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Arv08"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Recently , many researches appeared about Ontolgies for Quranic concepts
+ and differenct information, we cite two of the most important Quranic ontologie
+s that exist :
+\end_layout
+
+\begin_layout Subsection
+Quranic Concepts Ontology 
+\end_layout
+
+\begin_layout Standard
+The Quranic Ontology is also a project of Leeds university done by Mr.
+ 
+\noun on
+Kais Dukes.
+
+\noun default
+ It uses knowledge representation to define the key concepts in the Quran,
+ and shows the relationships between these concepts using predicate logic.
+ The fundamental concepts in the ontology are based on the knowledge contained
+ in traditional sources of Quranic analysis, including the hadīth of the
+ prophet muhammad , and the tafsīr (Quranic exegesis) of ibn kathīr.
+ Named entities in verses, such as the names of historic people and places
+ mentioned in the Quran, are linked to concepts in the ontology as part
+ of named entity tagging.
+ 
+\end_layout
+
+\begin_layout Standard
+As well as listing the major concepts in the Quran, the ontology also defines
+ a set of semantic relations between these concepts.
+ The most important relation is the set membership relation "instance" in
+ which one concept is defined to be an instance or individual member of
+ another group.
+ For example the relation 
+\emph on
+"Satan is a jinn"
+\emph default
+ in the ontology would represent the knowledge contained in the Quran that
+ the individual known as
+\emph on
+ Satan
+\emph default
+ belongs to the set of sentient creations named the 
+\emph on
+jinn
+\emph default
+.
+ Other concepts in the ontology and grouped into logical categories, according
+ to the properties that they share.
+ For example, the Sun, Earth and Moon are classified under "Astronomical
+ Body":
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /media/0794243270/thesis/thesis/Quranic Ontology.png
+	lyxscale 75
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+A closer look at Quran Concepts Ontology
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+L’Ontologie faite par M.
+ Hadj henni :
+\end_layout
+
+\begin_layout Standard
+Il existe plusieurs possibilités d’ontologie pour le contenu du Coran.
+ M.
+ 
+\noun on
+Hadj henni
+\noun default
+ a procédé à la construction d’une ontologie de domaine des documents coraniques
+ par la méthode de mapping du schéma XML du modèle standard du Mushaf électroniq
+ue vers le langage OWL.
+ Ce choix est justifié par les avantages très intéressants de ce langage.
+\end_layout
+
+\begin_layout Standard
+Dans un premier temps, il a réalisé ce mapping automatiquement, ensuite
+ manuellement.
+ Il a constaté que ce dernier s’avère satisfaisant et plus performant que
+ le mapping manuel.
+ L’ontologie obtenue par le mapping manuel est enrichie pour constituer
+ la première ontologie de domaine des documents Coraniques.
+ 
+\end_layout
+
+\begin_layout Standard
+Cette ontologie répond aux besoins de modèle standard sémantique, réutilisable
+ et modulaire ; elle contiendra les concepts du domaine des documents coraniques
+ et les contraintes sémantiques et servira de base à la construction d’autres
+ ontologies en relation avec le contenu du Coran 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Hadj08"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /media/0794243270/thesis/thesis/Ontology-henni.png
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Schéma de l’ontologie de domaine des documents Coraniques 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Hadj08"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Conclusion
+\end_layout
+
+\begin_layout Standard
+Nous avons conclu dans ce chapitre que la richesse des informations contenu
+ dans le Coran, nous conduisent à s'interroger: comment extraire le maximum
+ de ces informations, la réponse pourrait être un moteur de recherche bien
+ fondé , bien adapté et extensible.
+  
+\end_layout
+
+\begin_layout Standard
+La limitation des resources coranique informatisé peut rendre notre travail
+ plus difficile, mais nous essayons de faire notre travail avec un maximum
+ d'indépendance des projets non-ouverts de construction des ressources coranique
+s.
+\end_layout
+
+\begin_layout Standard
+Dans le chapitre suivant nous allons présenté comment un moteur de recherche
+ fonctionne en bien details pour les étapes d'indexation et de recherche.
+\end_layout
+
+\end_body
+\end_document

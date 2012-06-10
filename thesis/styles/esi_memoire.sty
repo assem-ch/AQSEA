@@ -1,0 +1,188 @@
+%Arabic
+
+\date{}
+%==================
+%\usepackage{hyperref}
+
+%\usepackage{setspace}
+\usepackage{fontspec}
+%\usepackage[RTLdocument]{bidi}
+\usepackage{polyglossia}
+\usepackage{color}
+\def\BSML{\begin{center}\char"FB51 \char"FB52 \char"FB53\end{center}}
+
+\rhead{\thepage}
+\lhead{\footnotesize\it{\leftmark}}
+\chead{\footnotesize\it}
+\cfoot{}
+
+
+
+
+\selectbackgroundlanguage{french}
+
+\setmainlanguage{english}
+\setotherlanguage[numerals=maghrib]{arabic}
+
+\newfontfamily\arabicfont[Script=Arabic,Scale=1.5]{Scheherazade} 
+%=======================================
+%\usepackage[xetex]{hyperref}
+%\usepackage[xetex,unicode=true]{hyperref}
+%======================================
+%I do not know what this do- i think it allow lyx to poit to the figure itself
+%\usepackage[figure]{hypcap}
+
+
+
+
+%end Arabic
+
+\usepackage{epigraph}
+\renewcommand{\epigraphwidth}{300pt}
+\usepackage{graphicx} %resize tables
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{lastpage}
+%for better resolution 
+
+%\usepackage{aeguill}  %didnt support Arabic
+\usepackage{nomencl}
+
+%end verified
+
+
+
+%natbib list item alignment
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\@lbibitem}
+  {\item[\hfil\NAT@anchor{#2}{\NAT@num}]}
+  {\item[\NAT@anchor{#2}{\NAT@num}\hfill]}
+  {}{}
+\makeatother
+
+%compression
+%\pdfminorversion=5 
+%\pdfcompresslevel=9
+%\pdfobjcompresslevel=2
+
+
+% if pdflatex is used
+\usepackage{ifpdf}
+\ifpdf
+ % set fonts for nicer pdf view
+ %\IfFileExists{lmodern.sty}
+ % {\usepackage{lmodern}}{}
+
+\fi % end if pdflatex is used
+
+%\usepackage[T1]{fontenc}
+%\usepackage[default]{frcursive}
+%\usepackage[Lenny]{sty/fncychapleo}
+\usepackage{ifthen}
+\usepackage{notoccite}
+\renewcommand{\nomname}{Liste des Abréviations}
+\makenomenclature
+
+
+
+\hypersetup{colorlinks=true,citecolor=black,linkcolor=black}
+\date{}
+
+\textwidth 15.5cm
+
+\fancyhead{} % clear all header fields
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyheadoffset[]{0cm}
+
+\renewcommand{\chaptermark}[1]{%
+\markboth{#1}{}}
+
+\renewcommand{\headrule}{{\color{black}%
+\hrule width\headwidth height\headrulewidth \vskip-\headrulewidth}}
+
+
+\newcommand{\helv}{%
+\fontfamily{phv}\fontseries{b}\fontsize{7}{9}\selectfont}
+
+\hoffset 0cm
+\textheight 24cm
+
+\fancyhf{}
+\fancyfoot[R]{\footnotesize \thepage}
+\fancyhead[R]{\em \footnotesize \leftmark}
+\fancyhead[L]{{\scshape  \footnotesize Chapitre }{\scshape \footnotesize \thechapter}}
+\fancyfoot[C]{}
+
+\fancypagestyle{plain}{%
+					\fancyhead{} % clear all header fields
+					\fancyfoot[R]{\footnotesize \thepage}
+					\fancyhead[R]{}
+					\fancyhead[L]{}
+					\renewcommand{\headrulewidth}{0pt}
+					\renewcommand{\footrulewidth}{0pt}}
+					
+\fancypagestyle{empty}{%
+					\fancyhead{} % clear all header fields
+					\fancyfoot[R]{}
+					\fancyhead[R]{}
+					\fancyhead[L]{}
+					\renewcommand{\headrulewidth}{0pt}
+					\renewcommand{\footrulewidth}{0pt}}
+
+					
+\usepackage[bottom]{footmisc}
+
+% the pages of the TOC is numbered roman
+% and a pdf-bookmark for the TOC is added
+\pagenumbering{roman}   
+\let\myTOC\tableofcontents
+%
+\renewcommand{\tableofcontents}{%
+ \pdfbookmark[1]{\contentsname}{}
+ \myTOC
+ \cleardoublepage
+ %\pagenumbering{arabic}
+ }
+
+%% redefine the \LyX macro for PDF bookmarks
+\def\LyX{\texorpdfstring{%
+  L\kern-.1667em\lower.25em\hbox{Y}\kern-.125emX\@}
+  {LyX}}
+
+\newcounter {theme}
+\renewcommand\thetheme         {\@arabic\c@theme}
+\newcommand{\nomunit}[1]{%
+	\renewcommand{\nomentryend}{\dotfill#1}}
+\renewcommand{\nomentryend}{.}
+  
+%\renewcommand{\thechapter}{\arabic{chapter}}
+\titleformat{\chapter}[display]
+{\scshape\Huge}
+{\filright{\chaptertitlename} \thechapter}
+{1ex}
+{
+\vspace{1ex}%
+\filright}
+[\vspace{1ex}%
+]
+
+%\titleformat{\part}[display]{\scshape\Huge}{\filcenter \partname \Large \thepart}{1ex}
+%{
+%\vspace{1ex}%
+%\filcenter}
+%[\vspace{1ex}%
+%]
+
+%captions
+%\setlength{\intextsep}{0cm plus1cm minus1cm}
+\usepackage[font={small}]{caption}
+
+%\newcommand{\notocsection}[1]{% 
+    %\refstepcounter{chapter}% 
+ %   \chapter*{\thechapter \quad #1}}% 
+
+
+
+
