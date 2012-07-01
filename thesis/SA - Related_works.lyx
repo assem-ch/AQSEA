@@ -154,10 +154,10 @@ LatexCommand tableofcontents
 \end_layout
 
 \begin_layout Chapter
-related works 
+Related works 
 \begin_inset CommandInset label
 LatexCommand label
-name "chapitre1"
+name "chapitre5"
 
 \end_inset
 
@@ -180,9 +180,10 @@ status open
 \backslash
 epigraph{
 \backslash
-textit{How}}{
+textit{Research is to see what everybody else has seen, and to think what
+ nobody else has thought}}{
 \backslash
-textit{Albert Einstein}}
+textit{ Albert Szent-Gyorgyi }}
 \end_layout
 
 \begin_layout Plain Layout

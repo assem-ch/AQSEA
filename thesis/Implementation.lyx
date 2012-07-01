@@ -196,20 +196,6 @@ textit{Linus Torvalds}}
 Introduction
 \end_layout
 
-\begin_layout Standard
-\begin_inset Flex Initial
-status collapsed
-
-\begin_layout Plain Layout
-A
-\end_layout
-
-\end_inset
-
-près une étude large et approfondie du projet, nous arrivons dans ce chapitre
- 
-\end_layout
-
 \begin_layout Section
 Open Source Standards
 \end_layout
@@ -2241,6 +2227,18 @@ Useful Features
 
 \begin_layout Subsection
 Localization
+\end_layout
+
+\begin_layout Section
+Lack fo Quranic resources
+\end_layout
+
+\begin_layout Standard
+[what's the resources that we need and it's not available or not complete]
+\end_layout
+
+\begin_layout Standard
+[How to resolve each one!]
 \end_layout
 
 \begin_layout Section

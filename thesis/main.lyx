@@ -547,6 +547,17 @@ filename "SA - Fonctionnement.lyx"
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+preview true
+filename "SA - Related_works.lyx"
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Part
 Analysis & Conception
 \end_layout

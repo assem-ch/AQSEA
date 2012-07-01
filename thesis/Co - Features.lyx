@@ -113,13 +113,7 @@ pagenumbering{arabic}
 \end_layout
 
 \begin_layout Chapter
-Classification & Proposition of Quranic Search Features 
-\begin_inset Info
-type  "buffer"
-arg   "vcs-revision"
-\end_inset
-
-
+Classification & Proposition of Quranic Search Features
 \begin_inset CommandInset label
 LatexCommand label
 name "chapitre4"
@@ -1258,22 +1252,6 @@ Word properties embedded query:
 \begin_layout Enumerate
 
 \series bold
-Numerical values substitution:
-\series default
- this helps to retrieve numbers, even if appeared as words.
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-309 replaces 
-\lang arabic_arabi
-ثلاثمائة وتسعة
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-
-\series bold
 Consideration/Ignoring spell faults:
 \series default
  especially for the letters that usually misspelled like Hamza(
@@ -1316,6 +1294,80 @@ Consideration/Ignoring spell faults:
 جنة
 \end_layout
 
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Word Annotations
+\series default
+: Attaching annotations to each word of results (ayas) will helps linguistics
+ students to get information about the word easily and word_by_word.
+ This annotaions contains 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO
+\end_layout
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang arabic_arabi
+الحمد لله
+\lang english
+:
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang arabic_arabi
+ 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+
+\size tiny
+TODO
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang arabic_arabi
+الحمد
+\lang english
+ : 
+\end_layout
+
+\begin_layout Itemize
+
+\lang arabic_arabi
+لله
+\lang english
+ : 
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Enumerate
 
@@ -1384,6 +1436,7 @@ Allah
  
 \end_layout
 
+\begin_deeper
 \begin_layout Itemize
 
 \lang arabic_arabi
@@ -1408,6 +1461,7 @@ Allah
  فَاطِرَ السَّمَاوَاتِ وَالْأَرْضِ
 \end_layout
 
+\end_deeper
 \begin_layout Enumerate
 
 \series bold
@@ -1447,22 +1501,20 @@ Structural option
  ...etc.
 \end_layout
 
+\begin_deeper
 \begin_layout Itemize
-
-\lang arabic_arabi
-صفحة: 1 
+page: 1 
 \end_layout
 
 \begin_layout Itemize
-
-\lang arabic_arabi
-حزب :
+Hizb :
 \numeric on
 60
 \numeric off
  
 \end_layout
 
+\end_deeper
 \begin_layout Enumerate
 
 \series bold
@@ -1481,7 +1533,7 @@ helps users to search using words translations to other langugaes instead
 \begin_layout Enumerate
 
 \series bold
-Similitudes search (
+Allegorical verses (
 \lang arabic_arabi
 المتشابهات
 \lang english
@@ -1502,11 +1554,7 @@ status open
 
 \begin_deeper
 \begin_layout Itemize
-_ 
-\lang arabic_arabi
-متشابهة
-\lang english
- {55,13} 
+Allegories of {55,13} 
 \begin_inset Newline newline
 \end_inset
 
@@ -1514,7 +1562,7 @@ _
 \lang arabic_arabi
 فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ
 \lang english
-] , 31 exact similitudes 
+] , 31 exact allegories
 \end_layout
 
 \end_deeper
@@ -1533,7 +1581,7 @@ Abrogators and Abrogated verses search
 \begin_layout Enumerate
 
 \series bold
-Examples search (
+Parables (
 \lang arabic_arabi
 الأمثال
 \lang english
@@ -1554,9 +1602,13 @@ def of mathal qurany]
 
 \begin_deeper
 \begin_layout Itemize
-
+Parable-in-Sura: the Cow(
 \lang arabic_arabi
-مثل في سورة:البقرة 
+البقرة
+\lang english
+)
+\lang arabic_arabi
+
 \begin_inset Newline newline
 \end_inset
 
@@ -1819,7 +1871,142 @@ the absence of diacritics lead to the ambiguities that we’ve mentioned them
 \begin_layout Enumerate
 
 \series bold
-Proper nouns search
+Entity Extraction:
+\series default
+ this helps to retrieve Person; Date; Time; Distance; Number; Places , even
+ if appeared as in a different format.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Extract 
+\lang arabic_arabi
+ثلاثمائة وإزدادوا تسعا
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+as (Time/number, 309)
+\end_layout
+
+\begin_layout Itemize
+Extract 
+\lang arabic_arabi
+ببكة
+\lang english
+ as (place, Mekka / 
+\lang arabic_arabi
+مكة
+\lang english
+)
+\end_layout
+
+\begin_layout Itemize
+Extracta 
+\lang arabic_arabi
+كلمح البصر
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+as (time unit, ??) 
+\end_layout
+
+\begin_layout Itemize
+Extract 
+\lang arabic_arabi
+مثقال ذرة
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ as (Size unit, ??)
+\end_layout
+
+\begin_layout Itemize
+Extract 
+\lang arabic_arabi
+يا أيها النبي
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+as (person, Mohammed)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Proper nouns search (coreference resolution)
 \series default
 : lot of proper nouns are mentioned clearly in Quran but some of them are
  just referred to implecitly .
@@ -1987,7 +2174,7 @@ How many the word of
 \begin_inset Quotes eld
 \end_inset
 
-
+Sea/
 \lang arabic_arabi
 بحر
 \lang english
@@ -1999,7 +2186,7 @@ How many the word of
 \begin_inset Quotes eld
 \end_inset
 
-
+Seas/ 
 \lang arabic_arabi
 بحار
 \lang english
@@ -2052,21 +2239,83 @@ Discussion
 \end_layout
 
 \begin_layout Standard
-Solutions that we have, why we have chosen Survey: the only solution to
- validate
-\end_layout
-
-\begin_layout Subsection
-Survey
+Those proposed search features could be useful or not, needed or not.
+ That's why , we need to find a way to validate the usefulness of those
+ feature and the need to them.
+ The best validation way in our case is to gather the opinions of normal
+ users, Quran scholars, Arabic morphology experts, Natural Language Processing
+ / Information Retrieval researchers, and may be philosophers that are working
+ on religions comparing.
+ We have to mix the audience aimed by the survey to get high quality feedbacks
+ about usefulness, clarity and importance of each search feature.
+ But, the real experience will give better feedbacks so we will gather the
+ feedbacks of users about each implemented feature.
+ for this, we'll make a second-step validation which is the users feedbacks
+ in Alpha-Beta test phases that will be available after implementation of
+ our work as a desktop application or a “Google-like” website .
+ 
 \end_layout
 
 \begin_layout Standard
-short description + How: Survey Monkey Integrated in Alfanous Facebook Page
- + Audiance aimed 
+Survey.
+\end_layout
+
+\begin_layout Subsection
+Survey 
+\end_layout
+
+\begin_layout Standard
+We've made the survey in English for a better cover of the audience and
+ [وزعنا] the questions in many Steps/Pages
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Entry Page:
+\series default
+ here we ask about the background of the survey taker, How deep his knowledge
+ in the three axes: Arabic, Quran, Computing.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+What is your primary language?
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Middle Pages:
+\series default
+ here we explain each search feature to the survey taker then ask him about
+ its usfulness , usability and clarity.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Exit Page:
+\series default
+ here we ask about the survey itself , difficulties that may the survey
+ taker have it through the survey.
+\end_layout
+
+\begin_layout Standard
+We've chosen SurveyMonkey [ref] to build our survey because it's best survey
+ maker in the internet, it offers lot of helpful options [survey features].
+ SurveyMonkey offer many methods to attend a wider audience by integration
+ in social networks.
+ 
 \end_layout
 
 \begin_layout Subsubsection
-Results
+Survey Participants Details
+\end_layout
+
+\begin_layout Subsubsection
+Results of survey
 \end_layout
 
 \begin_layout Standard
@@ -2338,10 +2587,6 @@ Survey Audience
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -2355,10 +2600,8 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Tabular
-<lyxtabular version="3" rows="4" columns="8">
+<lyxtabular version="3" rows="4" columns="6">
 <features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
@@ -2407,24 +2650,6 @@ Usability
 
 \begin_layout Plain Layout
 Usefulness
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Complexity
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Possibility
 \end_layout
 
 \end_inset
@@ -2485,24 +2710,6 @@ Ressources needed
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
@@ -2559,24 +2766,6 @@ Ressources needed
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
@@ -2588,24 +2777,6 @@ Ressources needed
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -2686,15 +2857,19 @@ Survey Results
 \end_layout
 
 \begin_layout Subsection
+Survey Conclusions
+\end_layout
+
+\begin_layout Subsubsection
 Clarity
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Usability and Usefulness
 \end_layout
 
-\begin_layout Subsection
-Complexity and Possibility
+\begin_layout Subsubsection
+Importance
 \end_layout
 
 \begin_layout Section
@@ -2708,8 +2883,15 @@ In this chapter, we have enlisted the search features in Quran that are
  on the nature of the problem.
  That list will help us to make a detailed retrieval system that fit perfectly
  the needs of the Quran.
- Each feature has a different level of complexity: could be implemented
- easily or may lead to vast problem that need a deeper study.
+ We conducted a survey about usefulness, usabilty and clarity of earch feature
+ and we have got very helpful feedbacks.
+ 
+\end_layout
+
+\begin_layout Standard
+Each feature has a different level of complexity: could be implemented easily
+ or may lead to vast problem that need a deeper study.
+ That what we'll explain in the next chapter.
 \end_layout
 
 \end_body

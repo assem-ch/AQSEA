@@ -20,7 +20,7 @@
 
 \setmainlanguage{english}
 \setotherlanguage[numerals=maghrib]{arabic}
-\newfontfamily\arabicfont[Script=Arabic,Scale=1.5,Mapping=arabicdigits]{Scheherazade}
+\newfontfamily\arabicfont[Script=Arabic,Scale=1.5]{Scheherazade}
 \end_preamble
 \use_default_options false
 \maintain_unincluded_children false
@@ -112,19 +112,19 @@ Assem
 \begin_inset space ~
 \end_inset
 
-Chelli, Taha
+Chelli, Amar
 \begin_inset space ~
 \end_inset
 
-Zerrouki, and
+Balla, and
 \begin_inset space ~
 \end_inset
 
-Amar
+Taha
 \begin_inset space ~
 \end_inset
 
-Balla,
+Zerrouki,
 \begin_inset Foot
 status open
 
@@ -136,29 +136,7 @@ Assem
 Chelli, ESI - Algiers,
 \begin_inset CommandInset href
 LatexCommand href
-target "a_chelli@esi.dz"
-type "mailto:"
-
-\end_inset
-
-.
-\end_layout
-
-\end_inset
-
-
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-Taha
-\begin_inset space ~
-\end_inset
-
-Zerrouki, ESI - Algiers, 
-\begin_inset CommandInset href
-LatexCommand href
-target "taha.zerrouki@gmail.com"
+target "assem.ch@gmail.com"
 type "mailto:"
 
 \end_inset
@@ -191,10 +169,32 @@ type "mailto:"
 \end_inset
 
 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Taha
+\begin_inset space ~
+\end_inset
+
+Zerrouki, ESI - Algiers, 
+\begin_inset CommandInset href
+LatexCommand href
+target "taha.zerrouki@gmail.com"
+type "mailto:"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Page headings
-Jeesi 2012
+workshop pre-conference 2012 LREC
 \begin_inset ERT
 status open
 
@@ -208,7 +208,7 @@ status open
 Assem Chelli et al.
  : Advanced Search in Quran
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset ERT
@@ -230,34 +230,36 @@ left side}{right side
 \end_layout
 
 \begin_layout Abstract
-Quran, the sacred book of Muslims, contains various information about all
- aspects of life: Scientific, Social, Historic, Politic…etc.
- It is so different of its language, structure, diversity.
- With a huge treasure of information, we can extract manually only a small
- part.
- The printed indexes can’t help much since many search process waste the
+The Quran is a sacred book to all Muslims which contains a variety of informatio
+n about all aspects of life: Scientific, Social, Historic and Political
+ based knowledge.
+ The Quran is extremly dynamic and consists of a unique structure within
+ a distinctive language.
+ It contains an immense , vast range of information, which can only extracted
+ in small parts.
+ The printed indexes can’t help much since many search processes waste the
  time and the effort of the searcher.
- The simple search using exact query doesn’t offer real options and still
- inefficient to move toward the thematic search for example.
- Because this limitation, we have to find out a new way to query.
- Our proposition is to design an information retrieval system that fits
- to the needs of the Quran.
+ The simple search using exact query doesn’t offer realistic options and
+ still highly inefficient to move toward the thematic search for example.
+ Due to this limitation, the need to find a more practical method to query
+ is evident.
+ Our proposal is to design an information retrieval system that fits to
+ the specific needs of the Quran.
  But to realize this objective, we must first list and classify all the
- search features that are possible and helpful.
- We wrote this paper to explain this point.
- The paper contains a listing for all search features that we have collected
- and a classification depending on the nature of feature and the way how
- can be implemented.
+ search features that are possible and helpful, this paper has been written
+ to explain this point.
+ It contains a listing for all search features that we have collected and
+ a classification depending on the nature of feature.
 \end_layout
 
 \begin_layout Keywords
-Search Features, Quran, Query, Arabic, Information Retrieval, Search engines
+Search Features, Quran, Query, Arabic, Information Retrieval, Search engines.
 \end_layout
 
 \begin_layout Section
 Introduction 
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 add facetated search (thematic search), clustered search, ontology-based
@@ -310,10 +312,7 @@ status collapsed
 \lang arabic_arabi
 التواتر
 \lang english
-).
- The Qur'an is also known by other names such as: Al-Furkān , Al-kitāb ,
- Al-dhikr , Al-wahy and Al-rōuh .
- It is the sacred book of Muslims and the first reference to Islamic law
+)
 \lang french
 
 \begin_inset CommandInset citation
@@ -325,46 +324,25 @@ key "Meh73"
 
 \lang english
 .
+ The Qur'an is also known by other names such as: Al-Furkān , Al-kitāb ,
+ Al-dhikr , Al-wahy and Al-rōuh .
+ It is the sacred book of Muslims and the first reference to Islamic law.
  
 \end_layout
 
 \begin_layout Standard
-Quran contains various information about all aspects of life: Scientific,
- Social, Historic, Politic…etc
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-ref: Quran various information
-\end_layout
-
-\end_inset
-
-.
- It is so different of its language, structure, diversity
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-ref Quran is so different
-\end_layout
-
-\end_inset
-
-.
- With a huge treasure of information, we can extract manually only a small
- part.
-\end_layout
-
-\begin_layout Standard
-By example, if you want to find a book of English grammar, you’ll simply
- Google it, select a PDF and download it .that’s all! Search engines (like
- Google) are utilized generally on Latin letters and for searching general
- information of document like content, title, author…etc.
- However, searching that way in the Quran is not sufficient because there
- is lots of information that must be extracted to fulfill Quran scholar’s
- needs.
- Before computer, Quran scholars were using printed lexicons made manually.
+Due to the large amount of information held in the Qur'an, it has become
+ extremely difficult for regular search engines to successfully extract
+ key information.
+ For example, When searching for a book a book related to English grammar,
+ you’ll simply Google it, select a PDF and download it .that’s all! Search
+ engines (like Google) are utilized generally on Latin letters and for searching
+ general information of document like content, title, author…etc.
+ However, searching through Qu'ranic text is a much more complex procedure
+ requiring a much more in depth solution as there is a lot of information
+ that needs to be extracted to fulfill Quran scholar's needs.
+ Before the creation of computer, Quran scholars were using printed lexicons
+ made manually.
  The printed lexicons can’t help much since many search process waste the
  time and the force of the searcher.
  Each lexicon is written to reply to a specific query which is generally
@@ -399,7 +377,7 @@ Full text search evolution
 \end_layout
 
 \begin_layout Standard
-Our proposition is about design a retrieval system that fit the Quran search
+Our proposal is about design a retrieval system that fit the Quran search
  needs.
  But to realize this objective, we must first list and classify all the
  search features that are possible and helpful.
@@ -570,7 +548,7 @@ key "Alb09"
 Trying to resolve these problems as a generic Arabic problem is really hard
  since it hasn’t linguistic resources to make strict lexical analyzers
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 ref:Arabic google the phrase
@@ -748,7 +726,7 @@ This is an initial classification; we have to improve it for a well exploit
 \end_layout
 
 \begin_layout Section
-Proposition
+Proposals
 \end_layout
 
 \begin_layout Standard
@@ -791,7 +769,7 @@ Mohammed Fouad Abd El-bāki
 We have manipulated those ideas to fit the context of Arabic and Quran.
  There are many features that are totally new , we propose them to fulfill
  a search need or resolve a specific problem.
- In addition to simple search, these are our propositions:
+ In addition to simple search, these are our proposals:
 \end_layout
 
 \begin_layout Enumerate
@@ -1123,7 +1101,7 @@ Uthmani script with full diacritical marks:
 \lang english
 َ] 
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -3447,13 +3425,11 @@ is a website that offers search in Quran and Hadith.
  The main disadvantage of Alawfa is that it doesn’t respect the specifics
  of Arabic and Quran.
  It searches only as exact word or as a part of word.
- 
-\begin_inset Note Note
-status collapsed
+\lang french
 
-\begin_layout Plain Layout
-ref to alawfa website
-\end_layout
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Alawfa"
 
 \end_inset
 
@@ -3461,7 +3437,7 @@ ref to alawfa website
 \end_layout
 
 \begin_layout Paragraph*
-Al-Monaqeb_alqurany 
+Al-Monaqeb-Alqurany 
 \end_layout
 
 \begin_layout Standard
@@ -3474,17 +3450,18 @@ target " www.holyquran.net"
 
 .
  It offers a board for advanced search options that contains many useful
- options 
-\begin_inset Note Note
-status collapsed
+ options
+\lang french
 
-\begin_layout Plain Layout
-ref to almonaqeb website
-\end_layout
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Almonakkeb"
 
 \end_inset
 
-: 
+
+\lang english
+ : 
 \end_layout
 
 \begin_layout Itemize
@@ -3513,7 +3490,18 @@ Zekr is a desktop application aimed to be an open platform Quran study tool
  It offers many sorting criteria like Relevance, Natural order, Revelation
  order, Aya length.
  Also, it offers browsing with Mushaf Structures: Hizb number, Surah name,.
- It search using the exact word, the part of word, the arabic root.
+ It search using the exact word, the part of word, the arabic root 
+\lang french
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Zekr"
+
+\end_inset
+
+
+\lang english
+.
 \end_layout
 
 \begin_layout Description
@@ -3546,7 +3534,7 @@ Conclusion
 \begin_layout Standard
 In this paper, we have enlisted the search features in Quran that it’s helpful.
  To facilitate the enlisting, we have classified those features depending
- on the nature of the problem and the way how can be fixed.
+ on the nature of the problem.
  That list will help us to make a detailed retrieval system that fit perfectly
  the needs of the Quran.
  Each feature has a different level of complexity: could be implemented
@@ -3567,14 +3555,7 @@ Don't add text here!
 \end_layout
 
 \begin_layout Section*
-Acknowlegment
-\end_layout
 
-\begin_layout Standard
-We would like to thank Alfanous Open Community for its support .
- We thanks all who helps in verification of this paper especially: Nasrah
- .
- 
 \end_layout
 
 \begin_layout Standard
@@ -3593,89 +3574,8 @@ phy entries embedded in the LaTeX-file.
 
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
-bibfiles "IEEEexample,db"
+bibfiles "IEEEexample,web,db"
 options "IEEEtran"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Biography
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-{
-\end_layout
-
-\end_inset
-
-Assem Chelli
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
- A Master student from National higher school of computer science (ESI)
- - Algiers.
- Doing his research about the indexing & search in Arabic Generally, Quran
- Specifically.
- To validate his work, he implemented a Quranic search engine API that is
- easily-costumizable.
- He launched this API as an Open source project called Alfanous.
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-\begin_inset Argument
-status open
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-{
-\end_layout
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename me_3.JPG
-	width 1in
-	height 1.25in
-	clip
-
-\end_inset
-
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
 
 \end_inset
 

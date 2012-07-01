@@ -601,7 +601,7 @@ left side}{right side
  القرآن .مثلا ، البحث عن الكلمة الأكثر ورودا.
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
 هذا التصنيف هو تصنيف أولي علينا تحسينه من أجل تمثيل أفضل لكل مزايا البحث
  الممكنة في القرآن.
 \begin_inset Newline newline
@@ -785,7 +785,7 @@ Lucene
  في اللاتينية، يوجد رمزي جوكر يستعملان بصفة واسعة : ? تنوب عن حرف واحد،
  * تنوب عن عدد غير معيّن من الحروف لكنهما أثبتا محدوديتهما في اللغة العربية
  بسبب وجود علامات التشكيل التي لا يمكن اعتبارها في أي حال من الأحوال كحروف
- وكذل وجود حرف الهمزة الذي يملك عدة صور وعدة مواضع في اليونيكود.
+ وكذلك وجود حرف الهمزة الذي يملك عدة صور وعدة مواضع في اليونيكود.
 \end_layout
 
 \begin_deeper
@@ -839,6 +839,7 @@ relevance
  البحث بعبارة مركبة من المزايا الأساسية التي ذكرناها.
 \end_layout
 
+\begin_deeper
 \begin_layout Itemize
 ”*حمد لله“^2
 \begin_inset Newline newline
@@ -847,6 +848,7 @@ relevance
 
 \end_layout
 
+\end_deeper
 \end_deeper
 \begin_layout Itemize
 
@@ -1044,7 +1046,7 @@ font me_Quran
 \begin_layout Itemize
 
 \series bold
-نظم الإقتراح
+نظم الإقتراحات
 \end_layout
 
 \begin_deeper
@@ -1107,7 +1109,7 @@ font me_Quran
 \begin_layout Itemize
 
 \series bold
-العبارات المكررة 
+المتلازمات 
 \lang english
 (Collocated words)
 \family roman
@@ -1132,7 +1134,9 @@ font me_Quran
 \uwave default
 \noun default
 \color inherit
-:
+: 
+\series default
+توفر إكمالا تلقائيا بناءا على مراقبة إحصائية للمتلازمات.
 \end_layout
 
 \begin_deeper
@@ -1154,7 +1158,7 @@ font me_Quran
 \series bold
 المعاني المختلفة 
 \series default
-: تستعمل لتحديد البحث في احدى معاني كلمة دون معانيها الأخرى
+: تستعمل لتحديد البحث في احدى معاني كلمة دون معانيها الأخرى.
 \end_layout
 
 \begin_deeper
@@ -1198,7 +1202,7 @@ font me_Quran
 \begin_layout Itemize
 
 \series bold
-الاشتقاق متعدد-المستويات: 
+الاشتقاق متعدد المستويات: 
 \series default
 اشتقاقات الكلمات العربية يمكن أن تقسّم إلى
 \family roman
@@ -1264,12 +1268,8 @@ font me_Quran
 \end_layout
 
 \begin_layout Itemize
-(الكلمة: أسقينا, المستوى: 
-\lang english
-lemma
-\lang arabic_arabi
- ) للبحث عن وَأَسْقَيْنَاكُمْ , لَأَسْقَيْنَاهُمْ, فَأَسْقَيْنَاكُمُوهُ
- .
+(الكلمة: أسقينا, المستوى: lemma ) للبحث عن وَأَسْقَيْنَاكُمْ , لَأَسْقَيْنَاهُمْ
+, فَأَسْقَيْنَاكُمُوهُ .
 \begin_inset Newline newline
 \end_inset
 
@@ -1288,12 +1288,12 @@ lemma
 
 \begin_deeper
 \begin_layout Itemize
-تصريف في الماضي لفعل قال للبحث عن قالت, قال, قالوا, قلن ...
+تصريف في الماضي لفعل 'قال' للبحث عن قالت, قال, قالوا, قلن ...
  
 \end_layout
 
 \begin_layout Itemize
-تصريف في الأمر لفعل قال للبحث عن قولوا , قل ...
+تصريف في الأمر لفعل 'قال' للبحث عن قولوا , قل ...
  
 \begin_inset Newline newline
 \end_inset
@@ -1478,9 +1478,32 @@ lemma
 \begin_layout Itemize
 
 \series bold
+التعليقات التوضيحية للكلمات(
+\lang english
+Annotations
+\lang arabic_arabi
+): 
+\series default
+عرض التعليقات التوضيحية لكل كلمة من النتائج يساعد دارسي اللغة على تتبعها
+ حسب مواقعها في الآيات كلمة بكلمة بطريقة سهلة
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+]شرح أكثر: ما هي هذه التعليقات التوضيحية[
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
 الكتابة العثمانية للكلمات:
 \series default
- توفر للمستخدم خيار كيف يكتب الكلمات حسب كتابتها الإملائية أو العثمانية.
+ توفر خيار البحث بالكلمات حسب كتابتها الإملائية أو العثمانية.
 \end_layout
 
 \begin_deeper
@@ -1586,6 +1609,32 @@ lemma
 \begin_layout Itemize
 
 \series bold
+تمييز ألفاظ الجلالة: 
+\series default
+تستعمل هذه الميزة في بعض المصاحف حاليا، تهدف الى عرض ألفاظ الجلالة بطريقة
+ واضحة ومميّزة.
+ ألفاظ الجلالة تضم الكتابات المختلفة لكلمة 
+\begin_inset Quotes eld
+\end_inset
+
+الله
+\begin_inset Quotes erd
+\end_inset
+
+ ويمكن أن تضم أيضا أي كلمة أو ضمير يقصد به الله بصفة أكيدة.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+TODO:
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
 إيجاد رموز التلاوة:
 \series default
  مفيدة لطلبة التجويد.
@@ -1612,7 +1661,7 @@ lemma
 \begin_layout Itemize
 
 \series bold
-البحث البنيوي: 
+البحث الموضعي: 
 \series default
 نظرا إلى كون القرآن مقسّما إلى أجزاء و الأجزاء إلى أحزاب والأحزاب إلى أنصاف
  ...
@@ -1737,6 +1786,10 @@ status collapsed
 \end_layout
 
 \end_deeper
+\begin_layout Itemize
+البحث عن الناسخ والمنسوخ:
+\end_layout
+
 \begin_layout Itemize
 
 \series bold
@@ -2112,10 +2165,6 @@ Hypo(
 
 \end_deeper
 \end_deeper
-\begin_layout Standard
-
-\end_layout
-
 \begin_layout Section*
 الأعمال ذات علاقة
 \end_layout

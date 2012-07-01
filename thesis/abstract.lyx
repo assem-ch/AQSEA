@@ -99,15 +99,28 @@ bstract
 \begin_layout Standard
 
 \lang english
-dqsdsq
-\begin_inset Newline newline
-\end_inset
+Noble Quran is different of all documents that we have known.
+ It's the sacred book of Muslims.
+ It contains knowledge of all aspects of life.
+ With this huge quantity of information, We can extract only a small part
+ manually and this is considered insufficient compared to the size of knowledge
+ contained in Quran.
+ That raises the need for a method to extract those information because
+ currently there is no efficient method except many printed lexicons and
+ many tools of simple sequential search with regular expression.
+ Due to this limitation, the Quran requires us to find new ways to interact.
+\end_layout
 
+\begin_layout Standard
 
-\begin_inset Newline newline
-\end_inset
-
-
+\lang english
+The goal through this work is to propose a system for advanced research
+ in all of the information contained in the Quran by considering the morphology
+ of the Arabic language and the properties of the Quranic text.
+ It should be based on modern methods of information retrieval for good
+ stability and high speed search.
+ It would be very useful for researchers and could be generalized to cover
+ all the content in Arabic.
 \end_layout
 
 \begin_layout Standard
@@ -134,7 +147,7 @@ Résumé
 \end_layout
 
 \begin_layout Standard
-Le Coran est différant de tous les documents que nous connaissons .
+Le Coran est différent de tous les documents que nous connaissons .
  C'est le livre sacré des musulmans.
  Il comporte des connaissances sur tous les aspects de la vie.
  Avec un tel volume d'informations, on ne peut y extraire qu'une infime
@@ -150,12 +163,12 @@ Le Coran est différant de tous les documents que nous connaissons .
 \end_layout
 
 \begin_layout Standard
-Le but recherché a travers ce travail est de proposer un système de recherche
+Le but recherché à travers ce travail est de proposer un système de recherche
  avancée dans l'ensemble des informations contenues dans le Coran en prenant
  en considération la morphologie de la langue Arabe et les propriétés du
  texte coranique.
  Elle doit être fondée sur les méthodes modernes de recherche d'informations
- pour obtenir une bonne stabilité et une recherche a grande vitesse.
+ pour obtenir une bonne stabilité et une recherche de grande vitesse.
  Elle serait trés utile pour les chercheurs et pourrait être généralisée
  pour couvrir l'ensemble du contenu en arabe.
 \begin_inset Newline newline
@@ -185,10 +198,6 @@ Indexation/Recherche, Arabe, Coran, Recherche d'information, Moteurs de
 
 \end_layout
 
-\begin_layout Standard
-
-\end_layout
-
 \begin_layout Quote
 
 \series bold
@@ -200,17 +209,25 @@ Indexation/Recherche, Arabe, Coran, Recherche d'information, Moteurs de
 \begin_layout Standard
 
 \lang arabic_arabi
-tefsd.
-\lang english
+القرآن الكريم يختلف عن جميع الوثائق التي نعرفها فهو يحوي المعارف في جميع
+ جوانب الحياة.
+ مع هذا الحجم من المعلومات، لا يستطيع المرء استخراج إلا النزر اليسير يدويا.
+ هذا ليس كافيا بالنسبة لحجم المعارف الواردة في القرآن الكريم.
+ ومن هنا جاءت الحاجة إلى إيجاد طريقة لاستخراج هذه المعلومات.
+ لا توجد أي وسيلة حالية فعالة باستثناء بعض المعاجم المطبوعة وبعض الأدوات
+ التي تعتمد البحث البسيط التسلسلي بالعبارات النمطية.
+ وبسبب هذا القيد ، يتوجب علينا إيجاد طرق جديدة للتفاعل.
+\end_layout
 
-\begin_inset Newline newline
-\end_inset
+\begin_layout Standard
 
-
-\begin_inset Newline newline
-\end_inset
-
-
+\lang arabic_arabi
+الهدف من خلال هذا العمل هو اقتراح نظام للبحث المتقدم في جميع المعلومات الواردة
+ في القرآن الكريم، مع الأخذ في الاعتبار مورفولوجيا اللغة العربية وخصائص
+ النص القرآني.
+ وينبغي الاستناد على الأساليب الحديثة في استرجاع المعلومات من أجل استقرار
+ جيد وسرعةعالية في البحث.هذا العمل مفيد للباحثين ودارسي القرآن ويمكن أن يعمم
+ ليشمل جميع المحتوى باللغة العربية.
 \end_layout
 
 \begin_layout Standard
@@ -224,10 +241,6 @@ tefsd.
 \series default
  بحث/فهرسة، العربية، القرآن، استخراج المعلومات، محركات البحث.
  
-\end_layout
-
-\begin_layout Standard
-
 \end_layout
 
 \end_body

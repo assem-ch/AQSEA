@@ -175,6 +175,20 @@ textit{Albert Einstein}}
 Introduction
 \end_layout
 
+\begin_layout Standard
+After listing all possible search features as explained in the previous
+ chapter, we'll propose and discuss a retrieval system that can [يلبي] most
+ of the features.
+ at first, we'll explain the General behaviour, our modifications and improvment
+s on it.
+ Then we'll explain main parts of the retrival system one by one: Text processin
+g , Query processing, Results processing, Suggestion system.
+ After this, we'll discuss how to implement a full vocalized search and
+ the roadmap toward symantic search.
+ Finally, we'll mention necessary quranic resources and the features depending
+ to each resource.
+\end_layout
+
 \begin_layout Section
 
 \lang english
@@ -576,7 +590,7 @@ FEATURExRESSOURCE
 \begin_inset Float table
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Tabular

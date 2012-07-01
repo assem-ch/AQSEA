@@ -115,7 +115,7 @@ cros/latex/contrib/IEEEtran/IEEEtran_HOWTO.pdf
 \end_layout
 
 \begin_layout Title
-La Recherche Avancée dans le Coran: Classification & Proposition de toutes
+La recherche avancée dans le Coran: Classification & Proposition de toutes
  les fonctionalitées possibles
 \end_layout
 
@@ -128,7 +128,7 @@ Chelli, Amar
 \begin_inset space ~
 \end_inset
 
-Balla,et
+Balla, et
 \begin_inset space ~
 \end_inset
 
@@ -289,7 +289,7 @@ status collapsed
 , en arabe, signifie la lecture ou la récitation.
  Les musulmans le définissent comme la parole de dieu révélée à son prophète
  Mohammed, écrit dans un Mushaf et transmis d’une génération à une autre
-  
+ 
 \lang english
 (
 \lang arabic_arabi
@@ -308,7 +308,7 @@ key "Meh73"
  Le Coran est aussi connu par d’autres noms: Furkān , Al-kitāb , Al-dhikr
  , Al-wahy et Al-rōuh.
  C’est le livre sacré des musulmans et la première référence de la loi Islamique.
- Le Coran contiens des informations variées sur tous les aspects de la vie
+ Le Coran contient des informations variées sur tous les aspects de la vie
  : scientifique,sociale, historique, politique … Différent par sa langue,
  structure et sa diversité.
  Malgré la quantité importante d’information qu’il contient, on peut extraire
@@ -326,13 +326,13 @@ Par exemple, si vous voulez trouver un livre sur la grammaire anglaise,
  aux besoins des chercheurs.
  Avant l’ordinateur, les chercheurs utilisaient des dictionnaires indexés
  imprimés faits manuellement.
- Ce dernier n’aident pas trop les chercheurs et gaspillent leur temps et
- énergie.
+ Ces derniers n’aident pas trop les chercheurs et gaspillent leur temps
+ et énergie.
  Chaque dictionnaire est écrit pour répondre à des recherches qui sont généralem
-ent simple.
+ent simples.
  De nos jours, il y a des applications spécifiques pour la recherche ; la
  plupart des applications qui ont été développé pour le Coran ont des fonctionna
-lités de recherches simples : recherche séquentielle avec l'expression régulière.
+lités de recherche simples : recherche séquentielle avec expression régulière.
 \end_layout
 
 \begin_layout Standard
@@ -342,9 +342,9 @@ La recherche simple en utilisant des requêtes exactes n’offre pas de meilleur
  La recherche intégrale est la nouvelle approche de recherche qui remplace
  la recherche séquentielle.
  Malheureusement cette approche n’est pas appliquée sur le Coran.
- La question est: pourquoi a-t-on besoin de cette approche? Pourquoi des
- moteurs de recherches? Est-ce que les applications de recherche ont vraiment
- besoin d’être implémenter comme moteur de recherche? Les fonctionnalités
+ La question est: pourquoi a-t-on besoin de cette approche? Pourquoi un
+ moteur de recherche? Est-ce que les applications de recherche ont vraiment
+ besoin d’être implémentées comme moteur de recherche? Les fonctionnalités
  de recherche qu’on va mentionner dans ce papier vont répondre à ces questions.
 \end_layout
 
@@ -354,8 +354,8 @@ Notre proposition consiste à modéliser un système de recherche d’informatio
  Pour atteindre cet objectif, on doit d’abord lister et classifier toutes
  les fonctionnalités de recherche possibles et utiles.
  Ce papier éclaircira ce point, il contient une liste de toutes les fonctionnali
-tés de recherche qu’on a collectées et classifié selon la nature de la fonctionn
-alité de recherche et la manière dont elle peut être implémenté.
+tés de recherche qu’on a collecté et classifié selon la nature de la fonctionnal
+ité de recherche et la manière dont elle peut être implémentée.
  
 \end_layout
 
@@ -405,11 +405,11 @@ On commence par le premier point, la recherche dans le Coran a théoriquement
  Après le web sémantique, la recherche se dirige vers une approche sémantique
  ou l’évolution de la recherche dépend sur la compréhension des intentions
  du chercheur et du sens contextuel du terme comme il apparait dans l’espace
- exploitable des données pour générer les résultats les plus pertinentes.
- Pour obtenir plus de expérience d’utilisateur, les moteurs de recherches
- essayent d’évoluer leur manière d’afficher et trier les résultats en se
- basant sur leur pertinence dans les documents, plusieurs options de tri,
- la mise en évidence des mots clés, pagination, filtrage et l’expansion.
+ exploitable des données pour générer les résultats les plus pertinents.
+ Pour obtenir plus d'expérience utilisateur, les moteurs de recherche essayent
+ d’évoluer leur manière d’afficher et trier les résultats en se basant sur
+ leur pertinence dans les documents, plusieurs options de tri, la mise en
+ évidence des mots clés, pagination, filtrage et l’expansion.
  En outre, améliorer les entrées de la recherche en introduisant différentes
  méthodes comme par exemple : entrée vocale, et la suggestion d’autres mots
  clés, Jusqu'à présent ces options ne sont pas implémentées pour rechercher
@@ -442,7 +442,7 @@ key "Shah07"
 -), la vocalisation, les différents degrés de stemming et les types de dérivatio
 ns,etc.
  Aussi,les expressions régulières représentent mal les lettres arabes tant
- que les diacritiques de vocalisations ne sont pas distinctes des lettres.
+ que les diacritiques de vocalisation ne sont pas distinctes des lettres.
  L’absence de la vocalisation entraine quelques ambigüités dans la compréhension
  des mots 
 \lang english
@@ -486,8 +486,8 @@ Essayer de résoudre ces problèmes comme des problèmes génériques de la lang
  Finalement, on expliquera dans ce point quels sont les défis qui font face
  à la recherche dus aux caractéristiques particulières du Coran.
  El-Mushaf, le livre du Coran, est écrit en scripte Ottoman.
- Ce dernier est plein de marques de récitation et quelques mots sont orthographi
-és d’une manière différente.
+ Ce dernier est plein de marque de récitation et quelques mots sont orthographié
+s d’une manière différente.
  Par exemple, le mot 
 \lang english
 “
@@ -504,7 +504,7 @@ Essayer de résoudre ces problèmes comme des problèmes génériques de la lang
 \lang english
 ”
 \lang french
- dans le scripte ottomane.
+ dans le scripte ottoman.
  On doit prendre en considération les spécifications du scripte Ottoman
  dans les phases d’analyse du texte : normalisation, stemming.
  Le coran est structuré en plusieurs niveaux analytiques 
@@ -638,7 +638,7 @@ L’amélioration des résultats
 \begin_layout Enumerate
 
 \series bold
-Les systèmes de suggestions
+Les systèmes de suggestion
 \series default
 : cette classe contient toutes les options qui ont but d’offrir des suggestions
  pour aider l’utilisateur à corriger, enrichir les résultats de recherche
@@ -686,7 +686,7 @@ Les systèmes de statistiques
 \end_layout
 
 \begin_layout Standard
-Il s’agit d’une classification initiale qui a besoin d’être amélioré pour
+Il s’agit d’une classification initiale qui a besoin d’être améliorée pour
  mieux exploiter les fonctionnalités de recherche.
 \end_layout
 
@@ -697,8 +697,8 @@ Proposition
 \begin_layout Standard
 Dans cette section on va lister les fonctionnalités de recherche basées
  sur la classification déjà mentionnée.
- C’est fonctionnalités expriment un besoin de recherche : générale, lié
- à l’arabe ou au Coran.
+ Ces fonctionnalités expriment un besoin de recherche : générale, lié à
+ l’arabe ou au Coran.
  On a collecté les idées de base de :
 \end_layout
 
@@ -711,7 +711,7 @@ Les moteurs de recherche arabes : Taya it.
 \end_layout
 
 \begin_layout Itemize
-Les outils de recherche coraniques : Zekr, Al-monakkeb al-corani.
+Les outils de recherche coraniques : Zekr, .
 \end_layout
 
 \begin_layout Itemize
@@ -758,7 +758,7 @@ La recherche par champs
 \series default
 : utilise le nom des champs dans la requête pour rechercher dans un champ
  spécifique.
- Utile pour rechercher davantage des informations comme les noms des Sourates.
+ Utile pour rechercher davantage d'informations comme les noms des Sourates.
 \end_layout
 
 \begin_deeper
@@ -780,8 +780,8 @@ La recherche par champs
 Les relations logiques
 \series default
 : pour forcer la présence ou l’absence d’un mot clé.
- Les relations les plus connus : la conjonction AND, disjonction OR et la
- négation NOT.
+ Les relations les plus connues : la conjonction AND, disjonction OR et
+ la négation NOT.
  Les relations peuvent être groupées en utilisant les parenthèses .
 \end_layout
 
@@ -837,7 +837,7 @@ Les expressions régulières (Jokers) :
 utilisée pour chercher un ensemble de mot qui partage les mêmes lettres.
  Cette fonctionnalité peut être utilisée pour rechercher une partie d’un
  mot.
- En latin, il existe deux jokers utilisés largement :?remplace une lettre,
+ En latin, il existe deux jokers utilisés largement : ? remplace une lettre,
  * remplace un nombre indéfini de lettres.
  Ces jokers ne sont pas suffisants en Arabe à cause de l’existence des symboles
  de vocalisations qui ne sont pas des lettres, et la lettre Hamza (
@@ -1115,7 +1115,8 @@ Correction orthographique vocalisée
 \series bold
 Les mots clés reliés sémantiquement
 \series default
- : comme les indications basées généralement sur les ontologies de domaine
+ : utilisée comme des indications basées généralement sur les ontologies
+ de domaine
 \end_layout
 
 \begin_deeper
@@ -1233,8 +1234,8 @@ _
 \series bold
 La dérivation en multi-niveaux
 \series default
-: les mots arabes peuvent être dérivé en quatre niveaux: le mot exacte 
- 
+: les mots arabes peuvent être dérivés en quatre niveaux: le mot exacte
+  
 \lang arabic_arabi
 فأسقيناكموه
 \family roman
@@ -1421,7 +1422,7 @@ pour trouver
 \begin_layout Enumerate
 
 \series bold
-Requête embarqué des propriétés du mot:
+Requête embarquée des propriétés du mot:
 \series default
  c’est une méthode intelligente pour supporter les familles des mots en
  les triant selon un ensemble de propriétés comme : la racine, lemme, type,
@@ -1445,8 +1446,7 @@ Requête embarqué des propriétés du mot:
 \series bold
 La substitution des valeurs numériques :
 \series default
- elle aide pour chercher les nombres malgré qu’ils apparaissent comme des
- mots.
+ elle aide à chercher les nombres malgré qu’ils apparaissent comme des mots.
 \end_layout
 
 \begin_deeper
@@ -1655,7 +1655,7 @@ Les options structurelles
 \begin_layout Enumerate
 
 \series bold
-Requête embarqué pour les Traductions: 
+Requête embarquée pour les Traductions: 
 \series default
 aide les utilisateurs à faire la recherche en utilisant la traduction des
  mots en autres langues pour la recherche dans les différentes traductions
@@ -1713,7 +1713,7 @@ _
 \lang english
 ] ,
 \lang french
- 31 similitudes exacte 
+ 31 similitudes exactes 
 \end_layout
 
 \end_deeper
@@ -1846,7 +1846,7 @@ Hypo(
 Questions naturelles:
 \series default
  cela veut dire offrir des options de formulation de la requête de recherche
- comme une forme naturelle d’une question en Arabe.
+ comme une forme naturelle de question en Arabe.
  Les mots les plus utilisés dans les questions en arabe sont:
 \lang english
  
@@ -1887,12 +1887,8 @@ Questions naturelles:
 \end_inset
 
 
-\lang english
-(
 \lang french
-Qui sont les prophètes 
-\lang english
-?)
+(Qui sont les prophètes ?)
 \lang arabic_arabi
 
 \begin_inset Newline newline
@@ -2027,8 +2023,8 @@ l’absence des diacritiques entraine des ambigüités qu’on a mentionné dans
 \series bold
 La recherche des noms propres
 \series default
-: Plusieurs noms propres sont cités clairement dans le Coran mais certain
- sont juste référencé implicitement.
+: Plusieurs noms propres sont cités clairement dans le Coran mais certains
+ sont juste référencés implicitement.
  Cette fonctionnalité permet de chercher les noms propres mentionnés expliciteme
 nt ou implicitement .
 \end_layout
@@ -2085,7 +2081,7 @@ cette fonctionnalité permet de compter le nombre d’apparition d’un mot dans
 
 \begin_deeper
 \begin_layout Itemize
-Combien de mots de
+Combien de mot de
 \lang english
 
 \begin_inset Quotes eld
@@ -2121,7 +2117,7 @@ Quels sont les dix mots les plus fréquents dans le Coran ?
 La fréquence des mots vocalisés: 
 \series default
 la même que la fonctionnalité précédente sauf qu’elle prend en considération
- les signes diacritiques qui va faire la différence entr
+ les signes diacritiques qui vont faire la différence entr
 \lang english
 e  
 \lang arabic_arabi
@@ -3579,26 +3575,21 @@ key "Alawfa"
 \end_layout
 
 \begin_layout Paragraph*
-Al-Monaqeb_alqurany 
+Al-monakkeb al-corani
 \end_layout
 
 \begin_layout Standard
 c’est un service de recherche dans le Coran inclus dans le site web www.holyquran.
 net.
  Il offre un tableau pour les options de recherche avancées.
- Contient des fonctionnalités utiles :
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-
-\lang english
-ref
-\end_layout
+ Contient des fonctionnalités utiles 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Almonakkeb"
 
 \end_inset
 
-: 
+:
 \end_layout
 
 \begin_layout Itemize
@@ -3621,8 +3612,12 @@ La recherche avec la racine arabe du mot.
 La mise en évidence et la pagination.
 \end_layout
 
-\begin_layout Description
-Zekr est une application destinée à être une plate-forme ouverte pour l'étude
+\begin_layout Paragraph*
+Zekr 
+\end_layout
+
+\begin_layout Standard
+c'est une application destinée à être une plate-forme ouverte pour l'étude
  du Coran et un outil pour la simple navigation et recherche sur le Coran
  et ses traductions.
  Il offre de nombreux critères de tri comme la pertinence, l'ordre naturel,
@@ -3630,7 +3625,14 @@ Zekr est une application destinée à être une plate-forme ouverte pour l'étud
  En outre, il propose une recherche avec les structures du Mushaf: nombre
  de Hizb, le nom de la Sourat,etc.
  Il recherche en utilisant le mot exact, une partie du mot ou la racine
- arabe.
+ arabe
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Zekr"
+
+\end_inset
+
+.
  
 \end_layout
 
@@ -3645,7 +3647,7 @@ Dans ce papier, on a listé les fonctionnalités de recherche utiles dans
  la nature du problème et la manière avec laquelle il peut être fixé.
  Cette liste de fonctionnalités va nous aider à construire un système de
  recherche qui répond parfaitement aux besoins du Coran.
- Chaque fonctionnalité a différent niveaux de complexité : peut-être implémenté
+ Chaque fonctionnalité a différent niveaux de complexité : peut-être implémentée
  facilement ou peut conduire à des problèmes qui ont besoins d’une étude
  approfondie.
 \end_layout
@@ -3686,94 +3688,8 @@ We would like to thank Alfanous Open Community for its support .
 \begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
-bibfiles "IEEEexample,db"
+bibfiles "IEEEexample,db,web"
 options "IEEEtran"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Biography
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-{
-\end_layout
-
-\end_inset
-
-Assem Chelli
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
- Étudiant du Magistere à l'Ecole nationale Supérieure d'Informatique (ESI)
- - Alger.
- Fait ses recherches sur l'indexation et l'interrogation de la langue arabe
- Généralement, et du Coran précisément.
- Pour valider son travail, il a mis une API d'indexation et recherche dans
- le Coran qui est facile à personnaliser.
- Il a lancé cette API comme un projet open source appelé Alfanous.
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
- 
-\lang english
-
-\begin_inset Argument
-status open
-
-\begin_layout Plain Layout
-
-\lang english
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-{
-\end_layout
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename me_3.JPG
-	width 1in
-	height 1.25in
-	clip
-
-\end_inset
-
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
 
 \end_inset
 
