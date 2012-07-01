@@ -212,9 +212,18 @@ filename "Remerciements.lyx"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset include
 LatexCommand include
 filename "abstract.lyx"
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -511,10 +520,18 @@ thechapter}}}
 \end_layout
 
 \begin_layout Part
+
+\end_layout
+
+\begin_layout Part
 State Art
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset include
 LatexCommand input
 preview true
@@ -525,7 +542,34 @@ filename "SA - Quran.lyx"
 
 \end_layout
 
+\end_inset
+
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+raise a problem of 
+\begin_inset Quotes sld
+\end_inset
+
+other language
+\begin_inset Quotes srd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset include
 LatexCommand input
 preview true
@@ -536,11 +580,35 @@ filename "SA - Arabic.lyx"
 
 \end_layout
 
+\end_inset
+
+
+\begin_inset Note Comment
+status collapsed
+
+\begin_layout Plain Layout
+raise a problem of stack exceeded
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset include
 LatexCommand input
 preview true
 filename "SA - Fonctionnement.lyx"
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -730,11 +798,6 @@ status open
 
 \end_layout
 
-\begin_layout Standard
-\start_of_appendix
-\begin_inset Note Note
-status open
-
 \begin_layout Part*
 \start_of_appendix
 \begin_inset ERT
@@ -752,7 +815,7 @@ addcontentsline{toc}{part}{Annexe}
 Annexe 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -834,6 +897,10 @@ arabic{figure}}
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
 \begin_layout Plain Layout
 \begin_inset CommandInset include
 LatexCommand include
@@ -844,7 +911,12 @@ filename "Annex - Translateration.lyx"
 
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Note
 status open
 
@@ -923,11 +995,6 @@ arabic{figure}}
 \begin_inset CommandInset include
 LatexCommand include
 filename "sample - Annex.lyx"
-
-\end_inset
-
-
-\end_layout
 
 \end_inset
 
