@@ -104,12 +104,20 @@ addcontentsline{toc}{part}{Dedication}
 \end_layout
 
 \begin_layout Standard
-To my mother for all she has done to me ...
- Thank you
+\begin_inset VSpace 3cm*
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-\begin_inset VSpace 3cm*
+\align center
+
+\lang arabic_arabi
+\begin_inset Graphics
+	filename figures/143162.jpg
+	scale 200
+
 \end_inset
 
 

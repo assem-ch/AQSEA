@@ -64,7 +64,6 @@ initials
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
-\author 674747384 "Assem Chelli" assem.ch@gmail.com
 \end_header
 
 \begin_body
@@ -102,33 +101,14 @@ addcontentsline{toc}{part}{Acknowledgment}
 \end_layout
 
 \begin_layout Standard
-\paragraph_spacing onehalf
 \align center
 
 \family sans
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\family sans
-change nous par me
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-
-\family sans
-First at all, I am thinking 
+First at all, I am thanking 
 \emph on
-Allah, <le tout puissant>
+Allah, the Almighty
 \emph default
- for giving me the strength and patience to write this modest work thesis.
+ for giving me the strength and patience to write this modest thesis.
 \end_layout
 
 \begin_layout Standard
@@ -136,52 +116,30 @@ Allah, <le tout puissant>
 \align center
 
 \family sans
-Nos sincères remerciements s’adressent à la communité Arabe de Open Source
- qui m'a offerte un grand support , plus particulièrement 
+We gratefully acknowledge
 \series bold
 \emph on
-Sabily Team
-\emph default
+ 
+\noun on
+Pr.
+ Amar Balla
+\noun default
  
 \series default
-et
+\emph default
+and
 \series bold
 \emph on
- ...
-
-\series default
-\emph default
- qui nous ont été d'un précieux apport afin de mener à beau et à bien ce
- travail, et nous espérons être dignes de la confiance qu'ils ont placée
- en nous.
  
-\end_layout
-
-\begin_layout Standard
-\paragraph_spacing onehalf
-\align center
-
-\family sans
-Nous tenons à remercier 
-\series bold
-\emph on
-Pr Balla Amar 
-\series default
-\emph default
-et
-\series bold
-\emph on
- Mr.
+\noun on
+Mr.
  Taha Zerrouki
 \series default
 \emph default
- de nous avoir fait l’honneur de nous encadrer et pour sa disponibilité
- au cours de ces 
-\change_deleted 674747384 1312900320
-neufs
-\change_unchanged
- mois durant lesquels il nous a orienté avec ses conseils judicieux, et
- ses critique constructives.
+ 
+\noun default
+for giving me the honor of thier supervising during that year and guiding
+ me with advices,, et ses critique constructives and meaningful criticism.
 \end_layout
 
 \begin_layout Standard
@@ -189,9 +147,7 @@ neufs
 \align center
 
 \family sans
-Un grand Merci au corps enseignant ainsi qu’à l’administration de l’École
- Nationale Supérieure d’Informatiques ESI qui ont veillé sur notre formation
- et notre suivi durant tout le cursus d’étude.
+I also thank the jury members for agreeing to evaluate our modest work.
 \end_layout
 
 \begin_layout Standard
@@ -199,39 +155,38 @@ Un grand Merci au corps enseignant ainsi qu’à l’administration de l’Écol
 \align center
 
 \family sans
-Nous adressons également nos remerciements à 
-\change_inserted 674747384 1312900373
+A big thanks to the faculty and the administration of the National Higher
+ School of Computer Science (ESI) who took care of my training and monitoring
+ throughout the study program.
+\end_layout
 
+\begin_layout Standard
+\align center
+
+\family sans
+Our deepest thanks go to the Arab Open Source community that has offered
+ me great support, especially
 \series bold
 \emph on
-...
-
-\change_unchanged
-
+ 
+\noun on
+Alfanous Team/Community
 \series default
- 
 \emph default
-qui a accepté de répondre à quelques unes de nos questions.
-\end_layout
-
-\begin_layout Standard
-\paragraph_spacing onehalf
-\align center
-
-\family sans
-Nous remercions également les membres du jury d’avoir accepté d’évaluer
- notre modeste travail.
-\end_layout
-
-\begin_layout Standard
-\paragraph_spacing onehalf
-\align center
-
-\family sans
-Enfin nous adressons nos remerciements à tous ceux qui ont contribué par
- leurs conseils ou leurs encouragements à l’aboutissement de ce travail,
- à nos deux familles et amis pour leurs aides et soutiens.
+\noun default
+ that make a valuable contribution to carry out this great work, and hope
+ to be worthy of the confidence they have placed in me.
  
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+\align center
+
+\family sans
+Finally We express our appreciation to all who contributed by their advice
+ and their encouragement to the completion of this work, my family and friends
+ for their assistance and support.
 \end_layout
 
 \end_body

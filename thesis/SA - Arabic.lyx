@@ -4,6 +4,7 @@
 \begin_header
 \textclass extreport
 \begin_preamble
+
  \usepackage{styles/esi_memoire}
 \end_preamble
 \use_default_options true
@@ -184,8 +185,8 @@ epigraph{
 \backslash
 raggedleft
 \backslash
-textit{أَنا البَحرُ في أَحشائِهِ الدُرُّ كامِنٌ فَهَل سَأَلوا الغَوّاصَ
- عَن صَدَفاتي}}{
+textit{أَنا البَحرُ في أَحشائِهِ الدُرُّ كامِـــنٌ   ***   فَهَل سَأَلوا
+ الغَوّاصَ عَن صَدَفاتـــي}}{
 \backslash
 raggedright
 \backslash

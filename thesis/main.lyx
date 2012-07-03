@@ -238,7 +238,7 @@ status open
 
 
 \backslash
-addcontentsline{toc}{part}{Table des matières}
+addcontentsline{toc}{part}{Table of Contents}
 \end_layout
 
 \end_inset
@@ -260,7 +260,7 @@ status open
 
 
 \backslash
-addcontentsline{toc}{part}{Liste des figures}
+addcontentsline{toc}{part}{List of Figures}
 \end_layout
 
 \end_inset
@@ -284,7 +284,7 @@ status open
 
 
 \backslash
-addcontentsline{toc}{part}{Liste des tableaux}
+addcontentsline{toc}{part}{List of Tables}
 \end_layout
 
 \end_inset
@@ -308,7 +308,7 @@ status open
 
 
 \backslash
-addcontentsline{toc}{part}{Liste des abréviations}
+addcontentsline{toc}{part}{List of Abbreviations}
 \end_layout
 
 \end_inset
