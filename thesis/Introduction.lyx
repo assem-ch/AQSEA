@@ -17,7 +17,7 @@ fix-cm
 fixltx2e
 \end_modules
 \maintain_unincluded_children false
-\language french
+\language english
 \language_package default
 \inputencoding auto
 \fontencoding global
@@ -129,12 +129,13 @@ Q
 
 \end_inset
 
-uran, in Arabic, means the read or the recitation.
+ur'an, in Arabic, means the read or the recitation.
  Muslim scholars define it by: the words of Allah revealed to His Prophet
- Muhammad, written in mushaf and transmitted by successive generations (
+ Muhammad, written in Mus'haf and transmitted by successive generations
+ (
 \lang arabic_arabi
 التواتر
-\lang french
+\lang english
 )
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -146,13 +147,13 @@ key "Meh73"
  The Qur'an is also known by other names such as: Al-Furkān , Al-kitāb ,
  Al-dhikr , Al-wahy and Al-rōuh .
  It is the sacred book of Muslims and the first reference to Islamic law.
- It's more then 14 centuries passed since its revelation, and muslims still
+ It's more then 14 centuries passed since its revelation, and Muslims still
  studying it, teaching it, write books about it and recently develop application
 s for it.
 \end_layout
 
 \begin_layout Standard
-Quran is an important source of information that contains various information
+Qur'an is an important source of information that contains various information
  about all aspects of life: Scientific, Social, Historic, Politic...etc.
  
 \end_layout
@@ -165,27 +166,27 @@ Problematic
 Due to the large amount of information held in the Qur'an, it has become
  extremely difficult for regular search engines to successfully extract
  key information.
- For example, When searching for a book a book related to English grammar,
- you’ll simply Google it, select a PDF and download it .that’s all! Search
+ For example, When searching for a book related to English grammar, you’ll
+ simply Google it, select a PDF file and download it .that’s all! Search
  engines (like Google) are used generally on Latin letters and for searching
  general information of document like content, title, author…etc.
  However, searching through Qu'ranic text is a much more complex procedure
  requiring a much more in depth solution as there is a lot of information
- that needs to be extracted to fulfill Quran scholar's needs.
- Before the creation of computer, Quran scholars were using printed lexicons
+ that needs to be extracted to fulfill Qur'an scholar's needs.
+ Before the creation of computer, Qur'an scholars were using printed lexicons
  made manually.
  The printed lexicons can’t help much since many search process waste the
  time and the force of the searcher.
  Each lexicon is written to reply to a specific query which is generally
  simple.
  Nowadays, there are applications that are specific for search needs; most
- of applications that were developed for Quran had the search feature but
+ of applications that were developed for Qur'an had the search feature but
  in a simply way: sequential search with regular expressions.
  
 \end_layout
 
 \begin_layout Standard
-The simple search using exact query doesn’t offer better options and still
+The simple search using exact query does not offer better options and still
  inefficient to move toward Thematic search by example.
  Full text search is the new approach of search that replaced the sequential
  search and which is used in search engines
@@ -193,17 +194,15 @@ The simple search using exact query doesn’t offer better options and still
 status collapsed
 
 \begin_layout Plain Layout
-
-\lang english
 Full text search evolution
 \end_layout
 
 \end_inset
 
 .
- Unfortunately, this approach isn’t applied yet on Quran.
+ Unfortunately, this approach is not applied yet on Qur'an.
  The question is why we need this approach? Why search engines? Do applications
- of seach in Quran really need to be implemented as search engines? 
+ of search in Qur'an really need to be implemented as search engines? 
 \end_layout
 
 \begin_layout Section*
@@ -211,7 +210,7 @@ Objectives
 \end_layout
 
 \begin_layout Standard
-Our proposal is about design a retrieval system that fit the Quran search
+Our proposal is about design a retrieval system that fit the Qur'an search
  needs.
  But to realize this objective, we must first list and classify all the
  search features that are possible and helpful.
@@ -245,14 +244,14 @@ This part contains 3 chapters:
 \begin_layout Standard
 
 \series bold
-Chapter 1 : The Quran
+Chapter 1 : The Qur'an
 \end_layout
 
 \begin_layout Standard
 This chapter presents an overview of the Qur'an and its sciences, it has
- a historical background on the evolution of the Quran, the structure of
- the mus-haf, and the main problems of computerization of the Quran, including
- the script othmani and authentication Quranic texts.
+ a historical background on the evolution of the Qur'an, the structure of
+ the Mus'haf, and the main problems of computerization of the Qur'an, including
+ the script Uthmani and authentication Qu'ranic texts.
 \end_layout
 
 \begin_layout Standard
@@ -319,12 +318,12 @@ This part contains 2 chapters :
 \begin_layout Standard
 
 \series bold
-Chapter 4 : Quranic search features
+Chapter 4 : Qur'anic search features
 \end_layout
 
 \begin_layout Standard
 The objective of this chapter is to present the possible search features
- in Quran.
+ in Qur'an.
  It has a big importance in our work since it defines our objectives and
  our path on the work.
 \end_layout
@@ -343,7 +342,9 @@ Chapter 5 : Conception
 \end_layout
 
 \begin_layout Standard
-this chap 
+In this chapter, we'll propose a general schema for a Qur'anic retrieval
+ system then we'll discuss how to improve it to carry out all the feasible
+ search features mentioned in the previous chapter.
 \end_layout
 
 \begin_layout Subsection*
@@ -351,7 +352,7 @@ Third Part : Implementation and Tests
 \end_layout
 
 \begin_layout Standard
-This part contains the different steps of implemention of our retrieval
+This part contains the different steps of implementation of our retrieval
  system.
  It includes two chapters:
 \end_layout
@@ -377,12 +378,14 @@ This chapter describes the choice of technologies and development tools
 \begin_layout Standard
 
 \series bold
-Chapitre 7 : Tests and Evaluation
+Chapter 7 : Tests and Evaluation
 \end_layout
 
 \begin_layout Standard
 In this chapter, we will initially measure the proper functioning of our
- solution by applying [TODO]
+ solution by applying performance analysis.
+ Also we'll analyze the quality of code and the documentation coverage with
+ some statistics of usage.
 \begin_inset Newline newline
 \end_inset
 
@@ -390,7 +393,8 @@ In this chapter, we will initially measure the proper functioning of our
 \end_layout
 
 \begin_layout Standard
-Finally, we will finish with a conclusion that summarizes our work.
+Finally, we will finish the report with a conclusion that summarizes our
+ work.
 \end_layout
 
 \end_body

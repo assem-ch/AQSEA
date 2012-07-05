@@ -155,7 +155,7 @@ LatexCommand tableofcontents
 \end_layout
 
 \begin_layout Chapter
-Quran 
+The Qur'an 
 \begin_inset CommandInset label
 LatexCommand label
 name "chapter1"
@@ -219,9 +219,9 @@ Introduction
 \end_layout
 
 \begin_layout Standard
-The Quran is the sacred book of Muslims, it is the basis of several sciences,
+The Qur'an is the sacred book of Muslims, it is the basis of several sciences,
  such as Tafssir, translation, recitation, etc.
- The information contained in the Quranic text are the sources of these
+ The information contained in the Qur'anic text are the sources of these
  sciences, hence the need for a powerful search system that offers lots
  of features specific to the Qur'an.
 \end_layout
@@ -230,13 +230,13 @@ The Quran is the sacred book of Muslims, it is the basis of several sciences,
 Our subject is to achieve such a system, so in this chapter, we will first
  clarify the definition of the Qur'an, then we will see in brief the main
  steps of the evolution of the Qur'an through time and how it was written,
- edited and computerized, then we will study the mushaf and sciences of
+ edited and computerized, then we will study the mus'haf and sciences of
  the Qur'an.
 \end_layout
 
 \begin_layout Standard
 Then we will see the benefits and challenges of computerization of the Qur'an,
- in particular, the script othmani, verification and authentication of Mus'haf.
+ in particular, the script Uthmani, verification and authentication of Mus'haf.
 \end_layout
 
 \begin_layout Section
@@ -250,15 +250,15 @@ Qur'an
 \begin_layout Standard
 the word « 
 \emph on
-Qur’an 
+Qur'an 
 \emph default
-» ou «
+» or «
 \emph on
  Koran 
 \emph default
 », in Arabic Language, means recitation or reading, Muslim scholars define
  it as: the words of Allah revealed to His Prophet Muhammad, written in
- mus'hafs and transmitted by successive generations 
+ mus'haf and transmitted by successive generations 
 \begin_inset Foot
 status collapsed
 
@@ -273,8 +273,8 @@ status collapsed
 .
  The Qur'an is also known by other names such as : Al-Furkān , Al-kitāb
  , Al-dhikr , Al-wahy et Al-rōuh .
- Il est le livre sacré des tous les musulmans et la première référence de
- la législation islamique.
+ It is the sacred book of all Muslims and the first reference to Islamic
+ law.
  
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -291,10 +291,10 @@ Mus'haf
 
 \begin_layout Standard
 The mus'haf is the book that contains the entire Qur'an, the first mus'haf
- was the mushaf that the Caliph Abu Bakr has gathered.
- The mus'hafs are written according to the script othmani
+ was the mus'haf that the Caliph Abu-Bakr has gathered.
+ The mus'haf is written according to the script Uthmani
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
  
@@ -321,7 +321,7 @@ status open
 \end_inset
 
 .
- The translation of the Qur'an constitute in no way a mushaf, because the
+ The translation of the Qur'an constitute in no way a mus'haf, because the
  Qur'an was revealed in Arabic unique in its form and its meaning.
  
 \begin_inset CommandInset citation
@@ -338,8 +338,8 @@ Qur'anic Documents
 \end_layout
 
 \begin_layout Standard
-It is a document that can match the entire contents of the Qur'an (Mushaf),
- or else extract a coherent (ayas successive) of the Quran in Arabic.
+It is a document that can match the entire contents of the Qur'an (Mus'haf),
+ or else extract a coherent (ayahs successive) of the Qur'an in Arabic.
  These extracts can be used as quotations or examples, and often written
  in standard Arabic script.
 \begin_inset CommandInset citation
@@ -358,8 +358,8 @@ Qur'anic Mu'jam (Lexicon)
 \begin_layout Standard
 The Mu'jam is a reference that contains information (subjects or words),
  sorted in some order as well as their translations or explanations, the
- Mu'jam may be general (eg a language) or specialized.
- a Qur'anic Mu'jam is any Mu'jam that its contents is based on Quran.
+ Mu'jam may be general or specialized.
+ a Qur'anic Mu'jam is any Mu'jam that its contents is based on Qur'an.
  
 \begin_inset Note Note
 status collapsed
@@ -378,10 +378,10 @@ Qur'anic Index
 \end_layout
 
 \begin_layout Standard
-The index is as Mu'jam because it contains words sorted, but the differance
+The index is as Mu'jam because it contains words sorted, but the difference
  is that the index does not explain the words, but it indicates the position
  of all the instances so that we can access them easily.
- The index gives the position of the Qur'an by sura and aya merely a specific
+ The index gives the position of the Qur'an by surah and ayah merely a specific
  term.
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -393,14 +393,14 @@ key "Khm04"
 \end_layout
 
 \begin_layout Section
-Quran Structure
+Qur'an Structure
 \end_layout
 
 \begin_layout Standard
-The Quran consists of 114 suras, the suras are divided into ayas.In mus'haf,
- the number of each aya is attached to its text.
- this partitioning is the same since the first mushaf, because the order
- of Surahs and ayas is specified by the prophet
+The Qur'an consists of 114 surahs, the surahs are divided into ayahs.In mus'haf,
+ the number of each ayah is attached to its text.
+ This partitioning is the same since the first mus'haf, because the order
+ of Surahs and ayahs is specified by the prophet
 \begin_inset Note Note
 status collapsed
 
@@ -411,8 +411,8 @@ ref
 \end_inset
 
 .
- However, there are other fragmentations of mushaf adopted by scholars of
- the Qur'an in order to facilitate learning and recitation.
+ However, there are other fragmentations of mus'haf adopted by scholars
+ of the Qur'an in order to facilitate learning and recitation.
  The marks of these fragmentations are not part of the Qur'anic text, and
  they are written on the margins.
 \begin_inset CommandInset citation
@@ -436,98 +436,55 @@ key "BnJ"
 \end_layout
 
 \begin_layout Itemize
-The primary structure: sura, aya, word and letter;
+Primary structure: surah, ayah, word and letter;
 \end_layout
 
 \begin_layout Itemize
-[TO-TRANSLATE] les emplacements spéciaux : le début de la sourate, la fin
- de la sourate, fin de l’aya, virgule coranique
+Special locations: start of Surah, end of Surah, end of ayah, Qur'anic comma
+ 
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
 \lang arabic_arabi
 فاصلة قرآنية
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-\lang english
- 
 \end_layout
 
 \end_inset
 
-, sajdah , waqf ; 
+, sajdah, waqf; 
 \end_layout
 
 \begin_layout Itemize
-la structure du Coran: la page, le thumn, le rub’, le nisf, le hizb, le
- juz’ ; 
+Other structures: page, Juz’, Hizb, Nisf, Rubu’, Thumn ; 
 \end_layout
 
 \begin_layout Itemize
-ecriture du Coran: le script othmani, les al-sawāmit, les harakāt, Al-hamza,
- l’écriture des mots, les diacritiques, des signes de distinction des lettres
- similaires, certains signes phonétiques ; 
+Scripture: Uthmani script, Sawamit, Harakat, Hamza, diacritics, signs of
+ distinction between similar letters, phonetic signs;
 \end_layout
 
 \begin_layout Itemize
-structure incorporelle : mot, mot-clé, expression, unité d'objectif ; La
- révélation du Coran : la manière de révélation, l'ordre de révélation,
- le lieu de révélation, le calendrier de révélation, les causes de révélation,
- le contexte de révélation, etc.
+Incorporeal structure: word, keyword, phrase, purpose unit; Revelation:
+ order, place, timing, cause, context ...
+ etc.
 \end_layout
 
 \begin_layout Standard
-Voici quelques exemples des différents niveaux de fragmentation:
+Here are some examples of different levels of fragmentation:
 \end_layout
 
 \begin_layout Subsection
-Fragmentation en sourates 
+Fragmentation into surahs
 \end_layout
 
 \begin_layout Standard
-C’est la fragmentation originale du Coran, chaque sourate comporte un nom,
- la basmala , – à l’exception de sourate
-\emph on
- El-Tawba
-\emph default
- qui ne comporte pas de basmala – et un certain nombre d’ayas séparées par
- un cercle qui contient le numéro de l’aya dans sa sourate, les sourates
- sont caractérisées par : un nom, le nombre d’ayas, le type de la révélation
- (Mecquoise
+It is the original fragmentation of the Qur'an, each Surah has a name, basmalah
+ (except Al-Tawbah, which does not have a basmalah ) and a list of ayahs
+ separated by a circle that contains the number of ayah in its surah, the
+ surahs are characterized by: a name, the number of ayahs, the type of revelatio
+n (Makkan 
 \begin_inset Foot
 status open
 
@@ -541,7 +498,7 @@ status open
 
 \end_inset
 
- ou Médinoise
+ or Medinan
 \begin_inset Foot
 status open
 
@@ -576,7 +533,7 @@ status open
 
 \end_inset
 
- ), l’ordre dans le mushaf et l’ordre selon la révélation .
+ ), order in mus'haf and order according to revelation .
  
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -607,7 +564,7 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-schéma explicatif de la fragmentation en sourates
+Explanatory diagram of fragmentation into Surahs
 \end_layout
 
 \end_inset
@@ -621,16 +578,15 @@ schéma explicatif de la fragmentation en sourates
 \end_layout
 
 \begin_layout Subsection
-Fragmentation en ahzab
+Fragmentation into Hizbs
 \end_layout
 
 \begin_layout Standard
-Le Coran est fragmenté en 30 parties approximativement égales, chaque partie
- s’appelle juz’, cela permet de répartir la lecture du Coran sur un mois,
- chaque juz’ est devisé de son tour en deux parties, chacun s’appelle hizb
- .
- Ainsi, le nisf est un demi de hizb, et le rub’ est un demi de nisf, en
- fin le thumn est un demi de rub’ 
+The Qur'an is fragmented into 30 parts - approximately equal, each part
+ is called juz ', this spreads the reading of the Quran on a month, each
+ juz' is fragmented into two parts, each one called Hizb.
+ Thus, the half of Hizb called Nisf, and the half of Nisf is called Rubu',
+ and finammy the half of Rubu' called Thumn.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Zer08"
@@ -660,7 +616,7 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Schéma explicatif de la fragmentation en ahzab 
+Explanatory diagram of fragmentation into Hizbs
 \end_layout
 
 \end_inset
@@ -674,15 +630,15 @@ Schéma explicatif de la fragmentation en ahzab
 \end_layout
 
 \begin_layout Subsection
-Fragmentation en Stops (waqfs )
+Fragmentation into Waqfs (Stops)
 \end_layout
 
 \begin_layout Standard
-Les marques du waqfs sont utilisés pour savoir quand on doit faire une pause
- lors de la récitation du Coran, ces marques sont différents afin de distinguer
- le type du waqf qui peut être : permises, préférables, interdites, etc.
- On note que le marquage des waqfs diffère d’une rewayate à une autre, la
- figure représente une référence des waqfs d’un mushaf en rewayate de Kaloun.
+Marks of Waqfs are used to knowing when to take a break during the recitation
+ of the Qur'an, these marks are different to distinguish the type of waqf
+ that can be: allowed, preferred, prohibited, etc..
+ Note that the marking of Waqfs differs between rewayates.
+ The figure shows a reference ofwaqfs based on rewayate of Kaloun.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Bou79,Zer08"
@@ -1109,87 +1065,77 @@ _
 \end_layout
 
 \begin_layout Section
-L’informatisation du Coran 
+Computerization of the Qur'an
 \end_layout
 
 \begin_layout Standard
-La langue arabe a été utilisée dans les programmes informatiques depuis
- les années soixante.
- Le logiciel ‘Salsabīl’ fut le premier à traiter le Coran, et il a été sans
- diacritiques à cause du bas niveau des logiciels à cette époque.
- Mais après, les écrans à haut résolution de Mac OS ont permis l'introduction
- des diacritiques et des polices arabe aux ordinateurs.
+The Arabic language was used in computer programs since the sixties.
+ The software 'Salsabil' was the first treating the Qur'an, and it was without
+ diacritics because of softwares at that time was developed in a low level.
+ But later, the high-resolution screens of Mac OS allowed introducing of
+ Arabic diacritics and fonts to computers.
 \end_layout
 
 \begin_layout Standard
-Aujourd’hui, le développement des logiciels coraniques a une extrême importance
- parmi tous les domaines de développement grâce à plusieurs facteurs, notamment
- : 
+Today, Qur'anic software development becomes extremely important among all
+ areas of development by several factors, including:
 \end_layout
 
 \begin_layout Itemize
-Le grand intérêt des musulmans pour le Coran ; 
+The great interest of Muslims in Qur'an;
 \end_layout
 
 \begin_layout Itemize
-La pris en charge des systèmes d’exploitation de la langue arabe ;
+Support of current operating systems to the Arabic language;
 \end_layout
 
 \begin_layout Itemize
-L’intégration des symboles du Coran dans le system Unicode ; 
+The inclusion of the symbols of the Qur'an into the Unicode system;
 \end_layout
 
 \begin_layout Itemize
-L’apparition des polices de caractères qui permettent d'écrire le mushaf
- en script othmani.
- 
+The appearance of fonts that are used to write in Uthmani script.
 \end_layout
 
 \begin_layout Itemize
-Le passage de certains programmeurs au développement en source ouverte (Open
- Source).
- 
+The passage of some programmers to develop under open source licences.
 \end_layout
 
 \begin_layout Itemize
-L’apparition des projets cumulatifs où chacun complète le travail de celui
- qui le précède.
+Cumulative effect of projects working on Quran.
 \end_layout
 
 \begin_layout Subsection
-Advantages d'Informatization
+Advantages of Computerization
 \end_layout
 
 \begin_layout Standard
-L'informatisation du Coran mener à un ensemble d'avantages et ce sont quelques-u
-nes:
+The computerization of the Qur'an lead to a set of advantages:
 \end_layout
 
 \begin_layout Subparagraph
-Rassembler les différentes sciences coraniques : 
+Unite the different Qur'anic sciences:: 
 \end_layout
 
 \begin_layout Standard
-l’amélioration de l’accessibilité et du temps d’accès aux données est un
- objectif essentiel de l’informatisation en général.
- En particulier, l’informatisation du Coran facilite énormément l’apprentissage,
- la récitation, la recherche, le tafssīr, la traduction, et l’enseignement
- du Coran.
- Les applications coraniques actuelles nous offrent la possibilité de passer
- à travers tous ces sciences avec des simples cliques, en économisant de
- temps et d’efforts que de chercher dans des livres.
- Ces logiciels ne remplacent pas les livres et les façons d’apprentissage
- traditionnels, mais ils les complémentent.
+The improvement of accessibility and time of data access is a key objective
+ of computerization in general.
+ Particularly, computerization greatly facilitates learning Quran, recitation,
+ search, Tafssir, translation, and teaching of the Qur'an.
+ Current Qur'anic applications offer the ability to get through all these
+ sciences with simple clicks, saving time and effort than searching in books.
+ These programs do not replace books and traditional ways of learning, but
+ they complement it.
  
 \end_layout
 
 \begin_layout Subparagraph
-Vérifier les miracles numériques du Coran : 
+Verify the numerical miracles of the Qur'an: 
 \end_layout
 
 \begin_layout Standard
-il existe un type de miracles coraniques, c’est les miracles basés sur les
- statistiques effectués sur le Coran, par exemple :
+There is a type of Quranic miracles that covers miracles based on statistics
+ performed on the Quran, for example:
 \end_layout
 
 \begin_layout Standard
@@ -1211,7 +1157,7 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
-Mot I
+Word I
 \end_layout
 
 \end_inset
@@ -1229,7 +1175,7 @@ Nombre de répétitions
 \begin_inset Text
 
 \begin_layout Plain Layout
-Mot II
+Word II
 \end_layout
 
 \end_inset
@@ -1562,7 +1508,7 @@ end{Arabic}
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Miracles numériques
+Some numerical miracles of Qur'an
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Naw75"
@@ -1583,16 +1529,16 @@ key "Naw75"
 \end_layout
 
 \begin_layout Standard
-L’informatisation du Coran peut aider à vérifier ces miracles si vrais ou
- falsifiés et découvrir d’autres miracles statistiques clairs, On note ici
- qu’il existe de nombreuses tentatives modernes pour prouver les miracles
- numériques dans le Coran qui ont rencontré une forte opposition de la part
- des savants musulmans, en particulier, l’imposteur 
+The computerization of the Qur'an can help verify whether these miracles
+ are true or false miracles and discover other statistics that are clear,
+ We note here that there are many modern attempts to prove the miracles
+ in the Qur'an numerical who met with strong opposition the part of Muslim
+ scholars, especially, the impostor
 \noun on
-Rachād Khalīfa
+ Rachād Khalīfa
 \noun default
- a prétendu être un prophète en se basant sur des observations des phénomènes
- numériques de ce genre.
+ that claimed to be a prophet based on his observations of numerical phenomena
+ such as these.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Khe"
@@ -10624,7 +10570,7 @@ Aperçue sur Qurany
 \end_layout
 
 \begin_layout Section
-Les ontologies de Coran
+Qur'an Ontologies
 \end_layout
 
 \begin_layout Standard
@@ -10660,11 +10606,11 @@ s that exist :
 \end_layout
 
 \begin_layout Subsection
-Quranic Concepts Ontology 
+Qur'anic Concepts Ontology 
 \end_layout
 
 \begin_layout Standard
-The Quranic Ontology is also a project of Leeds university done by Mr.
+The Qur'anic Ontology is also a project of Leeds university done by Mr.
  
 \noun on
 Kais Dukes.
@@ -10674,7 +10620,7 @@ Kais Dukes.
  and shows the relationships between these concepts using predicate logic.
  The fundamental concepts in the ontology are based on the knowledge contained
  in traditional sources of Quranic analysis, including the hadīth of the
- prophet muhammad , and the tafsīr (Quranic exegesis) of ibn kathīr.
+ prophet Muhammad , and the Tafssir (Qur'anic exegesis) of ibn kathīr.
  Named entities in verses, such as the names of historic people and places
  mentioned in the Quran, are linked to concepts in the ontology as part
  of named entity tagging.
@@ -10682,7 +10628,7 @@ Kais Dukes.
 \end_layout
 
 \begin_layout Standard
-As well as listing the major concepts in the Quran, the ontology also defines
+As well as listing the major concepts in the Qur'an, the ontology also defines
  a set of semantic relations between these concepts.
  The most important relation is the set membership relation "instance" in
  which one concept is defined to be an instance or individual member of
@@ -10743,38 +10689,29 @@ A closer look at Quran Concepts Ontology
 \end_layout
 
 \begin_layout Subsection
-L’Ontologie faite par M.
- Hadj henni :
+The Ontology made by Hadj Henni:
 \end_layout
 
 \begin_layout Standard
-Il existe plusieurs possibilités d’ontologie pour le contenu du Coran.
- M.
- 
-\noun on
-Hadj henni
-\noun default
- a procédé à la construction d’une ontologie de domaine des documents coraniques
- par la méthode de mapping du schéma XML du modèle standard du Mushaf électroniq
-ue vers le langage OWL.
- Ce choix est justifié par les avantages très intéressants de ce langage.
+There are several possibilities of ontology for contents of the Qur'an.
+ Hajj Henni undertook the construction of a domain ontology of documents
+ Qur'anic by the method of XML schema mapping of the standard electronic
+ model of Mus'haf to OWL.
+ This choice is justified by the advantages of this very convenient language.
 \end_layout
 
 \begin_layout Standard
-Dans un premier temps, il a réalisé ce mapping automatiquement, ensuite
- manuellement.
- Il a constaté que ce dernier s’avère satisfaisant et plus performant que
- le mapping manuel.
- L’ontologie obtenue par le mapping manuel est enrichie pour constituer
- la première ontologie de domaine des documents Coraniques.
- 
+At first, he realized this mapping automatically, then manually.
+ He found that it is satisfactory and better than the manual mapping.
+ The ontology obtained by the manual mapping is enriched to form the first
+ domain ontology of Qur'anic documents.
 \end_layout
 
 \begin_layout Standard
-Cette ontologie répond aux besoins de modèle standard sémantique, réutilisable
- et modulaire ; elle contiendra les concepts du domaine des documents coraniques
- et les contraintes sémantiques et servira de base à la construction d’autres
- ontologies en relation avec le contenu du Coran 
+This ontology meets the needs of standard, modular, and reusable semantics.
+ It shall contain the domain concepts of Quranic documents and the semantic
+ constraints as a basis for building other ontologies related to the contents
+ of the Qur'an 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Hadj08"
@@ -10804,7 +10741,7 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Schéma de l’ontologie de domaine des documents Coraniques 
+Diagram of domain ontology of Quranic documents made by Hadj Henni
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Hadj08"
@@ -10837,11 +10774,11 @@ We concluded in this chapter that the richness of information contained
 \begin_layout Standard
 Limitation of Qur'anic computerized resources can make implementation of
  our work more difficult, but we tried to do our work with maximum independence
- to Quranic resources specially ones that are in an ambiguous state.
+ to Qur'anic resources specially ones that are in an ambiguous state.
 \end_layout
 
 \begin_layout Standard
-In the next chapter, we present the characteristics of the language of Quran:
+In the next chapter, we present the characteristics of the language of Qur'an:
  The classical Arabic.
 \end_layout
 

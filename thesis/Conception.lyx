@@ -177,9 +177,9 @@ Introduction
 
 \begin_layout Standard
 After listing all possible search features as explained in the previous
- chapter, we'll propose and discuss a retrieval system that can [يلبي] most
- of the features.
- at first, we'll explain the General behaviour, our modifications and improvment
+ chapter, we'll propose and discuss a retrieval system that can meet the
+ most of the features.
+ At first, we'll explain the general behaviour, our modifications and improvment
 s on it.
  Then we'll explain main parts of the retrival system one by one: Text processin
 g , Query processing, Results processing, Suggestion system.
