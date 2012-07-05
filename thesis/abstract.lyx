@@ -14,7 +14,7 @@ initials
 fixltx2e
 \end_modules
 \maintain_unincluded_children false
-\language french
+\language english
 \language_package default
 \inputencoding auto
 \fontencoding global
@@ -89,16 +89,12 @@ fixltx2e
 \begin_body
 
 \begin_layout Section*
-
-\lang english
 A
 \series bold
 bstract
 \end_layout
 
 \begin_layout Standard
-
-\lang english
 Noble Quran is different of all documents that we have known.
  It's the sacred book of Muslims.
  It contains knowledge of all aspects of life.
@@ -112,8 +108,6 @@ Noble Quran is different of all documents that we have known.
 \end_layout
 
 \begin_layout Standard
-
-\lang english
 The goal through this work is to propose a system for advanced research
  in all of the information contained in the Quran by considering the morphology
  of the Arabic language and the properties of the Quranic text.
@@ -126,7 +120,6 @@ The goal through this work is to propose a system for advanced research
 \begin_layout Standard
 
 \series bold
-\lang english
 Keywords :
 \series default
  Indexing/Search, Arabic, Holy Quran, Information retrieval, Search engines.
@@ -134,8 +127,6 @@ Keywords :
 \end_layout
 
 \begin_layout Standard
-
-\lang english
 \begin_inset Newpage clearpage
 \end_inset
 
@@ -143,10 +134,14 @@ Keywords :
 \end_layout
 
 \begin_layout Section*
+
+\lang french
 Résumé
 \end_layout
 
 \begin_layout Standard
+
+\lang french
 Le Coran est différent de tous les documents que nous connaissons .
  C'est le livre sacré des musulmans.
  Il comporte des connaissances sur tous les aspects de la vie.
@@ -163,6 +158,8 @@ Le Coran est différent de tous les documents que nous connaissons .
 \end_layout
 
 \begin_layout Standard
+
+\lang french
 Le but recherché à travers ce travail est de proposer un système de recherche
  avancée dans l'ensemble des informations contenues dans le Coran en prenant
  en considération la morphologie de la langue Arabe et les propriétés du
@@ -171,6 +168,8 @@ Le but recherché à travers ce travail est de proposer un système de recherche
  pour obtenir une bonne stabilité et une recherche de grande vitesse.
  Elle serait trés utile pour les chercheurs et pourrait être généralisée
  pour couvrir l'ensemble du contenu en arabe.
+\lang english
+
 \begin_inset Newline newline
 \end_inset
 
@@ -184,6 +183,7 @@ Le but recherché à travers ce travail est de proposer un système de recherche
 \begin_layout Standard
 
 \series bold
+\lang french
 Mots clés : 
 \series default
 Indexation/Recherche, Arabe, Coran, Recherche d'information, Moteurs de
@@ -228,6 +228,14 @@ Indexation/Recherche, Arabe, Coran, Recherche d'information, Moteurs de
  وينبغي الاستناد على الأساليب الحديثة في استرجاع المعلومات من أجل استقرار
  جيد وسرعةعالية في البحث.هذا العمل مفيد للباحثين ودارسي القرآن ويمكن أن يعمم
  ليشمل جميع المحتوى باللغة العربية.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -241,6 +249,13 @@ Indexation/Recherche, Arabe, Coran, Recherche d'information, Moteurs de
 \series default
  بحث/فهرسة، العربية، القرآن، استخراج المعلومات، محركات البحث.
  
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
 \end_layout
 
 \end_body

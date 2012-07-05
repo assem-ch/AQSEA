@@ -16,7 +16,7 @@ customHeadersFooters
 endnotes
 \end_modules
 \maintain_unincluded_children false
-\language french
+\language english
 \language_package default
 \inputencoding auto
 \fontencoding global
@@ -155,10 +155,10 @@ LatexCommand tableofcontents
 \end_layout
 
 \begin_layout Chapter
-Coran 
+Quran 
 \begin_inset CommandInset label
 LatexCommand label
-name "chapitre2"
+name "chapter1"
 
 \end_inset
 
@@ -214,85 +214,51 @@ end{Arabic}
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Comment
-status collapsed
-
-\begin_layout Plain Layout
-Remove unused ressources:: Filtrer all the section of indexes from taha's
- et Midad elbayan, leave only Quranic Corpus, Tanzil et Qurany
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
 Introduction 
 \end_layout
 
 \begin_layout Standard
-Le Coran est le livre sacré des musulmans, il est la base de plusieurs sciences
- et domaines, comme le tafssīr, la traduction, la récitation 
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-
-\lang arabic_arabi
-التّلاوة
-\end_layout
-
-\end_inset
-
- , etc.
- Les informations contenues dans le texte coraniques sont les sources de
- ces sciences, d’où la nécessité d’un puissant systeme de recherche qui
- offre plein de fonctionnalités spécifiques au Coran.
+The Quran is the sacred book of Muslims, it is the basis of several sciences,
+ such as Tafssir, translation, recitation, etc.
+ The information contained in the Quranic text are the sources of these
+ sciences, hence the need for a powerful search system that offers lots
+ of features specific to the Qur'an.
 \end_layout
 
 \begin_layout Standard
-Notre sujet est de réaliser un tel systeme, donc dans ce chapitre, nous
- allons d’abord préciser la définition du Coran et des documents coraniques,
- puis nous verrons en bref les principales étapes de l’évolution du Coran
- à travers le temps et comment il a été écrit, édité et informatisé, ensuite
- nous allons étudier le mushaf et les sciences du Coran.
- 
+Our subject is to achieve such a system, so in this chapter, we will first
+ clarify the definition of the Qur'an, then we will see in brief the main
+ steps of the evolution of the Qur'an through time and how it was written,
+ edited and computerized, then we will study the mushaf and sciences of
+ the Qur'an.
 \end_layout
 
 \begin_layout Standard
-Puis, nous verrons les bénéfices et les difficultés de l’informatisation
- du Coran, notamment, le script othmani, la vérification et l'authentification
- du mushaf et le besoin d’une référence coranique électronique standard.
- 
-\end_layout
-
-\begin_layout Standard
-Encore, nous allons écrire sur les index informatisés et les ontologies
- de coran, car nous en avons besoin dans notre recherche
+Then we will see the benefits and challenges of computerization of the Qur'an,
+ in particular, the script othmani, verification and authentication of Mus'haf.
 \end_layout
 
 \begin_layout Section
-Définitions
+Definitions
 \end_layout
 
 \begin_layout Subparagraph*
-Coran
+Qur'an
 \end_layout
 
 \begin_layout Standard
-Le mot « 
-\emph on
-Coran 
-\emph default
-» ou « 
+the word « 
 \emph on
 Qur’an 
 \emph default
-», dans la langue arabe, veut dire récitation ou lecture, les savants musulmans
- le définissent par : les paroles d’Allah révélées à son prophète Mohamed
- , écrits dans les mushafs et transmis par générations successives
+» ou «
+\emph on
+ Koran 
+\emph default
+», in Arabic Language, means recitation or reading, Muslim scholars define
+ it as: the words of Allah revealed to His Prophet Muhammad, written in
+ mus'hafs and transmitted by successive generations 
 \begin_inset Foot
 status collapsed
 
@@ -305,10 +271,10 @@ status collapsed
 \end_inset
 
 .
- Le Coran est aussi connu par d’autres noms tels que : Al-Furkān , Al-kitāb
+ The Qur'an is also known by other names such as : Al-Furkān , Al-kitāb
  , Al-dhikr , Al-wahy et Al-rōuh .
- Il est le livre sacré des musulmans et la première référence de la législation
- islamique.
+ Il est le livre sacré des tous les musulmans et la première référence de
+ la législation islamique.
  
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -317,30 +283,16 @@ key "Meh73"
 \end_inset
 
 
-\lang arabic_arabi
-
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-
-\lang arabic_arabi
-(محسين, 1973)
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subparagraph
-Mushaf
+Mus'haf
 \end_layout
 
 \begin_layout Standard
-Le mushaf est le livre qui contient la totalité du Coran, le premier mushaf
- est le mushaf que le calife ’Abu-Bakr d a rassemblé.
- Les mushafs sont écrits selon le script othmani
+The mus'haf is the book that contains the entire Qur'an, the first mus'haf
+ was the mushaf that the Caliph Abu Bakr has gathered.
+ The mus'hafs are written according to the script othmani
 \begin_inset Foot
 status open
 
@@ -348,13 +300,13 @@ status open
  
 \lang arabic_arabi
 الخطّ العثماني
-\lang french
+\lang english
  
 \end_layout
 
 \end_inset
 
-qui est un peu différent du script arabe standard 
+which is somewhat different from standard Arabic script 
 \begin_inset Foot
 status open
 
@@ -362,15 +314,15 @@ status open
  
 \lang arabic_arabi
 الخط الإملائي
-\lang french
+\lang english
  
 \end_layout
 
 \end_inset
 
 .
- La traduction du Coran ne constitue en aucun cas un mushaf, car le Coran
- fut révélé par Allah y en arabe dans sa forme comme dans son sens.
+ The translation of the Qur'an constitute in no way a mushaf, because the
+ Qur'an was revealed in Arabic unique in its form and its meaning.
  
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -382,15 +334,14 @@ key "Hadj08"
 \end_layout
 
 \begin_layout Subparagraph
-Document coranique 
+Qur'anic Documents
 \end_layout
 
 \begin_layout Standard
-C’est un document qui peut correspondre à la totalité du contenu de Coran
- (mushaf), ou bien à un extrait cohérent (ayas successives) du Coran en
- langue arabe.
- Ces extraits peuvent être utilisés comme des citations ou des exemples,
- et souvent écrits en script arabe standard.
+It is a document that can match the entire contents of the Qur'an (Mushaf),
+ or else extract a coherent (ayas successive) of the Quran in Arabic.
+ These extracts can be used as quotations or examples, and often written
+ in standard Arabic script.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Hadj08"
@@ -401,15 +352,14 @@ key "Hadj08"
 \end_layout
 
 \begin_layout Subparagraph
-Al-mu'jam Coranique ( Lexique) 
+Qur'anic Mu'jam (Lexicon)
 \end_layout
 
 \begin_layout Standard
-Le mu'jam est une référence qui contient des informations (sujets ou mots)
- triées dans un certain ordre ainsi que leurs explications ou traductions,
- le mu'jam peut être général (d'une langue par exemple) ou spécialisé.
- Dans notre étude nous nous intéresserons aux ma'ājim spécialisés pour le
- Coran.
+The Mu'jam is a reference that contains information (subjects or words),
+ sorted in some order as well as their translations or explanations, the
+ Mu'jam may be general (eg a language) or specialized.
+ a Qur'anic Mu'jam is any Mu'jam that its contents is based on Quran.
  
 \begin_inset Note Note
 status collapsed
@@ -424,15 +374,15 @@ reference
 \end_layout
 
 \begin_layout Subparagraph
-L’index Coranique
+Qur'anic Index
 \end_layout
 
 \begin_layout Standard
-L’index est comme le mu'jam car il contient des mots triés, mais la différance
- est que l’index n’explique pas les mots, mais il indique la position de
- toutes ses occurrences pour qu’on puisse y accéder facilement.
- Les index du Coran donnent la position par la sourate et l’aya contentant
- un terme spécifique.
+The index is as Mu'jam because it contains words sorted, but the differance
+ is that the index does not explain the words, but it indicates the position
+ of all the instances so that we can access them easily.
+ The index gives the position of the Qur'an by sura and aya merely a specific
+ term.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Khm04"
@@ -443,14 +393,14 @@ key "Khm04"
 \end_layout
 
 \begin_layout Section
-Structure du Coran
+Quran Structure
 \end_layout
 
 \begin_layout Standard
-Le Coran est constitué de 114 sourates, les sourates sont divisées en ayas,
- en trouve dans le mushaf devant chaque aya son numéro, ce partitionnement
- et le même depuis le premier mushaf, puisque l’ordre des sourates et des
- ayas est précisé par le prophète
+The Quran consists of 114 suras, the suras are divided into ayas.In mus'haf,
+ the number of each aya is attached to its text.
+ this partitioning is the same since the first mushaf, because the order
+ of Surahs and ayas is specified by the prophet
 \begin_inset Note Note
 status collapsed
 
@@ -460,11 +410,11 @@ ref
 
 \end_inset
 
-, cependant il existe d’autres fragmentations du mushaf adoptées par les
- spécialistes du Coran afin de faciliter l’apprentissage et la récitation.
- Les marques de ces fragmentations ne font pas partie du texte coranique,
- et s’écrivent sur les marges.
- 
+.
+ However, there are other fragmentations of mushaf adopted by scholars of
+ the Qur'an in order to facilitate learning and recitation.
+ The marks of these fragmentations are not part of the Qur'anic text, and
+ they are written on the margins.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Zer08"
@@ -475,7 +425,7 @@ key "Zer08"
 \end_layout
 
 \begin_layout Standard
-La structure du Coran est constituée des niveaux analytiques suivants 
+The structure of the Qur'an consists of the following analytical levels
 \begin_inset CommandInset citation
 LatexCommand cite
 key "BnJ"
@@ -486,14 +436,14 @@ key "BnJ"
 \end_layout
 
 \begin_layout Itemize
-la structure principale : la sourate, l’aya, le mot et la lettre ; 
+The primary structure: sura, aya, word and letter;
 \end_layout
 
 \begin_layout Itemize
-les emplacements spéciaux : le début de la sourate, la fin de la sourate,
- fin de l’aya, virgule coranique
+[TO-TRANSLATE] les emplacements spéciaux : le début de la sourate, la fin
+ de la sourate, fin de l’aya, virgule coranique
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -533,7 +483,7 @@ status open
 \uwave off
 \noun off
 \color none
-\lang french
+\lang english
  
 \end_layout
 
@@ -585,7 +535,7 @@ status open
  
 \lang arabic_arabi
 مكّيّة
-\lang french
+\lang english
  
 \end_layout
 
@@ -646,7 +596,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename /media/0794243270/thesis/thesis/Frag_sourates.png
+	filename Frag_sourates.png
 
 \end_inset
 
@@ -699,7 +649,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename /media/0794243270/thesis/thesis/Frag_ahzab.png
+	filename Frag_ahzab.png
 
 \end_inset
 
@@ -711,163 +661,6 @@ status open
 
 \begin_layout Plain Layout
 Schéma explicatif de la fragmentation en ahzab 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Fragmentation en manāzil
-\end_layout
-
-\begin_layout Standard
-Au Pakistan, le mushaf est divisé en sept parties appelées manāzil qui sont
- les débuts des sourates suivantes 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Zer08"
-
-\end_inset
-
-:
-\end_layout
-
-\begin_layout Enumerate
-Sourate Al-fātiha ;
-\end_layout
-
-\begin_layout Enumerate
-Sourate Al-Māida ; 
-\end_layout
-
-\begin_layout Enumerate
-Sourate Yūnus ; 
-\end_layout
-
-\begin_layout Enumerate
-Sourate Al-Isra ; 
-\end_layout
-
-\begin_layout Enumerate
-Sourate Al-Chu’arā’ ; 
-\end_layout
-
-\begin_layout Enumerate
-Sourate As-Sāffāte ; 
-\end_layout
-
-\begin_layout Enumerate
-Sourate Quf .
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename /media/0794243270/thesis/thesis/Frag_manazil.png
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Schéma explicatif de la fragmentation en manāzil 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Fragmentation en ruku
-\family roman
-\series bold
-\shape up
-\size large
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-'ate 
-\end_layout
-
-\begin_layout Standard
-Les sourates sont partitionnées dans les pays de semi continent indien selon
- le sujet, chaque partie s’appelle ruku’, il est indiqué par une Âīn en
- index 
-\lang arabic_arabi
-ع
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-\lang french
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-et un autre sur la marge.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename /media/0794243270/thesis/thesis/Frag_ruku3ate.png
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Schéma explicatif de la fragmentation en Ruku'
 \end_layout
 
 \end_inset
@@ -1313,20 +1106,6 @@ key "Islamweb"
 
 \begin_layout Standard
 _
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Section
-Les sciences du Coran
-\end_layout
-
-\begin_layout Plain Layout
-Todo
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Section
@@ -1919,7 +1698,7 @@ status open
 \lang arabic_arabi
 نجوم الفرقان في أطراف القرآن
 \emph default
-\lang french
+\lang english
  
 \end_layout
 
@@ -1948,7 +1727,7 @@ status collapsed
 \emph default
 \lang arabic_arabi
 معجم آيات القرآن
-\lang french
+\lang english
  
 \end_layout
 
@@ -1997,7 +1776,7 @@ status open
 \color inherit
 \lang arabic_arabi
 المعجم المفهرس لألفاظ القرآن الكريم
-\lang french
+\lang english
  
 \end_layout
 
@@ -2238,7 +2017,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /media/0794243270/thesis/thesis/Par_mot.png
+	filename Par_mot.png
 
 \end_inset
 
@@ -2289,7 +2068,7 @@ status open
 \uwave off
 \noun off
 \color none
-\lang french
+\lang english
  
 \end_layout
 
@@ -2443,7 +2222,7 @@ status open
 \uwave off
 \noun off
 \color none
-\lang french
+\lang english
  
 \end_layout
 
@@ -3427,51 +3206,51 @@ Ce sont les index qui suit une approche sémantique, afin de relier des mots
  les racines : « 
 \lang arabic_arabi
 جيء
-\lang french
+\lang english
  », « 
 \lang arabic_arabi
 أتى
-\lang french
+\lang english
 », « 
 \lang arabic_arabi
 قدم
-\lang french
+\lang english
  », «
 \lang arabic_arabi
  حضر
-\lang french
+\lang english
 », « 
 \lang arabic_arabi
 وصل
-\lang french
+\lang english
  », « 
 \lang arabic_arabi
 ولي
-\lang french
+\lang english
 » et «
 \lang arabic_arabi
  دبر
-\lang french
+\lang english
  » ainsi que : «
 \lang arabic_arabi
  دخل
-\lang french
+\lang english
  », « 
 \lang arabic_arabi
 ولج
-\lang french
+\lang english
  », « 
 \lang arabic_arabi
 قبل
-\lang french
+\lang english
 », « 
 \lang arabic_arabi
 ورد
-\lang french
+\lang english
  » et « 
 \lang arabic_arabi
 وصل
-\lang french
+\lang english
 » .
  Sur cette base, les verbes se réunissent en groupes qu’on peut décrire
  comme ‘rassembleurs généraux’, ensuite les diviser en plus petits groupes,
@@ -3677,7 +3456,7 @@ status open
  
 \lang arabic_arabi
 جذع الكلمة
-\lang french
+\lang english
  
 \end_layout
 
@@ -3691,7 +3470,7 @@ status open
  
 \lang arabic_arabi
 جذر الكلمة
-\lang french
+\lang english
  
 \end_layout
 
@@ -7525,7 +7304,7 @@ Le mot en script othmani (Unicode)
 Une expression codée qui décrit le mot morphologiquement et grammaticalement
  
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Enumerate
 , cette expression contient les tags suivants:
@@ -10632,7 +10411,7 @@ status open
 
 \lang arabic_arabi
  مصحف التجويد
-\lang french
+\lang english
  
 \end_layout
 
@@ -10820,7 +10599,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename /media/0794243270/thesis/thesis/Qurany Aperçu.png
+	filename Qurany Aperçu.png
 
 \end_inset
 
@@ -10937,7 +10716,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename /media/0794243270/thesis/thesis/Quranic Ontology.png
+	filename Quranic Ontology.png
 	lyxscale 75
 	scale 75
 
@@ -11013,7 +10792,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /media/0794243270/thesis/thesis/Ontology-henni.png
+	filename Ontology-henni.png
 	rotateOrigin center
 
 \end_inset
@@ -11050,23 +10829,20 @@ Conclusion
 \end_layout
 
 \begin_layout Standard
-Nous avons conclu dans ce chapitre que la richesse des informations contenu
- dans le Coran, nous conduisent à s'interroger: comment extraire le maximum
- de ces informations, la réponse pourrait être un moteur de recherche bien
- fondé , bien adapté et extensible.
-  
+We concluded in this chapter that the richness of information contained
+ in the Qur'an, lead us to wonder: how to extract the maximum information,
+ the answer might be a search engine soundness, adequate and extensible.
 \end_layout
 
 \begin_layout Standard
-La limitation des resources coranique informatisé peut rendre notre travail
- plus difficile, mais nous essayons de faire notre travail avec un maximum
- d'indépendance des projets non-ouverts de construction des ressources coranique
-s.
+Limitation of Qur'anic computerized resources can make implementation of
+ our work more difficult, but we tried to do our work with maximum independence
+ to Quranic resources specially ones that are in an ambiguous state.
 \end_layout
 
 \begin_layout Standard
-Dans le chapitre suivant nous allons présenté comment un moteur de recherche
- fonctionne en bien details pour les étapes d'indexation et de recherche.
+In the next chapter, we present the characteristics of the language of Quran:
+ The classical Arabic.
 \end_layout
 
 \end_body

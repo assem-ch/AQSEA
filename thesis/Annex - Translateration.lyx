@@ -18,7 +18,7 @@ initials
 fix-cm
 \end_modules
 \maintain_unincluded_children true
-\language french
+\language english
 \language_package default
 \inputencoding auto
 \fontencoding global
@@ -106,7 +106,7 @@ Annexe D
 \begin_inset space ~
 \end_inset
 
-Tableau de translittération de l’alphabet arabe 
+Transliteration Table of the Arabic alphabet
 \end_layout
 
 \begin_layout Standard

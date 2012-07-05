@@ -129,55 +129,39 @@ Q
 
 \end_inset
 
-uran,
-\lang english
- in Arabic, means the read or the recitation.
+uran, in Arabic, means the read or the recitation.
  Muslim scholars define it by: the words of Allah revealed to His Prophet
  Muhammad, written in mushaf and transmitted by successive generations (
 \lang arabic_arabi
 التواتر
-\lang english
-)
 \lang french
-
+)
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Meh73"
 
 \end_inset
 
-
-\lang english
 .
  The Qur'an is also known by other names such as: Al-Furkān , Al-kitāb ,
  Al-dhikr , Al-wahy and Al-rōuh .
  It is the sacred book of Muslims and the first reference to Islamic law.
-
-\lang french
- 
-\lang english
-It's more then 14 centuries passed since its revelation, and muslims still
+ It's more then 14 centuries passed since its revelation, and muslims still
  studying it, teaching it, write books about it and recently develop application
 s for it.
 \end_layout
 
 \begin_layout Standard
-
-\lang english
-Le Coran is an important source of information that contains various information
- about all aspects of life: Sci- entific, Social, Historic, Politic...etc.
+Quran is an important source of information that contains various information
+ about all aspects of life: Scientific, Social, Historic, Politic...etc.
  
 \end_layout
 
 \begin_layout Section*
-
-\lang english
 Problematic
 \end_layout
 
 \begin_layout Standard
-
-\lang english
 Due to the large amount of information held in the Qur'an, it has become
  extremely difficult for regular search engines to successfully extract
  key information.
@@ -201,8 +185,6 @@ Due to the large amount of information held in the Qur'an, it has become
 \end_layout
 
 \begin_layout Standard
-
-\lang english
 The simple search using exact query doesn’t offer better options and still
  inefficient to move toward Thematic search by example.
  Full text search is the new approach of search that replaced the sequential
@@ -229,8 +211,6 @@ Objectives
 \end_layout
 
 \begin_layout Standard
-
-\lang english
 Our proposal is about design a retrieval system that fit the Quran search
  needs.
  But to realize this objective, we must first list and classify all the
@@ -240,29 +220,19 @@ s.
 \end_layout
 
 \begin_layout Section*
-Organisation du mémoire
+Report organization
 \end_layout
 
 \begin_layout Standard
-Nous avons organisé notre mémoire comme suit:
+We organized the report as follows:
 \end_layout
 
 \begin_layout Subsection*
-Première partie : État de l'art
+First Part : Art State
 \end_layout
 
 \begin_layout Standard
-Cette partie contient 3
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-X
-\end_layout
-
-\end_inset
-
- chapitres:
+This part contains 3 chapters:
 \end_layout
 
 \begin_layout Standard
@@ -275,28 +245,14 @@ X
 \begin_layout Standard
 
 \series bold
-Chapitre 1 : Le Coran
-\series default
- ,
-\series bold
-Caractéristiques et Ressources
+Chapter 1 : The Quran
 \end_layout
 
 \begin_layout Standard
-Ce chapitre présente une vue globale sur le Coran et ses sciences, il comporte
- un rappel historique sur l'évolution du Coran, la structure du music-hall,
- et les principaux problèmes d’informatisation du Coran, notamment le script
- othmani et l’authentification des textes coraniques.
-\end_layout
-
-\begin_layout Standard
-Notre moteur de recherche doit permettre d’utiliser les index et les ontologies
- préétablis, nous avons donc mis ce chapitre aussi pour présenter les index
- du Coran et expliquer ses différents types.
- Nous aborderons aussi les différents index informatisés que nous avons
- collectés, et pour chacun d’eux, nous montrerons un aperçu sur sa structure
- et une brève évaluation.
- 
+This chapter presents an overview of the Qur'an and its sciences, it has
+ a historical background on the evolution of the Quran, the structure of
+ the mus-haf, and the main problems of computerization of the Quran, including
+ the script othmani and authentication Quranic texts.
 \end_layout
 
 \begin_layout Standard
@@ -309,15 +265,14 @@ Notre moteur de recherche doit permettre d’utiliser les index et les ontologie
 \begin_layout Standard
 
 \series bold
-Chapitre 2 : La langue Arabe, Orthographie and Morphologie 
+Chapter 2 : Arabic Language, Orthography and Morphology 
 \end_layout
 
 \begin_layout Standard
-L’objective de ce chapitre est de présenter les propriétés de la langue
- Arabe , Sa orthographie ,Sa morphologie et d'introduire des problèmes d’ambigüi
-tés ...etc.
- le chapitre contient des techniques de recherches spécifie pour la langue
- Arabe.
+The objective of this chapter is to present the properties of the Arabic
+ language, Its spells, Its morphology and introduce some ambiguities issues
+ that raise due to Arabic nature ...
+ etc.
 \end_layout
 
 \begin_layout Standard
@@ -330,17 +285,16 @@ tés ...etc.
 \begin_layout Standard
 
 \series bold
-Chapitre 3 : Fonctionnement des moteurs de recherche
+Chapter 3 : Search Engines
 \end_layout
 
 \begin_layout Standard
-Pour concevoir un moteur de recherche puissant, il est indispensable de
- comprendre comment les moteurs de recherche fonctionnent, dans ce chapitre,
- nous aborderons les différentes parties d’un moteur de recherche, à savoir
- : l’exploration, l’indexation et l’interrogation.
- Ainsi que la définition des notions de base dans le domaine des systèmes
- de recherche d’information.
- ce chapitre contient aussi une introduction vers l’approche sémantique.
+To design a powerful search engine, it is essential to understand how search
+ engines work, in this chapter we discuss the different parts of a search
+ engine, namely: the crawling, indexing and querying .
+ And the definition of basic concepts in the field of information retrieval
+ systems.
+ This chapter contains an introduction to the semantic approach.
 \end_layout
 
 \begin_layout Standard
@@ -355,7 +309,7 @@ Second Part : Analysis & Conception
 \end_layout
 
 \begin_layout Standard
-Cette partie contient deux chapitre :
+This part contains 2 chapters :
 \begin_inset VSpace smallskip
 \end_inset
 
@@ -365,14 +319,14 @@ Cette partie contient deux chapitre :
 \begin_layout Standard
 
 \series bold
-Chapitre 6 : Possibles fonctionnalités de recherche
+Chapter 4 : Quranic search features
 \end_layout
 
 \begin_layout Standard
-L’objectif de ce chapitre est de présenter les fonctionnalités possibles
- des moteurs de recherche en général, et ceux arabes et coraniques en particulie
-r, il a un grand rôle dans notre travail puisque il définit une gamme complète
- d’options de recherche dans le Coran et définit notre chemin de travaille.
+The objective of this chapter is to present the possible search features
+ in Quran.
+ It has a big importance in our work since it defines our objectives and
+ our path on the work.
 \end_layout
 
 \begin_layout Standard
@@ -385,20 +339,21 @@ r, il a un grand rôle dans notre travail puisque il définit une gamme complèt
 \begin_layout Standard
 
 \series bold
-Chapitre 7 : Conception
+Chapter 5 : Conception
 \end_layout
 
 \begin_layout Standard
-yyyyyyyyyyyyyyyyyy
+this chap 
 \end_layout
 
 \begin_layout Subsection*
-Troisième partie : Implémentation et Tests
+Third Part : Implementation and Tests
 \end_layout
 
 \begin_layout Standard
-Cette partie contient les différentes phases d'implemention de notre conceptions.
- Elle englobe 2 chapitres :
+This part contains the different steps of implemention of our retrieval
+ system.
+ It includes two chapters:
 \end_layout
 
 \begin_layout Standard
@@ -411,24 +366,23 @@ Cette partie contient les différentes phases d'implemention de notre conception
 \begin_layout Standard
 
 \series bold
-Chapitre 8 : Implementation
+Chapter 6 : Implementation
 \end_layout
 
 \begin_layout Standard
-Ce chapitre décrit le choix des techniques et outils de développement de
- la solution informatique et présente aussi le prototype réalisé avec une
- description des différentes fonctionnalités.
+This chapter describes the choice of technologies and development tools
+ and also presents the prototype with a description of various features.
 \end_layout
 
 \begin_layout Standard
 
 \series bold
-Chapitre 9 : Tests et Evaluation
+Chapitre 7 : Tests and Evaluation
 \end_layout
 
 \begin_layout Standard
-Dans ce chapitre, nous allons dans un premier temps mesurer le bon fonctionnemen
-t de notre solution en appliquant un scénario réel de Business Intelligence.
+In this chapter, we will initially measure the proper functioning of our
+ solution by applying [TODO]
 \begin_inset Newline newline
 \end_inset
 
@@ -436,8 +390,7 @@ t de notre solution en appliquant un scénario réel de Business Intelligence.
 \end_layout
 
 \begin_layout Standard
-Enfin, nous terminerons par une conclusion qui récapitule notre objectives
- envisagées.
+Finally, we will finish with a conclusion that summarizes our work.
 \end_layout
 
 \end_body

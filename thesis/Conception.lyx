@@ -190,212 +190,150 @@ g , Query processing, Results processing, Suggestion system.
 \end_layout
 
 \begin_layout Section
+Previous Work
+\end_layout
 
-\lang english
+\begin_layout Standard
+[TODO]
+\end_layout
+
+\begin_layout Section
 General Behavior
 \end_layout
 
 \begin_layout Section
-
-\lang english
 Text Processing
 \end_layout
 
 \begin_layout Subsection
-
-\lang english
 General Phases:
 \end_layout
 
 \begin_layout Subsubsection
-
-\lang english
 Tokenization
 \end_layout
 
 \begin_layout Subsubsection
-
-\lang english
 Normalisation
 \end_layout
 
 \begin_layout Subsubsection
-
-\lang english
 Stemming 
 \end_layout
 
 \begin_layout Subsubsection
-
-\lang english
 Stop words (eliminating)
 \end_layout
 
 \begin_layout Subsection
-
-\lang english
 Using Uthmani Script
 \end_layout
 
 \begin_layout Subsubsection
-
-\lang english
 Manual Indexes (Qurany Corpus)
 \end_layout
 
 \begin_layout Subsubsection
-
-\lang english
 Considerating Stop and Recitation marks
 \end_layout
 
 \begin_layout Subsection
-
-\lang english
 New Phase: Tagging 
 \end_layout
 
 \begin_layout Subsubsection
-
-\lang english
 Pronoun Reference Resolving
 \end_layout
 
 \begin_layout Subsubsection
-
-\lang english
 Consider the different Significations
 \end_layout
 
 \begin_layout Subsubsection
-
-\lang english
 standard/uthmani word form 
 \end_layout
 
 \begin_layout Subsubsection
-
-\lang english
 Numbers Search
 \end_layout
 
 \begin_layout Section
-
-\lang english
 Query Processing
 \end_layout
 
 \begin_layout Subsection
-
-\lang english
 Related Words (Upgrade of Synonyms&Antonyms)
 \end_layout
 
 \begin_layout Standard
-
-\lang english
 Relation~word
 \end_layout
 
 \begin_layout Subsection
-
-\lang english
 Derivations (Upgrade)
 \end_layout
 
 \begin_layout Subsection
-
-\lang english
 Spelling on/off
 \end_layout
 
 \begin_layout Subsection
-
-\lang english
 Embeded Search (Upgrade of Tuple search)
 \end_layout
 
 \begin_layout Subsubsection
-
-\lang english
 Word Properties
 \end_layout
 
 \begin_layout Subsubsection
-
-\lang english
 Word Translations
 \end_layout
 
 \begin_layout Subsection
-
-\lang english
 New Arabic Jokers 
 \end_layout
 
 \begin_layout Itemize
-
-\lang english
 Consents
 \end_layout
 
 \begin_layout Itemize
-
-\lang english
 Short Voyels
 \end_layout
 
 \begin_layout Itemize
-
-\lang english
 Long Voyels
 \end_layout
 
 \begin_layout Itemize
-
-\lang english
 Hamza 
 \end_layout
 
 \begin_layout Itemize
-
-\lang english
 Diacritics
 \end_layout
 
 \begin_layout Itemize
-
-\lang english
 Voyels
 \end_layout
 
 \begin_layout Itemize
-
-\lang english
 etc.
 \end_layout
 
 \begin_layout Subsection
-
-\lang english
 Possible Combinations
 \end_layout
 
 \begin_layout Section
-
-\lang english
 Results Processing
 \end_layout
 
 \begin_layout Enumerate
-
-\lang english
 Grouping Similar Ayas (New)
 \end_layout
 
 \begin_layout Enumerate
-
-\lang english
 Sorting of Arabic Symbols
 \end_layout
 
@@ -404,8 +342,6 @@ Sorting of Arabic Symbols
 status collapsed
 
 \begin_layout Plain Layout
-
-\lang arabic_arabtex
 ما هو ترتيب الاصح للرموز العربية في الحاسوب
 \end_layout
 
@@ -415,8 +351,6 @@ status collapsed
 \end_layout
 
 \begin_layout Section
-
-\lang english
 Suggestions systems
 \end_layout
 
@@ -433,14 +367,10 @@ Using Ngrams
 status collapsed
 
 \begin_layout Plain Layout
-
-\lang arabic_arabtex
 لحرف العربي المشكول يعتبر في اللغة العربية حرفاً واحداً،
 \end_layout
 
 \begin_layout Plain Layout
-
-\lang arabic_arabtex
 ألا يحق لنا أن نتساءل لماذا لا يمكن اعتبار الحرف المشكول حرفاً واحداً في
  الحاسوب؟ 
 \end_layout
@@ -477,8 +407,6 @@ Related Works
 \end_layout
 
 \begin_layout Section
-
-\lang english
 Statistics Calculating Methods
 \end_layout
 
@@ -487,8 +415,12 @@ God names' number:
 \end_layout
 
 \begin_layout Description
-\begin_inset Note Comment
+\begin_inset Note Note
 status open
+
+\begin_layout Plain Layout
+\begin_inset Note Note
+status collapsed
 
 \begin_layout Description
 Hints:
@@ -507,27 +439,24 @@ Unify all these forms in only one regular expression
 
 \end_layout
 
-\begin_layout Section
+\end_inset
 
-\lang english
+
+\end_layout
+
+\begin_layout Section
 Full Vocalized Search Engine
 \end_layout
 
 \begin_layout Subsection
-
-\lang english
 Partial vocalization comparison
 \end_layout
 
 \begin_layout Subsection
-
-\lang english
 benefits
 \end_layout
 
 \begin_layout Itemize
-
-\lang english
 Statistics precision
 \end_layout
 
@@ -553,14 +482,10 @@ Semantic search seeks to improve search accuracy by understanding searcher
 
 \begin_layout Standard
 \align left
-
-\lang arabic_arabi
 \begin_inset Note Comment
 status collapsed
 
 \begin_layout Plain Layout
-
-\lang arabic_arabi
 محاولة تبسيط عبارة البحث من الشكل التركيبي الى الاستفهام الطبيعي? 
 \end_layout
 

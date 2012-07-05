@@ -212,18 +212,9 @@ filename "Remerciements.lyx"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
 \begin_inset CommandInset include
 LatexCommand include
 filename "abstract.lyx"
-
-\end_inset
-
-
-\end_layout
 
 \end_inset
 
@@ -520,18 +511,10 @@ thechapter}}}
 \end_layout
 
 \begin_layout Part
-
-\end_layout
-
-\begin_layout Part
 State Art
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
 \begin_inset CommandInset include
 LatexCommand input
 preview true
@@ -542,34 +525,7 @@ filename "SA - Quran.lyx"
 
 \end_layout
 
-\end_inset
-
-
-\begin_inset Note Comment
-status open
-
-\begin_layout Plain Layout
-raise a problem of 
-\begin_inset Quotes sld
-\end_inset
-
-other language
-\begin_inset Quotes srd
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
 \begin_inset CommandInset include
 LatexCommand input
 preview true
@@ -578,13 +534,8 @@ filename "SA - Arabic.lyx"
 \end_inset
 
 
-\end_layout
-
-\end_inset
-
-
 \begin_inset Note Comment
-status collapsed
+status open
 
 \begin_layout Plain Layout
 raise a problem of stack exceeded
@@ -596,19 +547,10 @@ raise a problem of stack exceeded
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
 \begin_inset CommandInset include
 LatexCommand input
 preview true
 filename "SA - Fonctionnement.lyx"
-
-\end_inset
-
-
-\end_layout
 
 \end_inset
 
@@ -898,10 +840,6 @@ arabic{figure}}
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
 \begin_inset CommandInset include
 LatexCommand include
 filename "Annex - Translateration.lyx"
@@ -911,14 +849,9 @@ filename "Annex - Translateration.lyx"
 
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset ERT
