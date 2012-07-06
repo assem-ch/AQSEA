@@ -1549,59 +1549,57 @@ key "Khe"
 \end_layout
 
 \begin_layout Section
-Les index du Coran
+Qur'an Indexes 
 \end_layout
 
 \begin_layout Standard
-Au fil des siècles, les musulmans étaient très intéressés au Coran, par
- le tafssīr, l'étude, la préservation, la récitation, et la calligraphie.
- Le domaine des sciences coraniques été l’objet d’une grande attention.
- Donc, des index ont été crées pour le vocabulaire du Coran, la recherche
- des mots similaires et les différences entre eux, trouver leurs racines
- et leurs dissimilitudes.
+Over centuries, Muslims were keenly interested in the Qur'an, by Tafssir,
+ study, preservation, recitation, and calligraphy.
+ Qur'anic science was the subject of great attention.
+ Therefore, indexes were created for the vocabulary of the Qur'an, the search
+ for similar words and differences between them, find their roots and dissimilar
+ities.
  
 \end_layout
 
 \begin_layout Standard
-Dans l'ère moderne, « 
+In the modern era, 
 \emph on
-le mu'jam indexé des mots du Saint Coran
+"the indexed Mu'jam of the Holy Qur'an words"
 \emph default
- » par 
+ by 
 \noun on
-Mohammed Fouad Abd El bāki 
+Mohammad Fouad Abd El baki
 \noun default
-avait comblé une lacune importante dans la vitesse d’accès aux ayas du Coran
- à partir de la racine du mot ou de rechercher n'importe quel mot à travers
- la racine, le mu'jam indexe les noms et les verbes dans le Coran selon
- la racine.
+ had filled a critical gap in the speed of access to ayahs of the Qur'an
+ using any word, the Mu'jam index the nouns and verbs in the Qur'an according
+ to the roots.
 \end_layout
 
 \begin_layout Standard
-Aujourd’hui, il y a eu de nombreuse voix appelant à l’informatisation de
- tels index pour les utiliser dans les vastes domaines de l’informatiques,
- y compris la recherche, ainsi plusieurs projets ont été lancés à cet effet
- d’ou le sujet de cette section.
+Today, there have been numerous voices calling for the computerization of
+ such index for use in the broad fields of computing, including the search
+ and several projects were launched for this purpose.
+ In this section, we mention some of those projects.
  
 \end_layout
 
 \begin_layout Subsection
-Historique des index du Coran 
+History 
 \end_layout
 
 \begin_layout Standard
-Beaucoup de savants musulmans sont intéressé par l’indexation du Coran en
- développant les méthodes et en renouvelant la manière et le but.
- Ils ont mis des index de termes coraniques et leurs positions dans le Coran,
- puis ils ont construit des lexiques pour expliquer les significations de
- ces mots après avoir rappelé les ayas dans lesquelles ils figurent.
- Certains savants ont construit des lexiques spécialisés, chacun contient
- le vocabulaire d’un seul sujet.
+Many Muslim scholars are interested in indexing of the Qur'an by developing
+ methods and renewing the manner and the purpose.
+ They put up indexes of Qur'anic terms and their positions in the Qur'an,
+ then they built lexicons to explain the meanings of these words after recalling
+ the ayahs in which they appear.
+ Some scholars have built specialized lexicons, each containing the vocabulary
+ of a single topic.
 \end_layout
 
 \begin_layout Standard
-L’évolution des index du Coran s’est faite en quatre étapes principales
- 
+The evolution of the indexes of the Qur'an was done in four main steps
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Khm04"
@@ -1612,20 +1610,18 @@ key "Khm04"
 \end_layout
 
 \begin_layout Subsubsection
-Indexation des mots du Coran 
+Indexing words of the Qur'an
 \end_layout
 
 \begin_layout Standard
-Le développement des index des mots du Coran est une nécessité, car ils
- permettent aux chercheurs d'accéder facilement aux mots du Coran.
- Les musulmans et les orientalistes se ont axé leurs recherches dans le
- premier tiers du XXe siècle, au développement des index pour les mots du
- Coran et les parties des ayas.
- 
+Development of indexes of Qur'anic words is a necessity, because they enable
+ researchers to easily access the words of the Qur'an.
+ Muslims and Orientalists have focused their research in the first third
+ of the XXth century on this axis.
 \end_layout
 
 \begin_layout Standard
-Parmi les principaux ouvrages dans ce domaine nous citons : 
+Among the major works in this field we mention: 
 \end_layout
 
 \begin_layout Itemize
@@ -1635,7 +1631,7 @@ Parmi les principaux ouvrages dans ce domaine nous citons :
 \emph default
  
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -1650,7 +1646,7 @@ status open
 
 \end_inset
 
-» par l’orientaliste allemand 
+» by the German orientalist 
 \noun on
 Leberecht Flugel
 \noun default
@@ -1658,9 +1654,9 @@ Leberecht Flugel
 \end_layout
 
 \begin_layout Itemize
-« 
+«
 \emph on
-Le mu'jam des ayas du Coran
+ mu'jam of Qur'an ayahs
 \emph default
  
 \begin_inset Foot
@@ -1679,7 +1675,7 @@ status collapsed
 
 \end_inset
 
-» par 
+» by 
 \noun on
 Houssine Nassār
 \noun default
@@ -1689,7 +1685,7 @@ Houssine Nassār
 \begin_layout Itemize
 « 
 \emph on
-le mu'jam indexé des mots du Saint Coran
+the indexed Mu'jam of the Holy Qur'an words
 \emph default
 
 \begin_inset Foot
@@ -1728,7 +1724,7 @@ status open
 
 \end_inset
 
-» par 
+» by 
 \noun on
 Mohammed Fouad Abd El-bāki
 \noun default
@@ -1736,38 +1732,38 @@ Mohammed Fouad Abd El-bāki
 \end_layout
 
 \begin_layout Standard
-L’index de 
+the index 
 \noun on
 Mohammed Fouad
 \noun default
- est le plus important, il a bénéficié de l'expérience de 
+ is the most important, he has benefited from the experience of 
 \noun on
 Flugel
 \noun default
-, a traduit son livre 
+, translated his book 
 \emph on
 nujoum al-furkān fī atrāf al-coran
 \emph default
- et l’a perfectionné en éliminant les affixes des mots et en les arrangeant
- par ordre alphabétique.
- Son mu
+ and perfected by removing affixes of words and arranging them in alphabetical
+ order.
+ his mu
 \emph on
 '
 \emph default
 jam « 
 \emph on
-Le mu'jam des ayas du Coran
+mu'jam of Qur'an ayahs
 \emph default
- » a été publié en 1945 en Egypte, et les numéros des ayas mentionnées dans
- ce livre correspondaient bien au mushaf officiel.
- Puis il a été édité dans plusieurs pays arabes et musulmans y compris Istanbul
- en 1982.
+ » was published in Egypt 1945, et and ayah numbers mentioned in this book
+ corresponded to the official mus'haf.
+ Then it was published in several Arab and Muslim countries including Istanbul
+ in 1982.
  
 \end_layout
 
 \begin_layout Standard
-Ce livre a connu beaucoup de succès, néanmoins il ne contient pas les pronoms
- et les particules
+This book has been highly successful, however it does not contain pronouns
+ and particles
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Khm04"
@@ -1778,32 +1774,28 @@ key "Khm04"
 \end_layout
 
 \begin_layout Subsubsection
-Les ma'ājim des mots du Coran 
+Ma'ājim of Qur'anic words 
 \end_layout
 
 \begin_layout Standard
-Les index du Coran offrent la possibilité de trouver la position des mots,
- puis le chercheur doit rechercher le tafssīr dans les livres appropriés
- par lui-même, d’où le besoin de produire des ma
-\emph on
-'
-\emph default
-ājim qui donne les mots avec l’explication afin de rendre la recherche encore
- plus souple.
+The index of the Qur'an have the potential to find the position of words,
+ then the researcher must find the Tafssir within the appropriate books
+ for himself, hence the need to produce ma'ājim giving the words with explanatio
+n to make the search more flexible.
  
 \end_layout
 
 \begin_layout Standard
-De nombreux travaux collectifs ont été lancés dans ce sens.
- En 1941 Dr.
+Many collaborative works were launched work in this direction.
+ In 1941 Dr.
  
 \noun on
 Mohamed Hussein Heikal
 \noun default
-, membre de l'Académie de la Langue Arabe au Caire a proposé de mettre en
- œuvre un mu'jam des termes du Coran.
- En 1949, un comité a commencé à élaborer ce mu'jam en s’inspirant de celui
- de 
+, member of the Academy of Arabic Language in Cairo has proposed to implement
+ a Mu'jam of the Qur'anic terms .
+ In 1949, a committee that began developing this Mu'jam modeled on that
+ of 
 \noun on
 Mohammed Fouad Abd El-bāki
 \noun default
@@ -1818,23 +1810,22 @@ key "Khm04"
 \end_layout
 
 \begin_layout Subsubsection
-Les ma'ājim des mots du Coran spécialisés 
+Specialized Ma'ājim of Qur'anic words 
 \end_layout
 
 \begin_layout Standard
-Les ma'ājim cités précédemment sont généraux, et il sera difficile de chercher
- les ayas contenant des mots qui appartiennent à un domaine spécifique.
- Cela a conduit à la création des ma'ājim spécialisés tels que « 
+The ma'ājim mentioned above are general, and it will be difficult to find
+ the ayahs containing words that belong to a specific field.
+ This led to the creation of specialized ma'ājim such as 
 \emph on
-le mu'jam de vocabulaire des plantes dans le Coran
+"Mu'jam of vocabulary of plants in the Qur'an"
 \emph default
- » par le leader dans ce domaine 
+ by the leader in this field 
 \noun on
-Mokhtar Fawzi Al-na’āl 
+Fawzi Al-Mokhtar na'āl
 \noun default
-, qui a achevé ensuite d’autres ma'ājim spécialisés pour l’homme, les animaux,
- les éthiques, le commerce, etc.
- 
+, who then completed other ma'ājim specialized for humans, animals, ethics,
+ trade, etc.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Khm04"
@@ -1845,19 +1836,17 @@ key "Khm04"
 \end_layout
 
 \begin_layout Subsubsection
-Les index du Coran et l’ordinateur
+Qur'anic Indexes and Computer
 \end_layout
 
 \begin_layout Standard
-Quand l'ordinateur est entré dans la vie quotidienne des gens, il a fait
- une révolution dans le monde de l’information.
- Les savant musulman ont profité de ces services, et ils ont fait de lui
- un excellant index pour le Coran.
- En fait la vitesse et l’exactitude de l’ordinateur lui permettent de donner
- rapidement l’emplacement et le nombre d’occurrences de n’importe quel mot
- dans le Coran, il suffit seulement qu’on l’alimente avec les index et les
- ma'ājim.
- 
+When the computer entered the daily lives of people, it made a revolution
+ in the information world.
+ The Muslim scholar took advantage of these services, and they have made
+ one excelling index for the Qur'an.
+ In fact the speed and accuracy of the computer allow it to quickly give
+ the location and number of occurrences of any word in the Qur'an, it is
+ sufficient that only feeds it with the indexes and ma'ājim.
 \end_layout
 
 \begin_layout Subsection

@@ -364,7 +364,7 @@ fancyhead[R]{
 \backslash
 em 
 \backslash
-LR{Introduction générale}}
+LR{General Introduction}}
 \end_layout
 
 \begin_layout Plain Layout
@@ -530,16 +530,6 @@ filename "SA - Quran.lyx"
 LatexCommand input
 preview true
 filename "SA - Arabic.lyx"
-
-\end_inset
-
-
-\begin_inset Note Comment
-status open
-
-\begin_layout Plain Layout
-raise a problem of stack exceeded
-\end_layout
 
 \end_inset
 
