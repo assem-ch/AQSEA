@@ -15,7 +15,7 @@ customHeadersFooters
 endnotes
 \end_modules
 \maintain_unincluded_children false
-\language french
+\language english
 \language_package default
 \inputencoding auto
 \fontencoding global
@@ -151,7 +151,7 @@ LatexCommand tableofcontents
 \begin_layout Chapter
 
 \color black
-Fonctionnement des moteurs de recherche 
+Search engines 
 \begin_inset CommandInset label
 LatexCommand label
 name "chapitre3"
@@ -252,18 +252,30 @@ La qualité de la recherche est directement liée à la qualité de l’explorat
  étapes, ensuite nous expliquerons le processus de l’interrogation et la
  notion de pertinence.
  
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+
+\color black
++overview of all search engines : General, Arabic, Quranic
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
 
 \color black
-Définitions
+Definitions
 \end_layout
 
 \begin_layout Subsection
 
 \color black
-Mot clé (keyword)
+Keyword
 \end_layout
 
 \begin_layout Standard
@@ -285,7 +297,7 @@ key "Han98"
 \begin_layout Subsection
 
 \color black
-Descripteur (descriptor) 
+Descriptor
 \end_layout
 
 \begin_layout Standard
@@ -333,9 +345,7 @@ key "Amr08"
 \end_layout
 
 \begin_layout Subsection
-
-\color black
-Requête 
+Query
 \end_layout
 
 \begin_layout Standard
@@ -391,7 +401,7 @@ key "Lel92"
 \begin_layout Subsection
 
 \color black
-Pertinence (Relevance)
+Relevance
 \end_layout
 
 \begin_layout Standard

@@ -9,7 +9,6 @@
 \use_default_options true
 \begin_modules
 customHeadersFooters
-foottoend
 endnotes
 fixltx2e
 fix-cm
@@ -548,10 +547,29 @@ filename "SA - Fonctionnement.lyx"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset include
 LatexCommand input
 preview true
 filename "SA - Related_works.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+to remove, add relared works in each chapter
+\end_layout
 
 \end_inset
 
@@ -712,14 +730,14 @@ addcontentsline{toc}{part}{Bibliographie}
 \begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
-bibfiles "bib/db"
-options "alpha"
+bibfiles "bib/db,bib/db2,bib/web"
+options "bib/alpha"
 
 \end_inset
 
  
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 + Webographie

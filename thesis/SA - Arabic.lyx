@@ -114,8 +114,17 @@ pagenumbering{arabic}
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset toc
 LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -183,7 +192,7 @@ end{Arabic}
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
+\begin_inset Note Greyedout
 status open
 
 \begin_layout Plain Layout
@@ -200,17 +209,17 @@ Introduction
 \end_layout
 
 \begin_layout Standard
-Arabe (
+Arabic (
 \series bold
 \lang arabic_arabi
 العربية
 \series default
 \lang english
- al-arabiyyah) est un nom appliqué à des descendants de la langue arabe
- classique du 6e siècle après JC, le plus utilisé dans le Coran, le livre
- sacré musulman.
- L'arabe est une langue sémitique centrale, étroitement liés à l'hébreu
- moderne et l'Aramai Langues
+ al-arabiyyah) it is a name applied to the descendants of the classical
+ Arabic language of the sixth century AD, the most widely used in the Qur'an,
+ the Islamic holy book.
+ Arabic is a Central Semitic language, closely related to modern Hebrew
+ and ​​Aramai languages
 \begin_inset Foot
 status collapsed
 
@@ -226,12 +235,12 @@ Modern Aramaic, languages are varieties of Aramaic that are spoken vernaculars
 \end_layout
 
 \begin_layout Standard
-Dans ce chapitre, nous allons parler de l'orthographie et la morphologie
- de la langue arabe qui sont particuliers.
- aussi nous allons parler de certaines ambiguïtés peut etre apparaissent
- en arabe provoquer l'absence de vocalisation.
-\begin_inset Note Note
-status collapsed
+In this chapter we will talk about orthography and morphology of the Arabic
+ language that are unique.
+ we will also talk about some ambiguities may be appear in Arabic cause
+ the absence of vocalization.
+\begin_inset Note Greyedout
+status open
 
 \begin_layout Plain Layout
 [Steps of informatization] + amliorer
@@ -243,7 +252,7 @@ status collapsed
 \end_layout
 
 \begin_layout Section
-L’orthographie
+Orthography
 \end_layout
 
 \begin_layout Standard

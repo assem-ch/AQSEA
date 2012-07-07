@@ -3092,53 +3092,53 @@ Syntactic indexes
 \end_layout
 
 \begin_layout Standard
-Ce sont les index qui traitent les mots en termes de fonctionnalités de
- la langue arabe pour montrer l’affixe du mot sa racine, son verbe s’il
- est dérivé d’un verbe, sa forme singulière s’il est pluriel, etc.
- Le but est de rechercher par mots et remplacer les analyseurs morphologiques
- en effectuant la plupart de leurs fonctions.
- Ces index sont construits avec ou sans la répétition de mots.
- Parmi les meilleurs livres qui ont indexé le Coran le mu'jam de Pr.
+These are the indexes that handle words in terms of functionalities of the
+ Arabic language to show the affix of the word, its root, the verb if it
+ is derived from a verb, its singular form if it is plural, etc.
+ The goal is to search by words and replace stemmers by performing the majority
+ of their functions.
+ These indexes are built with or without word repetition.
+ Among the best books that have indexed the Qur'an, the Mu'jam of Pr.
  
 \noun on
 Muhammad Fuad Abd El-baqi
 \noun default
- ainsi que le livre « 
+ well as the book « 
 \emph on
 nujoum al-furkān fī atrāf al-coran
 \emph default
- » et le livre « 
+ » and the book « 
 \emph on
 murchid al-haïrān ilā ayāte al-coran
 \emph default
  ».
- L’index de mots par 
+ The index of words by 
 \noun on
 Taha Zerrouki
 \noun default
-, le projet ‘
+, the project ‘
 \emph on
 Midād lbayān
 \emph default
-’ et le corpus coranique arabe par 
+’ et the Arabic Qur'anic Corpus by 
 \noun on
 Kais Dukes
 \noun default
- peuvent être considérés de cette catégorie, nous allons les expliquer par
- la suite dans ce chapitre.
+ can be considered in this category, we are going to explain them later
+ in this chapter..
  
 \end_layout
 
 \begin_layout Paragraph
-Les index sémantiques 
+Semantic indexes
 \end_layout
 
 \begin_layout Standard
-Ce sont les index qui suit une approche sémantique, afin de relier des mots
- du Coran avec leurs sens, la première base de données des significations
- peut être considérée comme celles qui est fondée sur les racines, puisque
- en termes de sens, les racines sont étroitement liés entre eux, par exemple,
- les racines : « 
+These are the indexes following a semantic approach in order to link words
+ of the Qur'an with their meaning, the first database of significations
+ can be considered as those that are based on the roots, since in terms
+ of meaning, the roots are closely interconnected.
+ For example, the roots: « 
 \lang arabic_arabi
 جيء
 \lang english
@@ -3162,11 +3162,11 @@ Ce sont les index qui suit une approche sémantique, afin de relier des mots
 \lang arabic_arabi
 ولي
 \lang english
-» et «
+» and «
 \lang arabic_arabi
  دبر
 \lang english
- » ainsi que : «
+ » as well as : «
 \lang arabic_arabi
  دخل
 \lang english
@@ -3182,20 +3182,15 @@ Ce sont les index qui suit une approche sémantique, afin de relier des mots
 \lang arabic_arabi
 ورد
 \lang english
- » et « 
+ » and « 
 \lang arabic_arabi
 وصل
 \lang english
 » .
- Sur cette base, les verbes se réunissent en groupes qu’on peut décrire
- comme ‘rassembleurs généraux’, ensuite les diviser en plus petits groupes,
- qui se caractérisent par un rassembleur plus particulier que le premier
- et ainsi de suite.
- Les groupes finaux n’ont pas toujours le même sens.
- Il y a beaucoup d’ouvrages dans le patrimoine arabe, qui mentionnent des
- mots de ce genre.
- Il y a également des dictionnaires modernes qui donnent de tels groupes
- et les mots étrangers correspondants.
+  There are many books in the Arab heritage, that mention of the words like
+ that.
+ There are also modern dictionaries that provide meanings and the corresponding
+ foreign words.
  
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -3207,49 +3202,50 @@ key "Alj91,Nass89"
 \end_layout
 
 \begin_layout Paragraph
-Les index des sujets
+Thematic indexes
 \end_layout
 
 \begin_layout Standard
-Ce sont les index qui divisent le Coran en unités traitant le même sujet,
- la division prend une forme de pyramide de sujets.
- Parmi les livres qui ont indexé les sujets coraniques le livre «
+These are the indexes that divide the Qur'an into units on the same topic.
+ Division takes the form of a pyramid of topics.
+ Among the books that have indexed Qur'anic topics the book«
 \emph on
  zad al-moâllifīn min kitābi rabbi al-‘ālamin
 \emph default
- » par 
+ » by 
 \noun on
 Abd Allah Mohammed Al-daruīche
 \noun default
-, et parmi les index de sujets qui ont été informatisés, l’index des sujets
- -par 
+.
+ Among the indexes of topics that have been computerized, the index of topics
+ made by 
 \emph on
 \noun on
-Taha Zerrouki-
+Taha Zerrouki
 \emph default
 \noun default
- et le projet 
+ et the project Q
 \emph on
-Qurany
+urany
 \emph default
- -par 
+ by 
 \noun on
-Mrs Noorhan Abbas
+Noorhan Abbas
 \noun default
-- que nous allons aborder dans ce chapitre.
+ as we'll cover those in this chapter.
  
 \end_layout
 
 \begin_layout Paragraph
-Les index structurels 
+Structural indexes
 \end_layout
 
 \begin_layout Standard
-Ce sont les index qui mettent l'accent sur les relations entre les différentes
- divisions du mushaf comme la division en ayas, sourates …, ou en thumns,
- rub’ …, ou encore les divisions spéciales comme en ruku’, phrases … et
- ainsi de suite (voir la figure).
- Ces index sont fondés sur l’une des unités de la division.
+These are the indexes that focus on relations between the different divisions
+ of mus'haf as the division into ayahs, surahs ..., or thumns, rub '..., or even
+ the special divisions as ruku', sentences and so on ...
+ (see figure).
+ These indexes are based on one of the units of the division.
  
 \end_layout
 
@@ -3261,7 +3257,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /media/0794243270/thesis/thesis/Structures de coran.png
+	filename Structures de coran.png
 
 \end_inset
 
@@ -3272,7 +3268,7 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Les différentes structures du Saint Coran
+The various structures of Qur'an
 \end_layout
 
 \end_inset
@@ -3286,39 +3282,36 @@ Les différentes structures du Saint Coran
 \end_layout
 
 \begin_layout Paragraph
-Les index statistiques 
+Statistical indexes
 \end_layout
 
 \begin_layout Standard
-Ce sont ceux qui visent principalement à recueillir des statistiques sur
- les différentes unités du Coran à partir des lettres, cyclables, … jusqu’au
- Coran comme un tout.
- Parmi les statistiques possibles : le comptage du nombre, de la moyenne
- et de la composante dominante.
+It is those who are primarily intended to collect statistics on the various
+ units of the Qur'an based on the letters, syllables, ...
+ to the Qur'an as a whole.
+ Among the possible statistics: the frequency, the average frequency and
+ the dominant component.
  
 \end_layout
 
 \begin_layout Standard
-Ces index sont fondés sur l'élément qui représente la base de la statistique.
- Un exemple de statistiques est le nombre de caractères dans les mots, dans
- ces sourates et dans les ayats.
+These indexes are based on the element that represents the basis of statistics.
+ An example of statistics is the number of characters in an ayah or a surah.
  
 \end_layout
 
 \begin_layout Subsection
-Projets de construction des index 
+Projects of building indexes
 \end_layout
 
 \begin_layout Standard
-Il existe beaucoup d’index de Coran qui varient d'index pour les mots à
- des index pour les sujets et d'autres spécialisés … Mais leur plus grand
- problème est qu’ils ne sont pas entrés dans le domaine de l’informatique,
- puisque la plupart des ma'ājim sont imprimés, ou destinés à la lecture
- ; seule une petite partie a été informatisée et publiée sur des fichiers
- de stockage d'informations tels que XML, EXCEL ou sous forme de bases de
- données.
- Il y a des projets d’informatisation des index en cours de développement.
- Parmi ces projets :
+There are many Quranic indexes that vary in purpose : Syntaxic, Thematic,
+ etc; But the problem is that most of them areprinted, intended only for
+ human reading, only a small part was released on computerized data storing
+ format such as XML, Excel or as a database.
+ There are many plans to computerize the printed indexes but still under
+ development.
+ Among these projects we cite:
 \end_layout
 
 \begin_layout Subsubsection
@@ -3326,17 +3319,15 @@ Midād lbayān
 \end_layout
 
 \begin_layout Standard
-C’est un projet initié par le Dr.
- 
+This is a project started by 
 \noun on
 Mohamed Zaki Khadher
 \noun default
- qui vise à construire une base de données coranique dans toute la mesure
- du possible et décrit tout le détail du Coran à partir des plus petits
- termes qui sont les syllabes du mot puis le mot, les expressions, les phrases,
- les ayas et les sourates.
- Cette base contient l’écriture, la prononciation, la morphologie, la grammaire,
- et la signification 
+ which aims to build a Qur'anic database as far as possible and describes
+ all the details of the Qur'an from the smaller terms that are the syllables
+ of the word then the word, phrases, sentences, ayahs and surahs.
+ This database contains writing, pronunciation, morphology, grammar, and
+ meaning
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Khe"
@@ -3351,18 +3342,17 @@ key "Khe"
 \emph on
 Midād lbayān
 \emph default
- est considéré comme un grand accomplissement, il contient dans ses index
- beaucoup de renseignements sur les mots coraniques et ses caractéristiques
- et a également des perspectives d’ajout d'autres index pour étudier les
- phrases du Coran, l'indexation des sujets, etc.
- Les auteurs de projet 
+ is considered as a great achievement, it contains within its indexes lot
+ of information about the Qur'anic words and their characteristics and also
+ the prospects of adding further indexes to study the sentences of the Qur'an,
+ indexing topics, etc.
+ The authors of project 
 \emph on
 Midād lbayān
 \emph default
- confirment que la base est destinée pour l’utilisation gratuite, mais ils
- ne donnent pas plus de détails sur la licence utilisée.
- Ils ne fournissent qu’un programme d’exposition manuelle de la base, sans
- références.
+ confirm that the base is intended for free use, but they do not give details
+ on the license used.
+ They provide only manual exposure program of the database, without references.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "mbayan"
@@ -3373,17 +3363,17 @@ key "mbayan"
 \end_layout
 
 \begin_layout Standard
-Nous allons aborder l'une des versions précédentes de la base de données,
- en raison du manque d'accès à la version actuelle qu'elle contient dans
- sa index principale: 
+We are going to address one of the earlier versions of the database, due
+ to lack of access to the current version that it contains in its main index:
+ 
 \end_layout
 
 \begin_layout Enumerate
-Code séquentiel qui sert d’un index pour les mots (clé)
+Sequential code that serves as a key
 \end_layout
 
 \begin_layout Enumerate
-Le noyau du mot
+Lemma 
 \begin_inset Foot
 status open
 
@@ -3397,7 +3387,7 @@ status open
 
 \end_inset
 
- et La racine du mot 
+ and root 
 \begin_inset Foot
 status open
 
@@ -3415,19 +3405,19 @@ status open
 \end_layout
 
 \begin_layout Enumerate
-Le mot en script standard (vocalisé ) et en script othmani 
+The word in standard script (vocalized) and script Uthmani
 \end_layout
 
 \begin_layout Enumerate
-La list des préfixe du mot ( 4 au maximum )
+List of prefixes ( 4 maximum )
 \end_layout
 
 \begin_layout Enumerate
-La list des suffixe du mot ( 3 au maximum )
+List of postfixes ( 3 maximum )
 \end_layout
 
 \begin_layout Enumerate
-Le numéro de la sourate et de l’aya 
+Number of Ayah and Surah
 \end_layout
 
 \begin_layout Standard
@@ -3582,7 +3572,7 @@ Postfix3
 \begin_inset Text
 
 \begin_layout Plain Layout
-Sura
+Surah
 \end_layout
 
 \end_inset
@@ -3591,7 +3581,7 @@ Sura
 \begin_inset Text
 
 \begin_layout Plain Layout
-Aya
+Ayah
 \end_layout
 
 \end_inset
@@ -4865,7 +4855,7 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Aperçu sur l’index principal – Midād lbayān
+Overview of main index– Midād lbayān
 \end_layout
 
 \end_inset
@@ -4879,51 +4869,44 @@ Aperçu sur l’index principal – Midād lbayān
 \end_layout
 
 \begin_layout Subsubsection
-Les Index par M.Taha Zerrouki 
+Indexes by
+\noun on
+ Taha Zerrouki 
 \end_layout
 
 \begin_layout Standard
-C’est un effort individuel de Mr.
-
+This is an individual effort by
 \noun on
  Taha Zerrouki
 \noun default
- dans le cadre du projet de Coran et ses sciences, que notre travail en
- fait partie, il a construit trois index.
- Ce qui distingue son travaille est la diversité : d’un index pour les racines
- à un l'index des sujets et un autre de synonymes.
- Mais ils ne sont pas basés sur une unité claire (contrairement à 
-\emph on
-Midād lbayān
-\emph default
- et au 
-\emph on
-corpus coranique arabe
-\emph default
- qui sont basés sur les mots du Coran en prenant tous ses occurrences) cela
- augmente la complexité et la probabilité d’erreur dans le processus de
- jointure avec les autres bases de données.
+ under a project about the Quran and its sciences.
+ What distinguishes his work is its diversity: an index for words, one for
+ topics and another synonyms.
+ They are not based on a clear unit (unlike Midād lbayān and Qur'anic Arabic
+ corpus that are based on words of Quran by considering all occurrences).
+ that will increase the complexity and probability of fail in joining with
+ other indexes.
  
 \end_layout
 
 \begin_layout Standard
-Il ya trois index, l'index du mot contient:
+There are three indexes, the index of words contains :
 \end_layout
 
 \begin_layout Enumerate
-Le mot original (clé)
+Original word as a key 
 \end_layout
 
 \begin_layout Enumerate
-Le mot en script othmani 
+the word in Uthmani script
 \end_layout
 
 \begin_layout Enumerate
-La racine
+Root
 \end_layout
 
 \begin_layout Enumerate
-Le morphème
+Morpheme
 \begin_inset Foot
 status open
 
@@ -4939,11 +4922,11 @@ status open
 \end_layout
 
 \begin_layout Enumerate
-Le type 
+Type 
 \end_layout
 
 \begin_layout Enumerate
-Les pluriels
+Plural forms
 \begin_inset Foot
 status open
 
@@ -4959,11 +4942,11 @@ status open
 \end_layout
 
 \begin_layout Enumerate
-Le féminin 
+feminine form
 \end_layout
 
 \begin_layout Enumerate
-Nom propre ou non 
+Proper noun (true/false)
 \end_layout
 
 \begin_layout Standard
@@ -5007,7 +4990,7 @@ textwidth}{!}{
 \begin_inset Text
 
 \begin_layout Plain Layout
-Othmani
+Uthmani
 \end_layout
 
 \end_inset
@@ -5016,7 +4999,7 @@ Othmani
 \begin_inset Text
 
 \begin_layout Plain Layout
-Propre
+Proper 
 \end_layout
 
 \end_inset
@@ -5043,7 +5026,7 @@ Muthanaa
 \begin_inset Text
 
 \begin_layout Plain Layout
-Féminine
+Feminine
 \end_layout
 
 \end_inset
@@ -5052,7 +5035,7 @@ Féminine
 \begin_inset Text
 
 \begin_layout Plain Layout
-Pluriel
+Plural
 \end_layout
 
 \end_inset
@@ -5079,7 +5062,7 @@ Type
 \begin_inset Text
 
 \begin_layout Plain Layout
-Morphème
+Morpheme
 \end_layout
 
 \end_inset
@@ -5088,7 +5071,7 @@ Morphème
 \begin_inset Text
 
 \begin_layout Plain Layout
-Racine
+Root
 \end_layout
 
 \end_inset
@@ -6383,7 +6366,7 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Aperçu sur l’index des mots – M.Taha Zerrouki
+Overview of words index – M.Taha Zerrouki
 \end_layout
 
 \end_inset
@@ -6397,27 +6380,27 @@ Aperçu sur l’index des mots – M.Taha Zerrouki
 \end_layout
 
 \begin_layout Standard
-Le deuxieme index est l'index de sujets, il contient:
+The second index is the index of topics, it contains:
 \end_layout
 
 \begin_layout Enumerate
-le theme
+Topic
 \end_layout
 
 \begin_layout Enumerate
-le sous-thème 
+Subtopic
 \end_layout
 
 \begin_layout Enumerate
-la rubrique 
+Section
 \end_layout
 
 \begin_layout Enumerate
-Le numéro de sourate 
+Surah number 
 \end_layout
 
 \begin_layout Enumerate
-L'interval des ayates ( le debut et la fin)
+Ayahs interval (the first ayah to the last ayah)
 \end_layout
 
 \begin_layout Standard
@@ -6455,7 +6438,7 @@ begin{Arabic}
 \begin_inset Text
 
 \begin_layout Plain Layout
-آية النهاية
+Last ayah
 \end_layout
 
 \end_inset
@@ -6464,7 +6447,7 @@ begin{Arabic}
 \begin_inset Text
 
 \begin_layout Plain Layout
-آية البداية
+First ayah
 \end_layout
 
 \end_inset
@@ -6473,7 +6456,7 @@ begin{Arabic}
 \begin_inset Text
 
 \begin_layout Plain Layout
-رقم السورة
+Surah 
 \end_layout
 
 \end_inset
@@ -6482,7 +6465,7 @@ begin{Arabic}
 \begin_inset Text
 
 \begin_layout Plain Layout
-الباب
+Section
 \end_layout
 
 \end_inset
@@ -6491,7 +6474,7 @@ begin{Arabic}
 \begin_inset Text
 
 \begin_layout Plain Layout
-الموضوع
+Subtopic
 \end_layout
 
 \end_inset
@@ -6500,7 +6483,7 @@ begin{Arabic}
 \begin_inset Text
 
 \begin_layout Plain Layout
-الفصل 
+Topic
 \end_layout
 
 \end_inset
@@ -6754,7 +6737,7 @@ end{Arabic}
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Aperçu sur l’index des sujets – M.Taha Zerrouki
+Overview of the topics index– Taha Zerrouki
 \end_layout
 
 \end_inset
@@ -6768,19 +6751,19 @@ Aperçu sur l’index des sujets – M.Taha Zerrouki
 \end_layout
 
 \begin_layout Standard
-Le troisieme index est l’index des synonymes, il contient:
+The third index is the index of synonyms, it contains:
 \end_layout
 
 \begin_layout Enumerate
-Le type des mots du synonyme 
+Type
 \end_layout
 
 \begin_layout Enumerate
-La liste de synonymes 
+Synonyms list
 \end_layout
 
 \begin_layout Enumerate
-Une remarque
+Note
 \end_layout
 
 \begin_layout Standard
@@ -6818,7 +6801,7 @@ begin{Arabic}
 \begin_inset Text
 
 \begin_layout Plain Layout
-المفردات
+Synonyms
 \end_layout
 
 \end_inset
@@ -6854,7 +6837,7 @@ begin{Arabic}
 \begin_inset Text
 
 \begin_layout Plain Layout
-النوع
+Type
 \end_layout
 
 \end_inset
@@ -6863,7 +6846,7 @@ begin{Arabic}
 \begin_inset Text
 
 \begin_layout Plain Layout
-ملاحظة 
+Note 
 \end_layout
 
 \end_inset
@@ -7173,7 +7156,7 @@ end{Arabic}
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Aperçu de l’index des synonymes – M.Taha Zerrouki
+Overview of the index of synonyms – Taha Zerrouki
 \end_layout
 
 \end_inset
@@ -7191,15 +7174,14 @@ Qur’anic Arabic Corpus
 \end_layout
 
 \begin_layout Standard
-Le corpus coranique arabe est une ressource linguistique annotée qui montre
- la grammaire arabe, la syntaxe et la morphologie de chaque mot dans le
- Coran, faite par 
+It is a linguistic resource that shows annotated Arabic grammar, syntax
+ and morphology of each word in the Qur'an, made ​​by 
 \noun on
 Kais Dukes
 \noun default
- en 2009 à l’école d’informatique, Université de Leeds.
- Cet Index est disponible sur Internet avec d'autres index simplifiés sous
- la licence GPL
+ in 2009 at the School of Computer Science, University of Leeds.
+ This index is available on the Internet with other simplified indexes licensed
+ under the GPL 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "GPL"
@@ -7207,11 +7189,12 @@ description "GNU Public License"
 
 \end_inset
 
- (GNU Public License), mais il impose des restrictions supplémentaires lors
- du téléchargement y compris l’interdiction de modification.
- Le corpus coranique fournit des informations grammaticales précieuses sur
- les mots du Coran sur lesquels l’index est basé, mais il les formule d'une
- façon spéciale et complexe qui rend difficile leur extraction.
+ (GNU Public License), but it imposes additional restrictions when downloading
+ including the prohibition of modification.
+ The Qur'anic corpus provides valuable grammatical information on the words
+ of the Qur'an on which the index is based.
+ It formulates them in a particular way which makes it difficult and complex
+ extraction.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Corpus"
@@ -7222,24 +7205,22 @@ key "Corpus"
 \end_layout
 
 \begin_layout Standard
-Nous allons aborder la version disponible en téléchargement, elle est en
- format de XML et elle contient les information suivants:
+We will address the version available for download, it is in XML format
+ and contains the following information:
 \end_layout
 
 \begin_layout Enumerate
-Le numéro de sourate dans le Coran, le numéro d'aya dans la sourate et le
- numéro de mot dans l'aya (clé) 
+Numbers of Surah, Ayah and Word as a key 
 \end_layout
 
 \begin_layout Enumerate
-Le mot en script othmani (Unicode)
+The word in Uthmani script (Unicode)
 \end_layout
 
 \begin_layout Enumerate
-Une expression codée qui décrit le mot morphologiquement et grammaticalement
- 
-\begin_inset Note Note
-status collapsed
+A coded expression that describes the word morphologically and grammatically
+\begin_inset Note Greyedout
+status open
 
 \begin_layout Enumerate
 , cette expression contient les tags suivants:
@@ -7247,16 +7228,6 @@ status collapsed
 
 \begin_layout Enumerate
 details of tags / to do 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Todo
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \end_inset
@@ -7654,7 +7625,7 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Exemple d’index de morphologie – Qur’anic corpus
+Overview of morphology index – Arabic Quranic corpus
 \end_layout
 
 \end_inset
@@ -7672,28 +7643,28 @@ Tanzil Project
 \end_layout
 
 \begin_layout Standard
-Tanzil est un projet coranique qui vise à fournir un texte précis du Coran
- et hautement vérifié.
- Il a été développé par 
+Tanzil is a project designed to provide a highly accurate and well checked
+ electronic copy of Qur'anic text.
+ It was developed by 
 \noun on
 Hamid Zarrabi-Zadeh 
 \noun default
-et révisé par une équipe de vérification du texte.
- Tanzil fournit plusieurs textes du Coran en deux grandes catégories décrites
- ci-dessous : 
+et reviewed by a verification team.
+ Tanzil provides several texts of the Qur'an into two major categories as
+ outlined below : 
 \end_layout
 
 \begin_layout Enumerate
-Script othmani 
+Uthmani script 
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
 
 \series bold
-Othmani
+Uthmani
 \series default
- : texte du Coran en script othmani similaire au «
+ : Quranic text in uthmani script similar to «
 \emph on
  Mushaf Al-Madina 
 \emph default
@@ -7704,15 +7675,15 @@ Othmani
 \begin_layout Enumerate
 
 \series bold
-Othmani minimal
+Uthmani minimal
 \series default
- : texte en script othmani avec le minimum de signes de diacritiques et
- de symboles.
+ : Quranic text script in Uthmani script with the minimum of diacritical
+ marks and symbols.
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
-Script simple 
+Standard script 
 \end_layout
 
 \begin_deeper
@@ -7721,29 +7692,27 @@ Script simple
 \series bold
 Simple
 \series default
- : le texte du Coran en script standard plein texte, recommandé pour l'affichage
- et la recherche.
+ : the Qur'anic text on Standard script, recommended for search and display.
  
 \end_layout
 
 \begin_layout Enumerate
 
 \series bold
-Simple amélioré
+Simple Enhanced
 \series default
- : texte simple avec une meilleure démonstration d’ikhfā’ et d’idghām
+ : simple text with a better demonstration of ’ikhfā and idghām
 \begin_inset Foot
 status collapsed
 
 \begin_layout Plain Layout
-Des règles de tajwīd appliquées quand le noun as-sākina ou le tanwīn est
- suivi par certaines lettres.des règles de tajwīd appliquées quand le noun
- as-sākina ou le tanwīn est suivi par certaines lettres.
+Tajweed rules applied when the 'noon as-sakina' or 'tanwīn' is followed
+ by certain letters..
 \end_layout
 
 \end_inset
 
- , simplifié pour la lecture.
+ , simplified for reading.
  
 \end_layout
 
@@ -7752,41 +7721,40 @@ Des règles de tajwīd appliquées quand le noun as-sākina ou le tanwīn est
 \series bold
 Simple minimal
 \series default
- : texte simple avec un nombre minimum de signes de diacritiques et de symboles.
- Convenable pour l’intégration dans d'autres textes.
+ : simple text with a minimum number of diacritical marks and symbols.
+ Suitable for integration in other texts.
  
 \end_layout
 
 \begin_layout Enumerate
 
 \series bold
-Simple propre
+Simple proper
 \series default
- : texte simple sans signes de diacritiques ou de symboles.
+ : simple text without diacritical signs or symbols, Suitable for easy search.
  
 \end_layout
 
 \end_deeper
 \begin_layout Standard
-Convenable pour la recherche facile.
- Tanzil fournit également certains index comme : 
+Tanzil also provides some indexes as : 
 \end_layout
 
 \begin_layout Itemize
-index de la surate ;
+Surah index ;
 \end_layout
 
 \begin_layout Itemize
-index du sajdah ; 
+Sajdah index ; 
 \end_layout
 
 \begin_layout Itemize
-index structurel en : 
+structural indexes based on : 
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-Rub’ (on peut definir les hizbs , les nisfs a partir de cet index); 
+Rub’ (we can define hizbs , nisfs based on this index); 
 \end_layout
 
 \begin_layout Itemize
@@ -7808,9 +7776,9 @@ Page.
 
 \end_deeper
 \begin_layout Standard
-Tanzil est un projet libre à utiliser et téléchargeable sur son site public.
- Il bénéficie d'une grande crédibilité vu qu’un groupe de chercheurs veille
- à le vérifier
+Tanzil is a project free to be used and downloaded from its public website.
+ It benefits from considerable credibility since a group of researchers
+ ensures the checking
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Tanzil"
@@ -7856,7 +7824,7 @@ textwidth}{!}{
 \begin_inset Text
 
 \begin_layout Plain Layout
-sura index
+surah index
 \end_layout
 
 \end_inset
@@ -7865,7 +7833,7 @@ sura index
 \begin_inset Text
 
 \begin_layout Plain Layout
-sura name
+surah name
 \end_layout
 
 \end_inset
@@ -7874,7 +7842,7 @@ sura name
 \begin_inset Text
 
 \begin_layout Plain Layout
-aya index
+ayah index
 \end_layout
 
 \end_inset
@@ -7883,7 +7851,7 @@ aya index
 \begin_inset Text
 
 \begin_layout Plain Layout
-aya texte
+ayah text
 \end_layout
 
 \end_inset
@@ -8790,7 +8758,7 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Exemple du Coran modèle simple propre – Tanzil.info
+Example of simple proper Quranic text – Tanzil.info
 \end_layout
 
 \end_inset
@@ -9462,7 +9430,7 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Exemple d’index de surate – Tanzil.info
+Example of Surah index – Tanzil.info
 \end_layout
 
 \end_inset
@@ -9504,7 +9472,7 @@ index
 \begin_inset Text
 
 \begin_layout Plain Layout
-sura
+surah
 \end_layout
 
 \end_inset
@@ -9513,7 +9481,7 @@ sura
 \begin_inset Text
 
 \begin_layout Plain Layout
-aya
+ayah
 \end_layout
 
 \end_inset
@@ -10071,7 +10039,7 @@ recommended
 \begin_inset Caption
 
 \begin_layout Plain Layout
-L'index de sajdah – Tanzil.info
+Sajdah index – Tanzil.info
 \end_layout
 
 \end_inset
@@ -10112,7 +10080,7 @@ index
 \begin_inset Text
 
 \begin_layout Plain Layout
-sura
+surah
 \end_layout
 
 \end_inset
@@ -10121,7 +10089,7 @@ sura
 \begin_inset Text
 
 \begin_layout Plain Layout
-aya 
+ayah 
 \end_layout
 
 \end_inset
@@ -10312,12 +10280,29 @@ aya
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Exemple d'index de rub’ – Tanzil.info
+Example of rub’ index – Tanzil.info
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Boundary-Annotated Qur'an Corpus
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Greyedout
+status collapsed
+
+\begin_layout Plain Layout
+TODO
 \end_layout
 
 \end_inset
@@ -10529,7 +10514,7 @@ The Stories and the History (
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -10599,19 +10584,22 @@ Qur'anic Concepts Ontology
 \end_layout
 
 \begin_layout Standard
-The Qur'anic Ontology is also a project of Leeds university done by Mr.
- 
+The Qur'anic Ontology is also a project of Leeds university done by 
 \noun on
 Kais Dukes.
 
 \noun default
- It uses knowledge representation to define the key concepts in the Quran,
+ It uses knowledge representation to define the key concepts in the Qur'an,
  and shows the relationships between these concepts using predicate logic.
  The fundamental concepts in the ontology are based on the knowledge contained
- in traditional sources of Quranic analysis, including the hadīth of the
- prophet Muhammad , and the Tafssir (Qur'anic exegesis) of ibn kathīr.
+ in traditional sources of Qur'anic analysis, including the hadīth of the
+ prophet Muhammad , and the Tafssir (Qur'anic exegesis) of 
+\emph on
+ibn kathīr
+\emph default
+.
  Named entities in verses, such as the names of historic people and places
- mentioned in the Quran, are linked to concepts in the ontology as part
+ mentioned in the Qur'an, are linked to concepts in the ontology as part
  of named entity tagging.
  
 \end_layout
@@ -10626,7 +10614,7 @@ As well as listing the major concepts in the Qur'an, the ontology also defines
 \emph on
 "Satan is a jinn"
 \emph default
- in the ontology would represent the knowledge contained in the Quran that
+ in the ontology would represent the knowledge contained in the Qur'an that
  the individual known as
 \emph on
  Satan
@@ -10664,7 +10652,7 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-A closer look at Quran Concepts Ontology
+A closer look at Qur'an Concepts Ontology
 \end_layout
 
 \end_inset
@@ -10678,14 +10666,30 @@ A closer look at Quran Concepts Ontology
 \end_layout
 
 \begin_layout Subsection
-The Ontology made by Hadj Henni:
+The Ontology made by 
+\noun on
+Hadj Henni
+\noun default
+:
 \end_layout
 
 \begin_layout Standard
 There are several possibilities of ontology for contents of the Qur'an.
- Hajj Henni undertook the construction of a domain ontology of documents
- Qur'anic by the method of XML schema mapping of the standard electronic
- model of Mus'haf to OWL.
+ 
+\noun on
+Hajj Henni
+\noun default
+ undertook the construction of a domain ontology of documents Qur'anic by
+ the method of XML schema mapping of the standard electronic model of Mus'haf
+ to 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "OWL"
+description "Web Ontology Language"
+
+\end_inset
+
+.
  This choice is justified by the advantages of this very convenient language.
 \end_layout
 
@@ -10698,7 +10702,7 @@ At first, he realized this mapping automatically, then manually.
 
 \begin_layout Standard
 This ontology meets the needs of standard, modular, and reusable semantics.
- It shall contain the domain concepts of Quranic documents and the semantic
+ It shall contain the domain concepts of Qur'anic documents and the semantic
  constraints as a basis for building other ontologies related to the contents
  of the Qur'an 
 \begin_inset CommandInset citation
@@ -10730,7 +10734,7 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Diagram of domain ontology of Quranic documents made by Hadj Henni
+Diagram of domain ontology of Qur'anic documents made by Hadj Henni
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Hadj08"
