@@ -636,9 +636,9 @@ Fragmentation into Waqfs (Stops)
 \begin_layout Standard
 Marks of Waqfs are used to knowing when to take a break during the recitation
  of the Qur'an, these marks are different to distinguish the type of waqf
- that can be: allowed, preferred, prohibited, etc..
+ that can be: allowed, preferred, prohibited, etc.
  Note that the marking of Waqfs differs between rewayates.
- The figure shows a reference ofwaqfs based on rewayate of Kaloun.
+ The figure shows a reference of waqfs based on rewayate of Kaloun.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Bou79,Zer08"
@@ -1134,8 +1134,8 @@ Verify the numerical miracles of the Qur'an:
 \end_layout
 
 \begin_layout Standard
-There is a type of Quranic miracles that covers miracles based on statistics
- performed on the Quran, for example:
+There is a type of Qur'anic miracles that covers miracles based on statistics
+ performed on the Qur'an, for example:
 \end_layout
 
 \begin_layout Standard
@@ -1166,7 +1166,7 @@ Word I
 \begin_inset Text
 
 \begin_layout Plain Layout
-Nombre de répétitions
+Frequency
 \end_layout
 
 \end_inset
@@ -1850,85 +1850,71 @@ When the computer entered the daily lives of people, it made a revolution
 \end_layout
 
 \begin_layout Subsection
-Classification des index
+Classification
 \end_layout
 
 \begin_layout Standard
-Les Index existants diffèrent considérablement les uns des autres, nous
- pouvons les classer en utilisant certain critères, y compris : l'objet
- ou le but de chaque index et l'unité sur laquelle l'index se base ...
+Existing indexes differ considerably from each other, we can classify them
+ using some criteria, including: the subject or the purpose of each index
+ and the unit on which the index is based ...
  etc.
- 
 \end_layout
 
 \begin_layout Standard
-Classées selon les critères cités ci-dessus, nous expliquerons les index,
- existants ou possibles, les plus importants:
+Classified according to the criteria mentioned above, we will explain the
+ indexes, existing or suspected, the most significant:
 \end_layout
 
 \begin_layout Subsubsection
-Par l’unité:
+By unit:
 \end_layout
 
 \begin_layout Standard
-Les index du Coran se basent sur plusieurs unités (voir la figure): 
+The indexes of the Quran is based on several units (see figure):
 \end_layout
 
 \begin_layout Paragraph
-Le mot
+Word
 \end_layout
 
 \begin_layout Standard
-Ces index peuvent prendre deux aspects, le premier est grammatical, il consiste
- à découper les mots selon leur structure fondamentale, en indiquant les
- affixes et ces origines tels que la racine et le morphème.
- Le deuxième aspect a pour but de faciliter la lecture du mushaf par un
- index des mots dont l’écriture ce diffère entre le script othmani et le
- script standard et un index des mots qui s’écrivent de la même manière
- mais ce différent dans la prononciation.
- 
+These indexes can assume two aspects, the first is grammatical, it consists
+ in segmenting the words according to their fundamental structure, indicating
+ the affixes and origins such as root and morpheme.
+ The second aspect is intended to facilitate the reading of mus'haf by an
+ index of words including different
+\begin_inset space ~
+\end_inset
+
+spellings between the script standard and the script Uthmani and an index
+ of words that are spelled the same way but different in pronunciation .
 \end_layout
 
 \begin_layout Standard
-De même, pour faciliter la lecture des livres de sciences du Coran, un mu'jam
- électronique des termes de sciences coraniques a été établis, et un autre
- pour les sciences du Coran dans la sunna, parmi ces index il existe :
+Among these indexes there exists:
 \end_layout
 
 \begin_layout Enumerate
-Des index de tous les mots et en les reliant avec toutes leurs parties :
- préfixes + noyau + affixes, ainsi qu’avec la racine, le morphème, le verbe
- à l’infinitif ou la forme singulière dans le cas des mots pluriels, plus
- les différentes informations flexionnelles , comme le type du mot est sa
- fonction flexionnelle.
- Ces index ont une utilité dans le traitement automatique du langage naturel.
+Indexes of all words and by linking them with all their parts: prefixes
+ + stem + affixes, as well as the root, the morpheme, the verb in the infinitive
+ form or the singular form in the case of plural words, the more various
+ inflectional information such as the type of word and its inflectional
+ function .
+ These indexes serve a purpose in natural language processing .
 \end_layout
 
 \begin_layout Enumerate
-Un index des mots dont l’écriture ce diffère entre le script othmani et
- le script standard, qui sont de 6419 mots, en reliant chaque entrée de
- l’index avec les ayas et les mots qu’on veut atteindre dans les pages du
- mushaf, en vue de faciliter la lecture dans le Coran pour les débutants
- et ceux qui ne connaissent pas les règles d’écriture des mots en script
- othmani.
+An index of words whose writing differs between Uthmani script and standard
+ script, by linking each index entry with ayahs and the words to be achieved
+ into the pages of mus'haf.
+ the aim of this index is to facilitate reading in the Qur'an for beginners
+ and those who do not know the rules for writing words in script Uthmani.
 \end_layout
 
 \begin_layout Enumerate
-Un index des mots dont l’écriture ce diffère entre le script othmani et
- le script standard (sans ceux reçus à partir des savants), qui sont de
- 1318 mots, pour faciliter l'apprentissage, même après être reçu par les
- savants, en les reliant avec les pages du mushaf et la récitation correcte
- d'un célèbres récitant.
- Cet index – comme son prédécesseur – vise les débutants dans la préservation
- du Coran et ceux qui veulent le mémoriser.
- 
-\end_layout
-
-\begin_layout Enumerate
-Un Index des mots dont les structures (les lettres) se ressemblent mais
- la prononciation varie en fonction de la forme convenue, avec distinction
- entre la prononciation de ces mots et en les reliant avec les pages du
- mushaf, plus la possibilité d'entendre selon le choix de l'utilisateur.
+A index of words whose similarly spelled but the pronunciation varies depending
+ on the agreed format, with distinction between the pronunciation of these
+ words and by linking them with the pages of mus'haf.
  
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1940,8 +1926,8 @@ key "Mia"
 \end_layout
 
 \begin_layout Standard
-Exemple d’index qui prend le mot comme unité, cet index va être détaillé
- par la suite:
+Example of index that takes the word as a unit, this index will be detailed
+ afterwards:
 \end_layout
 
 \begin_layout Standard
@@ -1963,7 +1949,7 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Index prenant le mot comme unité [Arabic Quranic Corpus] 
+Index using the word as a unit [Arabic Quranic Corpus] 
 \end_layout
 
 \end_inset
@@ -1977,16 +1963,16 @@ Index prenant le mot comme unité [Arabic Quranic Corpus]
 \end_layout
 
 \begin_layout Paragraph
-L’aya
+Ayah
 \end_layout
 
 \begin_layout Standard
-Ces index prend les ayas comme une unité d'indexation dans le but de les
- classer par sujets et d’examiner la similarité et la coïncidence et élaborer
- un mu'jam basé sur un analyseur morphologique des racines du Coran, ainsi
- que de faire une indexation des débuts de mots des ayas, leurs fins 
+This index takes the ayahs as an indexing unit in order to classify them
+ according to topic and examine the similarity and coincidence and develop
+ a Mu'jam based on a morphological analyzer of Qur'anic roots, as well as
+ making an indexation of the ayahs beginnings and their ends
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
  
@@ -2010,48 +1996,44 @@ status open
 \end_inset
 
 , etc.
- Voici quelques index comme exemple : 
+ Here are some indexes for example : 
 \end_layout
 
 \begin_layout Enumerate
-Un index de ayas du Coran et leurs emplacements dans le mushaf.
+An index of Qur'anic ayahs and their locations in the mus'haf.
 \end_layout
 
 \begin_layout Enumerate
-Un arbre de thèmes complet et global constitué de plusieurs niveaux contenants
- les sujets abordés par le Coran ainsi on obtient un index informatisé des
- sujets du Coran qui relie chaque sujet principal ou secondaire avec les
- ayas qui peuvent être placés sous ce sujet.
- Cet index est considéré comme une excellente aide pour les prêcheurs, les
- chercheurs et les étudiants en sciences islamiques pour accéder à toutes
- les ayas d'un sujet ou sous-sujet lié au texte coranique.
- A noter que l’aya peut être liée à plusieurs sous-sujets.
+A tree of topics complete and comprehensive consisting of several levels
+ containing the topics covered by the Qur'an.
+ This index connects each topic primary or secondary with ayahs that can
+ be placed under this topic.
+ This index is considered an excellent aid for preachers, scholars and students
+ of Islamic knowledge to access all ayahs of a topic or subtopic related
+ the Qur'anic text.
+ Note that ayah can be linked to several subtopics.
  
 \end_layout
 
 \begin_layout Enumerate
-Un index des ayas identiques et similaires dans le Coran pour servir les
- préservateurs du Coran et les chercheurs, où les ayas identiques et similaires
- sont identifiées et liées en groupes textuels.
- Ces ayas et passages sont accessibles à partir d’une liste des ayas identiques
- et similaires pour chaque sourate (s’ils existent), et en choisissant une
- aya (ou un passage) en peut accéder à la liste des ayas (ou passages) identique
-s ou similaires dans tout le Coran.
+An index of identical or similar ayahs in the Qur'an to serve memorizers
+ and researchers of the Qur'an, where identical and similar ayahs are identified
+ and linked into textual groups.
+ each groups represent a list of identical and similar ayahs to each surah
+ (if any), and accessible by choosing any ayah on that list.
  
 \end_layout
 
 \begin_layout Enumerate
-Un index des ayas coraniques disposées selon les lettres des premiers mots,
- les fins des ayas et les deux derniers mots, pour faciliter à la fois l'accès
- à n’importe quelle aya, et le processus de préservation et mémorisation
- du Coran.
+An index of Qur'anic ayahs arranged according to the letters of first words,
+ and ends of ayahs and the last two words, to facilitate both access to
+ any ayah, and memorizing the Qur'an.
 \end_layout
 
 \begin_layout Enumerate
-Un index de l’abrogeant et l’abrogé parmi les ayas du Coran : comprend le
- listage des ayas abrogeant ou abrogés dans les sourates du Coran, en reliant
- ces ayas avec leurs emplacements dans les pages du Coran.
- 
+An index of abrogating and the abrogated ayahs among the Qur'an: includes
+ the listing of ayahs abrogating or abrogated within surahs of the Qur'an,
+ by linking the ayahs with their locations in the pages of Mus'haf.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Mia"
@@ -2070,7 +2052,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename /media/0794243270/thesis/thesis/Par_aya.png
+	filename Par_aya.png
 
 \end_inset
 
@@ -2081,7 +2063,7 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Index qui prend l’aya comme unité [Arabeyes Quran Model]
+Index that takes the ayah as a unit [Arabeyes Quran Model]
 \end_layout
 
 \end_inset
@@ -2095,14 +2077,13 @@ Index qui prend l’aya comme unité [Arabeyes Quran Model]
 \end_layout
 
 \begin_layout Paragraph
-La surate
+Surah
 \end_layout
 
 \begin_layout Standard
-L’objet de base de ces index est les sourates du Coran de sorte qu’ils donnent
- une idée générale sur les sourates, avec des informations suffisantes pour
- acquérir ce qui doit être appris : des données de base des sourates et
- leurs vertus
+The basic purpose of these indexes is that they give a general idea of the
+ surahs, with sufficient information to learn what needs to be learned:
+ basic data and virtues of surahs
 \begin_inset Foot
 status open
 
@@ -2114,31 +2095,53 @@ status open
 
 \end_inset
 
-, les plus importantes bases et les sujets de ces index sont : 
+.
+ the most important issues of these indexes are : 
 \end_layout
 
 \begin_layout Enumerate
-Un index (liste) de sourates du Coran et leurs emplacements dans le mushaf.
+A list of surahs and their locations in the mus'haf.
  
 \end_layout
 
 \begin_layout Enumerate
-Un index de données de base des sourates, qui comprend la sourate, ses noms,
- la raison d’attribution du nom, son type (mecquoise ou médinoise), son
- ordre dans le mushaf, son ordre selon la révélation, sa précédente et sa
- suivante (selon l’ordre de mushaf et de révélation).
+An index of basic data of surahs, including its names, type (Meccan or Medinan),
+ its order in the mus'haf, the order according to the revelation, its previous
+ and following surah (in order of mus'haf or revelation).
  
 \end_layout
 
 \begin_layout Enumerate
-Un index des vertus des sourates coraniques dans la sunna du Prophète s,
- avec la narration des hadiths dans le but de définir la sourate et ses
- vertus.
+An index of virtues of the surahs in the Prophet's Sunnah 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+
+\lang arabic_arabi
+السُنَّة
+\end_layout
+
+\end_inset
+
+, based on the narration of hadiths 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+
+\lang arabic_arabi
+الأحاديث
+\end_layout
+
+\end_inset
+
+ .
  
 \end_layout
 
 \begin_layout Enumerate
-Un index des clés 
+An index of Surahs' keys 
 \begin_inset Foot
 status open
 
@@ -2187,17 +2190,14 @@ status open
 \uwave default
 \noun default
 \color inherit
-des sourates du Coran, dont l'objectif est de définir la sourate en termes
- de noms, la raison du nommage, la cause de révélation (si elle existe),
- etc.
- avec une présentation générale de la sourate, et des principales bases
- et sujets qu’elle contient.
+, which aims to define the Surah in terms of its names, the reason for that
+ naming, the cause of revelation (if any), etc.
+ with an overview of Surah, and major topics it contains.
  
 \end_layout
 
 \begin_layout Enumerate
-Un index de sujets pour chaque sourate du Coran afin de diviser la sourate
- en sujets, chaque sujet comprend plusieurs ayas.
+An index of topics for each surah such each topic includes several ayahs
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Mia"
@@ -2208,27 +2208,27 @@ key "Mia"
 \end_layout
 
 \begin_layout Paragraph
-Autre unités
+Other units
 \end_layout
 
 \begin_layout Standard
-En plus des index mentionnés précédemment basés sur le mot, l’aya et la
- sourate, il existe des index basés sur d'autres unités, y compris : 
+In addition to the aforementioned indexes based on word, surah and ayah,
+ there are indexes based on other units, including: 
 \end_layout
 
 \begin_layout Enumerate
-L’index grammatical basé sur les parties du mot, il fournit des informations
- sur le type de chaque partie et ses caractéristiques grammaticales : si
- elle est invariable ou fléchi , sa flexion , sa marque flexionnelle si
- elle est fléchi et ainsi de suite.
+The index based on the grammatical parts of words, it provides information
+ on the type of each part and its grammatical characteristics: whether invariant
+ or flexed, its inflexion, its inflectional mark and so on.
  
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
 \begin_inset Float table
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -2244,7 +2244,7 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
-Ordre_Aff 
+Order_Aff 
 \end_layout
 
 \end_inset
@@ -2253,7 +2253,7 @@ Ordre_Aff
 \begin_inset Text
 
 \begin_layout Plain Layout
-Num_Mot
+Id_word
 \end_layout
 
 \end_inset
@@ -2262,7 +2262,7 @@ Num_Mot
 \begin_inset Text
 
 \begin_layout Plain Layout
-Haraka
+Diacritic
 \end_layout
 
 \end_inset
@@ -2730,7 +2730,7 @@ end{Arabic}
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Index basé sur parts des mots
+Index based on word parts
 \end_layout
 
 \end_inset
@@ -2743,17 +2743,18 @@ Index basé sur parts des mots
 
 \end_layout
 
+\end_deeper
 \begin_layout Enumerate
-L’index de syllabes ou unités phonétiques, il fournit des informations sur
- la prononciation qui sont très utiles dans la science de récitation.
- Aucun index de ce genre n’existe encore.
+The index of syllables or phonetic units, it provides information on pronunciati
+on, which are very useful to the science of recitation.
+ No such index exists yet.
  
 \end_layout
 
 \begin_layout Enumerate
-L’index de phrases coraniques (voir le tableau), qui montre la manière de
- division en phrases, car il est bien connu que l’aya du Coran ne représente
- pas nécessairement une phrase.
+Index of Qur'anic sentences (see Table), which shows how to split the surahs
+ into sentences, because it is common knowledge that the ayah does not necessari
+ly represent a sentence.
  
 \end_layout
 
@@ -2786,7 +2787,7 @@ Num
 \begin_inset Text
 
 \begin_layout Plain Layout
-Phrase
+Sentence
 \end_layout
 
 \end_inset
@@ -3030,7 +3031,7 @@ end{Arabic}
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Index basé sur phrases – surate al-fātiha
+Index based on sentences– surah: al-fātiha
 \end_layout
 
 \end_inset
@@ -3044,26 +3045,25 @@ Index basé sur phrases – surate al-fātiha
 \end_layout
 
 \begin_layout Subsubsection
-Par l'objet
+By purpose
 \end_layout
 
 \begin_layout Standard
-La science d'indexation a abordé le Coran à plusieurs égards.
- De l’indexation de mots pour qu’un musulman puisse connaître l’aya une
- fois qu’il connaît l’un de ses mots, à l’indexation des sujets qui prend
- les ayas séparément, à d'autres index que nous citons comme suit : 
+The science of indexing approached the Qur'an in several respects.
+ From indexing words, the indexing of topics to other indexes that we cite
+ as follows: 
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename /media/0794243270/thesis/thesis/Classification_par_sujet.png
+	filename Classification_par_sujet.png
 
 \end_inset
 
@@ -3074,7 +3074,7 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
-La classification des index par objet
+Classification indexes by purpose
 \end_layout
 
 \end_inset
@@ -3088,7 +3088,7 @@ La classification des index par objet
 \end_layout
 
 \begin_layout Paragraph
-Les index syntaxiques
+Syntactic indexes
 \end_layout
 
 \begin_layout Standard
