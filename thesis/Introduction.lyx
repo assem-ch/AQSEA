@@ -189,17 +189,7 @@ Due to the large amount of information held in the Qur'an, it has become
 The simple search using exact query does not offer better options and still
  inefficient to move toward Thematic search by example.
  Full text search is the new approach of search that replaced the sequential
- search and which is used in search engines
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-Full text search evolution
-\end_layout
-
-\end_inset
-
-.
+ search and which is used in search engines.
  Unfortunately, this approach is not applied yet on Qur'an.
  The question is why we need this approach? Why search engines? Do applications
  of search in Qur'an really need to be implemented as search engines? 
