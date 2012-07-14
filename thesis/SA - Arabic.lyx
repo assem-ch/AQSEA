@@ -114,20 +114,6 @@ pagenumbering{arabic}
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-\begin_inset CommandInset toc
-LatexCommand tableofcontents
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
 
 \end_layout
 
@@ -256,10 +242,10 @@ Orthography
 \end_layout
 
 \begin_layout Standard
-L'écriture arabe est l'un des scripts les plus utilisés sur la terre.
- Il domine dans les pays arabes, bien sûr, mais a une place spéciale pour
- tous les musulmans parce que c'est le script utilisé pour écrire le Coran,
- le livre saint des musulmans.
+The Arabic script is one of the most used scripts on the Earth.
+ It dominates in the Arab countries, of course, but holds a special place
+ for all Muslims because it is the script used to write the Qur'an, the
+ Islamic holy book.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Jabri"
@@ -270,26 +256,26 @@ key "Jabri"
 \end_layout
 
 \begin_layout Standard
-Elle est écrite de droite à gauche comme toutes les autres langues sémitiques.
- Son alphabet a vingt-neuf
+It is written from right to left like other Semitic languages​​.
+ Its alphabet has twenty-nine
 \begin_inset Foot
 status collapsed
 
 \begin_layout Plain Layout
-Les scientistes de la langue arabe considèrent le hamza comme une lettre
+The scientists of Arabic language considered the Hamzah as a letter
 \end_layout
 
 \end_inset
 
- lettres consonnes, trois d'entre elles (
+ consonant letters, three of them (
 \series bold
 \lang arabic_arabi
 ا و ي
 \series default
  
 \lang english
-) sont considérées comme des signes de diacritiques.
- Optionnellement, l’une des trois diacritiques 
+) are considered as vowels.
+ Optionally, one of the three diacritical marks 
 \begin_inset Foot
 status open
 
@@ -297,7 +283,7 @@ status open
  
 \series bold
 \lang arabic_arabi
-علامات الشكل
+علامات التشكيل
 \family roman
 \series medium
 \shape up
@@ -323,10 +309,10 @@ status open
 
 \end_inset
 
- ) peut être placée après certains caractères pour lever l’ambiguïté (dans
- la prononciation et/ou le sens) quand elle se pose.
- Dans un texte arabe totalement vocalisé , l'absence des diacritiques peut
- être considérée comme une sokōune (silence) (
+ ) can be placed after certain characters to resolve the ambiguity in pronunciat
+ion and/or direction when it arises.
+ In a fully vocalized Arabic text, the lack of diacritics can be regarded
+ as a sokōune (silence) (
 \begin_inset Graphics
 	filename symbole.png
 	lyxscale 50
@@ -335,8 +321,8 @@ status open
 \end_inset
 
  ).
- Dans certains cas, une lettre doublée, peut être remplacé par une seule
- lettre avec le tashdeed (renforcement) (
+ In some cases, a letter doubled, may be replaced by a single letter with
+ tashdeed (reinforcement) (
 \begin_inset Graphics
 	filename Tashdid.png
 	lyxscale 50
@@ -344,7 +330,7 @@ status open
 
 \end_inset
 
- ) placé au-dessus.
+ ) placed above.
  
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -356,13 +342,12 @@ key "Alk99"
 \end_layout
 
 \begin_layout Standard
-En outre, il nous importe de signaler que la notion de lettre capitale et
- lettre minuscule n'existent pas, l'écriture arabe est dite monocamérale.
- En addition, l’arabe est une langue semi cursive ; la plupart des lettres
- s'attachent entre elles, leurs graphies diffèrent selon qu'elles soient
- précédées et/ou suivies d'autres lettres ou qu'elles soient isolées.
- Seulement six d’entre-elles ne s'attachent jamais à la lettre suivante
- : 
+In addition, it is important to note that the notion of uppercase and lowercase
+ letter do not exist, the Arabic writing is called unicameral.
+ In addition, Arabic is a language semi cursive, most letters are attached
+ to each other, their spellings differ depending on whether they are preceded
+ and / or followed by other letters or they are isolated.
+ Only six of them does not attach to the following letter : 
 \lang arabic_arabi
 (
 \series bold
@@ -370,7 +355,7 @@ En outre, il nous importe de signaler que la notion de lettre capitale et
 \series default
 )
 \lang english
- et une seule lettre ne s'attache jamais : (
+ and one letter does not attach at all : (
 \series bold
 \lang arabic_arabi
 ء
@@ -404,7 +389,7 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lettre
+Letter
 \end_layout
 
 \end_inset
@@ -413,7 +398,7 @@ Lettre
 \begin_inset Text
 
 \begin_layout Plain Layout
-Graphies 
+Spellings
 \end_layout
 
 \end_inset
@@ -424,7 +409,7 @@ Graphies
 \begin_inset Text
 
 \begin_layout Plain Layout
-hamza
+Hamzah
 \end_layout
 
 \end_inset
@@ -522,7 +507,7 @@ end{Arabic}
 \begin_inset Text
 
 \begin_layout Plain Layout
-ayn
+Ayn
 \end_layout
 
 \end_inset
@@ -577,7 +562,7 @@ end{Arabic}
 \begin_inset Caption
 
 \begin_layout Plain Layout
-3 types de lettre arabes : une graphie, deux graphies, quatre graphies
+3 types of Arabic letters: 1 form, 2 forms or 4 forms
 \end_layout
 
 \end_inset
@@ -595,60 +580,36 @@ Lexicography
 \end_layout
 
 \begin_layout Standard
-La grammaire traditionnelle arabe ne connaît que trois sous-ensembles :
- noms, verbes et particules.
- 
+The traditional Arabic grammar have only three subsets: nouns, verbs and
+ particles.
 \end_layout
 
 \begin_layout Subsection
-Les verbes
+Verbs
 \end_layout
 
 \begin_layout Standard
-Un verbe est une entité exprimant un sens dépendant du temps.
- La majorité des verbes arabes sont formés sur des radicaux de 3 consonnes
- tel est le cas du verbe
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
+A verb is an entity expressing a time-dependent sense.
+ Most Arabic verbs are formed on three radical consonants that is the case
+ of the verb 
 \lang arabic_arabi
 كَتَبَ
 \lang english
- (kataba – écrire) et éventuellement 4 consonnes tel est le cas du verbe
- 
+ (kataba – write) and eventually four consonants that is the case of the
+ verb 
 \lang arabic_arabi
 دَحْرَجَ
 \lang english
- (dahrağa – glisser, faire glisser).
- Ces racines peuvent donner naissance à plusieurs schèmes ou patrons à la
- suite d’une ou plusieurs transformations morphologiques (par exemple, le
- redoublement d’une consonne, l’allongement d’une voyelle, l’adjonction
- d’un morphème, etc.), il s’agit dans ce cas de racines à schème augmenté.
+ (dahrağa – roll along).
+ These roots may form several patterns as a result of one or more morphological
+ transformations (eg, repetition of a consonant, lengthening a vowel, the
+  expanding of a morpheme, etc..), it comes in this case to roots with augmented
+ pattern.
 \end_layout
 
 \begin_layout Standard
-Plusieurs études linguistiques ont été menées sur le système verbal en arabe,
- voir 
+Several linguistic studies have been conducted on the verbal system in Arabic,
+ see
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Lar03"
@@ -656,12 +617,12 @@ key "Lar03"
 \end_inset
 
 .
- Dans cette section, il nous importe d’introduire un classement des verbes
- selon leurs radicaux :
+ In this section, it is necessary to introduce a classification of verbs
+ according to their radicals:
 \end_layout
 
 \begin_layout Subsubsection
-Les verbes à racine simple 
+Verbs with a simple root
 \end_layout
 
 \begin_layout Standard

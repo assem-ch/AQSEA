@@ -123,10 +123,6 @@ vfil
 \end_layout
 
 \begin_layout Standard
-
-\end_layout
-
-\begin_layout Standard
 \align center
 
 \series bold
@@ -184,7 +180,7 @@ Chelli
 
 \begin_layout Plain Layout
 \align center
-2011 / 2013
+2011 / 2012
 \end_layout
 
 \end_inset
@@ -220,19 +216,14 @@ thispagestyle{empty}
 
 \series bold
 \shape smallcaps
-\size larger
 Ministry of Higher Education and Scientific Research
 \begin_inset Newline newline
 \end_inset
 
+National Higher School of Computer Science
+\size larger
 
 \begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Graphics
-	filename figures/LogoESI.png
-
 \end_inset
 
 
@@ -282,8 +273,8 @@ Option : Mobile Destributed Computing (IRM)
 \align center
 
 \series bold
-\size larger
-Proposal of an Advanced Retrieval System for Quran
+\size large
+Proposal of an Advanced Retrieval System for Noble Qur'an
 \end_layout
 
 \begin_layout Standard
@@ -377,7 +368,7 @@ MR Taha ZERROUKI
 
 \begin_layout Standard
 \align center
-2011/ 2013
+2011/ 2012
 \end_layout
 
 \end_body
