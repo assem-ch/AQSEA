@@ -113,10 +113,6 @@ pagenumbering{arabic}
 
 \end_layout
 
-\begin_layout Standard
-
-\end_layout
-
 \begin_layout Chapter
 Arabic Language  
 \begin_inset CommandInset label
@@ -179,10 +175,23 @@ end{Arabic}
 
 \begin_layout Standard
 \begin_inset Note Greyedout
-status open
+status collapsed
 
 \begin_layout Plain Layout
 [+Annotation Layers]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Greyedout
+status collapsed
+
+\begin_layout Plain Layout
+Add Arabic translation to ambiguous words
 \end_layout
 
 \end_inset
@@ -623,28 +632,51 @@ key "Lar03"
 
 \begin_layout Subsubsection
 Verbs with a simple root
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+ 
+\lang arabic_arabi
+الفعل المجرّد
+\lang english
+ 
+\end_layout
+
+\end_inset
+
+:
 \end_layout
 
 \begin_layout Standard
-Les verbes à racine simple ont une base à trois consonnes appelées consonnes
- radicales.
- Ces verbes sont associés au schème verbal "
+Verbs with a simple root have a base of three consonants called radical
+ consonants.
+ These verbs are associated with verbal pattern "
 \lang arabic_arabi
 فَعَلَ
 \lang english
 " (fa‛ala).
- Lorsqu’aucune des consonnes radicales du verbe n’est une voyelle longue,
- il est dit sain.
- Ces radicaux peuvent comporter de causes de transformation ou défectuosité
- ( 
+ When none of the root consonants of the verb is a long vowel, it is called
+ healthy.
+ These radicals may involve processing or causes of defects
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+ 
 \lang arabic_arabi
 عِلَّة
 \lang english
- ), nous citons :
+ 
+\end_layout
+
+\end_inset
+
+, we mention :
 \end_layout
 
 \begin_layout Itemize
-La présence d’un glide "
+The presence of "
 \lang arabic_arabi
  أ
 \lang english
@@ -652,22 +684,22 @@ La présence d’un glide "
 \lang arabic_arabi
  ي
 \lang english
-" (y - yâ’) ou " 
+" (y - yâ’) or " 
 \lang arabic_arabi
 و
 \lang english
-" (w – wâw) parmi les consonnes du radical.
- Selon la position de ce glide, nous distinguons différents types de verbes
+" (w – wâw) among the radical consonants.
+ Depending on the position of that, we distinguish different types of verbs
  : 
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-Si l’une des consonnes radicales est " 
+If one of the root consonants is " 
 \lang arabic_arabi
 أ
 \lang english
-" (á – hamzä), indépendamment de sa position => verbe mahmuz
+" (á – hamzä), independently of its position => Hamzated
 \begin_inset Foot
 status collapsed
 
@@ -681,21 +713,21 @@ status collapsed
 
 \end_inset
 
-; 
+ verb; 
 \end_layout
 
 \begin_layout Itemize
-la 1ère consonne radicale est un "
+The first radical consonant is a "
 \lang arabic_arabi
  و
 \lang english
-" (w) ou " 
+" (w) or " 
 \lang arabic_arabi
 ي
 \lang english
-" (y) => verbe mital
+" (y) => Assimilated 
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
  
@@ -707,21 +739,21 @@ status open
 
 \end_inset
 
-;
+ verb;
 \end_layout
 
 \begin_layout Itemize
-la 2ème consonne radicale est un " 
+The second radical consonant is a " 
 \lang arabic_arabi
 و
 \lang english
-" (w) ou " 
+" (w) or " 
 \lang arabic_arabi
 ي
 \lang english
-" (y) => verbe ağwaf
+" (y) => Hollow
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -733,21 +765,21 @@ status open
 
 \end_inset
 
-; 
+ verb; 
 \end_layout
 
 \begin_layout Itemize
-la 3ème consonne radicale est un "
+The third radical consonant is a "
 \lang arabic_arabi
  و
 \lang english
-" (w) ou " 
+" (w) or " 
 \lang arabic_arabi
 ي
 \lang english
-" (y) => verbe naāqis
+" (y) => Weakened
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
  
@@ -759,13 +791,13 @@ status open
 
 \end_inset
 
-; 
+ verb; 
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
-La présence de deux consonnes identiques en deuxième et troisième position
- du radical => verbe mudaā‛af
+The presence of two identical consonants in the second and third position
+ of the root => geminated
 \begin_inset Foot
 status collapsed
 
@@ -779,20 +811,31 @@ status collapsed
 
 \end_inset
 
-.
+ verb.
  
 \end_layout
 
 \begin_layout Subsubsection
-Les verbes à racine augmentée :
+The verbs with augmented root
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+ 
+\lang arabic_arabi
+الفعل المزيد
+\lang english
+ 
+\end_layout
+
+\end_inset
+
+:
 \end_layout
 
 \begin_layout Standard
-Aux schèmes simples, décrits ci-dessus, vient s’ajouter une dizaine de schèmes
- verbaux augmentés.
- Ces schèmes sont formés à partir de racines simples par un ensemble d’opération
-s morphologiques pour donner un sens particulier aux verbes résultats, nous
- citons : 
+These patterns are formed from simple roots by a set of morphological operations
+ to provide a specific meaning to the outcome verbs , we mention: 
 \end_layout
 
 \begin_layout Itemize
@@ -860,26 +903,25 @@ s morphologiques pour donner un sens particulier aux verbes résultats, nous
 \end_layout
 
 \begin_layout Subsection
-Les noms
+Nouns
 \end_layout
 
 \begin_layout Standard
-Le système morphologique des noms arabes distingue trois sous-catégories
- : 
+The morphological system of Arabic nouns are three subcategories: 
 \end_layout
 
 \begin_layout Subsubsection
-Les noms primitifs : 
+The primitive nouns: 
 \end_layout
 
 \begin_layout Standard
-ce sont des noms qui ne peuvent pas être rattachés à une racine verbale.
- Ils paraissent bien constituer le glossaire fondamental de la langue concrète.
- Exemple : 
+They are nouns that can not be attached to a verbal root.
+ They well form the fundamental glossary of the concrete language.
+ eg:
 \lang arabic_arabi
 رَأْس
 \lang english
- (raás – tête),
+ (raás – head),
 \family roman
 \series medium
 \shape up
@@ -906,7 +948,7 @@ ce sont des noms qui ne peuvent pas être rattachés à une racine verbale.
 \lang arabic_arabi
 كُرْسِيّ 
 \lang english
-(kursiyy – siège),
+(kursiyy – chair),
 \family roman
 \series medium
 \shape up
@@ -933,60 +975,58 @@ ce sont des noms qui ne peuvent pas être rattachés à une racine verbale.
 \lang arabic_arabi
 كَبْش
 \lang english
- (kabš – bélier) etc.
- Dans cette catégorie, nous incluons aussi les noms à racine bilitère tels
- que :
+ (kabš – Sheep), etc.
+ In this category we also include nouns composed of two letters such as:
 \lang arabic_arabi
  دم
 \lang english
- (dam - sang), 
+ (dam - blood), 
 \lang arabic_arabi
 فم
 \lang english
- (fam - bouche), 
+ (fam - mouth), 
 \lang arabic_arabi
 أب
 \lang english
- (áab – père),
+ (áab – father),
 \lang arabic_arabi
  أخ
 \lang english
- (áh – frère), etc.
+ (áh – brother), etc.
  
 \end_layout
 
 \begin_layout Subsubsection
-Les noms dérivés ou déverbaux : 
+Nouns derived from verbals : 
 \end_layout
 
 \begin_layout Standard
-ce sont les noms qui peuvent être dérivès à partir d’une racine verbale.
- Le nombre et la nature de ces formes varient selon le statut du verbe auquel
- ils se rattachent.
- En tant que noms, ils peuvent recevoir les marques du cas, du genre et
- de l’indétermination.
+These are the nouns that can be derived from a verbal root.
+ The number and nature of these forms vary depending on the status of the
+ verb to which they relate.
+ As nouns, they can receive marks of case, gender and indeterminacy.
  
 \end_layout
 
 \begin_layout Subsubsection
-Les nombres :
+Numbers :
 \end_layout
 
 \begin_layout Standard
-cette catégorie de noms est constituée par les numéraux simples représentant
- les unités : de " 
+This category of nouns is made up of simple numerals representing units:
+ from: " 
 \lang arabic_arabi
 صفر
 \lang english
- " (sifr- zéro, 0) à " 
+ " (sifr- zero, 0) to " 
 \lang arabic_arabi
 تسعة
 \lang english
- " (tis‛at – neuf, 9) ; les dizaines : " 
+ " (tis‛at – nine, 9) ; the tens: " 
 \lang arabic_arabi
 عشرة
 \lang english
- " (‛ašarat – dix,10) , 
+ " (‛ašarat – ten,10) , 
 \begin_inset Quotes sld
 \end_inset
 
@@ -998,53 +1038,87 @@ cette catégorie de noms est constituée par les numéraux simples représentant
 \begin_inset Quotes sld
 \end_inset
 
-(‛išruwn – vingt, 20), …et " 
+(‛išruwn – twenty, 20), …et " 
 \lang arabic_arabi
 تسعون
 \lang english
- " (tis‛uwn – quatre-vingt-dix, 90) ; les centaines, etc.
- ainsi que les numéraux composés tels que les cardinaux de "
+ " (tis‛uwn – ninety, 90) ; the hundreds, etc.well as numerals compounds
+ such as cardinals of "
 \lang arabic_arabi
  أَحَد عَشَر
 \lang english
- " (áahada ‛ašara - onze, 11) à " 
+ " (áahada ‛ašara - eleven, 11) to " 
 \lang arabic_arabi
 تسعة عَشَر
 \lang english
- " (tis‛at ‛ašara - dix-neuf,19).
+ " (tis‛at ‛ašara - nineteen,19).
  
 \end_layout
 
 \begin_layout Standard
-Dans leur décomposition, les grammairiens arabes ont assimilé les adjectifs
- à des noms vu qu’ils y prennent presque toutes les formes morphologiques
- ; ils peuvent, par exemple, être définis ou indéfinis et se fléchir suivant
- le cas, le nombre et le genre.
+In their decomposition, the Arab grammarians have classified adjectives
+ to nouns as they almost take all the morphological forms and may, for example,
+ be definite or indefinite and flex according to case, number and type.
 \end_layout
 
 \begin_layout Subsubsection
-Les noms démonstratifs (ásmaā’ íšaārat):
+Demonstrative nouns
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang arabic_arabi
+أسماء الإشارة
+\lang english
+ 
+\end_layout
+
+\end_inset
+
+:
 \end_layout
 
 \begin_layout Standard
-Ils représentent une sous-catégorie de nom exprimant une idée de démonstration.
- Ils permettent d'indiquer que l'objet représenté se trouve, soit dans le
- texte, soit dans l'espace ou le temps, défini par la situation d'énonciation.
- Ils existent deux sous-ensembles : les démonstratifs de proximité (par
- exemple : " 
+hey represent a subcategory of noun expressing an idea of ​​demonstration.
+ They can indicate that the object represented is found, either in the text,
+ either in space or time, defined by the situation of utterance.
+ They are two subsets: near-deictic (eg: " 
 \lang arabic_arabi
 هَذا
 \lang english
- " (hadaā – celui-ci), " 
+ " (hadaā – this), " 
 \lang arabic_arabi
 هَؤُلاء
 \lang english
- " (haẃulaā’ – ceux-ci) et les démonstratifs d’éloignement (par exemple
- : " 
+ " (haẃulaā’ – these) and far-deictic (eg: " 
 \lang arabic_arabi
 ذلِكَ
 \lang english
- " (dalika – celui-là), " 
+ " (dalika – that), " 
 \lang arabic_arabi
 أُولائِكَ
 \family roman
@@ -1071,50 +1145,115 @@ Ils représentent une sous-catégorie de nom exprimant une idée de démonstrati
 \uwave default
 \noun default
 \color inherit
-" (ùuwlaāýika – ceux-là), etc.).
- Les démonstratifs ne sont déclinables qu’au duel.
+" (ùuwlaāýika – those), etc.).
+ Demonstratives are derivable only to dual .
  
 \end_layout
 
 \begin_layout Subsubsection
-Les noms relatifs (ásmaā’ mawsuwlat) :
+Relative nouns
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+ 
+\lang arabic_arabi
+أسماء موصولة
+\lang english
+ 
+\end_layout
+
+\end_inset
+
+:
 \end_layout
 
 \begin_layout Standard
-Ils se rapportent au nom ou au pronom personnel qui les précède et que nous
- désignons par antécédent.
- Les relatifs s’accordent avec l’antécédent et ne sont déclinables qu’au
- duel (comme les démonstratifs).
- Parmi les pronoms relatifs, nous citons : " 
+They relate to the noun or personal pronoun that precedes them and that
+ we denote by antecedent.
+ The relatives shall afford with their antecedents but are derivable only
+ to dual (as demonstratives).
+ Among the relative pronouns, we mention: " 
 \lang arabic_arabi
 الَّذي
 \lang english
- " (al-ladiy - celui), " 
+ " (al-ladiy - that, masculine, singular), " 
 \lang arabic_arabi
 اللتَيْنِ 
 \lang english
-" (al-latayni – celles, féminin, duel), " 
+" (al-latayni – those, feminine, dual), " 
 \lang arabic_arabi
 اللذينَ 
 \lang english
-" (al- ladayni – ceux, masculin, pluriel), etc.
+" (those, masculine, plural), etc.
  
 \end_layout
 
 \begin_layout Subsubsection
-Les pronoms personnels (damaāýir munfasilat): 
+Personal pronouns 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+ 
+\lang arabic_arabi
+الضمائر المنفصلة
+\lang english
+ 
+\end_layout
+
+\end_inset
+
+: 
 \end_layout
 
 \begin_layout Standard
-ils servent à désigner les trois types de personnes grammaticales :
+They are intended to identify three types of grammatical persons:
 \end_layout
 
 \begin_layout Itemize
-la première personne, c'est-à-dire, l'énonciateur ou locuteur : " 
+First person, ie, the speaker 
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang arabic_arabi
+المتكلم
+\lang english
+ 
+\end_layout
+
+\end_inset
+
+, that who is talking: " 
 \lang arabic_arabi
 أَنَا 
 \lang english
-" (ánaā - je) ou " 
+" (ánaā - I) or " 
 \lang arabic_arabi
 نَحْنُ
 \lang english
@@ -1142,12 +1281,29 @@ la première personne, c'est-à-dire, l'énonciateur ou locuteur : "
 \uwave default
 \noun default
 \color inherit
-(nahnu – nous) ; 
+(nahnu – we) ; 
 \end_layout
 
 \begin_layout Itemize
-la deuxième personne, c'est-à-dire, le destinataire ou interlocuteur : "
+Second person, ie, the listener
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
  
+\lang arabic_arabi
+المخاطب
+\lang english
+ 
+\end_layout
+
+\end_inset
+
+,
+\begin_inset space ~
+\end_inset
+
+that who talking to: " 
 \lang arabic_arabi
 أَنْتَ
 \family roman
@@ -1174,11 +1330,11 @@ la deuxième personne, c'est-à-dire, le destinataire ou interlocuteur : "
 \uwave default
 \noun default
 \color inherit
-" (áanta – tu, masculin), "
+" (áanta – you, masculine, singular), "
 \lang arabic_arabi
  أَنْتِ 
 \lang english
-" (áanti – tu, féminin), " 
+" (áanti – you, feminine, singular), " 
 \lang arabic_arabi
 أَنْتُمَا
 \family roman
@@ -1205,11 +1361,11 @@ la deuxième personne, c'est-à-dire, le destinataire ou interlocuteur : "
 \uwave default
 \noun default
 \color inherit
-" (áantumaā – vous, duel), " 
+" (áantumaā – you, dual), " 
 \lang arabic_arabi
 أَنْتُمْ
 \lang english
- " (áantum – vous, masculin, pluriel), " 
+ " (áantum – you, masculine, plural), " 
 \lang arabic_arabi
 أَنْتُنَّ
 \family roman
@@ -1236,44 +1392,56 @@ la deuxième personne, c'est-à-dire, le destinataire ou interlocuteur : "
 \uwave default
 \noun default
 \color inherit
-" (áantunna – vous, féminin, pluriel); 
+" (áantunna – you, feminine, plural); 
 \end_layout
 
 \begin_layout Itemize
-la troisième personne, c'est-à-dire, la personne absente, celle dont on
- parle : "
+Third person, ie, the absent
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+ 
+\lang arabic_arabi
+الغائب
+\lang english
+ 
+\end_layout
+
+\end_inset
+
+, that who talking about : "
 \lang arabic_arabi
  هُوَ 
 \lang english
-" (huwa – il), 
+" (huwa – he), 
 \lang arabic_arabi
 هِيَ
 \lang english
- " " (hiya – elle), " 
+ " " (hiya – she), " 
 \lang arabic_arabi
 هُمَا
 \lang english
- " (humaā – ils, duel), " 
+ " (humaā – they, dual), " 
 \lang arabic_arabi
 هُمْ
 \lang english
- " (hum – ils), "
+ " (hum – they, masculine), "
 \lang arabic_arabi
  هُن 
 \lang english
-" (hunna – elles) ;
+" (hunna – they, feminine) ;
 \end_layout
 
 \begin_layout Subsection
-Les mots outils
+Function words
 \end_layout
 
 \begin_layout Standard
-Les mots outils sont des entités qui servent à situer des faits ou des objets
- par rapport au temps ou au lieu.
- Ils jouent également un rôle clé dans la cohérence et l'enchaînement d'un
- texte.
- Par exemple, nous avons des particules qui désignent un temps : 
+The function words are used to locate entities, facts or objects in relation
+ to time or place.
+ They also play a key role in the coherence and sequencing of a text.
+ For example, we have particles that designate a time: 
 \end_layout
 
 \begin_layout Itemize
@@ -1281,7 +1449,7 @@ Les mots outils sont des entités qui servent à situer des faits ou des objets
 \lang arabic_arabi
 بعد
 \lang english
- (ba‛da – après) 
+ (ba‛da – after) 
 \end_layout
 
 \begin_layout Itemize
@@ -1289,7 +1457,7 @@ Les mots outils sont des entités qui servent à situer des faits ou des objets
 \lang arabic_arabi
 قبل
 \lang english
- ٫ (qabla – avant)٫ 
+(qabla – before) 
 \end_layout
 
 \begin_layout Itemize
@@ -1297,11 +1465,11 @@ Les mots outils sont des entités qui servent à situer des faits ou des objets
 \lang arabic_arabi
 منذ
 \lang english
- (mundu – depuis) 
+ (mundu – since) 
 \end_layout
 
 \begin_layout Standard
-ou un lieu tel que 
+or a place like
 \end_layout
 
 \begin_layout Itemize
@@ -1309,60 +1477,65 @@ ou un lieu tel que
 \lang arabic_arabi
 حيث
 \lang english
- (haytu – où),….
- 
+ (haytu – where), 
 \end_layout
 
 \begin_layout Standard
-Selon leur sémantique et leur fonction dans la phrase, ils peuvent jouer
- un rôle important dans l’interprétation d’une phrase en exprimant une introduct
-ion, explication, conséquence, etc.
- [Kadri et Benyamina, 1992].
- Les mots outils incluent différentes catégories, nous citons : 
+According to their semantic meaning and their function in the sentence,
+ they can play an important role in the interpretation of a sentence expressing
+ an introduction, explanation, consequence, etc.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Kadri_et_benyamina1992"
+
+\end_inset
+
+.
+ Function words include various categories, we mention : 
 \end_layout
 
 \begin_layout Itemize
-Les prépositions : par exemple, " 
+Prepositions : " 
 \lang arabic_arabi
 فِي
 \lang english
- " (fiy – dans) ou " 
+ " (fiy – in) or " 
 \lang arabic_arabi
 عَلَى
 \lang english
- " (‛alaą – sur); 
+ " (‛alaą – on); 
 \end_layout
 
 \begin_layout Itemize
-Les conjonctions de coordination : par exemple, "
+Conjunctions: "
 \lang arabic_arabi
  ثُمَّ 
 \lang english
-" (tumma – ensuite, puis) ;
+" (tumma – then) ;
 \end_layout
 
 \begin_layout Itemize
-Les adverbes : par exemple, " 
+Adverbs : " 
 \lang arabic_arabi
 أَبَدًا
 \lang english
- " (abadã – jamais) ou " 
+ " (abadã – never) or " 
 \lang arabic_arabi
 بِشكْلٍ عَادِي
 \lang english
-" (bišaklĩ ‛aādiyyĩ – normalement, de façon normale) ; 
+" (bišaklĩ ‛aādiyyĩ – normally, in the normal way) ; 
 \end_layout
 
 \begin_layout Itemize
-Les quantificateurs : par exemple, "
+Quantifiers: "
 \lang arabic_arabi
  آُلّ 
 \lang english
-" (kulla – tout) ou " 
+" (kulla – all ) or " 
 \lang arabic_arabi
 بَعْض
 \lang english
- " (ba‛da – un peu) ; 
+ " (ba‛da – some) ; 
 \end_layout
 
 \begin_layout Itemize
@@ -1371,13 +1544,12 @@ Etc.
 \end_layout
 
 \begin_layout Standard
-Les mots outils se répartissent en sous-groupes : ceux qui sont variables
- (quantificateurs) et ceux qui sont invariables (adverbes, prépositions,
- etc.).
+The function words are divided into subgroups: those variables (quantifiers)
+ and those that are invariable (adverbs, prepositions, etc.).
 \end_layout
 
 \begin_layout Section
-La morphologie
+Morphology
 \end_layout
 
 \begin_layout Standard

@@ -114,11 +114,6 @@ pagenumbering{arabic}
 \end_layout
 
 \begin_layout Standard
-\begin_inset CommandInset toc
-LatexCommand tableofcontents
-
-\end_inset
-
 
 \end_layout
 
