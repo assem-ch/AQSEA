@@ -199,6 +199,32 @@ Add Arabic translation to ambiguous words
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Greyedout
+status collapsed
+
+\begin_layout Plain Layout
+Bound unneeded points! no mercy!!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Greyedout
+status collapsed
+
+\begin_layout Plain Layout
+Bound it ash!!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Introduction 
 \end_layout
@@ -235,7 +261,7 @@ In this chapter we will talk about orthography and morphology of the Arabic
  we will also talk about some ambiguities may be appear in Arabic cause
  the absence of vocalization.
 \begin_inset Note Greyedout
-status open
+status collapsed
 
 \begin_layout Plain Layout
 [Steps of informatization] + amliorer
@@ -1553,76 +1579,11 @@ Morphology
 \end_layout
 
 \begin_layout Standard
-L’arabe est une langue flexionnelle.
- Elle emploie, pour la conjugaison du verbe et la déclinaison du nom, des
- indices d’aspect, de mode, de temps, de personne, de genre, de nombre et
- de cas, qui sont en général des suffixes et préfixes 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "GB75"
-
-\end_inset
-
-.
- Généralement, ces marques flexionnelles permettent de distinguer :
-\end_layout
-
-\begin_layout Itemize
-Le mode des verbes : par exemple, pour le verbe "
-\lang arabic_arabi
- 
-\series bold
-ذهَبَ 
-\series default
-\lang english
-" (dahaba – aller), les formes à l’accompli sont repérables à l’aide de
- leurs suffixes tel que "
-\lang arabic_arabi
- 
-\series bold
-ذهَبْتُ 
-\series default
-\lang english
-" (dahabatu – je suis allé) ou de leurs préfixations tel que "
-\lang arabic_arabi
- 
-\series bold
-أَذهَبُ 
-\series default
-\lang english
-" (áadhabu – je vais) ; 
-\end_layout
-
-\begin_layout Itemize
-La fonction des noms à l’aide des suffixations tels que "
-\series bold
-\lang arabic_arabi
- رَجُلانِ 
-\series default
-\lang english
-" (rağulaáni – deux hommes au nominatif) ou "
-\series bold
-\lang arabic_arabi
- رَجُلَيْنِ 
-\series default
-\lang english
-" (rağulayni – deux hommes à l’accusatif ou génitif).
- 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Mes08"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Il y a plusieurs catégories de langages flexionnels, et l’arabes est exactement
- de la catégorie des langues à "brisure interne" : dans cette catégorie
- de langues, les consonnes indiquent le sens et les voyelles marquent la
- flexion du mot, ce système se rencontre surtout dans les langues sémitiques
- (ex : arabe , hébreux) 
+There are several categories of fusional languages​​, and Arabic is precisely
+ in the category of languages with "Intro-flexion": this category of languages​​
+, the consonants indicate the meaning and vowels mark the flexion of  word.
+ This system is found especially in the Semitic languages ​​(eg: Arabic,
+ Hebrew) 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "CPCZ06"
@@ -1633,16 +1594,15 @@ key "CPCZ06"
 \end_layout
 
 \begin_layout Standard
-Morphologiquement, la langue arabe est très riche et fondée sur la structure
- de patterns et racines , la plupart des mots arabes sont générés à partir
- d’un ensemble fini de racines (environ 7000 racines) transformés en utilisant
- un ou plusieurs patterns (environ 400-500).
- Théoriquement, une seule racine arabe peut générer des centaines de mots
- (substantif, verbes, …).
- Un mot arabe peut exister sous une centaine de formes dans cent profilés
- en un texte normal en ajoutant certains suffixes et préfixes (principalement
- considérées comme des mots vides en langue anglaise).
- 
+Morphologically, the Arabic language is very rich and based on the structure
+ of patterns and roots.
+ Most Arabic words are generated from a finite set of roots (about 7000
+ roots) transformed using one or more patterns (about 400-500).
+ Theoretically, a single Arabic root can generate hundreds of words (noun,
+ verb, ...).
+ An Arabic word can exist in about a hundred of forms in a normal text by
+ adding certain suffixes and prefixes (mainly considered as stop-words in
+ English).
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Alk99"
@@ -1656,7 +1616,7 @@ key "Alk99"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -1672,12 +1632,22 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Classification d’affixes en Arabe
+Classification of Affixes in Arabic 
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Note Greyedout
+status collapsed
+
+\begin_layout Plain Layout
+Translate the figure
 \end_layout
 
 \end_inset
@@ -1686,7 +1656,162 @@ Classification d’affixes en Arabe
 \end_layout
 
 \begin_layout Subsection
-Morphologie flexionnelle 
+Flexional Morphology 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Mes08"
+
+\end_inset
+
+ 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Find the English Source! why translate?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Arabic is a fusional language.
+ It uses, for the declination of verbs and nouns, some indications of aspect,
+ mood, time, person, gender, number and case, which are generally suffixes
+ and prefixes
+\begin_inset CommandInset citation
+LatexCommand cite
+key "GB75"
+
+\end_inset
+
+.
+ Generally, these fusional marks can distinguish:
+\end_layout
+
+\begin_layout Itemize
+Mood of verbs : eg, for the verb "
+\lang arabic_arabi
+ 
+\series bold
+ذهَبَ 
+\series default
+\lang english
+" (dahaba – go), forms in the perfective
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+ 
+\lang arabic_arabi
+الماضي
+\lang english
+ 
+\end_layout
+
+\end_inset
+
+ can be identified using their suffixes as "
+\lang arabic_arabi
+ 
+\series bold
+ذهَبْتُ 
+\series default
+\lang english
+" (dahabatu – I went) or their prefixes such in the imperfective
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+ 
+\lang arabic_arabi
+المضارع
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\end_layout
+
+\end_inset
+
+ as "
+\lang arabic_arabi
+ 
+\series bold
+أَذهَبُ 
+\series default
+\lang english
+" (áadhabu – I go) ; 
+\end_layout
+
+\begin_layout Itemize
+Function of nouns: using of suffixes such as "
+\series bold
+\lang arabic_arabi
+ رَجُلانِ 
+\series default
+\lang english
+" (rağulaáni – Two men in Nominative
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+ 
+\lang arabic_arabi
+حالة الرفع
+\lang english
+ 
+\end_layout
+
+\end_inset
+
+) or "
+\series bold
+\lang arabic_arabi
+ رَجُلَيْنِ 
+\series default
+\lang english
+" (rağulayni – Two men in Accusative
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+ 
+\lang arabic_arabi
+حالة النصب
+\lang english
+ 
+\end_layout
+
+\end_inset
+
+or Genitive
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+ 
+\lang arabic_arabi
+حالة الجر
+\lang english
+ 
+\end_layout
+
+\end_inset
+
+).
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Mes08"
@@ -1696,68 +1821,25 @@ key "Mes08"
 
 \end_layout
 
-\begin_layout Standard
-L’arabe est une langue flexionnelle.
- Elle emploie, pour la conjugaison du verbe et la déclinaison du nom, des
- indices d’aspect, de mode, de temps, de personne, de genre, de nombre et
- de cas, qui sont en général des suffixes et préfixes 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "BG03"
-
-\end_inset
-
-.
- Généralement, ces marques flexionnelles permettent de distinguer : 
-\end_layout
-
-\begin_layout Itemize
-le mode des verbes : par exemple, pour le verbe " 
-\lang arabic_arabi
-ذهَبَ 
-\lang english
-" (dahaba – aller), les formes à l’accompli sont repérables à l’aide de
- leurs suffixes tel que " 
-\lang arabic_arabi
-ذهَبْتُ 
-\lang english
-" (dahabatu – je suis allé) ou de leurs préfixations tel que " 
-\lang arabic_arabi
-أَذهَبُ 
-\lang english
-" (áadhabu – je vais) ; 
-\end_layout
-
-\begin_layout Itemize
-la fonction des noms à l’aide des suffixations tels que "
-\lang arabic_arabi
- رَجُلانِ 
-\lang english
-" (rağulaáni – deux hommes au nominatif) ou " 
-\lang arabic_arabi
-رَجُلَيْنِ 
-\lang english
-" (rağulayni – deux hommes à l’accusatif ou génitif).
- 
-\end_layout
-
 \begin_layout Subsubsection
-Flexion des verbes 
+Flexion of verbs
 \end_layout
 
 \begin_layout Standard
-La conjugaison des verbes décrit la variation de leurs formes en fonction
- des circonstances.
- Généralement, la conjugaison regroupe un certain nombre de valeurs dont
- : 
+Conjugation of verbs describe the variation in their forms according to
+ circumstances.
+ Generally, conjugation includes a number of values ​​which are: 
 \end_layout
 
 \begin_layout Itemize
-La valeur aspectuelle : L’aspect est un trait grammatical associé, le plus
- souvent, au verbe pour indiquer la façon dont le procès ou l'état exprimé
- par le verbe est envisagé du point de vue de son développement (commencement,
- déroulement, achèvement, évolution globale, etc.), indépendamment du moment
- où l’on parle ; 
+
+\series bold
+La valeur aspectuelle 
+\series default
+: L’aspect est un trait grammatical associé, le plus souvent, au verbe pour
+ indiquer la façon dont le procès ou l'état exprimé par le verbe est envisagé
+ du point de vue de son développement (commencement, déroulement, achèvement,
+ évolution globale, etc.), indépendamment du moment où l’on parle ; 
 \end_layout
 
 \begin_layout Itemize
@@ -1777,8 +1859,17 @@ s qui lui sont plus ou moins liées.
 \end_layout
 
 \begin_layout Standard
-Ces trois principales valeurs sont étroitement liées [Chairet, 1996]; elles
- permettent de décrire deux formes fondamentales du verbe : 
+Ces trois principales valeurs sont étroitement liées 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+[Chairet, 1996]
+\end_layout
+
+\end_inset
+
+; elles permettent de décrire deux formes fondamentales du verbe : 
 \end_layout
 
 \begin_layout Itemize
@@ -2623,6 +2714,16 @@ key "Mes08"
 \end_inset
 
 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Find the English Source! why translate?
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2905,49 +3006,112 @@ Contrairement aux verbes, les noms primitifs échappent au système dérivationn
 \end_layout
 
 \begin_layout Section
-Les problèmes d’ambigüités 
+Ambiguity issues
 \end_layout
 
 \begin_layout Subsection
-L’absence de vocalisation
+The absence of vocalization
 \end_layout
 
 \begin_layout Standard
-La plupart des textes arabes sont écrits sans diacritiques, cela provoque
- une confusion dans le sens, uniquement le contexte du texte peut lever
- l’ambigüité.
- Par conséquent, les logiciels basés seulement sur la graphie du mot ne
- peuvent pas l’enlever.
+The majority of Arabic texts are written without diacritics, this causes
+ some confusion in the meaning, only the context of text can lift the ambiguity.
+ Therefore, the softwares based only on word spelling can not resolve it.
  
 \end_layout
 
 \begin_layout Standard
-Si le texte contient le mot (
+For example, if the text contains the word 
 \series bold
 \lang arabic_arabi
 ملك
 \series default
 \lang english
-), par exemple.
- Comment on peut déterminer le sens de ce mot : Est-il (
+ , how can determine the meaning of this word : is it 
 \series bold
 \lang arabic_arabi
 المَلَك
-\series default
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
 \lang english
-) ou (
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(Angel) or 
 \series bold
 \lang arabic_arabi
 المُلك
-\series default
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
 \lang english
-) ou (
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(kingdom) or 
 \series bold
 \lang arabic_arabi
 المَلِك
-\series default
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
 \lang english
-) ? 
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(King)? 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Alb09"
@@ -2958,8 +3122,8 @@ key "Alb09"
 \end_layout
 
 \begin_layout Standard
-Le tableau suivant montre certains mots que ses sens changent en raison
- du changement de diacritiques : 
+The following table shows some words that its meaning changes due to the
+ change of diacritical marks: 
 \end_layout
 
 \begin_layout Standard
@@ -3003,7 +3167,7 @@ status open
 
 
 \backslash
-LR{Le mot sans diacritiques}
+LR{Unvocalized word}
 \end_layout
 
 \end_inset
@@ -3024,7 +3188,7 @@ status open
 
 
 \backslash
-LR{ Premier sens}
+LR{1st meaning}
 \end_layout
 
 \end_inset
@@ -3045,7 +3209,7 @@ status open
 
 
 \backslash
-LR{Deuxième sens}
+LR{2nd meaning}
 \end_layout
 
 \end_inset
@@ -3066,7 +3230,7 @@ status open
 
 
 \backslash
-LR{Troisième sens}
+LR{3rd meaning}
 \end_layout
 
 \end_inset
@@ -3550,7 +3714,7 @@ end{Arabic}
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Le changement de signification en changeant les diacritiques
+The change of meaning by changing the diacritical marks
 \end_layout
 
 \end_inset
@@ -3564,27 +3728,20 @@ Le changement de signification en changeant les diacritiques
 \end_layout
 
 \begin_layout Standard
-En plus de la confusion sur le sens du mot due à l'absence de diacritiques,
- il y a une plus grande confusion sur la fonction du mot, aussi le contexte
- du texte seulement peut l’éliminer.
- Si le mot dans le texte
-\lang arabic_arabi
- 
+In addition to confusion about the meaning of  word due to the absence of
+ diacritical marks, there is more confusion about the function of  word,
+ also the context of text only can eliminate it.
+ For example, the case of the word 
 \series bold
-(أخد)
+\lang arabic_arabi
+أخد
 \series default
 \lang english
-, par exemple, les logiciels basés sur la graphie du mot seul ne peuvent
- pas faire la distinction entre la forme active 
+ , Softwares based only on word spelling can not distinguish between active
+ form 
 \series bold
 \lang arabic_arabi
-(أَخَذَ)
-\series default
-\lang english
- et la forme passive 
-\series bold
-\lang arabic_arabi
-(أُخِذَ)
+أَخَذَ
 \family roman
 \series medium
 \shape up
@@ -3609,7 +3766,35 @@ En plus de la confusion sur le sens du mot due à l'absence de diacritiques,
 \uwave default
 \noun default
 \color inherit
-
+(took) and passive form 
+\series bold
+\lang arabic_arabi
+أُخِذَ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(was taken)
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Alb09"
@@ -3620,8 +3805,8 @@ key "Alb09"
 \end_layout
 
 \begin_layout Standard
-Le tableau suivant montre certains mots qui changent ses fonctions en raison
- du changement de diacritiques d'alphabets :
+The following table shows some words change their functions due to the change
+ of diacritical marks:
 \end_layout
 
 \begin_layout Standard
@@ -3663,7 +3848,7 @@ status open
 
 
 \backslash
-LR{Le mot sans diacritiques}
+LR{Unvocalized word}
 \end_layout
 
 \end_inset
@@ -3684,7 +3869,7 @@ status open
 
 
 \backslash
-LR{ Premier sens}
+LR{ 1st function}
 \end_layout
 
 \end_inset
@@ -3705,7 +3890,7 @@ status open
 
 
 \backslash
-LR{Deuxième  sens}
+LR{2nd function}
 \end_layout
 
 \end_inset
@@ -4057,7 +4242,7 @@ end{Arabic}
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Le changement de fonction en changeant les diacritiques
+The change of function by changing diacritical marks
 \end_layout
 
 \end_inset
@@ -4071,37 +4256,153 @@ Le changement de fonction en changeant les diacritiques
 \end_layout
 
 \begin_layout Subsection
-Les préfixes
+Prefixes
 \end_layout
 
 \begin_layout Standard
-C’est un autre type de confusion, le mot peut être lu de plusieurs manières.
- Par exemple : dans le mot (
+This is another type of confusion, the word can be read several ways.
+ For example: the word 
 \lang arabic_arabi
 وعد
 \lang english
-), la lettre wâw 
+ , the letter wâw
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+ 
 \lang arabic_arabi
-(واو)
+واو
 \lang english
- peut appartenir au mot comme :
+ 
+\end_layout
+
+\end_inset
+
+ may belong to word as in: 
 \lang arabic_arabi
- (وَعَدَ : أي الفعل وَعَدَ يَعِدُ)
+وَعَدَ
 \lang english
-, ou bien n'appartient pas au mot comme : 
+ from the verb 
 \lang arabic_arabi
-(وَعَدَّ = وَ + عَدَّ : أي الفعل عَدَّ يَعُدُّ) 
+وَعَد َ يَعِدُ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(promise), or else does not belong to word as in: 
+\lang arabic_arabi
+وَعَدَّ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+from the combination 
+\lang arabic_arabi
+وَ + عَدَّ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(and + count ), the verb
+\lang arabic_arabi
+ عَدَّ يَعُدُّ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(count).
 \end_layout
 
 \begin_layout Standard
-Ainsi, les logiciels basés seulement sur la graphie du mot, ne peuvent pas
- faire la distinction entre ces deux cas.
- Ce type de confusion n'existe pas dans la langue anglaise, par exemple
- : La traduction de l’expression"
+Thus, softwares based only on the spelling of  word, can not distinguish
+ between these two cases.
+ This type of confusion does not exist in the English language, for instance:
+ The translation of the word "
 \lang arabic_arabi
 والكتاب
 \lang english
-" en anglais est une phrase de 3 mots libres "and the book".
+" into English is a phrase of 3 independent words "and the book".
  
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -4113,8 +4414,8 @@ key "Alb09"
 \end_layout
 
 \begin_layout Standard
-La table suivante contient d’autres exemples de mots qui peuvent être lus
- de deux façons : 
+The following table provides additional examples of words that can be read
+ in two ways: 
 \end_layout
 
 \begin_layout Standard
@@ -4156,7 +4457,7 @@ status open
 
 
 \backslash
-LR{Le mot}
+LR{Word}
 \end_layout
 
 \end_inset
@@ -4177,7 +4478,7 @@ status open
 
 
 \backslash
-LR{Première façon}
+LR{1st way}
 \end_layout
 
 \end_inset
@@ -4198,7 +4499,7 @@ status open
 
 
 \backslash
-LR{Deuxième façon}
+LR{2nd way}
 \end_layout
 
 \end_inset
@@ -4433,7 +4734,7 @@ end{Arabic}
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Des ambiguities des préfixes
+Ambiguities of prefixes
 \end_layout
 
 \end_inset
@@ -4447,57 +4748,215 @@ Des ambiguities des préfixes
 \end_layout
 
 \begin_layout Subsection
-Les suffixes
+Suffixes
 \end_layout
 
 \begin_layout Standard
-Les suffixes sont les pronoms relatifs (
+The suffixes are the relative pronouns
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+ 
 \lang arabic_arabi
 الضمائر المتصلة
+\family roman
+\series medium
+\shape up
+\size small
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
 \lang english
- ) au mot.
+ 
+\end_layout
+
+\end_inset
+
+ attached to words.
  
 \end_layout
 
 \begin_layout Standard
-La confusion ici ressemble à la confusion des préfixes, cette confusion
- est que nous pouvons lire le mot de deux façons, selon que les lettres
- appartiennent au mot ou non.
- Par exemple, dans le mot (
+The confusion here is similar to the confusion of prefixes, this confusion
+ is that we can read the word in two ways, depending on whether the letters
+ belong to the word or not.
+ For example, in the word 
 \lang arabic_arabi
 وله
 \lang english
-), la lettre ha’ (
+ , the letter ha’
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+ 
 \lang arabic_arabi
 هاء
 \lang english
-) peut : 
+ 
+\end_layout
+
+\end_inset
+
+ may: 
 \end_layout
 
 \begin_layout Itemize
-appartenir au mot comme :
+belong to word as in: 
 \lang arabic_arabi
-( وَلِهَ : الفعل وَلِهَ يَوْلَهُ)
+وَلِه
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
 \lang english
- ; 
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+from the verb 
+\lang arabic_arabi
+وَلِهَ يَوْلَهُ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(admire) ; 
 \end_layout
 
 \begin_layout Itemize
-n’appartient pas au mot comme :
+does not belong to word as in: 
 \lang arabic_arabi
- (وَلِّهِ = وَلِّ + ـهِ = فعل الأمر من وَلَّى يُوَلِّي)
+وَلِّهِ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
 \lang english
-.
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+from the combination
+\lang arabic_arabi
+ وَلِّ + ـهِ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(crown + him) from the verb 
+\lang arabic_arabi
+وَلَّى يُوَلِّي
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(crown).
  
 \end_layout
 
 \begin_layout Standard
-De même que la confusion précédente, ce type de confusion n'existe pas dans
- la langue anglaise, par exemple : La traduction de 
+Just as the previous confusion, this type of confusion does not exist in
+ the English language, for instance: The translation of 
 \lang arabic_arabi
-" أَجَبْنَاهُ"
+أَجَبْنَاهُ
 \lang english
- en anglais est une phrase de 3 mots séparés "we answered him".
+ into English is a phrase of 3 separate words "we answered him".
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Alb09"
@@ -4508,14 +4967,14 @@ key "Alb09"
 \end_layout
 
 \begin_layout Standard
-La table suivante contient d’autres exemples : 
+The following table provides additional examples: 
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float table
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset ERT
@@ -4549,7 +5008,7 @@ status open
 
 
 \backslash
-LR{Mot}
+LR{Word}
 \end_layout
 
 \end_inset
@@ -4570,7 +5029,7 @@ status open
 
 
 \backslash
-LR{Première façon}
+LR{1st way}
 \end_layout
 
 \end_inset
@@ -4591,7 +5050,7 @@ status open
 
 
 \backslash
-LR{Deuxième façon}
+LR{2nd way}
 \end_layout
 
 \end_inset
@@ -4832,7 +5291,7 @@ end{Arabic}
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Des ambiguities des suffixes
+Ambiguities due to suffixes
 \end_layout
 
 \end_inset
@@ -4850,40 +5309,40 @@ Des ambiguities des suffixes
 \end_layout
 
 \begin_layout Section
-L’informatisation de la langue Arabe
+The computerization of  Arabic language
 \end_layout
 
 \begin_layout Standard
-Les logiciels informatiques ont été conçus, au début, pour servir les langues
- latines, notamment l’anglais.
- Puis ces techniques ont été adaptées pour tenir compte des autres langues
- du monde, y compris la langue arabe.
- Les spécifications d’écriture de certaines langues ont été influencées
- par ça, en raison de la pression des évolutions technologiques.
- Cependant, l'écriture arabe a persisté contre les effets de cette vague,
- malgré les appels grandissants pour changer l'écriture arabe, sous le prétexte
- de la simplification, la modernisation, ou la convenance.
+Computer softwares has been designed at first to serve the Latin languages​​,
+ including English.
+ Then these techniques were adapted to accommodate the other world languages​​,
+ including Arabic.
+ Writing specifications for certain languages ​​were influenced by that,
+ because of the pressure of technological change.
+ However, the Arabic script has persisted against the effects of this wave,
+ despite growing calls to change the Arabic script, under the pretext of
+ simplification, modernization, or convenience.
  
 \end_layout
 
 \begin_layout Standard
-La sortie des lettres arabes sur les écrans et les imprimantes a passé par
- plusieurs étapes, commençant par utiliser le même format pour chaque lettre
- et les séparer par des espaces entre les lettres dans le mot.
- Puis, en tenir compte du changement de la forme de la lettre en fonction
- de sa position dans le mot : le premier, au milieu, le dernier ou séparé,
- à travers l'analyse contextuelle, ensuite l’amélioration de l’apparence
- des lettres par le développement de ses images et la modification de la
- largeur d'affichage selon la lettre.
- Puis la possibilité de marquer les diacritiques, de et la ligature composé
- de deux caractères ou plus, 
+The output of Arabic letters on the screens and printers has gone through
+ several stages, starting with the same format for each letter and separate
+ them by spaces between the letters in the word.
+ Then, accommodate the change of the shape of the letter according to its
+ position in the word: the first, the middle, the last or separated, through
+ the contextual analysis, then improving the appearance of letters by the
+ development of its images and changing the display width according to the
+ letter.
+ Then the possibility of marking diacritics, and the ligature composed of
+ two or more characters:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -4899,7 +5358,7 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Ligature arabe du Lâm et álif.
+Ligature of lâm and álif.
 \end_layout
 
 \end_inset
@@ -4917,11 +5376,20 @@ Ligature arabe du Lâm et álif.
 \end_layout
 
 \begin_layout Standard
-Tout ceci a été réalisé grâce au développement des programmes professionnels
- pour concevoir les polices.
- Car les polices sophistiqués, telles que les polices réel ‘TrueType’ et
- les police ouverts ‘OpenType’, conservent les spécifications des caractères
- quel que soit la taille, ce qui donne une forme unique et naturelles.[Laz]
+All this was achieved through the development of professional programs for
+ designing fonts.
+ Because of the sophisticated fonts, such as TrueType and OpenType fonts,
+ preserve the specifications of characters regardless of size which gives
+ a unique and natural shape.
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+[Laz]
+\end_layout
+
+\end_inset
+
  
 \begin_inset Note Note
 status open
@@ -4938,7 +5406,7 @@ status open
 \end_layout
 
 \begin_layout Subsection
-Traitement de la langue arabe sur l'ordinateur :
+Processing of Arabic on the computer:
 \end_layout
 
 \begin_layout Standard
@@ -5152,10 +5620,14 @@ Certains des problèmes qui accompagnent ces situations ne sont pas certes
 \end_layout
 
 \begin_layout Section
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Section
 Un algorithme proposé pour la recherche arabe 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Cet algorithme est proposé par 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -5186,7 +5658,7 @@ key "Alb09"
 Réduire le nombre de résultats : 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 l’un des avantages de l'algorithme de recherche par (racine, type, pattern)
  est la réduction de nombre de résultats de la recherche en excluant les
  résultats non requis.
@@ -5225,7 +5697,7 @@ t les textes qui contiennent le mot «
 Eviter la divergence des résultats : 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 la recherche par (racine, type, pattern) restreint les résultats de la recherche
  à la forme voulue du mot.
  Vu qu’en recherchant un mot portant plusieurs formes, les résultats de
@@ -5272,7 +5744,7 @@ n entre eux.
 Créer de nouveaux types de recherche :
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 ces types de recherche sont générés en contrôlant l'une des trois composantes
  : la racine, le type ou le pattern.
  Voici un exemple : Si on recherche la racine (
@@ -5342,6 +5814,11 @@ nt le mot
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Alb09"
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
