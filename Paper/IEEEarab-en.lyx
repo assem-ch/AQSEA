@@ -527,26 +527,236 @@ key "Alb09"
 \end_layout
 
 \begin_layout Itemize
-
+The word 
 \lang arabic_arabi
-الملك؟ المَلَك, المَلِك، المُلْك 
+الملك
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+could be understood as
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang arabic_arabi
+المَلَك
+\lang english
+ (the angel), 
+\lang arabic_arabi
+المَلِك
+\lang english
+ (the king) or 
+\lang arabic_arabi
+المُلْك
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ (the kingdom)
 \end_layout
 
 \begin_layout Itemize
-
+The word 
 \lang arabic_arabi
-وعد؟ وَعَدَ ، وَ+عَدَّ 
+وعد
+\lang english
+ could be understood as 
+\lang arabic_arabi
+وَعَدَ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(*he* promise) or 
+\lang arabic_arabi
+وَ+عَدَّ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(and + *he* count)
 \end_layout
 
 \begin_layout Itemize
-
+The word 
 \lang arabic_arabi
-وله؟ وَلَه، وَلِّ+ه ، وَ+لَ+هُ 
+وله
+\lang english
+ could be understood as 
+\lang arabic_arabi
+وَلَهَ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(admire) or 
+\lang arabic_arabi
+وَلِّ+هَّ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+( crown him ) or 
+\lang arabic_arabi
+وَ+لَ+هُ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+( and + he + has ) 
 \end_layout
 
 \begin_layout Standard
 Trying to resolve these problems as a generic Arabic problem is really hard
- since it hasn’t linguistic resources to make strict lexical analyzers
+ since it has not linguistic resources to make strict lexical analyzers
 \begin_inset Note Note
 status collapsed
 
@@ -610,7 +820,7 @@ Quran writing: sawāmit, harakāt, hamza, diacritics, signes of distinction
 \end_layout
 
 \begin_layout Itemize
-Incorporeal structure: word, keyword, expression, objectif unit
+Incorporeal structure: word, keyword, expression
 \end_layout
 
 \begin_layout Itemize
@@ -625,7 +835,7 @@ Revelation: order, place, calender, cause, context...etc
 \begin_layout Standard
 The users may need to search, filter results or group them based on one
  of those structures.
- There are many sciences related to Quran, named Quranic Sciences: Tafsir,
+ There are many sciences related to Quran, named Quranic Sciences: Taffsir,
  Translation, Recitation, Similitude and Abrogation…etc.
  
 \end_layout
@@ -684,20 +894,19 @@ Suggestion Systems
 Linguistic Aspects
 \series default
 : This is about all features that are related to linguistic Aspects like
- stemming, Selection&filtring stop words, normalization.
+ stemming, Selection and filtering stop words, normalization.
  
 \end_layout
 
 \begin_layout Enumerate
 
 \series bold
-Quranic Options
+Qur'anic Options
 \series default
 : It’s related to the properties of the book and the information included
  inside.
- As we mentioned in the problematic, the book of Quran (al-mushaf) is written
- in uthmani script full of diacritization symbols and structured in many
- ways.
+ As we mentioned in the problematic, the book of Quran (Mushaf) is written
+ in Othmani script full of diacritical symbols and structured in many ways.
 \end_layout
 
 \begin_layout Enumerate
@@ -786,19 +995,22 @@ Advanced Query
 \series bold
 Fielded search
 \series default
-: uses fieldname in the query to search in a specific field.
+: uses field name in the query to search in a specific field.
  Helpful to search more information like surah names.
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 \align block
-
+sura_name =
 \series bold
-\lang arabic_arabi
-سورة:
+ 
 \series default
+\lang arabic_arabi
 الفاتحة
+\series bold
+\lang english
+ 
 \end_layout
 
 \end_deeper
@@ -816,9 +1028,40 @@ Logical relations
 
 \begin_deeper
 \begin_layout Itemize
-
+(
 \lang arabic_arabi
-(الصلاة - الزكاة ) + سورة:البقرة 
+الصلاة
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+AND_NOT 
+\lang arabic_arabi
+الزكاة
+\lang english
+ ) AND sura_name=
+\lang arabic_arabi
+البقرة 
 \end_layout
 
 \end_deeper
@@ -833,9 +1076,15 @@ Phrase search
 
 \begin_deeper
 \begin_layout Itemize
-
+“ 
 \lang arabic_arabi
-”الحمد لله“ 
+الحمد لله
+\lang english
+ 
+\begin_inset Quotes sld
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -850,11 +1099,7 @@ used to search an interval of values in the numerical field.
 
 \begin_deeper
 \begin_layout Itemize
-
-\lang arabic_arabi
-رقم_الآية:[1 إلى 5]
-\lang english
- 
+Ayah_number:[1 to 5] 
 \end_layout
 
 \end_deeper
@@ -888,14 +1133,94 @@ ref: Hamza different emplacement
 \begin_deeper
 \begin_layout Itemize
 
+\series bold
+\begin_inset space ~
+\end_inset
+
+ 
 \lang arabic_arabi
-ب؟طة = بسطة، بصطة 
+ب؟طة
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+to generate 
+\lang arabic_arabi
+بسطة
+\lang english
+, 
+\lang arabic_arabi
+بصطة
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
 \end_layout
 
 \begin_layout Itemize
 
+\series bold
+\begin_inset space ~
+\end_inset
+
+
 \lang arabic_arabi
-*نبي* = نبي ، النبيين ، الأنبياء ...
+*نبي*
+\series default
+\lang english
+ to generate 
+\lang arabic_arabi
+نبي
+\lang english
+, 
+\lang arabic_arabi
+النبيين
+\lang english
+, 
+\lang arabic_arabi
+الأنبياء
+\lang english
+ ...
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
  
 \end_layout
 
@@ -934,7 +1259,7 @@ search using a combination of the previous elementary features.
 \begin_layout Enumerate
 
 \series bold
-Output Improvments
+Output Improvements
 \end_layout
 
 \begin_deeper
@@ -978,7 +1303,7 @@ Numerical order of numeric fields
 \end_layout
 
 \begin_layout Itemize
-Alphabitical or Abjad order of alphabetic fields 
+Alphabetical or Abjad order of alphabetic fields 
 \end_layout
 
 \begin_layout Itemize
@@ -1037,7 +1362,7 @@ Highlight:
 \series bold
 Real time output
 \series default
-: used to avoid the time of user waiting ,and show the results directly
+: used to avoid the time of user waiting, and show the results directly
  when retrieved.
 \end_layout
 
@@ -1051,7 +1376,7 @@ Results grouping:
 
 \begin_deeper
 \begin_layout Itemize
-by similar Ayahs 
+by allegorical Ayahs 
 \begin_inset Note Note
 status collapsed
 
@@ -1088,7 +1413,11 @@ by Quranic examples
 \begin_layout Enumerate
 
 \series bold
-Uthmani script with full diacritical marks:
+Uthmani script with full diacritical marks: 
+\series default
+Quran text is written on mus-haf in a Uthmani script with full diacritics.
+ those diacritics are helpful for better reading and recitation of the Quran.
+ Ignoring those marks raises some ambiguities in recitation.
 \end_layout
 
 \begin_deeper
@@ -1206,9 +1535,32 @@ used to limit a keyword on only one of their meanings.
 
 \begin_deeper
 \begin_layout Itemize
+\begin_inset space ~
+\end_inset
 
+
+\series bold
 \lang arabic_arabi
-رب: معنى 1 (إله)، معنى 2 (سيد)
+رب
+\series default
+\lang english
+: 
+\numeric on
+1
+\numeric off
+st meaning (god - 
+\lang arabic_arabi
+إله
+\lang english
+), 
+\numeric on
+2
+\numeric off
+nd meaning (master - 
+\lang arabic_arabi
+سيد
+\lang english
+)
 \end_layout
 
 \begin_layout Standard
@@ -1258,8 +1610,31 @@ _
 \series bold
 Multi-level derivation
 \series default
-: the Arabic words derivations can be devided to four levels : exact word
+: the Arabic words derivations can be divided to four levels : exact word
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
  
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(eg: 
 \lang arabic_arabi
 فأسقيناكموه
 \family roman
@@ -1274,6 +1649,38 @@ Multi-level derivation
 \noun off
 \color none
 \lang english
+ - 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Quotes sld
+\end_inset
+
+so We give it to you to drink of
+\begin_inset Quotes srd
+\end_inset
+
+), Lemma (eg:
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
  
 \family default
 \series default
@@ -1286,7 +1693,6 @@ Multi-level derivation
 \uwave default
 \noun default
 \color inherit
-, Word affixes removed (Lemma) 
 \lang arabic_arabi
 أسقينا
 \family roman
@@ -1313,7 +1719,7 @@ Multi-level derivation
 \uwave default
 \noun default
 \color inherit
-, Stem: 
+- We give drink ) , Stem (eg: 
 \lang arabic_arabi
 أسقى
 \family roman
@@ -1340,7 +1746,7 @@ Multi-level derivation
 \uwave default
 \noun default
 \color inherit
-, Root : 
+- give drink), Root (eg: 
 \lang arabic_arabi
 سقي
 \family roman
@@ -1356,6 +1762,7 @@ Multi-level derivation
 \color none
 \lang english
  
+) 
 \family default
 \series default
 \shape default
@@ -1428,7 +1835,7 @@ Multi-level derivation
 \series bold
 Specific-derivations
 \series default
-: this is specification of the pervious feature .Since Arabic is fully flexional
+: this is specification of the previous feature .Since Arabic is fully flexional
  , it has lot of derivation operations .
 \end_layout
 
@@ -1437,26 +1844,157 @@ Specific-derivations
 Conjugation in Past tense of 
 \lang arabic_arabi
 قال
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
 \lang english
- to find 
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(say) to find
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
 \lang arabic_arabi
-قالت, قال, قالوا, قلن
+قالت
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
 \lang english
- ...
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(*she* said), 
+\lang arabic_arabi
+قال
+\lang english
+ (*he* said), 
+\lang arabic_arabi
+قالوا
+\lang english
+ (*they* said, masculine), 
+\lang arabic_arabi
+قلن
+\lang english
+ (*they* said, feminine ) ...
  
 \end_layout
 
 \begin_layout Itemize
-Conjugation in Imperative tense de 
+Conjugation in Imperative tense of 
 \lang arabic_arabi
 قال
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
 \lang english
- to find 
-\lang arabic_arabi
-قولوا , قل
-\lang english
- ...
  
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(say) to find 
+\lang arabic_arabi
+قل
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(say! , singular, masculine) , 
+\lang arabic_arabi
+قولوا
+\lang english
+ (say! , plural, masculine) , ...
+ etc.
 \end_layout
 
 \end_deeper
@@ -1472,10 +2010,43 @@ Word properties embedded query:
 
 \begin_deeper
 \begin_layout Itemize
-{
+{root:
+\series bold
+ 
 \lang arabic_arabi
-جذر:ملك، نوع:اسم، عدد: مفرد 
+ملك
+\series default
 \lang english
+, type:
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series bold
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+noun
+\series default
+, number: 
+\series bold
+singular
+\series default
 } 
 \end_layout
 
@@ -1490,9 +2061,57 @@ Numerical values substitution:
 
 \begin_deeper
 \begin_layout Itemize
-309 replaces 
+309 replaces
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
 \lang arabic_arabi
 ثلاثمائة وتسعة
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(three hundreds and nine)
 \end_layout
 
 \end_deeper
@@ -1512,6 +2131,9 @@ Consideration/Ignoring spell faults:
 
 \begin_deeper
 \begin_layout Itemize
+\begin_inset space ~
+\end_inset
+
 
 \lang arabic_arabi
 مءصدة
@@ -1519,9 +2141,26 @@ Consideration/Ignoring spell faults:
  replaces 
 \lang arabic_arabi
 مؤصدة
+\lang english
+ 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+(Ignore Hamza form)
 \end_layout
 
 \begin_layout Itemize
+\begin_inset space ~
+\end_inset
+
 
 \lang arabic_arabi
 ضحي
@@ -1532,6 +2171,9 @@ Consideration/Ignoring spell faults:
 \end_layout
 
 \begin_layout Itemize
+\begin_inset space ~
+\end_inset
+
 
 \lang arabic_arabi
 جنه
@@ -1553,6 +2195,9 @@ Uthmani writing way:
 
 \begin_deeper
 \begin_layout Itemize
+\begin_inset space ~
+\end_inset
+
 
 \lang arabic_arabi
 بصطة
@@ -1565,6 +2210,9 @@ Uthmani writing way:
 \end_layout
 
 \begin_layout Itemize
+\begin_inset space ~
+\end_inset
+
 
 \lang arabic_arabi
 نعمت
@@ -1618,21 +2266,15 @@ Recitations marks retrieving:
 
 \begin_deeper
 \begin_layout Itemize
-
-\lang arabic_arabi
-سجدة : نعم 
+Juncture_exist: 
+\series bold
+YES
 \end_layout
 
 \begin_layout Itemize
-
-\lang arabic_arabi
-نوع _سكتة:واجبة 
-\end_layout
-
-\begin_layout Itemize
-
-\lang arabic_arabi
-قلقلة:نعم 
+Sajdah_type: 
+\series bold
+Obligatory
 \end_layout
 
 \end_deeper
@@ -1641,7 +2283,7 @@ Recitations marks retrieving:
 \series bold
 Structural option
 \series default
-: since Quran is devided to parts () and the part to Hizbs and Hizb to Halfs
+: since Quran is divided to parts and the part to Hizbs and Hizb to Halfs
  ...
  till we get Ayas.There is also other structures of Quran such as to pages
  ...etc.
@@ -1668,20 +2310,20 @@ Structural option
 \series bold
 Translation embedded search: 
 \series default
-helps users to search using words translations to other langugaes instead
- of the native arabic text.
+helps users to search using words translations to other languages instead
+ of the native Arabic text.
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-{ text: mercy , lang: english , author: shekir }
+{ text: mercy, lang: english , author: shekir }
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
 
 \series bold
-Similitudes search (
+Allegorical verses (
 \lang arabic_arabi
 المتشابهات
 \lang english
@@ -1702,11 +2344,7 @@ status open
 
 \begin_deeper
 \begin_layout Itemize
-_ 
-\lang arabic_arabi
-متشابهة
-\lang english
- {55,13} 
+_ Allegories of {55,13} 
 \begin_inset Newline newline
 \end_inset
 
@@ -1721,13 +2359,13 @@ _
 \begin_layout Enumerate
 
 \series bold
-Examples search (
+Parables (
 \lang arabic_arabi
 الأمثال
 \lang english
 )
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -1742,13 +2380,13 @@ def of mathal qurany]
 
 \begin_deeper
 \begin_layout Itemize
-
+Parable-in-Sura: 
 \lang arabic_arabi
-مثل في سورة:البقرة 
+البقرة
 \begin_inset Newline newline
 \end_inset
 
- [ مَثَلُهُمْ كَمَثَلِ الَّذِي اسْتَوْقَدَ نَارًا فَلَمَّا أَضَاءَتْ مَا
+[ مَثَلُهُمْ كَمَثَلِ الَّذِي اسْتَوْقَدَ نَارًا فَلَمَّا أَضَاءَتْ مَا
  حَوْلَهُ ذَهَبَ اللَّـهُ بِنُورِهِمْ وَتَرَكَهُمْ فِي ظُلُمَاتٍ لَا يُبْصِرُونَ
 ] 
 \end_layout
@@ -1773,7 +2411,7 @@ Semantic Queries
 Semantically related words
 \series default
 : there are several different kinds of semantic relations: Synonymy, Antonymy,
- Hypernym, Hyponymy, Meronymy, Holonymy, Troponymy
+ Hypernymy, Hyponymy, Meronymy, Holonymy, Troponymy
 \begin_inset Note Note
 status open
 
@@ -1989,8 +2627,8 @@ Natural questions:
 \series bold
 Automatic diacritization : 
 \series default
-the absence of diacritics lead to the ambiguities that we’ve mentioned them
- in Problematic.
+the absence of diacritics lead to the ambiguities that we have mentioned
+ them in Problematic.
  This feature helps to pass over these ambiguities and try to resolve them
  before executing the search process.
  
@@ -2010,7 +2648,7 @@ the absence of diacritics lead to the ambiguities that we’ve mentioned them
 Proper nouns search
 \series default
 : lot of  proper nouns are mentions clearly in Quran but some of them are
- just referred to implecitly .
+ just referred to implicitly .
  This feature is to search for proper nouns however mentioned : explicitly
  or implicitly.
 \end_layout
@@ -2038,8 +2676,12 @@ Proper nouns search
 \begin_inset Newline newline
 \end_inset
 
-[ثَانِيَ اثْنَيْنِ إِذْ هُمَا فِي الْغَارِ إِذْ يَقُولُ لِصَاحِبِهِ لَا
- تَحْزَنْ إِنَّ اللَّـهَ مَعَنَا ] - التوبة 40 
+[ثَانِيَ 
+\lang english
+اث
+\lang arabic_arabi
+ْنَيْنِ إِذْ هُمَا فِي الْغَارِ إِذْ يَقُولُ لِصَاحِبِهِ لَا تَحْزَنْ إِنَّ
+ اللَّـهَ مَعَنَا ] - التوبة 40 
 \end_layout
 
 \begin_layout Standard
@@ -2098,7 +2740,7 @@ What the first ten words which are the most frequently cited words in the
 \series bold
 Vocalized word frequency: 
 \series default
-the same as the presvios feature but with consideration of diacritics.that
+the same as the previous feature but with consideration of diacritics.that
  will make the difference for instance between 
 \lang arabic_arabi
 مِنْ 
@@ -2205,7 +2847,7 @@ How many the word of
 Another Quranic units frequency: 
 \series default
 the statistics could be gathered based on many units otherwise the words
- like letters,ayas, Recitation marks...etc.
+ like letters, ayas, Recitation marks...etc.
 \end_layout
 
 \begin_deeper
@@ -2232,7 +2874,7 @@ What's the longest Ayah?
 \begin_layout Itemize
 How many Marks of Sajda in the whole Quran?
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -2247,1161 +2889,6 @@ Listing Collocated words:
 
 \end_deeper
 \end_deeper
-\begin_layout Standard
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Section
-Alfanous API as a prototype
-\end_layout
-
-\begin_layout Plain Layout
-To validate our vision about search features on Quran, we work in implementing
- them through the API of Alfanous.
- Alfanous is an open source project that aims to build an indexing/search
- API in Quran and use it to develop different interfaces: Web, Desktop...etc.
- Alfanous API is pure python, prototyped from the library whoosh which is
- a fast, featureful full-text indexing and searching library implemented
- in pure Python.
- Programmers can use it to easily add search functionality to their applications
- and websites.
- Every part of how Whoosh works can be extended or replaced to meet specific
- needs exactly.
- The API helps the researchers and developers that working on Quran applications
- and want to take the benefits of search.
- Alfanous API is: 
-\end_layout
-
-\begin_layout Itemize
-Easy to use, by virtue of a JSON output system that interacts with the API.
- This last can be used as a wrapping to other programming languages.
-\end_layout
-
-\begin_layout Itemize
-Easy to customize(prototyping), because the simplicity and clarity of code.
-\end_layout
-
-\begin_layout Itemize
-Free Open Source, developed under the license AGPL (Affero General Public
- License).
-\end_layout
-
-\begin_layout Plain Layout
-We’ll show here some snippets of code for some available functions in Alfanous
- API :
-\end_layout
-
-\begin_layout Enumerate
-Import the Quranic Search Engine and instantiate it.
-\begin_inset Newline newline
-\end_inset
-
-
-\family typewriter
-\size scriptsize
-\color red
->>>
-\color inherit
- 
-\color blue
-from
-\color inherit
- alfanous.main 
-\color blue
-import
-\color inherit
- QuranicSearchEngine\SpecialChar \textcompwordmark{}
- 
-\begin_inset Newline newline
-\end_inset
-
-
-\color red
->>>
-\color inherit
- QSE = QuranicSearchEngine(
-\shape italic
-\color magenta
-"./indexes/main/"
-\shape default
-\color inherit
-)
-\begin_inset Newline newline
-\end_inset
-
-<__main__.QuranicSearchEngine instance at 
-\color red
-0xb77d168c
-\color inherit
->
-\begin_inset Newline newline
-\end_inset
-
-
-\color red
->>>
-\color inherit
- QSE.OK
-\begin_inset Newline newline
-\end_inset
-
-
-\color blue
-True 
-\begin_inset Newline newline
-\end_inset
-
-\SpecialChar \textcompwordmark{}
-
-\end_layout
-
-\begin_layout Enumerate
-Make a search operation and browse the ayahs’ text.
-\begin_inset Newline newline
-\end_inset
-
-
-\family typewriter
-\size scriptsize
-\color red
->>>
-\color inherit
- results,_ =QSE.search_all(u
-\family default
-\shape italic
-"
-\lang arabic_arabi
-الحمد
-\lang english
-"
-\family typewriter
-\shape default
-) 
-\begin_inset Newline newline
-\end_inset
-
-
-\color red
->>>
-\color inherit
- 
-\color blue
-for
-\color inherit
- r 
-\color blue
-in
-\color inherit
- results: 
-\begin_inset Newline newline
-\end_inset
-
-
-\color red
-...
-
-\color inherit
- 
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\color blue
-print
-\color inherit
- r[
-\shape italic
-\color magenta
-"aya"
-\shape default
-\color inherit
-]
-\begin_inset Newline newline
-\end_inset
-
-[
-\family default
-\lang arabic_arabi
-الحمد لله رب العالمين
-\family typewriter
-\lang english
-]
-\begin_inset Newline newline
-\end_inset
-
-
-\family default
-\size default
-\SpecialChar \textcompwordmark{}
-
-\end_layout
-
-\begin_layout Enumerate
-Show more information for each result: surah name, ayah number, and ayah
- vocalized text.
-\begin_inset Newline newline
-\end_inset
-
-
-\family typewriter
-\size scriptsize
-\color red
->>>
-\color inherit
- 
-\color blue
-for
-\color inherit
- r 
-\color blue
-in
-\color inherit
- results:
-\begin_inset Newline newline
-\end_inset
-
-
-\color red
-...
-
-\color inherit
- 
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\color blue
-print
-\color inherit
- r[
-\shape italic
-\color magenta
-"sura_name"
-\shape default
-\color inherit
-],
-\shape italic
-\color magenta
-":"
-\shape default
-\color inherit
-,r[
-\shape italic
-\color magenta
-"aya_id"
-\shape default
-\color inherit
-],
-\shape italic
-\color magenta
-":"
-\shape default
-\color inherit
-,r[
-\shape italic
-\color magenta
-"aya_"
-\shape default
-\color inherit
-] 
-\begin_inset Newline newline
-\end_inset
-
-
-\family default
-\lang arabic_arabi
-الفاتحة
-\family typewriter
-\lang english
-:
-\color red
-2
-\color inherit
-:
-\family default
-\lang arabic_arabi
-الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ
-\end_layout
-
-\begin_layout Enumerate
-Show the terms generated from a query.
-\begin_inset Newline newline
-\end_inset
-
-
-\family typewriter
-\size scriptsize
-\color red
->>>
-\color inherit
- _, terms = QSE.search_all(u
-\shape italic
-\color magenta
-"
-\family default
-\shape default
-\color inherit
-\lang arabic_arabi
-الحمد
-\family typewriter
-\shape italic
-\color magenta
-\lang english
-"
-\shape default
-\color inherit
-) 
-\begin_inset Newline newline
-\end_inset
-
-
-\color red
->>>
-\color inherit
- 
-\color blue
-print
-\color inherit
- terms
-\begin_inset Newline newline
-\end_inset
-
-(
-\shape italic
-\color magenta
-"aya"
-\shape default
-\color inherit
-,u
-\shape italic
-\color magenta
-"
-\family default
-\shape default
-\color inherit
-\lang arabic_arabi
-الحمد
-\family typewriter
-\shape italic
-\color magenta
-\lang english
-"
-\shape default
-\color inherit
-)] 
-\begin_inset Newline newline
-\end_inset
-
-\SpecialChar \textcompwordmark{}
-
-\end_layout
-
-\begin_layout Enumerate
-Use the terms to highlight the ayah text.
-\begin_inset Newline newline
-\end_inset
-
-
-\family typewriter
-\size scriptsize
-\color red
->>>
-\color inherit
- Qhighlight(u
-\shape italic
-\color magenta
-"
-\family default
-\shape default
-\color inherit
-\lang arabic_arabi
-الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ
-\family typewriter
-\shape italic
-\color magenta
-\lang english
-"
-\shape default
-\color inherit
-, [u
-\shape italic
-\color magenta
-"
-\family default
-\shape default
-\color inherit
-\lang arabic_arabi
-الحمد
-\family typewriter
-\shape italic
-\color magenta
-\lang english
-"
-\shape default
-\color inherit
-, u
-\shape italic
-\color magenta
-"
-\family default
-\shape default
-\color inherit
-\lang arabic_arabi
-لله
-\family typewriter
-\shape italic
-\color magenta
-\lang english
-"
-\shape default
-\color inherit
-])
-\begin_inset Newline newline
-\end_inset
-
-<span style="color:red;font-size:100.0%"><b>
-\family default
-\lang arabic_arabi
-الْحَمْد
-\family typewriter
-ُ
-\lang english
-</b></span>
-\begin_inset Newline newline
-\end_inset
-
-<span style="color:green;font-size:100.0%"><b>
-\family default
-\lang arabic_arabi
-لِلَّـه
-\family typewriter
-ِ
-\lang english
-</b></span>
-\begin_inset Newline newline
-\end_inset
-
-
-\family default
-\lang arabic_arabi
-رَبِّ الْعَالَمِينَ
-\lang english
-
-\begin_inset Newline newline
-\end_inset
-
-\SpecialChar \textcompwordmark{}
-
-\end_layout
-
-\begin_layout Enumerate
-Show the estimated search time and the number of results.
-\begin_inset Newline newline
-\end_inset
-
-
-\family typewriter
-\size scriptsize
-\color red
->>>
-\color inherit
- 
-\color blue
-print
-\color inherit
- 
-\shape italic
-\color magenta
-"time=%f,number=%d"
-\shape default
-\color inherit
- 
-\color blue
-%
-\color inherit
- (results.runtime,len(results))
-\begin_inset Newline newline
-\end_inset
-
-time=
-\color red
-0.100318
-\color inherit
-,number=
-\color red
-160
-\begin_inset Newline newline
-\end_inset
-
-\SpecialChar \textcompwordmark{}
-
-\end_layout
-
-\begin_layout Enumerate
-Suggest in the case of missing terms.
-\begin_inset Newline newline
-\end_inset
-
-
-\family typewriter
-\size scriptsize
-\color red
->>>
-\color inherit
- 
-\color blue
-for
-\color inherit
- key, value 
-\color blue
-in
-\color inherit
- QSE.suggest_all(u
-\shape italic
-\color magenta
-"
-\color green
- 
-\family default
-\shape default
-\color inherit
-\lang arabic_arabi
-عاصمو
-\family typewriter
-\shape italic
-\color green
-\lang english
- 
-\color magenta
-"
-\shape default
-\color inherit
-).items(): 
-\begin_inset Newline newline
-\end_inset
-
-
-\color red
-...
-
-\color inherit
- 
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
- 
-\color blue
-print 
-\color inherit
-key, 
-\shape italic
-\color magenta
-":"
-\shape default
-\color inherit
-, 
-\shape italic
-\color magenta
-","
-\shape default
-\color inherit
-.join(value)
-\begin_inset Newline newline
-\end_inset
-
-
-\family default
-\lang arabic_arabi
-عاصمو :عاصم
-\lang english
-
-\begin_inset Newline newline
-\end_inset
-
-\SpecialChar \textcompwordmark{}
-
-\end_layout
-
-\begin_layout Plain Layout
-In this table, we’ll mention some specific queries already implemented in
- the API:
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Float table
-placement htbp
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Advanced Query in Alfanous
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Tabular
-<lyxtabular version="3" rows="16" columns="2">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0pt">
-<column alignment="center" valignment="top" width="0pt">
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Feature
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Syntax
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-simple search
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{Arabic}
-\end_layout
-
-\end_inset
-
-سماكم
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{Arabic}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-derivation level 1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
->
-\lang arabic_arabi
-سماكم
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-derivation level 2 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
->>
-\lang arabic_arabi
-سماكم
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-joker ? 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{Arabic}
-\end_layout
-
-\end_inset
-
-ال؟لك
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{Arabic}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-joker * 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-*
-\lang arabic_arabi
-نبي
-\lang english
-*
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-phrase 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-"
-\lang arabic_arabi
-رب العالمين
-\lang english
-"
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-logical relation : AND 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{Arabic}
-\end_layout
-
-\end_inset
-
-الصلاة + الزكاة
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{Arabic}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-logical relation : OR
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{Arabic}
-\end_layout
-
-\end_inset
-
-الصلاة | الزكاة
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{Arabic}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-logical relation : ANDNOT
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{Arabic}
-\end_layout
-
-\end_inset
-
-الصلاة - الزكاة
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{Arabic}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-synonyms
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{Arabic}
-\end_layout
-
-\end_inset
-
-~السعير
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{Arabic}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-fields
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-sura:
-\lang arabic_arabi
-الفاتحة
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-interval 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-sura_id:[112 to 114]
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-vocalization
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-'
-\lang arabic_arabi
-المَلك
-\lang english
-'
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-word properties tuple 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-{
-\lang arabic_arabi
-ملك,فعل
-\lang english
-}
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-transliteration: buckwalter
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-fawoqa
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
 Related Works
 \end_layout
@@ -3422,7 +2909,7 @@ Alawfa
 is a website that offers search in Quran and Hadith.
  He has a fast retrieving method.
  It offers the highlight, pagination.
- The main disadvantage of Alawfa is that it doesn’t respect the specifics
+ The main disadvantage of Alawfa is that it does not respect the specifics
  of Arabic and Quran.
  It searches only as exact word or as a part of word.
 \lang french
@@ -3490,7 +2977,7 @@ Zekr is a desktop application aimed to be an open platform Quran study tool
  It offers many sorting criteria like Relevance, Natural order, Revelation
  order, Aya length.
  Also, it offers browsing with Mushaf Structures: Hizb number, Surah name,.
- It search using the exact word, the part of word, the arabic root 
+ It search using the exact word, the part of word, the Arabic root 
 \lang french
 
 \begin_inset CommandInset citation

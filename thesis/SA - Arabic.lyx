@@ -1861,7 +1861,7 @@ s qui lui sont plus ou moins liées.
 \begin_layout Standard
 Ces trois principales valeurs sont étroitement liées 
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 [Chairet, 1996]
@@ -4946,7 +4946,34 @@ from the combination
 \uwave default
 \noun default
 \color inherit
-(crown).
+(crown) or 
+\lang arabic_arabi
+وَ+لَ+هُ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+( and + he + has ) .
  
 \end_layout
 
