@@ -234,14 +234,16 @@ This part contains 3 chapters:
 \begin_layout Standard
 
 \series bold
-Chapter 1 : The Qur'an
+Chapter 1 : Search Engines
 \end_layout
 
 \begin_layout Standard
-This chapter presents an overview of the Qur'an and its sciences, it has
- a historical background on the evolution of the Qur'an, the structure of
- the Mus'haf, and the main problems of computerization of the Qur'an, including
- the script Uthmani and authentication Qu'ranic texts.
+To design a powerful search engine, it is essential to understand how search
+ engines work, in this chapter we discuss the different parts of a search
+ engine, namely: the crawling, indexing and querying .
+ And the definition of basic concepts in the field of information retrieval
+ systems.
+ This chapter contains an introduction to the semantic approach.
 \end_layout
 
 \begin_layout Standard
@@ -254,7 +256,7 @@ This chapter presents an overview of the Qur'an and its sciences, it has
 \begin_layout Standard
 
 \series bold
-Chapter 2 : Arabic Language, Orthography and Morphology 
+Chapter 2 : Arabic Language
 \end_layout
 
 \begin_layout Standard
@@ -274,16 +276,14 @@ The objective of this chapter is to present the properties of the Arabic
 \begin_layout Standard
 
 \series bold
-Chapter 3 : Search Engines
+Chapter 3 : The Qur'an
 \end_layout
 
 \begin_layout Standard
-To design a powerful search engine, it is essential to understand how search
- engines work, in this chapter we discuss the different parts of a search
- engine, namely: the crawling, indexing and querying .
- And the definition of basic concepts in the field of information retrieval
- systems.
- This chapter contains an introduction to the semantic approach.
+This chapter presents an overview of the Qur'an and its sciences, it has
+ a historical background on the evolution of the Qur'an, the structure of
+ the Mus'haf, and the main problems of computerization of the Qur'an, including
+ the script Uthmani and authentication Qu'ranic texts.
 \end_layout
 
 \begin_layout Standard

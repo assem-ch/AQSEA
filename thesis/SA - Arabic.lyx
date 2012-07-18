@@ -5381,6 +5381,28 @@ All this was achieved through the development of professional programs for
  Because of the sophisticated fonts, such as TrueType and OpenType fonts,
  preserve the specifications of characters regardless of size which gives
  a unique and natural shape.
+\end_layout
+
+\begin_layout Standard
+The letters of the Arabic language are represented with one symbol at the
+ level of the computer, and this symbol represents a single location on
+ the keyboard.
+ The posting of the letter in output might look different and that depending
+ on the location of the letter in the word.
+ 
+\end_layout
+
+\begin_layout Standard
+Therefore, it seems that it is not necessary to match the shape of the character
+ introduced with what is stored within the computer and what is to be printed.
+\end_layout
+
+\begin_layout Standard
+Lam-Alef has no place in the table of the Arabic alphabet, but it appears
+ as a single letter while printing.
+ This letter can be introduced directly, or by clicking Lam then Alef from
+ the keyboard.
+ 
 \begin_inset Note Greyedout
 status open
 
@@ -5406,52 +5428,25 @@ status open
 \end_layout
 
 \begin_layout Subsection
-Processing of Arabic on the computer:
-\end_layout
+\begin_inset Note Note
+status collapsed
 
-\begin_layout Standard
-Les lettres de la langue arabe sont représentées avec un seul symbole au
- niveau de l’ordinateur, et ce symbole correspond à un seul emplacement
- sur le clavier.
- L’affichage de la lettre en sortie, peut se présenter différemment et cela
- en fonction de l'emplacement de la lettre dans le mot.
- 
-\end_layout
-
-\begin_layout Standard
-De ce fait, Il semble qu’il n'est pas nécessaire de faire correspondre la
- forme du caractère introduit avec ce qui est enregistré à l'intérieur du
- calculateur et avec ce qui est à imprimer.
- 
-\end_layout
-
-\begin_layout Standard
-Lam-Alef n’a pas de place dans le tableau de l'alphabet arabe, mais il apparaît
- comme une seule lettre lors de l'impression, cette lettre peut être introduite
- à la fois, ou en cliquant sur Lam, et Alef à partir du clavier.
- Et ce tôt d’intelligence interne ce trouve au niveau des systèmes d’arabisation
- actuels.
- 
-\end_layout
-
-\begin_layout Standard
-Cependant, il ya encore beaucoup de choses qui ont besoin d'attention à
- cause des insuffisances de leurs traitements, on site par la suite quelques
- unes : 
+\begin_layout Plain Layout
+However, there are still many things that need attention because of the
+ inadequacies of their processing, we mention: 
 \end_layout
 
 \begin_layout Subsubsection
-Ordre des lettres arabes
+Order of Arabic letters
 \end_layout
 
-\begin_layout Standard
-Certains anciens linguistes arabes ont travaillé sur l’ordre des lettres
- des dictionnaires arabes selon les sorties phonétiques des lettres.
- Et cela sans aucun doute:
+\begin_layout Plain Layout
+Some former Arab linguists have been working on the order of letters in
+ Arabic dictionaries according to the phonetic output of letter.
 \end_layout
 
 \begin_layout Enumerate
-Ordre Alphabetique : 
+Alphabetical Order: 
 \lang arabic_arabi
 أ.
  ب.
@@ -5484,7 +5479,7 @@ Ordre Alphabetique :
 \end_layout
 
 \begin_layout Enumerate
-Ordre Abjad :
+Abjad order:
 \lang arabic_arabi
  أ.
  ب.
@@ -5516,23 +5511,13 @@ Ordre Abjad :
  غ.
 \end_layout
 
-\begin_layout Standard
-La plupart des dispositions des lettres arabes mentionnés ci-dessus repose
- sur l'ordre alphabétique mais il ya plusieurs différences concernant la
- mise des écarts entre ces lettres, et cela en utilisant des symboles ou
- des lettres non-arabe.
- Aussi le nombre des lettres de complémentarité (les formes de Hamza , Ta’
- merboutta et Alef maqsoura … etc.
- ) ainsi que leur position dans les dispositions n’est pas fixe.
-\end_layout
-
-\begin_layout Standard
+\begin_layout Plain Layout
 Un autre point est que la concaténation que considère les ordinateurs comme
  lettres indépendantes sont aussi mises selon différents ordre dans les
  différents dispositions.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 La mise des lettres selon une séquence particulière influe sur l'ordre des
  mots incluant ces lettres.
  L'emplacement de la Ta’ merboutta (avant Ta’ maftouha ou après) affecte
@@ -5543,7 +5528,7 @@ La mise des lettres selon une séquence particulière influe sur l'ordre des
 ).
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 L'ordre de Hamza affecte sur les mots (comme 
 \lang arabic_arabi
 فاني، فأنك، فإنما، فآت، فئته
@@ -5555,7 +5540,7 @@ L'ordre de Hamza affecte sur les mots (comme
  
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Ainsi que dans le cas de la discrétisation, par exemple, Fat-ha viens après
  Damma dans certaines dispositions, Ce qui signifie que les mots contenant
  une lettre Maftouh est avant ce même mot contenant une lettre Madmoum ,
@@ -5564,7 +5549,7 @@ Ainsi que dans le cas de la discrétisation, par exemple, Fat-ha viens après
  
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Exemple sur ceci : (
 \lang arabic_arabi
 قَفَلَ
@@ -5601,7 +5586,7 @@ vient avant
  et malgré que l’ordonnancement de ces deux mot semble correct sans vocalisation.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Et c’est la même chose concernant l'intensité (
 \lang arabic_arabi
 الشدة
@@ -5610,13 +5595,18 @@ Et c’est la même chose concernant l'intensité (
  répétition du caractère précédent.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Certains des problèmes qui accompagnent ces situations ne sont pas certes
  mises à jour ou résolus, et n’ont pas de solution linguistique ancienne
  parce que ils sont dus à l'évolution de la technologie.
  Et peu être que quelque uns de ces problèmes avais d’anciennes solutions
  mais le fait de ne pas avoir recours à ces dernières a donné occasion aux
  différentes interprétations.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -5837,7 +5827,7 @@ We explained in this chapter orthographic and morphological properties of
 
 \begin_layout Standard
 In the next chapter, we present how do the search engines work and a listing
- of known General, Arabic and Quranic Search engines 
+ of known General, Arabic and Qur'anic Search engines 
 \end_layout
 
 \end_body

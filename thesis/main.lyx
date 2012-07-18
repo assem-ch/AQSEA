@@ -517,7 +517,7 @@ State Art
 \begin_inset CommandInset include
 LatexCommand input
 preview true
-filename "SA - Quran.lyx"
+filename "SA - Fonctionnement.lyx"
 
 \end_inset
 
@@ -539,7 +539,7 @@ filename "SA - Arabic.lyx"
 \begin_inset CommandInset include
 LatexCommand input
 preview true
-filename "SA - Fonctionnement.lyx"
+filename "SA - Quran.lyx"
 
 \end_inset
 
@@ -548,7 +548,7 @@ filename "SA - Fonctionnement.lyx"
 
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset CommandInset include

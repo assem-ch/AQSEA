@@ -213,47 +213,43 @@ Introduction
 \begin_layout Standard
 
 \color black
-Notre travail rentre dans le domaine de la recherche d’informations, car
- il vise à concevoir un moteur de recherche, dans ce chapitre nous allons
- aborder comment les moteurs de recherche fonctionnent en expliquant ses
- principaux composants.
+Our work falls within the field of Information Retrieval, as it aims to
+ design a search engine, in this chapter we will discuss how search engines
+ work by explaining its main components.
 \end_layout
 
 \begin_layout Standard
 
 \color black
-L’exploration est la partie qui alimente le moteur de recherche par les
- documents qu’elle collecte, mais avec le volume d’informations qui devient
- de plus en plus grand, il est nécessaire de développer des méthodes de
- recherche, seule l’indexation est en mesure d’accélérer la recherche dans
- des systèmes très volumineux tels que le Web, car elle anticipe la recherche
- en extrayant les mots clés et en les organisant.
+Exploration is the part that feeds the search engine by documents that it
+ collects, but with the amount of information that becomes larger and larger,
+ it is necessary to develop methods of search, only indexing able to accelerate
+ search in very large systems such as the Web, because it anticipates the
+ search by extracting and arranging them keywords.
 \end_layout
 
 \begin_layout Standard
 
 \color black
-Pour que les résultats de la recherche soient satisfaisants, on doit bien
- calculer la pertinence des résultats par rapport à la requête, cela est
- effectué au cours de l’interrogation.
- L’interrogation doit aussi permettre d’exprimer des questions simples aussi
- bien que des questions complexes.
+So that search results be satisfactory, we must properly calculate the relevance
+ of results against the query, this is done during the interrogation.
+ The question must also be able to express simple questions as well as complex
+ questions.
  
 \end_layout
 
 \begin_layout Standard
 
 \color black
-La qualité de la recherche est directement liée à la qualité de l’exploration,
- l’indexation et l’interrogation, ces trois opérations peuvent donc être
- considérées comme étant le cœur de moteur de recherche, l’objectif de ce
- chapitre est de définir les principaux concepts de ce domaine, en commençant
- par définir l’exploration, puis étudier l’indexation, ses méthodes et ses
- étapes, ensuite nous expliquerons le processus de l’interrogation et la
- notion de pertinence.
+The quality of research is directly related to the quality of the crawling,
+ indexing and search, these three operations can be considered as the core
+ of search engine, the objective of this chapter is to define the main concepts
+ of this area, starting with defining the crawling, then study indexing,
+ its methods and steps, and then we shall explain the process of search
+ and the notion of relevance.
  
 \begin_inset Note Greyedout
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -580,7 +576,7 @@ key "Ment08"
 \begin_layout Section
 
 \color black
-Recherche plein texte (Full-text search )
+Full-text search
 \end_layout
 
 \begin_layout Standard
@@ -3536,7 +3532,7 @@ key "Ber08"
 
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Section
 L’approche sémantique 
