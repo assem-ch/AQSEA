@@ -5,6 +5,7 @@
 \textclass extreport
 \begin_preamble
  \usepackage{styles/esi_memoire}
+\newcommand{\Ayah}{\newfontfamily\arabicfont[Script=Arabic]{ArabeyesQr}}
 \end_preamble
 \use_default_options true
 \begin_modules
@@ -122,7 +123,7 @@ name "chapitre4"
 
 
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 +Figures: all samples must 
@@ -134,6 +135,17 @@ figured
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+add facetated search (thematic search), clustered search, ontology-based
+ search 
 \end_layout
 
 \end_inset
@@ -250,7 +262,7 @@ ref: search evolution, exact word, regular expression, sequencial search,
  intent and the contextual meaning of terms as they appear in the searchable
  dataspace to generate more relevant results
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 ref: semantic search, google the phrase 
@@ -264,7 +276,7 @@ ref: semantic search, google the phrase
  , more sorting criteria, Highlighting the keywords, Pagination, Filtering
  and Expanding
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 ref: Search engines highligh, pagunation
@@ -292,7 +304,7 @@ key "Shah07"
 .
  Arabic is a specific language because its morphology and orthography
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 ref: google it arabic specific morphp and ortho
@@ -321,21 +333,231 @@ key "Alb09"
 \end_layout
 
 \begin_layout Itemize
-
+The word 
 \lang arabic_arabi
-الملك؟ المَلَك, المَلِك، المُلْك 
+الملك
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+could be understood as
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang arabic_arabi
+المَلَك
+\lang english
+ (the angel), 
+\lang arabic_arabi
+المَلِك
+\lang english
+ (the king) or 
+\lang arabic_arabi
+المُلْك
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ (the kingdom)
 \end_layout
 
 \begin_layout Itemize
-
+The word 
 \lang arabic_arabi
-وعد؟ وَعَدَ ، وَ+عَدَّ 
+وعد
+\lang english
+ could be understood as 
+\lang arabic_arabi
+وَعَدَ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(*he* promise) or 
+\lang arabic_arabi
+وَ+عَدَّ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(and + *he* count)
 \end_layout
 
 \begin_layout Itemize
-
+The word 
 \lang arabic_arabi
-وله؟ وَلَه، وَلِّ+ه ، وَ+لَ+هُ 
+وله
+\lang english
+ could be understood as 
+\lang arabic_arabi
+وَلَهَ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(admire) or 
+\lang arabic_arabi
+وَلِّ+هَّ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+( crown him ) or 
+\lang arabic_arabi
+وَ+لَ+هُ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+( and + he + has ) 
 \end_layout
 
 \begin_layout Standard
@@ -879,7 +1101,7 @@ Sorting
 
 \begin_deeper
 \begin_layout Itemize
-Score 
+Relevance
 \end_layout
 
 \begin_layout Itemize
@@ -968,9 +1190,9 @@ Results grouping:
 
 \begin_deeper
 \begin_layout Itemize
-by similar Ayahs 
+by allegorical Ayahs 
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 [whats similar ayahs]
@@ -986,7 +1208,7 @@ by Surahs
 \end_layout
 
 \begin_layout Itemize
-by subjects
+by topics 
 \end_layout
 
 \begin_layout Itemize
@@ -998,7 +1220,7 @@ by revelation events
 \end_layout
 
 \begin_layout Itemize
-by Quranic examples 
+by Quranic parables
 \end_layout
 
 \end_deeper
@@ -1015,13 +1237,21 @@ Quran text is written on mus-haf in a Uthmani script with full diacritics.
 
 \begin_deeper
 \begin_layout Itemize
+\begin_inset ERT
+status open
 
-\series bold
-[
+\begin_layout Plain Layout
+
+
+\backslash
+Ayah
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
- ۞ لَّقَدْ كَانَ فِى يُوسُفَ وَإِخْوَتِهِۦٓ ءَايَٰتٌ لِّلسَّآئِلِين
-\lang english
-َ] 
+[ ۞ لَّقَدْ كَانَ فِي يُوسُفَ وَإِخْوَتِهِۦٓ ءَايَٰتٌ لِّلسَّآئِلِينَ] 
 \end_layout
 
 \end_deeper
@@ -1342,8 +1572,7 @@ so We give it to you to drink of
 \noun off
 \color none
 \lang english
- 
-) 
+ ) 
 \family default
 \series default
 \shape default
@@ -1835,8 +2064,8 @@ Quranic Options
 \series bold
 ALLAH's Names Highlight:
 \series default
- a similar feature to this is used in many mus-hafs nowadays , it aimes
- to show Allah's name clearly.
+ a similar feature to this is used in many mus'hafs nowadays , it aims to
+ show Allah's name clearly.
  this includes different writings of word 
 \begin_inset Quotes sld
 \end_inset
@@ -1851,6 +2080,18 @@ Allah
 
 \begin_deeper
 \begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Ayah
+\end_layout
+
+\end_inset
+
 
 \lang arabic_arabi
 فَلْيَعْبُدُوا
@@ -1863,6 +2104,18 @@ Allah
 \end_layout
 
 \begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Ayah
+\end_layout
+
+\end_inset
+
 
 \lang arabic_arabi
 قُلِ 
@@ -1893,13 +2146,19 @@ YES
 \begin_layout Itemize
 Sajdah_type: 
 \series bold
-Obligatory
-\end_layout
+Obligatory 
+\begin_inset Note Note
+status collapsed
 
 \begin_layout Itemize
 
 \lang arabic_arabi
 قلقلة:نعم 
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -1991,11 +2250,11 @@ Allegories of {55,13}
 \begin_inset Newline newline
 \end_inset
 
- [ 
+
 \lang arabic_arabi
-فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ
+ [ فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ] 
 \lang english
-] , 31 exact allegories
+, 31 exact allegories
 \end_layout
 
 \end_deeper
@@ -2035,16 +2294,29 @@ def of mathal qurany]
 
 \begin_deeper
 \begin_layout Itemize
-Parable-in-Sura: the Cow(
+Parable-in-Sura: 
 \lang arabic_arabi
 البقرة
-\lang english
-)
-\lang arabic_arabi
-
 \begin_inset Newline newline
 \end_inset
 
+
+\lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Ayah
+\end_layout
+
+\end_inset
+
+
+\lang arabic_arabi
  [ مَثَلُهُمْ كَمَثَلِ الَّذِي اسْتَوْقَدَ نَارًا فَلَمَّا أَضَاءَتْ مَا
  حَوْلَهُ ذَهَبَ اللَّـهُ بِنُورِهِمْ وَتَرَكَهُمْ فِي ظُلُمَاتٍ لَا يُبْصِرُونَ
 ] 
@@ -2140,66 +2412,85 @@ Questions Answering (QA) :
 
 \begin_deeper
 \begin_layout Itemize
-
+Who are the prophets? (
 \lang arabic_arabi
 من هم الأنبياء؟
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-
-\begin_inset Newline newline
-\end_inset
-
-
 \lang english
-(Who are the prophets?)
+)
+\begin_inset Newline newline
+\end_inset
+
+Surah: 
 \lang arabic_arabi
+النساء
+\lang english
+ , Ayah: 163
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Ayah
+\end_layout
+
+\end_inset
+
+
+\lang arabic_arabi
+[ ۞ إِنَّآ أَوْحَيْنَآ إِلَيْكَ كَمَآ أَوْحَيْنَآ إِلَىٰ نُوحٍ وَٱلنَّبِيِّۦنَ
+ مِنۢ بَعْدِهِۦ ۚ وَأَوْحَيْنَآ إِلَىٰٓ إِبْرَٰهِيمَ وَإِسْمَٰعِيلَ وَإِسْحَٰقَ
+ وَيَعْقُوبَ وَٱلْأَسْبَاطِ وَعِيسَىٰ وَأَيُّوبَ وَيُونُسَ وَهَٰرُونَ وَسُلَيْمَ
+ٰنَ ۚ وَءَاتَيْنَا دَاوُۥدَ زَبُورًا]
+\lang english
 
 \begin_inset Newline newline
 \end_inset
 
-[ إِنَّا أَوْحَيْنَا إِلَيْكَ كَمَا أَوْحَيْنَا إِلَى نُوحٍ وَالنَّبِيِّينَ
- مِنْ بَعْدِهِ وَأَوْحَيْنَا إِلَى إِبْرَاهِيمَ وَإِسْمَاعِيلَ وَإِسْحَاقَ
- وَيَعْقُوبَ وَالْأَسْبَاطِ وَعِيسَى وَأَيُّوبَ وَيُونُسَ وَهَارُونَ وَسُلَيْمَا
-نَ وَآتَيْنَا دَاوُودَ زَبُورًا] - النساء 163 
+Translation: Surely We have revealed to you as We revealed to Nuh, and the
+ prophets after him, and We revealed to Ibrahim and Ismail and Ishaq and
+ Yaqoub and the tribes, and Isa and Ayub and Yunus and Haroun and Sulaiman
+ and We gave to Dawood
 \end_layout
 
 \begin_layout Itemize
-
+What is Al-hottamat? (
 \lang arabic_arabi
 ما هي الحطمة؟
-\begin_inset Newline newline
-\end_inset
-
-
 \lang english
-(What is Al-hottamat?)
-\lang arabic_arabi
-
+)
 \begin_inset Newline newline
 \end_inset
 
-؟ [ نَارُ اللَّـهِ الْمُوقَدَةُ] - الهمزة 6 
+Surah: 
+\lang arabic_arabi
+الهمزة
+\lang english
+ , Ayah: 6
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Ayah
+\end_layout
+
+\end_inset
+
+
+\lang arabic_arabi
+ [ نَارُ اللَّـهِ الْمُوقَدَةُ] 
 \end_layout
 
 \begin_layout Itemize
@@ -2278,6 +2569,13 @@ Questions Answering (QA) :
  فَخَلَقْنَا الْمُضْغَةَ عِظَامًا فَكَسَوْنَا الْعِظَامَ لَحْمًا ثُمَّ أَنْشَأْن
 َاهُ خَلْقًا آخَرَ فَتَبَارَكَ اللَّـهُ أَحْسَنُ الْخَالِقِينَ] - المؤمنون
  14 
+\begin_inset Newline newline
+\end_inset
+
+
+\lang english
+\SpecialChar \textcompwordmark{}
+
 \end_layout
 
 \end_deeper
@@ -2459,12 +2757,37 @@ Benyamin (
 \begin_inset Newline newline
 \end_inset
 
- [ إِذْ قَالُوا لَيُوسُفُ 
+
+\lang english
+Surah: 
+\lang arabic_arabi
+المؤمنون
+\lang english
+ , Ayah: 41 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Ayah
+\end_layout
+
+\end_inset
+
+
+\lang arabic_arabi
+[ إِذْ قَالُوا لَيُوسُفُ 
 \series bold
 وَأَخُوه
 \series default
-ُ أَحَبُّ إِلَى أَبِينَا مِنَّا وَنَحْنُ عُصْبَةٌ إِنَّ أَبَانَا لَفِي ضَلَالٍ
- مُبِينٍ] - المؤمنون 14 
+ُ أَحَبُّ إِلَي أَبِينَا مِنَّا وَنَحْنُ عُصْبَةٌ إِنَّ أَبَانَا لَفِي ضَلَالٍ
+ مُبِينٍ] 
 \end_layout
 
 \begin_layout Itemize
@@ -2472,14 +2795,35 @@ Abu-Bakr (
 \lang arabic_arabi
 أبو بكر/ الصديق
 \lang english
- )? 
-\lang arabic_arabi
-
+ )?
 \begin_inset Newline newline
 \end_inset
 
+Surah: 
+\lang arabic_arabi
+التوبة
+\lang english
+ , Ayah: 40
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Ayah
+\end_layout
+
+\end_inset
+
+
+\lang arabic_arabi
 [ثَانِيَ اثْنَيْنِ إِذْ هُمَا فِي الْغَارِ إِذْ يَقُولُ لِصَاحِبِهِ لَا
- تَحْزَنْ إِنَّ اللَّـهَ مَعَنَا ] - التوبة 40 
+ تَحْزَنْ إِنَّ اللَّـهَ مَعَنَا ] 
 \end_layout
 
 \begin_layout Standard
