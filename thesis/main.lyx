@@ -5,6 +5,7 @@
 \textclass extreport
 \begin_preamble
 \usepackage{styles/esi_memoire}
+\newcommand{\Ayah}{\newfontfamily\arabicfont[Script=Arabic]{ArabeyesQr}}
 \end_preamble
 \use_default_options true
 \begin_modules
@@ -74,7 +75,7 @@ minimalistic
 \rightmargin 3cm
 \bottommargin 3cm
 \secnumdepth 3
-\tocdepth 4
+\tocdepth 2
 \paragraph_separation indent
 \paragraph_indentation default
 \quotes_language swedish
@@ -565,7 +566,7 @@ filename "SA - Related_works.lyx"
 
 
 \begin_inset Note Comment
-status open
+status collapsed
 
 \begin_layout Plain Layout
 to remove, add relared works in each chapter

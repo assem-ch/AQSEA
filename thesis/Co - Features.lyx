@@ -1042,6 +1042,10 @@ Boosting:
 \begin_layout Itemize
 
 \series bold
+\begin_inset space ~
+\end_inset
+
+
 \lang arabic_arabi
 سميع
 \series default
@@ -1060,6 +1064,9 @@ search using a combination of the previous elementary features.
 \end_layout
 
 \begin_layout Itemize
+\begin_inset space ~
+\end_inset
+
 
 \lang arabic_arabi
 ”*
@@ -1274,9 +1281,61 @@ Vocalized spell correction
 
 \begin_deeper
 \begin_layout Itemize
-
+Suggest for 
 \lang arabic_arabi
-أبرَاهَام: إبْرَاهِيم 
+أبرَاهَام
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(Abraham): 
+\lang arabic_arabi
+إبْرَاهِيم
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(Ibrahim) as mentioned in Qur'an
 \end_layout
 
 \end_deeper
@@ -1290,10 +1349,138 @@ Semantically related keywords (Ontology-Based)
 
 \begin_deeper
 \begin_layout Itemize
-
+Suggest for 
 \lang arabic_arabi
-يعقوب: يوسف، الأسباط، نبي...
+يعقوب
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
  
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(Yaqoub) : 
+\lang arabic_arabi
+يوسف
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(Yusuf), 
+\lang arabic_arabi
+الأسباط
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(Asbat),
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang arabic_arabi
+نبي
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(Prophet) 
 \end_layout
 
 \end_deeper
@@ -1307,10 +1494,115 @@ Different vocalization
 
 \begin_deeper
 \begin_layout Itemize
-
-\lang arabic_arabi
-الملك : المَلِك ، المُلْك، المَلَك ...
+Suggest for
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
  
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang arabic_arabi
+الملك
+\lang english
+ : 
+\lang arabic_arabi
+المَلِك
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(The king), 
+\lang arabic_arabi
+المُلْك
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(The kingdom)، 
+\lang arabic_arabi
+المَلَك
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(the angel)
 \end_layout
 
 \end_deeper
@@ -1324,15 +1616,111 @@ Collocated words
 
 \begin_deeper
 \begin_layout Itemize
-
+Suggest for 
 \lang arabic_arabi
-سميع : سميع عليم، سميع بصير 
-\end_layout
-
-\begin_layout Itemize
-
+سميع
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(all hearing) :
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
 \lang arabic_arabi
-الحمد: الحمد لله 
+سميع عليم
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(all hearing, all knowing) ، 
+\lang arabic_arabi
+سميع بصير
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(all hearing, all seeing)
 \end_layout
 
 \end_deeper
@@ -1346,10 +1734,7 @@ used to limit a keyword on only one of their meanings.
 
 \begin_deeper
 \begin_layout Itemize
-\begin_inset space ~
-\end_inset
-
-
+Suggest for 
 \series bold
 \lang arabic_arabi
 رب
@@ -2171,7 +2556,7 @@ Structural option
 \series default
 : since Quran is divided to parts () and the part to Hizbs and Hizb to Halfs
  ...
- till we get Ayas.There is also other structures of Quran such as to pages
+ till we get Ayahs.There is also other structures of Qur'an such as to pages
  ...etc.
 \end_layout
 
@@ -2951,7 +3336,7 @@ Translation: Then We made the seed a clot, then We made the clot a lump
 \begin_layout Enumerate
 
 \series bold
-Automatic diacritization : 
+Automatic vocalization : 
 \series default
 the absence of diacritics lead to the ambiguities that we’ve mentioned them
  in Problematic.
@@ -2962,26 +3347,17 @@ the absence of diacritics lead to the ambiguities that we’ve mentioned them
 
 \begin_deeper
 \begin_layout Itemize
+The phrase 
+\begin_inset Quotes sld
+\end_inset
+
 
 \lang arabic_arabi
-رسول من الله == رَسُول مِنَ اللهِ 
-\end_layout
 
-\end_deeper
-\begin_layout Enumerate
+\begin_inset Quotes srd
+\end_inset
 
-\series bold
-Entity Extraction:
-\series default
- this helps to retrieve Person; Date; Time; Distance; Number; Places , even
- if appeared as in a different format.
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Extract 
-\lang arabic_arabi
-ثلاثمائة وإزدادوا تسعا
+رسول من الله
 \family roman
 \series medium
 \shape up
@@ -3006,15 +3382,92 @@ Extract
 \uwave default
 \noun default
 \color inherit
-as (Time/number, 309)
+becomes after auto-vocalization 
+\begin_inset Quotes sld
+\end_inset
+
+
+\lang arabic_arabi
+رَسُول مِنَ اللهِ
+\lang english
+
+\begin_inset Quotes srd
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Entity Extraction:
+\series default
+ this helps to retrieve Person; Date; Time; Distance; Number; Places , even
+ if appeared as in a different format.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Extract 
+\lang arabic_arabi
+ثلاث مائة سنين وإزدادوا تسعا
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(three hundred years and exceeded by nine) as (Time/number, 309)
 \end_layout
 
 \begin_layout Itemize
 Extract 
 \lang arabic_arabi
 ببكة
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
 \lang english
- as (place, Mekka / 
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(at Bakkah) as (place, Mekka / 
 \lang arabic_arabi
 مكة
 \lang english
@@ -3022,7 +3475,30 @@ Extract
 \end_layout
 
 \begin_layout Itemize
-Extract 
+Extract
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
 \lang arabic_arabi
 كلمح البصر
 \family roman
@@ -3049,7 +3525,7 @@ Extract
 \uwave default
 \noun default
 \color inherit
-as (time unit, ??) 
+(as the twinkling of an eye) as (time unit, ??) 
 \end_layout
 
 \begin_layout Itemize
@@ -3068,7 +3544,8 @@ Extract
 \noun off
 \color none
 \lang english
- as (Size unit, ??)
+ 
+(atom's weight) as (Size unit, ??)
 \end_layout
 
 \begin_layout Itemize
@@ -3099,17 +3576,17 @@ Extract
 \uwave default
 \noun default
 \color inherit
-as (person, Mohammed)
+(O Prophet!) as (person, Mohammad)
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
 
 \series bold
-Proper nouns search (coreference resolution)
+Proper nouns search (co-reference resolution)
 \series default
-: lot of proper nouns are mentioned clearly in Quran but some of them are
- just referred to implecitly .
+: lot of proper nouns are mentioned clearly in Qur'an but some of them are
+ just referred to implicitly .
  This feature is to search for proper nouns however mentioned : explicitly
  or implicitly.
 \end_layout
@@ -3214,8 +3691,8 @@ Statistical System
 \series bold
 Unvocalized word frequency: 
 \series default
-this feature is about gathering the frequency of each word per ayahs ,per
- surahs , per hizbs.
+this feature is about gathering the frequency of each word per ayahs, per
+ surahs, per hizbs.
  
 \end_layout
 
@@ -3233,7 +3710,7 @@ How many words of
 \begin_inset Quotes erd
 \end_inset
 
- in Sura 
+ in Surah 
 \lang arabic_arabi
 "المجادلة"
 \lang english
@@ -3242,7 +3719,7 @@ How many words of
 
 \begin_layout Itemize
 What the first ten words which are the most frequently cited words in the
- whole Quran? 
+ whole Qur'an? 
 \end_layout
 
 \end_deeper
@@ -3359,7 +3836,7 @@ Sea/
 \begin_inset Quotes erd
 \end_inset
 
- and its derivations are mentioned in the whole Quran? the word 
+ and its derivations are mentioned in the whole Qur'an? the word 
 \begin_inset Quotes eld
 \end_inset
 
@@ -3378,15 +3855,15 @@ Seas/
 \begin_layout Enumerate
 
 \series bold
-Another Quranic units frequency: 
+Another Qur'anic units frequency: 
 \series default
 the statistics could be gathered based on many units otherwise the words
- like letters,ayas, Recitation marks...etc.
+ like letters, ayahs, Recitation marks...etc.
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-How many letters in the Sura 
+How many letters in the Surah 
 \begin_inset Quotes eld
 \end_inset
 
@@ -3406,7 +3883,7 @@ What's the longest Ayah?
 \end_layout
 
 \begin_layout Itemize
-How many Marks of Sajda in the whole Quran?
+How many Marks of Sajdah in the whole Qur'an?
 \end_layout
 
 \end_deeper

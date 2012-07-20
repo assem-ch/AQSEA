@@ -5,11 +5,7 @@
 \textclass IEEEtran
 \begin_preamble
 % for subfigures/subtables
-\ifCLASSOPTIONcompsoc
-\usepackage[caption=false,font=normalsize,labelfont=sf,textfont=sf]{subfig}
-\else
-\usepackage[caption=false,font=footnotesize]{subfig}
-\fi
+
 
 \date{} % to prevent date form printing
 \usepackage{setspace}
@@ -23,9 +19,12 @@
 \newfontfamily\arabicfont[Script=Arabic]{ArabeyesQr}  % for Quran Verses
 \newfontfamily\arabicfont[Script=Arabic, Scale=1.5]{Scheherazade} % for Arabic
 
-\newcommand{\Ayah}{\newfontfamily\arabicfont[Script=Arabic, Scale=1.5]{ArabeyesQr}}
+\newcommand{\Ayah}{\newfontfamily\arabicfont[Script=Arabic, Scale=1.2]{ArabeyesQr}}
 \end_preamble
 \use_default_options false
+\begin_modules
+fixltx2e
+\end_modules
 \maintain_unincluded_children false
 \language english
 \language_package default
@@ -41,13 +40,13 @@
 \font_sf_scale 100
 \font_tt_scale 100
 
-\graphics default
+\graphics xetex
 \default_output_format default
 \output_sync 0
 \bibtex_command default
 \index_command default
 \float_placement tbh
-\paperfontsize 9
+\paperfontsize default
 \spacing single
 \use_hyperref true
 \pdf_title "Advanced Search in Quran:  Classification & Proposition of All Possible Features"
@@ -81,10 +80,10 @@
 \end_index
 \secnumdepth 3
 \tocdepth 3
-\paragraph_separation indent
-\paragraph_indentation default
+\paragraph_separation skip
+\defskip medskip
 \quotes_language english
-\papercolumns 2
+\papercolumns 1
 \papersides 1
 \paperpagestyle default
 \tracking_changes false
@@ -104,6 +103,8 @@ Advanced Search in Quran: Classification & Proposition of All Possible Features
 \end_layout
 
 \begin_layout Author
+
+\size small
 Assem
 \begin_inset space ~
 \end_inset
@@ -146,7 +147,9 @@ Zerrouki
 
 \end_layout
 
-\begin_layout Special Paper Notice
+\begin_layout Address
+
+\size small
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -155,9 +158,6 @@ Zerrouki
 
 \end_inset
 
-
-\shape up
-\size normal
 
 \begin_inset script superscript
 
@@ -168,6 +168,10 @@ Zerrouki
 \end_inset
 
 National Higher School of Computer Science Algiers
+\begin_inset Newline newline
+\end_inset
+
+(L'Ecole nationale Supérieure d'Informatique - ESI) 
 \begin_inset Newline newline
 \end_inset
 
@@ -200,6 +204,10 @@ National Higher School of Computer Science Algiers
 \begin_inset Newline newline
 \end_inset
 
+(L'Ecole nationale Supérieure d'Informatique - ESI)
+\begin_inset Newline newline
+\end_inset
+
 Algeria
 \begin_inset Newline newline
 \end_inset
@@ -229,6 +237,10 @@ National Higher School of Computer Science Algiers
 \begin_inset Newline newline
 \end_inset
 
+(L'Ecole nationale Supérieure d'Informatique - ESI)
+\begin_inset Newline newline
+\end_inset
+
 Algeria
 \begin_inset Newline newline
 \end_inset
@@ -247,45 +259,27 @@ status open
 
 \end_inset
 
-Assem Chelli et al.
- : Advanced Search in Quran
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-left side}{right side
-\end_layout
-
-\end_inset
-
 
 \end_layout
 
-\end_inset
+\begin_layout Standard
+\align block
 
-
-\end_layout
-
-\begin_layout Abstract
-
-\series medium
+\series bold
 \shape italic
-\size normal
+\size small
+Abstract: 
+\series default
 The Quran is a sacred book to all Muslims which contains a variety of informatio
 n about all aspects of life: Scientific, Social, Historic and Political
  based knowledge.
- The Quran is extremly dynamic and consists of a unique structure within
+ The Quran is extremely dynamic and consists of a unique structure within
  a distinctive language.
  It contains an immense , vast range of information, which can only extracted
  in small parts.
  The printed indexes can’t help much since many search processes waste the
  time and the effort of the searcher.
- The simple search using exact query doesn’t offer realistic options and
+ The simple search using exact query does not offer realistic options and
  still highly inefficient to move toward the thematic search for example.
  Due to this limitation, the need to find a more practical method to query
  is evident.
@@ -295,21 +289,25 @@ n about all aspects of life: Scientific, Social, Historic and Political
  search features that are possible and helpful, this paper has been written
  to explain this point.
  It contains a listing for all search features that we have collected and
- a classification depending on the nature of feature
-\series default
-.
+ a classification depending on the nature of feature.
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
-\begin_layout Keywords
+\begin_layout Standard
 
-\series medium
-Search Features, Quran, Query, Arabic, Information Retrieval, Search engines
+\series bold
+\size footnotesize
+Keywords:
 \series default
-.
+ Search Features, Quran, Query, Arabic, Information Retrieval, Search engines.
 \end_layout
 
-\begin_layout Section
-Introduction
+\begin_layout Standard
+
+\size small
 \begin_inset Note Note
 status collapsed
 
@@ -337,7 +335,26 @@ Translation of Ayahs
  
 \end_layout
 
+\begin_layout Description
+
+\size small
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
+
+\series bold
+\size small
+1.
+ Introduction
+\end_layout
+
+\begin_layout Standard
+
+\size small
 Quran, in Arabic, means the read or the recitation.
  Muslim scholars define it by: the words of Allah revealed to His Prophet
  Muhammad, written in mushaf and transmitted by successive generations (
@@ -356,21 +373,23 @@ key "Meh73"
 
 \lang english
 .
- The Qur'an is also known by other names such as: Al-Furkān , Al-kitāb ,
+ The Quran is also known by other names such as: Al-Furkān , Al-kitāb ,
  Al-dhikr , Al-wahy and Al-rōuh .
  It is the sacred book of Muslims and the first reference to Islamic law.
  
 \end_layout
 
 \begin_layout Standard
-Due to the large amount of information held in the Qur'an, it has become
+
+\size small
+Due to the large amount of information held in the Quran, it has become
  extremely difficult for regular search engines to successfully extract
  key information.
  For example, When searching for a book a book related to English grammar,
  you’ll simply Google it, select a PDF and download it .that’s all! Search
  engines (like Google) are utilized generally on Latin letters and for searching
  general information of document like content, title, author…etc.
- However, searching through Qu'ranic text is a much more complex procedure
+ However, searching through a Quranic text is a much more complex procedure
  requiring a much more in depth solution as there is a lot of information
  that needs to be extracted to fulfill Quran scholar's needs.
  Before the creation of computer, Quran scholars were using printed lexicons
@@ -386,7 +405,9 @@ Due to the large amount of information held in the Qur'an, it has become
 \end_layout
 
 \begin_layout Standard
-The simple search using exact query doesn’t offer better options and still
+
+\size small
+The simple search using exact query does not offer better options and still
  inefficient to move toward Thematic search by example.
  Full text search is the new approach of search that replaced the sequential
  search and which is used in search engines
@@ -400,16 +421,18 @@ Full text search evolution
 \end_inset
 
 .
- Unfortunately, this approach isn’t applied yet on Quran.
+ Unfortunately, this approach is not applied yet on Quran.
  The question is why we need this approach? Why search engines? Do applications
- of seach in Quran really need to be implemented as search engines? The
+ of search in Quran really need to be implemented as search engines? The
  features of search that we’ll mention them in this paper will answer those
  questions.
  
 \end_layout
 
 \begin_layout Standard
-Our proposal is about design a retrieval system that fit the Quran search
+
+\size small
+Our proposal is about design a retrieval system that fits the Quran search
  needs.
  But to realize this objective, we must first list and classify all the
  search features that are possible and helpful.
@@ -421,6 +444,8 @@ Our proposal is about design a retrieval system that fit the Quran search
 \end_layout
 
 \begin_layout Standard
+
+\size small
 We’ll go through the problematic for a start.
  Secondly, we’ll set out an initial classification and list all the search
  features that we think that they are possible.
@@ -438,29 +463,52 @@ Furthermore, we’ll introduce the API of the project Alfanous - Quranic Search
  
 \end_layout
 
-\begin_layout Section
-Problematic
+\begin_layout Description
+
+\size small
+\begin_inset space ~
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
+
+\series bold
+\size small
+2.
+ Problematic
+\end_layout
+
+\begin_layout Standard
+
+\size small
 To clarify the vision about the problematic of this paper, we are describing
  the challenges that face the search in Quran: 
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 First, as a general search need;
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 Second, as an Arabic search challenge; 
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 Third, Quran as a special source of information.
  
 \end_layout
 
 \begin_layout Standard
+
+\size small
 We start explaining the first point, the search in Quran is by theory has
  the same challenges of search in any other documents.
  The search in documents has passed by different phases in its evolution
@@ -520,14 +568,9 @@ ref: Search engines highligh, pagunation
 \end_layout
 
 \begin_layout Standard
-Secondly, Quran’s language is considered as the classical Arabic
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Shah07"
 
-\end_inset
-
-.
+\size small
+Secondly, Quran’s language is considered as the classical Arabic.
  Arabic is a specific language because its morphology and orthography
 \begin_inset Note Note
 status collapsed
@@ -559,57 +602,13 @@ key "Alb09"
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 The word 
 \lang arabic_arabi
 الملك
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 \lang english
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-could be understood as
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
+ could be understood as 
 \lang arabic_arabi
 المَلَك
 \lang english
@@ -620,22 +619,13 @@ could be understood as
  (the king) or 
 \lang arabic_arabi
 المُلْك
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 \lang english
  (the kingdom)
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 The word 
 \lang arabic_arabi
 وعد
@@ -643,61 +633,17 @@ The word
  could be understood as 
 \lang arabic_arabi
 وَعَدَ
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 \lang english
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-(*he* promise) or 
+ (*he* promise) or 
 \lang arabic_arabi
 وَ+عَدَّ
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 \lang english
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-(and + *he* count)
+ (and + *he* count)
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 The word 
 \lang arabic_arabi
 وله
@@ -705,88 +651,25 @@ The word
  could be understood as 
 \lang arabic_arabi
 وَلَهَ
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 \lang english
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-(admire) or 
+ (admire) or 
 \lang arabic_arabi
 وَلِّ+هَّ
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 \lang english
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-( crown him ) or 
+ ( crown him ) or 
 \lang arabic_arabi
 وَ+لَ+هُ
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 \lang english
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-( and + he + has ) 
+ ( and + he + has ) 
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
+
+\size small
 Trying to resolve these problems as a generic Arabic problem is really hard
  since it has not linguistic resources to make strict lexical analyzers
 \begin_inset Note Note
@@ -804,7 +687,7 @@ ref:Arabic google the phrase
  lexical analyzers.
  Finally, we explain in this point what the specific challenges faced in
  search in order of the particular characteristic of Quran.
- El-Mus-haf , the book of Quran, is written on the Uthmani script .
+ the Mushaf , the book of Quran, is written on the Uthmani script .
  This last is full of recitation marks and spells some words in a different
  way than the standard way.
  By example, the word “
@@ -833,29 +716,41 @@ key "BnJ"
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 Main structure: Sura, Aya, word, letter.
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 Special emplacements: Sura's start, Sura's end.
  Aya's end.
  Sajdah, Waqf , Facilah;
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 Mushaf structure: page, thumn, rubu', nisf, hizb, juz';
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 Quran writing: sawāmit, harakāt, hamza, diacritics, signes of distinction
  between similar letters, phonetic signs;
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 Incorporeal structure: word, keyword, expression
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 Revelation: order, place, calender, cause, context...etc
 \lang french
 .
@@ -865,6 +760,8 @@ Revelation: order, place, calender, cause, context...etc
 \end_layout
 
 \begin_layout Standard
+
+\size small
 The users may need to search, filter results or group them based on one
  of those structures.
  There are many sciences related to Quran, named Quranic Sciences: Taffsir,
@@ -873,24 +770,42 @@ The users may need to search, filter results or group them based on one
 \end_layout
 
 \begin_layout Standard
+
+\size small
 Next, we’ll propose an initial classification for the search features that
  we have inspired from the problematic points.
  
 \end_layout
 
-\begin_layout Section
-Classification
+\begin_layout Description
+
+\size small
+\begin_inset space ~
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
+
+\series bold
+\size small
+3.
+ Classification
+\end_layout
+
+\begin_layout Standard
+
+\size small
 To make the listing of search features easier, we classified them in many
  classes based on their objectives.
  
 \end_layout
 
-\begin_layout Enumerate
+\begin_layout Itemize
 
 \series bold
+\size small
 Advanced Query
 \series default
 : This class contains the modifications on simple Query in order to give
@@ -899,9 +814,10 @@ Advanced Query
  
 \end_layout
 
-\begin_layout Enumerate
+\begin_layout Itemize
 
 \series bold
+\size small
 Output Improvement
 \series default
 : Those are to improve the results before showing it to users.
@@ -910,9 +826,10 @@ g...etc.
  
 \end_layout
 
-\begin_layout Enumerate
+\begin_layout Itemize
 
 \series bold
+\size small
 Suggestion Systems
 \series default
 : This class contains all options that aims to offer a suggestion that help
@@ -920,9 +837,10 @@ Suggestion Systems
  By example, suggest correction of misspelled keywords or suggest relative-words.
 \end_layout
 
-\begin_layout Enumerate
+\begin_layout Itemize
 
 \series bold
+\size small
 Linguistic Aspects
 \series default
 : This is about all features that are related to linguistic Aspects like
@@ -930,10 +848,11 @@ Linguistic Aspects
  
 \end_layout
 
-\begin_layout Enumerate
+\begin_layout Itemize
 
 \series bold
-Qur'anic Options
+\size small
+Quranic Options
 \series default
 : It’s related to the properties of the book and the information included
  inside.
@@ -941,9 +860,10 @@ Qur'anic Options
  in Othmani script full of diacritical symbols and structured in many ways.
 \end_layout
 
-\begin_layout Enumerate
+\begin_layout Itemize
 
 \series bold
+\size small
 Semantic Queries
 \series default
 : Semantic approach is about to allow the users to pose their queries in
@@ -951,9 +871,10 @@ Semantic Queries
  
 \end_layout
 
-\begin_layout Enumerate
+\begin_layout Itemize
 
 \series bold
+\size small
 Statistical System
 \series default
 : This class covers all the statistical needs of users.
@@ -961,16 +882,33 @@ Statistical System
 \end_layout
 
 \begin_layout Standard
+
+\size small
 This is an initial classification; we have to improve it for a well exploit
  of all possible search features.
  
 \end_layout
 
-\begin_layout Section
-Proposals
+\begin_layout Description
+
+\size small
+\begin_inset space ~
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
+
+\series bold
+\size small
+4.
+ Proposals
+\end_layout
+
+\begin_layout Standard
+
+\size small
 In this point, we enlist all possible search features based on the classificatio
 n we mentioned before.
  These entire features express a search need: general, related to Arabic
@@ -979,66 +917,66 @@ n we mentioned before.
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 Classic & Semantic search engines: Google, 
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 Arabic search engines: Taya it, 
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 Quranic search tools: Zekr application, al-monaqeb alqurany, 
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 Indexing/Search programming libraries: Whoosh, Lucene 
 \end_layout
 
 \begin_layout Itemize
-Quranic Paper lexicons: The indexed mu'jam of words of the Holy Quran
-\begin_inset Foot
-status collapsed
 
-\begin_layout Plain Layout
- 
 \size small
+Quranic Paper lexicons: The indexed mu'jam of words of the Holy Quran (
 \lang arabic_arabi
  المعجم المفهرس لألفاظ القرآن الكريم
-\series bold
-\size default
 \lang english
- 
-\end_layout
-
-\end_inset
-
-by
+) by
 \series bold
  
 \series default
 \noun on
-Mohammed Fouad Abd El-bāki
+Mohammad Fouad Abd El-bāki
 \end_layout
 
 \begin_layout Standard
+
+\size small
 We have manipulated those ideas to fit the context of Arabic and Quran.
  There are many features that are totally new , we propose them to fulfill
  a search need or resolve a specific problem.
  In addition to simple search, these are our proposals:
 \end_layout
 
-\begin_layout Enumerate
+\begin_layout Standard
 
 \series bold
-Advanced Query
+\size small
+4.1 Advanced Query
 \end_layout
 
-\begin_deeper
 \begin_layout Enumerate
 \paragraph_spacing onehalf
 \align block
 
 \series bold
+\size small
 Fielded search
 \series default
 : uses field name in the query to search in a specific field.
@@ -1048,6 +986,8 @@ Fielded search
 \begin_deeper
 \begin_layout Itemize
 \align block
+
+\size small
 sura_name =
 \series bold
  
@@ -1063,6 +1003,7 @@ sura_name =
 \begin_layout Enumerate
 
 \series bold
+\size small
 \color black
 Logical relations
 \series default
@@ -1074,34 +1015,13 @@ Logical relations
 
 \begin_deeper
 \begin_layout Itemize
+
+\size small
 (
 \lang arabic_arabi
 الصلاة
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 \lang english
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-AND_NOT 
+ AND_NOT 
 \lang arabic_arabi
 الزكاة
 \lang english
@@ -1114,6 +1034,7 @@ AND_NOT
 \begin_layout Enumerate
 
 \series bold
+\size small
 Phrase search
 \series default
 : is a type of search that allows users to search for documents containing
@@ -1122,6 +1043,8 @@ Phrase search
 
 \begin_deeper
 \begin_layout Itemize
+
+\size small
 “ 
 \lang arabic_arabi
 الحمد لله
@@ -1137,6 +1060,7 @@ Phrase search
 \begin_layout Enumerate
 
 \series bold
+\size small
 Interval search: 
 \series default
 used to search an interval of values in the numerical field.
@@ -1145,6 +1069,8 @@ used to search an interval of values in the numerical field.
 
 \begin_deeper
 \begin_layout Itemize
+
+\size small
 Ayah_number:[1 to 5] 
 \end_layout
 
@@ -1152,11 +1078,12 @@ Ayah_number:[1 to 5]
 \begin_layout Enumerate
 
 \series bold
+\size small
 Regular expressions (Jokers): 
 \series default
 used to search a set of words that share some letters.
  This feature can be used to search a part of a word.
- In latin , there is two Jokers used largely : ? replaces one letter, *
+ In Latin , there is two Jokers used largely : ? replaces one letter, *
  replaces an undefined number of letters.
  These jokers are inefficient in Arabic because the existence of vocalization
  symbols which they are not letters, and Hamza(
@@ -1179,36 +1106,17 @@ ref: Hamza different emplacement
 \begin_deeper
 \begin_layout Itemize
 
-\series bold
+\size small
 \begin_inset space ~
 \end_inset
 
  
 \lang arabic_arabi
 ب؟طة
-\family roman
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\series bold
 \lang english
  
-\family default
 \series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
 to generate 
 \lang arabic_arabi
 بسطة
@@ -1216,17 +1124,6 @@ to generate
 , 
 \lang arabic_arabi
 بصطة
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 \lang english
  
 \end_layout
@@ -1234,13 +1131,14 @@ to generate
 \begin_layout Itemize
 
 \series bold
+\size small
 \begin_inset space ~
 \end_inset
 
 
+\series default
 \lang arabic_arabi
 *نبي*
-\series default
 \lang english
  to generate 
 \lang arabic_arabi
@@ -1255,18 +1153,6 @@ to generate
 الأنبياء
 \lang english
  ...
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
  
 \end_layout
 
@@ -1274,6 +1160,7 @@ to generate
 \begin_layout Enumerate
 
 \series bold
+\size small
 Boosting:
 \series default
  used to boost the relevance factor of any keywords.
@@ -1282,56 +1169,60 @@ Boosting:
 \begin_deeper
 \begin_layout Itemize
 
+\size small
+\begin_inset space ~
+\end_inset
+
+
 \lang arabic_arabi
-سميع ^
-\lang english
- 2 
-\lang arabic_arabi
-بصير
+سميع ^ 2 بصير
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
 
 \series bold
+\size small
 Combining features: 
 \series default
 search using a combination of the previous elementary features.
 \end_layout
 
+\begin_deeper
 \begin_layout Itemize
+
+\size small
 \begin_inset space ~
 \end_inset
 
  
 \lang arabic_arabi
 *ملَك
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 \lang english
  (combining Jokers with partial vocalization) 
 \end_layout
 
-\end_deeper
-\begin_layout Enumerate
+\begin_deeper
+\begin_layout Standard
 
-\series bold
-Output Improvements
+\size small
+\SpecialChar \textcompwordmark{}
+
 \end_layout
 
-\begin_deeper
+\end_deeper
+\end_deeper
+\begin_layout Standard
+
+\series bold
+\size small
+4.2 Output Improvements
+\end_layout
+
 \begin_layout Enumerate
 
 \series bold
+\size small
 Pagination: 
 \series default
 dividing the results on pages.
@@ -1339,6 +1230,8 @@ dividing the results on pages.
 
 \begin_deeper
 \begin_layout Itemize
+
+\size small
 10, 20,50… results per page 
 \end_layout
 
@@ -1346,6 +1239,7 @@ dividing the results on pages.
 \begin_layout Enumerate
 
 \series bold
+\size small
 Sorting
 \series default
 : sort the results by various criteria such as:
@@ -1353,83 +1247,69 @@ Sorting
 
 \begin_deeper
 \begin_layout Itemize
+
+\size small
 Relevance
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 Mushaf order 
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 Revelation order 
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 Numerical order of numeric fields 
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 Alphabetical or Abjad order of alphabetic fields 
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 A combination of the previous orders 
 \end_layout
 
 \begin_layout Standard
+
+\size small
 for the alphabetical order ,we must consider the real order of:
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 Hamza forms : 
 \lang arabic_arabi
 ؤ ئ ء أ 
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 Ta’ forms: 
 \lang arabic_arabi
 ة ت 
 \end_layout
 
 \begin_layout Itemize
-Alef forms :
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
+
+\size small
+Alef forms : 
 \lang arabic_arabi
 ى ا
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 \lang english
  
 \end_layout
@@ -1438,6 +1318,7 @@ Alef forms :
 \begin_layout Enumerate
 
 \series bold
+\size small
 Highlight:
 \series default
  used for distinction of searched keywords in Ayah.
@@ -1446,22 +1327,26 @@ Highlight:
 \begin_deeper
 \begin_layout Itemize
 
+\size small
+\begin_inset space ~
+\end_inset
+
+
 \lang arabic_arabi
 الحمد 
+\series bold
+*لله*
+\series default
+ رب العالمين
 \lang english
-<style>
-\lang arabic_arabi
-لله 
-\lang english
-</style>
-\lang arabic_arabi
-رب العالمين
+ 
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
 
 \series bold
+\size small
 Real time output
 \series default
 : used to avoid the time of user waiting, and show the results directly
@@ -1471,6 +1356,7 @@ Real time output
 \begin_layout Enumerate
 
 \series bold
+\size small
 Results grouping:
 \series default
  the criteria can be used for grouping are: 
@@ -1478,6 +1364,8 @@ Results grouping:
 
 \begin_deeper
 \begin_layout Itemize
+
+\size small
 by allegorical Ayahs 
 \begin_inset Note Note
 status collapsed
@@ -1492,22 +1380,32 @@ status collapsed
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 by Surahs
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 by subjects
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 by taffsir dependency 
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 by revelation events
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 by Quranic parables
 \end_layout
 
@@ -1515,6 +1413,7 @@ by Quranic parables
 \begin_layout Enumerate
 
 \series bold
+\size small
 Uthmani script with full diacritical marks: 
 \series default
 Quran text is written on mus-haf in a Uthmani script with full diacritics.
@@ -1524,6 +1423,8 @@ Quran text is written on mus-haf in a Uthmani script with full diacritics.
 
 \begin_deeper
 \begin_layout Itemize
+
+\size small
 \begin_inset ERT
 status open
 
@@ -1542,23 +1443,27 @@ Ayah
  
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
+
+\size small
 \SpecialChar \textcompwordmark{}
 
 \end_layout
 
 \end_deeper
 \end_deeper
-\begin_layout Enumerate
+\begin_layout Standard
 
 \series bold
-Suggestion Systems
+\size small
+4.3 Suggestion Systems
 \end_layout
 
-\begin_deeper
 \begin_layout Enumerate
 
 \series bold
+\size small
 Vocalized spell correction
 \series default
 : offers alternatives for keywords when misspelled or appeared with a different
@@ -1568,14 +1473,23 @@ Vocalized spell correction
 \begin_deeper
 \begin_layout Itemize
 
+\size small
+Suggest for 
 \lang arabic_arabi
-أبرَاهَام: إبْرَاهِيم 
+أبرَاهَام
+\lang english
+ (Abraham): 
+\lang arabic_arabi
+إبْرَاهِيم
+\lang english
+ (Ibrahim) as mentioned in Qur'an
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
 
 \series bold
+\size small
 Semantically related keywords (Ontology-Based)
 \series default
  : used as hints, generally based on domain ontologies
@@ -1584,15 +1498,31 @@ Semantically related keywords (Ontology-Based)
 \begin_deeper
 \begin_layout Itemize
 
+\size small
+Suggest for 
 \lang arabic_arabi
-يعقوب: يوسف، الأسباط، نبي...
- 
+يعقوب
+\lang english
+ (Yaqoub) : 
+\lang arabic_arabi
+يوسف
+\lang english
+ (Yusuf), 
+\lang arabic_arabi
+الأسباط
+\lang english
+ (Asbat), 
+\lang arabic_arabi
+نبي
+\lang english
+ (Prophet) 
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
 
 \series bold
+\size small
 Different vocalization
 \series default
 : suggest all the possible vocalizations sorted by the frequencies.
@@ -1601,15 +1531,31 @@ Different vocalization
 \begin_deeper
 \begin_layout Itemize
 
+\size small
+Suggest for 
 \lang arabic_arabi
-الملك : المَلِك ، المُلْك، المَلَك ...
- 
+الملك
+\lang english
+ : 
+\lang arabic_arabi
+المَلِك
+\lang english
+ (The king), 
+\lang arabic_arabi
+المُلْك
+\lang english
+ (The kingdom)، 
+\lang arabic_arabi
+المَلَك
+\lang english
+ (the angel)
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
 
 \series bold
+\size small
 Collocated words
 \series default
 : provides a completion based on the collocation statistics.
@@ -1618,20 +1564,27 @@ Collocated words
 \begin_deeper
 \begin_layout Itemize
 
+\size small
+Suggest for 
 \lang arabic_arabi
-سميع : سميع عليم، سميع بصير 
-\end_layout
-
-\begin_layout Itemize
-
+سميع
+\lang english
+ (all hearing) : 
 \lang arabic_arabi
-الحمد: الحمد لله 
+سميع عليم
+\lang english
+ (all hearing, all knowing) ، 
+\lang arabic_arabi
+سميع بصير
+\lang english
+ (all hearing, all seeing)
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
 
 \series bold
+\size small
 Different significations: 
 \series default
 used to limit a keyword on only one of their meanings.
@@ -1639,10 +1592,9 @@ used to limit a keyword on only one of their meanings.
 
 \begin_deeper
 \begin_layout Itemize
-\begin_inset space ~
-\end_inset
 
-
+\size small
+Suggest for 
 \series bold
 \lang arabic_arabi
 رب
@@ -1667,30 +1619,36 @@ nd meaning (master -
 )
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
+
+\size small
 \SpecialChar \textcompwordmark{}
 
 \end_layout
 
 \end_deeper
 \end_deeper
-\begin_layout Enumerate
+\begin_layout Standard
 
 \series bold
-Linguistic Aspects
+\size small
+4.4 Linguistic Aspects
 \end_layout
 
-\begin_deeper
 \begin_layout Enumerate
 
 \series bold
+\size small
 Partial vocalization search:
 \series default
  gives user the opportunity to specify some diacritics and not all.
 \end_layout
 
 \begin_deeper
-\begin_layout Enumerate
+\begin_layout Itemize
+
+\size small
 _
 \lang arabic_arabi
 مـَلـك
@@ -1712,60 +1670,15 @@ _
 \begin_layout Enumerate
 
 \series bold
+\size small
 Multi-level derivation
 \series default
 : the Arabic words derivations can be divided to four levels : exact word
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-(eg: 
+ (eg: 
 \lang arabic_arabi
 فأسقيناكموه
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 \lang english
  - 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-
 \begin_inset Quotes sld
 \end_inset
 
@@ -1773,115 +1686,25 @@ so We give it to you to drink of
 \begin_inset Quotes srd
 \end_inset
 
-), Lemma (eg:
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
+), Lemma (eg: 
 \lang arabic_arabi
 أسقينا
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 \lang english
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-- We give drink ) , Stem (eg: 
+ - We give drink ) , Stem (eg: 
 \lang arabic_arabi
 أسقى
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 \lang english
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-- give drink), Root (eg: 
+ - give drink), Root (eg: 
 \lang arabic_arabi
 سقي
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 \lang english
- ) 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-.
+ ) .
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
+
+\size small
 (word:
 \lang arabic_arabi
 سقي
@@ -1898,6 +1721,8 @@ so We give it to you to drink of
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 (Word: 
 \lang arabic_arabi
 أسقينا
@@ -1905,37 +1730,15 @@ so We give it to you to drink of
 , level: lemma) to find 
 \lang arabic_arabi
 وَأَسْقَيْنَاكُمْ , لَأَسْقَيْنَاهُمْ, فَأَسْقَيْنَاكُمُوهُ
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 \lang english
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-.
+ .
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
 
 \series bold
+\size small
 Specific-derivations
 \series default
 : this is specification of the previous feature .Since Arabic is fully flexional
@@ -1944,84 +1747,17 @@ Specific-derivations
 
 \begin_deeper
 \begin_layout Itemize
+
+\size small
 Conjugation in Past tense of 
 \lang arabic_arabi
 قال
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 \lang english
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-(say) to find
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
+ (say) to find 
 \lang arabic_arabi
 قالت
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 \lang english
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-(*she* said), 
+ (*she* said), 
 \lang arabic_arabi
 قال
 \lang english
@@ -2038,61 +1774,17 @@ Conjugation in Past tense of
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 Conjugation in Imperative tense of 
 \lang arabic_arabi
 قال
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 \lang english
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-(say) to find 
+ (say) to find 
 \lang arabic_arabi
 قل
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 \lang english
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-(say! , singular, masculine) , 
+ (say! , singular, masculine) , 
 \lang arabic_arabi
 قولوا
 \lang english
@@ -2104,6 +1796,7 @@ Conjugation in Imperative tense of
 \begin_layout Enumerate
 
 \series bold
+\size small
 Word properties embedded query:
 \series default
  offers a smart way to handle words families by filtering using a set of
@@ -2113,6 +1806,8 @@ Word properties embedded query:
 
 \begin_deeper
 \begin_layout Itemize
+
+\size small
 {root:
 \series bold
  
@@ -2120,30 +1815,8 @@ Word properties embedded query:
 ملك
 \series default
 \lang english
-, type:
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
+, type: 
 \series bold
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
 noun
 \series default
 , number: 
@@ -2157,6 +1830,7 @@ singular
 \begin_layout Enumerate
 
 \series bold
+\size small
 Numerical values substitution:
 \series default
  this helps to retrieve numbers, even if appeared as words.
@@ -2164,63 +1838,20 @@ Numerical values substitution:
 
 \begin_deeper
 \begin_layout Itemize
-309 replaces
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
+
+\size small
+309 replaces 
 \lang arabic_arabi
 ثلاثمائة وتسعة
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 \lang english
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-(three hundreds and nine)
+ (three hundreds and nine)
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
 
 \series bold
+\size small
 Consideration/Ignoring spell faults:
 \series default
  especially for the letters that usually misspelled like Hamza(
@@ -2234,6 +1865,8 @@ Consideration/Ignoring spell faults:
 
 \begin_deeper
 \begin_layout Itemize
+
+\size small
 \begin_inset space ~
 \end_inset
 
@@ -2245,22 +1878,12 @@ Consideration/Ignoring spell faults:
 \lang arabic_arabi
 مؤصدة
 \lang english
- 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-(Ignore Hamza form)
+ (Ignore Hamza form)
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 \begin_inset space ~
 \end_inset
 
@@ -2274,6 +1897,8 @@ Consideration/Ignoring spell faults:
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 \begin_inset space ~
 \end_inset
 
@@ -2290,6 +1915,7 @@ Consideration/Ignoring spell faults:
 \begin_layout Enumerate
 
 \series bold
+\size small
 Uthmani writing way:
 \series default
  offers the user the ability of writing words not as it appeared in Uthmani
@@ -2298,6 +1924,8 @@ Uthmani writing way:
 
 \begin_deeper
 \begin_layout Itemize
+
+\size small
 \begin_inset space ~
 \end_inset
 
@@ -2313,6 +1941,8 @@ Uthmani writing way:
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 \begin_inset space ~
 \end_inset
 
@@ -2331,6 +1961,7 @@ Uthmani writing way:
 \begin_layout Enumerate
 
 \series bold
+\size small
 Resolving pronoun references: 
 \series default
 Pronouns usually refer to other words, called their antecedents because
@@ -2341,27 +1972,51 @@ Pronouns usually refer to other words, called their antecedents because
 \begin_deeper
 \begin_layout Itemize
 
+\size small
+In the phrase 
+\begin_inset Quotes eld
+\end_inset
+
+
 \lang arabic_arabi
-لا اله إلا هو, هو ⇤ الله
+لا اله إلا هو
+\lang english
+
+\begin_inset Quotes erd
+\end_inset
+
+ (there is no god but He), 
+\lang arabic_arabi
+هو
+\lang english
+ (He) here refer definitely to 
+\lang arabic_arabi
+الله
+\lang english
+ (Allah)
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
+
+\size small
 \SpecialChar \textcompwordmark{}
 
 \end_layout
 
 \end_deeper
 \end_deeper
-\begin_layout Enumerate
+\begin_layout Standard
 
 \series bold
-Quranic Options
+\size small
+4.5 Quranic Options
 \end_layout
 
-\begin_deeper
 \begin_layout Enumerate
 
 \series bold
+\size small
 Recitations marks retrieving:
 \series default
  helpful for Tajweed scholars.
@@ -2369,10 +2024,14 @@ Recitations marks retrieving:
 
 \begin_deeper
 \begin_layout Itemize
+
+\size small
 Juncture_exist: YES
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 Sajdah_type:
 \series bold
  
@@ -2384,6 +2043,7 @@ Obligatory
 \begin_layout Enumerate
 
 \series bold
+\size small
 Structural option
 \series default
 : since Quran is divided to parts and the part to Hizbs and Hizb to Halfs
@@ -2392,28 +2052,28 @@ Structural option
  ...etc.
 \end_layout
 
+\begin_deeper
 \begin_layout Itemize
 
-\lang arabic_arabi
-صفحة:
-\lang english
- 1 
+\size small
+Page: 1 
 \end_layout
 
 \begin_layout Itemize
 
-\lang arabic_arabi
-حزب:
+\size small
+Hizb: 
 \numeric on
-\lang english
 60
 \numeric off
  
 \end_layout
 
+\end_deeper
 \begin_layout Enumerate
 
 \series bold
+\size small
 Translation embedded search: 
 \series default
 helps users to search using words translations to other languages instead
@@ -2422,6 +2082,8 @@ helps users to search using words translations to other languages instead
 
 \begin_deeper
 \begin_layout Itemize
+
+\size small
 { text: mercy, lang: english , author: shekir }
 \end_layout
 
@@ -2429,6 +2091,7 @@ helps users to search using words translations to other languages instead
 \begin_layout Enumerate
 
 \series bold
+\size small
 Allegorical verses (
 \lang arabic_arabi
 المتشابهات
@@ -2450,6 +2113,8 @@ status collapsed
 
 \begin_deeper
 \begin_layout Itemize
+
+\size small
 Allegories of {
 \lang arabic_arabi
 الرحمن
@@ -2469,31 +2134,8 @@ Allegories of {
 There are 31 exact similitudes in surah 
 \lang arabic_arabi
 الرحمن
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 \lang english
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-, ayahs number : 13, 16, 18, 21, 23, 25, 28, 30, 32, 34, 36, 38, 40, 42,
+ , ayahs number : 13, 16, 18, 21, 23, 25, 28, 30, 32, 34, 36, 38, 40, 42,
  45, 47 , 49, 51, 53, 55, 57, 59, 61, 63, 65, 67, 69, 71, 73, 75, 77.
 \end_layout
 
@@ -2501,6 +2143,7 @@ There are 31 exact similitudes in surah
 \begin_layout Enumerate
 
 \series bold
+\size small
 Parables (
 \lang arabic_arabi
 الأمثال
@@ -2522,6 +2165,8 @@ def of mathal qurany]
 
 \begin_deeper
 \begin_layout Itemize
+
+\size small
 Parable-in-Sura: 
 \lang arabic_arabi
 البقرة
@@ -2553,23 +2198,27 @@ Translation: Their parable is like the parable of one who kindled a fire,
  and left them in utter darkness-- they do not see.
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
+
+\size small
 \SpecialChar \textcompwordmark{}
 
 \end_layout
 
 \end_deeper
 \end_deeper
-\begin_layout Enumerate
+\begin_layout Standard
 
 \series bold
-Semantic Queries
+\size small
+4.6 Semantic Queries
 \end_layout
 
-\begin_deeper
 \begin_layout Enumerate
 
 \series bold
+\size small
 Semantically related words
 \series default
 : there are several different kinds of semantic relations: Synonymy, Antonymy,
@@ -2588,6 +2237,8 @@ status open
 
 \begin_deeper
 \begin_layout Itemize
+
+\size small
 Syn(
 \lang arabic_arabi
 جنة
@@ -2600,6 +2251,8 @@ Syn(
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 Ant( 
 \lang arabic_arabi
 جنة
@@ -2612,6 +2265,8 @@ Ant(
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 Hypo( 
 \lang arabic_arabi
 جنة
@@ -2623,15 +2278,11 @@ Hypo(
  …
 \end_layout
 
-\begin_layout Itemize
-...
- 
-\end_layout
-
 \end_deeper
 \begin_layout Enumerate
 
 \series bold
+\size small
 Natural questions:
 \series default
  this means to offer the option of forming the search query as a form of
@@ -2639,283 +2290,51 @@ Natural questions:
  The most used Arabic question words are: 
 \lang arabic_arabi
 هل؟
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 \lang english
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-(is it?),
+ (is it?),
 \lang arabic_arabi
  من؟
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 \lang english
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-(who?), 
+ (who?), 
 \lang arabic_arabi
 ما؟
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 \lang english
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-(what?), 
+ (what?), 
 \lang arabic_arabi
 أين؟
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 \lang english
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-(where?), 
+ (where?), 
 \lang arabic_arabi
 متى؟
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 \lang english
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-(when?), 
+ (when?), 
 \lang arabic_arabi
 لم؟
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 \lang english
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-(why?), 
+ (why?), 
 \lang arabic_arabi
 أيّ؟
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 \lang english
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-(which?), 
+ (which?), 
 \lang arabic_arabi
 لمن؟
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 \lang english
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-(whose?), 
+ (whose?), 
 \lang arabic_arabi
 كيف؟
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 \lang english
- (how?),
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
- 
+ (how?), 
 \lang arabic_arabi
 كم؟
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 \lang english
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-(how much/often?).
+ (how much/often?).
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-Who are the prophets? (
-\lang arabic_arabi
-من هم الأنبياء؟
-\lang english
-)
+
+\size small
+Who are the prophets? 
 \begin_inset Newline newline
 \end_inset
 
@@ -2942,14 +2361,16 @@ Translation: Surely We have revealed to you as We revealed to Nuh, and the
  prophets after him, and We revealed to Ibrahim and Ismail and Ishaq and
  Yaqoub and the tribes, and Isa and Ayub and Yunus and Haroun and Sulaiman
  and We gave to Dawood
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
-What is Al-hottamat? (
-\lang arabic_arabi
-ما هي الحطمة؟
-\lang english
-)
+
+\size small
+What is Al-hottamat? 
 \begin_inset Newline newline
 \end_inset
 
@@ -2970,14 +2391,16 @@ Surah:
 
 \lang english
 Translation: It is the fire kindled by Allah
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
-Where was Rome defeated?(
-\lang arabic_arabi
-أين غلبت/هزمت الروم؟
-\lang english
-)
+
+\size small
+Where was Rome defeated?
 \lang arabic_arabi
 
 \begin_inset Newline newline
@@ -3006,14 +2429,16 @@ Surah:
 \end_inset
 
 Translation: In a near land, and they, after being vanquished, shall overcome,
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
-How much of time did People of Cave stay? (
-\lang arabic_arabi
-كم مكث أصحاب الكهف؟
-\lang english
-) 
+
+\size small
+How much of time did People of Cave stay? 
 \lang arabic_arabi
 
 \begin_inset Newline newline
@@ -3040,14 +2465,16 @@ Surah:
 
 Translation: And they remained in their cave three hundred years and (some)
  add (another) nine.
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
-When is the Day of Resurrection? (
-\lang arabic_arabi
-متى يوم القيامة؟
-\lang english
-) 
+
+\size small
+When is the Day of Resurrection? 
 \begin_inset Newline newline
 \end_inset
 
@@ -3070,14 +2497,16 @@ Surah:
 
 Translation: Men ask you about the hour; say: The knowledge of it is only
  with Allah, and what will make you comprehend that the hour may be nigh.
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
-How has the embryo be formed? (
-\lang arabic_arabi
-كيف يتشكّل الجنين؟
-\lang english
-)
+
+\size small
+How has the embryo be formed? 
 \lang arabic_arabi
 
 \begin_inset Newline newline
@@ -3107,13 +2536,18 @@ Translation: Then We made the seed a clot, then We made the clot a lump
  of flesh, then We made (in) the lump of flesh bones, then We clothed the
  bones with flesh, then We caused it to grow into another creation, so blessed
  be Allah, the best of the creators.
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
 
 \series bold
-Automatic diacritization : 
+\size small
+Automatic vocalization : 
 \series default
 the absence of diacritics lead to the ambiguities that we have mentioned
  them in Problematic.
@@ -3125,14 +2559,39 @@ the absence of diacritics lead to the ambiguities that we have mentioned
 \begin_deeper
 \begin_layout Itemize
 
+\size small
+The phrase 
+\begin_inset Quotes sld
+\end_inset
+
+
 \lang arabic_arabi
-رسول من الله == رَسُول مِنَ اللهِ 
+
+\begin_inset Quotes srd
+\end_inset
+
+رسول من الله
+\lang english
+ becomes after auto-vocalization 
+\begin_inset Quotes sld
+\end_inset
+
+
+\lang arabic_arabi
+رَسُول مِنَ اللهِ
+\lang english
+
+\begin_inset Quotes srd
+\end_inset
+
+
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
 
 \series bold
+\size small
 Proper nouns search
 \series default
 : lot of  proper nouns are mentions clearly in Quran but some of them are
@@ -3144,55 +2603,93 @@ Proper nouns search
 \begin_deeper
 \begin_layout Itemize
 
+\size small
+Benyamin ( 
 \lang arabic_arabi
-بنيامين؟
+بنيامين
+\lang english
+ ) 
+\lang arabic_arabi
+
 \begin_inset Newline newline
 \end_inset
 
- [ إِذْ قَالُوا لَيُوسُفُ 
+
+\lang english
+Surah: 
+\lang arabic_arabi
+المؤمنون
+\lang english
+ , Ayah: 41 
+\begin_inset Newline newline
+\end_inset
+
+
+\lang arabic_arabi
+[ إِذْ قَالُوا لَيُوسُفُ 
 \series bold
 وَأَخُوه
 \series default
-ُ أَحَبُّ إِلَى أَبِينَا مِنَّا وَنَحْنُ عُصْبَةٌ إِنَّ أَبَانَا لَفِي ضَلَالٍ
- مُبِينٍ] - المؤمنون 
+ُ أَحَبُّ إِلَي أَبِينَا مِنَّا وَنَحْنُ عُصْبَةٌ إِنَّ أَبَانَا لَفِي ضَلَالٍ
+ مُبِينٍ] 
 \lang english
-14 
+
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
 
+\size small
+Abu-Bakr ( 
 \lang arabic_arabi
-أبو بكر/ الصديق؟ 
+أبو بكر/ الصديق
+\lang english
+ )
+\lang arabic_arabi
+
 \begin_inset Newline newline
 \end_inset
 
-[ثَانِيَ 
+
 \lang english
-اث
+Surah: 
 \lang arabic_arabi
-ْنَيْنِ إِذْ هُمَا فِي الْغَارِ إِذْ يَقُولُ لِصَاحِبِهِ لَا تَحْزَنْ إِنَّ
- اللَّـهَ مَعَنَا ] - التوبة 
+التوبة
 \lang english
-40 
+ , Ayah: 40
+\begin_inset Newline newline
+\end_inset
+
+
+\lang arabic_arabi
+[ثَانِيَ اثْنَيْنِ إِذْ هُمَا فِي الْغَارِ إِذْ يَقُولُ لِصَاحِبِهِ لَا
+ تَحْزَنْ إِنَّ اللَّـهَ مَعَنَا ] 
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
+
+\size small
 \SpecialChar \textcompwordmark{}
 
 \end_layout
 
 \end_deeper
 \end_deeper
-\begin_layout Enumerate
+\begin_layout Standard
 
 \series bold
-Statistical System
+\size small
+4.7 Statistical System
 \end_layout
 
-\begin_deeper
 \begin_layout Enumerate
 
 \series bold
+\size small
 Unvocalized word frequency: 
 \series default
 this feature is about gathering the frequency of each word per ayahs ,per
@@ -3202,6 +2699,8 @@ this feature is about gathering the frequency of each word per ayahs ,per
 
 \begin_deeper
 \begin_layout Itemize
+
+\size small
 How many words of 
 \begin_inset Quotes eld
 \end_inset
@@ -3222,6 +2721,8 @@ How many words of
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 What the first ten words which are the most frequently cited words in the
  whole Quran? 
 \end_layout
@@ -3230,96 +2731,29 @@ What the first ten words which are the most frequently cited words in the
 \begin_layout Enumerate
 
 \series bold
+\size small
 Vocalized word frequency: 
 \series default
 the same as the previous feature but with consideration of diacritics.that
  will make the difference for instance between 
 \lang arabic_arabi
 مِنْ
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 \lang english
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-(from, particle), 
+ (from, particle), 
 \lang arabic_arabi
 مَنْ
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 \lang english
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-(who, noun) and 
+ (who, noun) and 
 \lang arabic_arabi
 مَنًََّ
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 \lang english
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-(reproach, verb).
+ (reproach, verb).
 \end_layout
 
 \begin_layout Enumerate
 
 \series bold
+\size small
 Root/Stem/Lemma frequency: 
 \series default
 the same as the previous feature but use Root, Stem or Lemma as unit of
@@ -3328,6 +2762,8 @@ the same as the previous feature but use Root, Stem or Lemma as unit of
 
 \begin_deeper
 \begin_layout Itemize
+
+\size small
 How many the word of 
 \begin_inset Quotes eld
 \end_inset
@@ -3355,6 +2791,7 @@ Seas/
 \begin_layout Enumerate
 
 \series bold
+\size small
 Another Quranic units frequency: 
 \series default
 the statistics could be gathered based on many units otherwise the words
@@ -3363,6 +2800,8 @@ the statistics could be gathered based on many units otherwise the words
 
 \begin_deeper
 \begin_layout Itemize
+
+\size small
 How many letters in the Sura 
 \begin_inset Quotes eld
 \end_inset
@@ -3379,10 +2818,14 @@ How many letters in the Sura
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 What's the longest Ayah?
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 How many Marks of Sajda in the whole Quran?
 \begin_inset Note Note
 status collapsed
@@ -3398,13 +2841,27 @@ Listing Collocated words:
 
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+
+\size small
+\SpecialChar \textcompwordmark{}
+
+\end_layout
+
 \end_deeper
 \end_deeper
-\begin_layout Section
-Related Works
+\begin_layout Standard
+
+\series bold
+\size small
+5.
+ Related Works
 \end_layout
 
 \begin_layout Standard
+
+\size small
 There is lot of web applications and softwares that offer the service of
  search in Quran but most of them are simple search using exact words.
  We’ll mention some applications and websites that implemented some special
@@ -3413,10 +2870,14 @@ There is lot of web applications and softwares that offer the service of
 \end_layout
 
 \begin_layout Paragraph*
+
+\size small
 Alawfa 
 \end_layout
 
 \begin_layout Standard
+
+\size small
 is a website that offers search in Quran and Hadith.
  He has a fast retrieving method.
  It offers the highlight, pagination.
@@ -3435,10 +2896,14 @@ key "Alawfa"
 \end_layout
 
 \begin_layout Paragraph*
+
+\size small
 Al-Monaqeb-Alqurany 
 \end_layout
 
 \begin_layout Standard
+
+\size small
 is a search service of Quran included in the website
 \begin_inset CommandInset href
 LatexCommand href
@@ -3463,28 +2928,46 @@ key "Almonakkeb"
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 Transliteration 
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 Ignore/Consider Hamza spelling errors 
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 Limit the search in an interval of ayahs and surahs 
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 Search using Arabic words root 
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 Highlight & Pagination 
 \end_layout
 
-\begin_layout Description
-Zekr is a desktop application aimed to be an open platform Quran study tool
- for simply browsing and researching on Quran and its translations.
+\begin_layout Paragraph*
+
+\size small
+Zekr 
+\end_layout
+
+\begin_layout Standard
+
+\size small
+is a desktop application aimed to be an open platform Quran study tool for
+ simply browsing and researching on Quran and its translations.
  It offers many sorting criteria like Relevance, Natural order, Revelation
  order, Aya length.
  Also, it offers browsing with Mushaf Structures: Hizb number, Surah name,.
@@ -3503,33 +2986,25 @@ key "Zekr"
 \end_layout
 
 \begin_layout Description
-\begin_inset Note Note
-status collapsed
 
-\begin_layout Description
-Quran.com is 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-ref to Quran.com
-\end_layout
-
+\size small
+\begin_inset space ~
 \end_inset
 
 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Conclusion
 \end_layout
 
 \begin_layout Standard
+
+\series bold
+\size small
+6.
+ Conclusion
+\end_layout
+
+\begin_layout Standard
+
+\size small
 In this paper, we have enlisted the search features in Quran that it’s helpful.
  To facilitate the enlisting, we have classified those features depending
  on the nature of the problem.
@@ -3540,6 +3015,8 @@ In this paper, we have enlisted the search features in Quran that it’s helpful
 \end_layout
 
 \begin_layout Appendices
+
+\size small
 \begin_inset Note Note
 status collapsed
 
@@ -3552,11 +3029,9 @@ Don't add text here!
 
 \end_layout
 
-\begin_layout Section*
-
-\end_layout
-
 \begin_layout Standard
+
+\size small
 \begin_inset Note Note
 status collapsed
 
@@ -3572,73 +3047,8 @@ phy entries embedded in the LaTeX-file.
 
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
-bibfiles "IEEEexample,web,db"
+bibfiles "IEEEexample,web,db,/home/assem/Desktop/THESE/REPO/thesis/bib/db"
 options "IEEEtran"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-{
-\end_layout
-
-\end_inset
-
-Assem Chelli
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
- All about you and the what your interests are.
-\begin_inset Argument
-status open
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-{
-\end_layout
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename sds
-	width 1in
-	height 1.25in
-	clip
-
-\end_inset
-
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
-\end_layout
 
 \end_inset
 

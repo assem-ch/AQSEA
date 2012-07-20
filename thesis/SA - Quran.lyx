@@ -146,14 +146,10 @@ begin{Arabic}
 \backslash
 epigraph{
 \backslash
-raggedleft
+raggedleft  * الر كِتَابٌ أُحْكِمَتْ آيَاتُهُ ثُمَّ فُصِّلَتْ مِنْ لَدُنْ
+ حَكِيمٍ خَبِيرٍ   * }{
 \backslash
-textit{  * الر كِتَابٌ أُحْكِمَتْ آيَاتُهُ ثُمَّ فُصِّلَتْ مِنْ لَدُنْ حَكِيمٍ
- خَبِيرٍ   * }}{
-\backslash
-raggedright
-\backslash
-textit{سورة هود ، الآية  1}}
+raggedright سورة هود ، الآية  1}
 \backslash
 end{Arabic}
 \end_layout
