@@ -289,10 +289,10 @@ Keyword
 \begin_layout Standard
 
 \color black
-Mot ou groupe de mots choisi en vue de représenter le contenu d’un document,
- et de le retrouver lors d’une recherche documentaire.
- Il peut être issu du document (titre, texte, résumé,...) ou d’un vocabulaire
- contrôlé.
+Word or set of words chosen to represent the contents of a document, and
+ find it in document search.
+ It can be coming from the document (title, text, abstract, ...) or a controlled
+ vocabulary..
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Han98"
@@ -311,10 +311,13 @@ Descriptor
 \begin_layout Standard
 
 \color black
-Mot clé choisi parmi un ensemble de termes équivalents pour représenter
- sans ambiguïté un concept.
- Il fait en général partie d’un vocabulaire organisé et hiérarchisé de type
- "thésaurus".
+Keyword selected from a set of equivalent terms to represent clearly a concept.
+ It is usually part of an organized and hierarchical vocabulary of type
+ "
+\emph on
+thesaurus
+\emph default
+".
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Han98"
@@ -333,15 +336,12 @@ Document
 \begin_layout Standard
 
 \color black
-Un document peut être un texte, un morceau de texte, une page web, une image,
- une bande vidéo, etc.
- On appelle document toute unité qui peut constituer une réponse à une requête
- d’utilisateur.
- Pour les documents textuels, il existe beaucoup de formes quant à leur
- spécification.
- Un document peut être un texte sans aucune structuration (on l’appelle
- aussi plein texte) ; il peut aussi être un texte avec une partie structurée
- (document partiellement structuré ou semi structuré) ou complètement structuré.
+A document can be text, a piece of text, web page, image, video, etc.
+ We call Document any unit that can be an answer to a user query.
+ For textual documents, there are many forms regarding their specification.
+ A document can be a text without any structure (it is also called full-text)
+ and may also be a text with a structured part (document partially structured
+ or semi structured) or fully structured.
  
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -359,17 +359,16 @@ Query
 \begin_layout Standard
 
 \color black
-Une requête exprime le besoin d’information d’un utilisateur.
- Divers types de langages d’interrogation ont été proposés pour formuler
- une requête.
- Une requête peut être exprimée : 
+A query expresses the need for information of a user.
+ Various types of query languages ​​have been proposed to formulate a query.
+ A query can be expressed: 
 \end_layout
 
 \begin_layout Itemize
 
 \color black
-En langage naturel ou quasi naturel (exemple, "trouver toutes les usines
- de fabrication de voitures et leurs adresses”)
+In natural (or almost) language (eg: "find all the manufacturing facilities
+ of cars and their addresses")
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Sal71"
@@ -382,8 +381,8 @@ key "Sal71"
 \begin_layout Itemize
 
 \color black
-Dans un format structuré, appelé aussi interrogation en langage booléen
- (exemple, ”voitures et marque et usines”) 
+In a structured format, also called Boolean query language (eg: "cars and
+ factories and brand")
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Bou79"
@@ -396,7 +395,15 @@ key "Bou79"
 \begin_layout Itemize
 
 \color black
-En langage graphique à partir d’une interface graphique 
+As graphical language from a 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "GUI"
+description "graphical user interface"
+
+\end_inset
+
+GUI 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Lel92"
@@ -415,11 +422,11 @@ Relevance
 \begin_layout Standard
 
 \color black
-Relevance est un mot qui signifie tout simplement de renvoyer l'information
- considérée comme la plus utile au sommet d'une liste de résultats.
- Si la définition est simple, obtenir un programme à la pertinence d'ordinateur
- n'est pas une tâche facile, principalement parce que la notion d'utilité
- est difficile pour une machine de comprendre.
+Relevance is a word that simply means returning the information considered
+ the most useful at the top of a result list.
+ While the definition is simple, getting a program to compute relevance
+ is not a trivial task, mainly because the notion of usefulness is hard
+ for a machine to understand.
  
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -433,18 +440,18 @@ key "Ber08"
 \begin_layout Section
 
 \color black
-Les moteurs de recherche
+Search engines
 \end_layout
 
 \begin_layout Standard
 
 \color black
-Un moteur de recherche est un logiciel permettant de retrouver des ressources
- (pages web, images, vidéo, fichiers, informations ...
- etc.) associées à des mots quelconques.
- Certains sites web offrent un moteur de recherche comme principale fonctionnali
-té ; on appelle alors moteur de recherche le site lui-même (Google, Yahoo,
- Bing… sont des moteurs de recherche).
+A search engine is software that allows to regain resources (web pages,
+ images, video, files, information ...
+ etc.) related to any words.
+ Some websites offer a search engine as the main feature, called then search
+ engine the website itself (Google, Yahoo, Bing ...
+ are search engines).
  
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -458,14 +465,13 @@ key "Nej07"
 \begin_layout Standard
 
 \color black
-Un moteur de recherche est aussi un outil de recherche sur le web constitué
- de « robots », qui parcourent les sites à intervalles réguliers et de façon
- automatique (sans intervention humaine, ce qui les distingue des annuaires
- URL- Uniform Resource Locator-).
- Ils suivent les liens hypertextes (qui relient les pages les unes aux autres)
- rencontrés sur chaque page atteinte.
- Chaque page identifiée est alors indexée dans une base de données, accessible
- ensuite par les internautes à partir de mots-clés.
+A search engine is also a crawling tool on the web made ​​up of "robots"
+ that explore the websites periodically and automatically (without human
+ intervention, that is what distinguishes search engines from directories).
+ They follow the links (pages that link to each other) encountered on each
+ page reached.
+ Each identified page will be indexed in a database, then will be accessible
+ by Internet users using keywords.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "San08"
@@ -478,80 +484,36 @@ key "San08"
 \begin_layout Standard
 
 \color black
-Les moteurs de recherche sont classables en 2 catégories : 
-\end_layout
-
-\begin_layout Itemize
-
-\color black
-Moteur de recherche à indexation automatique 
-\end_layout
-
-\begin_layout Itemize
-
-\color black
-Moteur de recherche à inscription
-\end_layout
-
-\begin_layout Standard
-
-\color black
-L’indexation automatique part du principe que les pages web contiennent
- des marques spécifiques suivies du sujet de la page.
- Altavista, par exemple, un moteur à indexation automatique scanne le web
- en permanence et repère ces codes puis indexe les pages en questions dans
- une grosse base de données.
- 
-\end_layout
-
-\begin_layout Standard
-
-\color black
-Les moteurs à inscription eux, partent du principe que quelqu’un qui vient
- de terminer un site web va remplir un formulaire spécifiant l’adresse de
- son site et le sujet traité puis va envoyer son formulaire au moteur de
- recherche en question qui, lui, l’indexera.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Menu00"
+Search engines do not apply only to Web: some engines are softwares installed
+ on personal computers.
+ These are known as desktop search engines , they aims the search in the
+ files stored on the PC
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "PC"
+description "Personal Computer"
 
 \end_inset
 
-
+ - include such Exalead Desktop, Google Desktop and Copernic Desktop Search
+ ...
+ etc.
 \end_layout
 
 \begin_layout Standard
 
 \color black
-Les moteurs de recherche ne s'appliquent pas qu’à Internet : certains moteurs
- sont des logiciels installés sur un ordinateur personnel.
- Ce sont des moteurs dits desktop qui combinent la recherche parmi les fichiers
- stockés sur le PC et la recherche parmi les sites web — on peut citer par
- exemple Exalead Desktop, Google Desktop et Copernic Desktop Search…etc.
- 
-\end_layout
-
-\begin_layout Standard
-
-\color black
-En décembre 2004, Dr.
-
-\noun on
- Tim Berners Lee
-\noun default
- (l’inventeur du World Wide Web) a parlé d'un nouveau projet : “Web sémantique”
- qui se base sur l'idée de traitement d’informations disponibles sur le
- web automatiquement en fonction de leurs significations ; et le motif que
- 80% du Web contient actuellement des textes destinés à être lus et compris
- par les humains.
- Alors que les programmes informatiques, les navigateurs Web et les programmes
- de recherche sont incapables de comprendre ce contenu, ils sont donc incapables
- d’accélérer la recherche et le développement web sémantique liée.
- Dans moins de deux ans de l'article de M.
- Lee, les Premiers fondations de Web sémantique ont été formées, elles semblaien
-t conduire le monde vers une nouvelle révolution dans l’internet bouleversant
- une grande partie des constantes actuelles et prévues des changements profonds
- dans les méthodes des moteurs de recherche.
+In December 2004, Tim Berners Lee (the inventor of the World Wide Web) talked
+ about a new project: "Semantic Web" which is based on processing of the
+ web information automatically according to their significances.
+ The reason for this was that 80% of Web contains texts intended to be read
+ and understood by humans.
+ While computer programs, Web browsers and search engines are unable to
+ understand this content, so they are unable to speed up the search.
+ In less than two years from the article of Lee, the First foundations of
+ Semantic Web were formed.
+ They seemed to lead the world toward a new revolution in Internet and search
+ engines .
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Abu09"
@@ -564,18 +526,16 @@ key "Abu09"
 \begin_layout Standard
 
 \color black
-De prime abord, rien ne distingue un moteur de recherche “classique”, d’un
- moteur de recherche “sémantique”.
- Même interface sobre, avec une zone de texte au centre de la page, dans
- laquelle l’utilisateur peut entrer sa requête.
- En fait, la différence réside dans le mode de recherche.
- Un moteur “classique”, type Google, fonctionne de la manière suivante :
- ses robots indexent les “mots” dans les pages qu’ils parcourent.
- Ces mots sont ensuite rangés dans une gigantesque base de données.
- Les requêtes que les utilisateurs font sont des recherches dans ce “dictionnair
-e géant”, un algorithme permettant de classer et présenter les résultats
- selon un certain ordre de pertinence.
- 
+At first glance, nothing distinguishes a classic search engine from a semantic
+ one.
+ The same sparse interface, with a text box in the center of the page where
+ the user can enter his search query.
+ In fact, the difference lies in the search mode.
+ A classic search engine , as Google, works as follows: its robots index
+ browse the pages and index the words.
+ Then store these words in a gigantic database.
+ Users can do search by send their queries and a search algorithm retrieve
+ the results and sort them in a certain order based on their relevance.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Ment08"
@@ -594,44 +554,74 @@ Full-text search
 \begin_layout Standard
 
 \color black
-La recherche plein texte est une technologie basée sur la recherche de documents
- qui correspondent à un ensemble de mots.
+Full-text search is a technology focused on finding documents matching a
+ set of words .
 \end_layout
 
 \begin_layout Standard
 
 \color black
-Bien qu'elle semble aussi bête, la recherche plein texte est en fait est
- plus commune que l’on ne pense, nous l’avons probablement utilisé aujourd'hui.
- La plupart des moteurs de recherche Internet comme Google, Yahoo et Altavista
- utilisent des moteurs de recherche plein texte au cœur de leur service.
- La différence entre chacune d'entre eux est les secrets de recette (et
- parfois pas si secret), tels que l'algorithme de Google PageRank.
- PageRank modifie l'importance d’une page web donnée (au niveau des résultats)
- en fonction du nombre de pages web qui pointent vers elle et à quel point
- ils sont importants.
+While sounding like a mouthful, full-text search is more common than you
+ might think.
+ You probably have been using full-text search today.
+ Most of the web search engines such as Google and Yahoo! use full-text
+ search engines at the heart of their service.
+ The differences between each of them are recipe secrets (and sometimes
+ not so secret), such as the Google PageRank
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+
+\color black
+TM
+\end_layout
+
+\end_inset
+
+ algorithm.
+ PageRank
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+
+\color black
+TM
+\end_layout
+
+\end_inset
+
+ will modify the importance of a given web page (result) depending on how
+ many web pages are pointing to it and how important each page is .
  
 \end_layout
 
 \begin_layout Standard
 
 \color black
-Mais attention, ces moteurs de recherche Web sont beaucoup plus qu’un noyau
- de recherche plein texte : ils ont une interface Web UI, explorent le Web
- pour trouver des nouvelles pages ou des pages existantes et ainsi de suite.
- Ils fournissent des spécifications d’entreprises en se basant sur le noyau
- d'un moteur de recherche plein texte.
- Étant donné un ensemble de mots (la requête), l'objectif principal de la
- recherche plein texte est de donner accès à tous les documents correspondants
- à ces mots.
- Puisque l'analyse séquentielle de tous les documents pour trouver les mots
- correspondants est très inefficace, un moteur de recherche plein texte
- (son noyau) est divisé en deux opérations principales : l'indexation des
- informations dans un format efficace et la rechercher des informations
- pertinentes à partir de cet index pré-calculé.
- De la définition, on peut voir clairement que la notion de mot est au cœur
- de la recherche plein texte, c’est la pièce atomique d'information que
- le moteur manipule.
+Be careful, though; these so-called web search engines are way more than
+ the core of full-text search: They have a web UI, they crawl the web to
+ find new pages or exist- ing ones, and so on.
+ They provide business-specific wrapping around the core of a full- text
+ search engine.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\color black
+Given a set of words (the query), the main goal of full-text search is to
+ provide access to all the documents matching those words.
+ Because sequentially scanning all the documents to find the matching words
+ is very inefficient, a full-text search engine (its core) is split into
+ two main operations: indexing the information into an efficient format
+ and searching the relevant information from this precomputed index.
+ From the definition, you can clearly see that the notion of 
+\size footnotesize
+word
+\size default
+ is at the heart of full-text search; this is the atomic piece of information
+ that the engine will manipulate.
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Ber08"
@@ -642,9 +632,7 @@ key "Ber08"
 \end_layout
 
 \begin_layout Section
-
-\color black
-Exploration 
+Crawling
 \end_layout
 
 \begin_layout Standard
@@ -680,7 +668,7 @@ Ce processus se situe dans une phase qui précède l’indexation, voir la figur
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
