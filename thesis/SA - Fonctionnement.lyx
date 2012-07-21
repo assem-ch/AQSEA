@@ -599,8 +599,15 @@ TM
 
 \color black
 Be careful, though; these so-called web search engines are way more than
- the core of full-text search: They have a web UI, they crawl the web to
- find new pages or exist- ing ones, and so on.
+ the core of full-text search: They have a web UI 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "UI"
+description "User Interface\\\\"
+
+\end_inset
+
+, they crawl the web to find new pages or existing ones, and so on.
  They provide business-specific wrapping around the core of a full- text
  search engine.
  
@@ -632,19 +639,18 @@ key "Ber08"
 \end_layout
 
 \begin_layout Section
-Crawling
+Web Crawling
 \end_layout
 
 \begin_layout Standard
 
 \color black
-L’exploration (Web crawling en anglais) est le processus par lequel nous
- recueillons des pages du Web, afin de les indexer et soutenir un moteur
- de recherche.
- L'objectif de l'exploration est de recueillir rapidement et efficacement
- autant de pages web utiles que possible avec la structure des liens qui
- les interconnecte.
- L’explorateur est parfois nommé araignée (spider).
+Web crawling is the process by which we gather pages from the Web, in order
+ to index them and support a search engine.
+ The objective of crawling is to quickly and efficiently gather as many
+ useful web pages as possible, together with the link structure that interconnec
+ts them.
+ the web crawler is sometimes referred to as a spider .
  
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -658,8 +664,7 @@ key "Chr09"
 \begin_layout Standard
 
 \color black
-Ce processus se situe dans une phase qui précède l’indexation, voir la figure:
- 
+This process is in the phase preceding the indexing phase, see Figure: 
 \end_layout
 
 \begin_layout Standard
@@ -668,14 +673,14 @@ Ce processus se situe dans une phase qui précède l’indexation, voir la figur
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 
 \color black
 \begin_inset Graphics
-	filename figures/Exploaration.png
+	filename figures/Crawling.png
 
 \end_inset
 
@@ -688,7 +693,7 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Le robot d’exploration dans un moteur de recherche web
+The various components of a web search engine 
 \end_layout
 
 \end_inset
@@ -704,15 +709,15 @@ Le robot d’exploration dans un moteur de recherche web
 \begin_layout Subsection
 
 \color black
-Les caractéristiques des robots d'exploration
+Crawler Features
 \end_layout
 
 \begin_layout Standard
 
 \color black
-Les caractéristiques des robots d'exploration son devisées en deux catégories
- : les caractéristiques qu’un robot d'exploration doit fournir (obligatoirement)
- et les caractéristiques qu'il devrait fournir (moins importantes).
+We list the desiderata for web crawlers in two categories: features that
+ web crawlers must provide, followed by features they should provide.
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Chr09"
@@ -725,135 +730,133 @@ key "Chr09"
 \begin_layout Subsubsection
 
 \color black
-Les caractéristiques obligatoires 
+Features a crawler must provide 
 \end_layout
 
 \begin_layout Subparagraph
 
 \color black
-La robustesse :
+Robustness :
 \end_layout
 
 \begin_layout Standard
 
 \color black
-Le Web contient les serveurs qui créent des pièges d'araignée, ce sont des
- générateurs de pages web qui provoquent une confusion dans les robots d'explora
-tion pour qu’ils restent coincés en cherchant un nombre infini de pages
- dans un domaine particulier.
- Les robots d'exploration doivent être conçus pour résister à ces pièges.
- Certains de ces pièges peuvent être dus à la mauvaise conception du cite.
+The Web contains servers that create spider traps, which are generators
+ of web pages that mislead crawlers into getting stuck fetching an infinite
+ number of pages in a particular domain.
+ Crawlers must be designed to be resilient to such traps.
+ Not all such traps are malicious; some are the inadvertent side-effect
+ of faulty website development .
  
 \end_layout
 
 \begin_layout Subparagraph
 
 \color black
-La politesse :
+Politeness :
 \end_layout
 
 \begin_layout Standard
 
 \color black
-Les serveurs web ont des politiques implicites et explicites pour réglementer
- la vitesse à laquelle un robot d'exploration peut les visiter.
- Ces politiques de politesse doivent être respectées.
+Web servers have both implicit and explicit policies regulating the rate
+ at which a crawler can visit them.
+ These politeness policies must be respected .
  
 \end_layout
 
 \begin_layout Subsubsection
 
 \color black
-Les caractéristiques moins importantes 
+Features a crawler should provide 
 \end_layout
 
 \begin_layout Subparagraph
 
 \color black
-Distribué :
+Distributed :
 \end_layout
 
 \begin_layout Standard
 
 \color black
-Le robot d'exploration devrait avoir la capacité d'exécuter de manière ‘distribu
-ée’ sur plusieurs machines.
+The crawler should have the ability to execute in a distributed fashion
+ across multiple machines .
 \end_layout
 
 \begin_layout Subparagraph
 
 \color black
-Evolutif : 
+Scalable : 
 \end_layout
 
 \begin_layout Standard
 
 \color black
-L'architecture du robot d'exploration devrait permettre l'élargissement
- de la vitesse d'exploration en ajoutant des machines supplémentaires et
- de bande passante.
+The crawler architecture should permit scaling up the crawl rate by adding
+ extra machines and bandwidth .
 \end_layout
 
 \begin_layout Subparagraph
 
 \color black
-Performance et efficacité :
+Performance and efficiency :
 \end_layout
 
 \begin_layout Standard
 
 \color black
-Le système d’exploration devrait faire un usage efficace des différentes
- ressources du système, tels que le processeur, le stockage et la bande
- passante du réseau.
+The crawl system should make efficient use of various system resources including
+ processor, storage and network band- width.
 \end_layout
 
 \begin_layout Subparagraph
 
 \color black
-La qualité :
+Quality :
 \end_layout
 
 \begin_layout Standard
 
 \color black
-Etant donné qu'une grande partie des pages web sont d'une utilité médiocre
- pour servir les besoins des requêtes des utilisateurs, le robot d'exploration
- devrait être biaisé à la récupération des pages "utiles" tout d'abord.
+Given that a significant fraction of all web pages are of poor utility for
+ serving user query needs, the crawler should be biased towards fetching
+ “useful” pages first.
+ 
 \end_layout
 
 \begin_layout Subparagraph
 
 \color black
-La nouveauté :
+Freshness :
 \end_layout
 
 \begin_layout Standard
 
 \color black
-Dans de nombreuses applications, le robot devrait fonctionner en mode continu:
- il devrait obtenir de nouveaux exemplaires des pages déjà téléchargées.
- Un explorateur de moteur de recherche, par exemple, peut ainsi faire en
- sorte que l'index du moteur de recherche contient une représentation assez
- récente de chaque page web indexée.
- Pour une telle exploration continue, un robot d'exploration doit être en
- mesure d'explorer une page avec une fréquence qui se rapproche du taux
- de changement de cette page.
+In many applications, the crawler should operate in continuous mode: it
+ should obtain fresh copies of previously fetched pages.
+ A search engine crawler, for instance, can thus ensure that the search
+ engine’s index contains a fairly current representation of each indexed
+ web page.
+ For such continuous crawling, a crawler should be able to crawl a page
+ with a frequency that approximates the rate of change of that page.
+ 
 \end_layout
 
 \begin_layout Subparagraph
 
 \color black
-L’extensibilité :
+Extensible :
 \end_layout
 
 \begin_layout Standard
 
 \color black
-Les robots d'exploration devraient être conçu pour pouvoir évoluer à plusieurs
- égards : faire face aux nouveaux formats de données, de nouveaux protocoles
- de chercher, et ainsi de suite.
- Cela exige que l'architecture du robot d'exploration soit modulaire.
+Crawlers should be designed to be extensible in many ways – to cope with
+ new data formats, new fetch protocols, and so on.
+ This demands that the crawler architecture be modular.
  
 \end_layout
 
