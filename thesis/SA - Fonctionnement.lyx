@@ -3581,20 +3581,18 @@ Conclusion
 \begin_layout Standard
 
 \color black
-Dans ce chapitre, l’étude a porté sur le mécanisme de travail des moteurs
- de recherche web et des systèmes de recherche d’information, en se basant
- sur l’indexation en raison de son importance.
- En effet, elle constitue l’étape la plus importante dans le processus de
- recherche car elle permet l’extraction et le traitement des mots clés.
+In this chapter, the study focused on the working mechanism of search engines
+ and information retrieval systems, based on indexing due to its importance.
+ Indeed, it is the most important step in the search process as it allows
+ the extraction and processing of keywords.
 \end_layout
 
 \begin_layout Standard
 
 \color black
-L’interrogation ne constitue pas seulement la phase d’interaction entre
- les utilisateurs est le système, mais calcule aussi la correspondance entre
- la requête et les documents pour fournir les résultats les plus pertinents.
- 
+The search phase does not offer only the interaction between users and the
+ system, but also calculates the match percentage between the query and
+ the documents to provide the most relevant results.
 \end_layout
 
 \end_body
