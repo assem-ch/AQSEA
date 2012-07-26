@@ -158,6 +158,18 @@ name "chapitre3"
 
 \end_inset
 
+ 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+
+\color black
++ related works: Search engines,
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -3039,18 +3051,19 @@ key "Dah06"
 \begin_layout Subsection
 
 \color black
-Fonction de similarité 
+Similarity Function
 \end_layout
 
 \begin_layout Standard
 
 \color black
-La comparaison entre le document et la requête revient à calculer un score,
- supposé représenter la pertinence du document vis-à-vis de la requête.
- Cette valeur est calculée à partir d’une fonction ou d’une probabilité
- de similarité notée 
+Comparing between the document and query is equivalent to calculating a
+ score, assumed to represent the relevance of the document in respect to
+ the query.
+ This value is calculated from a function or a probability of similarity
+ denoted
 \series bold
-rsv(q,d)
+ rsv(q,d)
 \series default
  
 \begin_inset CommandInset nomenclature
@@ -3064,74 +3077,38 @@ description "Retrieval Status Value"
 \emph on
 retrieval status value
 \emph default
-), où 
+), such as 
+\emph on
+q
 \series bold
-q 
-\series default
-est une requête et 
-\series bold
-d 
-\series default
-un document et dont la formule de calcul dépend entièrement du modèle de
- recherche d’information utilisé.
- Cette mesure tient compte du poids des termes dans les documents, déterminé
- en fonction d’analyses statistiques et probabilistes.
- La fonction d’appariement est très étroitement liée aux opérations d’indexation
- et de pondération des termes de la requête et des documents du corpus.
- D’une façon générale, l’appariement document - requête et le modèle d’indexatio
-n permet de caractériser et d’identifier un modèle de recherche d’information.
- La fonction de similarité permet ensuite d’ordonner les documents renvoyés
- à l’utilisateur.
- La qualité de cet ordonnancement est primordiale.
- En effet, l’utilisateur se contente généralement d’examiner les premiers
- documents renvoyés (les 10 ou 20 premiers).
- Si les documents recherchés ne sont pas présents dans cette tranche, l’utilisat
-eur considérera le tri comme mauvais vis-à-vis de sa requête.
+\emph default
  
-\end_layout
-
-\begin_layout Standard
-
-\color black
-Le but de tout tri est donc évidemment de rapprocher la pertinence système
- de la pertinence utilisateur (qui comme nous l’avons vu précédemment, est
- fortement subjective) 
+\series default
+is a query and 
+\emph on
+d
+\series bold
+\emph default
+ 
+\series default
+est a document and whose formula depends entirely on the used model of informati
+on retrieval.
+ This measure takes into account the weight of terms in documents determined
+ by statistical analysis and probability.
+ The matching function is very closely related to the operations of indexing
+ and weighting of query terms and documents in the corpus.
+ In general, the matching document - query and indexing model used to characteri
+ze and identify a model of information retrieval.
+ The similarity function is then used to order the documents returned to
+ the user.
+ The quality of this ordering is paramount.
+ In fact, users is generally satisfied to examine the first documents (the
+ top 10 or 20).
+ If the documents sought are not present in this slice, the user will consider
+ sorting as bad in respect to his query
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Sau05,Dah06"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-
-\color black
-La modélisation de la connaissance
-\end_layout
-
-\begin_layout Standard
-
-\color black
-Selon 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Mathias02,Berrut97"
-
-\end_inset
-
-la modélisation de la connaissance apparaît sous la forme d’un thésaurus,
- et sert de référence aussi bien au processus d’interrogation qu’au processus
- d’indexation.
- Le processus d’interrogation l’utilise afin d’augmenter ou de restreindre
- les requêtes des utilisateurs, agissant ainsi directement sur le nombre
- et la qualité des réponses données par le système.
- Le processus d’indexation l’utilise essentiellement comme norme de définition
- des termes d’indexation 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Dah06"
 
 \end_inset
 
@@ -3141,16 +3118,15 @@ key "Dah06"
 \begin_layout Subsection
 
 \color black
-Le processus d’interrogation 
+Search process
 \end_layout
 
 \begin_layout Standard
 
 \color black
-La recherche tient une requête de l’utilisateur et retourne efficacement
- la liste des résultats correspondants classés par pertinence.
- Comme l'indexation, la recherche est un processus à plusieurs étapes, comme
- le montre la figure.
+Search takes a user query and returns the effective list of matching results
+ sorted by relevance.
+ Such as indexing, searching is a multiphase process, as shown in Figure.
  
 \end_layout
 
@@ -3163,10 +3139,12 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 
 \color black
 \begin_inset Graphics
-	filename Processus d'interrogation.png
+	filename figures/Searching Process.png
+	scale 50
 
 \end_inset
 
@@ -3179,15 +3157,11 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Le processus d’interrogation
+Search process
 \end_layout
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -3199,150 +3173,128 @@ Le processus d’interrogation
 \begin_layout Standard
 
 \color black
-La première opération 
-\begin_inset Note Comment
-status open
-
-\begin_layout Plain Layout
-
-\color black
-These Three operations are importants
-\end_layout
-
-\end_inset
-
-consiste à l’établissement de la requête.
- Le moyen d'exprimer la requête est : 
+The first operation is about building the query.
+ Depending on the full text search, the way to express query is either:
+ : 
 \end_layout
 
 \begin_layout Enumerate
 
-\color black
-Basé sur les chaines de caractères : langage d’interrogation basé sur le
- texte.
- En fonction de l’objectif, un tel langage peut être aussi simple que la
- manipulation des mots ou aussi complexe que d'avoir des opérateurs booléens,
- des opérateurs de rapprochement, restriction de champ, et bien plus encore!
- 
-\end_layout
-
-\begin_layout Enumerate
-
-\color black
-Basé sur une API de programmation : pour une requête avancées et étroitement
- contrôlée, une API de programmation est très approprié.
- elle donne au développeur un moyen souple pour exprimer des requêtes complexes
- et décider comment exposer la flexibilité de la requête aux utilisateurs
- (ça peut être une fonction exposée avec une interface de la REST
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-
-\color black
-Une manière de construire une application pour les systèmes distribués.
-\end_layout
-
-\end_inset
-
- 
 \emph on
+\color black
+String based
+\emph default
+—A text-based query language.
+ Depending on the focus, such a language can be as simple as handling words
+ and as complex as having Boolean operators, approximation operators, field
+ restriction, and much more! 
+\end_layout
 
+\begin_layout Enumerate
+
+\color black
+Programmatic API
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
-symbol "REST"
-description "REpresentational State Transfer"
+symbol "API"
+description "Application Programming Interface"
 
 \end_inset
 
- Representational State Transfer
-\emph default
-).
+ based—For advanced and tightly controlled queries a programmatic API is
+ very neat.
+ It gives the developer a flexible way to express complex queries and decide
+ how to expose the query flexibility to users.
  
 \end_layout
 
 \begin_layout Standard
 
 \color black
-Certains outils vont concentrer sur la requête basée sur les chaines de
- caractères, d'autres sur l'API de programmation, et d'autres sur les deux.
+Some tools will focus on the string-based query, some on the programmatic
+ API, and some on both.
  
 \end_layout
 
 \begin_layout Standard
 
 \color black
-La deuxième opération, appelons-la 
+The second operation, let’s call it 
 \emph on
-l’analyse
+analyzing
 \emph default
-, est chargé de prendre des phrases ou des listes de mots et les applique
- l'opération similaire à celle du moment d'indexation (classer en mots,
- radicaux, ou description phonétique).
- Ceci est crucial car le résultat de cette opération est le langage en commun
- que indexation et la recherche utilisent pour parler entre eux, et se trouve
- d’être celui stocké dans l'index.
- Si la même série d'opérations n’est pas appliquée, la recherche ne trouvera
- pas les mots indexés, ce qui n’est pas si utile! 
+, is responsible for taking sentences or lists of words and applying the
+ similar operation performed at indexing time (chunk into words, stems,
+ or phonetic description).
+ This is critical because the result of this operation is the common language
+ that indexing and searching use to talk to each other and happens to be
+ the one stored in the index.
+ If the same set of operations is not applied, the search won’t find the
+ indexed words—not so useful! 
 \end_layout
 
 \begin_layout Standard
 
 \color black
-Basé sur le langage commun entre l'indexation et la recherche, la troisième
- opération (recherche de documents) lit les index et recherche l’information
- d'index associées à chaque mot correspondant.
- N'oublions pas que pour chaque mot, l'index peut stocker la liste des documents
- correspondants, la fréquence, les positions du mot dans un document, et
- ainsi de suite.
- L'accord implicite ici est que le document en lui-même n'est pas chargé,
- et c'est une des raisons pour laquelle la recherche à texte intégral (full-text
- search) est efficace : le document n'a pas à être chargé pour savoir s'il
- correspond.
- L'opération suivante (filtrer et trier) traitera les informations récupérées
- à partir de l'index et construira la liste des documents (ou plus précisément,
- les gestionnaires ‘handlers’ de documents).
- A partir des informations disponibles (les documents correspondants par
- mot, la fréquence du mot, et la position du mot), le moteur de recherche
- est en mesure d'exclure les documents de la liste.
- Plus important encore, il est capable de calculer le score de chaque document.
- Plus son score est élevé, plus un document sera dans la liste des résultats.
- Jetons un regard sur certains facteurs qui influent sur sa valeur :
+Based on the common language between indexing and searching, the third operation
+ (finding documents) will read the index and retrieve the index information
+ associated with each matching word.
+ Remember, for each word, the index could store the list of matching documents,
+ the frequency, the word positions in a document, and so on.
+ The implicit deal here is that the document itself is not loaded, and that’s
+ one of the reasons why full-text search is efficient: The document does
+ not have to be loaded to know whether it matches or not.
+ The next operation (filtering and ordering) will process the information
+ retrieved from the index and build the list of documents (or more precisely,
+ handlers to docu- ments).
+ From the information available (matching documents per word, word fre-
+ quency, and word position), the search engine is able to exclude documents
+ from the matching list.
+ More important, it is able to compute a score for each document.
+ The higher its score, the higher a document will be in the result list.
+ let’s have a look at some factors influencing its value :
 \end_layout
 
 \begin_layout Itemize
 
 \color black
-Dans une requête qui comporte plusieurs mots, plus ils sont proche dans
- un document, plus le rang (rank) est supérieur.
+In a query involving multiple words, the closer they are in a document,
+ the higher the rank.
+\end_layout
+
+\begin_layout Itemize
+
+\color black
+In a query involving multiple words, the more are found in a single document,
+ the higher the rank.
  
 \end_layout
 
 \begin_layout Itemize
 
 \color black
-Dans une requête comportant plusieurs mots, plus on les trouve dans un document
- unique, plus le rang est supérieur.
+The higher the frequency of a matching word in a document, the higher the
+ rank.
  
 \end_layout
 
 \begin_layout Itemize
 
 \color black
-Plus la fréquence d'un mot dans un document est supérieure, plus le rang
- est supérieur.
+The less approximate a word, the higher the rank.
  
 \end_layout
 
 \begin_layout Standard
 
 \color black
-Selon la façon dont la requête est exprimée et comment le produit calcule
- le score, ces règles peuvent s'appliquer ou non.
- Cette liste est là pour donner une idée de ce qui peut affecter le score,
- donc la pertinence d'un document.
- Une fois la liste ordonnée des documents est prête, le moteur de recherche
- à plein texte expose les résultats à l'utilisateur à travers une API 
+Depending on how the query is expressed and how the product computes score,
+ these rules may or may not apply.
+ This list is here to give you a feeling of what may affect the score, therefore
+ the relevance of a document.
+ Once the ordered list of documents is ready, the full-text search engine
+ exposes the results to the user.
+ It can be through a programmatic API
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "API"
@@ -3350,11 +3302,46 @@ description "Application Programming Interface\\\\"
 
 \end_inset
 
-de programmation ou dans une page web.
- 
+ or through a web page.
+ the following figure shows a result page from the Google search engine.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Ber08"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Google_results.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Search results returned as a web page: one of the possible ways to expose
+ results 
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 

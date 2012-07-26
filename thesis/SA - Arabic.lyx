@@ -5454,7 +5454,7 @@ status open
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Standard
 \begin_inset Note Note
 status collapsed
 
@@ -5636,7 +5636,7 @@ Certains des problèmes qui accompagnent ces situations ne sont pas certes
 
 \end_layout
 
-\begin_layout Section
+\begin_layout Standard
 \begin_inset Note Note
 status collapsed
 
