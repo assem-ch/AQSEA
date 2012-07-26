@@ -673,7 +673,7 @@ This process is in the phase preceding the indexing phase, see Figure:
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -681,6 +681,7 @@ status collapsed
 \color black
 \begin_inset Graphics
 	filename figures/Crawling.png
+	scale 75
 
 \end_inset
 
@@ -2512,30 +2513,27 @@ Index storage
 \begin_layout Standard
 
 \color black
-Le stockage des structures d’index est caractérisé essentiellement par la
- taille de l’index et l’organisation des éléments de celui-ci.
- Les structures d'index varient largement dans leur consommation d'espace
- qui est étroitement liée à l’organisation des données dans l’index.
+Storage of index structures is mainly characterized per the index size and
+ organization of its elements.
+ Index structures vary widely in their use of size that is closely related
+ to the organization of data in the index.
 \end_layout
 
 \begin_layout Standard
 
 \color black
-Cette organisation a un impact significatif sur la latence de recherche.
- Plus les éléments liés sont près les uns des autres dans l’espace de stockage
- moins est la latence de recherche, c’est ce qu’on appelle le concept de
- localité.
- Il est également très important que l’index puisse tenir dans la mémoire
- centrale, cela évite les accès disque au système et réduit considérablement
- la latence de recherche.
+This organization has a significant impact on latency of search.
+ More items are closely related to each other in the storage space is less
+ latency research, this is called the concept of locality.
+ It is also very important that the index can hold in main memory, it avoids
+ disk access to the system and reduces the latency of search.
  
 \end_layout
 
 \begin_layout Standard
 
 \color black
-L’index idéal est donc celui qui occupe moins d’espace et qui permet de
- réduire au maximum la latence de recherche.
+The ideal index is one that occupies less space and minimize search latency.
  
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -2549,36 +2547,32 @@ key "Dah06"
 \begin_layout Subsection
 
 \color black
-Mise à jour d’index 
+Index updating
 \end_layout
 
 \begin_layout Standard
 
 \color black
-Par mise à jour d’index on entend le comportement de l’index face aux changement
-s que subit la base de données.
- Des changements qui peuvent être des insertions, des modifications ou des
- suppressions.
- Et ceci peut concerner les documents comme les nœuds des documents.
- Un index peut être plus ou moins capable de s'adapter à ces changements.
- Cette adaptation peut se présenter sous trois formes :
+Updating the index refers to the behavior of applying changes on the index
+ .
+ Changes can be insertions, modifications or deletions.
+ An index can be more or less able to adapt to these changes.
+ This adaptation can occur in two forms:
 \end_layout
 
 \begin_layout Subsubsection
 
 \color black
-Mise à jour incrémentale 
+Incremental update
 \end_layout
 
 \begin_layout Standard
 
 \color black
-Dans le cas d’une mise à jour incrémentale (également appelée par augmentation)
- la structure de l'index est mise à jour en lui rajoutant les index des
- nouvelles données (documents ou nœuds à indexer) sans modifier ceux qui
- existent déjà.
- Le nombre de changements supportés est cependant, souvent limité, dans
- ce cas.
+In the case of an incremental update, the structure of the index is updated
+ by adding back the indexes of new documents without modifying existing
+ ones.
+ The number of changes in this case is, however, often limited.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Dah06"
@@ -2591,36 +2585,14 @@ key "Dah06"
 \begin_layout Subsubsection
 
 \color black
-Mise à jour progressive 
+Global update
 \end_layout
 
 \begin_layout Standard
 
 \color black
-Dans le premier cas la structure de l'index existante peut être modifiée
- et les modifications sont limitées uniquement à une petite partie de l'index.
- Cet index supporte donc des mises à jour progressives.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Dah06"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-
-\color black
-Mise à jour globale 
-\end_layout
-
-\begin_layout Standard
-
-\color black
-Le troisième cas, et le plus défavorable, c’est quand la structure de l'index
- entière doit être reconstruite à partir de zéro.
- 
+The third case, and worst is when the structure of the entire index must
+ be rebuilt from scratch.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Dah06"
