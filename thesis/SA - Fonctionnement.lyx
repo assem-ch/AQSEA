@@ -1946,7 +1946,8 @@ status collapsed
 \begin_layout Plain Layout
 
 \color black
-le caractère “_” est utilisé à la place des blancs, pour faciliter la lecture.
+the character "_" is used instead of spaces, in order to facilitate the
+ reading.
 \end_layout
 
 \end_inset
@@ -2547,7 +2548,7 @@ key "Dah06"
 \begin_layout Subsection
 
 \color black
-Index updating
+Index update
 \end_layout
 
 \begin_layout Standard
@@ -2605,28 +2606,27 @@ key "Dah06"
 \begin_layout Subsection
 
 \color black
-Les étapes d’indexation
+Indexing phases
 \end_layout
 
 \begin_layout Standard
 
 \color black
-Le processus d’indexation se compose des étapes suivantes :
+The indexing process consists of the following phases:
 \end_layout
 
 \begin_layout Subsubsection
 
 \color black
-Extraction des mots-clés (Tokenization)
+Tokenization
 \end_layout
 
 \begin_layout Standard
 
 \color black
-L’extraction des mots-clés est une étape qui peut sembler triviale au premier
- abord, et qui pourtant constituera la base de tout le reste du processus
- d’indexation.
- Il faut donc que cette phase soit d’une qualité maximale.
+Tokenization is a phase that may seem trivial at first, and yet provide
+ the basis for the rest of the indexing phases.
+ Therefore this phase must be done with the highest quality.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Maylan2001"
@@ -2639,15 +2639,13 @@ key "Maylan2001"
 \begin_layout Standard
 
 \color black
-Certains systèmes de recherche d’information utilisent une liste de mots-clés
- prédéfinie.
- Cette liste est conçue manuellement et, dans la plus part des cas, construite
- par rapport à un thème spécifique.
- Cette méthode permet entre autre de contrôler la taille des index.
- L’utilisation d’une extraction automatique des mots-clés ou l’utilisation
- d’une liste de mots-clés prédéfinie, détermine le type d’indexation.
- Orientée document dans le premier cas et orientée requête dans le second
- .
+Some retrieval systems use a list of predefined keywords.
+ This list is designed manually and, in most cases built for a specific
+ topic.
+ This method allow to control the index size.
+ The use of automatic extraction of keywords or the use of a list of predefined
+ keywords, determines the type of indexing.
+ Document-oriented in the first case and query-oriented in the second.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Berrut97,Dah06"
@@ -2660,24 +2658,22 @@ key "Berrut97,Dah06"
 \begin_layout Subsubsection
 
 \color black
-Normalisation des mots-clés
+Normalization
 \end_layout
 
 \begin_layout Standard
 
 \color black
-Ce traitement consiste à retrouver pour un mot sa forme normalisée (généralement
- le masculin pour les noms, l’infinitif pour les verbes, le masculin singulier
- pour les adjectifs, etc.).
- Ainsi, dans l’index ne sont conservées que les formes normalisées, ce qui
- offre un gain de place appréciable, mais surtout, si le même traitement
- est effectué sur la requête, cela permet d’être beaucoup plus souple et
- rapide dans la recherche: par exemple, si l’utilisateur effectue une recherche
- avec un verbe, les documents comportant ce verbe dans toutes ses formes
- conjuguées seront pris en compte, et pas seulement les documents contenant
- le verbe dans la forme fournie par l’utilisateur.
- Cette étape est également appelée « traitement morphologique des mots-clés
- » 
+This processing is to find for a word its normalized form (usually the masculine
+ for nouns, infinitive for verbs, the masculine singular for adjectives,
+ etc.).
+ Thus, in the index are stored only in their normalized forms, which offers
+ a significant size saving, but more importantly, even if the processing
+ is done on the request, it can be much quicker and more flexible in research:
+ for example, if a user searches with a verb, documents that contains this
+ verb in all its conjugated forms will be considered, not just documents
+ containing the word in the form provided by the user.
+ This step is also called "morphological processing of keywords"
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Den04"
@@ -2690,41 +2686,25 @@ key "Den04"
 \begin_layout Standard
 
 \color black
-Cette phase peut également être enrichie avec un traitement syntaxique et
- sémantique des mots-clés.
- Le premier consiste à identifier et regrouper un ensemble de mots dont
- la signification dépend de leur union.
- Par exemple, les mots « maison blanche » ne signifient habituellement pas
- qu’on a affaire à une maison qui est blanche, mais plutôt au siège de la
- présidence des États-Unis.
- Elle consiste aussi à éliminer des ambiguïtés comme par exemple les problèmes
- d’homographie.
- 
+This phase can also be enriched with syntactic and semantic processing of
+ keywords.
+ The first is to identify and group a set of words whose meaning depends
+ on their union.
+ For example, the words "White House" does not usually mean you're dealing
+ with a house that is white, but instead the seat of the presidency of the
+ United States.
+ It is also to remove ambiguities such as the problems of homography.
 \end_layout
 
 \begin_layout Standard
 
 \color black
-Le traitement sémantique
-\begin_inset Note Comment
-status collapsed
-
-\begin_layout Plain Layout
-
-\color black
-This is very important, it's what you need for semantic search
-\end_layout
-
-\end_inset
-
- a pour but de faire des distinctions entres les différents sens possibles
- d’un même mot (polysémie).
- Par exemple, cette phase permet de différencier le mot « pièce » qui peut
- correspondre à une pièce de monnaie par exemple, ou à une pièce dans une
- maison.
- C’est une tâche ardue qui n’est pas aujourd’hui bien maîtrisée et dont
- l’intérêt en termes de hausse des performances des systèmes n’est pas toujours
- démontré.
+Semantic processing is intended to make distinctions between different possible
+ meanings of a word (polysemy).
+ For example, this phase helps differentiate the word "room" that can match
+ a coin, or a room in a house.
+ This is an arduous task that is not currently well controlled and its effect
+ on system performance is not always proven.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Dah06"
@@ -2737,19 +2717,18 @@ key "Dah06"
 \begin_layout Subsubsection
 
 \color black
-Élimination des mots vides 
+Elimination of stop-words
 \end_layout
 
 \begin_layout Standard
 
 \color black
-Cette étape revêt une importance certaine dans la mesure où elle constitue
- un facteur d’une grande influence dans la précision de la recherche.
- Le fait de ne pas éliminer les mots vides provoque inévitablement du bruit.
- L’élimination des mots vides qui sont des mots du langage courant et qui
- ne contiennent pas beaucoup d'information sémantique doit se faire aussi
- bien à l’indexation qu’à l’interrogation (élimination des mots vides de
- la requête).
+This phase is of some importance since it constitutes a factor of great
+ influence in the accuracy of the search.
+ The failure to remove stop words inevitably cause noise.
+ The elimination of stop words which are words of everyday language and
+ do not contain much semantic information must be both in indexing as querying
+ (removing stop-words from the query).
  
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -2763,18 +2742,14 @@ key "Dah06"
 \begin_layout Subsubsection
 
 \color black
-La pondération 
+Weighting
 \end_layout
 
 \begin_layout Standard
 
 \color black
-Cette étape est entièrement dépendante du modèle de recherche d’information
- utilisé.
- Elle permet de définir l’importance qu’a un terme dans un document donné,
- elle est également utilisée pour filtrer l’index résultant du processus
- d’indexation (c’est-à-dire : éliminer les index dont le poids est inférieur
- à un certain seuil).
+This step is entirely dependent on the model of information retrieval used.
+ It defines how important a term in a given document.
  
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -2788,41 +2763,40 @@ key "Dah06"
 \begin_layout Standard
 
 \color black
-De manière générale, la majorité des formules de pondération des termes
- est construite par combinaison de deux facteurs.
- Un facteur de pondération locale quantifiant la représentativité locale
- d’un terme dans le document, et un second facteur de pondération globale
- mesurant la représentativité globale du terme vis-à-vis de la collection
- des documents.
- 
+In general, most term weighting formulas are built by combination of two
+ factors.
+ A local weighting factor measuring the local representativity of a term
+ in the document, and an overall weighting factor measuring the global represent
+ativity of a term with respect to the collection of documents
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Amr08"
 
 \end_inset
 
-
+.
+ 
 \end_layout
 
 \begin_layout Standard
 
 \color black
-Il y a deux types de pondération : 
+That leads to two types : 
 \end_layout
 
 \begin_layout Paragraph
 
 \color black
-Pondération locale 
+Local weighting
 \end_layout
 
 \begin_layout Standard
 
 \color black
-La pondération locale prend en considération les informations locales du
- terme qui ne dépendent que du document.
- Elle correspond généralement à une fonction de la fréquence d'apparition
- du terme dans le document, notée 
+Local weighting takes into account the local information of the term that
+ depend only on the document.
+ It is typically a function of frequency of occurrence of the word in the
+ document, denoted 
 \series bold
 tf
 \series default
@@ -2839,8 +2813,8 @@ description "Term Frequency"
 Term Frequency
 \emph default
 ).
- Un terme qui apparaît fréquemment dans un document sera considéré comme
- pertinent pour décrire son contenu.
+ A term that frequently appears in a document is considered relevant to
+ describe its contents.
  
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -2854,24 +2828,22 @@ key "Dah06"
 \begin_layout Paragraph
 
 \color black
-Pondération globale 
+Overall weighting
 \end_layout
 
 \begin_layout Standard
 
 \color black
-La pondération globale mesure l'importance d'un terme au sein de l'ensemble
- des documents de la collection.
- Elle vise à représenter son caractère discriminant ou en d’autres termes
- sa capacité à différencier les documents de la collection.
- En effet, un terme apparaissant dans peu de documents est considéré comme
- plus discriminant et doit être privilégié par rapport à un terme présent
- dans de nombreux documents.
- Le calcul de la pondération globale s'appuie sur le nombre de documents
- de la collection dans lesquels un terme apparaît.
- L'une des mesures les plus utilisées est 
+The overall weight measures the importance of a term within all documents.
+ It aims to represent its discriminatory nature, or in other words its ability
+ to distinguish between document.
+ In fact, a term appearing in few documents is considered more discriminatory
+ and should be favored over a term found in many documents.
+ The calculation of the overall weighting is based on the number of documents
+ in which a term appears.
+ One of the most used is
 \series bold
-l’idf 
+ idf 
 \series default
 
 \begin_inset CommandInset nomenclature
@@ -2885,7 +2857,7 @@ description "Inverse Document Frequency"
 \emph on
 Inverse Document Frequency
 \emph default
-), représentée par la formule suivante:
+), represented by the following formula:
 \end_layout
 
 \begin_layout Standard
@@ -2901,19 +2873,41 @@ Inverse Document Frequency
 \begin_layout Standard
 
 \color black
-Où i n est le nombre de documents contenant le terme i t i et N le nombre
- total de documents dans la collection.
+Such as 
+\emph on
+n
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+
+\color black
+i
+\end_layout
+
+\end_inset
+
+
+\emph default
+ is the number of documents containing the word
+\emph on
+ i 
+\emph default
+and
+\emph on
+ N
+\emph default
+ is the total number of documents.
 \end_layout
 
 \begin_layout Standard
 
 \color black
-La mesure 
+The value 
 \series bold
 tf *idf
 \series default
- donne une bonne approximation de l’importance d’un terme dans le document,
- particulièrement dans les corpus de documents de taille homogène.
+ gives a good approximation of the importance of a term in the document,
+ particularly in the corpus of documents of similar size.
  
 \begin_inset CommandInset citation
 LatexCommand cite
