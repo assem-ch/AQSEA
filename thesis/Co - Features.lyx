@@ -505,7 +505,7 @@ The word
 \color inherit
 (admire) or 
 \lang arabic_arabi
-وَلِّ+هَّ
+وَلِّ+ه
 \family roman
 \series medium
 \shape up
@@ -809,11 +809,13 @@ Fielded search
 \begin_deeper
 \begin_layout Itemize
 \align block
-sura_name = 
+sura_name =
 \series bold
+ 
+\series default
 \lang arabic_arabi
 الفاتحة
-\series default
+\series bold
 \lang english
  
 \end_layout
@@ -943,9 +945,11 @@ ref: Hamza different emplacement
 \end_inset
 
  
+\series default
 \lang arabic_arabi
 ب؟طة
 \family roman
+\series bold
 \shape up
 \size normal
 \emph off
@@ -997,9 +1001,9 @@ to generate
 \end_inset
 
 
+\series default
 \lang arabic_arabi
 *نبي*
-\series default
 \lang english
  to generate 
 \lang arabic_arabi
@@ -1046,12 +1050,9 @@ Boosting:
 \end_inset
 
 
-\lang arabic_arabi
-سميع
 \series default
-^2 
-\series bold
-بصير
+\lang arabic_arabi
+سميع^2 بصير
 \end_layout
 
 \end_deeper
@@ -1069,11 +1070,11 @@ search using a combination of the previous elementary features.
 
 
 \lang arabic_arabi
-”*
+”*حمد
 \series bold
-حمد لله
+ 
 \series default
-“^2
+لله“^2
 \end_layout
 
 \end_deeper
@@ -2769,7 +2770,7 @@ Semantically related words
 : there are several different kinds of semantic relations: Synonymy, Antonymy,
  Hypernymy, Hyponymy, Meronymy, Holonymy, Troponymy
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
  [ref]
@@ -2812,7 +2813,7 @@ Hypo(
 \lang english
 ) to search for 
 \lang arabic_arabi
-عدن، فردوس
+عدن, فردوس
 \lang english
  …
 \end_layout
@@ -3634,6 +3635,14 @@ Ayah
 \series default
 ُ أَحَبُّ إِلَي أَبِينَا مِنَّا وَنَحْنُ عُصْبَةٌ إِنَّ أَبَانَا لَفِي ضَلَالٍ
  مُبِينٍ] 
+\lang english
+
+\begin_inset Newline newline
+\end_inset
+
+Translation: When they said: Certainly Yusuf and his brother are dearer
+ to our father than we, though we are a (stronger) company; most surely
+ our father is in manifest error
 \end_layout
 
 \begin_layout Itemize
@@ -3668,8 +3677,17 @@ Ayah
 
 
 \lang arabic_arabi
-[ثَانِيَ اثْنَيْنِ إِذْ هُمَا فِي الْغَارِ إِذْ يَقُولُ لِصَاحِبِهِ لَا
- تَحْزَنْ إِنَّ اللَّـهَ مَعَنَا ] 
+[...
+ ثَانِيَ اثْنَيْنِ إِذْ هُمَا فِي الْغَارِ إِذْ يَقُولُ لِصَاحِبِهِ لَا
+ تَحْزَنْ إِنَّ اللَّـهَ مَعَنَا ...] 
+\lang english
+
+\begin_inset Newline newline
+\end_inset
+
+Translation: ...
+ he being the second of the two, when they were both in the cave, when he
+ said to his companion: Grieve not, surely Allah is with us ...
 \end_layout
 
 \begin_layout Standard
@@ -3785,7 +3803,7 @@ the same as the previous feature but with consideration of diacritics.that
 \color inherit
 (who, noun) and 
 \lang arabic_arabi
-مَنًََّ
+مَنَّ
 \family roman
 \series medium
 \shape up

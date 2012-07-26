@@ -639,13 +639,13 @@ key "Ber08"
 \end_layout
 
 \begin_layout Section
-Web Crawling
+Crawling
 \end_layout
 
 \begin_layout Standard
 
 \color black
-Web crawling is the process by which we gather pages from the Web, in order
+Crawling is the process by which we gather pages from the Web, in order
  to index them and support a search engine.
  The objective of crawling is to quickly and efficiently gather as many
  useful web pages as possible, together with the link structure that interconnec
@@ -673,7 +673,7 @@ This process is in the phase preceding the indexing phase, see Figure:
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -863,22 +863,21 @@ Crawlers should be designed to be extensible in many ways – to cope with
 \begin_layout Section
 
 \color black
-Indexation
+Indexing
 \end_layout
 
 \begin_layout Standard
 
 \color black
-Pour que le coût de la recherche soit acceptable, il convient d’effectuer
- une étape primordiale sur la base documentaire.
- Cette étape consiste à analyser chaque document de la collection afin de
- créer un ensemble de mots-clés : on parle de l’étape d’indexation.
- Ces mots-clés seront plus facilement exploitables par le système lors du
- processus ultérieur de recherche.
- L’indexation permet ainsi de créer une représentation des documents dans
- le système.
- Son objectif est de trouver les concepts les plus importants du document
- (ou de la requête), qui formeront le descripteur du document.
+To make the research cost acceptable, it should pass  by an essential phase
+ in the document database.
+ This phase consists in analyzing each document in the collection to create
+ a set of keywords: we call it the indexing phase.
+ These keywords will be more easily used by the system during the subsequent
+ process of search.
+ Indexing create a representation of documents in the system.
+ Its objective is to find the most important concepts of the document (or
+ query), which form the descriptor of document.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Sau05"
@@ -891,17 +890,48 @@ key "Sau05"
 \begin_layout Subsection
 
 \color black
-Définition
+Definition
 \end_layout
 
 \begin_layout Standard
 
 \color black
-L’indexation n’a pas une seule définition, la norme AFNOR NF Z 47-102 1996
- définit l’indexation comme «l’opération qui consiste à décrire et à caractérise
-r un document à l’aide de représentations des concepts contenus dans ce
- document, c’est-à dire à transcrire en langage documentaire les concepts
- après les avoir extraits du document par une analyse ».
+Indexing is the act of describing or classifying a document by index terms
+ or other symbols in order to indicate what the document is about, to summarize
+ its content or to increase its find-ability.
+ In other words, it is about identifying and describing the subject of documents.
+ Indexes are constructed, separately, on three distinct levels: terms in
+ a document such as a book; objects in a collection such as a library; and
+ documents (such as books and articles) within a field of knowledge.
+\end_layout
+
+\begin_layout Standard
+
+\color black
+The process of indexing begins with any analysis of the subject of the document.
+ The indexer must then identify terms which appropriately identify the subject
+ either by extracting words directly from the document or assigning words
+ from a controlled vocabulary.
+ The terms in the index are then presented in a systematic order.
+ Indexers must decide how many terms to include and how specific the terms
+ should be.
+ Together this gives a depth of indexing.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "lancaster2003indexing"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\color black
+Indexing is most often used to information retrieval.
+ But it can also be used in other areas such as automatic classification
+ of documents,   keyword suggestion, co-occurring terms calculating, automatic
+ summarization, etc.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Aba09"
@@ -913,70 +943,17 @@ key "Aba09"
 
 \begin_layout Standard
 
-\noun on
 \color black
-Pomart
-\noun default
- et 
-\noun on
-alii 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Pom97"
+\begin_inset Note Note
+status collapsed
 
-\end_inset
-
-
-\noun default
- définissent l’indexation comme étant une opération ayant « pour but de
- faciliter l’accès au contenu de documents ou d’un ensemble de documents
- à partir d’un sujet ou d’une combinaison de sujets (ou toutes autres entrées
- utiles à la recherche).
- Cela s’applique aussi bien à l’élaboration d’index situés généralement
- en fin d’ouvrage qu’à l’usage des langages documentaires pour analyser
- le contenu d’une collection de documents et permettre par la suite, grâce
- aux fichiers où à la banque de données ainsi alimentée, la recherche des
- informations répondant à une préoccupation particulière.
- Ainsi la notion d’indexation se trouve t elle au cœur de la pratique documentai
-re : elle constitue l’opération centrale du traitement des documents au
- sein de la chaîne documentaire classique (repérage, et acquisition des
- documents ; traitement et exploitation ; recherche et diffusion) ».
- 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Mus"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\color black
-L’indexation est le plus souvent utilisée pour effectuer des recherches
- d’informations.
- Mais elle peut servir également dans d’autres domaines tels que la classificati
-on automatique des documents, proposer des mots-clés, faire une synthèse
- automatique des documents, calculer les co-occurrentes des termes, générer
- des résumés automatiquement, etc.
- (voir la figure)
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Aba09"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \color black
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -1006,57 +983,56 @@ Processus d’indexation
 
 \end_inset
 
+ to translate or to remove
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
 \begin_layout Subsection
 
 \color black
-Modes d’indexation 
+Indexing modes
 \end_layout
 
 \begin_layout Subsubsection
 
 \color black
-L’indexation manuelle 
+Manual indexing
 \end_layout
 
 \begin_layout Standard
 
 \color black
-L’indexation manuelle est réalisée par l'expert humain (documentaliste ou
- spécialiste du domaine) qui analyse le contenu du texte pour identifier
- les termes représentatifs du document.
- 
+Manual indexing is achieved by a human expert (librarian or specialist in
+ the field ) that analyzes the content of the text to identify the terms
+ representing the document.
 \end_layout
 
 \begin_layout Standard
 
 \color black
-L’indexation manuelle garantit une meilleure pertinence dans les réponses,
- car elle permet de repérer d’une façon plus précise les mots clés décrivant
- un document.
- 
+Manual indexing ensures greater relevance in the answers, because it identifies
+ a more specific keywords describing a document.
 \end_layout
 
 \begin_layout Standard
 
 \color black
-Elle présente toutefois plusieurs inconvénients, il y a le problème du vocabulai
-re utilisé et la dépendance par rapport à l’état de connaissance de l’indexeur
- sur le sujet c’est-à-dire le même document peut être indexé de plusieurs
- manières (selon la vision de la personne qui fait l’indexation), et un
- indexeur à deux moments différents peut présenter deux termes distincts
- pour représenter le même concept.
- 
+However, it has several drawbacks, there is the problem of used vocabulary
+ and the dependence on indexer's knowledge on the topic, ie the same document
+ can be indexed in several ways (according to vision of the person who makes
+ the indexing), and an indexer at two different times can have two distinct
+ terms to represent the same concept.
 \end_layout
 
 \begin_layout Standard
 
 \color black
-L’inconvénient majeur de cette méthode reste le coût en matière du temps,
- cette méthode n’est pas donc appropriée quand le nombre de documents à
- indexer est important.
+The major drawback of this method is the cost in time, this method is not
+ therefore appropriate when the number of documents to be indexed is substantial.
  
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1070,7 +1046,7 @@ key "Sau05,Aba09,Amr08"
 \begin_layout Standard
 
 \color black
-L’indexation manuelle se base sur quatre points essentiels 
+Manual indexing is based on four key points 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Cha89"
@@ -1083,116 +1059,129 @@ key "Cha89"
 \begin_layout Itemize
 
 \color black
-la lecture du document dans son intégralité pour l'élaboration de l'indexation
- ; 
+reading the entire document for preparation ;
 \end_layout
 
 \begin_layout Itemize
 
 \color black
-la prise en compte de choix des descripteurs, des objectifs du centre de
- documentation (applications) et des besoins des utilisateurs ;
+consideration of descriptors, objectives (applications) and user needs;
 \end_layout
 
 \begin_layout Itemize
 
 \color black
-la complémentarité permanente entre les termes de l'indexation manuelle
- et le résumé; 
+permanent complementarity between the terms of manual indexing and abstract;
 \end_layout
 
 \begin_layout Itemize
 
 \color black
-en l'absence de descripteur approprié, et lorsque l'émergence d'un nouveau
- concept n'est pas suffisamment explicite pour proposer un candidat descripteur,
- la possibilité d'utiliser un descripteur voisin ou générique
+in the absence of appropriate descriptor, and when the emergence of a new
+ concept is not explicit enough to propose a candidate descriptor, the ability
+ to use a close or generic descriptor.
 \end_layout
 
 \begin_layout Standard
 
 \color black
-On a donc assez vite pensé à avoir recours à l’ordinateur.
+So we thought fast enough to use the computer
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Mus"
 
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Subsubsection
 
 \color black
-L’indexation automatique
+Automatic indexing 
 \end_layout
 
 \begin_layout Standard
 
 \color black
-L’indexation automatique, que nous décrivons en détail dans ce qui suit,
- regroupe un ensemble de traitements automatisés sur un document.
- On distingue : l’extraction automatique des mots des documents, l’élimination
- des mots vides, la lemmatisation (radicalisation ou normalisation), le
- repérage de groupes de mots, la pondération des mots et enfin la création
- de l’index.
- 
+Automatic indexing is a set of automated processing phases applied on documents.
+ We distinguish: Tokenization (automatic extraction of word), Elimination
+ of stop words, Stemming (Lemmatization or radicalization), Scoring of words
+ and finally the creation of the index
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Sau05"
 
 \end_inset
 
-
+.
+ 
 \end_layout
 
 \begin_layout Standard
 
 \color black
-La première approche d’indexation automatique KWIC (Key-Word In Context)
- a été introduite par 
+The first approach to the automatic indexation KWIC (Key Word In Context-)
+ was introduced by
 \noun on
-Luhn
+ Luhn
 \noun default
- (1957).
- Il a été question ensuite de pondérer les index.
- Aux débuts de la recherche d’information, les méthodes statistiques ont
- été fondées sur la fréquence de termes dans le document.
- Plus tard, cette mesure a été étendue pour tenir compte de la spécificité
- d’un terme pour le document.
- À cette fin, d’autres méthodes ont été exploitées, telles que 2-Poisson
- (Nie, 2003).
- 
+ (1957)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "luhn1957statistical"
+
+\end_inset
+
+.
+ There was discussion about to weight the index.
+ In the early days of information retrieval, statistical methods were based
+ on the frequency of words in the document.
+ Later, this measure was extended to take into account the specificity of
+ a term for the document.
+ To this end, other methods have been exploited, such as 2-Poisson (Nie,
+ 2003)
+\size tiny
+\color inherit
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "gaussier2003assistance"
+
+\end_inset
+
+
+\size default
+\color black
+
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Mus"
 
 \end_inset
 
-
+.
+ 
 \end_layout
 
 \begin_layout Standard
 
 \color black
-Les systèmes d’indexation automatique utilisent plusieurs méthodes d’analyse
- : 
+The automatic indexing systems use several methods of analysis: 
 \end_layout
 
 \begin_layout Paragraph
 
 \color black
-Analyse linguistique : 
+Linguistic analysis: 
 \end_layout
 
 \begin_layout Standard
 
 \color black
-Technologie issue du « text mining », cette dernière consiste à mettre en
- œuvre un modèle simplifié des théories linguistiques dans des systèmes
- informatiques d’apprentissage.
- Cela fait partie du domaine de l’intelligence artificielle.
+Technology issued from "text mining", the latter is to implement a simplified
+ model of linguistic theories in computer systems of learning.
+ This is part of the artificial intelligence field .
  
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1206,11 +1195,10 @@ key "All08"
 \begin_layout Standard
 
 \color black
-La méthode linguistique est composé de plusieurs modules d’analyses linguistique
-s : morphologique, lexical, syntaxique et pragmatique.
- Le fait que certains systèmes d’indexation utilisent les techniques du
- traitement automatique des langues, démontre la pertinence d’une approche
- linguistique.
+The linguistic method consists of several modules of linguistic analysis:
+ morphological, lexical, syntactic and pragmatic.
+ The fact that some systems use indexing techniques of natural language
+ processing, demonstrates the relevance of a linguistic approach.
  
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1224,196 +1212,123 @@ key "Hach97"
 \begin_layout Paragraph
 
 \color black
-Analyse statistique : 
+Statistical analysis: 
 \end_layout
 
 \begin_layout Standard
 
 \color black
-L’initiateur des méthodes d’indexation automatique est H.P.
+The initiator of the methods of the automatic indexation is H.P.
  
 \noun on
 Luhn
 \noun default
- avec son célèbre article “The automatic creation of literature abstracts”
- paru en 1958 dans le “Journal of Research and Development” d’IBM.
- Il déclare : « (...) au lieu de tirer l’information au hasard comme le fait
- normalement le lecteur, la nouvelle méthode automatique choisit les phrases
- d’un article qui représentent le mieux l’information pertinente ».
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Cha90"
-
-\end_inset
-
-, H.
+ with his influential article “The automatic creation of literature abstracts”
+ published in 1958 in the “Journal of Research and Development” of IBM.
+ He states : « (...) instead of sampling at ran- dom, as a reader normally
+ does when scanning, the new mechanical method selects those among all the
+ sentences of an article that are the most representative of pertinent informati
+on », 
+\noun on
+H.
  P.
+
+\noun default
  
 \noun on
 Luhn
 \noun default
- ouvrit la voie aux travaux sur l’indexation automatique par voisinage appelée
- aussi méthode statistique.
+ opened the door to work on automatic indexing by proximity also called
+ statistical method
+\begin_inset CommandInset citation
+LatexCommand cite
+key "luhn1958automatic"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
 
 \color black
-L’indexation automatique comporte les étapes suivantes 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "All08"
-
-\end_inset
-
- : 
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\color black
-Extraction des mots simples 
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-
-\color black
-Extraction des termes (tokenization) : les règles d’extraction dépendent
- de la langue.
- 
-\end_layout
-
-\begin_layout Enumerate
-
-\color black
-Suppression des mots vides (stop words) : ce sont des mots trop fréquents
- mais inutiles.
- Exemple : le, un, de, or, on, il… 
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-
-\series bold
-\color black
-Normalisation 
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-
-\color black
-Lemmatisation (radicalisation) : par exemple inter + classe + ment, ici
- le radical est classe.
- 
-\end_layout
-
-\begin_layout Enumerate
-
-\color black
-Règles de transformation : suppression des terminaisons des pluriels.
- 
-\end_layout
-
-\begin_layout Enumerate
-
-\color black
-Troncature : choisir une valeur optimale de troncature des mots.
- Il vaut mieux tronquer les suffixes.
- Il n’y a pas de règle absolue pour cela.
- 
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-
-\color black
-L’indexation automatique permet 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Hadj08"
-
-\end_inset
-
-: 
+Automatic indexing involves the following steps : 
 \end_layout
 
 \begin_layout Itemize
 
 \color black
-de limiter les choix parfois subjectifs de l’indexeur.
+Extracting words (tokenization): the extraction rules are language-dependent.
  
 \end_layout
 
 \begin_layout Itemize
 
 \color black
-d’alléger le travail requis par une indexation manuelle.
+Eliminating stop words (stop words): these are words too frequent but unnecessar
+y.
+ Example: the, a, of, or ...
+ etc.
+\end_layout
+
+\begin_layout Itemize
+
+\color black
+Stemming : for example the stem of the word "stemmers" is "stem".
  
 \end_layout
 
 \begin_layout Itemize
 
 \color black
-d’éviter les incohérences résultant des interprétations différentes entre
- plusieurs indexeurs.
+Transformation rules: removal of plural endings.
  
 \end_layout
 
 \begin_layout Itemize
 
 \color black
-de réaliser une recherche exhaustive des sujets traités dans l’information
- analysée.
+Truncation: choose an optimal value of truncation of words.
+ It is better to truncate suffixes.
+ There is no absolute rule for this.
+ 
 \end_layout
 
 \begin_layout Subsubsection
 
 \color black
-L’indexation semi-automatique 
+Semi-automatic indexing
 \end_layout
 
 \begin_layout Standard
 
 \color black
-Les deux techniques précédentes peuvent être combinées, un premier processus
- automatique permet d'extraire les termes du document.
- Cependant le choix final reste au spécialiste du domaine ou au documentaliste
- pour établir les relations sémantiques entre les mots clés et choisir les
- termes significatifs en utilisant un thésaurus ou une base terminologique,
- qui est une liste organisée de descripteurs (mots clés) obéissant à des
- règles terminologiques propres.
- 
-\end_layout
-
-\begin_layout Standard
-
-\color black
-On peut mentionner comme un exemple de cette technique les deux logiciels
- : SINTEX et ALEXDOC qui utilisent l’indexation assistée par ordinateur.
- 
+The two previous techniques can be combined, a first automatic process to
+ extract the terms of the document.
+ However the final choice remains the expert in the field or librarian to
+ establish semantic relations between keywords and choose the significant
+ terms using a thesaurus or a terminology database which is an organized
+ list of descriptors (keywords) obeying specific terminology rules
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Aba09,Sau05,Hadj08"
 
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Subsection
 
 \color black
-Les formes d'index
+Index types
 \end_layout
 
 \begin_layout Standard
 
 \color black
-L’index est la sortie du processus d’indexation, il existe plusieurs types
- d’index selon la technique utilisé et la fonction souhaitée :
+The index is the output of the indexing process, there are several types
+ of indexes according to the used technique and the desired function:
 \end_layout
 
 \begin_layout Subsubsection
@@ -1425,17 +1340,16 @@ Document Index
 \begin_layout Standard
 
 \color black
-L'index des documents conserve des informations sur chaque document.
- Il est un index ISAM (Index sequential access mode) d'une largeur fixe,
- ordonné par l'ID du document.
- Les informations stockées dans chaque entrée comprennent des données, une
- somme de contrôle de documents et diverses statistiques.
- Si le document a été exploré, il contient aussi un pointeur vers un fichier
- d'une largeur variable appelé les informations du document qui contient
- l'URL et le titre.
- Cette décision de conception a été guidée par le désir d'avoir une structure
- de données relativement compact, et la possibilité de chercher un enregistremen
-t dans une seule parcoure du disque, lors d'une interrogation .
+The document index keeps information about each document.
+ It is an index ISAM (Index sequential access mode) with a fixed width,
+ ordered by the ID of the document.
+ The information stored in each entry includes data, a checksum of documents
+ and various statistics.
+ If the document was crawled, it also contains a pointer to a variable width
+ file called the document information that contains the URL and title.
+ This design decision was driven by the desire to have a relatively compact
+ data structure, and the ability to find a record in one disk traversal,
+ when queried.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Brin98"
@@ -1448,8 +1362,7 @@ key "Brin98"
 \begin_layout Standard
 
 \color black
-Le tableau suivant est une illustration simplifiée d'un index des documents
- : 
+The following table is a simplified illustration of a document index: 
 \end_layout
 
 \begin_layout Standard
@@ -1458,7 +1371,7 @@ Le tableau suivant est une illustration simplifiée d'un index des documents
 \begin_inset Float table
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -1486,9 +1399,7 @@ Document ID
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color black
-Texte
+Text
 \end_layout
 
 \end_inset
@@ -1499,7 +1410,7 @@ Texte
 \begin_layout Plain Layout
 
 \color black
-Lien
+Link
 \end_layout
 
 \end_inset
@@ -1631,10 +1542,6 @@ Document Index
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -1649,8 +1556,8 @@ Forward Index
 \begin_layout Standard
 
 \color black
-L'index transmis stocke une liste de mots pour chaque document.
- Ce qui suit est une forme simplifiée de forward index :
+The forward index stores a list of words for each document.
+ The following is a simplified form of forward index:
 \end_layout
 
 \begin_layout Standard
@@ -1688,7 +1595,7 @@ Document ID
 \begin_layout Plain Layout
 
 \color black
-Mots
+Words
 \end_layout
 
 \end_inset
@@ -1787,23 +1694,18 @@ Forward Index
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
- La raison derrière le développement d'un index transmis est, pendant que
- les documents sont parcourus, il est préférable de stocker immédiatement
- les mots par document.
- La délinéation active un système de traitement asynchrone, ce qui contourne
- partiellement l’index inversé en goulot d'étranglement .
- L’index transmis est sauvegardé pour le transformer en un index inversé.
- L'indice à terme est essentiellement une liste de couples constitués d'un
- document et un mot, collectés par le document.
- La conversion de l’index transmis en un index inversé n'est qu'une question
- de trier les couples par les mots.
- A cet égard, l'index inversé est un mot-triés de l’index transmis.
+The rationale behind developing a forward index is that as documents are
+ parsing, it is better to immediately store the words per document.
+ The delineation enables Asynchronous system processing, which partially
+ circumvents the inverted index update bottleneck.
+ The forward index is sorted to transform it to an inverted index.
+ The forward index is essentially a list of pairs consisting of a document
+ and a word, collated by the document.
+ Converting the forward index to an inverted index is only a matter of sorting
+ the pairs by the words.
+ In this regard, the inverted index is a word-sorted forward index.
  
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1823,14 +1725,13 @@ Inverted index
 \begin_layout Standard
 
 \color black
-Plusieurs moteurs de recherche intègrent un index inversé lors de l'évaluation
- d'une requête de recherche pour localiser rapidement des documents qui
- comportent les mots dans la requête et puis les classer par pertinence.
- Puisque l’index inversé sauvegarde la liste des documents contenant chaque
- mot, le moteur de recherche peut utiliser un accès direct pour trouver
- les documents associés à chaque mot dans une requête afin de récupérer
- les documents qui répondent rapidement.
- Le tableau suivant est une illustration simplifiée d'un index inversé :
+Many search engines include an inverted index when evaluating a search query
+ to quickly retrieve documents that contain words in the query and then
+ sort them by relevance.
+ Since the inverted index stores the list of documents containing each word,
+ the search engine can use direct access to find documents associated with
+ each word in a query to retrieve documents that respond quickly.
+ The following table is a simplified illustration of an inverted index:
  
 \end_layout
 
@@ -1858,7 +1759,7 @@ status open
 \begin_layout Plain Layout
 
 \color black
-Mot
+Word
 \end_layout
 
 \end_inset
@@ -1992,10 +1893,6 @@ Document 7
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -2004,18 +1901,18 @@ Document 7
 \begin_layout Standard
 
 \color black
-Cet index ne peut déterminer que si un mot existe dans un document particulier,
- car il ne stocke aucune information concernant la fréquence ou la position
- du mot, il est donc considéré comme un index de booléen.
- Un tel index décide quels sont les documents qui correspondent à une requête,
- mais ne les classe pas.
- Dans certains modèles, l'index comprend des informations supplémentaires
- telles que la fréquence de chaque mot dans chaque document ou les positions
- d'un mot dans chaque document.
- Les renseignements de position permettent à l'algorithme de recherche d’identif
-ier le voisinage du mot pour supporter la recherche de phrases.
- La fréquence peut être utilisée pour aider dans le classement de la pertinence
- des documents par rapport à la requête.
+This index can identify only if a word exists in a particular document because
+ it does not store any information regarding the frequency or the position
+ of the word.
+ It is considered an index of boolean.
+ This index determines which documents that match a query, but does not
+ classify them.
+ In some models, the index includes additional information such as frequency
+ of each word in each document or positions of a word in each document.
+ The position information allow the search algorithm to identify the adjacent
+ words to support the search by phrases.
+ The frequency can be used to assist calculating the relevance of documents
+ to the query.
  
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -2035,13 +1932,13 @@ N-gram index
 \begin_layout Standard
 
 \color black
-Un n-gramme est une séquence de n caractères consécutifs.
- Pour un document quelconque, l’ensemble des n-grammes (en général n prend
- les valeurs 2 ou 3) qu’on peut générer est le résultat qu’on obtient en
- déplaçant une fenêtre de n cases sur le corps de texte.
- Ce déplacement se fait par étapes, une étape correspond à un caractère.
- Ensuite on compte les fréquences des n-grammes trouvés.
- Par exemple
+An n-gram is a sequence of n consecutive characters.
+ For any document, all n-grams (usually n takes the values ​​2 or 3) we
+ can generate, is the result obtained by shifting a window of n squares
+ on the body text.
+ This shift occurs in steps, one step corresponds to a character.
+ Then we calculate the frequencies of n-grams found.
+ for example 
 \begin_inset Foot
 status collapsed
 
@@ -2060,11 +1957,11 @@ key "Jal02"
 
 \end_inset
 
-la phrase
+the french sentence
 \emph on
  "La nourrice nourrit le nourrisson"
 \emph default
- se représente par :
+ is represented by :
 \end_layout
 
 \begin_layout Standard
@@ -2257,7 +2154,7 @@ status open
 \begin_layout Plain Layout
 
 \color black
-n-grammes
+n-grams
 \end_layout
 
 \end_inset
@@ -2413,7 +2310,7 @@ rit
 \begin_layout Plain Layout
 
 \color black
-Fréquences
+Frequencies
 \end_layout
 
 \end_inset
@@ -2585,26 +2482,17 @@ N-gram index
 
 \end_inset
 
- L’un des avantages des n-grammes est la capture automatique des racines
- les plus fréquentes 
+One benefit of n-grams is automatic tracking of the most common stems 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Gref95"
 
 \end_inset
 
-: dans l’exemple précédent, grâce aux techniques basées sur les n-grammes
- nous trouvons la racine commune de : Nourrir, nourri, nourrit, nourrissez,
- nourriture, etc.
-\end_layout
-
-\begin_layout Standard
-
-\color black
-La tolérance aux fautes d’orthographes et aux déformations est également
- une propriété importante.
- Enfin, ces techniques n’ont pas besoin d’éliminer les mots-outils (Stop
- Words) ni de procéder à la lemmatisation, ni au stemming.
+: dans in the previous example, using techniques based on n-grams we find
+ the common root of : Nourrir, nourri, nourrit, nourrissez, nourriture,
+ etc.
+ Tolerance to spelling mistakes and distortions is also an important property.
  
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -2618,7 +2506,7 @@ key "San08"
 \begin_layout Subsection
 
 \color black
-Stockage de l’index 
+Index storage
 \end_layout
 
 \begin_layout Standard

@@ -142,6 +142,16 @@ setcounter{chapter}{7}
 
 \begin_layout Chapter
 Implementation
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Resumer
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -455,65 +465,148 @@ Python
 \end_layout
 
 \begin_layout Standard
-Nous avons opté pour le langage de programmation Python en raison de ces
- caractéristiques qui sont commodes pour nous, Python est 
+Python is a remarkably powerful dynamic programming language that is used
+ in a wide variety of application domains.
+ Python is often compared to Tcl, Perl, Ruby, Scheme or Java.
+ Some of its key distinguishing features include:
+\end_layout
+
+\begin_layout Itemize
+very clear, readable syntax 
+\end_layout
+
+\begin_layout Itemize
+strong introspection capabilities
+\end_layout
+
+\begin_layout Itemize
+intuitive object orientation 
+\end_layout
+
+\begin_layout Itemize
+natural expression of procedural code 
+\end_layout
+
+\begin_layout Itemize
+full modularity, supporting hierarchical packages 
+\end_layout
+
+\begin_layout Itemize
+exception-based error handling 
+\end_layout
+
+\begin_layout Itemize
+very high level dynamic data types 
+\end_layout
+
+\begin_layout Itemize
+extensive standard libraries and third party modules for virtually every
+ task 
+\end_layout
+
+\begin_layout Itemize
+extensions and modules easily written in C, C++ 
+\end_layout
+
+\begin_layout Itemize
+embeddable within applications as a scripting interface.
+\end_layout
+
+\begin_layout Paragraph
+Python is powerful and fast
+\end_layout
+
+\begin_layout Standard
+Fans of Python use the phrase "batteries included" to describe the standard
+ library, which covers everything from asynchronous processing to zip files.
+ The language itself is a flexible powerhouse that can handle practically
+ any problem domain.
+ It's possible in Python to build a web server in three lines of code.
+ Python lets the user to write the code he needs, quickly.
+ And, thanks to a highly optimized byte compiler and support libraries,
+ Python code runs more than fast enough for most applications.
+ 
+\end_layout
+
+\begin_layout Paragraph
+Python plays well with others
+\end_layout
+
+\begin_layout Standard
+Python can integrate with COM, .NET, and CORBA objects.
+\end_layout
+
+\begin_layout Itemize
+For Java libraries, developers can use Jython, an implementation of Python
+ for the Java Virtual Machine.
+\end_layout
+
+\begin_layout Itemize
+For .NET, developers can use IronPython , Microsoft's new implementation
+ of Python for .NET, or Python for .NET.
+\end_layout
+
+\begin_layout Standard
+Python is also supported for the Internet Communications Engine (ICE) and
+ many other integration technologies.
+\end_layout
+
+\begin_layout Standard
+To take the performance advantage of low-level code, the developer can write
+ extension modules in C or C++, or wrap existing code with SWIG or Boost.
+ Python.
+ Wrapped modules appear to program exactly like native Python code.
+ That's language integration made easy.
+ Also in the opposite route, the developer can embed Python in his own applicati
+on.
+\end_layout
+
+\begin_layout Paragraph
+Python runs everywhere
+\end_layout
+
+\begin_layout Standard
+Python is available for all major operating systems: Windows, Linux/Unix,
+ OS/2, Mac, Amiga, among others.
+ There are even versions that run on .NET, the Java virtual machine, and
+ Nokia Series 60 cell phones.
+ the same source code will run unchanged across all implementations.
+\end_layout
+
+\begin_layout Paragraph
+Python is friendly and easy to learn
+\end_layout
+
+\begin_layout Standard
+The Python newsgroup is known as one of the friendliest around.
+ The avid developer and user community maintains a wiki, hosts international
+ and local conferences, runs development sprints, and contributes to online
+ code repositories.
+\end_layout
+
+\begin_layout Standard
+Python also comes with complete documentation, both integrated into the
+ language and as separate web pages.
+ Online tutorials target both the seasoned programmer and the newcomer.
+ All are designed to make you productive quickly.
+ The availability of first-rate books completes the learning package.
+\end_layout
+
+\begin_layout Paragraph
+Python is Open
+\end_layout
+
+\begin_layout Standard
+The Python implementation is under an open source license that makes it
+ freely usable and distributable, even for commercial use.
+ The Python license is administered by the Python Software Foundation
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Python"
 
 \end_inset
 
-: 
-\end_layout
-
-\begin_layout Itemize
-sous licence open source, ce qui le rend gratuit et librement utilisable
- et distribuable ; 
-\end_layout
-
-\begin_layout Itemize
-indépendant de toute plate forme, il fonctionne sur tous les principaux
- systèmes d'exploitation, notamment : Windows, Linux / Unix, OS / 2, Mac,
- Amiga .
- Il existe même des versions qui s'exécutent sur.
- NET, la machine virtuelle Java, les téléphones cellulaires Nokia Séries
- 60 et Android phones.
- En faite, le même code source s’exécutera à travers les plateformes sans
- avoir besoin de le changer ;
-\end_layout
-
-\begin_layout Itemize
-un langage qui support l’Unicode naturellement, en conséquence il n’y a
- pas besoin d'outils supplémentaires pour pouvoir manipuler la langue arabe
- ; 
-\end_layout
-
-\begin_layout Itemize
-il s’intègre facilement avec les serveurs web tels que ‘Apache’ et ‘IIS’
- grâce à sa bibliothèque standard CGI (Common Gateway Interface).
- 
-\end_layout
-
-\begin_layout Standard
-Python a été conçu pour être un langage lisible.
- Il utilise des mots-clés anglais fréquents alors que d’autres langages
- utilisent la ponctuation, et possède également moins de constructions syntaxiqu
-es
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-Constructions syntaxiques (Boilerplate code) : section de code qui doit
- être inclue dans de nombreux endroits avec peu ou pas d'altération, le
- plus souvent utilisé dans les langues ‘verbeux’, c.à.d.
- le programmeur doit écrire beaucoup de code pour faire des travaux minimes.
-\end_layout
-
-\end_inset
-
- que de nombreux langages structurés tels que C, Perl ou Pascal.
- Cette simplicité du langage algorithmique permet de passer facilement à
- d’autres langages de programmation.
+.
 \end_layout
 
 \begin_layout Subsection

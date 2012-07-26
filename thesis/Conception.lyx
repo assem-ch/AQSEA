@@ -139,12 +139,13 @@ status open
 \backslash
 epigraph{
 \backslash
-textit{Imagination is more important than knowledge.
- For knowledge is limited to all we now know and understand, while imagination
- embraces the entire world, and all there ever will be to know and understand.
- }}{
+textit{Special cases aren't special enough to break the rules.
 \backslash
-textit{Albert Einstein}}
+
+\backslash
+* Although practicality beats purity.}}{
+\backslash
+textit{Tim Peters, The Zen of Python}}
 \end_layout
 
 \begin_layout Plain Layout
