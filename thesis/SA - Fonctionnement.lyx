@@ -681,7 +681,7 @@ status open
 \color black
 \begin_inset Graphics
 	filename figures/Crawling.png
-	scale 75
+	scale 50
 
 \end_inset
 
@@ -2921,43 +2921,39 @@ key "Dah06"
 \begin_layout Section
 
 \color black
-Interrogation 
+Querying 
 \end_layout
 
 \begin_layout Standard
 
 \color black
-L'interrogation est la phase d'interaction entre le système et l'utilisateur.
- Ce dernier exprime son besoin d'information via un langage de requête que
- le système va se charger de traduire.
- Cette traduction se fait selon le modèle de requête et a pour but de comprendre
- les besoins de l'utilisateur et de les exprimer dans un formalisme similaire
- à celui mis en œuvre lors de l'indexation des documents.
- Ce processus fournit une requête interne.
- Suite à cette phase de compréhension de la requête, un modèle de correspondance
- calcule la correspondance entre la requête interne et chaque index des
- documents.
- Ce calcul, établi par la fonction de correspondance, a classiquement pour
- résultat une liste ordonnée des documents de la base.
- Il faut, à ce niveau, établir une comparaison sémantique (et non une égalité)
- entre les concepts figurants dans un document et ceux figurants dans la
- requête.
+Querying is the phase of interaction between the system and the user.
+ This expresses the need for information via a query language that the system
+ will take care of interpreting.
+ This interpretation is done according to the query template and is designed
+ to understand user needs and express them in a formalism similar to the
+ one used when indexing documents.
+ This process provides an inner query.
+ Following this phase of query interpreting, a matching pattern calculates
+ the match between the inner  query and each document in the index.
+ This calculation established by the mapping function, has traditionally
+ resulted in an ordered list of documents.
+ It should, at this level, a semantic comparison (not equal) between concepts
+ in of document and those of the query.
 \end_layout
 
 \begin_layout Standard
 
 \color black
-La comparaison entre requête et document aboutit rarement à des équivalences
- strictes, mais plutôt à des équivalences partielles : le document correspond
- à une partie seulement de la requête.
- Le premier document de la liste renvoyée par le système est celui qui est
- considéré par le système comme le plus pertinent, c’est-à-dire celui qui
- répond le mieux à la requête, toujours d'après le système.
- Le dernier document est celui qui est considéré par le système comme le
- moins pertinent.
- Cette notion de pertinence repose sur la proximité entre les besoins exprimés
- par l'utilisateur et les résultats fournis par le système.
- On différencie la pertinence utilisateur de la pertinence système.
+The comparison between query and document rarely leads to strict equivalences,
+ but rather to partial equivalences: the document is only part of the query.
+ The first document in the list returned by the system is one that is considered
+ by the system as the most relevant, that is to say the one that best suits
+ the query, again according to the system.
+ The final document is one that is considered by the system as the least
+ relevant.
+ This notion of relevance is based on the proximity between the needs expressed
+ by the user and the results provided by the system.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Dah06"
@@ -2970,96 +2966,74 @@ key "Dah06"
 \begin_layout Subsection
 
 \color black
-La notion de pertinence 
+Relevance concept
 \end_layout
 
 \begin_layout Standard
 
 \color black
-Pertinence est une notion centrale de l’interrogation car toutes les évaluations
- s'articulent autour de cette notion.
- Mais c'est aussi la notion la plus mal connue, malgré de nombreuses études
- portant sur cette notion tel que celle figurant dans.
+Relevance is a central concept of the query because all evaluations are
+ based around this concept.
+ But it is also the most poorly understood concept, despite numerous studies
+ on this concept as the one in
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Denos97"
 
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Standard
 
 \color black
-Voyons quelques définitions de la pertinence pour avoir une idée de la divergenc
-e.
- La pertinence est: 
+Let us see some definitions of the relevance.
+ Relevance is: 
 \end_layout
 
 \begin_layout Itemize
 
 \color black
-La correspondance entre un document et une requête, une mesure d'informativité
- du document à la requête; 
+The correspondence between a document and a query, a measure of informativeness
+ of the document to the query; 
 \end_layout
 
 \begin_layout Itemize
 
 \color black
-Un degré de relation (chevauchement, relativité, …) entre le document et
- la requête; 
+A degree of relationship (overlap, relativity, ...) between the document and
+ the query; 
 \end_layout
 
 \begin_layout Itemize
 
 \color black
-Un degré de la surprise qu'apporte un document, qui a un rapport avec le
- besoin de l'utilisateur; 
+A degree of surprise that comes with a document that is relevant to the
+ needs of the user; 
 \end_layout
 
 \begin_layout Itemize
 
 \color black
-Une mesure d'utilité du document pour l'utilisateur; …etc.
+A measure of usefulness of the document to the user.
 \end_layout
 
 \begin_layout Standard
 
 \color black
-Même dans ces définitions, les notions utilisées (informativité, relativité,
- surprise, …) restent très vagues et ceci, parce que les utilisateurs ont
- des besoins très variés.
- Ils ont aussi des critères très différents pour juger si un document est
- pertinent.
- Donc, la notion de pertinence est utilisée pour recouvrir un très vaste
- éventail de critères et de relations.
- 
-\end_layout
-
-\begin_layout Standard
-
-\color black
-Dans la suite, nous appelons pertinence système l'ensemble des principes
- qui sous-tendent la fonction de correspondance (donc le document est jugé
- pertinent par le système) 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Denos97"
-
-\end_inset
-
-, par opposition à la pertinence utilisateur, qui correspond à l'ensemble
- des jugements de pertinence que produit l’utilisateur qui utilise le système
- (le document est jugé pertinent par l’utilisateur).
- 
+Even in these definitions, the used concepts (informativeness, relativity,
+ surprise ...) remains very vague because users have very different needs.
+ They have very different criteria for judging whether a document is relevant.
+ So the notion of relevance is used to cover a very wide range of criteria
+ and relations
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Dah06"
 
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Subsection
