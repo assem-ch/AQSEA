@@ -1834,32 +1834,38 @@ Conjugation of verbs describe the variation in their forms according to
 \begin_layout Itemize
 
 \series bold
-La valeur aspectuelle 
+Aspect
 \series default
-: L’aspect est un trait grammatical associé, le plus souvent, au verbe pour
- indiquer la façon dont le procès ou l'état exprimé par le verbe est envisagé
- du point de vue de son développement (commencement, déroulement, achèvement,
- évolution globale, etc.), indépendamment du moment où l’on parle ; 
+: The aspect is a grammar feature associated, in most cases, to verbs in
+ order to indicate which state it expresses; considered from the perspective
+ of its development (beginning, progress, completion, overall evolution,
+ etc.), regardless of when it comes ; 
 \end_layout
 
 \begin_layout Itemize
-La valeur modale : Le mode dénote la manière dont l'action exprimée par
- le verbe est conçue et présentée.
- L'action peut être mise en doute, affirmée comme réelle ou éventuelle.
- Ils se combinent à la sémantique des verbes et par là créent les aspects
- ;
+
+\series bold
+Mood 
+\series default
+: Mood indicates how the action expressed by the verb is designed and presented.
+ The action can be doubted, affirmed as actual or eventual.
+ They combine the semantics of verbs and thereby create aspects ;
 \end_layout
 
 \begin_layout Itemize
-La valeur temporelle : Le temps est un trait grammatical permettant de situer
- un fait (qui peut être un état ou une action) dans l'axe du temps de l'énonciat
-ion par rapport à trois repères : passé, présent et le futur.
- Les indications temporelles sont souvent accompagnées d'indications aspectuelle
-s qui lui sont plus ou moins liées.
+
+\series bold
+Tense
+\series default
+ : Tense is a grammatical feature to locate a fact (which may be a state
+ or action) in the enunciation time axis relative to the three markers:
+ past, present and future.
+ The temporal indications are often accompanied by aspectual indications
+ that are more or less related.
 \end_layout
 
 \begin_layout Standard
-Ces trois principales valeurs sont étroitement liées 
+These three key values ​​are closely related 
 \begin_inset Note Note
 status collapsed
 
@@ -1869,11 +1875,15 @@ status collapsed
 
 \end_inset
 
-; elles permettent de décrire deux formes fondamentales du verbe : 
+; they can describe two basic forms of the verb in Arabic : 
 \end_layout
 
 \begin_layout Itemize
-al-maádi 
+
+\series bold
+Perfective (al-maádi
+\series default
+
 \begin_inset Foot
 status collapsed
 
@@ -1887,11 +1897,15 @@ status collapsed
 
 \end_inset
 
-: il indique que le déroulement de l’action exprimée par le verbe est achevé,
- ce qui implique le passé.
- Il se caractérise par une suffixation des marques de la personne, du genre,
- du nombre et du mode à la racine verbale.
- Par exemple, pour le pluriel féminin du verbe "
+
+\series bold
+):
+\series default
+ it indicates that the progress of the action expressed by the verb is finished,
+ which means the past.
+ It is characterized by adding suffixes of person, gender, number and mood
+ to the verb's stem.
+ For example, for the feminine plural of the verb "
 \family roman
 \series medium
 \shape up
@@ -1918,11 +1932,11 @@ status collapsed
 \lang arabic_arabi
 كَتَبَ
 \lang english
- " (kataba – écrire), nous ajoutons le suffixe "
+ " (kataba – write), we add the suffix "
 \lang arabic_arabi
  نَ 
 \lang english
-" pour avoir la forme "
+" to get the form "
 \family roman
 \series medium
 \shape up
@@ -1949,12 +1963,12 @@ status collapsed
 \lang arabic_arabi
 كَتَبْنَ
 \lang english
- " (katabna - elles ont écrit) et pour le pluriel masculin, nous ajoutons
- le suffixe "
+ " (katabna - *they* wrote, feminine) and for the masculine plural, we add
+ the suffix "
 \lang arabic_arabi
  وا
 \lang english
- " pour avoir la forme "
+ " to get the form "
 \family roman
 \series medium
 \shape up
@@ -1981,11 +1995,15 @@ status collapsed
 \lang arabic_arabi
 كَتَبُوا
 \lang english
- " (katabuwá, ils ont écrit) ; 
+ " (katabuwá - *they* wrote, masculine) ; 
 \end_layout
 
 \begin_layout Itemize
-al-mudaára‛ 
+
+\series bold
+Imperfective (al-mudaára‛
+\series default
+
 \begin_inset Foot
 status collapsed
 
@@ -1999,15 +2017,18 @@ status collapsed
 
 \end_inset
 
-: il signale un déroulement inachevé, ce qui peut impliquer le présent.
- Il se caractérise par une préfixation de ses éléments ainsi qu’une ou plusieurs
- infixations sous forme de duplication de lettres ou de substitution de
- voyelles.
- Par exemple, pour le verbe "
+
+\series bold
+):
+\series default
+ it indicates an unfinished progress, which may imply the present.
+ It is characterized by adding a prefix and one or more infixes as a letter
+ duplication or a vowel substitution.
+ For example, for the verb "
 \lang arabic_arabi
  مَدَّ 
 \lang english
-" (madda – tendre), nous pouvons obtenir " 
+" (madda – give), we can get " 
 \lang arabic_arabi
 أَمُدُّ
 \family roman
@@ -2034,40 +2055,47 @@ status collapsed
 \uwave default
 \noun default
 \color inherit
-" (áamuddu – je tends) ou " 
+" (áamuddu – I give) or " 
 \lang arabic_arabi
 يَمْدُدْن
 \lang english
- " (yamdudna – elles tendent).Il inclut deux types de flexions modales :
- 
+ " (yamdudna – they gives, feminine).
+ It includes two types of modal inflections: 
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-L’inaccompli indicatif de mode réel où le locuteur énonce le caractère réel
- (rélisé, devant être réalisé, en cours de réalisation, etc.) de l’action
- ou l’état exprimé par le verbe ;
+The indicative of actual mode where the speaker states the actual character
+ (reread, to be achieved, in progress, etc.) of action or state expressed
+ by the verb;
 \end_layout
 
 \begin_layout Itemize
-L’inaccompli subjonctif et apocopé de mode potentiel où le locuteur se contente
- d’énoncer la nature possible ou virtuelle de l’action ou l’état exprimé
- par le verbe.
- 
+The subjunctive of potential mode in which the speaker merely states the
+ possible or virtual nature of action or state expressed by the verb.
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
-L'impératif : il exprime l’ordre, le commandement, la défense ou l’exhortation
- et dont les éléments n’existent qu’à la 2ème personne au singulier, féminin
- duel et pluriel ; 
+
+\series bold
+Imperative
+\series default
+: it expresses the order, command, or exhortation ...etc.
+ It exists only the with the 2nd person in singular, dual and plural; 
 \end_layout
 
 \begin_layout Standard
-Les formes ainsi obtenues peuvent combiner des valeurs aspectuelles, modales
- et temporelles bien que, dans l’usage moderne, l’aspect temporel semble
- être plus saillant.
- [Larcher, 2003].
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+[Larcher, 2003]
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
