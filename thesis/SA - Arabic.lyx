@@ -105,7 +105,11 @@ setcounter{chapter}{1}
 
 %
 \backslash
-pagenumbering{arabic} 
+pagenumbering{arabic}
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -214,10 +218,36 @@ Bound unneeded points! no mercy!!
 
 \begin_layout Standard
 \begin_inset Note Greyedout
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Bound it ash!!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Greyedout
+status collapsed
+
+\begin_layout Plain Layout
+verify arabic Words
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+Terminology as a nomenclature
 \end_layout
 
 \end_inset
@@ -302,34 +332,23 @@ The scientists of Arabic language considered the Hamzah as a letter
 
 \end_inset
 
- consonant letters, three of them (
-\series bold
+ consonant letters, three of them 
 \lang arabic_arabi
 ا و ي
-\series default
- 
 \lang english
-) are considered as vowels.
+ are considered as vowels.
  Optionally, one of the three diacritical marks 
 \begin_inset Foot
 status open
 
 \begin_layout Plain Layout
- 
+
 \series bold
+ 
+\series default
 \lang arabic_arabi
 علامات التشكيل
-\family roman
-\series medium
-\shape up
-\size small
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\series bold
 \lang english
  
 \end_layout
@@ -465,11 +484,7 @@ begin{Arabic}
 
 \end_inset
 
-
-\series bold
 ء
-\series default
-
 \begin_inset ERT
 status open
 
@@ -514,11 +529,7 @@ begin{Arabic}
 
 \end_inset
 
-
-\series bold
 ـو و
-\series default
-
 \begin_inset ERT
 status open
 
@@ -563,11 +574,7 @@ begin{Arabic}
 
 \end_inset
 
-
-\series bold
 ع عـ ـعـ ـع 
-\series default
-
 \begin_inset ERT
 status open
 
@@ -677,11 +684,11 @@ status collapsed
 \begin_layout Standard
 Verbs with a simple root have a base of three consonants called radical
  consonants.
- These verbs are associated with verbal pattern "
+ These verbs are associated with verbal pattern 
 \lang arabic_arabi
 فَعَلَ
 \lang english
-" (fa‛ala).
+ (fa‛ala).
  When none of the root consonants of the verb is a long vowel, it is called
  healthy.
  These radicals may involve processing or causes of defects
@@ -702,30 +709,30 @@ status open
 \end_layout
 
 \begin_layout Itemize
-The presence of "
+The presence of 
 \lang arabic_arabi
- أ
+أ
 \lang english
-" (á – hamzä), "
+ (á – hamzä), 
 \lang arabic_arabi
  ي
 \lang english
-" (y - yâ’) or " 
+ (y - yâ’) or  
 \lang arabic_arabi
 و
 \lang english
-" (w – wâw) among the radical consonants.
+ (w – wâw) among the radical consonants.
  Depending on the position of that, we distinguish different types of verbs
  : 
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-If one of the root consonants is " 
+If one of the root consonants is  
 \lang arabic_arabi
 أ
 \lang english
-" (á – hamzä), independently of its position => Hamzated
+ (á – hamzä), independently of its position => Hamzated
 \begin_inset Foot
 status collapsed
 
@@ -743,15 +750,15 @@ status collapsed
 \end_layout
 
 \begin_layout Itemize
-The first radical consonant is a "
+The first radical consonant is a 
 \lang arabic_arabi
  و
 \lang english
-" (w) or " 
+ (w) or   
 \lang arabic_arabi
 ي
 \lang english
-" (y) => Assimilated 
+  (y) => Assimilated 
 \begin_inset Foot
 status collapsed
 
@@ -769,15 +776,15 @@ status collapsed
 \end_layout
 
 \begin_layout Itemize
-The second radical consonant is a " 
+The second radical consonant is a   
 \lang arabic_arabi
 و
 \lang english
-" (w) or " 
+  (w) or   
 \lang arabic_arabi
 ي
 \lang english
-" (y) => Hollow
+  (y) => Hollow
 \begin_inset Foot
 status collapsed
 
@@ -795,15 +802,15 @@ status collapsed
 \end_layout
 
 \begin_layout Itemize
-The third radical consonant is a "
+The third radical consonant is a  
 \lang arabic_arabi
  و
 \lang english
-" (w) or " 
+  (w) or   
 \lang arabic_arabi
 ي
 \lang english
-" (y) => Weakened
+  (y) => Weakened
 \begin_inset Foot
 status collapsed
 
@@ -1040,44 +1047,36 @@ Numbers :
 
 \begin_layout Standard
 This category of nouns is made up of simple numerals representing units:
- from: " 
+ from:   
 \lang arabic_arabi
 صفر
 \lang english
- " (sifr- zero, 0) to " 
+   (sifr- zero, 0) to   
 \lang arabic_arabi
 تسعة
 \lang english
- " (tis‛at – nine, 9) ; the tens: " 
+   (tis‛at – nine, 9) ; the tens:   
 \lang arabic_arabi
 عشرة
 \lang english
- " (‛ašarat – ten,10) , 
-\begin_inset Quotes sld
-\end_inset
-
- 
+  (‛ašarat – ten,10) ,   
 \lang arabic_arabi
 عشرون
 \lang english
- 
-\begin_inset Quotes sld
-\end_inset
-
-(‛išruwn – twenty, 20), …et " 
+ (‛išruwn – twenty, 20), … and   
 \lang arabic_arabi
 تسعون
 \lang english
- " (tis‛uwn – ninety, 90) ; the hundreds, etc.well as numerals compounds
- such as cardinals of "
+   (tis‛uwn – ninety, 90) ; the hundreds, etc.
+ well as numerals compounds such as cardinals of  
 \lang arabic_arabi
  أَحَد عَشَر
 \lang english
- " (áahada ‛ašara - eleven, 11) to " 
+   (áahada ‛ašara - eleven, 11) to   
 \lang arabic_arabi
 تسعة عَشَر
 \lang english
- " (tis‛at ‛ašara - nineteen,19).
+   (tis‛at ‛ašara - nineteen,19).
  
 \end_layout
 
@@ -1132,19 +1131,19 @@ status collapsed
 hey represent a subcategory of noun expressing an idea of ​​demonstration.
  They can indicate that the object represented is found, either in the text,
  either in space or time, defined by the situation of utterance.
- They are two subsets: near-deictic (eg: " 
+ They are two subsets: near-deictic (eg:   
 \lang arabic_arabi
 هَذا
 \lang english
- " (hadaā – this), " 
+   (hadaā – this),   
 \lang arabic_arabi
 هَؤُلاء
 \lang english
- " (haẃulaā’ – these) and far-deictic (eg: " 
+   (haẃulaā’ – these) and far-deictic (eg:   
 \lang arabic_arabi
 ذلِكَ
 \lang english
- " (dalika – that), " 
+   (dalika – that),   
 \lang arabic_arabi
 أُولائِكَ
 \family roman
@@ -1171,7 +1170,7 @@ hey represent a subcategory of noun expressing an idea of ​​demonstration.
 \uwave default
 \noun default
 \color inherit
-" (ùuwlaāýika – those), etc.).
+  (ùuwlaāýika – those), etc.).
  Demonstratives are derivable only to dual .
  
 \end_layout
@@ -1199,19 +1198,19 @@ They relate to the noun or personal pronoun that precedes them and that
  we denote by antecedent.
  The relatives shall afford with their antecedents but are derivable only
  to dual (as demonstratives).
- Among the relative pronouns, we mention: " 
+ Among the relative pronouns, we mention:   
 \lang arabic_arabi
 الَّذي
 \lang english
- " (al-ladiy - that, masculine, singular), " 
+   (al-ladiy - that, masculine, singular),   
 \lang arabic_arabi
 اللتَيْنِ 
 \lang english
-" (al-latayni – those, feminine, dual), " 
+  (al-latayni – those, feminine, dual),   
 \lang arabic_arabi
 اللذينَ 
 \lang english
-" (those, masculine, plural), etc.
+  (those, masculine, plural), etc.
  
 \end_layout
 
@@ -1275,15 +1274,15 @@ status collapsed
 
 \end_inset
 
-, that who is talking: " 
+, that who is talking:   
 \lang arabic_arabi
 أَنَا 
 \lang english
-" (ánaā - I) or " 
+  (ánaā - I) or   
 \lang arabic_arabi
 نَحْنُ
 \lang english
- "
+  
 \family roman
 \series bold
 \shape up
@@ -1329,7 +1328,7 @@ status collapsed
 \begin_inset space ~
 \end_inset
 
-that who talking to: " 
+that who talking to:   
 \lang arabic_arabi
 أَنْتَ
 \family roman
@@ -1356,11 +1355,11 @@ that who talking to: "
 \uwave default
 \noun default
 \color inherit
-" (áanta – you, masculine, singular), "
+  (áanta – you, masculine, singular),  
 \lang arabic_arabi
  أَنْتِ 
 \lang english
-" (áanti – you, feminine, singular), " 
+  (áanti – you, feminine, singular),   
 \lang arabic_arabi
 أَنْتُمَا
 \family roman
@@ -1387,11 +1386,11 @@ that who talking to: "
 \uwave default
 \noun default
 \color inherit
-" (áantumaā – you, dual), " 
+  (áantumaā – you, dual),   
 \lang arabic_arabi
 أَنْتُمْ
 \lang english
- " (áantum – you, masculine, plural), " 
+   (áantum – you, masculine, plural),   
 \lang arabic_arabi
 أَنْتُنَّ
 \family roman
@@ -1418,7 +1417,7 @@ that who talking to: "
 \uwave default
 \noun default
 \color inherit
-" (áantunna – you, feminine, plural); 
+  (áantunna – you, feminine, plural); 
 \end_layout
 
 \begin_layout Itemize
@@ -1436,27 +1435,27 @@ status collapsed
 
 \end_inset
 
-, that who talking about : "
+, that who talking about :  
 \lang arabic_arabi
  هُوَ 
 \lang english
-" (huwa – he), 
+  (huwa – he), 
 \lang arabic_arabi
 هِيَ
 \lang english
- " " (hiya – she), " 
+     (hiya – she),   
 \lang arabic_arabi
 هُمَا
 \lang english
- " (humaā – they, dual), " 
+   (humaā – they, dual),   
 \lang arabic_arabi
 هُمْ
 \lang english
- " (hum – they, masculine), "
+   (hum – they, masculine),  
 \lang arabic_arabi
  هُن 
 \lang english
-" (hunna – they, feminine) ;
+  (hunna – they, feminine) ;
 \end_layout
 
 \begin_layout Subsection
@@ -1521,47 +1520,70 @@ key "Kadri_et_benyamina1992"
 \end_layout
 
 \begin_layout Itemize
-Prepositions : " 
+Prepositions :   
 \lang arabic_arabi
 فِي
 \lang english
- " (fiy – in) or " 
+   (fiy – in) or   
 \lang arabic_arabi
 عَلَى
 \lang english
- " (‛alaą – on); 
+   (‛alaą – on); 
 \end_layout
 
 \begin_layout Itemize
-Conjunctions: "
+Conjunctions:  
 \lang arabic_arabi
  ثُمَّ 
 \lang english
-" (tumma – then) ;
+  (tumma – then) ;
 \end_layout
 
 \begin_layout Itemize
-Adverbs : " 
+Adverbs :   
 \lang arabic_arabi
 أَبَدًا
 \lang english
- " (abadã – never) or " 
+   (abadã – never) or   
 \lang arabic_arabi
 بِشكْلٍ عَادِي
 \lang english
-" (bišaklĩ ‛aādiyyĩ – normally, in the normal way) ; 
+  (bišaklĩ ‛aādiyyĩ – normally, in the normal way) ; 
 \end_layout
 
 \begin_layout Itemize
-Quantifiers: "
+Quantifiers:  
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
 \lang arabic_arabi
- آُلّ 
+كُلّ 
 \lang english
-" (kulla – all ) or " 
+  (kulla – all ) or   
 \lang arabic_arabi
 بَعْض
 \lang english
- " (ba‛da – some) ; 
+   (ba‛da – some) ; 
 \end_layout
 
 \begin_layout Itemize
@@ -1580,8 +1602,8 @@ Morphology
 
 \begin_layout Standard
 There are several categories of fusional languages​​, and Arabic is precisely
- in the category of languages with "Intro-flexion": this category of languages​​
-, the consonants indicate the meaning and vowels mark the flexion of  word.
+ in the category of languages with Intro-flexion: this category of languages​​,
+ the consonants indicate the meaning and vowels mark the flexion of  word.
  This system is found especially in the Semitic languages ​​(eg: Arabic,
  Hebrew) 
 \begin_inset CommandInset citation
@@ -1692,14 +1714,14 @@ key "GB75"
 \end_layout
 
 \begin_layout Itemize
-Mood of verbs : eg, for the verb "
+Mood of verbs : eg, for the verb  
 \lang arabic_arabi
- 
+ ذهَب
 \series bold
-ذهَبَ 
+َ 
 \series default
 \lang english
-" (dahaba – go), forms in the perfective
+  (dahaba – go), forms in the perfective
 \begin_inset Foot
 status collapsed
 
@@ -1713,14 +1735,14 @@ status collapsed
 
 \end_inset
 
- can be identified using their suffixes as "
+ can be identified using their suffixes as  
 \lang arabic_arabi
- 
+ ذهَبْتُ
 \series bold
-ذهَبْتُ 
+ 
 \series default
 \lang english
-" (dahabatu – I went) or their prefixes such in the imperfective
+  (dahabatu – I went) or their prefixes such in the imperfective
 \begin_inset Foot
 status collapsed
 
@@ -1745,24 +1767,25 @@ status collapsed
 
 \end_inset
 
- as "
+ as  
 \lang arabic_arabi
- 
+ أَذهَب
 \series bold
-أَذهَبُ 
+ُ 
 \series default
 \lang english
-" (áadhabu – I go) ; 
+  (áadhabu – I go) ; 
 \end_layout
 
 \begin_layout Itemize
-Function of nouns: using of suffixes such as "
-\series bold
+Function of nouns: using of suffixes such as 
 \lang arabic_arabi
- رَجُلانِ 
+رَجُلان
+\series bold
+ِ
 \series default
 \lang english
-" (rağulaáni – Two men in Nominative
+ (rağulaáni – Two men in Nominative
 \begin_inset Foot
 status collapsed
 
@@ -1776,13 +1799,14 @@ status collapsed
 
 \end_inset
 
-) or "
-\series bold
+) or  
 \lang arabic_arabi
- رَجُلَيْنِ 
+رَجُلَيْن
+\series bold
+ِ
 \series default
 \lang english
-" (rağulayni – Two men in Accusative
+  (rağulayni – Two men in Accusative
 \begin_inset Foot
 status open
 
@@ -1905,7 +1929,7 @@ status collapsed
  which means the past.
  It is characterized by adding suffixes of person, gender, number and mood
  to the verb's stem.
- For example, for the feminine plural of the verb "
+ For example, for the feminine plural of the verb  
 \family roman
 \series medium
 \shape up
@@ -1932,11 +1956,11 @@ status collapsed
 \lang arabic_arabi
 كَتَبَ
 \lang english
- " (kataba – write), we add the suffix "
+   (kataba – write), we add the suffix  
 \lang arabic_arabi
  نَ 
 \lang english
-" to get the form "
+  to get the form  
 \family roman
 \series medium
 \shape up
@@ -1963,12 +1987,12 @@ status collapsed
 \lang arabic_arabi
 كَتَبْنَ
 \lang english
- " (katabna - *they* wrote, feminine) and for the masculine plural, we add
- the suffix "
+   (katabna - *they* wrote, feminine) and for the masculine plural, we add
+ the suffix  
 \lang arabic_arabi
  وا
 \lang english
- " to get the form "
+   to get the form  
 \family roman
 \series medium
 \shape up
@@ -1995,7 +2019,7 @@ status collapsed
 \lang arabic_arabi
 كَتَبُوا
 \lang english
- " (katabuwá - *they* wrote, masculine) ; 
+   (katabuwá - *they* wrote, masculine) ; 
 \end_layout
 
 \begin_layout Itemize
@@ -2024,11 +2048,11 @@ status collapsed
  it indicates an unfinished progress, which may imply the present.
  It is characterized by adding a prefix and one or more infixes as a letter
  duplication or a vowel substitution.
- For example, for the verb "
+ For example, for the verb  
 \lang arabic_arabi
  مَدَّ 
 \lang english
-" (madda – give), we can get " 
+  (madda – give), we can get   
 \lang arabic_arabi
 أَمُدُّ
 \family roman
@@ -2055,11 +2079,11 @@ status collapsed
 \uwave default
 \noun default
 \color inherit
-" (áamuddu – I give) or " 
+  (áamuddu – I give) or   
 \lang arabic_arabi
 يَمْدُدْن
 \lang english
- " (yamdudna – they gives, feminine).
+   (yamdudna – they gives, feminine).
  It includes two types of modal inflections: 
 \end_layout
 
@@ -2099,55 +2123,69 @@ status open
 \end_layout
 
 \begin_layout Subsubsection
-Flexion des noms
+Flexion of nouns
 \end_layout
 
 \begin_layout Standard
-En arabe, la déclinaison des noms comporte trois cas : " 
+In Arabic, the declension of nouns involves three cases:   
 \lang arabic_arabi
 مَرْفُوع
 \lang english
- " (marfou‛ - nominatif), " 
+   (marfou‛ - nominative),  
 \lang arabic_arabi
 منْصُوب
 \lang english
- " (mansuwb – accusatif) et " 
+   (mansuwb – accusative) and   
 \lang arabic_arabi
 مجْرور
 \lang english
- " (mağruwr – génitif).
- A l’exception de certains cas particuliers, les noms sont " 
+   (mağruwr – genitive).
+ Except for some special cases, the nouns are   
 \lang arabic_arabi
 معرّبة
 \lang english
- " (mu‛arrabat - déclinables) et se mettent à l’un de ces trois cas suivant
- leur fonction dans la phrase.
- Sur le plan de la graphie, le cas ne correspond qu’à un élément graphique
- adjoint à la fin des formes nominales.
- Le système nominal de l’arabe admet différents systèmes de déclinaison
- suivant la nature de la forme (simple, diptotes, etc.) et le nombre de celle-ci
- (singulier, duel ou pluriel).
- Nous pouvons distinguer : 
+   (mu‛arrabat - declinables) and appear in one of these three cases according
+ to their functions in the sentence.
+ In terms of the spelling, the case represents only an assistant graphic
+ at the end of nominal forms.
+ The nominal system of Arabic admits different systems depending on the
+ nature of variation of the form (simple, diptotes, etc.) and the number
+ thereof (singular, dual or plural).
+ We can distinguish : 
 \end_layout
 
 \begin_layout Paragraph
-Déclinaison du nom au singulier : 
+Declination of singular nouns: 
 \end_layout
 
 \begin_layout Subparagraph
-Déclinaison de base à trois cas : 
+Basic declination of triptotes
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+ 
+\lang arabic_arabi
+منصرف
+\lang english
+ 
+\end_layout
+
+\end_inset
+
+: 
 \end_layout
 
 \begin_layout Standard
-C’est le cas le plus fréquent, il prend la voyelle "
+This is the most frequent case, it takes the vowel  
 \lang arabic_arabi
- ضَمَّة 
+ ضَمَّة
 \lang english
-" (dammat – u) comme une marque du nominatif, la "
+  (dammat – u) as a sign of the nominative , the vowel  
 \lang arabic_arabi
- فَتْحَة
+فَتْحَة
 \lang english
- " (fathat – a) à l’accusatif et la "
+  (fathat – a) in the accusative and the vowel  
 \family roman
 \series medium
 \shape up
@@ -2174,29 +2212,65 @@ C’est le cas le plus fréquent, il prend la voyelle "
 \lang arabic_arabi
 كَسْرَة
 \lang english
- – " (kasrat – i) au génitif.
- Quand le nom est indéfini, le tanwîn apparaît marqué respectivement par
- les trois signes diacritiques : " " (ũ – un), " " (ã - an) et " " (ĩ –
- in).
- A l’accusatif indéfini, excepté le cas des noms qui se terminent par "
- 
+   (kasrat – i) in the genitive.
+ When the noun is undefined, the tanwîn is marked respectively by the three
+ diacritics : 
+\lang arabic_arabi
+ ـٌ 
+\lang english
+ (ũ – un), 
+\lang arabic_arabi
+ ـً 
+\lang english
+ (ã - an) et 
+\lang arabic_arabi
+ ـٍ 
+\lang english
+ (ĩ – in).
+ In the indefinite accusative , except the case of nouns ending by   
 \lang arabic_arabi
 ة
 \lang english
- " (at) ou par " 
+   (ta) or by   
 \lang arabic_arabi
 ا
 \lang english
- " (ā’), un álif «
+   (ā’), an álif «
 \lang arabic_arabi
  ا 
 \lang english
-» (ā) vient renforcer le tanwîn " " (an) : par exemple, à l’accusatif indéfini,
- le nom "
+» (ā) strengthens the tanwîn 
 \lang arabic_arabi
- آِتَاب
+ ـً 
 \lang english
- " (kitaāb – livre) produit "
+ (an) : for example, in the accusative indefinite the noun  
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang arabic_arabi
+كِتَاب
+\lang english
+   (kitaāb – book) becomes  
 \family roman
 \series medium
 \shape up
@@ -2223,200 +2297,243 @@ C’est le cas le plus fréquent, il prend la voyelle "
 \lang arabic_arabi
 كِتَابًا
 \lang english
- " (kitaābãā – livre à l’accusatif indéfini) et le nom " 
+   (kitaābãā – book, accusative, indefinite) and the book   
 \lang arabic_arabi
 جَزِيرَة
 \lang english
- " (ğaziyrat – île) produit 
+   (ğaziyrat – island) becomes 
 \lang arabic_arabi
-جَزِيرَةً"
+جَزِيرَةً 
 \lang english
- " (ğaziyratã – île à l’accusatif indéfini).
+   (ğaziyratã – island, accusative, indefinite).
  
 \end_layout
 
 \begin_layout Subparagraph
-Déclinaison des diptotes : 
+Declination of diptotes
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+ 
+\lang arabic_arabi
+الممنوع من الصرف
+\lang english
+ 
+\end_layout
+
+\end_inset
+
+: 
 \end_layout
 
 \begin_layout Standard
-Les diptotes sont les noms qui, indéfinis grammaticalement, n’acceptent
- pas de tanwîn et prennent la même marque à l’accusatif et le génitif, soit
- la " 
+The nouns that are diptotes, grammatically undefined, do not accept tanwîn
+ and take the same mark in the accusative and the genitive which is the
+   
 \lang arabic_arabi
 فَتْحَة
 \lang english
- " (fathat – a).
- Par contre, quand ils sont définis, ils suivent la déclinaison de base
- à trois cas.
- C’est le cas des noms féminins qui se terminent par " 
+   (fathat – a).
+ by cons, when they are defined, they follow the declination of triptotes.
+ This is the case of feminine nouns that end with   
 \lang arabic_arabi
 اء
 \lang english
- " (ā’) tel que " 
+   (ā’) such as   
 \lang arabic_arabi
 صحْرَاء
 \lang english
- " (sahraā’ – désert), les adjectifs masculins de couleurs ayant pour schème
- " 
+   (sahraā’ – desert), masculine adjectives of colors with the pattern
+   
 \lang arabic_arabi
 أَفْعل
 \lang english
- " (af‛al) tel que "
+   (af‛al) such as  
 \lang arabic_arabi
  أحْمَر
 \lang english
- " (áhmar – rouge) et ceux qui sont féminins de schème " 
+   (áhmar – red)and those which are feminine with the pattern   
 \lang arabic_arabi
 فَعْلَاء
 \lang english
- " (fa‛laā’) tel que " 
+   (fa‛laā’) such as   
 \lang arabic_arabi
 بَيْضَاء
 \lang english
- " (baydaā’ – blanche) 
+   (baydaā’ – white , feminine) 
 \end_layout
 
 \begin_layout Subparagraph
-Déclinaison des cinq noms : 
+Declination of the five nouns : 
 \end_layout
 
 \begin_layout Standard
-Les cinq noms sont : 
+the five nouns are : 
 \end_layout
 
 \begin_layout Itemize
-les 3 noms : "
+the 3 nouns :  
 \lang arabic_arabi
- أبو
+أبو
 \lang english
- "(áabuw - père), "
+ (áabuw - father),  
 \lang arabic_arabi
- أخو
+أخو
 \lang english
- " (áhuw - frère) et "
+  (áhuw - brother) and  
 \lang arabic_arabi
- حمو
+حمو
 \lang english
- " (hamuw - beau-père) ; 
+  (hamuw - stepfather) ; 
 \end_layout
 
 \begin_layout Itemize
-une variante de "
+a variant of  
 \lang arabic_arabi
  فَم
 \lang english
- " (fam – bouche) : " 
+   (fam – mouth) :   
 \lang arabic_arabi
 فَا
 \lang english
-" ,"
+  , 
 \lang arabic_arabi
 فو
 \lang english
- " et " ; "
+  and  
 \lang arabic_arabi
 فِي
 \lang english
- 
+   ; 
 \end_layout
 
 \begin_layout Itemize
-le nom " 
+the noun   
 \lang arabic_arabi
 ذو
 \lang english
- " (duw – possesseur).
+   (duw – possessor).
 \end_layout
 
 \begin_layout Standard
-Ce sont des noms bilitères qui prolongent leur voyelle finale quand ils
- sont définis par un complément.
+These are bi-literal nouns who extend their final vowel when they are defined
+ by a complement.
  
 \end_layout
 
 \begin_layout Subparagraph
-Déclinaison de déverbaux de racines défectueuses : 
+Declination of deverbals with defective roots : 
 \end_layout
 
 \begin_layout Standard
-Certains participes actifs et noms verbaux des verbes à racine défectueuse
- tels que le participe actif " 
+some active participles and verbal nouns of verbs with defective root such
+ as the active participle 
 \lang arabic_arabi
-مَاضٍ 
+مَاضٍ
 \lang english
-" (maādĩ – passé) et le nom verbal " 
+  (maādĩ – past) et the verbal noun 
 \lang arabic_arabi
-تَخَلٍّ 
+تَخَلٍّ
 \lang english
-" (tahallĩ - abondon) ne prennent la marque du cas qu’à l’accusatif: le
- " 
+  (tahallĩ - abandon) only take the mark of case in the accusative: the
+ last letter of root 
 \lang arabic_arabi
 ي
 \lang english
-" (dernière lettre de la racine - y) est remplacé par le tanwîn (in) aux
- nominatif et génitif indéfinis.
- Quant aux participes passifs qui se terminent par " 
+ (y) is replaced by the tanwîn (in) to the indefinite nominative and genitive.
+ As for the passive participles that end in   
 \lang arabic_arabi
 ى
 \lang english
-" ou "
+  or  
 \lang arabic_arabi
  ا
 \lang english
-" tel que " 
+  such as   
 \lang arabic_arabi
 مُعْطًى
 \lang english
- " (mu‛tãą – donné), ils perdent leur flexion casuelle.
- Un tanwîn différencie le nom indéfini du nom défini.
- A ce niveau, il nous importe de signaler que l’usage de cette règle de
- déclinaison est abondonné.
- En effet, dans les textes courants la forme du nom verbal "
+   (mu‛tãą – given), they lose their case inflection.
+ a Tanwîn distinguishes indefinite noun of definite.
+ At this point, it is important to note that the use of this rule of declination
+ is remised.
+ Indeed, in standard texts the form of the verbal noun  
 \lang arabic_arabi
  قَاضٍ 
 \lang english
-" (qaādĩ – avocat) est, généralement, altérée en " 
+ (qaādĩ – jurist) is, generally, altered to 
 \lang arabic_arabi
 قَاضِي
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
 \lang english
- " (qaādiy – avocat) par adjonction du glide " 
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(qaādiy – jurist) by adding the glide  
 \lang arabic_arabi
 ي
 \lang english
-" (y - yâ’) à la fin de la forme initiale.
+  (y - yâ’) at the end of the initial form.
  
 \end_layout
 
 \begin_layout Paragraph
-Déclinaison du nom au duel :
+Declination of dual nouns :
 \end_layout
 
 \begin_layout Standard
-Il existe en arabe "
+There are Arabic 
 \lang arabic_arabi
- المُثنَّى
+المُثنَّى
 \lang english
- " (al-mutannaą – le duel) pour désigner deux choses ou deux personnes.
- Il prend la place entre le singulier (pour désigner une chose ou une personne)
- et le pluriel (à partir de trois choses ou trois personnes).
- Il s’agit d’une déclinaison avec deux alternatives où la marque du nominatif
- est le " ا", et celle de l’accusatif et le génitif est le " ي".
- Pour former le duel d’un nom indéfini ou défini par l’article, nous lui
- suffixons : "
+ (al-mutannaą – dual) to describe two things or two persons.
+ It takes place between singular (referring to a thing or person) and plural
+ (greater than three things or three persons).
+ This is a declination with two alternatives where the mark of nominative
+ is the 
+\lang arabic_arabi
+ ا
+\lang english
+ , and that of accusative and genitive is the  
+\lang arabic_arabi
+ ي
+\lang english
+ .
+ To form the dual of a noun, indefinite or definite by article, we add the
+ suffix :  
 \lang arabic_arabi
  انِ 
 \lang english
-" (aāni) au nominatif et " 
+  (aāni) to nominative and 
 \lang arabic_arabi
-يْنِ 
+يْنِ
 \lang english
-" (ayni) à l’accusatif et le génitif.
- Par exemple, la forme duelle du nom "
+  (ayni) to accusative and genitive.
+ For example, the dual form of the noun 
 \lang arabic_arabi
  سَيَّارَة
 \lang english
- " (sayyaārat – une voiture) prend la forme " "
+   (sayyaārat – a car) takes the form    
 \lang arabic_arabi
 سَيَّارَتانِ
 \family roman
@@ -2443,78 +2560,143 @@ Il existe en arabe "
 \uwave default
 \noun default
 \color inherit
-
-\begin_inset Quotes sld
-\end_inset
-
- (sayyaārataāni – deux voitures, au nominatif) ou "
+ (sayyaārataāni – two cars, nominative) or  
 \lang arabic_arabi
  سَيَّارَتَيْنِ 
 \lang english
-" (sayyaāratayni – deux voitures, accusatif et génitif) 
+  (sayyaāratayni – two cars, accusative and genitive) 
 \end_layout
 
 \begin_layout Standard
-Dans certains cas, notamment pour les mots dont la racine est défectueuse
- ou qui se terminent par un "
+In some cases, especially for words whose root is defective or that end
+ with a 
 \lang arabic_arabi
- ى
+ى
 \lang english
-" (ą), un " 
+  (ą), an   
 \lang arabic_arabi
 و
 \lang english
-" (ą) ou une hamzä (‘), la terminaison du nom se transforme devant le suffixe
- du duel.
- En l’occurrence, la forme "
+  (ą) or a hamzä (‘), the ending of noun changes before the suffix of the
+ dual.
+ In this case, the form  
 \lang arabic_arabi
- مَقْهَى 
+مَقْهَى
 \lang english
-" (maqhaą – un café) a pour forme duelle 
+  (maqhaą – coffee shop) has the dual form 
 \lang arabic_arabi
 مَقْهَيَانِ
 \lang english
-" " (maqhayaāni – deux cafés) 
+    (maqhayaāni – two coffee shops) 
 \end_layout
 
 \begin_layout Paragraph
-Déclinaison du nom au pluriel :
+Declination of plural nouns:
 \end_layout
 
 \begin_layout Standard
-Il existe deux grandes catégories de pluriel en arabe : 
+There are two major categories of plural form in Arabic: 
 \end_layout
 
 \begin_layout Subparagraph
-Les pluriels externes ou réguliers : 
+External or regular plurals
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+ 
+\lang arabic_arabi
+الجموع السالمة
+\lang english
+ 
+\end_layout
+
+\end_inset
+
+: 
 \end_layout
 
 \begin_layout Standard
-Les pluriels externes sont formés par l’ajout d’un suffixe au singulier
- sans changement de la structure du mot.
- Nous distinguons : 
+External plurals are formed by adding a suffix to the singular without changing
+ the structure of the word.
+ we distinguish: 
 \end_layout
 
 \begin_layout Itemize
-Le pluriel externe masculin: Pour le pluriel masculin nous rajoutons les
- deux lettres " 
+
+\series bold
+External masculine plural
+\series default
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+
+\lang arabic_arabi
+جمع مذكر السالم
+\lang english
+ 
+\end_layout
+
+\end_inset
+
+: For this plural we add the two letters  
 \lang arabic_arabi
 ين
 \lang english
- " (iyna) ou "
+   (iyna) or  
 \lang arabic_arabi
  ون 
 \lang english
-" (uwna) dépendamment de la position du mot dans la phrase (sujet ou complément
- d’objet), exemple : " 
+  (uwna) depending on the position of the word in the sentence (subject
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+ 
+\lang arabic_arabi
+فاعل
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\end_layout
+
+\end_inset
+
+ or object
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+ 
+\lang arabic_arabi
+مفعول به
+\lang english
+ 
+\end_layout
+
+\end_inset
+
+), eg :  
 \lang arabic_arabi
 مسلم 
 \lang english
-" (muslim - musulman) devient " 
+  (muslim - Muslim) becomes   
 \lang arabic_arabi
 مسلمون
 \lang english
- " (muslimuwna – musulmans, au nominatif) ou "
+   (muslimuwna – Muslims, nominative) or  
 \family roman
 \series medium
 \shape up
@@ -2541,67 +2723,73 @@ Le pluriel externe masculin: Pour le pluriel masculin nous rajoutons les
 \lang arabic_arabi
 مسلمين 
 \lang english
-" (muslimiyna – musulmans, accusatif ou génitif) ; 
+  (muslimiyna – Muslims, accusative or genitive) ; 
 \end_layout
 
 \begin_layout Itemize
-Le pluriel externe féminin: De la même manière, nous rajoutons pour le pluriel
- féminin le morphème " 
+
+\series bold
+External feminine plural
+\series default
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+
+\lang arabic_arabi
+جمع مؤنث السالم
+\lang english
+ 
+\end_layout
+
+\end_inset
+
+: Similarly, we add to this plural , the two letters   
 \lang arabic_arabi
 ات
 \lang english
- " (āt), exemple "
+   (āt), eg:  
 \lang arabic_arabi
  سَيَّارَة 
 \lang english
-" (sayyaārat – une voiture) devient " 
+  (sayyaārat – a car) becomes   
 \lang arabic_arabi
 سَيَّارَات
 \lang english
- " (sayyaāraāt – des voitures).
+   (sayyaāraāt – cars).
  
 \end_layout
 
 \begin_layout Subparagraph
-Les pluriels internes ou brisés: 
+Internal or broken plurals
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+ 
+\lang arabic_arabi
+جموع التكسير
+\lang english
+ 
 \end_layout
 
-\begin_layout Itemize
-Les pluriels internes sont désignés par pluriels brisés à cause des modification
-s et infixations qu’ils nécessitent par rapport à la forme du singulier,
- à la différence de ce qui se passe avec les pluriels réguliers (masculin
- et féminin).
- Les formes du pluriel brisé sont nombreuses et généralement imprévisibles
- ; elles suivent une diversité de règles complexes et dépendent du nom ;
- par exemple : le nom "
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
+\end_inset
+
+: 
+\end_layout
+
+\begin_layout Standard
+The internal plurals are designated by broken plurals because of changes
+ and infixations they require over the singular form.
+ Unlike what happens with regular plurals (masculine and feminine).
+ Broken plural forms are numerous and generally unpredictable, they follow
+ a variety of complex rules and depend on the noun.
+ For example: the noun 
 \lang arabic_arabi
 كَاتِب
 \lang english
- " (kaātib – un écrivain) se transforme pour donner les deux formes plurielles
- "
+   (kaātib – a writer) turns into the two plural forms 
 \family roman
 \series medium
 \shape up
@@ -2628,7 +2816,7 @@ s et infixations qu’ils nécessitent par rapport à la forme du singulier,
 \lang arabic_arabi
 كُتَّاب
 \lang english
- " (kutteb – écrivains) ou "
+   (kutteb – writers) or  
 \family roman
 \series medium
 \shape up
@@ -2655,53 +2843,61 @@ s et infixations qu’ils nécessitent par rapport à la forme du singulier,
 \lang arabic_arabi
 كَتَبَة
 \lang english
- " (katabat – écrivains).
- Notons aussi que les grammairiens arabes ont formulé des distinctions entre
- pluriels de petit nombre et pluriels collectifs ; par exemple : le nom
- " 
+   (katabat – writers).
+ Note also that the Arab grammarians have made distinctions between plurals
+ based on number.
+ For example : the noun   
 \lang arabic_arabi
 شَهْر
 \lang english
- " (šahr - mois) admet deux formes plurielles : " 
+   (šahr - month) has two plural forms:   
 \lang arabic_arabi
 أَشْهَر
 \lang english
- " (ášhur - moins de 12 mois) et " 
+   (ášhur - less than 12 months) and   
 \lang arabic_arabi
 شُهُور
 \lang english
- " (šuhuwr - au-delà) ; Seuls les pluriels externes suivent des déclinaisons
- propres.
- Les pluriels internes se rattachent aux déclinaisons du singulier (déclinaisons
- de base à trois cas et diptotes).
+   (šuhuwr - more than 12 months ) .
+ Only the external plurals follow a clear declination.
+ The internal plurals are related to declinations of the singular (declinations
+ of triptotes and diptotes ).
 \end_layout
 
 \begin_layout Subsubsection
-Flexion des mots outils 
+Flexion of function words
 \end_layout
 
 \begin_layout Standard
-Lorsqu’il s’agit de la flexion des particules, nous en distinguons deux
- catégories :
+When it comes to flexing the particles.
+ we distinguish two categories:
 \end_layout
 
 \begin_layout Itemize
-Les mots outils non déclinables ou invariables: leurs formes sont constantes
- et n’acceptent aucune déclinaison ; par exemple : "
+
+\series bold
+Invariables
+\series default
+: their forms are constant and do not accept any variation, eg:  
 \lang arabic_arabi
  عَلَى
 \lang english
- " (‛alaą – sur), "
+   (‛alaą – on),  
 \lang arabic_arabi
  مُنْذ
 \lang english
- " (mundu – depuis), etc.
+   (mundu – since), etc.
 \end_layout
 
 \begin_layout Itemize
-Les mots outils déclinables ou variables : ils suivent le système de déclinaison
- à trois cas selon leurs fonctions dans la phrase.
- Par exemple, le quantificateur "
+
+\series bold
+Variables
+\series default
+: they follow the system of declination in three cases according to their
+ function in the sentence.
+ For example.
+ the quantifier 
 \family roman
 \series medium
 \shape up
@@ -2726,15 +2922,15 @@ Les mots outils déclinables ou variables : ils suivent le système de déclinai
 \noun default
 \color inherit
 \lang arabic_arabi
-كلّ 
+كلّ
 \lang english
-" (kull – tout) peut accepter les trois voyelles casuelles finales pour
- désigner le nominatif, accusatif ou génitif selon sa fonction dans la phrase.
+  (kull – all) may accept the three final casual vowels to describe the
+ nominative, accusative or genitive according to its function in the sentence.
  
 \end_layout
 
 \begin_layout Subsection
-Morphologie dérivationnelle 
+Derivational morphology
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Mes08"
@@ -2742,44 +2938,32 @@ key "Mes08"
 \end_inset
 
 
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-Find the English Source! why translate?
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
-Tout verbe a dans son sillage des formes déverbales qui lui sont associées
- et avec lesquelles il entretient des relations morphologiques, syntaxiques
- et sémantiques stables.
- Le nombre et la nature de ces formes varient selon le statut du verbe.
- Dans le cas général, celui des verbes transitifs, les plus importants de
- ces déverbaux sont :
+Each verb has its set of associated deverbal forms which it maintains morphologi
+cal, syntactic and semantic relations .
+ The number and nature of these forms vary depending on the status of the
+ verb.
+ We cite some deverbals:
 \end_layout
 
-\begin_layout Paragraph
-le nom verbal : 
+\begin_layout Subsubsection
+Verbal nouns : 
 \end_layout
 
 \begin_layout Standard
-Le nom verbal est un nom abstrait formé sur la même racine que le verbe
- auquel il est associé et exprime le même contenu sémantique que lui ; toutefois
-, il n’implique aucune notion de temps, d’aspect, de modalité, de personne,
- ni même de voix.
- Sémantiquement, il exprime une action, un état ou un processus selon le
- sens du verbe auquel il est associé.
- Tout verbe, quelque soit son type, a un nom verbal et il arrive qu’il en
- ait plus d’un.
- Les verbes augmentés en ont, généralement, un seul.
- Par contre, ce n’est pas le cas pour les verbes simples qui peuvent avoir
- jusqu’à 5 noms verbaux.
- Par exemple, le verbe " 
+The verbal noun is an abstract noun formed on the same root as a verb and
+ expresses the same semantic content as it, but it involves no notion of
+ tense, aspect, mood, person, or even voice.
+ Semantically, it expresses an action, a state or process within the meaning
+ of a verb.
+ Every verb, whatever its type, has a verbal noun and sometimes more than
+ one.
+ Augmented verbs have, generally, only one.
+ By cons, this is not the case for simple verbs that can have up to 5 verbal
+ nouns.
+ For example, the verb 
 \lang arabic_arabi
 وَدَّ
 \family roman
@@ -2806,133 +2990,111 @@ Le nom verbal est un nom abstrait formé sur la même racine que le verbe
 \uwave default
 \noun default
 \color inherit
-" (wadda – aimer) admet cinq noms verbaux différents qui expriment une «
- affection » avec une certaine nuance sémantique : " 
+(wadda – like) recognizes five different verbal nouns that express an «
+ affection » with some semantic nuance :   
 \lang arabic_arabi
 وَدٌّ
 \lang english
- " (waddu)," 
+   (waddu),  
 \lang arabic_arabi
 وُد
 \lang english
-ٌّ " (wuddu), "
+ٌّ   (wuddu),  
 \lang arabic_arabi
  وِدَادٌ 
 \lang english
-" (widaādu), "
+  (widaādu),  
 \lang arabic_arabi
  وِدَادَةٌ 
 \lang english
-" (widaādat) et " 
+  (widaādat) and   
 \lang arabic_arabi
 مَوَدَّة
 \lang english
- " (mawaddat); 
+   (mawaddat); 
 \end_layout
 
-\begin_layout Paragraph
-Le participe actif : 
+\begin_layout Subsubsection
+Active participle: 
 \end_layout
 
 \begin_layout Standard
-Le participe actif est un nom associé à tout verbe d’action (transitif ou
- intransitif) et qui désigne l’agent du verbe c'est-à-dire celui qui fait
- l’action, d’où la désignation nom d’agent donnée à ce déverbal.
- Par exemple, les verbes à racine simple tel que " 
+Active participle is a noun associated with any action verb (transitive
+ or intransitive), which means the agent who does the action, and therefore
+ called the noun of agent given to this deverbal.
+ For example, verbs in simple root such as 
 \lang arabic_arabi
 ضَرَبَ 
 \lang english
-" (daraba – frapper) suivent le schème " 
+  (daraba – ) follows the pattern  
 \lang arabic_arabi
 فَاعل
 \lang english
- " (faā‛il) pour produire le participe actif "
+   (faā‛il) to generate the active participle 
 \lang arabic_arabi
- ضَارِب
+ضَارِب
 \lang english
- " (daārib – celui qui frappe) ; 
+ (daārib – hitter) ; 
 \end_layout
 
-\begin_layout Paragraph
-le participe passif 
+\begin_layout Subsubsection
+Passive participle
 \end_layout
 
 \begin_layout Standard
-Le particpe passif est un nom associé à tout verbe d’action transitif.
- Il désigne le patient qui subit l’action ou le résultat de cette action,
- d’où la désignation de nom de patient donnée à ce déverbal.
- Par exemple, nous reprenons le cas du verbe à racine simple " 
+Passive participle
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+prefix "1"
+symbol "le participe passif "
+description "\\begin{Arabic}  اسم المفعول \\end{Arabic}"
+
+\end_inset
+
+ is a noun associated with any action verb transitive.
+ It means the patient undergoing the action or the result of that action,
+ and therefore called of patient noun given to this deverbal.
+ For example, if we take the verb with simple root 
 \lang arabic_arabi
-ضَرَبَ 
+ضَرَبَ
 \lang english
-" (daraba – frapper), il suit le schème "
+  (daraba – hit), it follows the pattern 
 \lang arabic_arabi
  مَفعول
 \lang english
- " (maf‛uwl) pour produire le participe passif " 
+ (maf‛uwl) to generate the passive participle   
 \lang arabic_arabi
 مَضْرُوب
 \lang english
- "(madruwb – frappé) 
+  (madruwb – struck) 
 \end_layout
 
-\begin_layout Standard
-Ces trois déverbaux sont ceux qui existent pour le plus grand nombre de
- verbes.
- Leurs formations obéissent, pour un type donné de verbe, à des règles extrêmeme
-nt générales.
- Habituellement, nous assimilons le participe actif au participe présent
- français et le participe passif au participe passé.
- Cette assimilation n’occulte pas les propriétés spécifiques que ces déverbaux
- ont en arabe.
- Pour tous les verbes, simples et augmentés, les participes se forment sur
- des schèmes stables ; ils ont, donc, un comportement morphologique d’une
- grande régularité.
- En tant que noms, les participes peuvent recevoir toutes les marques morphologi
-ques de cette classe : genre, déclinaison, nombre et détermination.
+\begin_layout Subsubsection
+Nouns of time and place
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
  
+\series medium
+\size tiny
+\lang arabic_arabi
+اسم الزمان والمكان
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-Aux formes dérivées citées ci-dessus, s’ajoutent d’autres déverbaux dont
- le rang d’utilisation est moins important : 
-\end_layout
-
-\begin_layout Paragraph
-le nom de lieu (ou de temps) 
-\end_layout
-
-\begin_layout Standard
-Le nom de lieu est un déverbal supposé désigner le lieu où se produit le
- procès exprimé par le verbe comme le nom " 
+The noun of place is a deverbal supposed to designate the place where the
+ action occurs as the noun 
 \lang arabic_arabi
 مَدْرَسَة
 \lang english
- " (madrasat – école, lieu où on étudie) qui peut être généré à partir du
- verbe "
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
+   (madrasat – school, place where to study) that may be generated from
+ the verb 
 \lang arabic_arabi
 دَرَسَ
 \family roman
@@ -2959,78 +3121,131 @@ Le nom de lieu est un déverbal supposé désigner le lieu où se produit le
 \uwave default
 \noun default
 \color inherit
-" (darasa – étudier).
- Lorsque le sémantisme du verbe se prête plutôt à une interprétation temporelle,
- ce nom est dit nom de temps tel est le cas pour "
+(darasa – study).
+ When the semantics of the verb rather lends to a temporal interpretation,
+ that noun is called noun of time, such as for the noun  
 \lang arabic_arabi
  مَغْرِب
 \lang english
- " (maġrib – moment du coucher du soleil) rattaché au verbe " 
+   (maġrib – Sunset) attached to the verb  
 \lang arabic_arabi
 غَرَب
 \lang english
- " (ġaraba – se coucher) ; 
+   (ġaraba – set) .
 \end_layout
 
-\begin_layout Paragraph
-le nom d’instrument 
+\begin_layout Subsubsection
+Noun of instrument
 \end_layout
 
 \begin_layout Standard
-Le nom d'instrument est un nom qui désigne l’instrument dont on se sert
- pour exécuter l’action exprimée par le verbe.
- Par exemple, le nom " 
+The instrument noun is a noun that refers to the instrument that is used
+ to perform the action expressed by the verb.
+ For example, the noun   
 \lang arabic_arabi
 مُوَزِّع
 \lang english
- " (muwazzi‛ – distributeur) peut être rattaché au verbe " 
+   (muwazzi‛ – dispenser) can be attached to the verb  
 \lang arabic_arabi
 وَزَّع
 \lang english
- " (wazza‛a – distribuer) ; 
+  (wazza‛a – dispense) ; 
 \end_layout
 
-\begin_layout Paragraph
-le nom d’une fois 
-\end_layout
-
-\begin_layout Standard
-Le nom d’une fois est un nom qui désigne une occurrence unique de l’action
- exprimée par le verbe.
- Il est généralement produit à partir d’une forme au singulier du nom verbal.
- Par exemple, le nom " 
-\lang arabic_arabi
-ضَرْبَة 
-\lang english
-" (darabat – une frappe) peut être rattaché au verbe " 
-\lang arabic_arabi
-ضَرَبَ 
-\lang english
-" (daraba – frapper) ;
-\end_layout
-
-\begin_layout Paragraph
-le nom de manière :
+\begin_layout Subsubsection
+The Nomen Vicis 
 \end_layout
 
 \begin_layout Standard
-Le nom de manière est un nom qui est supposé servir à indiquer la manière
- dont l’action exprimée par le verbe se réalise.
- Pour les verbes augmentés, il n’est pas distinct du nom d’une fois.
- Nous pouvons donner l’exemple de la phrase : " 
+The Nomen Vicis
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+ 
 \lang arabic_arabi
-جَلَسَت جِلْسَةَ الأَمِيرَة
+اسم المرة
 \lang english
- " (ğalasat ğilsata al-amirat - elle s’assit à la manière d’une princesse).
  
 \end_layout
 
+\end_inset
+
+is a noun that designates a single occurrence of the action expressed by
+ the verb.
+ It is usually produced from a singular form of the verbal noun.
+ For example, the noun
+\lang arabic_arabi
+ ضَرْبَة
+\lang english
+  (darabat – a hit) may attach to the verb   
+\lang arabic_arabi
+ضَرَبَ 
+\lang english
+  (daraba – hit) ;
+\end_layout
+
+\begin_layout Subsubsection
+The Nomen Speciei:
+\end_layout
+
 \begin_layout Standard
-Contrairement aux verbes, les noms primitifs échappent au système dérivationnel.
- Cependant, certaines règles peuvent être mises en place pour décrire les
- gentilés et ethnonymes qui sont des noms ou adjectifs par lesquels nous
- désignons des habitants d’un lieu, une nationalité, une identité nationale,
- etc.
+The Nomen Speciei
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+ 
+\lang arabic_arabi
+اسم الهيئة
+\family roman
+\series medium
+\shape up
+\size small
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\end_layout
+
+\end_inset
+
+ is a noun that is supposed to be used to indicate how the action is done.
+ For augmented verbs , it is not distinct from the nomen vicis .
+ We can set an example of the sentence: 
+\lang arabic_arabi
+جَلَسَت جِلْسَةَ الأَمِيرَة
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(ğalasat ğilsata al-amirat - she sat like a princess).
+ 
 \end_layout
 
 \begin_layout Section
@@ -4426,11 +4641,11 @@ from the combination
 Thus, softwares based only on the spelling of  word, can not distinguish
  between these two cases.
  This type of confusion does not exist in the English language, for instance:
- The translation of the word "
+ The translation of the word  
 \lang arabic_arabi
 والكتاب
 \lang english
-" into English is a phrase of 3 independent words "and the book".
+  into English is a phrase of 3 independent words "and the book".
  
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -5351,10 +5566,6 @@ Ambiguities due to suffixes
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 

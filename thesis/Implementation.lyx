@@ -211,12 +211,16 @@ Open Source Standards
 \end_layout
 
 \begin_layout Standard
-All software applications are built from source code.
- The source code is made up of the numerous lines of instructions that programme
-rs write for computers to interpret.
- These instructions tell a computer what to do and how to do it.
- We can think of the source code as the blueprint for a program and it may
- be written in any one of the various programming languages used today.
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+change it to why we choose open source, be specific!
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -239,13 +243,6 @@ Bug-fixing
 \end_layout
 
 \begin_layout Standard
-All software releases contain bugs.
- Hopefully, the people developing the software will have spotted and dealt
- with anything obvious, but any development team has only so much time in
- which to test a piece of software before it is released.
-\end_layout
-
-\begin_layout Standard
 When a bug is spotted in proprietary software, the only people who can fix
  it are the original developers, as only they have access to the source
  code.
@@ -265,15 +262,6 @@ Eric Raymond
 
 \begin_layout Paragraph
 Security
-\end_layout
-
-\begin_layout Standard
-Having access to the source code allows the user of that software to choose
- the approach to security that they want.
- In other words, it allows you to take ownership of your own security.
- It also enables certain approaches that are not available with closed source
- and it is possible to decide on your own security priorities and to allocate
- resources accordingly.
 \end_layout
 
 \begin_layout Standard
@@ -342,8 +330,7 @@ Proprietary software vendors can ‘lock’ users in to their products by ensuri
 \end_layout
 
 \begin_layout Paragraph
-2.6.
- Product discontinuation
+Product discontinuation
 \end_layout
 
 \begin_layout Standard
@@ -429,8 +416,78 @@ key "Oss-watch"
 License : AGPL 
 \end_layout
 
-\begin_layout Subsection
-Source Code Package : Tarball
+\begin_layout Standard
+The GNU Affero General Public License is a modified version of the ordinary
+ GNU GPL version 3.
+ It has one added requirement: if you run the program on a server and let
+ other users communicate with it there, your server must also allow them
+ to download the source code corresponding to the program that it's running.
+ If what's running there is your modified version of the program, the server's
+ users must get the source code as you modified it.
+\end_layout
+
+\begin_layout Standard
+The purpose of the GNU Affero GPL is to prevent a problem that affects developer
+s of free programs that are often used on servers.
+\end_layout
+
+\begin_layout Standard
+Suppose you develop and release a free program under the ordinary GNU GPL.
+ If developer D modifies the program and releases it, the GPL requires him
+ to distribute his version under the GPL too.
+ Thus, if you get a copy of his version, you are free to incorporate some
+ or all of his changes into your own version.
+\end_layout
+
+\begin_layout Standard
+But suppose the program is mainly useful on servers.
+ When D modifies the program, he might very likely run it on his own server
+ and never release copies.
+ Then you would never get a copy of the source code of his version, so you
+ would never have the chance to include his changes in your version.
+ You may not like that outcome.
+\end_layout
+
+\begin_layout Standard
+Using the GNU Affero GPL avoids that outcome.
+ If D runs his version on a server that everyone can use, you too can use
+ it.
+ Assuming he has followed the license requirement to let the server's users
+ download the source code of his version, you can do so, and then you can
+ incorporate his changes into your version.
+ (If he hasn't followed it, you have your lawyer complain to him.)
+\end_layout
+
+\begin_layout Standard
+Both the ordinary GNU GPL, version 3, and the GNU Affero GPL have text allowing
+ you to link together modules under these two licenses in one program.
+\end_layout
+
+\begin_layout Standard
+One problem which the GNU Affero GPL does not address is the problem of
+ Software as a Service (SaaS).
+ It is impossible, as far as we know, to address this problem with a software
+ license.
+ [1]
+\end_layout
+
+\begin_layout Standard
+SaaS means the use of someone's network server, by others, to do work which
+ is their own computing.
+ They have to send their data to the server, which does their computing
+ for them, and sends the results back to them.
+ SaaS is a problem because the users cannot control the computing which
+ the server does for them.
+\end_layout
+
+\begin_layout Standard
+If some program on this server is released under the GNU Affero GPL, it
+ requires that the users have a way to download the corresponding source
+ of that program.
+ That is good, but having this source code does not give them control over
+ the computing the server does for them.
+ It also does not tell them what other software may be running on that server,
+ examining or changing their data in other ways.
 \end_layout
 
 \begin_layout Subsection
@@ -796,10 +853,18 @@ key "Json.org"
 \end_layout
 
 \begin_layout Subsection
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+to remove, be only in low level
+\end_layout
+
+\begin_layout Subsection
 JQuery
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 jQuery is a cross-browser JavaScript library designed to simplify the client-sid
 e scripting of HTML.
  It was released in January 2006 at BarCamp NYC by 
@@ -811,12 +876,12 @@ John Resig
  popular JavaScript library in use today.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 jQuery is free, open source software, dual-licensed under the MIT License
  and the GNU General Public License, Version 2.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 jQuery's syntax is designed to make it easier to navigate a document, select
  DOM elements, create animations, handle events, and develop Ajax applications.
  jQuery also provides capabilities for developers to create plug-ins on
@@ -828,7 +893,7 @@ jQuery's syntax is designed to make it easier to navigate a document, select
  
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 jQuery contains the following features: 
 \end_layout
 
@@ -881,13 +946,13 @@ key "jQuery"
 Django
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Django is an open source web application framework, written in Python, which
  follows the model-view-controller architectural pattern.
  It was released publicly under a BSD license in July 2005;
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Django's primary goal is to ease the creation of complex, database-driven
  websites.
  Django emphasizes reusability and "pluggability" of components, rapid developme
@@ -896,11 +961,16 @@ nt, and the principle of DRY (Don't Repeat Yourself).
  
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Django also provides an optional administrative CRUD (create, read, update
  and delete) interface that is generated dynamically through introspection
  and configured via admin models.
  
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
