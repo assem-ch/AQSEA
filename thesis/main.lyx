@@ -5,6 +5,7 @@
 \textclass extreport
 \begin_preamble
 \usepackage{styles/esi_memoire}
+\usepackage{styles/glossary_values}
 \newcommand{\Ayah}{\newfontfamily\arabicfont[Script=Arabic]{ArabeyesQr}}
 \end_preamble
 \use_default_options true
@@ -93,6 +94,10 @@ minimalistic
 \begin_body
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -108,7 +113,7 @@ pagestyle{empty}
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset CommandInset include
 LatexCommand include
 filename "flyleaf.lyx"
@@ -118,7 +123,7 @@ filename "flyleaf.lyx"
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -191,7 +196,7 @@ footrulewidth}{0pt}
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset CommandInset include
 LatexCommand include
 filename "Dedicase.lyx"
@@ -201,7 +206,7 @@ filename "Dedicase.lyx"
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset CommandInset include
 LatexCommand include
 filename "Remerciements.lyx"
@@ -211,10 +216,15 @@ filename "Remerciements.lyx"
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset CommandInset include
 LatexCommand include
 filename "abstract.lyx"
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -315,6 +325,54 @@ status open
 addcontentsline{toc}{part}{List of Abbreviations}
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+makeindex 'main.glo' -s 'main.ist' -t 'main.glg' -o 'main.gls' 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%% show the glossary
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+printglossary 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{Glossary}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -492,7 +550,7 @@ LR{{
 \backslash
 scshape  
 \backslash
-footnotesize Chapitre }{
+footnotesize Chapter }{
 \backslash
 scshape 
 \backslash
@@ -547,41 +605,15 @@ filename "SA - Quran.lyx"
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Part
 \begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset CommandInset include
-LatexCommand input
-preview true
-filename "SA - Related_works.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Note Comment
-status collapsed
-
-\begin_layout Plain Layout
-to remove, add relared works in each chapter
-\end_layout
-
-\end_inset
-
-
-\end_layout
+status open
 
 \begin_layout Part
 Analysis & Conception
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset CommandInset include
 LatexCommand include
 filename "Co - Features.lyx"
@@ -591,7 +623,7 @@ filename "Co - Features.lyx"
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset CommandInset include
 LatexCommand include
 filename "Conception.lyx"
@@ -605,7 +637,7 @@ filename "Conception.lyx"
 Implementation & Tests
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align left
 \begin_inset CommandInset include
 LatexCommand include
@@ -627,7 +659,7 @@ filename "tests.lyx"
 Conclusion
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -654,7 +686,7 @@ fancyhead[L]{}
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset CommandInset include
 LatexCommand include
 filename "Conclusion.lyx"
@@ -664,7 +696,7 @@ filename "Conclusion.lyx"
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -712,6 +744,11 @@ fancyhead[L]{}
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
 \begin_layout Chapter*
 \begin_inset ERT
 status open
@@ -747,7 +784,8 @@ status collapsed
 \end_inset
 
 
-\end_layout
+\begin_inset Note Note
+status open
 
 \begin_layout Part*
 \start_of_appendix
@@ -766,7 +804,7 @@ addcontentsline{toc}{part}{Annexe}
 Annexe 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -848,7 +886,7 @@ arabic{figure}}
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset CommandInset include
 LatexCommand include
 filename "Annex - Translateration.lyx"
@@ -858,7 +896,7 @@ filename "Annex - Translateration.lyx"
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Note Note
 status collapsed
 
@@ -937,6 +975,11 @@ arabic{figure}}
 \begin_inset CommandInset include
 LatexCommand include
 filename "sample - Annex.lyx"
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 

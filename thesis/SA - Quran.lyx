@@ -5,6 +5,7 @@
 \textclass extreport
 \begin_preamble
 \usepackage{styles/esi_memoire}
+\usepackage{styles/glossary_values}
 %\usepackage[T1]{fontenc}
 \end_preamble
 \use_default_options true
@@ -113,10 +114,6 @@ pagenumbering{arabic}
 
 \end_layout
 
-\begin_layout Standard
-
-\end_layout
-
 \begin_layout Chapter
 The Qur'an 
 \begin_inset CommandInset label
@@ -202,7 +199,46 @@ Introduction
 
 \begin_layout Standard
 The Qur'an is the sacred book of Muslims, it is the basis of several sciences,
- such as Tafssir, translation, recitation, etc.
+ such as 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{tafssir}{Tafssir}
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{translation of quran}{Translation of Qur'an}
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{recitation}{Recitation}
+\end_layout
+
+\end_inset
+
+, etc.
  The information contained in the Qur'anic text are the sources of these
  sciences, hence the need for a powerful search system that offers lots
  of features specific to the Qur'an.
@@ -240,19 +276,11 @@ Qur'an
 \emph default
 », in Arabic Language, means recitation or reading, Muslim scholars define
  it as: the words of Allah revealed to His Prophet Muhammad, written in
- mus'haf and transmitted by successive generations 
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-
+ mus'haf and transmitted by successive generations (
 \lang arabic_arabi
 التّواتر
-\end_layout
-
-\end_inset
-
-.
+\lang english
+).
  The Qur'an is also known by other names such as : Al-Furkān , Al-kitāb
  , Al-dhikr , Al-wahy et Al-rōuh .
  It is the sacred book of all Muslims and the first reference to Islamic
@@ -272,39 +300,58 @@ Mus'haf
 \end_layout
 
 \begin_layout Standard
-The mus'haf is the book that contains the entire Qur'an, the first mus'haf
- was the mus'haf that the Caliph Abu-Bakr has gathered.
- The mus'haf is written according to the script Othmani
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
- 
-\lang arabic_arabi
-الخطّ العثماني
-\lang english
- 
-\end_layout
-
-\end_inset
-
-which is somewhat different from standard Arabic script 
-\begin_inset Foot
+The 
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
- 
-\lang arabic_arabi
-الخط الإملائي
-\lang english
- 
+
+
+\backslash
+glstwo{mushaf}{mus'haf}
 \end_layout
 
 \end_inset
 
-.
+ is the book that contains the entire Qur'an, the first mus'haf was gathered
+ by the Caliph Abu-Bakr.
+ The mus'haf is written according to the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{othmani script}{Othmani script}
+\end_layout
+
+\end_inset
+
+ (
+\lang arabic_arabi
+الخطّ العثماني
+\lang english
+) which is somewhat different from the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{standard script}{standard script}
+\end_layout
+
+\end_inset
+
+(
+\lang arabic_arabi
+الخط الإملائي
+\lang english
+).
  The translation of the Qur'an constitute in no way a mus'haf, because the
- Qur'an was revealed in Arabic unique in its form and its meaning.
+ Qur'an was revealed in Arabic as unique in its form and its meaning.
  
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -334,7 +381,7 @@ key "Hadj08"
 \end_layout
 
 \begin_layout Subparagraph
-Qur'anic Mu'jam (Lexicon)
+Qur'anic Lexicon (Mu'jam)
 \end_layout
 
 \begin_layout Standard
@@ -379,12 +426,38 @@ Qur'an Structure
 \end_layout
 
 \begin_layout Standard
-The Qur'an consists of 114 surahs, the surahs are divided into ayahs.In mus'haf,
- the number of each ayah is attached to its text.
+The Qur'an consists of 114 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{surah}{surahs}
+\end_layout
+
+\end_inset
+
+, the surahs are divided into 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{ayah}{ayahs}
+\end_layout
+
+\end_inset
+
+.
+ In mus'haf, the number of each ayah is attached to its text.
  This partitioning is the same since the first mus'haf, because the order
  of Surahs and ayahs is specified by the prophet
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 ref
@@ -418,33 +491,216 @@ key "BnJ"
 \end_layout
 
 \begin_layout Itemize
-Primary structure: surah, ayah, word and letter;
-\end_layout
-
-\begin_layout Itemize
-Special locations: start of Surah, end of Surah, end of ayah, Qur'anic comma
- 
-\begin_inset Foot
+Primary structure: 
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-\lang arabic_arabi
-فاصلة قرآنية
+
+\backslash
+glstwo{surah}{surah}
 \end_layout
 
 \end_inset
 
-, sajdah, waqf; 
+, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{ayah}{ayah}
+\end_layout
+
+\end_inset
+
+, word and letter;
 \end_layout
 
 \begin_layout Itemize
-Other structures: page, Juz’, Hizb, Nisf, Rubu’, Thumn ; 
+Special locations: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{first ayahs of surah}{First ayahs of Surah}
+\end_layout
+
+\end_inset
+
+ (
+\lang arabic_arabi
+فواتح السورة
+\lang english
+) , 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{last ayahs of surah}{Last ayahs of Surah}
+\end_layout
+
+\end_inset
+
+ (
+\lang arabic_arabi
+خواتيم السورة
+\lang english
+), 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{quranic comma}{Qur'anic comma}
+\end_layout
+
+\end_inset
+
+ (
+\lang arabic_arabi
+فاصلة قرآنية
+\lang english
+), 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{sajdah}{sajdah}
+\end_layout
+
+\end_inset
+
+ (
+\lang arabic_arabi
+سجدة
+\lang english
+), 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{waqf}{waqf}
+\end_layout
+
+\end_inset
+
+ (
+\lang arabic_arabi
+وقف
+\lang english
+); 
 \end_layout
 
 \begin_layout Itemize
-Scripture: Othmani script, Sawamit, Harakat, Hamza, diacritics, signs of
- distinction between similar letters, phonetic signs;
+Other structures: page, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{juz}{Juz’}
+\end_layout
+
+\end_inset
+
+(
+\lang arabic_arabi
+جزء
+\lang english
+),
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{hizb}{Hizb}
+\end_layout
+
+\end_inset
+
+(
+\lang arabic_arabi
+حزب
+\lang english
+),
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{nisf}{Nisf}
+\end_layout
+
+\end_inset
+
+(
+\lang arabic_arabi
+نصف
+\lang english
+), 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{rubu}{Rubu’}
+\end_layout
+
+\end_inset
+
+(
+\lang arabic_arabi
+ربع
+\lang english
+), 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{thumn}{Thumn}
+\end_layout
+
+\end_inset
+
+(
+\lang arabic_arabi
+ثمن
+\lang english
+) ; 
+\end_layout
+
+\begin_layout Itemize
+Scripture: Sawamit, Harakat, Hamza, diacritics, signs of distinction between
+ similar letters, phonetic signs;
 \end_layout
 
 \begin_layout Itemize
@@ -462,29 +718,53 @@ Fragmentation into surahs
 \end_layout
 
 \begin_layout Standard
-It is the original fragmentation of the Qur'an, each Surah has a name, basmalah
- (except Al-Tawbah, which does not have a basmalah ) and a list of ayahs
- separated by a circle that contains the number of ayah in its surah, the
- surahs are characterized by: a name, the number of ayahs, the type of revelatio
-n (Makkan 
-\begin_inset Foot
+It is the original fragmentation of the Qur'an, each Surah has a name,a
+ 
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
- 
-\lang arabic_arabi
-مكّيّة
-\lang english
- 
+
+
+\backslash
+glstwo{basmalah}{basmalah}
 \end_layout
 
 \end_inset
 
- or Medinan
-\begin_inset Foot
+ (except Al-Tawbah, which does not have a basmalah ) and a list of ayahs
+ separated by a circle that contains the number of ayah in its surah, the
+ surahs are characterized by: a name, the number of ayahs, the type of revelatio
+n (
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
+
+
+\backslash
+glstwo{makkan}{Makkan}
+\end_layout
+
+\end_inset
+
+ 
+\lang arabic_arabi
+مكّيّة
+\lang english
+  or 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{medinan}{Medinan}
+\end_layout
+
+\end_inset
+
 
 \family roman
 \series medium
@@ -511,10 +791,7 @@ status open
 \color inherit
 \lang arabic_arabi
 مدنيّة
-\end_layout
-
-\end_inset
-
+\lang english
  ), order in mus'haf and order according to revelation .
  
 \begin_inset CommandInset citation
@@ -565,10 +842,86 @@ Fragmentation into Hizbs
 
 \begin_layout Standard
 The Qur'an is fragmented into 30 parts - approximately equal, each part
- is called juz ', this spreads the reading of the Quran on a month, each
- juz' is fragmented into two parts, each one called Hizb.
- Thus, the half of Hizb called Nisf, and the half of Nisf is called Rubu',
- and finammy the half of Rubu' called Thumn.
+ is called 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{juz}{Juz'}
+\end_layout
+
+\end_inset
+
+, this spreads the reading of the Quran on a month, each 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{juz}{juz'}
+\end_layout
+
+\end_inset
+
+ is fragmented into two parts, each one called 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{hizb}{Hizb}
+\end_layout
+
+\end_inset
+
+.
+ Thus, the half of Hizb called 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{nisf}{Nisf}
+\end_layout
+
+\end_inset
+
+, and the half of Nisf is called 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{rubu}{Rubu'}
+\end_layout
+
+\end_inset
+
+, and finally the half of Rubu' called 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{thumn}{Thumn}
+\end_layout
+
+\end_inset
+
+.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Zer08"
@@ -612,15 +965,58 @@ Explanatory diagram of fragmentation into Hizbs
 \end_layout
 
 \begin_layout Subsection
-Fragmentation into Waqfs (Stops)
+Fragmentation into Stops (Waqfs)
 \end_layout
 
 \begin_layout Standard
-Marks of Waqfs are used to knowing when to take a break during the recitation
- of the Qur'an, these marks are different to distinguish the type of waqf
- that can be: allowed, preferred, prohibited, etc.
- Note that the marking of Waqfs differs between rewayates.
- The figure shows a reference of waqfs based on rewayate of Kaloun.
+Marks of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{waqf}{Waqf}
+\end_layout
+
+\end_inset
+
+ are used to knowing when to take a break during the recitation of the Qur'an,
+ these marks are different to distinguish the type of waqf that can be:
+ allowed, preferred, prohibited, etc.
+ Note that the marking of Waqfs differs between 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{rewayate}{rewayates}
+\end_layout
+
+\end_inset
+
+ (
+\lang arabic_arabi
+الروايات
+\lang english
+).
+ The figure shows a reference of waqfs based on 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{rewayate of kaloun}{rewayate of Kaloun}
+\end_layout
+
+\end_inset
+
+ .
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Bou79,Zer08"
@@ -1053,58 +1449,41 @@ Qur'anic Sciences
 \begin_layout Standard
 These sciences hanging the Qur'an as a subject for study to illustrate and
  explore its secrets, some books are found under different names such as
- Revelation Science
-\begin_inset Foot
-status collapsed
+ 
+\begin_inset ERT
+status open
 
 \begin_layout Plain Layout
- 
+
+
+\backslash
+glstwo{revelation science}{Revelation Science}
+\end_layout
+
+\end_inset
+
+ (
 \lang arabic_arabi
 علم التنزيل
 \lang english
- 
-\end_layout
-
-\end_inset
-
- and Book Science
-\begin_inset Foot
-status collapsed
+) and 
+\begin_inset ERT
+status open
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-\lang arabic_arabi
-علم الكتاب
-\lang english
- 
+
+\backslash
+glstwo{book science}{Book Science}
 \end_layout
 
 \end_inset
 
-, we can classify them in two categories
+ (
+\lang arabic_arabi
+علم الكتاب
+\lang english
+), we can classify them in two categories
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Tayyar08"
@@ -1116,7 +1495,32 @@ key "Tayyar08"
 
 \begin_layout Enumerate
 Sciences originally coming from the Qur'an: we can not use them to study
- other things except the Qur'an such as knowledge of Meccan and Medinan
+ other things except the Qur'an such as knowledge of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{makkan}{Makkan}
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{medinan}{Medinan}
+\end_layout
+
+\end_inset
+
  ayahs, the causes of revelation, etc.
 \end_layout
 
@@ -1129,63 +1533,75 @@ Common sciences between the Qur'an and other sciences: they are the sciences
 \begin_deeper
 \begin_layout Enumerate
 If seen as a text written in Arabic, Arab linguists can study it as well
- in terms of expression
-\begin_inset Foot
-status collapsed
+ in terms of 
+\begin_inset ERT
+status open
 
 \begin_layout Plain Layout
- 
+
+
+\backslash
+glstwo{declension}{Declension}
+\end_layout
+
+\end_inset
+
+ (
 \lang arabic_arabi
 الإعراب
 \lang english
- 
+), 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{morphology}{Morphology}
 \end_layout
 
 \end_inset
 
-, conjugation
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
- 
+ (
 \lang arabic_arabi
-الصّرف
+الصرف
 \lang english
- 
+), 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{rhetoric}{Rhetoric}
 \end_layout
 
 \end_inset
 
-, rhetoric
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
- 
+ (
 \lang arabic_arabi
 البلاغة
 \lang english
- 
+), 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{lexicology}{Lexicology}
 \end_layout
 
 \end_inset
 
-, lexicology
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
- 
+ (
 \lang arabic_arabi
 علم المعاجم
 \lang english
- 
-\end_layout
-
-\end_inset
-
-, etc.
+), etc.
  Should be noted here that the Qur'an was the primary reason for the emergence
  of the sciences of Arabic language, since the Arabs did not take care of
  their own language until the arrival of Islam.
@@ -1197,49 +1613,71 @@ status collapsed
 
 \begin_layout Enumerate
 If seen as a legislative text, then this characteristic is shared with the
- Sunnah, it has produced a number of sciences such as the Fiqh
-\begin_inset Foot
-status collapsed
+ Sunnah, it has produced a number of sciences such as the 
+\begin_inset ERT
+status open
 
 \begin_layout Plain Layout
- 
+
+
+\backslash
+glstwo{fiqh}{Fiqh}
+\end_layout
+
+\end_inset
+
+ (
 \lang arabic_arabi
 الفقه
 \lang english
- 
+) , 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{abrogating ayahs}{Abrogating}
 \end_layout
 
 \end_inset
 
-, the abrogating and the abrogated
-\begin_inset Foot
-status collapsed
+ and 
+\begin_inset ERT
+status open
 
 \begin_layout Plain Layout
- 
+
+
+\backslash
+glstwo{abrogated ayahs}{Abrogated}
+\end_layout
+
+\end_inset
+
+ ayahs (
 \lang arabic_arabi
 النّاسخ والمنسوخ
 \lang english
- 
-\end_layout
-
-\end_inset
-
-, the general and the particular
-\begin_inset Foot
-status collapsed
+), 
+\begin_inset ERT
+status open
 
 \begin_layout Plain Layout
- 
-\lang arabic_arabi
-الخاصّ و العامّ
-\lang english
- 
+
+
+\backslash
+glstwo{general and particular}{General and Particular}
 \end_layout
 
 \end_inset
 
-, etc.
+ (
+\lang arabic_arabi
+الخاصّ والعامّ
+\lang english
+) , etc.
  
 \end_layout
 
@@ -1258,33 +1696,61 @@ Knowledge of Ayahs revelation places
 \end_layout
 
 \begin_layout Standard
-There are many definitions to distinguish between what is Meccan and what
- is Medinan, but the best known definition is as follows : 
-\end_layout
-
-\begin_layout Itemize
-The Meccan is all that was revealed before the migration of the prophet
-\begin_inset Foot
+There are many definitions to distinguish between what is 
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
- 
-\lang arabic_arabi
-الهجرة النبوية
-\lang english
- 
+
+
+\backslash
+glstwo{makkan}{Makkan}
 \end_layout
 
 \end_inset
 
-, even if it is revealed in Medina, and Medinan is all that was revealed
- after the migration, even if it is revealed in Mecca.
+ and what is 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{medinan}{Medinan}
+\end_layout
+
+\end_inset
+
+, but the best known definition is as follows : 
+\end_layout
+
+\begin_layout Itemize
+The Makkan is all that was revealed before the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{migration of prophet}{migration of Prophet}
+\end_layout
+
+\end_inset
+
+ (
+\lang arabic_arabi
+الهجرة النبوية
+\lang english
+) , even if it is revealed in Medina, and Medinan is all that was revealed
+ after the migration, even if it is revealed in Makka.
  
 \end_layout
 
 \begin_layout Itemize
-The Meccan surahs are among 82 surahs, and Medinan are 20 surahs, while
- the remaining 12 surahs are raised for the divergence, the Meccan and Medinan
+The Makkan surahs are among 82 surahs, and Medinan are 20 surahs, while
+ the remaining 12 surahs are raised for the divergence, the Makkan and Medinan
  ayas have characteristics that distinguish them from each other
 \begin_inset Note Note
 status open
@@ -1300,26 +1766,29 @@ status open
 \end_layout
 
 \begin_layout Itemize
-The characteristics of Meccans, Any Surah contains : 
+The characteristics of Makkans, Any Surah contains : 
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-A prostration of recitation
-\begin_inset Foot
+A 
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
- 
-\lang arabic_arabi
-سجود التّلاوة
-\lang english
- 
+
+
+\backslash
+glstwo{prostration of recitation}{prostration of recitation}
 \end_layout
 
 \end_inset
 
-; 
+(
+\lang arabic_arabi
+سجود التّلاوة
+\lang english
+); 
 \end_layout
 
 \begin_layout Itemize
@@ -1356,25 +1825,19 @@ O people 
 
 \begin_layout Itemize
 Stories of the Prophets and the past communities , except in the case of
- Surah the Cow
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
- 
+ Surah the Cow (
 \lang arabic_arabi
 البقرة
 \lang english
- 
-\end_layout
-
-\end_inset
-
-; 
+); 
 \end_layout
 
 \begin_layout Itemize
-The stories of Adam and Satan, except once again, Surah the Cow  ; 
+The stories of Adam and Satan, except once again, Surah the Cow (
+\lang arabic_arabi
+البقرة
+\lang english
+)  ; 
 \end_layout
 
 \begin_layout Itemize
@@ -1386,21 +1849,15 @@ The detached alphabetical letters such as Alif-Lam-Mim (
 \lang arabic_arabi
 ح م
 \lang english
-), except Surah the Cow and al-'Imrān 
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
- 
+), except Surah the Cow (
+\lang arabic_arabi
+البقرة
+\lang english
+) and al-'Imrān (
 \lang arabic_arabi
 آل عمران
 \lang english
- 
-\end_layout
-
-\end_inset
-
-.
+).
  
 \end_layout
 
@@ -1423,21 +1880,24 @@ Ayahs talking about hypocrisy ;
 \end_layout
 
 \begin_layout Itemize
-Dialogue with Jews and Christians (People of the book
-\begin_inset Foot
+Dialogue with Jews and Christians (
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
- 
-\lang arabic_arabi
-أهل الكتاب
-\lang english
- 
+
+
+\backslash
+glstwo{people of the book}{People of the book}
 \end_layout
 
 \end_inset
 
-) ; 
+ 
+\lang arabic_arabi
+أهل الكتاب
+\lang english
+ ) ; 
 \end_layout
 
 \begin_layout Itemize
@@ -1450,26 +1910,42 @@ status open
 
 \end_deeper
 \begin_layout Itemize
-The importance of knowing the Meccans and the Medinans :  
+The importance of knowing the Makkans and the Medinans :  
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-Knowledge of the abrogating and the abrogated
-\begin_inset Foot
+Knowledge of 
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
- 
-\lang arabic_arabi
-النّاسخ و المنسوخ
-\lang english
- 
+
+
+\backslash
+glstwo{abrogating ayahs}{Abrogating}
 \end_layout
 
 \end_inset
 
-.
+ and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{abrogated ayahs}{Abrogated}
+\end_layout
+
+\end_inset
+
+ ayahs (
+\lang arabic_arabi
+النّاسخ و المنسوخ
+\lang english
+).
   
 \end_layout
 
@@ -1512,7 +1988,20 @@ The importance of this science is evident in the ayas concerning specific
 \lang english
 ].
  If we try to understand literally, people will say it is not required to
- move towards the Qiblah, which is obviously wrong.
+ move towards the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{qiblah}{Qiblah}
+\end_layout
+
+\end_inset
+
+, which is obviously wrong.
  So we can not grasp the meaning of the ayah only if we know the cause of
  revelation
 \begin_inset CommandInset citation
@@ -1530,21 +2019,7 @@ key "Zerkashi"
 \end_layout
 
 \begin_layout Subsection
-Knowledge of conjugation
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
- 
-\lang arabic_arabi
-التّصريف
-\lang english
- 
-\end_layout
-
-\end_inset
-
-: 
+Knowledge of Morphology: 
 \end_layout
 
 \begin_layout Standard
@@ -1553,11 +2028,19 @@ This science considers the structure of words, it is divided into two parts:
 \end_layout
 
 \begin_layout Enumerate
-Put the word in various modes such as the infinitive
-\begin_inset Foot
-status collapsed
+Put the word in various modes such as 
+\begin_inset ERT
+status open
 
 \begin_layout Plain Layout
+
+
+\backslash
+glstwo{deverbal noun}{deverbal}
+\end_layout
+
+\end_inset
+
 
 \family roman
 \series medium
@@ -1582,96 +2065,107 @@ status collapsed
 \uwave default
 \noun default
 \color inherit
+(
 \lang arabic_arabi
-المصدر
+مصدر
 \lang english
- 
-\end_layout
-
-\end_inset
-
-, active participle
-\begin_inset Foot
+), 
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
- 
-\lang arabic_arabi
-اسم الفاعل
-\lang english
- 
+
+
+\backslash
+glstwo{active participle}{active participle}
 \end_layout
 
 \end_inset
 
-, passive participle
-\begin_inset Foot
+ (
+\lang arabic_arabi
+اسم فاعل
+\lang english
+) , 
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
- 
-\lang arabic_arabi
-اسم المفعول
-\lang english
- 
+
+
+\backslash
+glstwo{passive participle}{passive participle}
 \end_layout
 
 \end_inset
 
-, etc.
+ (
+\lang arabic_arabi
+اسم مفعول
+\lang english
+), etc.
 \end_layout
 
 \begin_layout Enumerate
-Changing a word to express a particular meaning such as the expansion
-\begin_inset Foot
-status collapsed
+Changing a word to express a particular meaning such as the 
+\begin_inset ERT
+status open
 
 \begin_layout Plain Layout
- 
+
+
+\backslash
+glstwo{expansion}{expansion}
+\end_layout
+
+\end_inset
+
+ (
 \lang arabic_arabi
 الزّيادة
 \lang english
- 
+) , the
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{inversion}{inversion}
 \end_layout
 
 \end_inset
 
-, the inversion
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
- 
+ (
 \lang arabic_arabi
 القلب
 \lang english
- 
-\end_layout
-
-\end_inset
-
-, the diphthong
-\begin_inset Foot
+), the 
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
- 
-\lang arabic_arabi
-الإدغام
-\lang english
- 
+
+
+\backslash
+glstwo{diphthong}{diphthong}
 \end_layout
 
 \end_inset
 
-, etc.
+ (
+\lang arabic_arabi
+الإدغام
+\lang english
+), etc.
  
 \end_layout
 
 \begin_layout Standard
-Knowing the conjugation is essential to understand the meaning of the aya
- because sometimes we do not understand ambiguous words only with conjugation,
- for example: [
+Knowing the morphology is essential to understand the meaning of the ayahs
+ because sometimes we do understand ambiguous words only with discussing
+ the morphology, for example: [
 \lang arabic_arabi
 وَأَمَّا الْقَاسِطُونَ فَكَانُوا لِجَهَنَّمَ حَطَباً
 \lang english
@@ -1679,7 +2173,7 @@ Knowing the conjugation is essential to understand the meaning of the aya
 \lang arabic_arabi
 وَأَقْسِطُوا إِنَّ اللَّهَ يُحِبُّ الْمُقْسِطِين
 \lang english
-َ], one can really see how the meaning has changed by the conjugation from
+َ], one can really see how the meaning has changed by the morphology from
  Equitables (
 \lang arabic_arabi
 المقسطون
@@ -1703,12 +2197,22 @@ key "Zerkashi"
 \end_layout
 
 \begin_layout Subsection
-Knowledge of orthography
-\begin_inset Foot
+Knowledge of 
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
+
+\backslash
+glstwo{orthography}{Orthography}
+\end_layout
+
+\end_inset
+
+ (
+\lang arabic_arabi
+علم مرسوم الخطّ
 \family roman
 \series bold
 \shape up
@@ -1720,7 +2224,8 @@ status open
 \uwave off
 \noun off
 \color none
- 
+\lang english
+) 
 \family default
 \series default
 \shape default
@@ -1732,113 +2237,76 @@ status open
 \uwave default
 \noun default
 \color inherit
-\lang arabic_arabi
-علم مرسوم الخطّ 
-\family roman
-\series bold
-\shape up
-\size large
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-\lang english
- 
-\end_layout
-
-\end_inset
-
 : 
 \end_layout
 
 \begin_layout Standard
 When the companions wrote the Qur'an at the time of Uthman, they have diverged
  in writing of the word 
-\begin_inset Quotes sld
-\end_inset
-
-
 \lang arabic_arabi
 التابوت
 \lang english
-
-\begin_inset Quotes srd
-\end_inset
-
-(coffin) in Mus'haf.
- Zaid said "
+ (coffin) in Mus'haf.
+ Zaid ibn thabit (
+\lang arabic_arabi
+زيد بن ثابت
+\lang english
+) said 
 \lang arabic_arabi
 التابوه
 \lang english
-", but Quraish
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
- 
-\lang arabic_arabi
-قريش
-\lang english
- 
-\end_layout
-
-\end_inset
-
-said "
-\lang arabic_arabi
-التابوت
-\lang english
-".
- So they asked the opinion of Uthman who said write it 
-\begin_inset Quotes sld
-\end_inset
-
-
-\lang arabic_arabi
-التابوت
-\lang english
-
-\begin_inset Quotes srd
-\end_inset
-
- because the Qur'an was revealed with the dialect (language) of Quraish.
- 
-\end_layout
-
-\begin_layout Standard
-In fact, Qur'anic writing is fixed, Abdullah ibn Droustouīh
+, but Quraysh
 \begin_inset Foot
 status collapsed
 
 \begin_layout Plain Layout
+Quraysh tribe, the dominant tribe of Mecca upon the appearance of the religion
+ of Islam
+\end_layout
+
+\end_inset
+
+ (
+\lang arabic_arabi
+قريش
+\lang english
+) said 
+\lang arabic_arabi
+التابوت
+\lang english
+.
+ So they asked the opinion of Othman who said write it 
+\lang arabic_arabi
+التابوت
+\lang english
+ because the Qur'an was revealed with the dialect (language) of Quraysh.
  
+\end_layout
+
+\begin_layout Standard
+In fact, Qur'anic writing is fixed, Abdullah ibn Droustouīh (
 \lang arabic_arabi
 عبد الله ابن درستويه
 \lang english
- 
-\end_layout
-
-\end_inset
-
-said that in the Arabic language there are two calligraphies unable to be
- judged: the script of Mus'haf and the script of Prosody
-\begin_inset Foot
+) said that in the Arabic language there are two calligraphies unable to
+ be judged: the script of Mus'haf and the script of 
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
- 
-\lang arabic_arabi
-تقطيع العروض
-\lang english
- 
+
+
+\backslash
+glstwo{prosody}{Prosody}
 \end_layout
 
 \end_inset
 
-, So it is not permitted to write the mushaf with another script but Othmani
+ (
+\lang arabic_arabi
+تقطيع العروض
+\lang english
+), So it is not permitted to write the mus'haf with another script but Othmani
  because the differences of this script are done intentionally, we give
  below some examples
 \begin_inset CommandInset citation
@@ -1927,21 +2395,23 @@ Removal of Yā’ : such as [
 \end_layout
 
 \begin_layout Itemize
-Diphthong
-\begin_inset Foot
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
- 
-\lang arabic_arabi
-الإدغام
-\lang english
- 
+
+
+\backslash
+glstwo{diphthong}{Diphthong}
 \end_layout
 
 \end_inset
 
-: such as [
+(
+\lang arabic_arabi
+الإدغام
+\lang english
+): such as [
 \lang arabic_arabi
 فَإِلَّمْ يَسْتَجِيبُوا لَكُمْ
 \lang english
@@ -1966,21 +2436,11 @@ Close letters: such as Sīn and Sâd in: [
 \end_layout
 
 \begin_layout Subsection
-Grammatical analysis of the Qur'an
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
- 
+Grammatical analysis of the Qur'an (
 \lang arabic_arabi
 إعراب ألفاظ القرآن
 \lang english
- 
-\end_layout
-
-\end_inset
-
-: 
+) : 
 \end_layout
 
 \begin_layout Standard
@@ -2019,26 +2479,28 @@ key "Zerkashi"
 \end_layout
 
 \begin_layout Subsection
-Science of allegorical
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
- 
+Science of allegorical ayahs (
 \lang arabic_arabi
 علم المتشابه
 \lang english
- 
+) :
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{allegorical ayahs}{Allegorical ayahs}
 \end_layout
 
 \end_inset
 
-:
-\end_layout
-
-\begin_layout Standard
-Allegorical ayahs are those ayahs mentioned with the same meaning but in
- different forms and words repeated several times, as in the following examples
+ are those ayahs mentioned with the same meaning but in different forms
+ and words repeated several times, as in the following examples
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Zerkashi"
@@ -2073,21 +2535,7 @@ Increases and decreases : like [
 \end_layout
 
 \begin_layout Itemize
-Definition and in-definition
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
- 
-\lang arabic_arabi
-التّعريف والتّنكير
-\lang english
- 
-\end_layout
-
-\end_inset
-
-: like [
+Definition and in-definition: like [
 \lang arabic_arabi
 وَيَقْتُلُونَ النَّبِيِّينَ بِغَيْرِ الْحَق
 \lang english
@@ -2143,21 +2591,11 @@ Literal Repetition : such as [
 \end_layout
 
 \begin_layout Subsection
-The beginnings of surahs
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
- 
+The beginnings of surahs (
 \lang arabic_arabi
 فواتح السّور
 \lang english
- 
-\end_layout
-
-\end_inset
-
-: 
+): 
 \end_layout
 
 \begin_layout Standard
@@ -2254,25 +2692,28 @@ Justification (only one time) : [
 \end_layout
 
 \begin_layout Subsection
-Knowledge of Qur'anic Parables
-\begin_inset Foot
+Knowledge of 
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
- 
-\lang arabic_arabi
-الأمثال القرآنية
-\lang english
- 
+
+
+\backslash
+glstwo{quranic parable}{Qur'anic Parables}
 \end_layout
 
 \end_inset
 
-:
+ (
+\lang arabic_arabi
+الأمثال القرآنية
+\lang english
+):
 \end_layout
 
 \begin_layout Standard
-This science is important because there are several ayas which are illuminated
+This science is important because there are several ayahs which are illuminated
  through parables such as : [
 \lang arabic_arabi
 كَمَثَلِ الْعَنْكَبُوتِ اتَّخَذَتْ بَيْتاً
@@ -2298,25 +2739,44 @@ key "Zerkashi"
 \end_layout
 
 \begin_layout Subsection
-Tafssīr : 
+Tafssīr (
+\lang arabic_arabi
+التفسير
+\lang english
+): 
 \end_layout
 
 \begin_layout Standard
-Quran's Tafssīr are explaining its meanings and extracting its laws
-\begin_inset Foot
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
- 
-\lang arabic_arabi
-الأحكام
-\lang english
- 
+
+
+\backslash
+glstwo{tafssir}{Tafssīr}
 \end_layout
 
 \end_inset
 
-.
+ is explaining Qur'an meanings and extracting its 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{laws}{laws}
+\end_layout
+
+\end_inset
+
+ (
+\lang arabic_arabi
+الأحكام
+\lang english
+).
  This requires the knowledge of causes of revelation, the grammatical analysis
  of the Qur'an and other Qur'anic sciences.
  
@@ -2362,7 +2822,20 @@ The inclusion of the symbols of the Qur'an into the Unicode system;
 \end_layout
 
 \begin_layout Itemize
-The appearance of fonts that are used to write in Othmani script.
+The appearance of fonts that are used to write in 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{othmani script}{Othmani script}
+\end_layout
+
+\end_inset
+
+ .
 \end_layout
 
 \begin_layout Itemize
@@ -2382,7 +2855,7 @@ The computerization of the Qur'an lead to a set of advantages:
 \end_layout
 
 \begin_layout Subparagraph
-Unite the different Qur'anic sciences:: 
+Unite the different Qur'anic sciences: 
 \end_layout
 
 \begin_layout Standard
@@ -2821,8 +3294,33 @@ Qur'an Indexes
 \end_layout
 
 \begin_layout Standard
-Over centuries, Muslims were keenly interested in the Qur'an, by Tafssir,
- study, preservation, recitation, and calligraphy.
+Over centuries, Muslims were keenly interested in the Qur'an, by 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{tafssir}{Tafssir}
+\end_layout
+
+\end_inset
+
+ , study, preservation, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{recitation}{recitation}
+\end_layout
+
+\end_inset
+
+, and calligraphy.
  Qur'anic science was the subject of great attention.
  Therefore, indexes were created for the vocabulary of the Qur'an, the search
  for similar words and differences between them, find their roots and dissimilar
@@ -2897,24 +3395,11 @@ Among the major works in this field we mention:
 \emph on
  nujoum al-furkān fī atrāf al-coran
 \emph default
- 
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-
-\emph on
- 
+ » (
 \lang arabic_arabi
 نجوم الفرقان في أطراف القرآن
-\emph default
 \lang english
- 
-\end_layout
-
-\end_inset
-
-» by the German orientalist 
+) by the German orientalist 
 \noun on
 Leberecht Flugel
 \noun default
@@ -2924,26 +3409,16 @@ Leberecht Flugel
 \begin_layout Itemize
 «
 \emph on
- mu'jam of Qur'an ayahs
+ mu'jam of Qur'an ayahs 
 \emph default
- 
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-
+» 
 \emph on
- 
+(
 \emph default
 \lang arabic_arabi
 معجم آيات القرآن
 \lang english
- 
-\end_layout
-
-\end_inset
-
-» by 
+) by 
 \noun on
 Houssine Nassār
 \noun default
@@ -2955,44 +3430,11 @@ Houssine Nassār
 \emph on
 the indexed Mu'jam of the Holy Qur'an words
 \emph default
-
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
+ » (
 \lang arabic_arabi
 المعجم المفهرس لألفاظ القرآن الكريم
 \lang english
- 
-\end_layout
-
-\end_inset
-
-» by 
+) by 
 \noun on
 Mohammed Fouad Abd El-bāki
 \noun default
@@ -3000,7 +3442,7 @@ Mohammed Fouad Abd El-bāki
 \end_layout
 
 \begin_layout Standard
-the index 
+The index 
 \noun on
 Mohammed Fouad
 \noun default
@@ -3012,9 +3454,9 @@ Flugel
 \emph on
 nujoum al-furkān fī atrāf al-coran
 \emph default
- and perfected by removing affixes of words and arranging them in alphabetical
+ and perfected it by removing word affixes and arranging them in alphabetical
  order.
- his mu
+ His mu
 \emph on
 '
 \emph default
@@ -3022,7 +3464,7 @@ jam «
 \emph on
 mu'jam of Qur'an ayahs
 \emph default
- » was published in Egypt 1945, et and ayah numbers mentioned in this book
+ » was published in Egypt 1945, and ayah numbers mentioned in this book
  corresponded to the official mus'haf.
  Then it was published in several Arab and Muslim countries including Istanbul
  in 1982.
@@ -3176,11 +3618,12 @@ An index of words whose writing differs between Othmani script and standard
  script, by linking each index entry with ayahs and the words to be achieved
  into the pages of mus'haf.
  the aim of this index is to facilitate reading in the Qur'an for beginners
- and those who do not know the rules for writing words in script Othmani.
+ and those who do not know the rules for writing words in Othmani script
+ .
 \end_layout
 
 \begin_layout Enumerate
-A index of words whose similarly spelled but the pronunciation varies depending
+An index of words whose similarly spelled but the pronunciation varies depending
  on the agreed format, with distinction between the pronunciation of these
  words and by linking them with the pages of mus'haf.
  
@@ -3238,12 +3681,7 @@ Ayah
 This index takes the ayahs as an indexing unit in order to classify them
  according to topic and examine the similarity and coincidence and develop
  a Mu'jam based on a morphological analyzer of Qur'anic roots, as well as
- making an indexation of the ayahs beginnings and their ends
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
- 
+ making an indexation of the ayahs beginnings and their ends ( 
 \lang arabic_arabi
 رؤوس الآيات
 \family roman
@@ -3259,11 +3697,18 @@ status collapsed
 \color none
 \lang english
  
-\end_layout
-
-\end_inset
-
-, etc.
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+), etc.
  Here are some indexes for example : 
 \end_layout
 
@@ -3300,7 +3745,7 @@ An index of Qur'anic ayahs arranged according to the letters of first words,
 
 \begin_layout Enumerate
 An index of abrogating and the abrogated ayahs among the Qur'an: includes
- the listing of ayahs abrogating or abrogated within surahs of the Qur'an,
+ the listing of abrogating or abrogated ayahs within surahs of the Qur'an,
  by linking the ayahs with their locations in the pages of Mus'haf.
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -3351,19 +3796,24 @@ Surah
 \begin_layout Standard
 The basic purpose of these indexes is that they give a general idea of the
  surahs, with sufficient information to learn what needs to be learned:
- basic data and virtues of surahs
-\begin_inset Foot
+ basic data and 
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
- 
-\lang arabic_arabi
-فضائل
+
+
+\backslash
+glstwo{virtues of surah}{virtues of surahs}
 \end_layout
 
 \end_inset
 
-.
+ (
+\lang arabic_arabi
+فضائل السور
+\lang english
+).
  the most important issues of these indexes are : 
 \end_layout
 
@@ -3373,50 +3823,68 @@ A list of surahs and their locations in the mus'haf.
 \end_layout
 
 \begin_layout Enumerate
-An index of basic data of surahs, including its names, type (Meccan or Medinan),
+An index of basic data of surahs, including its names, type (Makkan or Medinan),
  its order in the mus'haf, the order according to the revelation, its previous
  and following surah (in order of mus'haf or revelation).
  
 \end_layout
 
 \begin_layout Enumerate
-An index of virtues of the surahs in the Prophet's Sunnah 
-\begin_inset Foot
+An index of virtues of the surahs in the 
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-\lang arabic_arabi
-السُنَّة
+
+\backslash
+glstwo{prophet sunnah}{Prophet's Sunnah}
 \end_layout
 
 \end_inset
 
-, based on the narration of hadiths 
-\begin_inset Foot
+ (
+\lang arabic_arabi
+السُنَّةالنبوية
+\lang english
+), based on the 
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-\lang arabic_arabi
-الأحاديث
+
+\backslash
+glstwo{narration of hadiths}{narration of Hadiths}
 \end_layout
 
 \end_inset
 
- .
+ (
+\lang arabic_arabi
+رواية الأحاديث
+\lang english
+).
  
 \end_layout
 
 \begin_layout Enumerate
-An index of Surahs' keys 
-\begin_inset Foot
+An index of 
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
- 
+
+
+\backslash
+glstwo{surah keys}{Surah keys}
+\end_layout
+
+\end_inset
+
+ (
 \lang arabic_arabi
-مفاتيح السّور
+مفاتيح السّورة
 \family roman
 \series medium
 \shape up
@@ -3429,24 +3897,7 @@ status open
 \noun off
 \color none
 \lang english
- 
-\end_layout
-
-\end_inset
-
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
+)  
 \family default
 \series default
 \shape default
@@ -4388,12 +4839,12 @@ Taha Zerrouki
 \emph on
 Midād lbayān
 \emph default
-’ et the Arabic Qur'anic Corpus by 
+’ and the Arabic Qur'anic Corpus by 
 \noun on
 Kais Dukes
 \noun default
  can be considered in this category, we are going to explain them later
- in this chapter..
+ in this chapter.
  
 \end_layout
 
@@ -4510,8 +4961,8 @@ Structural indexes
 
 \begin_layout Standard
 These are the indexes that focus on relations between the different divisions
- of mus'haf as the division into ayahs, surahs ..., or thumns, rub '..., or even
- the special divisions as ruku', sentences and so on ...
+ of mus'haf as the division into ayahs, surahs ..., or thumns, rubu'..., or even
+ the special divisions as sentences and so on ...
  (see figure).
  These indexes are based on one of the units of the division.
  
@@ -4573,7 +5024,7 @@ Projects of building indexes
 \end_layout
 
 \begin_layout Standard
-There are many Qur'anic indexes that vary in purpose : Syntaxic, Thematic,
+There are many Qur'anic indexes that vary in purpose : Syntactic, Thematic,
  etc; But the problem is that most of them are printed, intended only for
  human reading, only a small part was released on computerized data storing
  format such as XML, Excel or as a database.
@@ -4641,35 +5092,40 @@ Sequential code that serves as a key
 \end_layout
 
 \begin_layout Enumerate
-Lemma 
-\begin_inset Foot
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
- 
+
+
+\backslash
+glstwo{lemma}{Lemma}
+\end_layout
+
+\end_inset
+
+(
 \lang arabic_arabi
 جذع الكلمة
 \lang english
- 
-\end_layout
-
-\end_inset
-
- and root 
-\begin_inset Foot
+) and 
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
- 
-\lang arabic_arabi
-جذر الكلمة
-\lang english
- 
+
+
+\backslash
+glstwo{root}{Root}
 \end_layout
 
 \end_inset
 
-
+ (
+\lang arabic_arabi
+جذر الكلمة
+\lang english
+)
 \end_layout
 
 \begin_layout Enumerate
@@ -6174,19 +6630,7 @@ Root
 \end_layout
 
 \begin_layout Enumerate
-Morpheme
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
- 
-\lang arabic_arabi
-المصدر 
-\end_layout
-
-\end_inset
-
-
+Deverbal noun
 \end_layout
 
 \begin_layout Enumerate
@@ -6194,23 +6638,11 @@ Type
 \end_layout
 
 \begin_layout Enumerate
-Plural forms
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
- 
-\lang arabic_arabi
-المثنى و الجمع
-\end_layout
-
-\end_inset
-
-
+Dual and Plural forms
 \end_layout
 
 \begin_layout Enumerate
-feminine form
+Feminine form
 \end_layout
 
 \begin_layout Enumerate
@@ -6285,7 +6717,7 @@ Proper
 \begin_inset Text
 
 \begin_layout Plain Layout
-Muthanaa
+Dual form
 \end_layout
 
 \end_inset
@@ -6303,7 +6735,7 @@ Feminine
 \begin_inset Text
 
 \begin_layout Plain Layout
-Plural
+Plural form
 \end_layout
 
 \end_inset
@@ -6330,7 +6762,7 @@ Type
 \begin_inset Text
 
 \begin_layout Plain Layout
-Morpheme
+Deverbal noun
 \end_layout
 
 \end_inset
@@ -9286,7 +9718,7 @@ Simple minimal
 \begin_layout Enumerate
 
 \series bold
-Simple proper
+Simple clean
 \series default
  : simple text without diacritical signs or symbols, Suitable for easy search.
  
@@ -10529,7 +10961,7 @@ The Opening
 \begin_inset Text
 
 \begin_layout Plain Layout
-Meccan
+Makkan
 \end_layout
 
 \end_inset
@@ -13677,29 +14109,27 @@ Qurany Explorer is a comprehensive tool that covers all the themes and concepts
 \noun on
 Noorhan Abbas
 \noun default
- of Leeds univercity.
- It is imported from 'Mushaf Al Tajweed' 
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-
+ of Leeds university.
+ It is imported from 'Mushaf Al Tajweed' (
 \lang arabic_arabi
- مصحف التجويد
+مصحف التجويد
 \lang english
- 
-\end_layout
-
-\end_inset
-
-.
+) .
  The 'Mushaf Al Tajweed' contains a comprehensive hierarchical index or
  ontology of nearly 1200 concepts in the Quran.
  It can be used to identify a precise concept and find the verses which
  allude to this concept, with higher precision.
  This index is made as a Python dictionary structure but its not available
- in its raw format.its available only for browsing online hosted in googleapps
- with the ID : quranytopics
+ in its raw format.its available only for browsing on-line hosted in googleapps
+ with the ID : 
+\begin_inset CommandInset href
+LatexCommand href
+name "quranytopics"
+target "http://quranytopics.appspot.com/"
+
+\end_inset
+
+
 \begin_inset Foot
 status collapsed
 
@@ -13869,7 +14299,7 @@ The Stories and the History (
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -13885,7 +14315,7 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Aperçue sur Qurany 
+Preview of Qurany 
 \end_layout
 
 \end_inset
@@ -13908,7 +14338,7 @@ An ontology formally represents knowledge as a set of concepts within a
  It can be used to reason about the entities within that domain, and may
  be used to describe the domain.
  In theory, an ontology is a "formal, explicit specification of a shared
- conceptualisation"
+ conceptualization"
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Gru93"
@@ -13929,8 +14359,8 @@ key "Arv08"
 \end_layout
 
 \begin_layout Standard
-Recently , many researches appeared about Ontolgies for Quranic concepts
- and differenct information, we cite two of the most important Quranic ontologie
+Recently, many researches appeared about Ontologies for Qur'anic concepts
+ and different information, we cite two of the most important Qur'anic ontologie
 s that exist :
 \end_layout
 

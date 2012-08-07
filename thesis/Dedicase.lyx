@@ -104,16 +104,11 @@ addcontentsline{toc}{part}{Dedication}
 \end_layout
 
 \begin_layout Standard
+\align center
 \begin_inset VSpace 3cm*
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-\align center
-
-\lang arabic_arabi
 \begin_inset Graphics
 	filename figures/143162.jpg
 	scale 200

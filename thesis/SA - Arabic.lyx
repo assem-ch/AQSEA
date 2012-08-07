@@ -6,6 +6,7 @@
 \begin_preamble
 
  \usepackage{styles/esi_memoire}
+\usepackage{styles/glossary_values}
 \end_preamble
 \use_default_options true
 \begin_modules
@@ -89,33 +90,6 @@ endnotes
 \end_header
 
 \begin_body
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-%
-\backslash
-setcounter{chapter}{1}
-\end_layout
-
-\begin_layout Plain Layout
-
-%
-\backslash
-pagenumbering{arabic}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
 
 \begin_layout Chapter
 Arabic Language  
@@ -218,19 +192,6 @@ Bound unneeded points! no mercy!!
 
 \begin_layout Standard
 \begin_inset Note Greyedout
-status open
-
-\begin_layout Plain Layout
-Bound it ash!!
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Greyedout
 status collapsed
 
 \begin_layout Plain Layout
@@ -247,7 +208,7 @@ verify arabic Words
 status open
 
 \begin_layout Plain Layout
-Terminology as a nomenclature
+Use Glossary for Arabic words
 \end_layout
 
 \end_inset
@@ -266,9 +227,9 @@ Arabic (
 العربية
 \series default
 \lang english
- al-arabiyyah) it is a name applied to the descendants of the classical
- Arabic language of the sixth century AD, the most widely used in the Qur'an,
- the Islamic holy book.
+ al-arabiyyah) is a name applied to the descendants of the classical Arabic
+ language of the sixth century AD, the most widely used in the Qur'an, the
+ Islamic holy book.
  Arabic is a Central Semitic language, closely related to modern Hebrew
  and ​​Aramai languages
 \begin_inset Foot
@@ -309,8 +270,7 @@ Orthography
 \begin_layout Standard
 The Arabic script is one of the most used scripts on the Earth.
  It dominates in the Arab countries, of course, but holds a special place
- for all Muslims because it is the script used to write the Qur'an, the
- Islamic holy book.
+ for all Muslims because it is the script used to write the Qur'an.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Jabri"
@@ -324,10 +284,23 @@ key "Jabri"
 It is written from right to left like other Semitic languages​​.
  Its alphabet has twenty-nine
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
-The scientists of Arabic language considered the Hamzah as a letter
+The scientists of Arabic language considered the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glsone{hamzah}
+\end_layout
+
+\end_inset
+
+ as a letter
 \end_layout
 
 \end_inset
@@ -337,25 +310,20 @@ The scientists of Arabic language considered the Hamzah as a letter
 ا و ي
 \lang english
  are considered as vowels.
- Optionally, one of the three diacritical marks 
-\begin_inset Foot
+ Optionally, one of the three 
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-\series bold
- 
-\series default
-\lang arabic_arabi
-علامات التشكيل
-\series bold
-\lang english
- 
+
+\backslash
+glsone{diacritical marks}
 \end_layout
 
 \end_inset
 
- (
+  (
 \begin_inset Graphics
 	filename diacritics.png
 	lyxscale 50
@@ -664,48 +632,112 @@ key "Lar03"
 \end_layout
 
 \begin_layout Subsubsection
-Verbs with a simple root
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
- 
+Verbs with a simple root ( 
 \lang arabic_arabi
 الفعل المجرّد
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
 \lang english
  
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+):
+\end_layout
+
+\begin_layout Standard
+A 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{verb with a simple root}{verb with a simple root}
 \end_layout
 
 \end_inset
 
-:
-\end_layout
-
-\begin_layout Standard
-Verbs with a simple root have a base of three consonants called radical
- consonants.
+ has a base of three consonants called radical consonants.
  These verbs are associated with verbal pattern 
 \lang arabic_arabi
 فَعَلَ
 \lang english
- (fa‛ala).
+ (fa'ala).
  When none of the root consonants of the verb is a long vowel, it is called
- healthy.
- These radicals may involve processing or causes of defects
-\begin_inset Foot
+ 
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
- 
-\lang arabic_arabi
-عِلَّة
-\lang english
- 
+
+
+\backslash
+glstwo{healthy verb}{healthy}
 \end_layout
 
 \end_inset
 
-, we mention :
+.
+ These radicals may involve processing or causes of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{defect}{defects}
+\end_layout
+
+\end_inset
+
+( 
+\lang arabic_arabi
+عِلَّة
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+), we mention :
 \end_layout
 
 \begin_layout Itemize
@@ -732,21 +764,24 @@ If one of the root consonants is
 \lang arabic_arabi
 أ
 \lang english
- (á – hamzä), independently of its position => Hamzated
-\begin_inset Foot
-status collapsed
+ (á – hamzä), independently of its position => 
+\begin_inset ERT
+status open
 
 \begin_layout Plain Layout
- 
-\lang arabic_arabi
-مَهْموز
-\lang english
- 
+
+
+\backslash
+glstwo{hamzated verb}{Hamzated verb}
 \end_layout
 
 \end_inset
 
- verb; 
+ (
+\lang arabic_arabi
+فعل مَهْموز
+\lang english
+) ; 
 \end_layout
 
 \begin_layout Itemize
@@ -758,21 +793,47 @@ The first radical consonant is a
 \lang arabic_arabi
 ي
 \lang english
-  (y) => Assimilated 
-\begin_inset Foot
-status collapsed
+  (y) => 
+\begin_inset ERT
+status open
 
 \begin_layout Plain Layout
- 
-\lang arabic_arabi
-مِثَال
-\lang english
- 
+
+
+\backslash
+glstwo{assimilated verb}{Assimilated verb} 
 \end_layout
 
 \end_inset
 
- verb;
+( 
+\lang arabic_arabi
+فعل مِثَال
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+);
 \end_layout
 
 \begin_layout Itemize
@@ -784,91 +845,241 @@ The second radical consonant is a
 \lang arabic_arabi
 ي
 \lang english
-  (y) => Hollow
-\begin_inset Foot
-status collapsed
+ (y) => 
+\begin_inset ERT
+status open
 
 \begin_layout Plain Layout
 
-\lang arabic_arabi
- أَجْوَف
-\lang english
- 
+
+\backslash
+glstwo{hollow verb}{Hollow verb}
 \end_layout
 
 \end_inset
 
- verb; 
+ ( 
+\lang arabic_arabi
+فعل أَجْوَف
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+); 
 \end_layout
 
 \begin_layout Itemize
-The third radical consonant is a  
+The third radical consonant is a
 \lang arabic_arabi
  و
 \lang english
-  (w) or   
+  (w) or  
 \lang arabic_arabi
 ي
 \lang english
-  (y) => Weakened
-\begin_inset Foot
-status collapsed
+ (y) => 
+\begin_inset ERT
+status open
 
 \begin_layout Plain Layout
- 
-\lang arabic_arabi
-نَاقِص
-\lang english
- 
+
+
+\backslash
+glstwo{weakened verb}{Weakened verb}
 \end_layout
 
 \end_inset
 
- verb; 
+ (
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang arabic_arabi
+فعل نَاقِص
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+); 
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
 The presence of two identical consonants in the second and third position
- of the root => geminated
-\begin_inset Foot
-status collapsed
+ of the root => 
+\begin_inset ERT
+status open
 
 \begin_layout Plain Layout
- 
-\lang arabic_arabi
-مُضَاعَف
-\lang english
- 
+
+
+\backslash
+glstwo{geminated verb}{Geminated verb}
 \end_layout
 
 \end_inset
 
- verb.
+ ( 
+\lang arabic_arabi
+فعل مُضَاعَف
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+).
  
 \end_layout
 
 \begin_layout Subsubsection
-The verbs with augmented root
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
+Verbs with augmented root (
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
  
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
 \lang arabic_arabi
 الفعل المزيد
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
 \lang english
  
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+):
+\end_layout
+
+\begin_layout Standard
+The patterns of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{verb with augmented root}{verbs with augmented root}
 \end_layout
 
 \end_inset
 
-:
-\end_layout
-
-\begin_layout Standard
-These patterns are formed from simple roots by a set of morphological operations
- to provide a specific meaning to the outcome verbs , we mention: 
+ are formed from simple roots by a set of morphological operations to provide
+ a specific meaning to the outcome verbs , we mention: 
 \end_layout
 
 \begin_layout Itemize
@@ -876,7 +1087,7 @@ These patterns are formed from simple roots by a set of morphological operations
 \lang arabic_arabi
 فَعَّلَ 
 \lang english
-(fa‛‛ala)
+(fa''ala)
 \end_layout
 
 \begin_layout Itemize
@@ -884,7 +1095,7 @@ These patterns are formed from simple roots by a set of morphological operations
 \lang arabic_arabi
 فَاعَلَ 
 \lang english
-(faā‛ala)
+(faā'ala)
 \end_layout
 
 \begin_layout Itemize
@@ -892,7 +1103,7 @@ These patterns are formed from simple roots by a set of morphological operations
 \lang arabic_arabi
 أَفْعَلَ 
 \lang english
-(áfa‛ala)
+(áfa'ala)
 \end_layout
 
 \begin_layout Itemize
@@ -900,7 +1111,7 @@ These patterns are formed from simple roots by a set of morphological operations
 \lang arabic_arabi
 تَفَعَّلَ 
 \lang english
-(tafa‛‛ala)
+(tafa''ala)
 \end_layout
 
 \begin_layout Itemize
@@ -908,7 +1119,7 @@ These patterns are formed from simple roots by a set of morphological operations
 \lang arabic_arabi
 تَفَاعَلَ 
 \lang english
-(tafaā‛ala)
+(tafaā'ala)
 \end_layout
 
 \begin_layout Itemize
@@ -916,7 +1127,7 @@ These patterns are formed from simple roots by a set of morphological operations
 \lang arabic_arabi
 اِفْتَعَلَ 
 \lang english
-(ìfta‛ala)
+(ìfta'ala)
 \end_layout
 
 \begin_layout Itemize
@@ -924,7 +1135,7 @@ These patterns are formed from simple roots by a set of morphological operations
 \lang arabic_arabi
 اِنْفَعَلَ 
 \lang english
-(ìnfa‛ala)
+(ìnfa'ala)
 \end_layout
 
 \begin_layout Itemize
@@ -932,7 +1143,7 @@ These patterns are formed from simple roots by a set of morphological operations
 \lang arabic_arabi
 اِسْتَفْعَلَ 
 \lang english
-(ìstaf‛ala)
+(ìstaf'ala)
 \end_layout
 
 \begin_layout Subsection
@@ -944,11 +1155,28 @@ The morphological system of Arabic nouns are three subcategories:
 \end_layout
 
 \begin_layout Subsubsection
-The primitive nouns: 
+Primitive nouns (
+\lang arabic_arabi
+الأسماء الجامدة
+\lang english
+): 
 \end_layout
 
 \begin_layout Standard
-They are nouns that can not be attached to a verbal root.
+The 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{primitive noun}{primitive nouns}
+\end_layout
+
+\end_inset
+
+ are nouns that can not be attached to a verbal root.
  They well form the fundamental glossary of the concrete language.
  eg:
 \lang arabic_arabi
@@ -1010,8 +1238,9 @@ They are nouns that can not be attached to a verbal root.
 \lang english
  (kabš – Sheep), etc.
  In this category we also include nouns composed of two letters such as:
+ 
 \lang arabic_arabi
- دم
+دم
 \lang english
  (dam - blood), 
 \lang arabic_arabi
@@ -1021,16 +1250,20 @@ They are nouns that can not be attached to a verbal root.
 \lang arabic_arabi
 أب
 \lang english
- (áab – father),
+ (áab – father), 
 \lang arabic_arabi
- أخ
+أخ
 \lang english
  (áh – brother), etc.
  
 \end_layout
 
 \begin_layout Subsubsection
-Nouns derived from verbals : 
+Nouns derived from verbals (
+\lang arabic_arabi
+الأسماء المشتقة
+\lang english
+) : 
 \end_layout
 
 \begin_layout Standard
@@ -1055,7 +1288,7 @@ This category of nouns is made up of simple numerals representing units:
 \lang arabic_arabi
 تسعة
 \lang english
-   (tis‛at – nine, 9) ; the tens:   
+  (tis‛at – nine, 9) ; the tens:   
 \lang arabic_arabi
 عشرة
 \lang english
@@ -1068,7 +1301,7 @@ This category of nouns is made up of simple numerals representing units:
 تسعون
 \lang english
    (tis‛uwn – ninety, 90) ; the hundreds, etc.
- well as numerals compounds such as cardinals of  
+ well as numerals compounds such as cardinals of 
 \lang arabic_arabi
  أَحَد عَشَر
 \lang english
@@ -1087,12 +1320,7 @@ In their decomposition, the Arab grammarians have classified adjectives
 \end_layout
 
 \begin_layout Subsubsection
-Demonstrative nouns
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-
+Demonstrative pronouns
 \family roman
 \series bold
 \shape up
@@ -1116,19 +1344,27 @@ status collapsed
 \uwave default
 \noun default
 \color inherit
+(
 \lang arabic_arabi
 أسماء الإشارة
 \lang english
- 
+):
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{demonstrative pronoun}{Demonstrative pronouns}
 \end_layout
 
 \end_inset
 
-:
-\end_layout
-
-\begin_layout Standard
-hey represent a subcategory of noun expressing an idea of ​​demonstration.
+ represent a subcategory of noun expressing an idea of ​​demonstration.
  They can indicate that the object represented is found, either in the text,
  either in space or time, defined by the situation of utterance.
  They are two subsets: near-deictic (eg:   
@@ -1171,34 +1407,111 @@ hey represent a subcategory of noun expressing an idea of ​​demonstration.
 \noun default
 \color inherit
   (ùuwlaāýika – those), etc.).
- Demonstratives are derivable only to dual .
  
-\end_layout
-
-\begin_layout Subsubsection
-Relative nouns
-\begin_inset Foot
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
- 
-\lang arabic_arabi
-أسماء موصولة
-\lang english
- 
+
+
+\backslash
+glstwo{demonstrative pronoun}{Demonstratives}
 \end_layout
 
 \end_inset
 
-:
+are derivable only to dual .
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Relative pronouns (
+\lang arabic_arabi
+أسماء موصولة
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+):
 \end_layout
 
 \begin_layout Standard
-They relate to the noun or personal pronoun that precedes them and that
- we denote by antecedent.
- The relatives shall afford with their antecedents but are derivable only
- to dual (as demonstratives).
- Among the relative pronouns, we mention:   
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{relative pronoun}{Relative pronouns}
+\end_layout
+
+\end_inset
+
+ relate to the noun or personal pronoun that precedes them and that we denote
+ by antecedent.
+ The 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{relative pronoun}{relatives}
+\end_layout
+
+\end_inset
+
+ shall afford with their antecedents but are derivable only to dual (as
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{demonstrative pronoun}{demonstratives}
+\end_layout
+
+\end_inset
+
+).
+ Among the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{relative pronoun}{relative pronouns}
+\end_layout
+
+\end_inset
+
+, we mention:   
 \lang arabic_arabi
 الَّذي
 \lang english
@@ -1215,34 +1528,66 @@ They relate to the noun or personal pronoun that precedes them and that
 \end_layout
 
 \begin_layout Subsubsection
-Personal pronouns 
-\begin_inset Foot
+Personal pronouns ( 
+\lang arabic_arabi
+الضمائر المنفصلة
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+): 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
- 
-\lang arabic_arabi
-الضمائر المنفصلة
-\lang english
- 
+
+
+\backslash
+glstwo{personal pronoun}{Personal pronouns}
 \end_layout
 
 \end_inset
 
-: 
-\end_layout
-
-\begin_layout Standard
-They are intended to identify three types of grammatical persons:
+are intended to identify three types of grammatical persons:
 \end_layout
 
 \begin_layout Itemize
-First person, ie, the speaker 
-\begin_inset Foot
-status collapsed
+\begin_inset ERT
+status open
 
 \begin_layout Plain Layout
 
+
+\backslash
+glstwo{first person}{First person}
+\end_layout
+
+\end_inset
+
+, ie, the speaker
 \family roman
 \series medium
 \shape up
@@ -1266,17 +1611,13 @@ status collapsed
 \uwave default
 \noun default
 \color inherit
+(
 \lang arabic_arabi
 المتكلم
 \lang english
- 
-\end_layout
-
-\end_inset
-
-, that who is talking:   
+) , that who is talking: 
 \lang arabic_arabi
-أَنَا 
+أَنَا
 \lang english
   (ánaā - I) or   
 \lang arabic_arabi
@@ -1310,21 +1651,46 @@ status collapsed
 \end_layout
 
 \begin_layout Itemize
-Second person, ie, the listener
-\begin_inset Foot
-status collapsed
+\begin_inset ERT
+status open
 
 \begin_layout Plain Layout
- 
-\lang arabic_arabi
-المخاطب
-\lang english
- 
+
+
+\backslash
+glstwo{second person}{Second person}
 \end_layout
 
 \end_inset
 
-,
+, ie, the listener ( 
+\lang arabic_arabi
+المخاطب
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+),
 \begin_inset space ~
 \end_inset
 
@@ -1421,21 +1787,46 @@ that who talking to:
 \end_layout
 
 \begin_layout Itemize
-Third person, ie, the absent
-\begin_inset Foot
-status collapsed
+\begin_inset ERT
+status open
 
 \begin_layout Plain Layout
- 
-\lang arabic_arabi
-الغائب
-\lang english
- 
+
+
+\backslash
+glstwo{third person}{Third person}
 \end_layout
 
 \end_inset
 
-, that who talking about :  
+, ie, the absent ( 
+\lang arabic_arabi
+الغائب
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+) , that who talking about :  
 \lang arabic_arabi
  هُوَ 
 \lang english
@@ -1451,7 +1842,7 @@ status collapsed
 \lang arabic_arabi
 هُمْ
 \lang english
-   (hum – they, masculine),  
+  (hum – they, masculine),  
 \lang arabic_arabi
  هُن 
 \lang english
@@ -1520,7 +1911,7 @@ key "Kadri_et_benyamina1992"
 \end_layout
 
 \begin_layout Itemize
-Prepositions :   
+Prepositions :  
 \lang arabic_arabi
 فِي
 \lang english
@@ -1532,9 +1923,9 @@ Prepositions :
 \end_layout
 
 \begin_layout Itemize
-Conjunctions:  
+Conjunctions: 
 \lang arabic_arabi
- ثُمَّ 
+ ثُمَّ
 \lang english
   (tumma – then) ;
 \end_layout
@@ -1601,9 +1992,22 @@ Morphology
 \end_layout
 
 \begin_layout Standard
-There are several categories of fusional languages​​, and Arabic is precisely
- in the category of languages with Intro-flexion: this category of languages​​,
- the consonants indicate the meaning and vowels mark the flexion of  word.
+There are several categories of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{fusional language}{Fusional languages}
+\end_layout
+
+\end_inset
+
+​​, and Arabic is precisely in the category of languages with Intro-flexion:
+ this category of languages​​, the consonants indicate the meaning and vowels
+ mark the flexion of  word.
  This system is found especially in the Semitic languages ​​(eg: Arabic,
  Hebrew) 
 \begin_inset CommandInset citation
@@ -1635,36 +2039,6 @@ key "Alk99"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Classification of affixes.png
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Classification of Affixes in Arabic 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
- 
 \begin_inset Note Greyedout
 status collapsed
 
@@ -1699,8 +2073,7 @@ Find the English Source! why translate?
 \end_layout
 
 \begin_layout Standard
-Arabic is a fusional language.
- It uses, for the declination of verbs and nouns, some indications of aspect,
+Arabic uses for the declension of verbs and nouns, some indications of aspect,
  mood, time, person, gender, number and case, which are generally suffixes
  and prefixes
 \begin_inset CommandInset citation
@@ -1710,44 +2083,52 @@ key "GB75"
 \end_inset
 
 .
- Generally, these fusional marks can distinguish:
+ Generally, these flexional marks can distinguish:
 \end_layout
 
 \begin_layout Itemize
-Mood of verbs : eg, for the verb  
+Mode of verbs: eg, for the verb 
 \lang arabic_arabi
- ذهَب
+ذهَب
 \series bold
-َ 
+َ
 \series default
 \lang english
-  (dahaba – go), forms in the perfective
-\begin_inset Foot
-status collapsed
+ (dahaba – go), forms in the 
+\begin_inset ERT
+status open
 
 \begin_layout Plain Layout
- 
-\lang arabic_arabi
-الماضي
-\lang english
- 
+
+
+\backslash
+glstwo{perfective}{Perfective}
 \end_layout
 
 \end_inset
 
- can be identified using their suffixes as  
+ (
 \lang arabic_arabi
- ذهَبْتُ
-\series bold
- 
-\series default
+الماضي
 \lang english
-  (dahabatu – I went) or their prefixes such in the imperfective
-\begin_inset Foot
-status collapsed
+)  can be identified using their suffixes as 
+\lang arabic_arabi
+ذهَبْتُ
+\lang english
+ (dahabatu – I went) or their prefixes such in the 
+\begin_inset ERT
+status open
 
 \begin_layout Plain Layout
- 
+
+
+\backslash
+glstwo{imperfective}{Imperfective}
+\end_layout
+
+\end_inset
+
+ (
 \lang arabic_arabi
 المضارع
 \family roman
@@ -1762,16 +2143,23 @@ status collapsed
 \noun off
 \color none
 \lang english
- 
-\end_layout
-
-\end_inset
-
- as  
+) 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+as 
 \lang arabic_arabi
- أَذهَب
+أَذهَب
 \series bold
-ُ 
+ُ
 \series default
 \lang english
   (áadhabu – I go) ; 
@@ -1785,56 +2173,65 @@ Function of nouns: using of suffixes such as
 ِ
 \series default
 \lang english
- (rağulaáni – Two men in Nominative
-\begin_inset Foot
-status collapsed
+ (rağulaáni – Two men) in 
+\begin_inset ERT
+status open
 
 \begin_layout Plain Layout
- 
-\lang arabic_arabi
-حالة الرفع
-\lang english
- 
+
+
+\backslash
+glstwo{nominative}{Nominative}
 \end_layout
 
 \end_inset
 
-) or  
+ (
+\lang arabic_arabi
+حالة الرفع
+\lang english
+) or 
 \lang arabic_arabi
 رَجُلَيْن
 \series bold
 ِ
 \series default
 \lang english
-  (rağulayni – Two men in Accusative
-\begin_inset Foot
+  (rağulayni – Two men) in 
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
- 
+
+
+\backslash
+glstwo{accusative}{Accusative} 
+\end_layout
+
+\end_inset
+
+(
 \lang arabic_arabi
 حالة النصب
 \lang english
- 
-\end_layout
-
-\end_inset
-
-or Genitive
-\begin_inset Foot
+) or 
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
- 
-\lang arabic_arabi
-حالة الجر
-\lang english
- 
+
+
+\backslash
+glstwo{genitive}{Genitive}
 \end_layout
 
 \end_inset
 
-).
+ ( 
+\lang arabic_arabi
+حالة الجر
+\lang english
+ ).
  
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1850,8 +2247,20 @@ Flexion of verbs
 \end_layout
 
 \begin_layout Standard
-Conjugation of verbs describe the variation in their forms according to
- circumstances.
+Called also 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{conjugation}{Conjugation}
+\end_layout
+
+\end_inset
+
+, it describes the variation in their forms according to circumstances.
  Generally, conjugation includes a number of values ​​which are: 
 \end_layout
 
@@ -1903,26 +2312,26 @@ status collapsed
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
-Perfective (al-maádi
-\series default
-
-\begin_inset Foot
-status collapsed
+\begin_inset ERT
+status open
 
 \begin_layout Plain Layout
- 
-\lang arabic_arabi
-الماضي
-\lang english
- 
+
+
+\backslash
+textbf{
+\backslash
+glstwo{perfective}{Perfective}}
 \end_layout
 
 \end_inset
 
 
 \series bold
+ (
+\lang arabic_arabi
+الماضي
+\lang english
 ):
 \series default
  it indicates that the progress of the action expressed by the verb is finished,
@@ -1958,9 +2367,9 @@ status collapsed
 \lang english
    (kataba – write), we add the suffix  
 \lang arabic_arabi
- نَ 
+نَ
 \lang english
-  to get the form  
+ to get the form  
 \family roman
 \series medium
 \shape up
@@ -2023,26 +2432,26 @@ status collapsed
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
-Imperfective (al-mudaára‛
-\series default
-
-\begin_inset Foot
-status collapsed
+\begin_inset ERT
+status open
 
 \begin_layout Plain Layout
 
-\lang arabic_arabi
-المضارع
-\lang english
- 
+
+\backslash
+textbf{
+\backslash
+glstwo{imperfective}{Imperfective}}
 \end_layout
 
 \end_inset
 
 
 \series bold
+ (
+\lang arabic_arabi
+المضارع
+\lang english
 ):
 \series default
  it indicates an unfinished progress, which may imply the present.
@@ -2101,9 +2510,27 @@ The subjunctive of potential mode in which the speaker merely states the
 
 \end_deeper
 \begin_layout Itemize
+\begin_inset ERT
+status open
 
+\begin_layout Plain Layout
+
+
+\backslash
+textbf{
+\backslash
+glstwo{imperative}{Imperative}}
+\end_layout
+
+\end_inset
+
+ 
 \series bold
-Imperative
+(
+\lang arabic_arabi
+الأمر
+\lang english
+)
 \series default
 : it expresses the order, command, or exhortation ...etc.
  It exists only the with the 2nd person in singular, dual and plural; 
@@ -2127,53 +2554,152 @@ Flexion of nouns
 \end_layout
 
 \begin_layout Standard
-In Arabic, the declension of nouns involves three cases:   
-\lang arabic_arabi
-مَرْفُوع
-\lang english
-   (marfou‛ - nominative),  
-\lang arabic_arabi
-منْصُوب
-\lang english
-   (mansuwb – accusative) and   
-\lang arabic_arabi
-مجْرور
-\lang english
-   (mağruwr – genitive).
- Except for some special cases, the nouns are   
-\lang arabic_arabi
-معرّبة
-\lang english
-   (mu‛arrabat - declinables) and appear in one of these three cases according
- to their functions in the sentence.
- In terms of the spelling, the case represents only an assistant graphic
- at the end of nominal forms.
- The nominal system of Arabic admits different systems depending on the
- nature of variation of the form (simple, diptotes, etc.) and the number
- thereof (singular, dual or plural).
- We can distinguish : 
-\end_layout
-
-\begin_layout Paragraph
-Declination of singular nouns: 
-\end_layout
-
-\begin_layout Subparagraph
-Basic declination of triptotes
-\begin_inset Foot
-status collapsed
+In Arabic, the 
+\begin_inset ERT
+status open
 
 \begin_layout Plain Layout
- 
-\lang arabic_arabi
-منصرف
-\lang english
- 
+
+
+\backslash
+glstwo{declension}{declension}
 \end_layout
 
 \end_inset
 
-: 
+ (
+\lang arabic_arabi
+إعراب
+\lang english
+) of nouns involves three cases: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{nominative}{Nominative}
+\end_layout
+
+\end_inset
+
+ (
+\lang arabic_arabi
+مَرْفُوع
+\lang english
+),  
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{accusative}{Accusative} 
+\end_layout
+
+\end_inset
+
+ (
+\lang arabic_arabi
+منْصُوب
+\lang english
+) and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{genitive}{Genitive}
+\end_layout
+
+\end_inset
+
+ (
+\lang arabic_arabi
+مجْرور
+\lang english
+).
+ Except for some special cases, the nouns are 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{declinable}{declinables}
+\end_layout
+
+\end_inset
+
+ (
+\lang arabic_arabi
+معرّبة
+\lang english
+) and appear in one of these three cases according to their functions in
+ the sentence.
+ In terms of the spelling, the case represents only an assistant graphic
+ at the end of nominal forms.
+ The nominal system of Arabic admits different systems depending on the
+ nature of variation of the form (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{triptote}{triptote}
+\end_layout
+
+\end_inset
+
+ , 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{diptote}{diptote}
+\end_layout
+
+\end_inset
+
+, etc.) and the number thereof (singular, dual or plural).
+ We can distinguish : 
+\end_layout
+
+\begin_layout Paragraph
+Declension of singular nouns: 
+\end_layout
+
+\begin_layout Subparagraph
+Basic declension of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+textbf{
+\backslash
+glstwo{triptote}{triptotes}}
+\end_layout
+
+\end_inset
+
+ (
+\lang arabic_arabi
+منصرف
+\lang english
+): 
 \end_layout
 
 \begin_layout Standard
@@ -2185,7 +2711,7 @@ This is the most frequent case, it takes the vowel
 \lang arabic_arabi
 فَتْحَة
 \lang english
-  (fathat – a) in the accusative and the vowel  
+ (fathat – a) in the accusative and the vowel  
 \family roman
 \series medium
 \shape up
@@ -2220,7 +2746,7 @@ This is the most frequent case, it takes the vowel
 \lang english
  (ũ – un), 
 \lang arabic_arabi
- ـً 
+ ـً
 \lang english
  (ã - an) et 
 \lang arabic_arabi
@@ -2310,33 +2836,63 @@ This is the most frequent case, it takes the vowel
 \end_layout
 
 \begin_layout Subparagraph
-Declination of diptotes
-\begin_inset Foot
+Declension of 
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
- 
-\lang arabic_arabi
-الممنوع من الصرف
-\lang english
- 
+
+
+\backslash
+textbf{
+\backslash
+glstwo{diptote}{diptotes}}
 \end_layout
 
 \end_inset
 
-: 
+(
+\lang arabic_arabi
+الممنوع من الصرف
+\lang english
+): 
 \end_layout
 
 \begin_layout Standard
-The nouns that are diptotes, grammatically undefined, do not accept tanwîn
- and take the same mark in the accusative and the genitive which is the
-   
+The nouns that are 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{diptote}{diptotes}
+\end_layout
+
+\end_inset
+
+, grammatically undefined, do not accept tanwîn and take the same mark in
+ the accusative and the genitive which is the   
 \lang arabic_arabi
 فَتْحَة
 \lang english
    (fathat – a).
- by cons, when they are defined, they follow the declination of triptotes.
- This is the case of feminine nouns that end with   
+ by cons, when they are defined, they follow the declension of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{triptote}{triptotes}
+\end_layout
+
+\end_inset
+
+.
+ This is the case of feminine nouns that end with  
 \lang arabic_arabi
 اء
 \lang english
@@ -2353,7 +2909,7 @@ The nouns that are diptotes, grammatically undefined, do not accept tanwîn
 \lang arabic_arabi
  أحْمَر
 \lang english
-   (áhmar – red)and those which are feminine with the pattern   
+ (áhmar – red) and those which are feminine with the pattern   
 \lang arabic_arabi
 فَعْلَاء
 \lang english
@@ -2361,19 +2917,51 @@ The nouns that are diptotes, grammatically undefined, do not accept tanwîn
 \lang arabic_arabi
 بَيْضَاء
 \lang english
-   (baydaā’ – white , feminine) 
+  (baydaā’ – white , feminine) 
 \end_layout
 
 \begin_layout Subparagraph
-Declination of the five nouns : 
+Declension of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+textbf{
+\backslash
+glstwo{the five nouns}{The Five Nouns}}
+\end_layout
+
+\end_inset
+
+ (
+\lang arabic_arabi
+الأسماء الخمسة
+\lang english
+ ): 
 \end_layout
 
 \begin_layout Standard
-the five nouns are : 
+The 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{the five nouns}{five nouns}
+\end_layout
+
+\end_inset
+
+ are : 
 \end_layout
 
 \begin_layout Itemize
-the 3 nouns :  
+the three nouns:  
 \lang arabic_arabi
 أبو
 \lang english
@@ -2393,7 +2981,7 @@ a variant of
 \lang arabic_arabi
  فَم
 \lang english
-   (fam – mouth) :   
+  (fam – mouth) :   
 \lang arabic_arabi
 فَا
 \lang english
@@ -2409,11 +2997,11 @@ a variant of
 \end_layout
 
 \begin_layout Itemize
-the noun   
+the noun 
 \lang arabic_arabi
 ذو
 \lang english
-   (duw – possessor).
+   (duw – possessor of ).
 \end_layout
 
 \begin_layout Standard
@@ -2423,16 +3011,41 @@ These are bi-literal nouns who extend their final vowel when they are defined
 \end_layout
 
 \begin_layout Subparagraph
-Declination of deverbals with defective roots : 
+Declension of deverbals with defective roots : 
 \end_layout
 
 \begin_layout Standard
-some active participles and verbal nouns of verbs with defective root such
- as the active participle 
+Some active participles and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{deverbal noun}{deverbal nouns}
+\end_layout
+
+\end_inset
+
+ of verbs with defective root such as the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{active participle}{active participle}
+\end_layout
+
+\end_inset
+
+ 
 \lang arabic_arabi
 مَاضٍ
 \lang english
-  (maādĩ – past) et the verbal noun 
+  (maādĩ – past) et the deverbal noun 
 \lang arabic_arabi
 تَخَلٍّ
 \lang english
@@ -2442,13 +3055,26 @@ some active participles and verbal nouns of verbs with defective root such
 ي
 \lang english
  (y) is replaced by the tanwîn (in) to the indefinite nominative and genitive.
- As for the passive participles that end in   
+ As for the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{passive participle}{passive participles}
+\end_layout
+
+\end_inset
+
+ that end in   
 \lang arabic_arabi
 ى
 \lang english
   or  
 \lang arabic_arabi
- ا
+ا
 \lang english
   such as   
 \lang arabic_arabi
@@ -2456,7 +3082,7 @@ some active participles and verbal nouns of verbs with defective root such
 \lang english
    (mu‛tãą – given), they lose their case inflection.
  a Tanwîn distinguishes indefinite noun of definite.
- At this point, it is important to note that the use of this rule of declination
+ At this point, it is important to note that the use of this rule of declension
  is remised.
  Indeed, in standard texts the form of the verbal noun  
 \lang arabic_arabi
@@ -2498,31 +3124,77 @@ some active participles and verbal nouns of verbs with defective root such
 \end_layout
 
 \begin_layout Paragraph
-Declination of dual nouns :
+Declension of dual nouns :
 \end_layout
 
 \begin_layout Standard
-There are Arabic 
+There is in Arabic a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{dual form}{dual form}
+\end_layout
+
+\end_inset
+
+ called 
 \lang arabic_arabi
 المُثنَّى
 \lang english
  (al-mutannaą – dual) to describe two things or two persons.
- It takes place between singular (referring to a thing or person) and plural
- (greater than three things or three persons).
- This is a declination with two alternatives where the mark of nominative
- is the 
+ It takes place between 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{singular}{singular}
+\end_layout
+
+\end_inset
+
+ (
 \lang arabic_arabi
- ا
+المفرد
 \lang english
- , and that of accusative and genitive is the  
+, referring to one thing or one person) and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{plural}{plural}
+\end_layout
+
+\end_inset
+
+ (
 \lang arabic_arabi
- ي
+الجمع
+\lang english
+, greater than three things or three persons).
+ This is a declension with two alternatives where the mark of nominative
+ is Alef 
+\lang arabic_arabi
+ا
+\lang english
+ , and that of accusative and genitive is Ya 
+\lang arabic_arabi
+ي
 \lang english
  .
  To form the dual of a noun, indefinite or definite by article, we add the
  suffix :  
 \lang arabic_arabi
- انِ 
+انِ
 \lang english
   (aāni) to nominative and 
 \lang arabic_arabi
@@ -2591,7 +3263,7 @@ In some cases, especially for words whose root is defective or that end
 \end_layout
 
 \begin_layout Paragraph
-Declination of plural nouns:
+Declension of plural nouns:
 \end_layout
 
 \begin_layout Standard
@@ -2599,49 +3271,54 @@ There are two major categories of plural form in Arabic:
 \end_layout
 
 \begin_layout Subparagraph
-External or regular plurals
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
- 
+External or regular plurals (
 \lang arabic_arabi
 الجموع السالمة
 \lang english
- 
+) : 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{external plural}{External plurals}
 \end_layout
 
 \end_inset
 
-: 
-\end_layout
-
-\begin_layout Standard
-External plurals are formed by adding a suffix to the singular without changing
- the structure of the word.
+ are formed by adding a suffix to the singular without changing the structure
+ of the word.
  we distinguish: 
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
-External masculine plural
-\series default
-
-\begin_inset Foot
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-\lang arabic_arabi
-جمع مذكر السالم
-\lang english
- 
+
+\backslash
+textbf{
+\backslash
+glstwo{external masculine plural}{External masculine plural}}
 \end_layout
 
 \end_inset
 
-: For this plural we add the two letters  
+ (
+\lang arabic_arabi
+جمع مذكر السالم
+\series default
+\lang english
+): For this plural we add the two letters  
 \lang arabic_arabi
 ين
 \lang english
@@ -2696,7 +3373,7 @@ status collapsed
 \lang arabic_arabi
 مسلمون
 \lang english
-   (muslimuwna – Muslims, nominative) or  
+   (muslimuwna – Muslims, nominative) or 
 \family roman
 \series medium
 \shape up
@@ -2727,24 +3404,28 @@ status collapsed
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
-External feminine plural
-\series default
-
-\begin_inset Foot
-status collapsed
+\begin_inset ERT
+status open
 
 \begin_layout Plain Layout
 
-\lang arabic_arabi
-جمع مؤنث السالم
-\lang english
- 
+
+\backslash
+textbf{
+\backslash
+glstwo{external feminine plural}{External feminine plural}}
 \end_layout
 
 \end_inset
 
+
+\series bold
+(
+\lang arabic_arabi
+جمع مؤنث السالم
+\lang english
+)
+\series default
 : Similarly, we add to this plural , the two letters   
 \lang arabic_arabi
 ات
@@ -2762,26 +3443,41 @@ status collapsed
 \end_layout
 
 \begin_layout Subparagraph
-Internal or broken plurals
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
- 
+Internal or broken plurals (
 \lang arabic_arabi
 جموع التكسير
 \lang english
- 
+) : 
+\end_layout
+
+\begin_layout Standard
+The 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{internal plural}{internal plurals}
 \end_layout
 
 \end_inset
 
-: 
+ are designated also by 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{broken plural}{broken plurals}
 \end_layout
 
-\begin_layout Standard
-The internal plurals are designated by broken plurals because of changes
- and infixations they require over the singular form.
+\end_inset
+
+ because of changes and infixes they require over the singular form.
  Unlike what happens with regular plurals (masculine and feminine).
  Broken plural forms are numerous and generally unpredictable, they follow
  a variety of complex rules and depend on the noun.
@@ -2816,7 +3512,7 @@ The internal plurals are designated by broken plurals because of changes
 \lang arabic_arabi
 كُتَّاب
 \lang english
-   (kutteb – writers) or  
+   (kutteb – writers) or
 \family roman
 \series medium
 \shape up
@@ -2843,7 +3539,7 @@ The internal plurals are designated by broken plurals because of changes
 \lang arabic_arabi
 كَتَبَة
 \lang english
-   (katabat – writers).
+ (katabat – writers).
  Note also that the Arab grammarians have made distinctions between plurals
  based on number.
  For example : the noun   
@@ -2859,9 +3555,35 @@ The internal plurals are designated by broken plurals because of changes
 شُهُور
 \lang english
    (šuhuwr - more than 12 months ) .
- Only the external plurals follow a clear declination.
- The internal plurals are related to declinations of the singular (declinations
- of triptotes and diptotes ).
+ Only the external plurals follow a clear declension.
+ The internal plurals are related to declensions of the singular (declensions
+ of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{triptote}{triptotes}
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{diptote}{diptotes}
+\end_layout
+
+\end_inset
+
+ ).
 \end_layout
 
 \begin_layout Subsubsection
@@ -2894,7 +3616,7 @@ Invariables
 \series bold
 Variables
 \series default
-: they follow the system of declination in three cases according to their
+: they follow the system of declension in three cases according to their
  function in the sentence.
  For example.
  the quantifier 
@@ -2942,20 +3664,37 @@ key "Mes08"
 
 \begin_layout Standard
 Each verb has its set of associated deverbal forms which it maintains morphologi
-cal, syntactic and semantic relations .
+cal, syntactic and semantic relations.
  The number and nature of these forms vary depending on the status of the
  verb.
- We cite some deverbals:
+ We cite some deverbal forms:
 \end_layout
 
 \begin_layout Subsubsection
-Verbal nouns : 
+Deverbal noun (
+\lang arabic_arabi
+المصدر
+\lang english
+): 
 \end_layout
 
 \begin_layout Standard
-The verbal noun is an abstract noun formed on the same root as a verb and
- expresses the same semantic content as it, but it involves no notion of
- tense, aspect, mood, person, or even voice.
+The 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{deverbal noun}{deverbal noun}
+\end_layout
+
+\end_inset
+
+ is an abstract noun formed on the same root as a verb and expresses the
+ same semantic content as it, but it involves no notion of tense, aspect,
+ mood, person, or even voice.
  Semantically, it expresses an action, a state or process within the meaning
  of a verb.
  Every verb, whatever its type, has a verbal noun and sometimes more than
@@ -3015,22 +3754,38 @@ The verbal noun is an abstract noun formed on the same root as a verb and
 \end_layout
 
 \begin_layout Subsubsection
-Active participle: 
+Active participle (
+\lang arabic_arabi
+اسم فاعل
+\lang english
+): 
 \end_layout
 
 \begin_layout Standard
-Active participle is a noun associated with any action verb (transitive
- or intransitive), which means the agent who does the action, and therefore
- called the noun of agent given to this deverbal.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{active participle}{Active participle}
+\end_layout
+
+\end_inset
+
+ is a noun associated with any action verb (transitive or intransitive),
+ which means the agent who does the action, and therefore called the noun
+ of agent given to this verb.
  For example, verbs in simple root such as 
 \lang arabic_arabi
-ضَرَبَ 
+ضَرَبَ
 \lang english
-  (daraba – ) follows the pattern  
+ (daraba – ) follows the pattern 
 \lang arabic_arabi
 فَاعل
 \lang english
-   (faā‛il) to generate the active participle 
+ (faā‛il) to generate the active participle 
 \lang arabic_arabi
 ضَارِب
 \lang english
@@ -3038,31 +3793,38 @@ Active participle is a noun associated with any action verb (transitive
 \end_layout
 
 \begin_layout Subsubsection
-Passive participle
+Passive participle (
+\lang arabic_arabi
+اسم مفعول
+\lang english
+): 
 \end_layout
 
 \begin_layout Standard
-Passive participle
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-prefix "1"
-symbol "le participe passif "
-description "\\begin{Arabic}  اسم المفعول \\end{Arabic}"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{passive participle}{Passive participle}
+\end_layout
 
 \end_inset
 
  is a noun associated with any action verb transitive.
  It means the patient undergoing the action or the result of that action,
- and therefore called of patient noun given to this deverbal.
+ and therefore called of patient noun given to this verb.
  For example, if we take the verb with simple root 
 \lang arabic_arabi
 ضَرَبَ
 \lang english
-  (daraba – hit), it follows the pattern 
+ (daraba – hit), it follows the pattern
 \lang arabic_arabi
  مَفعول
 \lang english
- (maf‛uwl) to generate the passive participle   
+ (maf‛uwl) to generate the passive participle 
 \lang arabic_arabi
 مَضْرُوب
 \lang english
@@ -3070,26 +3832,41 @@ description "\\begin{Arabic}  اسم المفعول \\end{Arabic}"
 \end_layout
 
 \begin_layout Subsubsection
-Nouns of time and place
-\begin_inset Foot
+Nouns of time and place (
+\lang arabic_arabi
+أسماء الزمان والمكان
+\lang english
+):
+\end_layout
+
+\begin_layout Standard
+The 
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
- 
-\series medium
-\size tiny
-\lang arabic_arabi
-اسم الزمان والمكان
+
+
+\backslash
+glstwo{noun of place}{noun of place}
 \end_layout
 
 \end_inset
 
+ is a 
+\begin_inset ERT
+status open
 
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{deverbal noun}{deverbal}
 \end_layout
 
-\begin_layout Standard
-The noun of place is a deverbal supposed to designate the place where the
- action occurs as the noun 
+\end_inset
+
+ supposed to designate the place where the action occurs as the noun 
 \lang arabic_arabi
 مَدْرَسَة
 \lang english
@@ -3123,7 +3900,20 @@ The noun of place is a deverbal supposed to designate the place where the
 \color inherit
 (darasa – study).
  When the semantics of the verb rather lends to a temporal interpretation,
- that noun is called noun of time, such as for the noun  
+ that noun is called 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{noun of time}{noun of time}
+\end_layout
+
+\end_inset
+
+, such as for the noun  
 \lang arabic_arabi
  مَغْرِب
 \lang english
@@ -3135,12 +3925,29 @@ The noun of place is a deverbal supposed to designate the place where the
 \end_layout
 
 \begin_layout Subsubsection
-Noun of instrument
+Noun of instrument (
+\lang arabic_arabi
+اسم الآلة
+\lang english
+):
 \end_layout
 
 \begin_layout Standard
-The instrument noun is a noun that refers to the instrument that is used
- to perform the action expressed by the verb.
+The 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{instrument noun}{instrument noun}
+\end_layout
+
+\end_inset
+
+ is a noun that refers to the instrument that is used to perform the action
+ expressed by the verb.
  For example, the noun   
 \lang arabic_arabi
 مُوَزِّع
@@ -3153,70 +3960,78 @@ The instrument noun is a noun that refers to the instrument that is used
 \end_layout
 
 \begin_layout Subsubsection
-The Nomen Vicis 
-\end_layout
-
-\begin_layout Standard
-The Nomen Vicis
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
- 
+The Nomen Vicis (
 \lang arabic_arabi
 اسم المرة
 \lang english
- 
+):
+\end_layout
+
+\begin_layout Standard
+The 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{nomen vicis}{Nomen Vicis}
 \end_layout
 
 \end_inset
 
-is a noun that designates a single occurrence of the action expressed by
+ is a noun that designates a single occurrence of the action expressed by
  the verb.
  It is usually produced from a singular form of the verbal noun.
- For example, the noun
+ For example, the noun 
 \lang arabic_arabi
- ضَرْبَة
+ضَرْبَة
 \lang english
   (darabat – a hit) may attach to the verb   
 \lang arabic_arabi
 ضَرَبَ 
 \lang english
-  (daraba – hit) ;
+  (daraba – hit) .
 \end_layout
 
 \begin_layout Subsubsection
-The Nomen Speciei:
+The Nomen Speciei (
+\lang arabic_arabi
+اسم الهيئة
+\lang english
+):
 \end_layout
 
 \begin_layout Standard
-The Nomen Speciei
-\begin_inset Foot
-status collapsed
+The 
+\begin_inset ERT
+status open
 
 \begin_layout Plain Layout
- 
-\lang arabic_arabi
-اسم الهيئة
-\family roman
-\series medium
-\shape up
-\size small
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-\lang english
- 
+
+
+\backslash
+glstwo{nomen speciei}{Nomen Speciei}
 \end_layout
 
 \end_inset
 
  is a noun that is supposed to be used to indicate how the action is done.
- For augmented verbs , it is not distinct from the nomen vicis .
+ For augmented verbs , it is not distinct from the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{nomen vicis}{nomen vicis}
+\end_layout
+
+\end_inset
+
+.
  We can set an example of the sentence: 
 \lang arabic_arabi
 جَلَسَت جِلْسَةَ الأَمِيرَة
@@ -3257,8 +4072,21 @@ The absence of vocalization
 \end_layout
 
 \begin_layout Standard
-The majority of Arabic texts are written without diacritics, this causes
- some confusion in the meaning, only the context of text can lift the ambiguity.
+The majority of Arabic texts are written without 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{diacritical marks}{diacritical marks}
+\end_layout
+
+\end_inset
+
+, this causes some confusion in the meaning, only the context of text can
+ lift the ambiguity.
  Therefore, the softwares based only on word spelling can not resolve it.
  
 \end_layout
@@ -4508,21 +5336,11 @@ This is another type of confusion, the word can be read several ways.
 \lang arabic_arabi
 وعد
 \lang english
- , the letter wâw
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
- 
+ , the letter wâw 
 \lang arabic_arabi
 واو
 \lang english
- 
-\end_layout
-
-\end_inset
-
- may belong to word as in: 
+  may belong to word as in: 
 \lang arabic_arabi
 وَعَدَ
 \lang english
@@ -4995,12 +5813,20 @@ Suffixes
 \end_layout
 
 \begin_layout Standard
-The suffixes are the relative pronouns
-\begin_inset Foot
+The suffixes are the 
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
- 
+
+
+\backslash
+glstwo{attaching pronoun}{attaching pronouns}
+\end_layout
+
+\end_inset
+
+ (
 \lang arabic_arabi
 الضمائر المتصلة
 \family roman
@@ -5015,11 +5841,18 @@ status open
 \noun off
 \color none
 \lang english
- 
-\end_layout
-
-\end_inset
-
+) 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
  attached to words.
  
 \end_layout
@@ -5032,21 +5865,11 @@ The confusion here is similar to the confusion of prefixes, this confusion
 \lang arabic_arabi
 وله
 \lang english
- , the letter ha’
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
- 
+ , the letter ha’ 
 \lang arabic_arabi
 هاء
 \lang english
- 
-\end_layout
-
-\end_inset
-
- may: 
+  may: 
 \end_layout
 
 \begin_layout Itemize
@@ -5135,9 +5958,9 @@ does not belong to word as in:
 \uwave default
 \noun default
 \color inherit
-from the combination
+from the combination 
 \lang arabic_arabi
- وَلِّ + ـهِ
+وَلِّ + ـهِ
 \family roman
 \series medium
 \shape up
@@ -5632,10 +6455,6 @@ Ligature of lâm and álif.
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -5664,8 +6483,20 @@ Therefore, it seems that it is not necessary to match the shape of the character
 \end_layout
 
 \begin_layout Standard
-Lam-Alef has no place in the table of the Arabic alphabet, but it appears
- as a single letter while printing.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{lam-alef}{Lam-Alef}
+\end_layout
+
+\end_inset
+
+ has no place in the table of the Arabic alphabet, but it appears as a single
+ letter while printing.
  This letter can be introduced directly, or by clicking Lam then Alef from
  the keyboard.
  

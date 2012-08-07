@@ -3294,15 +3294,7 @@ Depending on how the query is expressed and how the product computes score,
  the relevance of a document.
  Once the ordered list of documents is ready, the full-text search engine
  exposes the results to the user.
- It can be through a programmatic API
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "API"
-description "Application Programming Interface\\\\"
-
-\end_inset
-
- or through a web page.
+ It can be through a programmatic API or through a web page.
  the following figure shows a result page from the Google search engine.
 \begin_inset CommandInset citation
 LatexCommand cite

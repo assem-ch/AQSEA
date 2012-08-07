@@ -8,11 +8,23 @@
 %\usepackage{setspace}
 \usepackage{fontspec}
 %\usepackage[RTLdocument]{bidi}
+\usepackage{bidi}
 \usepackage{polyglossia}
 \usepackage{color}
-\usepackage[acronym]{glossaries}
 
-\makeglossaries
+
+%%%%%%%%%%%%%%%%%%%% glossary->start
+
+\usepackage[style=long, number=none]{glossary} % can be obtained from http://www.ctan.org/tex-archive/macros/latex/contrib/glossary/
+
+
+
+
+\makeglossary
+
+%%%%%%%%%%%%%%%%%%%% glossary->end
+
+
 
 \def\BSML{\begin{center}\char"FB51 \char"FB52 \char"FB53\end{center}}
 
