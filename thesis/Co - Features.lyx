@@ -1198,17 +1198,7 @@ Results grouping:
 
 \begin_deeper
 \begin_layout Itemize
-by allegorical Ayahs 
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-[whats similar ayahs]
-\end_layout
-
-\end_inset
-
- 
+by allegorical Ayahs
 \end_layout
 
 \begin_layout Itemize
@@ -2324,27 +2314,22 @@ Word Annotations
 \series default
 : Attaching annotations to each word of results (ayas) will helps linguistics
  students to get information about the word easily and word_by_word.
- This annotation contains 
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-TODO
-\end_layout
-
-\end_inset
-
-.
+ This annotation contains information like root, lemma, mood, aspect, gender,
+ number , voice , case and so on.
  
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-
+Surah: 
 \lang arabic_arabi
-الحمد لله
+الإنشقاق
 \lang english
-:
+ , Ayah: 1
+\begin_inset Newline newline
+\end_inset
+
+
 \family roman
 \series medium
 \shape up
@@ -2357,36 +2342,141 @@ TODO
 \noun off
 \color none
 \lang arabic_arabi
+[إِذَا السَّمَاءُ انْشَقَّتْ ]
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
  
-\begin_inset Note Note
-status collapsed
+\lang english
 
-\begin_layout Plain Layout
-
-\size tiny
-TODO
-\end_layout
-
+\begin_inset Newline newline
 \end_inset
 
-
+Translation: When the sky is split asunder,
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
+\begin_inset space ~
+\end_inset
+
 
 \lang arabic_arabi
-الحمد
+ إِذَا ِ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
 \lang english
- : 
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(idhā, when): time adverb
 \end_layout
 
 \begin_layout Itemize
+\begin_inset space ~
+\end_inset
+
 
 \lang arabic_arabi
-لله
+السَّمَاءُ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
 \lang english
- : 
+ (l-samāu, 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+the sky
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+): nominative feminine noun
+\end_layout
+
+\begin_layout Itemize
+\begin_inset space ~
+\end_inset
+
+
+\lang arabic_arabi
+انشقت
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(inshaqqat, is split asunder): 3rd person feminine singular (form VII) perfect
+ verb
 \end_layout
 
 \end_deeper
@@ -2397,7 +2487,7 @@ TODO
 Uthmani writing way:
 \series default
  offers the user the ability of writing words not as it appeared in Uthmani
- Mushaf .
+ Mus'haf .
 \end_layout
 
 \begin_deeper
@@ -3545,8 +3635,7 @@ Extract
 \noun off
 \color none
 \lang english
- 
-(atom's weight) as (Size unit, ??)
+ (atom's weight) as (Size unit, ??)
 \end_layout
 
 \begin_layout Itemize

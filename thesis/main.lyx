@@ -757,7 +757,7 @@ status open
 
 
 \backslash
-addcontentsline{toc}{part}{Bibliographie}
+addcontentsline{toc}{part}{Bibliography}
 \end_layout
 
 \end_inset
@@ -775,16 +775,6 @@ options "bib/alpha"
 
  
 \begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-+ Webographie
-\end_layout
-
-\end_inset
-
-
-\begin_inset Note Note
 status open
 
 \begin_layout Part*
@@ -796,12 +786,12 @@ status open
 
 
 \backslash
-addcontentsline{toc}{part}{Annexe}
+addcontentsline{toc}{part}{Appendices}
 \end_layout
 
 \end_inset
 
-Annexe 
+Appendices
 \end_layout
 
 \begin_layout Plain Layout
@@ -846,14 +836,14 @@ myPage
 \backslash
 fancyhead[R]{
 \backslash
-em L'organisme d'accueil }
+em Transliteration }
 \end_layout
 
 \begin_layout Plain Layout
 
 
 \backslash
-fancyhead[L]{Annexe A}
+fancyhead[L]{Appendix A}
 \end_layout
 
 \begin_layout Plain Layout

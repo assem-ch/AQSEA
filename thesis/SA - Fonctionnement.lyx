@@ -89,72 +89,13 @@ endnotes
 
 \begin_body
 
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-%
-\backslash
-setcounter{chapter}{2}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\color black
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-setcounter{chapter}{0}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-pagenumbering{arabic} 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset CommandInset toc
-LatexCommand tableofcontents
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Chapter
 
 \color black
 Search engines 
 \begin_inset CommandInset label
 LatexCommand label
-name "chapitre3"
+name "chapter 1"
 
 \end_inset
 
