@@ -2480,6 +2480,54 @@ the sky
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/QAC annotations Alinshiqaq 1
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Annotations shown by 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://corpus.quran.com/"
+
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+name "Quranic Arabic Corpus website"
+target "http://corpus.quran.com/"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
 
@@ -2623,20 +2671,14 @@ Sajdah_type:
  
 \series default
 Obligatory 
-\series bold
-
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Itemize
-
-\lang arabic_arabi
-قلقلة:نعم 
 \end_layout
 
-\end_inset
-
-
+\begin_layout Itemize
+Qalqala
+\series bold
+: 
+\series default
+YES
 \end_layout
 
 \end_deeper
@@ -2702,23 +2744,14 @@ shekir
 \begin_layout Enumerate
 
 \series bold
-Allegorical verses (
+Allegorical ayahs (
 \lang arabic_arabi
 المتشابهات
 \lang english
-)
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\series bold
- [def of mutashabih lafdi]
-\end_layout
-
-\end_inset
-
-
+): 
+\series default
+enable the Qur'an scholars to retrieve allegorical ayahs whether they are
+ identical or roughly similar.
 \end_layout
 
 \begin_deeper
@@ -2774,35 +2807,103 @@ There are 31 exact similitudes in surah
 \begin_layout Enumerate
 
 \series bold
-Abrogators and Abrogated verses search
+Abrogators and Abrogated ayahs search
 \series default
- ( 
+ 
+\series bold
+( 
 \lang arabic_arabi
 الناسخ والمنسوخ
 \lang english
- ): 
+ )
+\series default
+: Knowing abrogations helps in knowledge of Islamic Laws and it will be
+ helpful to search for abrogation cases, by indicating proponents and opponents
+ of each case.
 \end_layout
 
-\begin_layout Enumerate
-
-\series bold
-Parables (
+\begin_deeper
+\begin_layout Itemize
+Abrogators of {
 \lang arabic_arabi
-الأمثال
+النساء
 \lang english
-)
-\begin_inset Note Note
-status collapsed
+, 43}:
+\begin_inset Newline newline
+\end_inset
 
-\begin_layout Plain Layout
+ 
+\lang arabic_arabi
+[ يَا أَيُّهَا الَّذِينَ آمَنُوا لَا تَقْرَبُوا الصَّلَاةَ وَأَنْتُمْ سُكَارَى
+ حَتَّى تَعْلَمُوا مَا تَقُولُونَ...]
+\lang english
 
-\series bold
-def of mathal qurany]
+\begin_inset Newline newline
+\end_inset
+
+Translation: O you who believe! do not go near prayer when you are Intoxicated
+ until you know (well) what you say, ...
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+Abrogator #1 : {
+\lang arabic_arabi
+المائدة
+\lang english
+, 90}
+\begin_inset Newline newline
 \end_inset
 
 
+\lang arabic_arabi
+[ يَا أَيُّهَا الَّذِينَ آمَنُوا إِنَّمَا الْخَمْرُ وَالْمَيْسِرُ وَالْأَنْصَابُ
+ وَالْأَزْلَامُ رِجْسٌ مِنْ عَمَلِ الشَّيْطَانِ فَاجْتَنِبُوهُ لَعَلَّكُمْ
+ تُفْلِحُونَ ]
+\lang english
+ 
+\begin_inset Newline newline
+\end_inset
+
+Translation: O you who believe! intoxicants and games of chance and (sacrificing
+ to) stones set up and (dividing by) arrows are only an uncleanness, the
+ Shaitan's work; shun it therefore that you may be successful.
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Opponents: 
+\series default
+\lang arabic_arabi
+النحاس، مكي بن أبي طالب، ابن الجوزي، مصطفى زيد
+\lang english
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Proponents: 
+\series default
+\lang arabic_arabi
+السيوطي، الدهلوي، الزرقاني
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+ِQur'anic Parables (
+\lang arabic_arabi
+الأمثال القرآنية
+\lang english
+): 
+\series default
+this will help Quran scholars to look for Parables in Quran
+\series bold
+.
 \end_layout
 
 \begin_deeper
@@ -4075,15 +4176,11 @@ We've chosen SurveyMonkey [ref] to build our survey because it's best survey
 Survey Participants Details
 \end_layout
 
-\begin_layout Subsubsection
-Results of survey
-\end_layout
-
 \begin_layout Standard
 \begin_inset Float table
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -4351,6 +4448,10 @@ Survey Audience
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsubsection
+Results of survey
 \end_layout
 
 \begin_layout Standard
