@@ -75,7 +75,7 @@ minimalistic
 \topmargin 3cm
 \rightmargin 3cm
 \bottommargin 3cm
-\secnumdepth 3
+\secnumdepth 4
 \tocdepth 3
 \paragraph_separation indent
 \paragraph_indentation default

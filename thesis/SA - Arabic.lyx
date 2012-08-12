@@ -92,7 +92,7 @@ endnotes
 \begin_body
 
 \begin_layout Chapter
-Arabic Language  
+Arabic Language 
 \begin_inset CommandInset label
 LatexCommand label
 name "chapter2"
@@ -156,33 +156,7 @@ end{Arabic}
 status collapsed
 
 \begin_layout Plain Layout
-[+Annotation Layers]
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Greyedout
-status collapsed
-
-\begin_layout Plain Layout
 Add Arabic translation to ambiguous words
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Greyedout
-status collapsed
-
-\begin_layout Plain Layout
-Bound unneeded points! no mercy!!
 \end_layout
 
 \end_inset
@@ -204,11 +178,15 @@ verify arabic Words
 \end_layout
 
 \begin_layout Standard
+
+\lang french
 \begin_inset Note Greyedout
 status open
 
 \begin_layout Plain Layout
-Use Glossary for Arabic words
+
+\lang french
+Transliteration of Arabic Words
 \end_layout
 
 \end_inset
@@ -216,20 +194,36 @@ Use Glossary for Arabic words
 
 \end_layout
 
+\begin_layout Standard
+
+\lang french
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+arbox[fill=blue!5]{واعرباه }
+\end_layout
+
+\end_inset
+
+‬
+\end_layout
+
 \begin_layout Section
 Introduction 
 \end_layout
 
 \begin_layout Standard
-Arabic (
-\series bold
+Arabic ( 
 \lang arabic_arabi
 العربية
-\series default
 \lang english
- al-arabiyyah) is a name applied to the descendants of the classical Arabic
- language of the sixth century AD, the most widely used in the Qur'an, the
- Islamic holy book.
+ ) is a name applied to the descendants of the classical Arabic language
+ of the sixth century AD, the most widely used in the Qur'an, the Islamic
+ holy book.
  Arabic is a Central Semitic language, closely related to modern Hebrew
  and ​​Aramai languages
 \begin_inset Foot
@@ -251,16 +245,6 @@ In this chapter we will talk about orthography and morphology of the Arabic
  language that are unique.
  we will also talk about some ambiguities may be appear in Arabic cause
  the absence of vocalization.
-\begin_inset Note Greyedout
-status collapsed
-
-\begin_layout Plain Layout
-[Steps of informatization] + amliorer
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Section
@@ -306,8 +290,21 @@ glsone{hamzah}
 \end_inset
 
  consonant letters, three of them 
-\lang arabic_arabi
-ا و ي
+\lang french
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+arbox{ا و ي}
+\end_layout
+
+\end_inset
+
+‬
 \lang english
  are considered as vowels.
  Optionally, one of the three 
@@ -323,36 +320,51 @@ glsone{diacritical marks}
 
 \end_inset
 
-  (
-\begin_inset Graphics
-	filename diacritics.png
-	lyxscale 50
-	scale 50
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+‬‬
+\backslash
+arbox{ـَ ـُ ـِ  }
+\end_layout
 
 \end_inset
 
- ) can be placed after certain characters to resolve the ambiguity in pronunciat
-ion and/or direction when it arises.
+ can be placed after certain characters to resolve the ambiguity in pronunciatio
+n and/or direction when it arises.
  In a fully vocalized Arabic text, the lack of diacritics can be regarded
- as a sokōune (silence) (
-\begin_inset Graphics
-	filename symbole.png
-	lyxscale 50
-	scale 50
+ as a sokōune 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+‬‬
+\backslash
+arbox{ـْ }
+\end_layout
 
 \end_inset
 
- ).
+ (silence).
  In some cases, a letter doubled, may be replaced by a single letter with
- tashdeed (reinforcement) (
-\begin_inset Graphics
-	filename Tashdid.png
-	lyxscale 50
-	scale 50
+ tashdeed 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+‬‬
+\backslash
+arbox{ـّ }
+\end_layout
 
 \end_inset
 
- ) placed above.
+ (reinforcement) placed above.
  
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -368,22 +380,34 @@ In addition, it is important to note that the notion of uppercase and lowercase
  letter do not exist, the Arabic writing is called unicameral.
  In addition, Arabic is a language semi cursive, most letters are attached
  to each other, their spellings differ depending on whether they are preceded
- and / or followed by other letters or they are isolated.
+ and/or followed by other letters or they are isolated.
  Only six of them does not attach to the following letter : 
-\lang arabic_arabi
-(
-\series bold
-ا, د, ذ, ر, ز, و
-\series default
-)
-\lang english
- and one letter does not attach at all : (
-\series bold
-\lang arabic_arabi
-ء
-\series default
-\lang english
-) 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+‬‬
+\backslash
+arbox{ا د ذ ر ز و }
+\end_layout
+
+\end_inset
+
+ and one letter does not attach at all : 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+‬‬
+\backslash
+arbox{ء }
+\end_layout
+
+\end_inset
+
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "MES08"
@@ -602,18 +626,36 @@ Verbs
 A verb is an entity expressing a time-dependent sense.
  Most Arabic verbs are formed on three radical consonants that is the case
  of the verb 
-\lang arabic_arabi
-كَتَبَ
-\lang english
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+‬‬
+\backslash
+arbox{كَتَبَ  }
+\end_layout
+
+\end_inset
+
  (kataba – write) and eventually four consonants that is the case of the
  verb 
-\lang arabic_arabi
-دَحْرَجَ
-\lang english
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+‬‬
+\backslash
+arbox{دَحْرَجَ  }
+\end_layout
+
+\end_inset
+
  (dahrağa – roll along).
  These roots may form several patterns as a result of one or more morphological
- transformations (eg, repetition of a consonant, lengthening a vowel, the
-  expanding of a morpheme, etc..), it comes in this case to roots with augmented
+ transformations (eg: repetition of a consonant, lengthening a vowel, the
+  expanding of a morpheme, etc.), it comes in this case to roots with augmented
  pattern.
 \end_layout
 
@@ -632,33 +674,10 @@ key "Lar03"
 \end_layout
 
 \begin_layout Subsubsection
-Verbs with a simple root ( 
+Verbs with a simple root (
 \lang arabic_arabi
 الفعل المجرّد
-\family roman
-\series bold
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 \lang english
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
 ):
 \end_layout
 
@@ -678,10 +697,19 @@ glstwo{verb with a simple root}{verb with a simple root}
 
  has a base of three consonants called radical consonants.
  These verbs are associated with verbal pattern 
-\lang arabic_arabi
-فَعَلَ
-\lang english
- (fa'ala).
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+‬‬
+\backslash
+arbox{فَعَلَ }
+\end_layout
+
+\end_inset
+
+(fa'ala).
  When none of the root consonants of the verb is a long vowel, it is called
  
 \begin_inset ERT
@@ -710,49 +738,98 @@ glstwo{defect}{defects}
 
 \end_inset
 
-( 
+ (
 \lang arabic_arabi
 عِلَّة
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 \lang english
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
 ), we mention :
 \end_layout
 
 \begin_layout Itemize
 The presence of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 أ
 \lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
  (á – hamzä), 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
- ي
+ي
 \lang english
- (y - yâ’) or  
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (y - yâ’) or 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 و
 \lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
  (w – wâw) among the radical consonants.
  Depending on the position of that, we distinguish different types of verbs
  : 
@@ -760,10 +837,34 @@ The presence of
 
 \begin_deeper
 \begin_layout Itemize
-If one of the root consonants is  
+If one of the root consonants is 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 أ
 \lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
  (á – hamzä), independently of its position => 
 \begin_inset ERT
 status open
@@ -786,14 +887,62 @@ glstwo{hamzated verb}{Hamzated verb}
 
 \begin_layout Itemize
 The first radical consonant is a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
- و
+و
 \lang english
- (w) or   
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (w) or 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 ي
 \lang english
-  (y) => 
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (y) => 
 \begin_inset ERT
 status open
 
@@ -806,45 +955,70 @@ glstwo{assimilated verb}{Assimilated verb}
 
 \end_inset
 
-( 
+(
 \lang arabic_arabi
 فعل مِثَال
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 \lang english
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
 );
 \end_layout
 
 \begin_layout Itemize
-The second radical consonant is a   
+The second radical consonant is a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 و
 \lang english
-  (w) or   
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (w) or 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 ي
 \lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
  (y) => 
 \begin_inset ERT
 status open
@@ -858,45 +1032,70 @@ glstwo{hollow verb}{Hollow verb}
 
 \end_inset
 
- ( 
+ (
 \lang arabic_arabi
 فعل أَجْوَف
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 \lang english
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
 ); 
 \end_layout
 
 \begin_layout Itemize
-The third radical consonant is a
+The third radical consonant is a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
- و
+و
 \lang english
-  (w) or  
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (w) or 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 ي
 \lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
  (y) => 
 \begin_inset ERT
 status open
@@ -911,55 +1110,9 @@ glstwo{weakened verb}{Weakened verb}
 \end_inset
 
  (
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
 \lang arabic_arabi
 فعل نَاقِص
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 \lang english
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
 ); 
 \end_layout
 
@@ -979,88 +1132,19 @@ glstwo{geminated verb}{Geminated verb}
 
 \end_inset
 
- ( 
+ (
 \lang arabic_arabi
 فعل مُضَاعَف
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 \lang english
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
 ).
  
 \end_layout
 
 \begin_layout Subsubsection
 Verbs with augmented root (
-\family roman
-\series bold
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
 \lang arabic_arabi
 الفعل المزيد
-\family roman
-\series bold
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 \lang english
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
 ):
 \end_layout
 
@@ -1083,66 +1167,450 @@ glstwo{verb with augmented root}{verbs with augmented root}
 \end_layout
 
 \begin_layout Itemize
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
 
 \lang arabic_arabi
-فَعَّلَ 
+فَعَّل
 \lang english
-(fa''ala)
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (fa'ala)
 \end_layout
 
 \begin_layout Itemize
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
 
 \lang arabic_arabi
-فَاعَلَ 
+فَاعَلَ
 \lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
 (faā'ala)
 \end_layout
 
 \begin_layout Itemize
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
 
 \lang arabic_arabi
-أَفْعَلَ 
+أَفْعَلَ
 \lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
 (áfa'ala)
 \end_layout
 
 \begin_layout Itemize
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
 
 \lang arabic_arabi
-تَفَعَّلَ 
+تَفَعَّلَ
 \lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
 (tafa''ala)
 \end_layout
 
 \begin_layout Itemize
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
 
 \lang arabic_arabi
-تَفَاعَلَ 
+تَفَاعَلَ
 \lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
 (tafaā'ala)
 \end_layout
 
 \begin_layout Itemize
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
 
 \lang arabic_arabi
-اِفْتَعَلَ 
+اِفْتَعَلَ
 \lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
 (ìfta'ala)
 \end_layout
 
 \begin_layout Itemize
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
 
 \lang arabic_arabi
-اِنْفَعَلَ 
+اِنْفَعَلَ
 \lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
 (ìnfa'ala)
 \end_layout
 
 \begin_layout Itemize
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
 
 \lang arabic_arabi
-اِسْتَفْعَلَ 
+اِسْتَفْعَلَ
 \lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
 (ìstaf'ala)
 \end_layout
 
@@ -1178,10 +1646,34 @@ glstwo{primitive noun}{primitive nouns}
 
  are nouns that can not be attached to a verbal root.
  They well form the fundamental glossary of the concrete language.
- eg:
+ eg: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 رَأْس
 \lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
  (raás – head),
 \family roman
 \series medium
@@ -1206,10 +1698,35 @@ glstwo{primitive noun}{primitive nouns}
 \uwave default
 \noun default
 \color inherit
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
-كُرْسِيّ 
+كُرْسِيّ
 \lang english
-(kursiyy – chair),
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
 \family roman
 \series medium
 \shape up
@@ -1233,27 +1750,148 @@ glstwo{primitive noun}{primitive nouns}
 \uwave default
 \noun default
 \color inherit
+(kursiyy – chair), 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 كَبْش
 \lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
  (kabš – Sheep), etc.
  In this category we also include nouns composed of two letters such as:
  
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 دم
 \lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
  (dam - blood), 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 فم
 \lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
  (fam - mouth), 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 أب
 \lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
  (áab – father), 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 أخ
 \lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
  (áh – brother), etc.
  
 \end_layout
@@ -1261,7 +1899,7 @@ glstwo{primitive noun}{primitive nouns}
 \begin_layout Subsubsection
 Nouns derived from verbals (
 \lang arabic_arabi
-الأسماء المشتقة
+الأسماء المشتقّة
 \lang english
 ) : 
 \end_layout
@@ -1280,36 +1918,204 @@ Numbers :
 
 \begin_layout Standard
 This category of nouns is made up of simple numerals representing units:
- from:   
+ from 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 صفر
 \lang english
-   (sifr- zero, 0) to   
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (sifr- zero, 0) to 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 تسعة
 \lang english
-  (tis‛at – nine, 9) ; the tens:   
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (tis‛at – nine, 9); the tens: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 عشرة
 \lang english
-  (‛ašarat – ten,10) ,   
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (‛ašarat – ten, 10), 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 عشرون
 \lang english
- (‛išruwn – twenty, 20), … and   
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (‛išruwn – twenty, 20) … and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 تسعون
 \lang english
-   (tis‛uwn – ninety, 90) ; the hundreds, etc.
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (tis‛uwn – ninety, 90) ; the hundreds, etc.
  well as numerals compounds such as cardinals of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
- أَحَد عَشَر
+ أَحَد_عَشَر
 \lang english
-   (áahada ‛ašara - eleven, 11) to   
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (áahada ‛ašara - eleven, 11) to 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
-تسعة عَشَر
+تسعة_عَشَر
 \lang english
-   (tis‛at ‛ašara - nineteen,19).
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (tis‛at ‛ašara - nineteen, 19).
  
 \end_layout
 
@@ -1367,46 +2173,119 @@ glstwo{demonstrative pronoun}{Demonstrative pronouns}
  represent a subcategory of noun expressing an idea of ​​demonstration.
  They can indicate that the object represented is found, either in the text,
  either in space or time, defined by the situation of utterance.
- They are two subsets: near-deictic (eg:   
+ They are two subsets: near-deictic (eg: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 هَذا
 \lang english
-   (hadaā – this),   
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (hadaā – this), 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 هَؤُلاء
 \lang english
-   (haẃulaā’ – these) and far-deictic (eg:   
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (haẃulaā’ – these) and far-deictic (eg: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 ذلِكَ
 \lang english
-   (dalika – that),   
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (dalika – that), 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 أُولائِكَ
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 \lang english
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-  (ùuwlaāýika – those), etc.).
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (ùuwlaāýika – those), etc.).
  
 \begin_inset ERT
 status open
@@ -1420,7 +2299,7 @@ glstwo{demonstrative pronoun}{Demonstratives}
 
 \end_inset
 
-are derivable only to dual .
+ are derivable only to dual.
  
 \end_layout
 
@@ -1511,19 +2390,91 @@ glstwo{relative pronoun}{relative pronouns}
 
 \end_inset
 
-, we mention:   
+, we mention: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 الَّذي
 \lang english
-   (al-ladiy - that, masculine, singular),   
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (al-ladiy - that, masculine, singular), 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
-اللتَيْنِ 
+اللتَيْنِ
 \lang english
-  (al-latayni – those, feminine, dual),   
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (al-latayni – those, feminine, dual), 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
-اللذينَ 
+اللذينَ
 \lang english
-  (those, masculine, plural), etc.
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (those, masculine, plural), etc.
  
 \end_layout
 
@@ -1571,7 +2522,7 @@ glstwo{personal pronoun}{Personal pronouns}
 
 \end_inset
 
-are intended to identify three types of grammatical persons:
+ are intended to identify three types of grammatical persons:
 \end_layout
 
 \begin_layout Itemize
@@ -1616,14 +2567,62 @@ glstwo{first person}{First person}
 المتكلم
 \lang english
 ) , that who is talking: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 أَنَا
 \lang english
-  (ánaā - I) or   
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (ánaā - I) or 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 نَحْنُ
 \lang english
-  
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
 \family roman
 \series bold
 \shape up
@@ -1663,42 +2662,45 @@ glstwo{second person}{Second person}
 
 \end_inset
 
-, ie, the listener ( 
+, ie, the listener (
 \lang arabic_arabi
 المخاطب
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 \lang english
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
 ),
 \begin_inset space ~
 \end_inset
 
-that who talking to:   
+that who talking to: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 أَنْتَ
+\lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
 \family roman
-\series medium
+\series bold
 \shape up
 \size normal
 \emph off
@@ -1708,7 +2710,6 @@ that who talking to:
 \uwave off
 \noun off
 \color none
-\lang english
  
 \family default
 \series default
@@ -1721,15 +2722,89 @@ that who talking to:
 \uwave default
 \noun default
 \color inherit
-  (áanta – you, masculine, singular),  
+(áanta – you, masculine, singular), 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
- أَنْتِ 
+أَنْتِ
 \lang english
-  (áanti – you, feminine, singular),   
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(áanti – you, feminine, singular), 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 أَنْتُمَا
+\lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
 \family roman
-\series medium
+\series bold
 \shape up
 \size normal
 \emph off
@@ -1739,7 +2814,6 @@ that who talking to:
 \uwave off
 \noun off
 \color none
-\lang english
  
 \family default
 \series default
@@ -1752,15 +2826,37 @@ that who talking to:
 \uwave default
 \noun default
 \color inherit
-  (áantumaā – you, dual),   
+(áantumaā – you, dual), 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 أَنْتُمْ
 \lang english
-   (áantum – you, masculine, plural),   
-\lang arabic_arabi
-أَنْتُنَّ
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
 \family roman
-\series medium
+\series bold
 \shape up
 \size normal
 \emph off
@@ -1770,7 +2866,6 @@ that who talking to:
 \uwave off
 \noun off
 \color none
-\lang english
  
 \family default
 \series default
@@ -1783,7 +2878,59 @@ that who talking to:
 \uwave default
 \noun default
 \color inherit
-  (áantunna – you, feminine, plural); 
+(áantum – you, masculine, plural), 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
+\lang arabic_arabi
+أَنْتُنَّ
+\lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(áantunna – you, feminine, plural); 
 \end_layout
 
 \begin_layout Itemize
@@ -1799,11 +2946,41 @@ glstwo{third person}{Third person}
 
 \end_inset
 
-, ie, the absent ( 
+, ie, the absent (
 \lang arabic_arabi
 الغائب
+\lang english
+) , that who talking about: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
+\lang arabic_arabi
+هُوَ
+\lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
 \family roman
-\series medium
+\series bold
 \shape up
 \size normal
 \emph off
@@ -1813,7 +2990,6 @@ glstwo{third person}{Third person}
 \uwave off
 \noun off
 \color none
-\lang english
  
 \family default
 \series default
@@ -1826,27 +3002,215 @@ glstwo{third person}{Third person}
 \uwave default
 \noun default
 \color inherit
-) , that who talking about :  
-\lang arabic_arabi
- هُوَ 
-\lang english
-  (huwa – he), 
+(huwa – he), 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 هِيَ
 \lang english
-     (hiya – she),   
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(hiya – she), 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 هُمَا
 \lang english
-   (humaā – they, dual),   
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(humaā – they, dual), 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 هُمْ
 \lang english
-  (hum – they, masculine),  
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(hum – they, masculine), 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
- هُن 
+هُن
 \lang english
-  (hunna – they, feminine) ;
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(hunna – they, feminine).
 \end_layout
 
 \begin_layout Subsection
@@ -1861,26 +3225,107 @@ The function words are used to locate entities, facts or objects in relation
 \end_layout
 
 \begin_layout Itemize
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
 
 \lang arabic_arabi
 بعد
 \lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
  (ba‛da – after) 
 \end_layout
 
 \begin_layout Itemize
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
 
 \lang arabic_arabi
 قبل
 \lang english
-(qabla – before) 
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (qabla – before) 
 \end_layout
 
 \begin_layout Itemize
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
 
 \lang arabic_arabi
 منذ
 \lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
  (mundu – since) 
 \end_layout
 
@@ -1889,10 +3334,37 @@ or a place like
 \end_layout
 
 \begin_layout Itemize
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
 
 \lang arabic_arabi
 حيث
 \lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
  (haytu – where), 
 \end_layout
 
@@ -1907,43 +3379,163 @@ key "Kadri_et_benyamina1992"
 \end_inset
 
 .
- Function words include various categories, we mention : 
+ Function words include various categories, we mention: 
 \end_layout
 
 \begin_layout Itemize
-Prepositions :  
+Prepositions : 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 فِي
 \lang english
-   (fiy – in) or   
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (fiy – in) or 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 عَلَى
 \lang english
-   (‛alaą – on); 
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (‛alaą – on); 
 \end_layout
 
 \begin_layout Itemize
 Conjunctions: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
- ثُمَّ
+ثُمَّ
 \lang english
-  (tumma – then) ;
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (tumma – then) ;
 \end_layout
 
 \begin_layout Itemize
-Adverbs :   
+Adverbs : 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 أَبَدًا
 \lang english
-   (abadã – never) or   
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (abadã – never) or 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
-بِشكْلٍ عَادِي
+بِشكْل_عَادِي
 \lang english
-  (bišaklĩ ‛aādiyyĩ – normally, in the normal way) ; 
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (bišaklĩ ‛aādiyyĩ – normally, in the normal way) ; 
 \end_layout
 
 \begin_layout Itemize
-Quantifiers:  
+Quantifiers:
 \family roman
 \series medium
 \shape up
@@ -1967,14 +3559,63 @@ Quantifiers:
 \uwave default
 \noun default
 \color inherit
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
-كُلّ 
+كُلّ
 \lang english
-  (kulla – all ) or   
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (kulla – all ) or 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 بَعْض
 \lang english
-   (ba‛da – some) ; 
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (ba‛da – some) ; 
 \end_layout
 
 \begin_layout Itemize
@@ -2060,16 +3701,6 @@ key "Mes08"
 \end_inset
 
  
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-Find the English Source! why translate?
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -2088,13 +3719,34 @@ key "GB75"
 
 \begin_layout Itemize
 Mode of verbs: eg, for the verb 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
-ذهَب
-\series bold
-َ
-\series default
+ذهَبَ 
 \lang english
- (dahaba – go), forms in the 
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (dahaba – to go), forms in the 
 \begin_inset ERT
 status open
 
@@ -2111,10 +3763,34 @@ glstwo{perfective}{Perfective}
 \lang arabic_arabi
 الماضي
 \lang english
-)  can be identified using their suffixes as 
+) can be identified using their suffixes as 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 ذهَبْتُ
 \lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
  (dahabatu – I went) or their prefixes such in the 
 \begin_inset ERT
 status open
@@ -2156,23 +3832,65 @@ glstwo{imperfective}{Imperfective}
 \noun default
 \color inherit
 as 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
-أَذهَب
-\series bold
-ُ
-\series default
+أَذهَبُ
 \lang english
-  (áadhabu – I go) ; 
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (áadhabu – I go) ; 
 \end_layout
 
 \begin_layout Itemize
 Function of nouns: using of suffixes such as 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
-رَجُلان
-\series bold
-ِ
-\series default
+رَجُلانِ
 \lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
  (rağulaáni – Two men) in 
 \begin_inset ERT
 status open
@@ -2191,13 +3909,34 @@ glstwo{nominative}{Nominative}
 حالة الرفع
 \lang english
 ) or 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
-رَجُلَيْن
-\series bold
-ِ
-\series default
+رَجُلَيْنِ
 \lang english
-  (rağulayni – Two men) in 
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (rağulayni – Two men) in 
 \begin_inset ERT
 status open
 
@@ -2227,11 +3966,11 @@ glstwo{genitive}{Genitive}
 
 \end_inset
 
- ( 
+ (
 \lang arabic_arabi
 حالة الجر
 \lang english
- ).
+).
  
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -2338,7 +4077,7 @@ glstwo{perfective}{Perfective}}
  which means the past.
  It is characterized by adding suffixes of person, gender, number and mood
  to the verb's stem.
- For example, for the feminine plural of the verb  
+ For example, for the feminine plural of the verb
 \family roman
 \series medium
 \shape up
@@ -2362,14 +4101,63 @@ glstwo{perfective}{Perfective}}
 \uwave default
 \noun default
 \color inherit
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 كَتَبَ
 \lang english
-   (kataba – write), we add the suffix  
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (kataba – to write), we add the suffix 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 نَ
 \lang english
- to get the form  
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ to get the form
 \family roman
 \series medium
 \shape up
@@ -2393,42 +4181,92 @@ glstwo{perfective}{Perfective}}
 \uwave default
 \noun default
 \color inherit
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 كَتَبْنَ
 \lang english
-   (katabna - *they* wrote, feminine) and for the masculine plural, we add
- the suffix  
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (katabna - *they* wrote, feminine) and for the masculine plural, we add
+ the suffix 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
- وا
+وا
 \lang english
-   to get the form  
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ to get the form 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 كَتَبُوا
 \lang english
-   (katabuwá - *they* wrote, masculine) ; 
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (katabuwá - *they* wrote, masculine) ; 
 \end_layout
 
 \begin_layout Itemize
@@ -2457,42 +4295,91 @@ glstwo{imperfective}{Imperfective}}
  it indicates an unfinished progress, which may imply the present.
  It is characterized by adding a prefix and one or more infixes as a letter
  duplication or a vowel substitution.
- For example, for the verb  
+ For example, for the verb 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
- مَدَّ 
+مَدَّ
 \lang english
-  (madda – give), we can get   
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (madda – to give), we can get 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 أَمُدُّ
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 \lang english
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-  (áamuddu – I give) or   
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (áamuddu – I give) or 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 يَمْدُدْن
 \lang english
-   (yamdudna – they gives, feminine).
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (yamdudna – they gives, feminine).
  It includes two types of modal inflections: 
 \end_layout
 
@@ -2532,7 +4419,8 @@ glstwo{imperative}{Imperative}}
 \lang english
 )
 \series default
-: it expresses the order, command, or exhortation ...etc.
+: it expresses the order, command, or exhortation ...
+ etc.
  It exists only the with the 2nd person in singular, dual and plural; 
 \end_layout
 
@@ -2588,7 +4476,7 @@ glstwo{nominative}{Nominative}
 \lang arabic_arabi
 مَرْفُوع
 \lang english
-),  
+), 
 \begin_inset ERT
 status open
 
@@ -2658,7 +4546,7 @@ glstwo{triptote}{triptote}
 
 \end_inset
 
- , 
+, 
 \begin_inset ERT
 status open
 
@@ -2703,15 +4591,63 @@ glstwo{triptote}{triptotes}}
 \end_layout
 
 \begin_layout Standard
-This is the most frequent case, it takes the vowel  
+This is the most frequent case, it takes the vowel 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
- ضَمَّة
+ضَمَّة
 \lang english
-  (dammat – u) as a sign of the nominative , the vowel  
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (dammat – u) as a sign of the nominative , the vowel 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 فَتْحَة
 \lang english
- (fathat – a) in the accusative and the vowel  
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (fathat – a) in the accusative and the vowel
 \family roman
 \series medium
 \shape up
@@ -2735,41 +4671,234 @@ This is the most frequent case, it takes the vowel
 \uwave default
 \noun default
 \color inherit
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 كَسْرَة
 \lang english
-   (kasrat – i) in the genitive.
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (kasrat – i) in the genitive.
  When the noun is undefined, the tanwîn is marked respectively by the three
- diacritics : 
+ diacritics: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
- ـٌ 
+ـٌ
 \lang english
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
  (ũ – un), 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
- ـً
+ـً
 \lang english
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
  (ã - an) et 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
- ـٍ 
+ـٍ
 \lang english
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
  (ĩ – in).
- In the indefinite accusative , except the case of nouns ending by   
+ In the indefinite accusative , except the case of nouns ending by 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 ة
 \lang english
-   (ta) or by   
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (ta) or by 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 ا
 \lang english
-   (ā’), an álif «
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (ā’), an álif 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
- ا 
+ا
 \lang english
-» (ā) strengthens the tanwîn 
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (ā) strengthens the tanwîn 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
- ـً 
+ـً
 \lang english
- (an) : for example, in the accusative indefinite the noun  
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (an) : for example, in the accusative indefinite the noun
 \family roman
 \series medium
 \shape up
@@ -2793,10 +4922,35 @@ This is the most frequent case, it takes the vowel
 \uwave default
 \noun default
 \color inherit
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 كِتَاب
 \lang english
-   (kitaāb – book) becomes  
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (kitaāb – book) becomes
 \family roman
 \series medium
 \shape up
@@ -2820,18 +4974,91 @@ This is the most frequent case, it takes the vowel
 \uwave default
 \noun default
 \color inherit
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 كِتَابًا
 \lang english
-   (kitaābãā – book, accusative, indefinite) and the book   
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (kitaābãā – book, accusative, indefinite) and the book 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 جَزِيرَة
 \lang english
-   (ğaziyrat – island) becomes 
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (ğaziyrat – island) becomes 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
-جَزِيرَةً 
+جَزِيرَةً
 \lang english
-   (ğaziyratã – island, accusative, indefinite).
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (ğaziyratã – island, accusative, indefinite).
  
 \end_layout
 
@@ -2873,12 +5100,36 @@ glstwo{diptote}{diptotes}
 \end_inset
 
 , grammatically undefined, do not accept tanwîn and take the same mark in
- the accusative and the genitive which is the   
+ the accusative and the genitive which is the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 فَتْحَة
 \lang english
-   (fathat – a).
- by cons, when they are defined, they follow the declension of 
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (fathat – a).
+ by contrary, when they are defined, they follow the declension of 
 \begin_inset ERT
 status open
 
@@ -2892,32 +5143,151 @@ glstwo{triptote}{triptotes}
 \end_inset
 
 .
- This is the case of feminine nouns that end with  
+ This is the case of feminine nouns that end with 
 \lang arabic_arabi
 اء
 \lang english
-   (ā’) such as   
+ (ā’) such as 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 صحْرَاء
 \lang english
-   (sahraā’ – desert), masculine adjectives of colors with the pattern
-   
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (sahraā’ – desert), masculine adjectives of colors with the pattern 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 أَفْعل
 \lang english
-   (af‛al) such as  
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (af‛al) such as 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
- أحْمَر
+أحْمَر
 \lang english
- (áhmar – red) and those which are feminine with the pattern   
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (áhmar – red) and those which are feminine with the pattern 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 فَعْلَاء
 \lang english
-   (fa‛laā’) such as   
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (fa‛laā’) such as 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 بَيْضَاء
 \lang english
-  (baydaā’ – white , feminine) 
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (baydaā’ – white , feminine) 
 \end_layout
 
 \begin_layout Subparagraph
@@ -2961,47 +5331,239 @@ glstwo{the five nouns}{five nouns}
 \end_layout
 
 \begin_layout Itemize
-the three nouns:  
+the three nouns: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 أبو
 \lang english
- (áabuw - father),  
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (áabuw - father), 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 أخو
 \lang english
-  (áhuw - brother) and  
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (áhuw - brother) and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 حمو
 \lang english
-  (hamuw - stepfather) ; 
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (hamuw - stepfather) ; 
 \end_layout
 
 \begin_layout Itemize
-a variant of  
+a variant of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
- فَم
+فَم
 \lang english
-  (fam – mouth) :   
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (fam – mouth) : 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 فَا
 \lang english
-  , 
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ , 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 فو
 \lang english
-  and  
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 فِي
 \lang english
-   ; 
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ ; 
 \end_layout
 
 \begin_layout Itemize
 the noun 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 ذو
 \lang english
-   (duw – possessor of ).
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (duw – possessor of ).
 \end_layout
 
 \begin_layout Standard
@@ -3042,18 +5604,90 @@ glstwo{active participle}{active participle}
 \end_inset
 
  
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 مَاضٍ
 \lang english
-  (maādĩ – past) et the deverbal noun 
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (maādĩ – past) et the deverbal noun 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 تَخَلٍّ
 \lang english
-  (tahallĩ - abandon) only take the mark of case in the accusative: the
- last letter of root 
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (tahallĩ - abandon) only take the mark of case in the accusative: the last
+ letter of root 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 ي
 \lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
  (y) is replaced by the tanwîn (in) to the indefinite nominative and genitive.
  As for the 
 \begin_inset ERT
@@ -3068,29 +5702,151 @@ glstwo{passive participle}{passive participles}
 
 \end_inset
 
- that end in   
+ that end in 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 ى
 \lang english
-  or  
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ or 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 ا
 \lang english
-  such as   
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ such as 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 مُعْطًى
 \lang english
-   (mu‛tãą – given), they lose their case inflection.
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (mu‛tãą – given), they lose their case inflection.
  a Tanwîn distinguishes indefinite noun of definite.
  At this point, it is important to note that the use of this rule of declension
  is remised.
- Indeed, in standard texts the form of the verbal noun  
+ Indeed, in standard texts the form of the verbal noun 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
- قَاضٍ 
+قَاضٍ
 \lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
  (qaādĩ – jurist) is, generally, altered to 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 قَاضِي
+\lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
 \family roman
 \series medium
 \shape up
@@ -3102,7 +5858,6 @@ glstwo{passive participle}{passive participles}
 \uwave off
 \noun off
 \color none
-\lang english
  
 \family default
 \series default
@@ -3115,11 +5870,35 @@ glstwo{passive participle}{passive participles}
 \uwave default
 \noun default
 \color inherit
-(qaādiy – jurist) by adding the glide  
+(qaādiy – jurist) by adding the glide 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 ي
 \lang english
-  (y - yâ’) at the end of the initial form.
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (y - yâ’) at the end of the initial form.
  
 \end_layout
 
@@ -3142,9 +5921,33 @@ glstwo{dual form}{dual form}
 \end_inset
 
  called 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 المُثنَّى
 \lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
  (al-mutannaą – dual) to describe two things or two persons.
  It takes place between 
 \begin_inset ERT
@@ -3159,11 +5962,7 @@ glstwo{singular}{singular}
 
 \end_inset
 
- (
-\lang arabic_arabi
-المفرد
-\lang english
-, referring to one thing or one person) and 
+ (referring to one thing or one person) and 
 \begin_inset ERT
 status open
 
@@ -3176,90 +5975,354 @@ glstwo{plural}{plural}
 
 \end_inset
 
- (
-\lang arabic_arabi
-الجمع
-\lang english
-, greater than three things or three persons).
+ (greater than three things or three persons).
  This is a declension with two alternatives where the mark of nominative
  is Alef 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 ا
 \lang english
- , and that of accusative and genitive is Ya 
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+, and that of accusative and genitive is Ya 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 ي
 \lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
  .
  To form the dual of a noun, indefinite or definite by article, we add the
- suffix :  
+ suffix : 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 انِ
 \lang english
-  (aāni) to nominative and 
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (aāni) to nominative and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 يْنِ
 \lang english
-  (ayni) to accusative and genitive.
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (ayni) to accusative and genitive.
  For example, the dual form of the noun 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
- سَيَّارَة
+سَيَّارَة
 \lang english
-   (sayyaārat – a car) takes the form    
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (sayyaārat – a car) takes the form 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 سَيَّارَتانِ
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 \lang english
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
- (sayyaārataāni – two cars, nominative) or  
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (sayyaārataāni – two cars, nominative) or 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
- سَيَّارَتَيْنِ 
+سَيَّارَتَيْنِ
 \lang english
-  (sayyaāratayni – two cars, accusative and genitive) 
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (sayyaāratayni – two cars, accusative and genitive) 
 \end_layout
 
 \begin_layout Standard
 In some cases, especially for words whose root is defective or that end
  with a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 ى
 \lang english
-  (ą), an   
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (ą), a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 و
 \lang english
-  (ą) or a hamzä (‘), the ending of noun changes before the suffix of the
- dual.
- In this case, the form  
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (ą) or a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
+\lang arabic_arabi
+ء
+\lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (‘), the ending of noun changes before the suffix of the dual.
+ In this case, the form 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 مَقْهَى
 \lang english
-  (maqhaą – coffee shop) has the dual form 
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (maqhaą – coffee shop) has the dual form 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 مَقْهَيَانِ
 \lang english
-    (maqhayaāni – two coffee shops) 
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (maqhayaāni – two coffee shops) 
 \end_layout
 
 \begin_layout Paragraph
@@ -3318,89 +6381,173 @@ glstwo{external masculine plural}{External masculine plural}}
 جمع مذكر السالم
 \series default
 \lang english
-): For this plural we add the two letters  
+): For this plural we add the two letters 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 ين
 \lang english
-   (iyna) or  
-\lang arabic_arabi
- ون 
-\lang english
-  (uwna) depending on the position of the word in the sentence (subject
-\begin_inset Foot
-status collapsed
+
+\begin_inset ERT
+status open
 
 \begin_layout Plain Layout
- 
-\lang arabic_arabi
-فاعل
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-\lang english
- 
+
+}
 \end_layout
 
 \end_inset
 
- or object
-\begin_inset Foot
-status collapsed
+ (iyna) or 
+\begin_inset ERT
+status open
 
 \begin_layout Plain Layout
- 
-\lang arabic_arabi
-مفعول به
-\lang english
- 
+
+
+\backslash
+arbox{
 \end_layout
 
 \end_inset
 
-), eg :  
+
 \lang arabic_arabi
-مسلم 
+ون
 \lang english
-  (muslim - Muslim) becomes   
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (uwna) depending on the position of the word in the sentence ( 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{subject}{subject}
+\end_layout
+
+\end_inset
+
+ or 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{object}{object}
+\end_layout
+
+\end_inset
+
+), eg : 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
+\lang arabic_arabi
+مسلم
+\lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (muslim - Muslim) becomes 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 مسلمون
 \lang english
-   (muslimuwna – Muslims, nominative) or 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (muslimuwna – Muslims, nominative) or 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
-مسلمين 
+مسلمين
 \lang english
-  (muslimiyna – Muslims, accusative or genitive) ; 
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (muslimiyna – Muslims, accusative or genitive) ; 
 \end_layout
 
 \begin_layout Itemize
@@ -3426,19 +6573,91 @@ glstwo{external feminine plural}{External feminine plural}}
 \lang english
 )
 \series default
-: Similarly, we add to this plural , the two letters   
+: Similarly, we add to this plural , the two letters 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 ات
 \lang english
-   (āt), eg:  
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (āt), eg: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
- سَيَّارَة 
+سَيَّارَة
 \lang english
-  (sayyaārat – a car) becomes   
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (sayyaārat – a car) becomes 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 سَيَّارَات
 \lang english
-   (sayyaāraāt – cars).
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (sayyaāraāt – cars).
  
 \end_layout
 
@@ -3482,10 +6701,34 @@ glstwo{broken plural}{broken plurals}
  Broken plural forms are numerous and generally unpredictable, they follow
  a variety of complex rules and depend on the noun.
  For example: the noun 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 كَاتِب
 \lang english
-   (kaātib – a writer) turns into the two plural forms 
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (kaātib – a writer) turns into the two plural forms
 \family roman
 \series medium
 \shape up
@@ -3509,10 +6752,35 @@ glstwo{broken plural}{broken plurals}
 \uwave default
 \noun default
 \color inherit
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 كُتَّاب
 \lang english
-   (kutteb – writers) or
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (kutteb – writers) or
 \family roman
 \series medium
 \shape up
@@ -3536,25 +6804,122 @@ glstwo{broken plural}{broken plurals}
 \uwave default
 \noun default
 \color inherit
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 كَتَبَة
 \lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
  (katabat – writers).
  Note also that the Arab grammarians have made distinctions between plurals
  based on number.
- For example : the noun   
+ For example : the noun 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 شَهْر
 \lang english
-   (šahr - month) has two plural forms:   
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (šahr - month) has two plural forms: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 أَشْهَر
 \lang english
-   (ášhur - less than 12 months) and   
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (ášhur - less than 12 months) and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 شُهُور
 \lang english
-   (šuhuwr - more than 12 months ) .
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (šuhuwr - more than 12 months ) .
  Only the external plurals follow a clear declension.
  The internal plurals are related to declensions of the singular (declensions
  of 
@@ -3600,15 +6965,63 @@ When it comes to flexing the particles.
 \series bold
 Invariables
 \series default
-: their forms are constant and do not accept any variation, eg:  
+: their forms are constant and do not accept any variation, eg: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
- عَلَى
+عَلَى
 \lang english
-   (‛alaą – on),  
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (‛alaą – on), 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
- مُنْذ
+مُنْذ
 \lang english
-   (mundu – since), etc.
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (mundu – since), etc.
 \end_layout
 
 \begin_layout Itemize
@@ -3619,7 +7032,7 @@ Variables
 : they follow the system of declension in three cases according to their
  function in the sentence.
  For example.
- the quantifier 
+ the quantifier
 \family roman
 \series medium
 \shape up
@@ -3643,11 +7056,36 @@ Variables
 \uwave default
 \noun default
 \color inherit
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 كلّ
 \lang english
-  (kull – all) may accept the three final casual vowels to describe the
- nominative, accusative or genitive according to its function in the sentence.
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (kull – all) may accept the three final casual vowels to describe the nominativ
+e, accusative or genitive according to its function in the sentence.
  
 \end_layout
 
@@ -3703,8 +7141,34 @@ glstwo{deverbal noun}{deverbal noun}
  By cons, this is not the case for simple verbs that can have up to 5 verbal
  nouns.
  For example, the verb 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 وَدَّ
+\lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
 \family roman
 \series medium
 \shape up
@@ -3716,7 +7180,6 @@ glstwo{deverbal noun}{deverbal noun}
 \uwave off
 \noun off
 \color none
-\lang english
  
 \family default
 \series default
@@ -3729,28 +7192,148 @@ glstwo{deverbal noun}{deverbal noun}
 \uwave default
 \noun default
 \color inherit
-(wadda – like) recognizes five different verbal nouns that express an «
- affection » with some semantic nuance :   
+(wadda – to like) recognizes five different verbal nouns that express an
+ « affection » with some semantic nuance : 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 وَدٌّ
 \lang english
-   (waddu),  
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (waddu), 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 وُد
 \lang english
-ٌّ   (wuddu),  
+ٌّ
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (wuddu), 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
- وِدَادٌ 
+وِدَادٌ
 \lang english
-  (widaādu),  
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (widaādu), 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
- وِدَادَةٌ 
+وِدَادَةٌ
 \lang english
-  (widaādat) and   
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (widaādat) and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 مَوَدَّة
 \lang english
-   (mawaddat); 
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (mawaddat); 
 \end_layout
 
 \begin_layout Subsubsection
@@ -3778,17 +7361,89 @@ glstwo{active participle}{Active participle}
  which means the agent who does the action, and therefore called the noun
  of agent given to this verb.
  For example, verbs in simple root such as 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 ضَرَبَ
 \lang english
- (daraba – ) follows the pattern 
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (daraba – to hit) follows the pattern 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 فَاعل
 \lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
  (faā‛il) to generate the active participle 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 ضَارِب
 \lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
  (daārib – hitter) ; 
 \end_layout
 
@@ -3817,18 +7472,90 @@ glstwo{passive participle}{Passive participle}
  It means the patient undergoing the action or the result of that action,
  and therefore called of patient noun given to this verb.
  For example, if we take the verb with simple root 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 ضَرَبَ
 \lang english
- (daraba – hit), it follows the pattern
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (daraba – to hit), it follows the pattern 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
- مَفعول
+مَفعول
 \lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
  (maf‛uwl) to generate the passive participle 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 مَضْرُوب
 \lang english
-  (madruwb – struck) 
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (madruwb – struck) 
 \end_layout
 
 \begin_layout Subsubsection
@@ -3867,13 +7594,63 @@ glstwo{deverbal noun}{deverbal}
 \end_inset
 
  supposed to designate the place where the action occurs as the noun 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 مَدْرَسَة
 \lang english
-   (madrasat – school, place where to study) that may be generated from
- the verb 
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (madrasat – school, place where to study) that may be generated from the
+ verb 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 دَرَسَ
+\lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
 \family roman
 \series medium
 \shape up
@@ -3885,7 +7662,6 @@ glstwo{deverbal noun}{deverbal}
 \uwave off
 \noun off
 \color none
-\lang english
  
 \family default
 \series default
@@ -3898,7 +7674,7 @@ glstwo{deverbal noun}{deverbal}
 \uwave default
 \noun default
 \color inherit
-(darasa – study).
+(darasa – to study).
  When the semantics of the verb rather lends to a temporal interpretation,
  that noun is called 
 \begin_inset ERT
@@ -3913,15 +7689,63 @@ glstwo{noun of time}{noun of time}
 
 \end_inset
 
-, such as for the noun  
+, such as for the noun 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
- مَغْرِب
+مَغْرِب
 \lang english
-   (maġrib – Sunset) attached to the verb  
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (maġrib – Sunset) attached to the verb 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 غَرَب
 \lang english
-   (ġaraba – set) .
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (ġaraba – to set) .
 \end_layout
 
 \begin_layout Subsubsection
@@ -3948,15 +7772,63 @@ glstwo{instrument noun}{instrument noun}
 
  is a noun that refers to the instrument that is used to perform the action
  expressed by the verb.
- For example, the noun   
+ For example, the noun 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 مُوَزِّع
 \lang english
-   (muwazzi‛ – dispenser) can be attached to the verb  
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (muwazzi‛ – dispenser) can be attached to the verb 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 وَزَّع
 \lang english
-  (wazza‛a – dispense) ; 
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (wazza‛a – to dispense) ; 
 \end_layout
 
 \begin_layout Subsubsection
@@ -3985,14 +7857,62 @@ glstwo{nomen vicis}{Nomen Vicis}
  the verb.
  It is usually produced from a singular form of the verbal noun.
  For example, the noun 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 ضَرْبَة
 \lang english
-  (darabat – a hit) may attach to the verb   
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (darabat – a hit) may attach to the verb 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
-ضَرَبَ 
+ضَرَبَ
 \lang english
-  (daraba – hit) .
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (daraba – to hit) .
 \end_layout
 
 \begin_layout Subsubsection
@@ -4033,8 +7953,34 @@ glstwo{nomen vicis}{nomen vicis}
 
 .
  We can set an example of the sentence: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
-جَلَسَت جِلْسَةَ الأَمِيرَة
+جَلَسَت_جِلْسَة_الأَمِيرَة
+\lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
 \family roman
 \series medium
 \shape up
@@ -4046,7 +7992,6 @@ glstwo{nomen vicis}{nomen vicis}
 \uwave off
 \noun off
 \color none
-\lang english
  
 \family default
 \series default
@@ -4093,15 +8038,62 @@ glstwo{diacritical marks}{diacritical marks}
 
 \begin_layout Standard
 For example, if the text contains the word 
-\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 ملك
-\series default
 \lang english
- , how can determine the meaning of this word : is it 
-\series bold
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+, how can determine the meaning of this word : is it 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 المَلَك
+\lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
 \family roman
 \series medium
 \shape up
@@ -4113,7 +8105,6 @@ For example, if the text contains the word
 \uwave off
 \noun off
 \color none
-\lang english
  
 \family default
 \series default
@@ -4127,9 +8118,34 @@ For example, if the text contains the word
 \noun default
 \color inherit
 (Angel) or 
-\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 المُلك
+\lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
 \family roman
 \series medium
 \shape up
@@ -4141,7 +8157,6 @@ For example, if the text contains the word
 \uwave off
 \noun off
 \color none
-\lang english
  
 \family default
 \series default
@@ -4155,9 +8170,34 @@ For example, if the text contains the word
 \noun default
 \color inherit
 (kingdom) or 
-\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 المَلِك
+\lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
 \family roman
 \series medium
 \shape up
@@ -4169,7 +8209,6 @@ For example, if the text contains the word
 \uwave off
 \noun off
 \color none
-\lang english
  
 \family default
 \series default
@@ -4212,7 +8251,9 @@ status open
 
 
 \backslash
-begin{Arabic}
+resizebox{
+\backslash
+textwidth}{!}{
 \end_layout
 
 \end_inset
@@ -4328,6 +8369,11 @@ LR{3rd meaning}
 \begin_layout Plain Layout
 
 \series bold
+\begin_inset space ~
+\end_inset
+
+
+\lang arabic_arabi
 القدر 
 \end_layout
 
@@ -4339,7 +8385,14 @@ LR{3rd meaning}
 \begin_layout Plain Layout
 
 \series bold
-القَدْر 
+\begin_inset space ~
+\end_inset
+
+
+\lang arabic_arabi
+القَدْر
+\lang english
+ (dignity)
 \end_layout
 
 \end_inset
@@ -4350,7 +8403,14 @@ LR{3rd meaning}
 \begin_layout Plain Layout
 
 \series bold
+\begin_inset space ~
+\end_inset
+
+
+\lang arabic_arabi
 القِدْر
+\lang english
+ (pot)
 \end_layout
 
 \end_inset
@@ -4361,7 +8421,14 @@ LR{3rd meaning}
 \begin_layout Plain Layout
 
 \series bold
-القَدَر 
+\begin_inset space ~
+\end_inset
+
+
+\lang arabic_arabi
+القَدَر
+\lang english
+ (fate) 
 \end_layout
 
 \end_inset
@@ -4381,8 +8448,12 @@ LR{3rd meaning}
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
 
 \series bold
+\lang arabic_arabi
 يحرم
 \end_layout
 
@@ -4394,7 +8465,14 @@ LR{3rd meaning}
 \begin_layout Plain Layout
 
 \series bold
+\begin_inset space ~
+\end_inset
+
+
+\lang arabic_arabi
 يُحَرِّم
+\lang english
+ (forbids)
 \end_layout
 
 \end_inset
@@ -4405,7 +8483,35 @@ LR{3rd meaning}
 \begin_layout Plain Layout
 
 \series bold
+\begin_inset space ~
+\end_inset
+
+
+\lang arabic_arabi
 يُحْرِم
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(enters ihram)
 \end_layout
 
 \end_inset
@@ -4416,7 +8522,35 @@ LR{3rd meaning}
 \begin_layout Plain Layout
 
 \series bold
+\begin_inset space ~
+\end_inset
+
+
+\lang arabic_arabi
 يَحْرُم
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(deprives of)
 \end_layout
 
 \end_inset
@@ -4438,6 +8572,11 @@ LR{3rd meaning}
 \begin_layout Plain Layout
 
 \series bold
+\begin_inset space ~
+\end_inset
+
+
+\lang arabic_arabi
 البر
 \end_layout
 
@@ -4449,7 +8588,35 @@ LR{3rd meaning}
 \begin_layout Plain Layout
 
 \series bold
+\begin_inset space ~
+\end_inset
+
+
+\lang arabic_arabi
 البِر
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(charity)
 \end_layout
 
 \end_inset
@@ -4460,7 +8627,35 @@ LR{3rd meaning}
 \begin_layout Plain Layout
 
 \series bold
-البَرّ 
+\begin_inset space ~
+\end_inset
+
+
+\lang arabic_arabi
+البَرّ
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(land)
 \end_layout
 
 \end_inset
@@ -4471,7 +8666,35 @@ LR{3rd meaning}
 \begin_layout Plain Layout
 
 \series bold
+\begin_inset space ~
+\end_inset
+
+
+\lang arabic_arabi
 البُر
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(wheat)
 \end_layout
 
 \end_inset
@@ -4493,6 +8716,11 @@ LR{3rd meaning}
 \begin_layout Plain Layout
 
 \series bold
+\begin_inset space ~
+\end_inset
+
+
+\lang arabic_arabi
 الحجر
 \end_layout
 
@@ -4504,7 +8732,14 @@ LR{3rd meaning}
 \begin_layout Plain Layout
 
 \series bold
+\begin_inset space ~
+\end_inset
+
+
+\lang arabic_arabi
 الحِجْر
+\lang english
+(lap)
 \end_layout
 
 \end_inset
@@ -4515,7 +8750,14 @@ LR{3rd meaning}
 \begin_layout Plain Layout
 
 \series bold
+\begin_inset space ~
+\end_inset
+
+
+\lang arabic_arabi
 الحَجَر
+\lang english
+(stone)
 \end_layout
 
 \end_inset
@@ -4526,7 +8768,35 @@ LR{3rd meaning}
 \begin_layout Plain Layout
 
 \series bold
+\begin_inset space ~
+\end_inset
+
+
+\lang arabic_arabi
 الحَجْر
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(interdiction)
 \end_layout
 
 \end_inset
@@ -4548,6 +8818,11 @@ LR{3rd meaning}
 \begin_layout Plain Layout
 
 \series bold
+\begin_inset space ~
+\end_inset
+
+
+\lang arabic_arabi
 العرض
 \end_layout
 
@@ -4559,7 +8834,14 @@ LR{3rd meaning}
 \begin_layout Plain Layout
 
 \series bold
+\begin_inset space ~
+\end_inset
+
+
+\lang arabic_arabi
 العَرْض
+\lang english
+(width)
 \end_layout
 
 \end_inset
@@ -4570,7 +8852,35 @@ LR{3rd meaning}
 \begin_layout Plain Layout
 
 \series bold
+\begin_inset space ~
+\end_inset
+
+
+\lang arabic_arabi
 العِرْض
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(honor)
 \end_layout
 
 \end_inset
@@ -4581,7 +8891,14 @@ LR{3rd meaning}
 \begin_layout Plain Layout
 
 \series bold
+\begin_inset space ~
+\end_inset
+
+
+\lang arabic_arabi
 العَرَض
+\lang english
+(symptom)
 \end_layout
 
 \end_inset
@@ -4603,6 +8920,11 @@ LR{3rd meaning}
 \begin_layout Plain Layout
 
 \series bold
+\begin_inset space ~
+\end_inset
+
+
+\lang arabic_arabi
 أم
 \end_layout
 
@@ -4614,7 +8936,14 @@ LR{3rd meaning}
 \begin_layout Plain Layout
 
 \series bold
+\begin_inset space ~
+\end_inset
+
+
+\lang arabic_arabi
 أَم
+\lang english
+(or)
 \end_layout
 
 \end_inset
@@ -4625,7 +8954,14 @@ LR{3rd meaning}
 \begin_layout Plain Layout
 
 \series bold
+\begin_inset space ~
+\end_inset
+
+
+\lang arabic_arabi
 أُم
+\lang english
+(mother)
 \end_layout
 
 \end_inset
@@ -4636,7 +8972,14 @@ LR{3rd meaning}
 \begin_layout Plain Layout
 
 \series bold
+\begin_inset space ~
+\end_inset
+
+
+\lang arabic_arabi
 أَمَّ
+\lang english
+(to lead in prayer)
 \end_layout
 
 \end_inset
@@ -4658,6 +9001,11 @@ LR{3rd meaning}
 \begin_layout Plain Layout
 
 \series bold
+\begin_inset space ~
+\end_inset
+
+
+\lang arabic_arabi
 الملك
 \end_layout
 
@@ -4669,7 +9017,14 @@ LR{3rd meaning}
 \begin_layout Plain Layout
 
 \series bold
+\begin_inset space ~
+\end_inset
+
+
+\lang arabic_arabi
 المَلِك
+\lang english
+(king)
 \end_layout
 
 \end_inset
@@ -4680,7 +9035,14 @@ LR{3rd meaning}
 \begin_layout Plain Layout
 
 \series bold
+\begin_inset space ~
+\end_inset
+
+
+\lang arabic_arabi
 المَلَك
+\lang english
+(angel)
 \end_layout
 
 \end_inset
@@ -4691,7 +9053,14 @@ LR{3rd meaning}
 \begin_layout Plain Layout
 
 \series bold
+\begin_inset space ~
+\end_inset
+
+
+\lang arabic_arabi
 المُلْك
+\lang english
+(reign)
 \end_layout
 
 \end_inset
@@ -4713,6 +9082,11 @@ LR{3rd meaning}
 \begin_layout Plain Layout
 
 \series bold
+\begin_inset space ~
+\end_inset
+
+
+\lang arabic_arabi
 من
 \end_layout
 
@@ -4724,7 +9098,14 @@ LR{3rd meaning}
 \begin_layout Plain Layout
 
 \series bold
+\begin_inset space ~
+\end_inset
+
+
+\lang arabic_arabi
 مِن
+\lang english
+(from)
 \end_layout
 
 \end_inset
@@ -4735,7 +9116,14 @@ LR{3rd meaning}
 \begin_layout Plain Layout
 
 \series bold
+\begin_inset space ~
+\end_inset
+
+
+\lang arabic_arabi
 مَن
+\lang english
+(who)
 \end_layout
 
 \end_inset
@@ -4746,7 +9134,14 @@ LR{3rd meaning}
 \begin_layout Plain Layout
 
 \series bold
+\begin_inset space ~
+\end_inset
+
+
+\lang arabic_arabi
 مَنّ
+\lang english
+(remind someone of a favor)
 \end_layout
 
 \end_inset
@@ -4765,20 +9160,18 @@ LR{3rd meaning}
 
 \end_inset
 
- 
+
 \begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-
-\backslash
-end{Arabic}
+}
 \end_layout
 
 \end_inset
 
-
+ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -4803,16 +9196,67 @@ In addition to confusion about the meaning of  word due to the absence of
  diacritical marks, there is more confusion about the function of  word,
  also the context of text only can eliminate it.
  For example, the case of the word 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \series bold
 \lang arabic_arabi
 أخد
 \series default
 \lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
  , Softwares based only on word spelling can not distinguish between active
  form 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \series bold
 \lang arabic_arabi
 أَخَذَ
+\series default
+\lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
 \family roman
 \series medium
 \shape up
@@ -4824,7 +9268,6 @@ In addition to confusion about the meaning of  word due to the absence of
 \uwave off
 \noun off
 \color none
-\lang english
  
 \family default
 \series default
@@ -4838,9 +9281,36 @@ In addition to confusion about the meaning of  word due to the absence of
 \noun default
 \color inherit
 (took) and passive form 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \series bold
 \lang arabic_arabi
 أُخِذَ
+\series default
+\lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
 \family roman
 \series medium
 \shape up
@@ -4852,7 +9322,6 @@ In addition to confusion about the meaning of  word due to the absence of
 \uwave off
 \noun off
 \color none
-\lang english
  
 \family default
 \series default
@@ -4888,22 +9357,10 @@ status open
 
 \begin_layout Plain Layout
 \align center
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{Arabic}
-\end_layout
-
-\end_inset
-
-
 \begin_inset Tabular
-<lyxtabular version="3" rows="10" columns="3">
+<lyxtabular version="3" rows="10" columns="4">
 <features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
@@ -4950,7 +9407,7 @@ LR{ 1st function}
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4971,37 +9428,13 @@ LR{2nd function}
 
 \end_inset
 </cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
 \series bold
-ملك 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-(مَلِكٌ) اسم 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-(مَلَكَ) فعل...
+...
  
 \end_layout
 
@@ -5015,7 +9448,12 @@ LR{2nd function}
 \begin_layout Plain Layout
 
 \series bold
-من 
+\begin_inset space ~
+\end_inset
+
+
+\lang arabic_arabi
+ملك
 \end_layout
 
 \end_inset
@@ -5024,9 +9462,30 @@ LR{2nd function}
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
 
-\series bold
-(مَنْ) اسم موصول 
+
+\lang arabic_arabi
+مَلِكٌ
+\lang english
+ (Noun)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+
+\lang arabic_arabi
+مَلَكَ
+\lang english
+ (Verb)
 \end_layout
 
 \end_inset
@@ -5035,9 +9494,8 @@ LR{2nd function}
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\series bold
-(مِنْ) حرف جر...
+...
+ 
 \end_layout
 
 \end_inset
@@ -5050,6 +9508,84 @@ LR{2nd function}
 \begin_layout Plain Layout
 
 \series bold
+\begin_inset space ~
+\end_inset
+
+
+\lang arabic_arabi
+من
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+
+\lang arabic_arabi
+مَن
+\lang english
+ (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glsone{relative pronoun}
+\end_layout
+
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+
+\lang arabic_arabi
+مِنْ
+\lang english
+ (Preposition)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+...
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\begin_inset space ~
+\end_inset
+
+
+\lang arabic_arabi
 عدوان
 \end_layout
 
@@ -5059,9 +9595,56 @@ LR{2nd function}
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
 
-\series bold
-(عُدْوَان) مفرد
+
+\lang arabic_arabi
+عُدْوَان
+\lang english
+ (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glsone{singular}
+\end_layout
+
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+
+\lang arabic_arabi
+عَدُوَّان
+\lang english
+ (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glsone{dual form}
+\end_layout
+
+\end_inset
+
+)
 \end_layout
 
 \end_inset
@@ -5070,79 +9653,7 @@ LR{2nd function}
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\series bold
-(عَدُوَّان) مثنى...
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-فرض
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-(فَرَضَ) فعل ماضٍ
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-(فَرْضٌ) مصدر...
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-عن 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-(عَنَّ) فعل ماضٍ
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-(عَنْ) حرف جر...
+...
  
 \end_layout
 
@@ -5156,7 +9667,12 @@ LR{2nd function}
 \begin_layout Plain Layout
 
 \series bold
-أدر 
+\begin_inset space ~
+\end_inset
+
+
+\lang arabic_arabi
+فرض
 \end_layout
 
 \end_inset
@@ -5165,9 +9681,56 @@ LR{2nd function}
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
 
-\series bold
-(أَدْرِ) مضارع مجزوم
+
+\lang arabic_arabi
+فَرَضَ
+\lang english
+ (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glsone{perfective}
+\end_layout
+
+\end_inset
+
+ verb)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+
+\lang arabic_arabi
+فَرْضٌ
+\lang english
+ (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glsone{deverbal noun}
+\end_layout
+
+\end_inset
+
+)
 \end_layout
 
 \end_inset
@@ -5176,9 +9739,8 @@ LR{2nd function}
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\series bold
-(أَدِرْ) فعل أمر
+...
+ 
 \end_layout
 
 \end_inset
@@ -5191,6 +9753,183 @@ LR{2nd function}
 \begin_layout Plain Layout
 
 \series bold
+\begin_inset space ~
+\end_inset
+
+
+\lang arabic_arabi
+عن
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+
+\lang arabic_arabi
+عَن
+\lang english
+ (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glsone{perfective}
+\end_layout
+
+\end_inset
+
+ verb)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+
+\lang arabic_arabi
+عَن
+\lang english
+ (Preposition)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+...
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\begin_inset space ~
+\end_inset
+
+
+\lang arabic_arabi
+أدر
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+
+\lang arabic_arabi
+أَدْر
+\lang english
+ (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glsone{jussive}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glsone{imperfective}
+\end_layout
+
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+
+\lang arabic_arabi
+أَدِرْ
+\lang english
+ (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glsone{imperative}
+\end_layout
+
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+...
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\begin_inset space ~
+\end_inset
+
+
+\lang arabic_arabi
 أحسن
 \end_layout
 
@@ -5200,9 +9939,56 @@ LR{2nd function}
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
 
-\series bold
-(أَحْسَنَ) فعل ماض
+
+\lang arabic_arabi
+أَحْسَنَ
+\lang english
+ (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glsone{perfective}
+\end_layout
+
+\end_inset
+
+ verb)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+
+\lang arabic_arabi
+أَحْسَن
+\lang english
+ (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glsone{superlative noun}
+\end_layout
+
+\end_inset
+
+)
 \end_layout
 
 \end_inset
@@ -5211,9 +9997,8 @@ LR{2nd function}
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\series bold
-(أَحْسَنُ) اسم تفضيل...
+...
+ 
 \end_layout
 
 \end_inset
@@ -5226,6 +10011,11 @@ LR{2nd function}
 \begin_layout Plain Layout
 
 \series bold
+\begin_inset space ~
+\end_inset
+
+
+\lang arabic_arabi
 علم
 \end_layout
 
@@ -5235,9 +10025,30 @@ LR{2nd function}
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
 
-\series bold
-(عَلِمَ) فعل مجرَّد
+
+\lang arabic_arabi
+عَلِمَ
+\lang english
+ (Simple verb)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+
+\lang arabic_arabi
+عَلَّمَ
+\lang english
+ (Augmented verb)
 \end_layout
 
 \end_inset
@@ -5246,9 +10057,8 @@ LR{2nd function}
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\series bold
-(عَلَّمَ) فعل مزيد
+...
+ 
 \end_layout
 
 \end_inset
@@ -5261,6 +10071,11 @@ LR{2nd function}
 \begin_layout Plain Layout
 
 \series bold
+\begin_inset space ~
+\end_inset
+
+
+\lang arabic_arabi
 غلبت
 \end_layout
 
@@ -5270,9 +10085,56 @@ LR{2nd function}
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
 
-\series bold
-(غُلِبَتْ) مبني للمجهول
+
+\lang arabic_arabi
+غُلِبَتْ
+\lang english
+ (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glsone{passive voice}
+\end_layout
+
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+
+\lang arabic_arabi
+غَلَبَتْ
+\lang english
+ (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glsone{active voice}
+\end_layout
+
+\end_inset
+
+)
 \end_layout
 
 \end_inset
@@ -5281,28 +10143,14 @@ LR{2nd function}
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\series bold
-(غَلَبَتْ) مبني للمعلوم
+...
+ 
 \end_layout
 
 \end_inset
 </cell>
 </row>
 </lyxtabular>
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{Arabic}
-\end_layout
 
 \end_inset
 
@@ -5333,20 +10181,118 @@ Prefixes
 \begin_layout Standard
 This is another type of confusion, the word can be read several ways.
  For example: the word 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 وعد
 \lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
  , the letter wâw 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 واو
 \lang english
-  may belong to word as in: 
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ may belong to word as in: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 وَعَدَ
 \lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
  from the verb 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
-وَعَد َ يَعِدُ
+وَعَدَ_يَعِدُ
+\lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
 \family roman
 \series medium
 \shape up
@@ -5358,7 +10304,6 @@ This is another type of confusion, the word can be read several ways.
 \uwave off
 \noun off
 \color none
-\lang english
  
 \family default
 \series default
@@ -5372,8 +10317,34 @@ This is another type of confusion, the word can be read several ways.
 \noun default
 \color inherit
 (promise), or else does not belong to word as in: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 وَعَدَّ
+\lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
 \family roman
 \series medium
 \shape up
@@ -5385,7 +10356,6 @@ This is another type of confusion, the word can be read several ways.
 \uwave off
 \noun off
 \color none
-\lang english
  
 \family default
 \series default
@@ -5399,8 +10369,34 @@ This is another type of confusion, the word can be read several ways.
 \noun default
 \color inherit
 from the combination 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
-وَ + عَدَّ
+وَ+عَدَّ
+\lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
 \family roman
 \series medium
 \shape up
@@ -5412,7 +10408,6 @@ from the combination
 \uwave off
 \noun off
 \color none
-\lang english
  
 \family default
 \series default
@@ -5425,9 +10420,35 @@ from the combination
 \uwave default
 \noun default
 \color inherit
-(and + count ), the verb
+(and + count ), the verb 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
- عَدَّ يَعُدُّ
+عَد_يَعُدُّ
+\lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
 \family roman
 \series medium
 \shape up
@@ -5439,7 +10460,6 @@ from the combination
 \uwave off
 \noun off
 \color none
-\lang english
  
 \family default
 \series default
@@ -5459,11 +10479,35 @@ from the combination
 Thus, softwares based only on the spelling of  word, can not distinguish
  between these two cases.
  This type of confusion does not exist in the English language, for instance:
- The translation of the word  
+ The translation of the word 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 والكتاب
 \lang english
-  into English is a phrase of 3 independent words "and the book".
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ into English is a phrase of 3 independent words "and the book".
  
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -5806,6 +10850,16 @@ Ambiguities of prefixes
 \end_inset
 
 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+translate the meanings of wthis table
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -5841,7 +10895,7 @@ glstwo{attaching pronoun}{attaching pronouns}
 \noun off
 \color none
 \lang english
-) 
+)
 \family default
 \series default
 \shape default
@@ -5862,20 +10916,94 @@ The confusion here is similar to the confusion of prefixes, this confusion
  is that we can read the word in two ways, depending on whether the letters
  belong to the word or not.
  For example, in the word 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 وله
 \lang english
- , the letter ha’ 
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+, the letter ha’ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 هاء
 \lang english
-  may: 
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ may: 
 \end_layout
 
 \begin_layout Itemize
 belong to word as in: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 وَلِه
+\lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
 \family roman
 \series medium
 \shape up
@@ -5887,7 +11015,6 @@ belong to word as in:
 \uwave off
 \noun off
 \color none
-\lang english
  
 \family default
 \series default
@@ -5901,8 +11028,34 @@ belong to word as in:
 \noun default
 \color inherit
 from the verb 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
-وَلِهَ يَوْلَهُ
+وَلِهَ_يَوْلَهُ
+\lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
 \family roman
 \series medium
 \shape up
@@ -5914,7 +11067,6 @@ from the verb
 \uwave off
 \noun off
 \color none
-\lang english
  
 \family default
 \series default
@@ -5932,8 +11084,34 @@ from the verb
 
 \begin_layout Itemize
 does not belong to word as in: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 وَلِّهِ
+\lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
 \family roman
 \series medium
 \shape up
@@ -5945,7 +11123,6 @@ does not belong to word as in:
 \uwave off
 \noun off
 \color none
-\lang english
  
 \family default
 \series default
@@ -5959,8 +11136,34 @@ does not belong to word as in:
 \noun default
 \color inherit
 from the combination 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
-وَلِّ + ـهِ
+وَلِّ+ـهِ
+\lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
 \family roman
 \series medium
 \shape up
@@ -5972,7 +11175,6 @@ from the combination
 \uwave off
 \noun off
 \color none
-\lang english
  
 \family default
 \series default
@@ -5986,8 +11188,34 @@ from the combination
 \noun default
 \color inherit
 (crown + him) from the verb 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
-وَلَّى يُوَلِّي
+وَلَّى_يُوَلِّي
+\lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
 \family roman
 \series medium
 \shape up
@@ -5999,7 +11227,6 @@ from the combination
 \uwave off
 \noun off
 \color none
-\lang english
  
 \family default
 \series default
@@ -6013,8 +11240,34 @@ from the combination
 \noun default
 \color inherit
 (crown) or 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 وَ+لَ+هُ
+\lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
 \family roman
 \series medium
 \shape up
@@ -6026,7 +11279,6 @@ from the combination
 \uwave off
 \noun off
 \color none
-\lang english
  
 \family default
 \series default
@@ -6046,10 +11298,58 @@ from the combination
 \begin_layout Standard
 Just as the previous confusion, this type of confusion does not exist in
  the English language, for instance: The translation of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 أَجَبْنَاهُ
 \lang english
- into English is a phrase of 3 separate words "we answered him".
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+into English is a phrase of 3 separate words "we answered him".
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Alb09"
@@ -6067,7 +11367,7 @@ The following table provides additional examples:
 \begin_inset Float table
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset ERT
@@ -6390,6 +11690,16 @@ Ambiguities due to suffixes
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+translate the meanings of wthis table
 \end_layout
 
 \end_inset

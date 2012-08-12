@@ -141,7 +141,7 @@ figured
 
 
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
 add facetated search (thematic search), clustered search, ontology-based
@@ -334,8 +334,6 @@ key "Alb09"
 
 \begin_layout Itemize
 The word 
-\lang arabic_arabi
-الملك
 \family roman
 \series medium
 \shape up
@@ -347,7 +345,19 @@ The word
 \uwave off
 \noun off
 \color none
-\lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{الملك}
+\end_layout
+
+\end_inset
+
  
 \family default
 \series default
@@ -384,16 +394,91 @@ could be understood as
 \uwave default
 \noun default
 \color inherit
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 المَلَك
 \lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
  (the angel), 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 المَلِك
 \lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
  (the king) or 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 المُلْك
+\lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
 \family roman
 \series medium
 \shape up
@@ -405,18 +490,67 @@ could be understood as
 \uwave off
 \noun off
 \color none
-\lang english
  (the kingdom)
 \end_layout
 
 \begin_layout Itemize
 The word 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 وعد
 \lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
  could be understood as 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 وَعَدَ
+\lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
 \family roman
 \series medium
 \shape up
@@ -428,7 +562,6 @@ The word
 \uwave off
 \noun off
 \color none
-\lang english
  
 \family default
 \series default
@@ -442,8 +575,34 @@ The word
 \noun default
 \color inherit
 (*he* promise) or 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 وَ+عَدَّ
+\lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
 \family roman
 \series medium
 \shape up
@@ -455,7 +614,6 @@ The word
 \uwave off
 \noun off
 \color none
-\lang english
  
 \family default
 \series default
@@ -473,12 +631,62 @@ The word
 
 \begin_layout Itemize
 The word 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 وله
 \lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
  could be understood as 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 وَلَهَ
+\lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
 \family roman
 \series medium
 \shape up
@@ -490,7 +698,6 @@ The word
 \uwave off
 \noun off
 \color none
-\lang english
  
 \family default
 \series default
@@ -504,8 +711,34 @@ The word
 \noun default
 \color inherit
 (admire) or 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 وَلِّ+ه
+\lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
 \family roman
 \series medium
 \shape up
@@ -517,7 +750,6 @@ The word
 \uwave off
 \noun off
 \color none
-\lang english
  
 \family default
 \series default
@@ -531,8 +763,34 @@ The word
 \noun default
 \color inherit
 ( crown him ) or 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 وَ+لَ+هُ
+\lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
 \family roman
 \series medium
 \shape up
@@ -544,7 +802,6 @@ The word
 \uwave off
 \noun off
 \color none
-\lang english
  
 \family default
 \series default
@@ -581,15 +838,63 @@ ref:Arabic google the phrase
  El-Mus-haf , the book of Quran, is written on the Uthmani script .
  This last is full of recitation marks and spells some words in a different
  way than the standard way.
- By example, the word “
+ By example, the word 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 بسطة
 \lang english
-” is spelled “
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ is spelled 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
 \lang arabic_arabi
 بصطة
 \lang english
-” in Uthmani.
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ in Uthmani.
  The Uthmani script requires considering its specifications in Text analyzing
  phases: Normalization, Stemming.
  Quran is structured in many analytic levels
@@ -700,7 +1005,7 @@ Suggestion Systems
 Linguistic Aspects
 \series default
 : This is about all features that are related to linguistic Aspects like
- stemming, Selection&filtring stop words, normalization.
+ stemming, Selection & filtering stop words, normalization.
  
 \end_layout
 
@@ -712,8 +1017,7 @@ Quranic Options
 : It’s related to the properties of the book and the information included
  inside.
  As we mentioned in the problematic, the book of Quran (al-mushaf) is written
- in uthmani script full of diacritization symbols and structured in many
- ways.
+ in uthmani script full of diacritical symbols and structured in many ways.
 \end_layout
 
 \begin_layout Enumerate
@@ -1095,7 +1399,7 @@ dividing the results on pages.
 
 \begin_deeper
 \begin_layout Itemize
-10, 20,50… results per page 
+10, 20, 50… results per page 
 \end_layout
 
 \end_deeper
@@ -2240,9 +2544,10 @@ singular
 \begin_layout Enumerate
 
 \series bold
-Consideration/Ignoring spell faults:
+Fuzzy string search:
 \series default
- especially for the letters that usually misspelled like Hamza(
+ that will be helpful especially for the letters that usually misspelled
+ like Hamza(
 \lang arabic_arabi
 ء
 \lang english
@@ -2259,8 +2564,31 @@ Consideration/Ignoring spell faults:
 
 \lang arabic_arabi
 مءصدة
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
 \lang english
- replaces 
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+may replace 
 \lang arabic_arabi
 مؤصدة
 \family roman
@@ -2285,8 +2613,31 @@ Consideration/Ignoring spell faults:
 
 \lang arabic_arabi
 ضحي
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
 \lang english
- replaces 
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+may replace 
 \lang arabic_arabi
 ضحى
 \lang english
@@ -2490,6 +2841,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename figures/QAC annotations Alinshiqaq 1
+	scale 50
 
 \end_inset
 
@@ -2501,13 +2853,6 @@ status open
 
 \begin_layout Plain Layout
 Annotations shown by 
-\begin_inset CommandInset href
-LatexCommand href
-target "http://corpus.quran.com/"
-
-\end_inset
-
-
 \begin_inset CommandInset href
 LatexCommand href
 name "Quranic Arabic Corpus website"
@@ -2687,8 +3032,8 @@ YES
 \series bold
 Structural option
 \series default
-: since Quran is divided to parts () and the part to Hizbs and Hizb to Halfs
- ...
+s: since Quran is divided to parts () and the part to Hizbs and Hizb to
+ Halfs ...
  till we get Ayahs.There is also other structures of Qur'an such as to pages
  ...etc.
 \end_layout
@@ -3007,11 +3352,6 @@ Hypo(
 عدن, فردوس
 \lang english
  …
-\end_layout
-
-\begin_layout Itemize
-...
- 
 \end_layout
 
 \end_deeper

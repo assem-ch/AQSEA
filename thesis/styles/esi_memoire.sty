@@ -3,8 +3,6 @@
 \date{}
 %==================
 \usepackage{hyperref}
-
-
 %\usepackage{setspace}
 \usepackage{fontspec}
 %\usepackage[RTLdocument]{bidi}
@@ -12,17 +10,16 @@
 \usepackage{polyglossia}
 \usepackage{color}
 
-
-%%%%%%%%%%%%%%%%%%%% glossary->start
-
+%%%%%%%%%%%%%%%%%%%% glossary -> begin
 \usepackage[style=long, number=none]{glossary} % can be obtained from http://www.ctan.org/tex-archive/macros/latex/contrib/glossary/
-
-
-
-
 \makeglossary
+%%%%%%%%%%%%%%%%%%%% glossary -> end
 
-%%%%%%%%%%%%%%%%%%%% glossary->end
+%%%%%%%%%%%%%%%%%%%% Draw box -> begin
+\usepackage{tikz}
+\newcommand\arbox[2][]{\tikz[overlay]\node[fill=blue!10,inner sep=1pt, anchor=text, rectangle, rounded corners=1mm,#1] {\begin{Arabic}#2  \end{Arabic}};\phantom{\begin{Arabic}#2 \end{Arabic}}}
+\newcommand\enbox[2][]{\tikz[overlay]\node[fill=blue!10,inner sep=2pt, anchor=text, rectangle, rounded corners=1mm,#1] {#2};\phantom{#2}}
+%%%%%%%%%%%%%%%%%%%% Draw box -> end
 
 
 
