@@ -1368,6 +1368,7 @@ Combining features:
 search using a combination of the previous elementary features.
 \end_layout
 
+\begin_deeper
 \begin_layout Itemize
 \begin_inset space ~
 \end_inset
@@ -1381,6 +1382,7 @@ search using a combination of the previous elementary features.
 لله“^2
 \end_layout
 
+\end_deeper
 \end_deeper
 \begin_layout Enumerate
 
@@ -1914,31 +1916,8 @@ Collocated words
 Suggest for 
 \lang arabic_arabi
 سميع
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 \lang english
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-(all hearing) :
+ (all hearing) :
 \family roman
 \series medium
 \shape up
@@ -2022,6 +2001,66 @@ Suggest for
 \begin_layout Enumerate
 
 \series bold
+Keyboard mapping: 
+\series default
+this feature may help when the user forget to switch the keyboard language;
+ It is used in Google search engine.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Suggest for 
+\series bold
+\emph on
+fsl
+\series default
+\emph default
+ : 
+\lang arabic_arabi
+بسم
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+( f 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ب, s 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+س, l
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+م)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
 Different significations: 
 \series default
 used to limit a keyword on only one of their meanings.
@@ -2065,9 +2104,151 @@ nd meaning (master -
 
 \series bold
 Linguistic Aspects
+\series default
+ 
 \end_layout
 
 \begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Romanization: 
+\series default
+or called also English transliteration, It's needed mainly by non-Arabic
+ speakers
+\series bold
+ 
+\series default
+specially whom are not familiar with Arabic letters and keyboards
+\series bold
+.
+ 
+\series default
+There are many transliterations for Arabic to English, the most known: the
+ international standard
+\emph on
+ ISO233 
+\emph default
+used in scientific papers
+\emph on
+, Buckwalter
+\emph default
+ Transliteration used in NLP, 
+\emph on
+Arabtex
+\emph default
+ used in latex and 
+\emph on
+Arabizi
+\emph default
+ used informally by users through forums, chat discussions...etc.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset space ~
+\end_inset
+
+
+\lang arabic_arabi
+خَليفَة
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ (Caliph) 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+could be written as ẖalīfaẗ (ISO233), xalyfap (Buckwalter), _halyfaT (Arabtex),
+ khalifa or khalifah or khaleefa or 5alifa or 7'alifa (Arabizi) 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\series bold
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+keep: Syntactic Coloration
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Vocal Search:
+\series default
+ this feature is موجهة to العميان to help them to search easily .
+ It's helpful also in Smart phones where the keyboards are difficult to
+ use.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/google_voice_search_hunter.jpg
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Google Voice Search on Android
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 
 \series bold
@@ -3287,6 +3468,32 @@ Translation: Their parable is like the parable of one who kindled a fire,
 \begin_layout Standard
 \SpecialChar \textcompwordmark{}
 
+\series bold
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Rhetorical deletion in the Qur'an
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+
+\series bold
+Grammatical Shift (iltifat) in the Qur'an
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -3352,6 +3559,21 @@ Hypo(
 عدن, فردوس
 \lang english
  …
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Greyedout
+status collapsed
+
+\begin_layout Enumerate
+
+\series bold
+Faceted Thematic Search: 
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
