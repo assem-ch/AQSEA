@@ -127,7 +127,7 @@ textit{أَنا البَحرُ في أَحشائِهِ الدُرُّ كامِـ
 \backslash
 raggedright
 \backslash
-textit{حافظ ابراهيم}}
+textit{حافظ ابراهيم، قصيدة عن اللغة العربية}}
 \backslash
 end{Arabic}
 \end_layout
@@ -12215,6 +12215,19 @@ key "Alb09"
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Section
+Arabic Search Engines
 \end_layout
 
 \end_inset

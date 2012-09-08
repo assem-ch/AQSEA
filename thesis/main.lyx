@@ -94,10 +94,6 @@ minimalistic
 \begin_body
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -113,7 +109,7 @@ pagestyle{empty}
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
 filename "flyleaf.lyx"
@@ -123,7 +119,7 @@ filename "flyleaf.lyx"
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -196,7 +192,7 @@ footrulewidth}{0pt}
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
 filename "Dedicase.lyx"
@@ -206,7 +202,7 @@ filename "Dedicase.lyx"
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
 filename "Remerciements.lyx"
@@ -216,15 +212,10 @@ filename "Remerciements.lyx"
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
 filename "abstract.lyx"
-
-\end_inset
-
-
-\end_layout
 
 \end_inset
 
@@ -606,14 +597,10 @@ filename "SA - Quran.lyx"
 \end_layout
 
 \begin_layout Part
-\begin_inset Note Note
-status open
-
-\begin_layout Part
 Analysis & Conception
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
 filename "Co - Features.lyx"
@@ -623,7 +610,7 @@ filename "Co - Features.lyx"
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
 filename "Conception.lyx"
@@ -637,7 +624,7 @@ filename "Conception.lyx"
 Implementation & Tests
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \align left
 \begin_inset CommandInset include
 LatexCommand include
@@ -659,7 +646,7 @@ filename "tests.lyx"
 Conclusion
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -686,7 +673,7 @@ fancyhead[L]{}
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
 filename "Conclusion.lyx"
@@ -696,7 +683,7 @@ filename "Conclusion.lyx"
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -744,11 +731,6 @@ fancyhead[L]{}
 
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
 \begin_layout Chapter*
 \begin_inset ERT
 status open
@@ -775,7 +757,7 @@ options "bib/alpha"
 
  
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Part*
 \start_of_appendix

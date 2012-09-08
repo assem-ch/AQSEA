@@ -1105,6 +1105,10 @@ VerseByVerse Recitations
 Code Architecture
 \end_layout
 
+\begin_layout Standard
+# Complete New_Output_System , it's southnance model
+\end_layout
+
 \begin_layout Subsection
 Application Programming Interface
 \end_layout
@@ -1135,6 +1139,14 @@ Smart phones
 
 \begin_layout Subsubsection
 Browsers-Addons
+\end_layout
+
+\begin_layout Standard
+Interfaces
+\end_layout
+
+\begin_layout Standard
+[interfaces from github readme files]
 \end_layout
 
 \begin_layout Section

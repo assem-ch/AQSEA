@@ -140,17 +140,6 @@ figured
 \end_inset
 
 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-add facetated search (thematic search), clustered search, ontology-based
- search 
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -2203,7 +2192,7 @@ keep: Syntactic Coloration
 \series bold
 Vocal Search:
 \series default
- this feature is موجهة to العميان to help them to search easily .
+ this feature is targeting blind people to help them search easily .
  It's helpful also in Smart phones where the keyboards are difficult to
  use.
  
