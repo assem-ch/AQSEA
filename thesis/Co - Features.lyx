@@ -96,14 +96,14 @@ status open
 
 \begin_layout Plain Layout
 
-
+%
 \backslash
 setcounter{chapter}{5}
 \end_layout
 
 \begin_layout Plain Layout
 
-
+%
 \backslash
 pagenumbering{arabic} 
 \end_layout
@@ -3460,7 +3460,7 @@ Translation: Their parable is like the parable of one who kindled a fire,
 \series bold
 
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -3502,7 +3502,7 @@ Semantically related words
 : there are several different kinds of semantic relations: Synonymy, Antonymy,
  Hypernymy, Hyponymy, Meronymy, Holonymy, Troponymy
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
  [ref]
@@ -3550,14 +3550,23 @@ Hypo(
  …
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Greyedout
-status collapsed
-
+\end_deeper
 \begin_layout Enumerate
 
 \series bold
 Faceted Thematic Search: 
+\series default
+that offers the feature of browsing the verses in term of themas structured
+ on many levels.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Qurany Example
 \end_layout
 
 \end_inset
@@ -4716,7 +4725,7 @@ Exit Page:
 \end_layout
 
 \begin_layout Standard
-We've chosen SurveyMonkey [ref] to build our survey because it's best survey
+We've chosen SurveyMonkey to build our survey because it's best free survey
  maker in the Internet, it offers lot of helpful options [survey features].
  SurveyMonkey offer many methods to attend a wider audience by integration
  in social networks.
