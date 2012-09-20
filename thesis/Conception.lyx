@@ -180,13 +180,13 @@ Introduction
 After listing all possible search features as explained in the previous
  chapter, we'll propose and discuss a retrieval system that can meet the
  most of the features.
- At first, we'll explain the general behaviour, our modifications and improvment
+ At first, we'll explain the general behavior, our modifications and improvement
 s on it.
- Then we'll explain main parts of the retrival system one by one: Text processin
-g, Query processing, Results processing, Suggestion system.
+ Then we'll explain main parts of the retrieval system one by one: Text
+ processing, Query processing, Results processing, Suggestion system.
  After this, we'll discuss how to implement a full vocalized search and
- the roadmap toward symantic search.
- Finally, we'll mention necessary quranic resources and the features depending
+ the road-map toward semantic search.
+ Finally, we'll mention necessary Qur'anic resources and the features depending
  to each resource.
 \end_layout
 
@@ -196,7 +196,7 @@ Previous Work
 
 \begin_layout Standard
 We've start the work on this idea of Search work as Engineer degree graduation
- project entiteled "Development of a search and indexing engine for qur'anic
+ project entitled "Development of a search and indexing engine for Qur'anic
  documents"
 \begin_inset Foot
 status collapsed
@@ -228,11 +228,13 @@ To attend our objective, we had based on the general behavior of retrieval
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
-\begin_layout Standard
+\begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename figures/Basic Model.png
+	scale 50
 
 \end_inset
 
@@ -258,10 +260,6 @@ to Translate the figure
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -305,10 +303,11 @@ wide false
 sideways false
 status open
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename figures/Searcher Behavior.png
+	scale 50
 
 \end_inset
 
@@ -354,17 +353,8 @@ We had proposed a partial vocalization comparison between indexed and queried
 \end_layout
 
 \begin_layout Standard
-We had enriched our prototype in many key steps , we cite them here 
-\begin_inset Note Greyedout
-status open
-
-\begin_layout Plain Layout
-ملخصة
-\end_layout
-
-\end_inset
-
-:
+We had enriched our prototype in many key steps , we cite them summarized
+ here:
 \end_layout
 
 \begin_layout Subsection
@@ -452,79 +442,360 @@ For normalization, we include it it the fixing of shaping problem of letters
  and of lam-alef.
  we avoid to remove the diacritics in this phase because we needed the diacritic
 s in further features.
- The same for the case of hamza forms.
+ The same for the case of Hamza forms.
 \end_layout
 
 \begin_layout Standard
-For stemming, 
+For stemming, there are many different definitions, we had considered that
+ stemming is the operation of detaching affixes without bringing the word
+ back to its root origin as we may call it 
+\begin_inset Quotes sld
+\end_inset
+
+light stemming
+\begin_inset Quotes srd
+\end_inset
+
+.
+ The reasons for that choice and more details are mentioned in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ASSEM_MEROUANE"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-For filtring Stop words,
+For stop-words filtering, we had discussed how to consider a Qur'anic word
+ as a stop-word and we had concluded that we had to choose from the list
+ of most frequent words in Qur'an the particles and the pronouns taking
+ in consideration their diacritical marks to avoid ambiguities.
 \end_layout
 
 \begin_layout Subsection
 Query Processing
 \end_layout
 
+\begin_layout Standard
+Advanced Query offers a set of search options, it's used by many search
+ engines such as Google.
+ The options that were already existing are: fields, partial word, wild-cards
+ search (Jokers), logical relations (And, Or, Not), phrase, interval, and
+ boosting.
+\end_layout
+
+\begin_layout Standard
+We had benefited of the advanced query in the implementation of some new
+ linguistic features such as:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Synonyms & Antonyms
+\series default
+: it's a simple replacement operation of word by the set of its synonyms
+ or antonyms.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Search by Derivations: 
+\series default
+it's a linguistic option aims to extract derivations of a given word based
+ on a defined derivation level, that works on 3 steps:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Detect level of derivation of the given word, is it Root, Stem, Lemma or
+ Complete Word?
+\end_layout
+
+\begin_layout Enumerate
+Get the origin of the word in the required derivation level.
+\end_layout
+
+\begin_layout Enumerate
+Fetch all the derivations of that origin.
+\end_layout
+
+\begin_layout Standard
+We've implemented the previous actions using specific indexes that contains
+ all different levels of derivations of all Qur'anic words.
+ A con of using indexes is that it can't fetch origins of words not mentioned
+ in Quran.
+ This con can be fixed using morphological analyzers for the first step.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Considering/Ignoring Spelling faults: 
+\series default
+with this feature, the search engine would ignore most of spelling faults
+ that are frequently in Arabic.
+ We choose the following operations to be performed on the query words:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Replace Tâ' marbûta with Hâ'
+\end_layout
+
+\begin_layout Itemize
+Replace Alef maqsûra with Yâ'
+\end_layout
+
+\begin_layout Itemize
+Replace all forms of Hamzä to independent Hamzä (
+\lang arabic_arabi
+ء
+\lang english
+).
+\end_layout
+
+\begin_layout Standard
+Then, the search engine processes all indexed words and process them the
+ same manner to compare them with the query words.
+ The list of all words with successful comparison will compound the new
+ query.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Search by triple (root, type, pattern): 
+\series default
+The general behavior of this propriety is that the user put a triple of
+ word properties so the search engine fetch in the index all the words that
+ correspond to those properties.
+\end_layout
+
 \begin_layout Subsection
 Suggestions
+\end_layout
+
+\begin_layout Standard
+A suggestion module, is broadly : take the query keywords and offer another
+ words as suggestions.
+ we had mentioned two features of suggestion:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Different Spellings: 
+\series default
+To offer a spell correction, we used n-gram dictionaries for Qur'anic words.
+ We didn't consider vocalization because it may rise some glitches: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Larger number of n-grams
+\end_layout
+
+\begin_layout Itemize
+Insignificant to have n-grams that start with vocalization marks
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Related Keywords: 
+\series default
+For this, we suggested to use an ontology that include all words with of
+ Qur'an their semantic relations where suggestion would be chosen on the
+ term of dependency.
+ 
 \end_layout
 
 \begin_layout Subsection
 Results Processing
 \end_layout
 
+\begin_layout Standard
+We passed the results by many phases of processing to improve their quality
+ and prepare them to send to interfaces.
+ Those phases were: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Results Processing.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Results processing phases
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+To translate
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Scoring: 
+\series default
+the search in Qur'an is not different in how the scoring must be done so
+ we had decided to choose simple TF*TDF or one of its derived algorithms
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "TF*TDF"
+description "term frequency - inverse document frequency"
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Sorting: 
+\series default
+we suggested those criteria to sort the results: score, natural order of
+ mus-haf, revelation order of ayahs, alphabetic order of text fields, and
+ numerical order of numeric fields.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Filtering:
+\series default
+ the objective of filtering is to eliminate some unneeded results based
+ a such criterion like : By surah.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Extending
+\series default
+: here, extra information would be attached to each ayah in results such
+ as: Tafssir, Translation to specified languages, recitation audio file,
+ etc.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Paginating
+\series default
+: in this phase, the results would be divided to a stream of pages to be
+ sent to interfaces page by page, because the user generally seek the first
+ results.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Highlighting
+\series default
+: for highlighting, we didn't lean on the simple method of exact word matching.
+ We had adopted a method that considers text processing for text-for-view
+ as in text-for-search.
+\end_layout
+
 \begin_layout Subsection
 Indexes Importing
 \end_layout
 
-\begin_layout Subsection
-Crawling
+\begin_layout Standard
+To accomplish the features specific to Quran (such as: Search in Uthmani
+ Script, Structural options, Statistical options, Thematic search and so
+ on), should be invoke other information from extra indexes that contains:
 \end_layout
 
-\begin_layout Standard
-.
+\begin_layout Itemize
+
+\series bold
+Ayah texts: 
+\series default
+include the different writings of ayah's text such as Uthmani or Standard
+ scripts.
+ 
 \end_layout
 
-\begin_layout Standard
-.
+\begin_layout Itemize
+
+\series bold
+Structural Information: 
+\series default
+include all structures made for mus-haf such as Ahzab, Manazil, Surahs and
+ so on.
 \end_layout
 
-\begin_layout Standard
-.
+\begin_layout Itemize
+
+\series bold
+Surah Information: 
+\series default
+include all what is attributed to the surah as an index key unit such as
+ surah's names, revelation place and time, and so on.
 \end_layout
 
-\begin_layout Standard
-.
+\begin_layout Itemize
+
+\series bold
+Statistical Information: 
+\series default
+include all statistics of surahs and ayahs such as word frequency.
 \end_layout
 
-\begin_layout Standard
-.
-\end_layout
+\begin_layout Itemize
 
-\begin_layout Standard
-.
-\end_layout
-
-\begin_layout Standard
-.
-\end_layout
-
-\begin_layout Standard
-.
-\end_layout
-
-\begin_layout Standard
-.
-\end_layout
-
-\begin_layout Standard
-................
-\end_layout
-
-\begin_layout Standard
-====
+\series bold
+Classification on Topics: 
+\series default
+include a categorization of ayahs on term of topic in a hierarchic manner.
 \end_layout
 
 \begin_layout Standard
