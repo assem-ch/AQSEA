@@ -109,10 +109,19 @@ addcontentsline{toc}{part}{General Conclusion}
 \end_layout
 
 \begin_layout Standard
-Notre objectif principal est de regarder à travers les fonctionnalités existante
-s de recherche dans le Coran: étudier les spécifications et les possibilités,
- en personnalisant les anciennes, et à trouver des nouvelles si nécessaire
- et si possible.
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+[ a refaire ]
+\end_layout
+
+\end_inset
+
+ Notre objectif principal est de regarder à travers les fonctionnalités
+ existantes de recherche dans le Coran: étudier les spécifications et les
+ possibilités, en personnalisant les anciennes, et à trouver des nouvelles
+ si nécessaire et si possible.
  Notre travail doit être basé sur des approches modernes de recherche d'informat
 ion pour obtenir une bonne stabilité et une recherche à grande vitesse.
 \end_layout

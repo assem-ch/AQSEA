@@ -206,13 +206,25 @@ textit{Linus Torvalds}}
 Introduction
 \end_layout
 
+\begin_layout Standard
+Our aim in implementation is to offer an open application programming interface.
+ That API must be well extensible to achieve all the search features we've
+ discussed in the previous chapter.
+ we'll talk -in this chapter- about the technical details of our implementations.
+ Also we list all the technologies that we've chosen in development and
+ the Qur'anic resources that we've used or we need.
+ Otherwise, we'll explain why we decided to open the source, what are the
+ advantages driving us to adopt a such approach.
+ 
+\end_layout
+
 \begin_layout Section
-Open Source Standards
+Why Open Source?
 \end_layout
 
 \begin_layout Standard
 \begin_inset Note Greyedout
-status open
+status collapsed
 
 \begin_layout Plain Layout
 change it to why we choose open source, be specific!
@@ -229,179 +241,11 @@ One of the fundamental differences between open source software and proprietary
  available with the software.
  Anyone should be able to download the source code, view it, and alter it
  as they see fit.
- With proprietary software, you generally cannot view or edit the source
- code.
 \end_layout
 
 \begin_layout Standard
-There are a number of advantages that open source code offers over closed
- source, the following sections examine the most important of these.
-\end_layout
-
-\begin_layout Paragraph
-Bug-fixing
-\end_layout
-
-\begin_layout Standard
-When a bug is spotted in proprietary software, the only people who can fix
- it are the original developers, as only they have access to the source
- code.
- Open source software is different.
- As a large number of users can access and change the code, bugs tend to
- be more visible and more rapidly corrected.
- One of the slogans of the open source movement is that ‘
-\emph on
-given enough eyeballs, all bugs are shallow
-\emph default
-’ [
-\noun on
-Eric Raymond
-\noun default
-, The Cathedral and the Bazaar].
-\end_layout
-
-\begin_layout Paragraph
-Security
-\end_layout
-
-\begin_layout Standard
-Access to source code makes it easier to detect security flaws in software,
- whether you are looking to fix them or exploit them.
- This would seem to suggest that open source code is less secure than closed
- source.
- However, this view is not universally supported.
- In practice, the skills and time required to find security flaws, work
- out how they can be exploited, and then initiate an attack, are more specialize
-d than the mundane debugging skills required to close exploits.
- Given the number of programmers who can access and edit open source code,
- compared with the few that are entitled to access closed source code, it
- should not come as a surprise that flaws in open source software tend to
- be fixed more rapidly, before serious damage can be done.
- Fixing holes in closed source software usually depends on the problem being
- of a high enough priority to command the immediate attention of the development
- team maintaining the code.
-\end_layout
-
-\begin_layout Paragraph
-Customization
-\end_layout
-
-\begin_layout Standard
-Open source applications may be customized by anyone with the requisite
- skill.
- Thus, open source software can be readily adapted to meet specific user
- needs.
- 
-\end_layout
-
-\begin_layout Standard
-For businesses or educational institutions, the ability to customize source
- code may enable improvements to the ‘best practice’ provided by default
- installations, therefore improving efficiency and possibly providing a
- competitive advantage.
-\end_layout
-
-\begin_layout Paragraph
-Translation
-\end_layout
-
-\begin_layout Standard
-With access to the source code it is easy to translate the language of the
- software interface.
- Large closed source commercial software vendors are usually unwilling to
- translate their products into less widely spoken languages, as the market
- for them would be too small to guarantee profit.
-\end_layout
-
-\begin_layout Paragraph
-Avoiding lock-in
-\end_layout
-
-\begin_layout Standard
-Organisations are said to be 'locked-in' to software products when the costs
- of switching to alternatives are prohibitively high.
-\end_layout
-
-\begin_layout Standard
-Proprietary software vendors can ‘lock’ users in to their products by ensuring
- that they are not readily compatible with potential rivals.
- Vendors may then increase the price of product upgrades or support without
- too great a risk of losing existing customers.
-\end_layout
-
-\begin_layout Paragraph
-Product discontinuation
-\end_layout
-
-\begin_layout Standard
-Commercial software vendors go bust or get bought up from time to time.
- When this happens, there is no guarantee that their software products will
- continue to be available, supported, or updated.
- This can result in users needing to switch products, which can be very
- expensive and difficult, especially if they were heavily ‘locked-in’ to
- their current product.
-\end_layout
-
-\begin_layout Standard
-Even with healthy companies, new releases often mean that older software
- and format versions are discontinued and no longer supported.
-\end_layout
-
-\begin_layout Standard
-With open source software, this danger is greatly reduced.
- As the source code is not 'owned' in the same way that proprietary source
- code is, it may be picked up and developed by anyone with an interest in
- a product's survival.
-\end_layout
-
-\begin_layout Paragraph
-Learning from examples
-\end_layout
-
-\begin_layout Standard
-Open source code provides an excellent resource from which to learn, and
- open source projects provide a practical environment in which to test skills.
- Just watching the development process can provide an education in itself.
- Choosing to submit code to an open source project, it will generally be
- checked and commented on by experienced programmers.
- Once you have convinced the project community that your code is of appropriate
- quality, you may be granted full committer rights yourself.
-\end_layout
-
-\begin_layout Paragraph
-Being part of a community
-\end_layout
-
-\begin_layout Standard
-By adopting open source software you become part of a community of users
- and developers who have an interest in working together to support each
- other and improve the software.
- The extent to which you engage with this community is up to you, but you
- may obtain the intangible benefits of goodwill if you do.
-\end_layout
-
-\begin_layout Standard
-Programmers, in particular, can benefit from belonging to an open source
- community.
- It can help them to establish reputation and respect, and gain valuable
- experience.
-\end_layout
-
-\begin_layout Paragraph
-Cost
-\end_layout
-
-\begin_layout Standard
-Many open source programs can be obtained at no cost or at a very low cost.
- This is often an important issue for individuals and in many cases this
- has been the main reason for an individual adopting a particular open source
- solution over a closed source alternative.
-\end_layout
-
-\begin_layout Standard
-However, other costs may arise: training, consulting, maintenance, etc.
- As a result, the total cost of ownership may not differ greatly between
- a closed source solution and an open source alternative for institutions
+There are a number of advantages lead us to open source, the following points
+ examine the most important of these
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Oss-watch"
@@ -409,7 +253,118 @@ key "Oss-watch"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Collaborative bug-fixing
+\series default
+: As a large number of users can access and change the code, bugs tend to
+ be more visible and more rapidly corrected.
+ One of the slogans of the open source movement is that ‘
+\emph on
+given enough eyeballs, all bugs are shallow
+\emph default
+’ 
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+[
+\noun on
+Eric Raymond
+\noun default
+, The Cathedral and the Bazaar]
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Fast security vulnerabilities detection
+\series default
+: Access to source code makes it easier and faster to detect security flaws
+ in software, whether you are looking to fix them or exploit them.
+ This would seem to suggest that open source code is less secure than closed
+ source.
+ However, this view is not universally supported.
+ Given the number of programmers who can access and edit open source code,
+ compared with the few that are entitled to access closed source code, it
+ should not come as a surprise that flaws in open source software tend to
+ be fixed more rapidly, before serious damage can be done.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Customization:
+\series default
+ Open source applications may be customized by anyone with the requisite
+ skill.
+ Thus, open source software can be readily adapted to meet specific needs.
+ For businesses or educational institutions, the ability to customize source
+ code may enable improvements to the ‘best practice’ provided by default
+ installations, therefore improving efficiency and possibly providing a
+ competitive advantage.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Translation & Localization :
+\series default
+ With access to the source code it is easy to translate the language of
+ the software interface.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Development discontinuation: 
+\series default
+With open source software, this danger of discontinuation is greatly reduced.
+ As the source code is not 'owned' in the same way that proprietary source
+ code is, it may be picked up and developed by anyone with an interest in
+ a product's survival.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Learning from examples:
+\series default
+ Open source code provides an excellent resource from which to learn, and
+ open source projects provide a practical environment in which to test skills.
+ Just watching the development process can provide an education in itself.
  
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Being part of a community:
+\series default
+ By adopting open source software you become part of a community of users
+ and developers who have an interest in working together to support each
+ other and improve the software.
+ The extent to which you engage with this community is up to you, but you
+ may obtain the intangible benefits of goodwill if you do.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Cost:
+\series default
+ Many open source programs can be obtained at no cost or at a very low cost.
+ This is often an important issue for individuals and in many cases this
+ has been the main reason for an individual adopting a particular open source
+ solution over a closed source alternative.
 \end_layout
 
 \begin_layout Subsection
@@ -417,7 +372,17 @@ License : AGPL
 \end_layout
 
 \begin_layout Standard
-The GNU Affero General Public License is a modified version of the ordinary
+For licensing our API, we decide to choose one of the GNU public licenses
+ which is the GNU Affero General Public License (AGPL
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "AGPL"
+description "Affero General Public License"
+
+\end_inset
+
+).
+ The GNU Affero General Public License is a modified version of the ordinary
  GNU GPL version 3.
  It has one added requirement: if you run the program on a server and let
  other users communicate with it there, your server must also allow them
@@ -428,66 +393,8 @@ The GNU Affero General Public License is a modified version of the ordinary
 
 \begin_layout Standard
 The purpose of the GNU Affero GPL is to prevent a problem that affects developer
-s of free programs that are often used on servers.
-\end_layout
-
-\begin_layout Standard
-Suppose you develop and release a free program under the ordinary GNU GPL.
- If developer D modifies the program and releases it, the GPL requires him
- to distribute his version under the GPL too.
- Thus, if you get a copy of his version, you are free to incorporate some
- or all of his changes into your own version.
-\end_layout
-
-\begin_layout Standard
-But suppose the program is mainly useful on servers.
- When D modifies the program, he might very likely run it on his own server
- and never release copies.
- Then you would never get a copy of the source code of his version, so you
- would never have the chance to include his changes in your version.
- You may not like that outcome.
-\end_layout
-
-\begin_layout Standard
-Using the GNU Affero GPL avoids that outcome.
- If D runs his version on a server that everyone can use, you too can use
- it.
- Assuming he has followed the license requirement to let the server's users
- download the source code of his version, you can do so, and then you can
- incorporate his changes into your version.
- (If he hasn't followed it, you have your lawyer complain to him.)
-\end_layout
-
-\begin_layout Standard
-Both the ordinary GNU GPL, version 3, and the GNU Affero GPL have text allowing
- you to link together modules under these two licenses in one program.
-\end_layout
-
-\begin_layout Standard
-One problem which the GNU Affero GPL does not address is the problem of
- Software as a Service (SaaS).
- It is impossible, as far as we know, to address this problem with a software
- license.
- [1]
-\end_layout
-
-\begin_layout Standard
-SaaS means the use of someone's network server, by others, to do work which
- is their own computing.
- They have to send their data to the server, which does their computing
- for them, and sends the results back to them.
- SaaS is a problem because the users cannot control the computing which
- the server does for them.
-\end_layout
-
-\begin_layout Standard
-If some program on this server is released under the GNU Affero GPL, it
- requires that the users have a way to download the corresponding source
- of that program.
- That is good, but having this source code does not give them control over
- the computing the server does for them.
- It also does not tell them what other software may be running on that server,
- examining or changing their data in other ways.
+s of free programs that are often used on servers and since our API is considere
+d among this type of software we have to choose this license.
 \end_layout
 
 \begin_layout Subsection
@@ -496,6 +403,19 @@ Revision System : Git
 
 \begin_layout Section
 Technologies used for development
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+to translate & clean
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -529,70 +449,32 @@ Python is a remarkably powerful dynamic programming language that is used
 \end_layout
 
 \begin_layout Itemize
-very clear, readable syntax 
-\end_layout
 
-\begin_layout Itemize
-strong introspection capabilities
-\end_layout
-
-\begin_layout Itemize
-intuitive object orientation 
-\end_layout
-
-\begin_layout Itemize
-natural expression of procedural code 
-\end_layout
-
-\begin_layout Itemize
-full modularity, supporting hierarchical packages 
-\end_layout
-
-\begin_layout Itemize
-exception-based error handling 
-\end_layout
-
-\begin_layout Itemize
-very high level dynamic data types 
-\end_layout
-
-\begin_layout Itemize
-extensive standard libraries and third party modules for virtually every
- task 
-\end_layout
-
-\begin_layout Itemize
-extensions and modules easily written in C, C++ 
-\end_layout
-
-\begin_layout Itemize
-embeddable within applications as a scripting interface.
-\end_layout
-
-\begin_layout Paragraph
-Python is powerful and fast
-\end_layout
-
-\begin_layout Standard
-Fans of Python use the phrase "batteries included" to describe the standard
- library, which covers everything from asynchronous processing to zip files.
+\series bold
+Python is powerful and fast: 
+\series default
+Fans of Python use the phrase 
+\emph on
+"batteries included"
+\emph default
+ to describe the standard library, which covers everything from asynchronous
+ processing to zip files.
  The language itself is a flexible powerhouse that can handle practically
  any problem domain.
  It's possible in Python to build a web server in three lines of code.
  Python lets the user to write the code he needs, quickly.
- And, thanks to a highly optimized byte compiler and support libraries,
- Python code runs more than fast enough for most applications.
  
 \end_layout
 
-\begin_layout Paragraph
-Python plays well with others
-\end_layout
+\begin_layout Itemize
 
-\begin_layout Standard
+\series bold
+Python plays well with others: 
+\series default
 Python can integrate with COM, .NET, and CORBA objects.
 \end_layout
 
+\begin_deeper
 \begin_layout Itemize
 For Java libraries, developers can use Jython, an implementation of Python
  for the Java Virtual Machine.
@@ -603,58 +485,37 @@ For .NET, developers can use IronPython , Microsoft's new implementation
  of Python for .NET, or Python for .NET.
 \end_layout
 
-\begin_layout Standard
-Python is also supported for the Internet Communications Engine (ICE) and
- many other integration technologies.
-\end_layout
+\end_deeper
+\begin_layout Itemize
 
-\begin_layout Standard
-To take the performance advantage of low-level code, the developer can write
- extension modules in C or C++, or wrap existing code with SWIG or Boost.
- Python.
- Wrapped modules appear to program exactly like native Python code.
- That's language integration made easy.
- Also in the opposite route, the developer can embed Python in his own applicati
-on.
-\end_layout
-
-\begin_layout Paragraph
-Python runs everywhere
-\end_layout
-
-\begin_layout Standard
-Python is available for all major operating systems: Windows, Linux/Unix,
+\series bold
+Python runs everywhere:
+\series default
+ Python is available for all major operating systems: Windows, Linux/Unix,
  OS/2, Mac, Amiga, among others.
  There are even versions that run on .NET, the Java virtual machine, and
  Nokia Series 60 cell phones.
  the same source code will run unchanged across all implementations.
 \end_layout
 
-\begin_layout Paragraph
-Python is friendly and easy to learn
-\end_layout
+\begin_layout Itemize
 
-\begin_layout Standard
-The Python newsgroup is known as one of the friendliest around.
- The avid developer and user community maintains a wiki, hosts international
- and local conferences, runs development sprints, and contributes to online
- code repositories.
-\end_layout
-
-\begin_layout Standard
-Python also comes with complete documentation, both integrated into the
- language and as separate web pages.
+\series bold
+Python is friendly and easy to learn: 
+\series default
+Python comes with complete documentation, both integrated into the language
+ and as separate web pages.
  Online tutorials target both the seasoned programmer and the newcomer.
- All are designed to make you productive quickly.
+ All are designed to make developers productive quickly.
  The availability of first-rate books completes the learning package.
 \end_layout
 
-\begin_layout Paragraph
-Python is Open
-\end_layout
+\begin_layout Itemize
 
-\begin_layout Standard
-The Python implementation is under an open source license that makes it
+\series bold
+Python is Open:
+\series default
+ The Python implementation is under an open source license that makes it
  freely usable and distributable, even for commercial use.
  The Python license is administered by the Python Software Foundation
 \begin_inset CommandInset citation
@@ -668,6 +529,19 @@ key "Python"
 
 \begin_layout Subsection
 Whoosh Search API
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+To translate
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -798,6 +672,19 @@ JSON
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+Translate & clean
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "JSON"
@@ -853,196 +740,7 @@ key "Json.org"
 \end_layout
 
 \begin_layout Subsection
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-to remove, be only in low level
-\end_layout
-
-\begin_layout Subsection
-JQuery
-\end_layout
-
-\begin_layout Plain Layout
-jQuery is a cross-browser JavaScript library designed to simplify the client-sid
-e scripting of HTML.
- It was released in January 2006 at BarCamp NYC by 
-\noun on
-John Resig
-\noun default
-.
- Used by over 46% of the 10,000 most visited websites, jQuery is the most
- popular JavaScript library in use today.
-\end_layout
-
-\begin_layout Plain Layout
-jQuery is free, open source software, dual-licensed under the MIT License
- and the GNU General Public License, Version 2.
-\end_layout
-
-\begin_layout Plain Layout
-jQuery's syntax is designed to make it easier to navigate a document, select
- DOM elements, create animations, handle events, and develop Ajax applications.
- jQuery also provides capabilities for developers to create plug-ins on
- top of the JavaScript library.
- This enables developers to create abstractions for low-level interaction
- and animation, advanced effects and high-level, theme-able widgets.
- The modular approach to the jQuery framework allows the creation of powerful
- and dynamic web pages and web applications.
- 
-\end_layout
-
-\begin_layout Plain Layout
-jQuery contains the following features: 
-\end_layout
-
-\begin_layout Itemize
-DOM element selections using the cross-browser open source selector engine
- Sizzle, a spin-off out of the jQuery project
-\end_layout
-
-\begin_layout Itemize
-DOM traversal and modification (including support for CSS 1-3) 
-\end_layout
-
-\begin_layout Itemize
-Events
-\end_layout
-
-\begin_layout Itemize
-CSS manipulation
-\end_layout
-
-\begin_layout Itemize
-Effects and animations 
-\end_layout
-
-\begin_layout Itemize
-Ajax 
-\end_layout
-
-\begin_layout Itemize
-Extensibility through plug-ins 
-\end_layout
-
-\begin_layout Itemize
-Utilities - such as browser version and the each function.
- 
-\end_layout
-
-\begin_layout Itemize
-Cross-browser support 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "jQuery"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Django
-\end_layout
-
-\begin_layout Plain Layout
-Django is an open source web application framework, written in Python, which
- follows the model-view-controller architectural pattern.
- It was released publicly under a BSD license in July 2005;
-\end_layout
-
-\begin_layout Plain Layout
-Django's primary goal is to ease the creation of complex, database-driven
- websites.
- Django emphasizes reusability and "pluggability" of components, rapid developme
-nt, and the principle of DRY (Don't Repeat Yourself).
- Python is used throughout, even for settings, files, and data models.
- 
-\end_layout
-
-\begin_layout Plain Layout
-Django also provides an optional administrative CRUD (create, read, update
- and delete) interface that is generated dynamically through introspection
- and configured via admin models.
- 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-Components 
-\end_layout
-
-\begin_layout Standard
-The core Django MVC framework consists of an object-relational mapper which
- mediates between data models (defined as Python classes) and a relational
- database ("Model"); a system for processing requests with a web templating
- system ("View") and a regular-expression-based URL dispatcher ("Controller").
-\end_layout
-
-\begin_layout Standard
-Also included in the core framework are: 
-\end_layout
-
-\begin_layout Itemize
-A lightweight, standalone web server for development and testing.
- 
-\end_layout
-
-\begin_layout Itemize
-A form serialization and validation system which can translate between HTML
- forms and values suitable for storage in the database.
- 
-\end_layout
-
-\begin_layout Itemize
-A caching framework which can use any of several cache methods.
- 
-\end_layout
-
-\begin_layout Itemize
-Support for middleware classes which can intervene at various stages of
- request processing and carry out custom functions.
- 
-\end_layout
-
-\begin_layout Itemize
-An internal dispatcher system which allows components of an application
- to communicate events to each other via pre-defined signals.
- 
-\end_layout
-
-\begin_layout Itemize
-An internationalization system, including translations of Django's own component
-s into a variety of languages.
- 
-\end_layout
-
-\begin_layout Itemize
-A serialization system which can produce and read XML and/or JSON representation
-s of Django model instances.
- 
-\end_layout
-
-\begin_layout Itemize
-A system for extending the capabilities of the template engine.
- 
-\end_layout
-
-\begin_layout Itemize
-An interface to Python's built-in unit test framework
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Django"
-
-\end_inset
-
-.
- 
+Alfanous Project
 \end_layout
 
 \begin_layout Section
@@ -1122,7 +820,7 @@ Linux Daemon
 \end_layout
 
 \begin_layout Subsection
-Django-Jquery web interface
+Django - Jquery web interface
 \end_layout
 
 \begin_layout Subsection

@@ -22,7 +22,7 @@ fixltx2e
 initials
 \end_modules
 \maintain_unincluded_children false
-\language french
+\language english
 \language_package default
 \inputencoding auto
 \fontencoding global
@@ -136,7 +136,7 @@ setcounter{page}{132}
 \end_layout
 
 \begin_layout Chapter
-Tests et Evaluation
+Tests and Evaluation
 \end_layout
 
 \begin_layout Standard
