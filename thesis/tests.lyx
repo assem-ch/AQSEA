@@ -181,6 +181,10 @@ Introduction
 \end_layout
 
 \begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
 Test Rapidity using 
 \begin_inset Quotes sld
 \end_inset
@@ -956,7 +960,7 @@ Implementation Ratio
 \begin_inset Float table
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Tabular
