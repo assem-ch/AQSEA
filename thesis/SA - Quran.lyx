@@ -14524,23 +14524,103 @@ key "Hadj08"
 \end_layout
 
 \begin_layout Section
-Qur'anic Search Engines
+Qur'anic Search Tools 
 \end_layout
 
 \begin_layout Standard
-[Introduction]
+Here we list some softwares/websites that offer the search in Quran as one
+ of their main options.
+ Starting with the name of each one with a little description including
+ type and licensing, creator, year of creation, Features , Cons , Developing
+ status.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Alawfa (
+\lang arabic_arabi
+الأوفى
+\lang english
+): 
+\series default
+is a website that offers search in Quran and was offering search in Hadith
+ and Islamic contents before dropped out lately.
+ Made the first time by mass-soft company and Published on 2003
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+checked by WayBackMachine
+\end_layout
+
+\end_inset
+
+.
+ The development of Alawfa was stuck many times during its career.
+ The last time was revived is nearly January 2012 where its developers add
+ new features and focus only on Quran.
+ Currently, Alawfa offers only exact word search but partially improved
+ by the feature of auto-completion for user keywords and search within a
+ surah.
+ It is based on non-vocalized Standard Qur'anic text for search but provides
+ for view the vocalized standard text and the Uthmani text as images.
+ Each result includes recitation, Tafssir, Translation to many languages,
+ topics classification and a link to locate the similar ayahs.
+ Alawfa calculate some statistics like number of words and letters within
+ Ayah and Surah.
+ However, those statistics seems badly calculated since the space is considered
+ as letter and this is totally wrong.
+ It offers the highlight but limited to exact matches.
+ Alawfa is closed source, free to use, actively developed recently.
+ 
+\lang french
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Alawfa"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-eachone-> Description, name, type, licents meaning of name, year of creation,
- creator , Features , Cons , Developing status.
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/Alawfa-preview.png
+	scale 75
+
+\end_inset
+
+
 \end_layout
 
-\begin_layout Standard
-Alawfa
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Preview of Alawfa website
 \end_layout
 
-\begin_layout Standard
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\lang arabic_arabi
 المنقب القرآني
 \end_layout
 
