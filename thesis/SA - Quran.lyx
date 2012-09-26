@@ -14531,11 +14531,11 @@ Qur'anic Search Tools
 Here we list some softwares/websites that offer the search in Quran as one
  of their main options.
  Starting with the name of each one with a little description including
- type and licensing, creator, year of creation, Features , Cons , Developing
+ type and licensing, author, year of creation, Features , Cons , Developing
  status.
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Subsection
 
 \series bold
 Alawfa (
@@ -14543,9 +14543,11 @@ Alawfa (
 الأوفى
 \lang english
 ): 
-\series default
-is a website that offers search in Quran and was offering search in Hadith
- and Islamic contents before dropped out lately.
+\end_layout
+
+\begin_layout Standard
+Alawfa is an Arabic website that offers search in Quran and was offering
+ search in Hadith and Islamic contents before dropped out lately.
  Made the first time by mass-soft company and Published on 2003
 \begin_inset Foot
 status collapsed
@@ -14572,7 +14574,7 @@ checked by WayBackMachine
  However, those statistics seems badly calculated since the space is considered
  as letter and this is totally wrong.
  It offers the highlight but limited to exact matches.
- Alawfa is closed source, free to use, actively developed recently.
+ Alawfa is closed source, actively developed recently.
  
 \lang french
 
@@ -14594,7 +14596,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename figures/Alawfa-preview.png
-	scale 75
+	scale 50
 
 \end_inset
 
@@ -14605,7 +14607,7 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Preview of Alawfa website
+Preview of Alawfa website: www.alawfa.com
 \end_layout
 
 \end_inset
@@ -14616,28 +14618,198 @@ Preview of Alawfa website
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+
+\series bold
+Al-Monaqeb-Alqurany (
+\lang arabic_arabi
+المنقب القرآني
+\lang english
+)
+\series default
+: 
+\end_layout
+
+\begin_layout Standard
+Al-Monaqeb-Alqurany
+\series bold
+ 
+\series default
+is a search-in-quran web-page included in the Arabic website
+\begin_inset CommandInset href
+LatexCommand href
+target " www.holyquran.net"
+
+\end_inset
+
+.
+ It is published the first time on 2004
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+checked by WayBackMachine
+\end_layout
+
+\end_inset
+
+ and it's not developed actively the last years.
+ It offers a board for advanced search options that contains many useful
+ options
+\lang french
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Almonakkeb"
+
+\end_inset
+
+
+\lang english
+ : 
 \end_layout
 
 \begin_layout Itemize
+The choice to search either with exact words, part of words or roots.
+\end_layout
 
+\begin_layout Itemize
+An English transliteration.
+ However, this is a self-made non-standard transliteration.
+ For example, the word 
 \lang arabic_arabi
-المنقب القرآني
+سبحان
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ is written as
+\family default
+\series default
+\shape default
+\size default
+\emph on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ seen-ba-hha-alif-noon
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+.
+\end_layout
+
+\begin_layout Itemize
+Ignore/Consider Alef spelling errors 
+\end_layout
+
+\begin_layout Itemize
+Limit the search in an interval of ayahs and surahs 
 \end_layout
 
 \begin_layout Standard
+The highlight used is limited to exact match.
+ Each result includes an English translation and a Tafssir.
+ There is only English translation and All available Tafassir are from a
+ Shi'ite source.
+ Al-Monaqeb is closed source with inactive development currently.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Almonaqeb-alQurany-preview.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Preview of Al Monaqeb Alqurany  
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\series bold
 Quranic Researcher
 \end_layout
 
-\begin_layout Standard
+\begin_layout Subsection
+
+\series bold
 qurancomplex search
 \end_layout
 
-\begin_layout Standard
+\begin_layout Subsection
+
+\series bold
 quranologie
 \end_layout
 
-\begin_layout Standard
+\begin_layout Subsection
+
+\series bold
 Tanzil
+\end_layout
+
+\begin_layout Subsection
+Zekr
+\end_layout
+
+\begin_layout Description
+is a desktop application aimed to be an open platform Quran study tool for
+ simply browsing and researching on Quran and its translations.
+ It offers many sorting criteria like Relevance, Natural order, Revelation
+ order, Aya length.
+ Also, it offers browsing with Mushaf Structures: Hizb number, Surah name,.
+ It search using the exact word, the part of word, the Arabic root
 \end_layout
 
 \begin_layout Section
