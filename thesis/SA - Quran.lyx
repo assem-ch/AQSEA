@@ -14542,7 +14542,7 @@ Alawfa (
 \lang arabic_arabi
 الأوفى
 \lang english
-): 
+)
 \end_layout
 
 \begin_layout Standard
@@ -14628,8 +14628,6 @@ Al-Monaqeb-Alqurany (
 المنقب القرآني
 \lang english
 )
-\series default
-: 
 \end_layout
 
 \begin_layout Standard
@@ -14870,13 +14868,79 @@ Preview of Quran Complex Search page
 \begin_layout Subsection
 
 \series bold
-Qur'anic Researcher
+Quranic Researcher (
+\series default
+\lang arabic_arabi
+الباحث القرآني
+\series bold
+\lang english
+)
+\end_layout
+
+\begin_layout Standard
+Quranic Researcher is a new website that mainly search in Quran and Sunnah.
+ Created on 2011 by Al-GLWAN company.
+ It is very similar to Al-Monaqeb-Alqurany, it has all the options provided
+ and in an alike manner.
+ There is a strong possibility that they're based on the same code base.
+ Unfortunately, we could do nothing to prove that since they are both closed
+ source.
+ By the way, Quranic Researcher has more extra features such as printing,
+ saving and sharing options for each result.
+ That project is closed source, free to use but not ad-free.
+ It's under an active development but looks like its no more focusing on
+ Quran as a main search need.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Quranic Researcher - preview.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Preview of Quranic Researcher (www.quranicresearcher.com)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
 
 \series bold
-Quranologie
+Quranologie (
+\series default
+\lang arabic_arabi
+علم القرآن
+\series bold
+\lang english
+)
 \end_layout
 
 \begin_layout Subsection
