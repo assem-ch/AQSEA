@@ -14778,19 +14778,109 @@ Preview of Al Monaqeb Alqurany
 \begin_layout Subsection
 
 \series bold
-Quranic Researcher
+Quran complex search service
+\end_layout
+
+\begin_layout Standard
+This is a search service provided by the official website of King Fahd Complex
+ for printings of Holy Quran.
+ The website is multi-language .
+ It was added to the website about 2004.
+ Quran Complex provides only exact words search either fetch all words or
+ some words.
+ Unlike of the previous listed search tools, that one has many Qur'anic
+ resources to search in and that's good.
+ Those resources are: 
+\end_layout
+
+\begin_layout Itemize
+Makkan and Medinan
+\end_layout
+
+\begin_layout Itemize
+Quran Grammar Analysis
+\end_layout
+
+\begin_layout Itemize
+Tafassir
+\end_layout
+
+\begin_layout Itemize
+Translations
+\end_layout
+
+\begin_layout Itemize
+Abrogating and abrogated Ayahs
+\end_layout
+
+\begin_layout Itemize
+Gharib al-Quran
+\end_layout
+
+\begin_layout Itemize
+Revelation causes
+\end_layout
+
+\begin_layout Standard
+The problem is that the search in those resources is running completely
+ independent whereas it's more helpful if combined.
+ For example, showing more information in the results of Quran search because
+ the current view is minimal: Surah name, Ayah number, Ayah text.
+ That project is closed source and it's under a slow development.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/QuranComplex-Preview.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Preview of Quran Complex Search page
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
 
 \series bold
-qurancomplex search
+Qur'anic Researcher
 \end_layout
 
 \begin_layout Subsection
 
 \series bold
-quranologie
+Quranologie
+\end_layout
+
+\begin_layout Subsection
+Quran.com
 \end_layout
 
 \begin_layout Subsection
