@@ -14531,7 +14531,7 @@ Qur'anic Search Tools
 Here we list some softwares/websites that offer the search in Quran as one
  of their main options.
  Starting with the name of each one with a little description including
- type and licensing, author, year of creation, Features , Cons , Developing
+ type and licensing, author, year of creation, features , cons , developing
  status.
 \end_layout
 
@@ -14733,6 +14733,16 @@ The highlight used is limited to exact match.
  Shi'ite source.
  Al-Monaqeb is closed source with inactive development currently.
  
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+ref
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -14825,6 +14835,16 @@ The problem is that the search in those resources is running completely
  For example, showing more information in the results of Quran search because
  the current view is minimal: Surah name, Ayah number, Ayah text.
  That project is closed source and it's under a slow development.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+ref
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -14891,13 +14911,23 @@ Quranic Researcher is a new website that mainly search in Quran and Sunnah.
  It's under an active development but looks like its no more focusing on
  Quran as a main search need.
  
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+ref
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -14943,18 +14973,100 @@ Quranologie (
 )
 \end_layout
 
+\begin_layout Standard
+Quranologie is a website offers the search in Quran as the main function.
+ It was created on 2011 by 
+\noun on
+Abadou Fares
+\noun default
+ as a personal effort.
+ Compared to the previous list search tools, Quranologie has a faster fetching
+ process.
+ It searches only with part of words and that raises some problems when
+ the user want to search a short word that appears broadly as a part of
+ words such as 
+\lang arabic_arabi
+من
+\lang english
+.
+ Quranologie has the auto completion feature and offers a possibility to
+ search within a specific surah.
+ It provides the frequency of query matches as well as the query keywords
+ frequencies one by one.
+ Each result include revelation place, recitation, new queries links to
+ get to translations, a new query link to get to Tafssir and statistics
+ (words/letters number).
+ A problem with Quranologie is that his query system is very ambiguous because
+ it accepted natural questions but in a very restricted way.
+ That makes the user be confused how to form his questions.
+ Just to notice, the questions in Quranologie has no relation to semantic
+ approach; they are just an human-easy-read search query.
+\end_layout
+
+\begin_layout Standard
+The project is closed source and it is still under an active development.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+ref
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Quranologie Preview.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Preview of Quranologie (quranologie.com)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
-Quran.com
+Corpus.Quran.com [optional]
 \end_layout
 
 \begin_layout Subsection
 
 \series bold
-Tanzil
+Tanzil [optional]
 \end_layout
 
 \begin_layout Subsection
-Zekr
+Zekr [optional]
 \end_layout
 
 \begin_layout Description
