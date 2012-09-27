@@ -14596,7 +14596,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename figures/Alawfa-preview.png
-	scale 50
+	scale 40
 
 \end_inset
 
@@ -14857,7 +14857,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename figures/QuranComplex-Preview.png
-	scale 50
+	scale 45
 
 \end_inset
 
@@ -14927,13 +14927,13 @@ ref
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename figures/Quranic Researcher - preview.png
-	scale 50
+	scale 45
 
 \end_inset
 
@@ -14993,7 +14993,7 @@ Abadou Fares
  search within a specific surah.
  It provides the frequency of query matches as well as the query keywords
  frequencies one by one.
- Each result include revelation place, recitation, new queries links to
+ Each result includes revelation place, recitation, new queries links to
  get to translations, a new query link to get to Tafssir and statistics
  (words/letters number).
  A problem with Quranologie is that his query system is very ambiguous because
@@ -15021,13 +15021,13 @@ ref
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename figures/Quranologie Preview.png
-	scale 50
+	scale 45
 
 \end_inset
 
@@ -15056,17 +15056,117 @@ Preview of Quranologie (quranologie.com)
 \end_layout
 
 \begin_layout Subsection
-Corpus.Quran.com [optional]
+Quranic Corpus Word-by-Word Search
+\end_layout
+
+\begin_layout Standard
+We've already talked about Quranic Arabic Corpus as a Qur'an index (See
+ the Section: 
+\emph on
+Qur'an Indexes
+\emph default
+, Subsection: 
+\emph on
+Projects of building indexes
+\emph default
+).
+ Quranic Arabic Corpus have a web interface to demonstrate his features.
+ This interface has a search service and that's what we'll discuss here.
+ Created on 2009
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+checked by WayBackMachine
+\end_layout
+
+\end_inset
+
+ by 
+\noun on
+Kais Dukes
+\noun default
+ as a part of his PhD in Leeds university.
+ It focuses on the morphological features and targets Qur'anic words as
+ a unit of search unlike the previous listed search tools.
+ It provides the search with Arabic words, English words and Buckwalter
+ transliteration.
+ The user can choose either he want to search for a word , a substring or
+ an exact phrase.
+ Moreover, the user may search using roots, stems and lemmas.
+ Also, filtering words pursuant to their Part-Of-Speech (POS
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "POS"
+description "Part Of Speech"
+
+\end_inset
+
+) And/Or their pattern.
+ The view of results is minimal: surah id, ayah id, word id, word translation,
+ ayah text.
+ The highlight is perfect , it works well with vocalization and English
+ words search.
+ Quranic Corpus W-b-W search has a semantic feature which is retrieving
+ semantically-related words based on a concept ontology.
+\end_layout
+
+\begin_layout Standard
+The interface is closed source but Quranic corpus data is open with GPL
+ license.
+ The project is still active.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/QAC WbW -  preview.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Preview of Qur'anic Arabic Corpus Word By Word search 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
 
 \series bold
-Tanzil [optional]
+Tanzil 
 \end_layout
 
 \begin_layout Subsection
-Zekr [optional]
+Alfanous 
+\end_layout
+
+\begin_layout Subsection
+Zekr 
 \end_layout
 
 \begin_layout Description
