@@ -14585,6 +14585,18 @@ key "Alawfa"
 \end_inset
 
 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\lang french
+http://www.alawfa.com/
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -14596,7 +14608,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename figures/Alawfa-preview.png
-	scale 30
+	scale 40
 
 \end_inset
 
@@ -14737,7 +14749,7 @@ The highlight used is limited to exact match.
 status open
 
 \begin_layout Plain Layout
-ref
+http://www.holyquran.net/search/sindex.php
 \end_layout
 
 \end_inset
@@ -14839,7 +14851,7 @@ The problem is that the search in those resources is running completely
 status open
 
 \begin_layout Plain Layout
-ref
+http://www.qurancomplex.com/
 \end_layout
 
 \end_inset
@@ -14915,7 +14927,7 @@ Quranic Researcher is a new website that mainly search in Quran and Sunnah.
 status open
 
 \begin_layout Plain Layout
-ref
+http://www.quranicresearcher.com/
 \end_layout
 
 \end_inset
@@ -15009,7 +15021,7 @@ The project is closed source and it is still under an active development.
 status open
 
 \begin_layout Plain Layout
-ref
+http://quranologie.com/
 \end_layout
 
 \end_inset
@@ -15115,6 +15127,16 @@ description "Part Of Speech"
 The interface is closed source but Quranic corpus data is open with GPL
  license.
  The project is still active.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+http://corpus.quran.com/
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -15165,6 +15187,13 @@ Tanzil (
 \series bold
 \lang english
 )
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Tanzil-(تنزيل)"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -15179,30 +15208,204 @@ Tanzil is a Qur'anic project aimed at providing a highly-verified precise
  word or a part of word.
  Also the user can partially vocalize his keywords, use logical relations
  (And, Or, Not) and Wildcards ( ? for one letter, * for many letters).
+ Tanzil automatically matches similar letters.
+ For example, the search word 
+\lang arabic_arabi
+نعمت
+\lang english
+ matches both 
+\lang arabic_arabi
+نعمت
+\lang english
+ and 
+\lang arabic_arabi
+نعمة
+\lang english
+.
  Results is shown in minimal view: Ayah text, Ayah id, Surah name.
+ The highlighting process is ideal.
  Clicking each result leads to a view that has the same form of Mus-haf
  where the position of ayah in Mus-haf is obvious.
+ Tanzil is closed source and still under active development.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Tanzil.net
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-Tanzil is closed source and still under active development.
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Tanzil Preview.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Preview of Tanzil
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
-Alfanous 
+Zekr (
+\lang arabic_arabi
+ذكر
+\lang english
+)
 \end_layout
 
-\begin_layout Subsection
-Zekr 
+\begin_layout Standard
+Zekr is an open source Quranic desktop application.
+ It is an open platform Quran study tool for browsing and researching on
+ the Quran.
+ Zekr is a Quran-based project, planned to be a universal, open source,
+ and cross-platform application to perform most of the usual refers to the
+ Quran, according to the project website.
+ The first release was in January 2005 and was developed by 
+\noun on
+Mohsen Saboorian
+\noun default
+.
+ It has currently releases for Windows, Linux, Mac and there are lot of
+ contributors working in the different levels of development.
+ Zekr is considered as the original source of the Quran's translations that
+ are used broadly in Qur'anic applications.
 \end_layout
 
-\begin_layout Description
-is a desktop application aimed to be an open platform Quran study tool for
- simply browsing and researching on Quran and its translations.
- It offers many sorting criteria like Relevance, Natural order, Revelation
- order, Aya length.
- Also, it offers browsing with Mushaf Structures: Hizb number, Surah name,.
- It search using the exact word, the part of word, the Arabic root
+\begin_layout Standard
+Zekr has two approaches of search: 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Basic Search
+\series default
+: uses Tanzil's search method that is to create a regular expression from
+ the user's input query (see Tanzil 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Tanzil-(تنزيل)"
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Advanced Search
+\series default
+: uses Lucene full-text search library.
+ It supports all sorts of queries Lucene has: Wildcards, Range, Boosting,
+ Fuzzy queries, Boolean operators, Grouping, etc.
+ 
+\end_layout
+
+\begin_layout Standard
+Users can limit the search only to a scope of ayahs and can search in translatio
+ns.
+ Zekr provides many sorting options: Relevance, Natural order (Mus-haf),
+ Revelation order, Aya length.
+ Each result contains translation and recitation added to the minimal informatio
+n: Ayah text, Ayah id and Surah name.
+ The highlight looks ideal.
+\end_layout
+
+\begin_layout Standard
+Zekr is open source licensed under GPLv2.
+ It is still under active development.
+ Main programming language used by it is Java.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Zekr.org
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Zekr preview.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Preview of Zekr Application
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Alfanous : the same idea! for wikipedia and to publish comparaison
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
