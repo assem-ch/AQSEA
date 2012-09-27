@@ -14596,7 +14596,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename figures/Alawfa-preview.png
-	scale 40
+	scale 30
 
 \end_inset
 
@@ -15158,7 +15158,34 @@ Preview of Qur'anic Arabic Corpus Word By Word search
 \begin_layout Subsection
 
 \series bold
-Tanzil 
+Tanzil (
+\series default
+\lang arabic_arabi
+تنزيل
+\series bold
+\lang english
+)
+\end_layout
+
+\begin_layout Standard
+Tanzil is a Qur'anic project aimed at providing a highly-verified precise
+ Quran text.
+ It has a web application for browsing the Quran and provides search as
+ a secondary functionality.
+ Founded on 2007 by Hamid Zarrabi - Zadeh.
+ We'll talk only about the features related to search.
+ Tanzil offer browsing the Quran by Surah, Juz, Page.
+ The same to the most of the search tools, the user can search using exact
+ word or a part of word.
+ Also the user can partially vocalize his keywords, use logical relations
+ (And, Or, Not) and Wildcards ( ? for one letter, * for many letters).
+ Results is shown in minimal view: Ayah text, Ayah id, Surah name.
+ Clicking each result leads to a view that has the same form of Mus-haf
+ where the position of ayah in Mus-haf is obvious.
+\end_layout
+
+\begin_layout Standard
+Tanzil is closed source and still under active development.
 \end_layout
 
 \begin_layout Subsection
