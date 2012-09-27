@@ -340,7 +340,7 @@ As graphical language from a
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "GUI"
-description "graphical user interface"
+description "Graphical User Interface"
 
 \end_inset
 

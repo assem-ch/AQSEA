@@ -14576,27 +14576,6 @@ checked by WayBackMachine
  It offers the highlight but limited to exact matches.
  Alawfa is closed source, actively developed recently.
  
-\lang french
-
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Alawfa"
-
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\lang french
-http://www.alawfa.com/
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -14667,18 +14646,7 @@ checked by WayBackMachine
 
  and it's not developed actively the last years.
  It offers a board for advanced search options that contains many useful
- options
-\lang french
-
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Almonakkeb"
-
-\end_inset
-
-
-\lang english
- : 
+ options : 
 \end_layout
 
 \begin_layout Itemize
@@ -14745,16 +14713,6 @@ The highlight used is limited to exact match.
  Shi'ite source.
  Al-Monaqeb is closed source with inactive development currently.
  
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-http://www.holyquran.net/search/sindex.php
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -14847,16 +14805,6 @@ The problem is that the search in those resources is running completely
  For example, showing more information in the results of Quran search because
  the current view is minimal: Surah name, Ayah number, Ayah text.
  That project is closed source and it's under a slow development.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-http://www.qurancomplex.com/
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -14923,16 +14871,6 @@ Quranic Researcher is a new website that mainly search in Quran and Sunnah.
  It's under an active development but looks like its no more focusing on
  Quran as a main search need.
  
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-http://www.quranicresearcher.com/
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -15017,16 +14955,6 @@ Abadou Fares
 
 \begin_layout Standard
 The project is closed source and it is still under an active development.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-http://quranologie.com/
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -15127,16 +15055,6 @@ description "Part Of Speech"
 The interface is closed source but Quranic corpus data is open with GPL
  license.
  The project is still active.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-http://corpus.quran.com/
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -15227,16 +15145,6 @@ Tanzil is a Qur'anic project aimed at providing a highly-verified precise
  Clicking each result leads to a view that has the same form of Mus-haf
  where the position of ayah in Mus-haf is obvious.
  Tanzil is closed source and still under active development.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Tanzil.net
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -15287,7 +15195,14 @@ Zekr is an open source Quranic desktop application.
  the Quran.
  Zekr is a Quran-based project, planned to be a universal, open source,
  and cross-platform application to perform most of the usual refers to the
- Quran, according to the project website.
+ Quran, according to the project website
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Zekr"
+
+\end_inset
+
+.
  The first release was in January 2005 and was developed by 
 \noun on
 Mohsen Saboorian
