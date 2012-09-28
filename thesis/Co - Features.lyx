@@ -911,7 +911,7 @@ Special emplacements: Sura's start, Sura's end.
 \end_layout
 
 \begin_layout Itemize
-Mushaf structure: page, thumn, rubu', nisf, hizb, juz';
+Musha f structure: page, thumn, rubu', nisf, hizb, juz';
 \end_layout
 
 \begin_layout Itemize
@@ -1206,11 +1206,20 @@ Ayah_number:[1 to 5]
 \begin_layout Enumerate
 
 \series bold
-Regular expressions (Jokers): 
+Full Regex
+\series default
+: [TODO]
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Wildcards (Jokers): 
 \series default
 used to search a set of words that share some letters.
- This feature can be used to search a part of a word.
- In latin , there is two Jokers used largely : ? replaces one letter, *
+ It's a simpler way to avoid regular expressions complexity This feature
+ can be used to search a part of a word.
+ In Latin , there is two Jokers used largely : ? replaces one letter, *
  replaces an undefined number of letters.
  These jokers are inefficient in Arabic because the existence of vocalization
  symbols which they are not letters, and Hamza(
@@ -1634,7 +1643,7 @@ Semantically related keywords (Ontology-Based)
 \end_layout
 
 \begin_deeper
-\begin_layout Itemize
+\begin_layout Verse
 Suggest for 
 \lang arabic_arabi
 يعقوب
@@ -1766,7 +1775,7 @@ Suggest for
 \uwave default
 \noun default
 \color inherit
-(Prophet) 
+(p rophet) 
 \end_layout
 
 \end_deeper
@@ -2035,15 +2044,27 @@ fsl
 \begin_inset Formula $\rightarrow$
 \end_inset
 
-ب, s 
+
+\lang arabic_arabi
+ب
+\lang english
+, s 
 \begin_inset Formula $\rightarrow$
 \end_inset
 
-س, l
+
+\lang arabic_arabi
+س
+\lang english
+, l
 \begin_inset Formula $\rightarrow$
 \end_inset
 
-م)
+
+\lang arabic_arabi
+م
+\lang english
+)
 \end_layout
 
 \end_deeper
