@@ -1017,8 +1017,30 @@ Sorting of Arabic Symbols
 \end_layout
 
 \begin_layout Standard
+for the alphabetical order ,we must consider the real order of:
+\end_layout
+
+\begin_layout Itemize
+Hamza forms : 
+\lang arabic_arabi
+ؤ ئ ء أ 
+\end_layout
+
+\begin_layout Itemize
+Ta’ forms: 
+\lang arabic_arabi
+ة ت 
+\end_layout
+
+\begin_layout Itemize
+Alef forms : 
+\lang arabic_arabi
+ى ا 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Comment
-status collapsed
+status open
 
 \begin_layout Plain Layout
 

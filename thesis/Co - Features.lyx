@@ -122,24 +122,6 @@ name "chapitre4"
 \end_inset
 
 
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-+Figures: all samples must 
-\begin_inset Quotes sld
-\end_inset
-
-figured
-\begin_inset Quotes srd
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -1228,7 +1210,7 @@ used to search a set of words that share some letters.
 \lang english
 ) letter that has different forms (different Unicode emplacements) 
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
 ref: Hamza different emplacement
@@ -1402,6 +1384,44 @@ dividing the results on pages.
 10, 20, 50… results per page 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Google Paginating.png
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Pages view in Google.com
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
 
@@ -1434,28 +1454,6 @@ Alphabetical or Abjad order of alphabetic fields
 
 \begin_layout Itemize
 A combination of the previous orders 
-\end_layout
-
-\begin_layout Standard
-for the alphabetical order ,we must consider the real order of:
-\end_layout
-
-\begin_layout Itemize
-Hamza forms : 
-\lang arabic_arabi
-ؤ ئ ء أ 
-\end_layout
-
-\begin_layout Itemize
-Ta’ forms: 
-\lang arabic_arabi
-ة ت 
-\end_layout
-
-\begin_layout Itemize
-Alef forms : 
-\lang arabic_arabi
-ى ا 
 \end_layout
 
 \end_deeper
@@ -1556,6 +1554,44 @@ Ayah
 [ ۞ لَّقَدْ كَانَ فِي يُوسُفَ وَإِخْوَتِهِۦٓ ءَايَٰتٌ لِّلسَّآئِلِينَ] 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Ayah full uthmani.png
+	scale 65
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Ayah in full diacritical marks - quran.com
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_deeper
 \end_deeper
 \begin_layout Enumerate
@@ -1633,6 +1669,44 @@ Suggest for
 (Ibrahim) as mentioned in Qur'an
 \end_layout
 
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename figures/Spell correction in google.png
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Query spell correction in Google.com
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
 
@@ -1643,7 +1717,7 @@ Semantically related keywords (Ontology-Based)
 \end_layout
 
 \begin_deeper
-\begin_layout Verse
+\begin_layout Itemize
 Suggest for 
 \lang arabic_arabi
 يعقوب
@@ -1671,7 +1745,7 @@ Suggest for
 \uwave default
 \noun default
 \color inherit
-(Yaqoub) : 
+(Yaqub) : 
 \lang arabic_arabi
 يوسف
 \family roman
@@ -1775,7 +1849,53 @@ Suggest for
 \uwave default
 \noun default
 \color inherit
-(p rophet) 
+(Prophet) 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Yaqoub - Ontology of leeds.png
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Focusing on 
+\begin_inset Quotes sld
+\end_inset
+
+Yaqub
+\begin_inset Quotes srd
+\end_inset
+
+ in Ontology of concepts of corpus.quran.com 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -1995,6 +2115,44 @@ Suggest for
 (all hearing, all seeing)
 \end_layout
 
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename figures/Related Search google images.png
+	scale 65
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Related searches suggestion in Google.com
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
 
@@ -2065,6 +2223,44 @@ fsl
 م
 \lang english
 )
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename figures/Keyboard-mapping.png
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Keyboard mapping Arabic to English in Google.com
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -2190,17 +2386,81 @@ could be written as ẖalīfaẗ (ISO233), xalyfap (Buckwalter), _halyfaT (Arabt
  khalifa or khalifah or khaleefa or 5alifa or 7'alifa (Arabizi) 
 \end_layout
 
-\end_deeper
 \begin_layout Standard
-
-\series bold
-\begin_inset Note Note
+\begin_inset Float figure
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Transliterations - ElixirFM.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Different transliterations used in ElixirFM Resolve Online
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
 
 \series bold
-keep: Syntactic Coloration
+Syntactic Coloration: 
+\series default
+Coloration of words parts based on Part-Of-Speech will be helpful browsing
+ the ayahs for Linguists.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Syntax coloration.png
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Syntactic Coloration of Basmalah -- bayt-al-hikma.com 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -2219,7 +2479,6 @@ Vocal Search:
  
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 \begin_inset Float figure
 wide false
@@ -2258,7 +2517,6 @@ Google Voice Search on Android
 
 \end_layout
 
-\end_deeper
 \begin_layout Enumerate
 
 \series bold
@@ -3068,6 +3326,34 @@ target "http://corpus.quran.com/"
 \begin_layout Enumerate
 
 \series bold
+Linguistic examples search: 
+\series default
+that will help Arabic language scholars to find easily linguistic examples
+ appeared in Quran text.
+ For example:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Rhetorical deletion (
+\lang arabic_arabi
+الحذف البلاغي
+\lang english
+)
+\end_layout
+
+\begin_layout Itemize
+Grammatical Shift (
+\lang arabic_arabi
+الإلتفات
+\lang english
+) 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
 Uthmani writing way:
 \series default
  offers the user the ability of writing words not as it appeared in Uthmani
@@ -3475,37 +3761,6 @@ Translation: Their parable is like the parable of one who kindled a fire,
  and left them in utter darkness-- they do not see.
 \end_layout
 
-\begin_layout Standard
-\SpecialChar \textcompwordmark{}
-
-\series bold
-
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-
-\series bold
-Rhetorical deletion in the Qur'an
-\end_layout
-
-\end_inset
-
-
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-
-\series bold
-Grammatical Shift (iltifat) in the Qur'an
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \end_deeper
 \end_deeper
 \begin_layout Enumerate
@@ -3581,13 +3836,28 @@ that offers the feature of browsing the verses in term of themas structured
  on many levels.
 \end_layout
 
-\begin_deeper
-\begin_layout Itemize
-\begin_inset Note Note
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-Qurany Example
+\align center
+\begin_inset Graphics
+	filename figures/Faceted Search - Qurany.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Faceted Thematic Browsing - Qurany Project
 \end_layout
 
 \end_inset
@@ -3595,7 +3865,15 @@ Qurany Example
 
 \end_layout
 
-\end_deeper
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Enumerate
 
 \series bold
