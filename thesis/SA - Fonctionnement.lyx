@@ -149,18 +149,6 @@ textit{Paul Gilster, Digital Literacy}}
 
 \color black
 Introduction 
-\color inherit
-
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-google this book: Advances in Information Retrieval Croft W
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -201,18 +189,6 @@ The quality of research is directly related to the quality of the crawling,
  its methods and steps, and then we shall explain the process of search
  and the notion of relevance.
  
-\begin_inset Note Greyedout
-status collapsed
-
-\begin_layout Plain Layout
-
-\color black
-+overview of all search engines : General, Arabic, Quranic
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Section
@@ -886,23 +862,18 @@ key "Aba09"
 \begin_layout Standard
 
 \color black
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-
-\color black
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 
 \color black
 \begin_inset Graphics
-	filename Indexing.png
+	filename figures/Indexing benefits.png
+	scale 80
 
 \end_inset
 
@@ -915,7 +886,7 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Processus d’indexation
+Indexing Benefits
 \end_layout
 
 \end_inset
@@ -925,12 +896,7 @@ Processus d’indexation
 
 \end_inset
 
- to translate or to remove
-\end_layout
-
-\end_inset
-
-
+ 
 \end_layout
 
 \begin_layout Subsection
@@ -3274,20 +3240,11 @@ Search results returned as a web page: one of the possible ways to expose
 status open
 
 \begin_layout Section
-L’approche sémantique 
+Semantic Approach
 \end_layout
-
-\begin_layout Plain Layout
-\begin_inset Note Comment
-status open
 
 \begin_layout Plain Layout
 Important if you continue to improve this side
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \end_inset

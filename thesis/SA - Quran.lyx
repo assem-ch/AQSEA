@@ -152,7 +152,11 @@ end{Arabic}
 status open
 
 \begin_layout Plain Layout
-BEST show for AYAS [+] , font me_quran or arabeyesQr
+BEST show for AYAS [+] , font me_quran or arabeyesQr 
+\end_layout
+
+\begin_layout Plain Layout
+improve styles Quranic Ayates, to Images? or to another font
 \end_layout
 
 \end_inset
@@ -161,19 +165,6 @@ BEST show for AYAS [+] , font me_quran or arabeyesQr
 \end_layout
 
 \begin_layout Standard
-
-\lang french
-\begin_inset Note Greyedout
-status open
-
-\begin_layout Plain Layout
-
-\lang french
-improve styles Quranic Ayates, to Images? or to another font
-\end_layout
-
-\end_inset
-
 
 \end_layout
 
@@ -15260,16 +15251,6 @@ n: Ayah text, Ayah id and Surah name.
 Zekr is open source licensed under GPLv2.
  It is still under active development.
  Main programming language used by it is Java.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Zekr.org
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard

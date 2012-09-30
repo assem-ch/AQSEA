@@ -1021,6 +1021,8 @@ Sorting of Arabic Symbols
 status collapsed
 
 \begin_layout Plain Layout
+
+\lang arabic_arabi
 ما هو ترتيب الاصح للرموز العربية في الحاسوب
 \end_layout
 
@@ -1043,15 +1045,21 @@ Using Ngrams
 
 \begin_layout Standard
 \begin_inset Note Comment
-status collapsed
+status open
 
 \begin_layout Plain Layout
+
+\lang arabic_arabi
 لحرف العربي المشكول يعتبر في اللغة العربية حرفاً واحداً،
 \end_layout
 
 \begin_layout Plain Layout
+
+\lang arabic_arabi
 ألا يحق لنا أن نتساءل لماذا لا يمكن اعتبار الحرف المشكول حرفاً واحداً في
- الحاسوب؟ 
+ الحاسوب؟
+\lang english
+ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -1070,7 +1078,7 @@ Using Spell Checkers
 
 \begin_layout Standard
 \begin_inset Note Comment
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Spellchecking INTERSECT Quran_Words
@@ -1093,13 +1101,9 @@ Statistics Calculating Methods
 God names' number:
 \end_layout
 
-\begin_layout Description
+\begin_layout Standard
 \begin_inset Note Note
 status open
-
-\begin_layout Plain Layout
-\begin_inset Note Note
-status collapsed
 
 \begin_layout Description
 Hints:
@@ -1111,11 +1115,6 @@ Discover all formes of God's names
 
 \begin_layout Itemize
 Unify all these forms in only one regular expression
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \end_inset
@@ -1162,9 +1161,11 @@ Semantic search seeks to improve search accuracy by understanding searcher
 \begin_layout Standard
 \align left
 \begin_inset Note Comment
-status collapsed
+status open
 
 \begin_layout Plain Layout
+
+\lang arabic_arabi
 محاولة تبسيط عبارة البحث من الشكل التركيبي الى الاستفهام الطبيعي? 
 \end_layout
 

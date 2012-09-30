@@ -153,7 +153,7 @@ end{Arabic}
 
 \begin_layout Standard
 \begin_inset Note Greyedout
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Add Arabic translation to ambiguous words
@@ -166,50 +166,15 @@ Add Arabic translation to ambiguous words
 
 \begin_layout Standard
 \begin_inset Note Greyedout
-status collapsed
-
-\begin_layout Plain Layout
-verify arabic Words
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\lang french
-\begin_inset Note Greyedout
 status open
 
 \begin_layout Plain Layout
-
-\lang french
-Transliteration of Arabic Words
+verify arabic Words transliteration
 \end_layout
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-
-\lang french
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
- 
-\backslash
-arbox[fill=blue!5]{واعرباه }
-\end_layout
-
-\end_inset
-
-‬
 \end_layout
 
 \begin_layout Section
@@ -241,10 +206,10 @@ Modern Aramaic, languages are varieties of Aramaic that are spoken vernaculars
 \end_layout
 
 \begin_layout Standard
-In this chapter we will talk about orthography and morphology of the Arabic
+In this chapter, we will talk about orthography and morphology of the Arabic
  language that are unique.
- we will also talk about some ambiguities may be appear in Arabic cause
- the absence of vocalization.
+ we will also talk about some ambiguities that may appear in Arabic due
+ to the absence of vocalization.
 \end_layout
 
 \begin_layout Section
@@ -252,7 +217,7 @@ Orthography
 \end_layout
 
 \begin_layout Standard
-The Arabic script is one of the most used scripts on the Earth.
+The Arabic script is one of the most used scripts all over the world.
  It dominates in the Arab countries, of course, but holds a special place
  for all Muslims because it is the script used to write the Qur'an.
 \begin_inset CommandInset citation
@@ -377,7 +342,7 @@ key "Alk99"
 
 \begin_layout Standard
 In addition, it is important to note that the notion of uppercase and lowercase
- letter do not exist, the Arabic writing is called unicameral.
+ letter does not exist, the Arabic writing is called unicameral.
  In addition, Arabic is a language semi cursive, most letters are attached
  to each other, their spellings differ depending on whether they are preceded
  and/or followed by other letters or they are isolated.
@@ -614,8 +579,8 @@ Lexicography
 \end_layout
 
 \begin_layout Standard
-The traditional Arabic grammar have only three subsets: nouns, verbs and
- particles.
+The traditional Arabic grammar has only three subsets: Nouns, Verbs and
+ Particles.
 \end_layout
 
 \begin_layout Subsection
@@ -1619,7 +1584,7 @@ Nouns
 \end_layout
 
 \begin_layout Standard
-The morphological system of Arabic nouns are three subcategories: 
+The morphological system of Arabic nouns contains three subcategories: 
 \end_layout
 
 \begin_layout Subsubsection
@@ -3680,15 +3645,6 @@ key "Alk99"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Greyedout
-status collapsed
-
-\begin_layout Plain Layout
-Translate the figure
-\end_layout
-
-\end_inset
-
 
 \end_layout
 
@@ -5129,7 +5085,7 @@ status open
 \end_inset
 
  (fathat – a).
- by contrary, when they are defined, they follow the declension of 
+ By contrary, when they are defined, they follow the declension of 
 \begin_inset ERT
 status open
 
@@ -5331,7 +5287,7 @@ glstwo{the five nouns}{five nouns}
 \end_layout
 
 \begin_layout Itemize
-the three nouns: 
+Three nouns: 
 \begin_inset ERT
 status open
 
@@ -5419,7 +5375,7 @@ status open
 \end_layout
 
 \begin_layout Itemize
-a variant of 
+A variant of 
 \begin_inset ERT
 status open
 
@@ -5535,7 +5491,7 @@ status open
 \end_layout
 
 \begin_layout Itemize
-the noun 
+The noun 
 \begin_inset ERT
 status open
 
@@ -11810,16 +11766,6 @@ glstwo{lam-alef}{Lam-Alef}
  This letter can be introduced directly, or by clicking Lam then Alef from
  the keyboard.
  
-\begin_inset Note Greyedout
-status open
-
-\begin_layout Plain Layout
-[Laz]
-\end_layout
-
-\end_inset
-
- 
 \begin_inset Note Note
 status open
 
@@ -11827,6 +11773,8 @@ status open
 
 \lang arabic_arabi
 (لزرق)
+\lang english
+[Laz]
 \end_layout
 
 \end_inset
@@ -12223,15 +12171,6 @@ key "Alb09"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Greyedout
-status open
-
-\begin_layout Section
-Arabic Search Engines
-\end_layout
-
-\end_inset
-
 
 \end_layout
 
