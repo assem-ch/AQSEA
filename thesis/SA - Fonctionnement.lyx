@@ -3204,7 +3204,7 @@ key "Ber08"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -3235,21 +3235,254 @@ Search results returned as a web page: one of the possible ways to expose
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
 \begin_layout Section
 Semantic Approach
 \end_layout
 
-\begin_layout Plain Layout
-Important if you continue to improve this side
-\end_layout
+\begin_layout Standard
+Semantic search seeks to improve search accuracy by understanding searcher
+ intent and the contextual meaning of terms as they appear in the searchable
+ dataspace, whether on the Web or within a closed system, to generate more
+ relevant results.
+ Semantic search systems consider various points including context of search,
+ location, intent, variation of words, synonyms, generalized and specialized
+ queries, concept matching and natural language queries to provide relevant
+ search results
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Techulator"
 
 \end_inset
 
+.
+ Major web search engines like Google and Bing incorporate some elements
+ of semantic search.
+\end_layout
 
+\begin_layout Standard
+Rather than using ranking algorithms such as Google's PageRank to predict
+ relevancy, semantic search uses semantics, or the science of meaning in
+ language, to produce highly relevant search results.
+ In most cases, the goal is to deliver the information queried by a user
+ rather than have a user sort through a list of loosely related keyword
+ results.
+ However, Google itself has subsequently also announced its own Semantic
+ Search project
+\begin_inset CommandInset citation
+LatexCommand cite
+key "WSJ"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Other authors primarily regard semantic search as a set of techniques for
+ retrieving knowledge from richly structured data sources like ontologies.
+ Such technologies enable the formal articulation of domain knowledge at
+ a high level of expressiveness and could enable the user to specify his
+ intent in more detail at query time
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ESWC2012"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Semantic search does not just mean contextual search or search based on
+ the intend of the question.
+ It include several other factors as well.
+ A smart search engine would consider several factors to provide the most
+ relevant and useful search queries, including
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Techulator"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Current trend:
+\series default
+ If the president election was just finished in the country and someone
+ is searching for '
+\emph on
+Who is the new president
+\emph default
+', the semantic search system should be able to understand the query and
+ give relevant results based on the current trend and news.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Location of search:
+\series default
+ If a person is searching for 'what is the temperature', the semantic search
+ engine should be able to provide results based on the current location
+ of the search.
+ If the person is searching from California, search results should include
+ the current temperature in California.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Intend of the search:
+\series default
+ Semantic search engines should be able to give appropriate search results
+ based on the intent of the search and not based on the specific words used
+ in the search query.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Variations of words in Semantic Search:
+\series default
+ Semantic search should consider tenses, plural, singular etc and provide
+ relevant search results for all semantic variations of the words.
+ For example, words like dog, dogs, dog's etc.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Synonyms and Semantic Search:
+\series default
+ A semantic search engine should be able to understand the synonyms and
+ give more or less the same search results on any synonyms of the word users
+ search for.
+ For example, try searching for 
+\emph on
+"biggest mountain"
+\emph default
+ and 
+\emph on
+"highest mountain"
+\emph default
+.
+ You would get pretty much the same results since both of them means the
+ same in this particular query, even though the 
+\emph on
+"biggest"
+\emph default
+ and 
+\emph on
+"highest"
+\emph default
+ could mean different things in different cases.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Generalized and Specialized queries:
+\series default
+ Semantic Searching engine should be able to set relation between generalized
+ and specialized queries and provide appropriate and relevant results.
+ For example, consider an article on general health topics and another article
+ specifically on Diabetes.
+ If someone search for health information, both articles could match even
+ though the article on Diabetes does not talk specifically about "health".
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Concept matching:
+\series default
+ This is a sub-set of context matching in semantic search.
+ Semantic search should understand the broad concept of the query and return
+ relevant results.
+ For example, a query on 
+\emph on
+"Traffic problems in New Jersey" 
+\emph default
+could return relevant results including the topics 
+\emph on
+"narrow roads"
+\emph default
+, 
+\noun on
+"non functioning traffic lights"
+\noun default
+,
+\emph on
+ "lack of roadside assistance"
+\emph default
+ etc because in a broad conceptual point of view, all of these lead to traffic
+ problems.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Natural language queries:
+\series default
+ Not everyone are tech savvy and not many people know what to search to
+ get the relevant search results.
+ Most users simply type in queries in natural language.
+ For example, if some one want to find what is the current time in Arizona,
+ USA, they would search for 
+\emph on
+'What time is it in Arizona'
+\emph default
+.
+ Most search engines would simply show results from the websites and articles
+ that talk about Time and Arizona.
+ However, smart search engines that use Semantic Search would actually show
+ you the current time in Arizona, USA.
+ Try it yourself at Google search.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Change of meaning based on the group of words:
+\series default
+ By combining different words, the true meaning of search term could change.
+ Consider the following search terms:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+New egg health products 
+\end_layout
+
+\begin_layout Itemize
+New egg health benefits
+\end_layout
+
+\begin_layout Standard
+If you search for both the above terms in Google, you would get completely
+ different meaning.
+ Instead of just picking the results based on the words, Google Search looks
+ at it as a term and then combines with common user search pattern.
+ The first term returns search results primarily on the popular online shopping
+ website NewEgg.com and shows results of health products from that site and
+ similar sites.
+ The second term shows search results for the health benefits of Egg.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Semantic Search is a big challenge for search engines and none of them are
+ perfect.
+ Most search engines have improved significantly in last few years.
+ Search engines like Bing and Google provide significantly relevant search
+ results incorporating some degree of semantic search.
+ There are many other specialized search engines (like Hakia) which offer
+ purely semantic search results, but they lack many other qualities of normal
+ search engines.
 \end_layout
 
 \begin_layout Section
