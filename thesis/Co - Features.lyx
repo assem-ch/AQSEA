@@ -1077,25 +1077,25 @@ Advanced Query
 \series bold
 Fielded search
 \series default
-: uses fieldname in the query to search in a specific field.
+: uses field-name in the query to search in a specific field.
  Helpful to search more information like surah names.
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-\align block
-sura_name =
+ e.g.
+ 
+\emph on
+surah_name =
 \series bold
  
 \series default
 \lang arabic_arabi
 الفاتحة
 \series bold
+\emph default
 \lang english
- 
+, 
+\series default
+to limit the search within Fatiha.
 \end_layout
 
-\end_deeper
 \begin_layout Enumerate
 
 \series bold
@@ -1106,13 +1106,98 @@ Logical relations
  The most known relations are: AND for conjunction, OR for disjunction and
  NOT for exception.
  The relations can be grouped using parenthesis.
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-(
+ e.g.
+ 
+\emph on
+( 
+\color inherit
 \lang arabic_arabi
 الصلاة
+\lang english
+ AND_NOT 
+\lang arabic_arabi
+الزكاة
+\lang english
+ ) AND sura_name=
+\lang arabic_arabi
+البقرة
+\emph default
+\lang english
+, to find Ayahs in Al-baqara that contains the word 
+\lang arabic_arabi
+الصلاة
+\lang english
+ excluding the one that contains the word 
+\lang arabic_arabi
+الزكاة
+\lang english
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Phrase search
+\series default
+: is a type of search that allows users to search for documents containing
+ an exact sentence or phrase.
+ e.g.
+ 
+\emph on
+“ 
+\lang arabic_arabi
+الحمد لله
+\lang english
+ 
+\begin_inset Quotes sld
+\end_inset
+
+
+\emph default
+, to match exactly the words in the same form, the same order.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Interval search: 
+\series default
+used to search an interval of values in the numerical field.
+ Helpful in fields like: Ayah ID, Page, Hizb, statistic fields.
+ e.g.
+
+\emph on
+ Ayah_number:[1 to 5]
+\emph default
+, to retrieve the first five ayahs of each surah.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Full Regex
+\series default
+: or regular expressions provide a concise and flexible means to "match"
+ (specify and recognize) strings of text, such as particular characters,
+ words, or patterns of characters.
+ One issue about Regular expressions is that they are very complicated for
+ a normal user to manipulate.
+ e.g.
+
+\emph on
+ 
+\lang arabic_arabi
+م[ن ا]
+\lang english
+ 
+\emph default
+, to retrive either 
+\lang arabic_arabi
+من
+\lang english
+ or 
+\lang arabic_arabi
+ما
 \family roman
 \series medium
 \shape up
@@ -1137,60 +1222,8 @@ Logical relations
 \uwave default
 \noun default
 \color inherit
-AND_NOT 
-\lang arabic_arabi
-الزكاة
-\lang english
- ) AND sura_name=
-\lang arabic_arabi
-البقرة 
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-
-\series bold
-Phrase search
-\series default
-: is a type of search that allows users to search for documents containing
- an exact sentence or phrase.
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-“ 
-\lang arabic_arabi
-الحمد لله
-\lang english
- 
-\begin_inset Quotes sld
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-
-\series bold
-Interval search: 
-\series default
-used to search an interval of values in the numerical field.
- Helpful in fields like: Ayah ID, Page, Hizb, statistic fields.
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Ayah_number:[1 to 5] 
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-
-\series bold
-Full Regex
-\series default
-: [TODO]
+because the [ ] means to select one and only one letter of letters inside
+ it.
 \end_layout
 
 \begin_layout Enumerate
@@ -1199,8 +1232,8 @@ Full Regex
 Wildcards (Jokers): 
 \series default
 used to search a set of words that share some letters.
- It's a simpler way to avoid regular expressions complexity This feature
- can be used to search a part of a word.
+ It's a simpler way to avoid regular expressions complexity.
+ This feature can be used to search a part of a word.
  In Latin , there is two Jokers used largely : ? replaces one letter, *
  replaces an undefined number of letters.
  These jokers are inefficient in Arabic because the existence of vocalization
@@ -1208,55 +1241,22 @@ used to search a set of words that share some letters.
 \lang arabic_arabi
 ء
 \lang english
-) letter that has different forms (different Unicode emplacements) 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-ref: Hamza different emplacement
-\end_layout
-
-\end_inset
-
-.
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
+) letter that has different forms (different Unicode emplacements).
+ e.g.
 
 \series bold
+ 
 \begin_inset space ~
 \end_inset
 
  
 \series default
+\emph on
 \lang arabic_arabi
 ب؟طة
-\family roman
-\series bold
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-\lang english
- 
-\family default
-\series default
-\shape default
-\size default
 \emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-to generate 
+\lang english
+, to generate 
 \lang arabic_arabi
 بسطة
 \lang english
@@ -1276,32 +1276,91 @@ to generate
 \color none
 \lang english
  
-\end_layout
-
-\begin_layout Itemize
-
+; 
+\family default
 \series bold
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
 \begin_inset space ~
 \end_inset
 
 
 \series default
+\emph on
 \lang arabic_arabi
 *نبي*
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
 \lang english
- to generate 
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+, to generate 
 \lang arabic_arabi
 نبي
 \lang english
 , 
+\lang arabic_arabi
+نبيّنه
+\lang english
+,
 \lang arabic_arabi
 النبيين
 \lang english
 , 
 \lang arabic_arabi
 الأنبياء
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
 \lang english
- ...
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+, etc.
 
 \family roman
 \series medium
@@ -1317,7 +1376,6 @@ to generate
  
 \end_layout
 
-\end_deeper
 \begin_layout Enumerate
 
 \series bold
@@ -1675,7 +1733,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename figures/Spell correction in google.png
@@ -2121,7 +2179,7 @@ wide false
 sideways false
 status open
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename figures/Related Search google images.png
@@ -2231,7 +2289,7 @@ wide false
 sideways false
 status open
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename figures/Keyboard-mapping.png
