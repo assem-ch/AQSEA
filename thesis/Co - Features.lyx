@@ -3478,7 +3478,7 @@ Allah
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -3516,65 +3516,61 @@ Divine names Highlight in Quran Reader iPhone application
 \begin_layout Enumerate
 
 \series bold
-Recitations marks retrieving:
+Recitation marks retrieving:
 \series default
- helpful for Tajweed scholars.
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Saktah: YES
-\end_layout
-
-\begin_layout Itemize
+ helpful for Tajweed scholars who seek examples.
+ e.g.1
+\emph on
+ Saktah: YES
+\emph default
+, to search for ayahs that contain a saktah mark.
+ e.g.2 
+\emph on
 Sajdah_type:
 \series bold
  
 \series default
 Obligatory 
+\emph default
+,
+\emph on
+ 
+\emph default
+to search for all ayahs where there is a sajdah which is obligatory.
 \end_layout
 
-\begin_layout Itemize
-Qalqala
-\series bold
-: 
-\series default
-YES
-\end_layout
-
-\end_deeper
 \begin_layout Enumerate
 
 \series bold
-Structural option
+Structural options
 \series default
-s: since Quran is divided to parts () and the part to Hizbs and Hizb to
- Halfs ...
+: since Quran is divided to parts and the part to Hizbs and Hizb to Halfs
+ ...
  till we get Ayahs.There is also other structures of Qur'an such as to pages
  ...etc.
-\end_layout
+ e.g.1 
+\emph on
+page:1,
+\emph default
+ to limit the search in the first page
+\emph on
+.
 
-\begin_deeper
-\begin_layout Itemize
-page
+\emph default
+ e.g.2
+\emph on
+ Hizb
 \series bold
 :
 \series default
- 1 
-\end_layout
-
-\begin_layout Itemize
-Hizb
-\series bold
- :
-\series default
 \numeric on
 60
+\emph default
 \numeric off
+ , to limit the search in the last hizb.
  
 \end_layout
 
-\end_deeper
 \begin_layout Enumerate
 
 \series bold
@@ -3582,13 +3578,12 @@ Translation embedded search:
 \series default
 helps users to search using words translations to other languages instead
  of the native arabic text.
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
+ e.g.
+ 
+\emph on
 { text: 
 \series bold
-mercy 
+mercy
 \series default
 , lang: 
 \series bold
@@ -3598,10 +3593,24 @@ english
 \series bold
 shekir
 \series default
- }
+ } 
+\emph default
+to search the word 
+\series bold
+mercy
+\series default
+ in Quran 
+\series bold
+English
+\series default
+ translation made by 
+\series bold
+shekir
+\series default
+ (Author).
+ 
 \end_layout
 
-\end_deeper
 \begin_layout Enumerate
 
 \series bold
@@ -3672,11 +3681,11 @@ Abrogators and Abrogated ayahs search
 \series default
  
 \series bold
-( 
+(
 \lang arabic_arabi
 الناسخ والمنسوخ
 \lang english
- )
+)
 \series default
 : Knowing abrogations helps in knowledge of Islamic Laws and it will be
  helpful to search for abrogation cases, by indicating proponents and opponents
@@ -3817,7 +3826,7 @@ Semantically related words
 : there are several different kinds of semantic relations: Synonymy, Antonymy,
  Hypernymy, Hyponymy, Meronymy, Holonymy, Troponymy
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
  [ref]
@@ -3826,6 +3835,7 @@ status open
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_deeper
@@ -3875,11 +3885,12 @@ that offers the feature of browsing the verses in term of themas structured
  on many levels.
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -3913,6 +3924,7 @@ Faceted Thematic Browsing - Qurany Project
 
 \end_layout
 
+\end_deeper
 \begin_layout Enumerate
 
 \series bold
@@ -4426,18 +4438,14 @@ Translation: Then We made the seed a clot, then We made the clot a lump
 \begin_layout Enumerate
 
 \series bold
-Automatic vocalization : 
+Automatic vocalization: 
 \series default
 the absence of diacritics lead to the ambiguities that we’ve mentioned them
  in Problematic.
  This feature helps to pass over these ambiguities and try to resolve them
  before executing the search process.
- 
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-The phrase 
+ e.g.
+ the phrase 
 \begin_inset Quotes sld
 \end_inset
 
@@ -4484,10 +4492,9 @@ becomes after auto-vocalization
 \begin_inset Quotes srd
 \end_inset
 
-
+.
 \end_layout
 
-\end_deeper
 \begin_layout Enumerate
 
 \series bold
