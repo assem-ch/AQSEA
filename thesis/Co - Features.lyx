@@ -1379,48 +1379,54 @@ used to search a set of words that share some letters.
 \begin_layout Enumerate
 
 \series bold
-Boosting:
+Boosting keywords weight:
 \series default
- used to boost the relevance factor of any keywords.
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-
-\series bold
-\begin_inset space ~
-\end_inset
-
-
-\series default
-\lang arabic_arabi
-سميع^2 بصير
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-
-\series bold
-Combining features: 
-\series default
-search using a combination of the previous elementary features.
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-\begin_inset space ~
-\end_inset
-
-
-\lang arabic_arabi
-”*حمد
-\series bold
+ used to boost up or boost down the relevance factor of any keywords to
+ make effect on the results sorting.
+ e.g.
  
-\series default
-لله“^2
+\lang arabic_arabi
+سميع عليم^
+\numeric on
+0.5
+\numeric off
+ بصير^2
+\lang english
+, boosting up 
+\lang arabic_arabi
+بصير
+\lang english
+ and boosting down 
+\lang arabic_arabi
+عليم
+\lang english
+ to prefer 
+\begin_inset Quotes sld
+\end_inset
+
+
+\lang arabic_arabi
+سميع بصير
+\lang english
+
+\begin_inset Quotes srd
+\end_inset
+
+ on 
+\begin_inset Quotes sld
+\end_inset
+
+
+\lang arabic_arabi
+سميع عليم
+\lang english
+
+\begin_inset Quotes srd
+\end_inset
+
+.
 \end_layout
 
-\end_deeper
 \end_deeper
 \begin_layout Enumerate
 
@@ -1435,18 +1441,16 @@ Output Improvements
 Pagination: 
 \series default
 dividing the results on pages.
+ e.g.
+ 10, 20, 50… results per page.
 \end_layout
 
 \begin_deeper
-\begin_layout Itemize
-10, 20, 50… results per page 
-\end_layout
-
 \begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -1486,46 +1490,22 @@ Pages view in Google.com
 \series bold
 Sorting
 \series default
-: sort the results by various criteria such as:
+: sort the results by various criteria such as: Relevance, Natural order
+ (Mus-haf), Revelation order, Numerical order of numeric fields, Alphabetical
+ or Abjad order of alphabetic fields.
+ 
 \end_layout
 
-\begin_deeper
-\begin_layout Itemize
-Relevance
-\end_layout
-
-\begin_layout Itemize
-Mushaf order 
-\end_layout
-
-\begin_layout Itemize
-Revelation order 
-\end_layout
-
-\begin_layout Itemize
-Numerical order of numeric fields 
-\end_layout
-
-\begin_layout Itemize
-Alphabetical or Abjad order of alphabetic fields 
-\end_layout
-
-\begin_layout Itemize
-A combination of the previous orders 
-\end_layout
-
-\end_deeper
 \begin_layout Enumerate
 
 \series bold
 Keywords Highlight:
 \series default
- used for distinction of searched keywords in Ayah.
-\end_layout
+ used to emphasize searched keywords in Ayah by adding styling tags.
+ e.g.
 
-\begin_deeper
-\begin_layout Itemize
-
+\emph on
+ 
 \lang arabic_arabi
 الحمد 
 \lang english
@@ -1534,8 +1514,51 @@ Keywords Highlight:
 لله 
 \lang english
 </style>
+\emph default
+ (reading left to right).
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Highlight in ayahs.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Highlight the keyword 
 \lang arabic_arabi
-رب العالمين
+وحيدا
+\lang english
+ (alone) in Ayah 11 of al-modather -- alfanous.org
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -1544,7 +1567,7 @@ Keywords Highlight:
 \series bold
 Real time output
 \series default
-: used to avoid the time of user waiting ,and show the results directly
+: used to avoid the time of user waiting, and show the results directly
  when retrieve them.
 \end_layout
 
@@ -1553,48 +1576,21 @@ Real time output
 \series bold
 Results grouping:
 \series default
- the criteria can be used for grouping are: 
+ the criteria that can be used for grouping are: by surahs, by topics, by
+ Tafssir dependency, by revelation events, by allegorical ayahs or by Quranic
+ parables.
 \end_layout
 
-\begin_deeper
-\begin_layout Itemize
-by allegorical Ayahs
-\end_layout
-
-\begin_layout Itemize
-by Surahs
-\end_layout
-
-\begin_layout Itemize
-by topics 
-\end_layout
-
-\begin_layout Itemize
-by taffsir dependency 
-\end_layout
-
-\begin_layout Itemize
-by revelation events
-\end_layout
-
-\begin_layout Itemize
-by Quranic parables
-\end_layout
-
-\end_deeper
 \begin_layout Enumerate
 
 \series bold
 Uthmani script with full diacritical marks: 
 \series default
 Quran text is written on mus-haf in a Uthmani script with full diacritics.
- those diacritics are helpful for better reading and recitation of the Quran.
+ Those diacritics are helpful for better reading and recitation of the Quran.
  Ignoring those marks raises some ambiguities in recitation.
+ e.g.
  
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
 \begin_inset ERT
 status open
 
@@ -1612,6 +1608,7 @@ Ayah
 [ ۞ لَّقَدْ كَانَ فِي يُوسُفَ وَإِخْوَتِهِۦٓ ءَايَٰتٌ لِّلسَّآئِلِينَ] 
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
 \begin_inset Float figure
 wide false
