@@ -967,7 +967,8 @@ Suggestion Systems
 \series default
 : This class contains all options that aims to offer a suggestion that help
  users to correct, extend the results by improving the queries.
- By example, suggest correction of misspelled keywords or suggest relative-words.
+ For example, suggest correction of misspelled keywords or suggest relative-word
+s.
 \end_layout
 
 \begin_layout Enumerate
@@ -1396,11 +1397,11 @@ Boosting keywords weight:
 \lang arabic_arabi
 بصير
 \lang english
- and boosting down 
+ (all seeing) and boosting down 
 \lang arabic_arabi
 عليم
 \lang english
- to prefer 
+ (all knowing) to prefer in sorting 
 \begin_inset Quotes sld
 \end_inset
 
@@ -1412,7 +1413,7 @@ Boosting keywords weight:
 \begin_inset Quotes srd
 \end_inset
 
- on 
+ (all hearing, all seeing) on 
 \begin_inset Quotes sld
 \end_inset
 
@@ -1424,7 +1425,7 @@ Boosting keywords weight:
 \begin_inset Quotes srd
 \end_inset
 
-.
+ (all hearing, all knowing).
 \end_layout
 
 \end_deeper
@@ -1663,11 +1664,8 @@ Vocalized spell correction
 \series default
 : offers alternatives for keywords when misspelled or appeared with a different
  form in Quran.
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Suggest for 
+ e.g.
+ suggest for 
 \lang arabic_arabi
 أبرَاهَام
 \family roman
@@ -1721,9 +1719,10 @@ Suggest for
 \uwave default
 \noun default
 \color inherit
-(Ibrahim) as mentioned in Qur'an
+(Ibrahim) as mentioned in Qur'an.
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
 \begin_inset Float figure
 wide false
@@ -1768,12 +1767,9 @@ Query spell correction in Google.com
 \series bold
 Semantically related keywords (Ontology-Based)
 \series default
- : used as hints, generally based on domain ontologies
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Suggest for 
+ : used as hints, generally based on domain ontologies.
+ e.g.
+ suggest for 
 \lang arabic_arabi
 يعقوب
 \family roman
@@ -1800,7 +1796,7 @@ Suggest for
 \uwave default
 \noun default
 \color inherit
-(Yaqub) : 
+(Yaqub): 
 \lang arabic_arabi
 يوسف
 \family roman
@@ -1904,14 +1900,15 @@ Suggest for
 \uwave default
 \noun default
 \color inherit
-(Prophet) 
+(Prophet).
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -1960,11 +1957,8 @@ Yaqub
 Different vocalization
 \series default
 : suggest all the possible vocalizations sorted by the frequencies.
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Suggest for
+ e.g.
+ suggest for
 \family roman
 \series medium
 \shape up
@@ -2072,21 +2066,17 @@ Suggest for
 \uwave default
 \noun default
 \color inherit
-(the angel)
+(the angel).
 \end_layout
 
-\end_deeper
 \begin_layout Enumerate
 
 \series bold
 Collocated words
 \series default
-: provides a completion based on the collocation statistics.
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Suggest for 
+: provides a completion based on collocation statistics.
+ e.g.
+ suggest for 
 \lang arabic_arabi
 سميع
 \lang english
@@ -2140,7 +2130,7 @@ Suggest for
 \uwave default
 \noun default
 \color inherit
-(all hearing, all knowing) ، 
+(all hearing, all knowing), 
 \lang arabic_arabi
 سميع بصير
 \family roman
@@ -2167,14 +2157,15 @@ Suggest for
 \uwave default
 \noun default
 \color inherit
-(all hearing, all seeing)
+(all hearing, all seeing).
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -2216,11 +2207,8 @@ Keyboard mapping:
 \series default
 this feature may help when the user forget to switch the keyboard language;
  It is used in Google search engine.
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Suggest for 
+ e.g.
+ suggest for 
 \series bold
 \emph on
 fsl
@@ -2277,14 +2265,15 @@ fsl
 \lang arabic_arabi
 م
 \lang english
-)
+).
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -2319,17 +2308,14 @@ Keyboard mapping Arabic to English in Google.com
 \end_layout
 
 \end_deeper
-\begin_layout Enumerate
+\begin_layout Standard
 
 \series bold
 Different significations: 
 \series default
-used to limit a keyword on only one of their meanings.
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Suggest for 
+used to limit a keyword to only one of their meanings.
+ e.g.
+ suggest for 
 \series bold
 \lang arabic_arabi
 رب
@@ -2339,7 +2325,16 @@ Suggest for
 \numeric on
 1
 \numeric off
-st meaning (god - 
+
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+st
+\end_layout
+
+\end_inset
+
+ meaning (god - 
 \lang arabic_arabi
 إله
 \lang english
@@ -2347,11 +2342,20 @@ st meaning (god -
 \numeric on
 2
 \numeric off
-nd meaning (master - 
+
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+nd
+\end_layout
+
+\end_inset
+
+ meaning (master - 
 \lang arabic_arabi
 سيد
 \lang english
-)
+).
 \end_layout
 
 \begin_layout Standard
@@ -2359,7 +2363,6 @@ nd meaning (master -
 
 \end_layout
 
-\end_deeper
 \end_deeper
 \begin_layout Enumerate
 
@@ -2403,10 +2406,8 @@ Arabtex
 Arabizi
 \emph default
  used informally by users through forums, chat discussions...etc.
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
+ e.g.
+ 
 \begin_inset space ~
 \end_inset
 
@@ -2438,9 +2439,10 @@ Arabizi
 \noun default
 \color inherit
 could be written as ẖalīfaẗ (ISO233), xalyfap (Buckwalter), _halyfaT (Arabtex),
- khalifa or khalifah or khaleefa or 5alifa or 7'alifa (Arabizi) 
+ khalifa or khalifah or khaleefa or 5alifa or 7'alifa (Arabizi).
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
 \begin_inset Float figure
 wide false
@@ -2485,11 +2487,12 @@ Coloration of words parts based on Part-Of-Speech will be helpful browsing
  the ayahs for Linguists.
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -2523,6 +2526,7 @@ Syntactic Coloration of Basmalah -- bayt-al-hikma.com
 
 \end_layout
 
+\end_deeper
 \begin_layout Enumerate
 
 \series bold
@@ -2534,11 +2538,12 @@ Vocal Search:
  
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -2572,21 +2577,42 @@ Google Voice Search on Android
 
 \end_layout
 
+\end_deeper
 \begin_layout Enumerate
 
 \series bold
 Partial vocalization search:
 \series default
  gives user the opportunity to specify some diacritics and not all.
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-_
+ e.g.
+ _
 \lang arabic_arabi
 مـَلـك
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
 \lang english
- to find 
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+to find 
 \lang arabic_arabi
 مـَلـِك
 \lang english
@@ -2596,16 +2622,41 @@ _
 \lang english
  … and ignore 
 \lang arabic_arabi
-مـُلـْك 
+مـُلـْك
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+.
 \end_layout
 
-\end_deeper
 \begin_layout Enumerate
 
 \series bold
 Multi-level derivation
 \series default
-: the Arabic words derivations can be divided to four levels : exact word
+: the Arabic words derivations can be divided to the following four levels
+ : exact word
 \family roman
 \series medium
 \shape up
@@ -2629,7 +2680,7 @@ Multi-level derivation
 \uwave default
 \noun default
 \color inherit
-(eg: 
+( 
 \lang arabic_arabi
 فأسقيناكموه
 \family roman
@@ -2664,30 +2715,7 @@ so We give it to you to drink of
 \begin_inset Quotes srd
 \end_inset
 
-), Lemma (eg:
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
+), Lemma (
 \lang arabic_arabi
 أسقينا
 \family roman
@@ -2714,7 +2742,7 @@ so We give it to you to drink of
 \uwave default
 \noun default
 \color inherit
-- We give drink ) , Stem (eg: 
+- We give drink ) , Stem (
 \lang arabic_arabi
 أسقى
 \family roman
@@ -2741,7 +2769,7 @@ so We give it to you to drink of
 \uwave default
 \noun default
 \color inherit
-- give drink), Root (eg: 
+- give drink), Root (
 \lang arabic_arabi
 سقي
 \family roman
@@ -2769,31 +2797,15 @@ so We give it to you to drink of
 \noun default
 \color inherit
 .
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-(word:
-\lang arabic_arabi
-سقي
-\lang english
- , level: root) to find 
-\lang arabic_arabi
-يَسْقُونَ, نَسْقِي, وَيَسْقِينِ , يُسْقَوْنَ , وَيُسْقَوْنَ, وَسُقْيَاهَا
- , وَأَسْقَيْنَاكُمْ , وَيُسْقَى , لَأَسْقَيْنَاهُمْ , وَنُسْقِيَهُ , فَأَسْقَيْ
-نَاكُمُوهُ , فَسَقَى , السِّقَايَةَ, نُسْقِيكُمْ, فَيَسْقِي, سِقَايَةَ,
- تَسْقِي, سَقَيْتَ, يُسْقَى, اسْتَسْقَى, اسْتَسْقَاهُ, وَسُقُوا
-\lang english
-.
- 
-\end_layout
-
-\begin_layout Itemize
+ e.g.1 : 
+\emph on
 (Word: 
 \lang arabic_arabi
 أسقينا
 \lang english
-, level: lemma) to find 
+, level: lemma) 
+\emph default
+to find 
 \lang arabic_arabi
 وَأَسْقَيْنَاكُمْ , لَأَسْقَيْنَاهُمْ, فَأَسْقَيْنَاكُمُوهُ
 \family roman
@@ -2823,46 +2835,23 @@ so We give it to you to drink of
 .
 \end_layout
 
-\end_deeper
 \begin_layout Enumerate
 
 \series bold
 Specific-derivations
 \series default
 : this is specification of the previous feature.
- Since Arabic is fully flexional , it has lot of derivation operations .
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Conjugation in Past tense of 
+ Since Arabic is fully flexional , it has lot of derivation operations.
+ e.g.
+ 
+\emph on
+conjugation in Past tense of 
 \lang arabic_arabi
 قال
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 \lang english
- 
-\family default
-\series default
-\shape default
-\size default
+ (say)
 \emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-(say) to find
+ to find
 \family roman
 \series medium
 \shape up
@@ -2924,74 +2913,9 @@ Conjugation in Past tense of
 \lang arabic_arabi
 قلن
 \lang english
- (*they* said, feminine ) ...
- 
+ (*they* said, feminine ) , etc.
 \end_layout
 
-\begin_layout Itemize
-Conjugation in Imperative tense of 
-\lang arabic_arabi
-قال
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-\lang english
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-(say) to find 
-\lang arabic_arabi
-قل
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-\lang english
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-(say! , singular, masculine) , 
-\lang arabic_arabi
-قولوا
-\lang english
- (say! , plural, masculine) , ...
- etc.
-\end_layout
-
-\end_deeper
 \begin_layout Enumerate
 
 \series bold
@@ -3000,41 +2924,22 @@ Word properties embedded query:
  offers a smart way to handle words families by filtering using a set of
  properties like: root , lemma, type, part-of-speech, verb mood, verb form,
  gender, person, number, voice…etc.
-\end_layout
+ e.g.
 
-\begin_deeper
-\begin_layout Itemize
-{root:
+\emph on
+ 
+\emph default
+{
+\emph on
+root:
 \series bold
  
 \lang arabic_arabi
 ملك
 \series default
 \lang english
-, type:
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
+, type: 
 \series bold
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
 noun
 \series default
 , number: 
@@ -3042,9 +2947,24 @@ noun
 singular
 \series default
 } 
+\emph default
+to retrieve all the root 
+\series bold
+\lang arabic_arabi
+ملك
+\series default
+\lang english
+ family that is a 
+\series bold
+noun
+\series default
+ and in 
+\series bold
+singular
+\series default
+ form.
 \end_layout
 
-\end_deeper
 \begin_layout Enumerate
 
 \series bold
@@ -3057,11 +2977,8 @@ Fuzzy string search:
 \lang english
 ); The Hamza letter is hard to write its shape since its writing is based
  on the vocalization of both of it and its antecedent.
+ e.g.
  
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
 \begin_inset space ~
 \end_inset
 
@@ -3107,10 +3024,19 @@ may replace
 \noun off
 \color none
 \lang english
- (Ignore Hamza form)
-\end_layout
+ (Ignore Hamza form), 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
 
-\begin_layout Itemize
 \begin_inset space ~
 \end_inset
 
@@ -3144,24 +3070,68 @@ may replace
 may replace 
 \lang arabic_arabi
 ضحى
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
 \lang english
  
-\end_layout
-
-\begin_layout Itemize
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+, 
 \begin_inset space ~
 \end_inset
 
 
 \lang arabic_arabi
 جنه
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
 \lang english
- replaces 
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+may replace 
 \lang arabic_arabi
 جنة
+\lang english
+.
 \end_layout
 
-\end_deeper
 \begin_layout Enumerate
 
 \series bold
@@ -3250,7 +3220,7 @@ Translation: When the sky is split asunder,
 \uwave default
 \noun default
 \color inherit
-(idhā, when): time adverb
+(idhā, when): time adverb ;
 \end_layout
 
 \begin_layout Itemize
@@ -3296,7 +3266,7 @@ the sky
 \uwave off
 \noun off
 \color none
-): nominative feminine noun
+): nominative feminine noun;
 \end_layout
 
 \begin_layout Itemize
@@ -3331,7 +3301,7 @@ the sky
 \noun default
 \color inherit
 (inshaqqat, is split asunder): 3rd person feminine singular (form VII) perfect
- verb
+ verb.
 \end_layout
 
 \end_deeper
@@ -3385,27 +3355,17 @@ Linguistic examples search:
 \series default
 that will help Arabic language scholars to find easily linguistic examples
  appeared in Quran text.
- For example:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Rhetorical deletion (
+ For example: Rhetorical deletion (
 \lang arabic_arabi
 الحذف البلاغي
 \lang english
-)
-\end_layout
-
-\begin_layout Itemize
-Grammatical Shift (
+), Grammatical Shift (
 \lang arabic_arabi
 الإلتفات
 \lang english
-) 
+).
 \end_layout
 
-\end_deeper
 \begin_layout Enumerate
 
 \series bold
@@ -3413,39 +3373,73 @@ Uthmani writing way:
 \series default
  offers the user the ability of writing words not as it appeared in Uthmani
  Mus'haf .
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-\begin_inset space ~
-\end_inset
-
-
+ e.g.
+ 
 \lang arabic_arabi
 بصطة
 \lang english
  replaces 
 \lang arabic_arabi
 بسطة
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
 \lang english
  
-\end_layout
-
-\begin_layout Itemize
-\begin_inset space ~
-\end_inset
-
-
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+, 
 \lang arabic_arabi
 نعمت
 \lang english
  replaces 
 \lang arabic_arabi
 نعمة
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
 \lang english
  
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+.
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
 \SpecialChar \textcompwordmark{}
 
@@ -3456,14 +3450,14 @@ Uthmani writing way:
 \begin_layout Enumerate
 
 \series bold
-Quranic Options
+Qur'anic Options
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
 
 \series bold
-ALLAH's Names Highlight:
+Divine Names Highlight:
 \series default
  a similar feature to this is used in many mus'hafs nowadays , it aims to
  show Allah's name clearly.
@@ -3480,52 +3474,42 @@ Allah
 \end_layout
 
 \begin_deeper
-\begin_layout Itemize
-\begin_inset ERT
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Devine names highlight.jpg
+	scale 60
+
+\end_inset
 
 
-\backslash
-Ayah
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Divine names Highlight in Quran Reader iPhone application 
 \end_layout
 
 \end_inset
 
 
-\lang arabic_arabi
-فَلْيَعْبُدُوا
-\series bold
-\bar under
- رَب
-\series default
-\bar default
-َّ هَذَا الْبَيْت 
 \end_layout
-
-\begin_layout Itemize
-\begin_inset ERT
-status open
 
 \begin_layout Plain Layout
 
-
-\backslash
-Ayah
 \end_layout
 
 \end_inset
 
 
-\lang arabic_arabi
-قُلِ 
-\series bold
-\bar under
-اللَّـهُمَّ
-\series default
-\bar default
- فَاطِرَ السَّمَاوَاتِ وَالْأَرْضِ
 \end_layout
 
 \end_deeper
