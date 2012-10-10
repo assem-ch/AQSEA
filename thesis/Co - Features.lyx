@@ -1587,8 +1587,8 @@ Results grouping:
 \series bold
 Uthmani script with full diacritical marks: 
 \series default
-Quran text is written on mus-haf in a Uthmani script with full diacritics.
- Those diacritics are helpful for better reading and recitation of the Quran.
+Quran text is written on mus-haf in a Uthmani script with full diacritical
+ marks which are helpful for better reading and recitation of the Quran.
  Ignoring those marks raises some ambiguities in recitation.
  e.g.
  
@@ -3512,6 +3512,25 @@ Divine names Highlight in Quran Reader iPhone application
 
 \end_layout
 
+\begin_layout Standard
+
+\series bold
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+
+\series bold
+Special word classes search: 
+\series default
+Best Names, Foreign words , Words with foreign origin
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
 
@@ -3568,7 +3587,26 @@ page:1,
 \emph default
 \numeric off
  , to limit the search in the last hizb.
- 
+ e.g.3 
+\emph on
+Juz:
+\lang arabic_arabi
+عم
+\emph default
+َّ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ , to limit the search in the last Juz (part).
 \end_layout
 
 \begin_layout Enumerate
