@@ -1276,8 +1276,7 @@ used to search a set of words that share some letters.
 \noun off
 \color none
 \lang english
- 
-; 
+ ; 
 \family default
 \series bold
 \shape default
@@ -3371,8 +3370,8 @@ that will help Arabic language scholars to find easily linguistic examples
 \series bold
 Uthmani writing way:
 \series default
- offers the user the ability of writing words not as it appeared in Uthmani
- Mus'haf .
+ offers the user the ability of writing words as the same as mentioned in
+ Uthmani Mus'haf .
  e.g.
  
 \lang arabic_arabi
@@ -5050,19 +5049,15 @@ Those proposed search features could be useful or not, needed or not.
  The best validation way in our case is to gather the opinions of normal
  users, Quran scholars, Arabic morphology experts, Natural Language Processing
  / Information Retrieval researchers, and may be philosophers that are working
- on religions comparing.
+ on religious scriptures comparing.
  We have to mix the audience aimed by the survey to get high quality feedbacks
  about usefulness, clarity and importance of each search feature.
  But, the real experience will give better feedbacks so we will gather the
  feedbacks of users about each implemented feature.
- for this, we'll make a second-step validation which is the users feedbacks
- in Alpha-Beta test phases that will be available after implementation of
- our work as a desktop application or a “Google-like” website .
+ For this, we'll make a second-step validation which is the users feedbacks
+ in Alpha and Beta test phases that will be available after implementation
+ of our work as a desktop application or a “Google-like” website .
  
-\end_layout
-
-\begin_layout Standard
-Survey.
 \end_layout
 
 \begin_layout Subsection
@@ -5070,53 +5065,59 @@ Survey
 \end_layout
 
 \begin_layout Standard
-We've made the survey in English for a better cover of the audience and
- we distribute the questions in many Steps/Pages
+We've made the survey in English and Arabic for a better cover of the audience.
+ We distributed the questions in many phases:
 \end_layout
 
 \begin_layout Enumerate
 
 \series bold
-Entry Page:
+Basic Information:
+\series default
+ here we ask about the basic information of the survey taker such country,
+ age, gender, religion, native language.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Experience:
 \series default
  here we ask about the background of the survey taker, How deep his knowledge
- in the three axes: Arabic, Quran, Computing.
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-What is your primary language?
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-
-\series bold
-Middle Pages:
-\series default
- here we explain each search feature to the survey taker then ask him about
- its usefulness , usability and clarity.
+ in the four axes: Quran, Arabic, Linguistics, Computing.
 \end_layout
 
 \begin_layout Enumerate
 
 \series bold
-Exit Page:
+Search features review:
 \series default
- here we ask about the survey itself , difficulties that may the survey
- taker have it through the survey.
+ here we explain each search feature to the survey taker so he can review
+ it and evaluate clarity, usefulness and importance of each one.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Feedback about survey:
+\series default
+ here we ask about the survey itself such as the clarity, the quality and
+ also the difficulties that may the survey taker have it through the survey.
 \end_layout
 
 \begin_layout Standard
-We've chosen SurveyMonkey to build our survey because it's best free survey
- maker in the Internet, it offers lot of helpful options [survey features].
- SurveyMonkey offer many methods to attend a wider audience by integration
- in social networks.
+We used Google Docs forms to build our survey because it's the best one
+ of free survey makers in the Internet, it offers simple but efficient surveying
+ features.
  
 \end_layout
 
 \begin_layout Subsubsection
 Survey Participants Details
+\end_layout
+
+\begin_layout Standard
+We launch th survey for xx days and we gathered about xx takers.
 \end_layout
 
 \begin_layout Standard
@@ -5670,7 +5671,7 @@ Clarity
 \end_layout
 
 \begin_layout Subsubsection
-Usability and Usefulness
+Usefulness
 \end_layout
 
 \begin_layout Subsubsection
