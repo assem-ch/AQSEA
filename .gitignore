@@ -29,3 +29,5 @@
 *.rtf
 *.html
 *.xhtml
+*~
+*#
