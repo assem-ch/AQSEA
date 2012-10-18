@@ -1008,7 +1008,9 @@ Semantic Queries
 Statistical System
 \series default
 : This class covers all the statistical needs of users.
- By example, searching the most frequented word.
+ Statistics are helpful in classifications of words and ayahs and can be
+ used also to verify validity of the facts designated as Numerical miracles.
+ An example of statistics, searching the most frequented word.
 \end_layout
 
 \begin_layout Standard
@@ -1079,7 +1081,8 @@ Advanced Query
 Fielded search
 \series default
 : uses field-name in the query to search in a specific field.
- Helpful to search more information like surah names.
+ Helpful to search more various information like surah names, topics, page
+ number...etc.
  e.g.
  
 \emph on
@@ -1127,12 +1130,58 @@ Logical relations
 , to find Ayahs in Al-baqara that contains the word 
 \lang arabic_arabi
 الصلاة
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
 \lang english
- excluding the one that contains the word 
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(Prayer) excluding the one that contains the word 
 \lang arabic_arabi
 الزكاة
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
 \lang english
-.
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(Alms).
 \end_layout
 
 \begin_layout Enumerate
@@ -1155,7 +1204,20 @@ Phrase search
 
 
 \emph default
-, to match exactly the words in the same form, the same order.
+, to match exactly the words in the same form, the same order (eliminate
+ 
+\emph on
+“
+\lang arabic_arabi
+لله الحمد
+\lang english
+
+\begin_inset Quotes sld
+\end_inset
+
+
+\emph default
+).
 \end_layout
 
 \begin_layout Enumerate
@@ -1178,9 +1240,9 @@ used to search an interval of values in the numerical field.
 \series bold
 Full Regex
 \series default
-: or regular expressions provide a concise and flexible means to "match"
- (specify and recognize) strings of text, such as particular characters,
- words, or patterns of characters.
+: regular expressions provide a concise and flexible means to "match" (specify
+ and recognize) strings of text, such as particular characters, words, or
+ patterns of characters.
  One issue about Regular expressions is that they are very complicated for
  a normal user to manipulate.
  e.g.
@@ -1192,7 +1254,7 @@ Full Regex
 \lang english
  
 \emph default
-, to retrive either 
+, to retrieve either 
 \lang arabic_arabi
 من
 \lang english
@@ -1223,8 +1285,8 @@ Full Regex
 \uwave default
 \noun default
 \color inherit
-because the [ ] means to select one and only one letter of letters inside
- it.
+because the square brackets mean to select one and only one letter of letters
+ inside it.
 \end_layout
 
 \begin_layout Enumerate
@@ -1235,8 +1297,8 @@ Wildcards (Jokers):
 used to search a set of words that share some letters.
  It's a simpler way to avoid regular expressions complexity.
  This feature can be used to search a part of a word.
- In Latin , there is two Jokers used largely : ? replaces one letter, *
- replaces an undefined number of letters.
+ In Latin, there is two Jokers used largely : ? replaces one letter, * replaces
+ an undefined number of letters.
  These jokers are inefficient in Arabic because the existence of vocalization
  symbols which they are not letters, and Hamza(
 \lang arabic_arabi
@@ -1443,6 +1505,7 @@ Pagination:
 dividing the results on pages.
  e.g.
  10, 20, 50… results per page.
+ That will simplify the showing of results and optimize the time of transferring.
 \end_layout
 
 \begin_deeper
@@ -1488,11 +1551,30 @@ Pages view in Google.com
 \begin_layout Enumerate
 
 \series bold
+Scoring:
+\series default
+ assign to each result a calculated score that represent the relevance of
+ that result to the search query.
+ This score will be used for sorting and/or filtering.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
 Sorting
 \series default
-: sort the results by various criteria such as: Relevance, Natural order
- (Mus-haf), Revelation order, Numerical order of numeric fields, Alphabetical
- or Abjad order of alphabetic fields.
+: sorting the results help the user to browse them in any order he want.
+ Results can be sorted by various criteria such as: Relevance to query,
+ Natural order (Mus-haf), Revelation order, Numerical order of numeric fields,
+ Alphabetical (
+\lang arabic_arabi
+ألفبائي
+\lang english
+) or Abjad (
+\lang arabic_arabi
+أبجدي
+\lang english
+) order of alphabetic fields.
  
 \end_layout
 
@@ -1501,14 +1583,36 @@ Sorting
 \series bold
 Keywords Highlight:
 \series default
- used to emphasize searched keywords in Ayah by adding styling tags.
+ used to emphasize searched keywords in Ayah by adding styling tags in order
+ to make them more remarkable then other words.
  e.g.
 
 \emph on
  
 \lang arabic_arabi
-الحمد 
+الحمد
+\family roman
+\series medium
+\shape up
+\size normal
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
 \lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
 <style>
 \lang arabic_arabi
 لله 
@@ -1523,7 +1627,7 @@ Keywords Highlight:
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -1569,6 +1673,7 @@ Real time output
 \series default
 : used to avoid the time of user waiting, and show the results directly
  when retrieve them.
+ So useful for the case of long standing queries.
 \end_layout
 
 \begin_layout Enumerate
@@ -1576,8 +1681,12 @@ Real time output
 \series bold
 Results grouping:
 \series default
- the criteria that can be used for grouping are: by surahs, by topics, by
- Tafssir dependency, by revelation events, by allegorical ayahs or by Quranic
+ this will be used to offer a better exploration for results because the
+ use of ayah as a unit in showing is not always the best choice for users,
+ sometimes grouping those ayahs on surahs, topics, or any other criterion,
+ is more useful.
+ The criteria that can be used for grouping are: by surahs, by topics, by
+ Tafssir dependency, by revelation events, by allegorical ayahs or by Qur'anic
  parables.
 \end_layout
 
@@ -1588,7 +1697,9 @@ Uthmani script with full diacritical marks:
 \series default
 Quran text is written on mus-haf in a Uthmani script with full diacritical
  marks which are helpful for better reading and recitation of the Quran.
- Ignoring those marks raises some ambiguities in recitation.
+ Ignoring those marks raises some ambiguities in recitation such as boundary
+ (stop) marks that clarify where can't stop recitation, where can stop and
+ where must stop.
  e.g.
  
 \begin_inset ERT
@@ -1766,7 +1877,8 @@ Query spell correction in Google.com
 \series bold
 Semantically related keywords (Ontology-Based)
 \series default
- : used as hints, generally based on domain ontologies.
+ : used as hints for users to help them find more keywords that may interest
+ them, generally based on domain ontologies.
  e.g.
  suggest for 
 \lang arabic_arabi
@@ -1795,7 +1907,11 @@ Semantically related keywords (Ontology-Based)
 \uwave default
 \noun default
 \color inherit
-(Yaqub): 
+(Yaqub - Jacob): 
+\lang arabic_arabi
+إسرائيل
+\lang english
+ (Israel, another name of Yaqub), 
 \lang arabic_arabi
 يوسف
 \family roman
@@ -1822,7 +1938,7 @@ Semantically related keywords (Ontology-Based)
 \uwave default
 \noun default
 \color inherit
-(Yusuf), 
+(Yusuf, a son of Yaqub), 
 \lang arabic_arabi
 الأسباط
 \family roman
@@ -1849,7 +1965,7 @@ Semantically related keywords (Ontology-Based)
 \uwave default
 \noun default
 \color inherit
-(Asbat),
+(Asbat, sons of Yaqub),
 \family roman
 \series medium
 \shape up
@@ -1899,7 +2015,7 @@ Semantically related keywords (Ontology-Based)
 \uwave default
 \noun default
 \color inherit
-(Prophet).
+(Prophet, what Yaqub is).
 \end_layout
 
 \begin_deeper
@@ -1955,7 +2071,9 @@ Yaqub
 \series bold
 Different vocalization
 \series default
-: suggest all the possible vocalizations sorted by the frequencies.
+: suggest all the possible vocalizations sorted by the frequency of each
+ one.
+ Helpful to refine the ambigous queries and make them more accurate.
  e.g.
  suggest for
 \family roman
@@ -1983,8 +2101,31 @@ Different vocalization
 \color inherit
 \lang arabic_arabi
 الملك
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
 \lang english
- : 
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(Almlk) : 
 \lang arabic_arabi
 المَلِك
 \family roman
@@ -2011,7 +2152,7 @@ Different vocalization
 \uwave default
 \noun default
 \color inherit
-(The king), 
+(The king, Almalik ), 
 \lang arabic_arabi
 المُلْك
 \family roman
@@ -2038,7 +2179,7 @@ Different vocalization
 \uwave default
 \noun default
 \color inherit
-(The kingdom)، 
+(The kingdom, Almulk)، 
 \lang arabic_arabi
 المَلَك
 \family roman
@@ -2065,7 +2206,7 @@ Different vocalization
 \uwave default
 \noun default
 \color inherit
-(the angel).
+(the angel, Almalak).
 \end_layout
 
 \begin_layout Enumerate
@@ -2074,6 +2215,7 @@ Different vocalization
 Collocated words
 \series default
 : provides a completion based on collocation statistics.
+ Also helpful to refine queries and make it more accurate.
  e.g.
  suggest for 
 \lang arabic_arabi
@@ -2204,8 +2346,11 @@ Related searches suggestion in Google.com
 \series bold
 Keyboard mapping: 
 \series default
-this feature may help when the user forget to switch the keyboard language;
- It is used in Google search engine.
+this feature is about to replace each Latin letter with the Arabic letter
+ that share with it the same emplacement in the keyboard.
+ User's keyboard layouts must be detected to do a perfect mapping.
+ This feature may help when the user forget to switch the keyboard language;
+ It is used in Google search engine but in the inverse way: Arabic To English.
  e.g.
  suggest for 
 \series bold
@@ -2313,6 +2458,7 @@ Keyboard mapping Arabic to English in Google.com
 Different significations: 
 \series default
 used to limit a keyword to only one of their meanings.
+ Helpful to make the query more precise.
  e.g.
  suggest for 
 \series bold
@@ -2534,7 +2680,7 @@ Vocal Search:
  this feature is targeting blind people to help them search easily .
  It's helpful also in Smart phones where the keyboards are difficult to
  use.
- 
+ Though, vocal recognition of Arabic is not easy at all.
 \end_layout
 
 \begin_deeper
@@ -2582,7 +2728,9 @@ Google Voice Search on Android
 \series bold
 Partial vocalization search:
 \series default
- gives user the opportunity to specify some diacritics and not all.
+ gives user the opportunity to specify just some diacritics.
+ Helpful for example to avoid the last diacritic because it varies based
+ on the position of the word in the phrase.
  e.g.
  _
 \lang arabic_arabi
@@ -2654,7 +2802,9 @@ to find
 \series bold
 Multi-level derivation
 \series default
-: the Arabic words derivations can be divided to the following four levels
+: This feature is helpful for location of all or some derivation forms of
+ a word.
+ the Arabic words derivations can be divided to the following four levels
  : exact word
 \family roman
 \series medium
@@ -3136,7 +3286,7 @@ may replace
 \series bold
 Word Annotations
 \series default
-: Attaching annotations to each word of results (ayas) will helps linguistics
+: Attaching annotations to each word of results (ayahs) will help linguistics
  students to get information about the word easily and word_by_word.
  This annotation contains information like root, lemma, mood, aspect, gender,
  number , voice , case and so on.
@@ -3308,7 +3458,7 @@ the sky
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -3360,7 +3510,7 @@ that will help Arabic language scholars to find easily linguistic examples
 \lang english
 ), Grammatical Shift (
 \lang arabic_arabi
-الإلتفات
+الالتفات
 \lang english
 ).
 \end_layout
@@ -3370,8 +3520,8 @@ that will help Arabic language scholars to find easily linguistic examples
 \series bold
 Uthmani writing way:
 \series default
- offers the user the ability of writing words as the same as mentioned in
- Uthmani Mus'haf .
+ offers the user the ability of writing words either as mentioned in Uthmani
+ Mus'haf or as we write it in the standard way.
  e.g.
  
 \lang arabic_arabi
@@ -3456,6 +3606,84 @@ Qur'anic Options
 \begin_layout Enumerate
 
 \series bold
+Structural options
+\series default
+: since Quran is divided to parts and the part to Hizbs and Hizb to Halfs
+ ...
+ till we get Ayahs.There is also other structures of Qur'an such as to pages
+ ...etc.
+ This feature is useful for limitation of the search interval.
+ e.g.1 
+\emph on
+page:1,
+\emph default
+ to limit the search in the first page
+\emph on
+.
+
+\emph default
+ e.g.2
+\emph on
+ Hizb
+\series bold
+:
+\series default
+\numeric on
+60
+\emph default
+\numeric off
+ , to limit the search in the last hizb.
+ e.g.3 
+\emph on
+Juz:
+\lang arabic_arabi
+عم
+\emph default
+َّ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ , to limit the search in the last Juz (part).
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Recitation marks retrieving:
+\series default
+ helpful for Tajweed scholars who seek examples.
+ e.g.1
+\emph on
+ Saktah: YES
+\emph default
+, to search for ayahs that contain a saktah mark.
+ e.g.2 
+\emph on
+Sajdah_type:
+\series bold
+ 
+\series default
+Obligatory 
+\emph default
+,
+\emph on
+ 
+\emph default
+to search for all ayahs where there is a sajdah which is obligatory.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
 Divine Names Highlight:
 \series default
  a similar feature to this is used in many mus'hafs nowadays , it aims to
@@ -3502,10 +3730,6 @@ Divine names Highlight in Quran Reader iPhone application
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -3531,83 +3755,6 @@ Best Names, Foreign words , Words with foreign origin
 \end_layout
 
 \end_deeper
-\begin_layout Enumerate
-
-\series bold
-Recitation marks retrieving:
-\series default
- helpful for Tajweed scholars who seek examples.
- e.g.1
-\emph on
- Saktah: YES
-\emph default
-, to search for ayahs that contain a saktah mark.
- e.g.2 
-\emph on
-Sajdah_type:
-\series bold
- 
-\series default
-Obligatory 
-\emph default
-,
-\emph on
- 
-\emph default
-to search for all ayahs where there is a sajdah which is obligatory.
-\end_layout
-
-\begin_layout Enumerate
-
-\series bold
-Structural options
-\series default
-: since Quran is divided to parts and the part to Hizbs and Hizb to Halfs
- ...
- till we get Ayahs.There is also other structures of Qur'an such as to pages
- ...etc.
- e.g.1 
-\emph on
-page:1,
-\emph default
- to limit the search in the first page
-\emph on
-.
-
-\emph default
- e.g.2
-\emph on
- Hizb
-\series bold
-:
-\series default
-\numeric on
-60
-\emph default
-\numeric off
- , to limit the search in the last hizb.
- e.g.3 
-\emph on
-Juz:
-\lang arabic_arabi
-عم
-\emph default
-َّ
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-\lang english
- , to limit the search in the last Juz (part).
-\end_layout
-
 \begin_layout Enumerate
 
 \series bold
@@ -3860,7 +4007,9 @@ Semantic Queries
 \series bold
 Semantically related words
 \series default
-: there are several different kinds of semantic relations: Synonymy, Antonymy,
+: this feature is about extending a keyword to a set of keywords that are
+ semantically related.
+ There are several different kinds of semantic relations: Synonymy, Antonymy,
  Hypernymy, Hyponymy, Meronymy, Holonymy, Troponymy
 \begin_inset Note Note
 status collapsed
@@ -3872,12 +4021,13 @@ status collapsed
 \end_inset
 
 .
- 
+ That will help to achieve the other semantic features and to answer some
+ user questions.
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-Syn(
+Synonym(
 \lang arabic_arabi
 جنة
 \lang english
@@ -3889,7 +4039,7 @@ Syn(
 \end_layout
 
 \begin_layout Itemize
-Ant( 
+Antonym( 
 \lang arabic_arabi
 جنة
 \lang english
@@ -3901,7 +4051,7 @@ Ant(
 \end_layout
 
 \begin_layout Itemize
-Hypo( 
+Hyponym( 
 \lang arabic_arabi
 جنة
 \lang english
@@ -3919,7 +4069,7 @@ Hypo(
 Faceted Thematic Search: 
 \series default
 that offers the feature of browsing the verses in term of themas structured
- on many levels.
+ on many levels hierarchically.
 \end_layout
 
 \begin_deeper
@@ -3968,7 +4118,7 @@ Faceted Thematic Browsing - Qurany Project
 Questions Answering (QA) :
 \series default
  this means to offer the option of forming the search query as a form of
- an Arabic natural question .
+ an Arabic natural question.
  The most used Arabic question words are: 
 \lang arabic_arabi
 هل؟
@@ -4539,13 +4689,14 @@ Entity Extraction:
 \series default
  this helps to retrieve Person; Date; Time; Distance; Number; Places , even
  if appeared as in a different format.
+ This is important to attend the previous feature: Question Answering.
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 Extract 
 \lang arabic_arabi
-ثلاث مائة سنين وإزدادوا تسعا
+ثلاث مائة سنين وازدادوا تسعا
 \family roman
 \series medium
 \shape up
@@ -5402,7 +5553,7 @@ Results of survey
 \begin_inset Float table
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Tabular
