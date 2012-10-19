@@ -678,24 +678,19 @@ Lucene
 البحث بالحقول:
 \series default
  مزية تستعمل اسم الحقل في الاستعلام لتحدد البحث فقط في ذلك الحقل، مفيدة
- في البحث عن معلومات غير الآية كاسم السورة مثلا:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-\align block
-
+ في البحث عن معلومات متنوعة أخرى غير نصّ الآية كاسم السورة أو المواضيع أو
+ اسم الصفحة...إلخ.
+ مثلا
 \series bold
-سورة:
+ 
 \series default
-الفاتحة
-\begin_inset Newline newline
-\end_inset
-
-
+سورة
+\series bold
+:
+\series default
+الفاتحة، لتحديد البحث فقط في سورة الفاتحة.
 \end_layout
 
-\end_deeper
 \begin_layout Itemize
 ا
 \series bold
@@ -728,68 +723,74 @@ Lucene
 
  للاستثناء.
  يمكن تجميع العلاقات باستعمال الأقواس.
+ مثلا (الصلاة - الزكاة ) + سورة:البقرة، للبحث عن آيات سورة البقرة التي تحتوي
+ على كلمة الصلاة ولا تحتوي كلمة الزكاة
 \end_layout
 
-\begin_deeper
-\begin_layout Itemize
-(الصلاة - الزكاة ) + سورة:البقرة 
-\begin_inset Newline newline
-\end_inset
-
-
-\end_layout
-
-\end_deeper
 \begin_layout Itemize
 
 \series bold
 البحث بالجملة:
 \series default
- هو نوع من البحث حيث يعطي المستخدم الفرصة ليبحث عن جملة مضبوطة
+ هو نوع من البحث حيث يعطي المستخدم الفرصة ليبحث عن جملة كما هي.
+ مثلا: ”الحمد لله“ لإيجاد فقط الكلمات إن وردت متجاورة وبهذا الترتيب.
 \end_layout
 
-\begin_deeper
-\begin_layout Itemize
-”الحمد لله“ 
-\begin_inset Newline newline
-\end_inset
-
-
-\end_layout
-
-\end_deeper
 \begin_layout Itemize
 
 \series bold
 البحث بالمجالات: 
 \series default
 يستعمل للبحث عن مجال من القيم في حقل رقمي.
- في حالة القرآن يفيد في حقول كرقم الآية ، رقم الصفحة،رقم الحزب، الحقول الإحصائية
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-رقم_الآية:[1 إلى 5]
-\lang english
-
-\begin_inset Newline newline
-\end_inset
-
+ في حالة القرآن يفيد في حقول كرقم الآية ، رقم الصفحة،رقم الحزب، الحقول الإحصائية.
+ مثلا رقم_الآية:[1 إلى 5]
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
  
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+للبحث لإيجاد الآيات الخمس الأولى من كل سورة.
 \end_layout
 
-\end_deeper
 \begin_layout Itemize
 
 \series bold
-العبارات النمطية(الجوكرز): 
+العبارات النمطية:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+أحرف البدل (
+\lang english
+Wildcards
+\lang arabic_arabi
+): 
 \series default
 تستعمل في البحث عن مجموعة كلمات تشترك في عدة حروف.
  هذه الميزة تنوب عن البحث بجزء من الكلمة.
- في اللاتينية، يوجد رمزي جوكر يستعملان بصفة واسعة : ? تنوب عن حرف واحد،
- * تنوب عن عدد غير معيّن من الحروف لكنهما أثبتا محدوديتهما في اللغة العربية
- بسبب وجود علامات التشكيل التي لا يمكن اعتبارها في أي حال من الأحوال كحروف
- وكذلك وجود حرف الهمزة الذي يملك عدة صور وعدة مواضع في اليونيكود.
+ في اللاتينية، يوجد رمزي بدل بصفة واسعة : ? تنوب عن حرف واحد، * تنوب عن
+ عدد غير معيّن من الحروف لكنهما أثبتا محدوديتهما في اللغة العربية بسبب وجود
+ علامات التشكيل التي لا يمكن اعتبارها في أي حال من الأحوال كحروف وكذلك وجود
+ حرف الهمزة الذي يملك عدة صور وعدة مواضع في اليونيكود.
 \end_layout
 
 \begin_deeper

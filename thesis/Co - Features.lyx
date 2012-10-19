@@ -1204,8 +1204,8 @@ Phrase search
 
 
 \emph default
-, to match exactly the words in the same form, the same order (eliminate
- 
+, to match exactly the words if and only if adjacent and in the same form,
+ the same order (eliminate 
 \emph on
 “
 \lang arabic_arabi
