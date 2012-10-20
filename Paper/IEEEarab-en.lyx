@@ -1239,10 +1239,10 @@ used to search an interval of values in the numerical field.
 \series bold
 Full Regex
 \series default
-: regular expressions provide a concise and flexible means to "match" (specify
+: regular expressions provide a concise and flexible mean to "match" (specify
  and recognize) strings of text, such as particular characters, words, or
  patterns of characters.
- One issue about Regular expressions is that they are very complicated for
+ One issue about regular expressions is that they are very complicated for
  a normal user to manipulate.
  e.g.
 
@@ -1808,7 +1808,7 @@ Vocalized spell correction
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -1990,7 +1990,7 @@ Semantically related keywords (Ontology-Based)
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -2036,7 +2036,7 @@ Different vocalization
 \series default
 : suggest all the possible vocalizations sorted by the frequency of each
  one.
- Helpful to refine the ambigous queries and make them more accurate.
+ Helpful to refine the ambiguous queries and make them more accurate.
  e.g.
  suggest for
 \family roman
@@ -2944,8 +2944,29 @@ Specific-derivations
 conjugation in Past tense of 
 \lang arabic_arabi
 قال
+\family roman
+\series medium
+\shape up
+\size normal
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
 \lang english
- (say)
+ 
+\family default
+\series default
+\shape default
+\size default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(to say)
 \emph default
  to find
 \family roman

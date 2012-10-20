@@ -79,7 +79,7 @@ fixltx2e
 \shortcut idx
 \color #008000
 \end_index
-\secnumdepth -1
+\secnumdepth 3
 \tocdepth 1
 \paragraph_separation indent
 \paragraph_indentation default
@@ -530,21 +530,21 @@ left side}{right side
 \end_layout
 
 \begin_layout Standard
-لجعل قائمة الإقتراحات أسهل للإستعراض ، قمنا بتصنيفها إلى عدة أصناف حسب هدفها
+لجعل قائمة الاقتراحات أسهل للاستعراض ، قمنا بتصنيفها إلى عدة أصناف حسب هدفها
  
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Enumerate
 
 \series bold
 عبارة الاستعلام المتقدمة: 
 \series default
-هذا الصنف يحتوي على الاضافات التي تطبّق على عبارة الاستعلام البسيطة بغرض
+هذا الصنف يحتوي على الإضافات التي تطبّق على عبارة الاستعلام البسيطة بغرض
  اعطاء المستخدم القدرة على تخصيصها لأغراض أدق مثلا: البحث بالجملة، العلاقات
  المنطقية، العبارات النمطية.
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Enumerate
 
 \series bold
 تحسينات العرض: 
@@ -554,27 +554,27 @@ left side}{right side
  الخ.
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Enumerate
 
 \series bold
-نظم الإقتراح: 
+نظم الاقتراح: 
 \series default
-هذا الصنف يضم كل الخيارات التي تهدف الى توفير إقتراحات تساعد المستخدم على
+هذا الصنف يضم كل الخيارات التي تهدف إلى توفير اقتراحات تساعد المستخدم على
  توجيه أو توسيع النتائج بتحسين عبارة الاستعلام.
- مثلا: اقتراح الكلمة الصحيحة في حالة الأخطاء الاملائية وكذلك اقتراح كلمات
+ مثلا: اقتراح الكلمة الصحيحة في حالة الأخطاء الإملائية وكذلك اقتراح كلمات
  ذات علاقة معنوية.
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Enumerate
 
 \series bold
 الجوانب اللغوية:
 \series default
- تعنى بكل المزايا التي ترتبط بالجوانب اللغوية كالتجذيع، التسوية واهمال كلمات
+ تعنى بكل المزايا التي ترتبط بالجوانب اللغوية كالتجذيع، التسوية وإهمال كلمات
  الوقف.
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Enumerate
 
 \series bold
 الخيارات القرآنية: 
@@ -583,19 +583,19 @@ left side}{right side
  مكتوب بالخط العثماني بكامل رموز التشكيل والتلاوة وهو مبني بعدة بنى.
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Enumerate
 
 \series bold
 الاستعلامات الدلالية:
 \series default
- المنهج الدلالي يهدف إلى إعطاء المستخدم امكانية صياغة استعلاماته على شكل
- أسئلة كما في اللغة الطبيعية للوصول الى نتائج أنسب.
+ المنهج الدلالي يهدف إلى إعطاء المستخدم إمكانية صياغة استعلاماته على شكل
+ أسئلة كما في اللغة الطبيعية للوصول إلى نتائج أنسب.
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Enumerate
 
 \series bold
-نظام الاحصاءات:
+نظام الإحصاءات:
 \series default
  هذا الصنف يغطي كل الاحتياجات الإحصائية التي يمكن أن يريدها المستخدم في
  القرآن .مثلا ، البحث عن الكلمة الأكثر ورودا.
@@ -665,7 +665,7 @@ Lucene
 إضافة إلى البحث البسيط، هذه هي اقتراحاتنا:
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Enumerate
 
 \series bold
 عبارة الاستعلام المتقدمة
@@ -773,7 +773,36 @@ Lucene
 \begin_layout Itemize
 
 \series bold
-العبارات النمطية:
+العبارات النمطية (
+\lang english
+Regex
+\lang arabic_arabi
+): 
+\series default
+توفّر وسيلة موجزة ومرنة للتعرف على السلاسل النصية.
+ سلبية واحدة حول العبارات النمطية هي أنّ أيّ مستخدم عادي يجد صعوبة في التعامل
+ معها.
+ مثلا 
+\emph on
+[من ا]، 
+\emph default
+لاسترداد إما 
+\begin_inset Quotes eld
+\end_inset
+
+من
+\begin_inset Quotes erd
+\end_inset
+
+ أو 
+\begin_inset Quotes eld
+\end_inset
+
+ما
+\begin_inset Quotes erd
+\end_inset
+
+ لأن العارضتين تعنيات اختيار حرف واحد ووحيد من الحروف الموجودة بينهما.
 \end_layout
 
 \begin_layout Itemize
@@ -785,33 +814,19 @@ Wildcards
 \lang arabic_arabi
 ): 
 \series default
-تستعمل في البحث عن مجموعة كلمات تشترك في عدة حروف.
+تستعمل في البحث عن مجموعة كلمات تشترك في عدة حروف وتمثل طريقة مثلى لتجنب
+ تعقيد العبارات النمطية.
  هذه الميزة تنوب عن البحث بجزء من الكلمة.
  في اللاتينية، يوجد رمزي بدل بصفة واسعة : ? تنوب عن حرف واحد، * تنوب عن
- عدد غير معيّن من الحروف لكنهما أثبتا محدوديتهما في اللغة العربية بسبب وجود
- علامات التشكيل التي لا يمكن اعتبارها في أي حال من الأحوال كحروف وكذلك وجود
- حرف الهمزة الذي يملك عدة صور وعدة مواضع في اليونيكود.
+ عدد غير معيّن من الحروف .
+ مثلا ب؟طة لتوليد بسطة، بصطة و *نبي* لتوليد نبي ، النبيين ، الأنبياء ...
+ إلخ.
 \end_layout
 
-\begin_deeper
-\begin_layout Itemize
-ب؟طة = بسطة، بصطة 
-\end_layout
-
-\begin_layout Itemize
-*نبي* = نبي ، النبيين ، الأنبياء ...
- 
-\begin_inset Newline newline
-\end_inset
-
-
-\end_layout
-
-\end_deeper
 \begin_layout Itemize
 
 \series bold
-تعزيز الكلمات المفتاحية
+تعزيز أوزان الكلمات المفتاحية
 \series default
  (
 \series bold
@@ -819,41 +834,35 @@ Wildcards
 Boosting
 \series default
 \lang arabic_arabi
-): يستعمل لتعزيز معامل التقييم (
+): يستعمل لتعزيز معامل وثاقة الصلة (
 \lang english
 relevance
 \lang arabic_arabi
-) لبعض الكلمات المفتاحية على حساب أخرى.
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-سميع^2 بصير
-\begin_inset Newline newline
+) لبعض الكلمات المفتاحية على حساب أخرى للتأثير على ترتيب النتائج .
+ مثلا سميع عليم^
+\numeric on
+0.5
+\numeric off
+ بصير^2، برفع معامل كلمة بصير وتخفيض معامل كلمة عليم لإعطاء الأولوية في
+ الترتيب إلى 
+\begin_inset Quotes eld
 \end_inset
 
-
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-
-\series bold
-دمج المزايا:
-\series default
- البحث بعبارة مركبة من المزايا الأساسية التي ذكرناها.
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-”*حمد لله“^2
-\begin_inset Newline newline
+سميع بصير
+\begin_inset Quotes erd
 \end_inset
 
+ على حساب 
+\begin_inset Quotes eld
+\end_inset
 
+سميع عليم
+\begin_inset Quotes erd
+\end_inset
+
+.
 \end_layout
 
-\end_deeper
 \end_deeper
 \begin_layout Itemize
 
@@ -866,81 +875,38 @@ relevance
 
 \series bold
 توزيع النتائج على صفحات: 
+\series default
+هذا ما سيبسّط طريقة عرض النتائج ويقلّل من وقت إرسالها واستقبالها.
+ مثلا: 10، 20، 50… نتيجة في الصفحة.
 \end_layout
 
-\begin_deeper
 \begin_layout Itemize
-10، 20، 50… نتيجة في الصفحة
-\begin_inset Newline newline
-\end_inset
 
-
+\series bold
+التقييم
+\series default
+: يسنِد لكلّ نتيجة قيمة محسوبة تمثّل وثاقة الصلة بين هذه النتيجة وعبارة
+ البحث.
+ هذه القيمة تستعمل في ترتيب و/أو تصفية النتائج.
 \end_layout
 
-\end_deeper
 \begin_layout Itemize
 
 \series bold
 ترتيب النتائج: 
 \series default
-حسب معايير مختلفة مثل:
+يساعد المستخدم في الوصول إلى نتائج بأي ترتيب يريد و من المعايير التي يمكن
+ اتباعها في الترتيب توجد: وثاقة الصلة، ترتيب المصحف، زمن التنزيل، الترتيب
+ الرقمي، الترتيب الألفبائي أو الأبجدي.
 \end_layout
 
-\begin_deeper
-\begin_layout Itemize
-وثاقة الصلة
-\end_layout
-
-\begin_layout Itemize
-ترتيب المصحف
-\end_layout
-
-\begin_layout Itemize
-زمن التنزيل 
-\end_layout
-
-\begin_layout Itemize
-الترتيب الرقمي
-\end_layout
-
-\begin_layout Itemize
-الترتيب الألفبائي أو الأبجدي
-\end_layout
-
-\begin_layout Itemize
-مجموعة من المعايير السالفة الذكر
-\end_layout
-
-\begin_layout Standard
-للترتيب الألفبائي و الأبجد ، يجب أخد بعين الإعتبار الترتيب الحقيقي لـ: 
-\end_layout
-
-\begin_layout Standard
-أشكال الهمزة: ؤ ئ ء أ 
-\end_layout
-
-\begin_layout Standard
-أشكال التاء: ة ت 
-\end_layout
-
-\begin_layout Standard
-أشكال الألف: ى ا 
-\begin_inset Newline newline
-\end_inset
-
-
-\end_layout
-
-\end_deeper
 \begin_layout Itemize
 
 \series bold
-تمييز الكلمات المنقب عنها في الآية:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-الحمد 
+تمييز الكلمات المفتاحية: 
+\series default
+تستعمل لتمييز الكلمات المنقّب عنها في الآية من الكلمات الأخرى .
+ مثلا: الحمد 
 \lang english
 <style>
 \lang arabic_arabi
@@ -948,110 +914,47 @@ relevance
 \lang english
 </style>
 \lang arabic_arabi
-رب العالمين
-\begin_inset Newline newline
-\end_inset
+رب العالمين.
+\end_layout
 
+\begin_layout Itemize
 
+\series bold
+عرض النتائج في الوقت الراهن
+\series default
+: تستعمل لتجنيب المستخدم الانتظار خلال عملية البحث حيث تعرض كل نتيجة فور
+ إيجادها.
+ جد مفيدة في حالة عبارات البحث التي تتطلب وقتا معتبرا.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+تجميع النتائج: 
+\series default
+تستعمل هذه المزية في توفير أفضل استعراض للنتائج لأن تبني الآية كوحدة لا
+ يعتبر دائما الخيار الأفضل للمستخدمين.
+ أحيانا تجميع هاته الآيات حسب السورة أو الموضوع يكون أحسن.
+ المعايير التي يمكن استعمالها للتجميع هي: حسب السورة، حسب ترابط التفسير،
+ حسب حوادث التنزيل،حسب المتشابهات، حسب الترابط الموضوعي كالأمثال والقصص.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+عرض الآيات بالخط العثماني كامل الرموز: 
+\series default
+القرآن مكتوب في المصحف بالخط العثماني زاخر بالرموز التي تساعد في قراءة وتلاوة
+ القرآن بطريقة صحيحة .
+ تجعل عرض هذه الرموز قد يسبب بعض الغموض عند التلاوة مثلا رموز الوقف تعلمنا
+ متى لا يمكننا الوقف ومتى يمكن ومتى يجب.
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
 
 \series bold
-عرض النتائج في الوقت الراهن 
-\series default
-(
-\series bold
-\lang english
-Real time output
-\series default
-\lang arabic_arabi
-) : تستعمل لتجنيب المستخدم الانتظار خلال عملية البحث حيث تعرض كل نتيجة فور
- إيجادها
-\begin_inset Newline newline
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-تجميع النتائج:
-\series default
- المعايير التي يمكن إستعمالها للتجميع هي:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-حسب المتشابهات
-\end_layout
-
-\begin_layout Itemize
-حسب السور
-\end_layout
-
-\begin_layout Itemize
-حسب الترابط الموضوعي: الأمثال والقصص
-\end_layout
-
-\begin_layout Itemize
-حسب ترابط التفسير
-\end_layout
-
-\begin_layout Itemize
-حسب أسباب التنزيل
-\begin_inset Newline newline
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-
-\series bold
-عرض الآيات بالخط العثماني كامل الرموز
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-
-\series bold
-[ ۞ لَّقَدْ كَانَ فِى يُوسُفَ وَإِخْوَتِهِۦٓ ءَايَٰتٌ لِّلسَّآئِلِين]
-\series default
- 
-\series bold
-\lang english
-
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-
-\series bold
-\lang english
-font me_Quran
-\end_layout
-
-\end_inset
-
-
-\lang arabic_arabi
-
-\begin_inset Newline newline
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\end_deeper
-\begin_layout Itemize
-
-\series bold
-نظم الإقتراحات
+نظم الاقتراحات
 \end_layout
 
 \begin_deeper
@@ -1060,57 +963,31 @@ font me_Quran
 \series bold
 التدقيق الإملائي: 
 \series default
-توفير بدائل للكلمة في حالة الأخطاء الإملائية او الورود بصورة مخالفة في القرآن.
+توفير بدائل للكلمة في حالة الأخطاء الإملائية أو الورود بصورة مخالفة في القرآن.
+ مثلا نقترح بدلا لكلمة أبرَاهَام كلمة إبْرَاهِيم كما وردت في القرآن.
 \end_layout
 
-\begin_deeper
-\begin_layout Itemize
-أبرَاهَام: إبْرَاهِيم 
-\begin_inset Newline newline
-\end_inset
-
-
-\end_layout
-
-\end_deeper
 \begin_layout Itemize
 
 \series bold
 الكلمات المرتبطة دلاليا:
 \series default
- تستعمل كتلميحات ، غالبا تكون مبنية على أنتولوجيات.
+ تستعمل كتلميحات للمستخدمين كي تساعدهم في إيجاد كلمات مفتاحية أخرى تهمّهم،
+ غالبا بالاعتماد على أنتولوجيات.
+ مثلا نقترح لكلمة يعقوب كلمة إسرائيل (لقبه) و كلمة يوسف (أحد أبنائه) و كلمة
+ الأسباط (أبناءه) و كلمة نبي (صفته).
 \end_layout
 
-\begin_deeper
-\begin_layout Itemize
-يعقوب: يوسف، الأسباط، نبي...
- 
-\begin_inset Newline newline
-\end_inset
-
-
-\end_layout
-
-\end_deeper
 \begin_layout Itemize
 
 \series bold
 التشكيلات المختلفة:
 \series default
  اقتراح كل التشكيلات الممكنة مرتبة حسب مرات الورود.
+ تساعد في رفع الغموض عن عبارة البحث وجعلها أكثر دقّة.
+ مثلا نقترح لكلمة الملك الكلمات مشكَّلة المَلِك ، المُلْك، المَلَك ...إلخ.
 \end_layout
 
-\begin_deeper
-\begin_layout Itemize
-الملك : المَلِك ، المُلْك، المَلَك ...
- 
-\begin_inset Newline newline
-\end_inset
-
-
-\end_layout
-
-\end_deeper
 \begin_layout Itemize
 
 \series bold
@@ -1142,35 +1019,134 @@ font me_Quran
 : 
 \series default
 توفر إكمالا تلقائيا بناءا على مراقبة إحصائية للمتلازمات.
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-سميع : سميع عليم، سميع بصير 
+ كسابقتها تساعد في جعل عبارات البحث أكثر دقّة.
+ مثلا نقترح لكلمة سميع عبارتي سميع عليم وكذلك سميع بصير.
+ 
 \end_layout
 
 \begin_layout Itemize
-الحمد: الحمد لله 
-\begin_inset Newline newline
-\end_inset
 
-
+\series bold
+مقابلة الرموز في لوحة المفاتيح
+\series default
+: هذه المزية تدور حول استبدال أي حرف لاتيني بنظيره العربي على لوحة المفاتيح.
+ المزية تساعد المستخدم عندما ينسى تغيير لوحة المفاتيح.
+ تستعمل هذه المزية في محرك البحث غوغل ولكن بطريقة معكوسة أي من العربية إلى
+ الانجليزية.
+ مثلا نقترح لكلمة
+\series bold
+\emph on
+ 
+\series default
+\emph default
+\lang english
+fsl
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang arabic_arabi
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+كلمة بسم ( 
+\lang english
+f
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang arabic_arabi
+ ⇤ ب، 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+s
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang arabic_arabi
+ ⇤ س، 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+l
+\lang arabic_arabi
+ 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+⇤ م).
 \end_layout
 
-\end_deeper
 \begin_layout Itemize
 
 \series bold
 المعاني المختلفة 
 \series default
-: تستعمل لتحديد البحث في احدى معاني كلمة دون معانيها الأخرى.
+: تستعمل لتحديد البحث في إحدى معاني كلمة دون معانيها الأخرى.
+ تساعد في جعل عبارة البحث أكثر دقّة.
+ مثلا نقترح لكلمة رَبّ المعنى 1 (إله) والمعنى 2 (سيد).
 \end_layout
 
 \begin_deeper
-\begin_layout Itemize
-رب: معنى 1 (إله)، معنى 2 (سيد)
-\end_layout
-
 \begin_layout Standard
 \SpecialChar \textcompwordmark{}
 
@@ -1188,28 +1164,509 @@ font me_Quran
 \begin_layout Itemize
 
 \series bold
+التهجية الانجليزية: 
+\series default
+يحتاجها غالبا الغير الناطقين باللغة العربية الذين لا يجيدون التعامل مع الحروف
+ و المفاتيح العربية.
+ توجد عدة تهجيات للعربية إلى الإنجليزية منها:تهجية المعيار الدولي
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+ISO
+\numeric on
+233
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang arabic_arabi
+ التي تستعمل في المقالات العلمية، تهجية بُك-والتر (
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Buckwalter
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang arabic_arabi
+) تستعمل في المعالجة الآلية للغات، تهجية عربتيكس (
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Arabtex
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang arabic_arabi
+) تستعمل في اللاتخ و أخيرا العربيزي (
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Arabizi
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang arabic_arabi
+) التي تستعمل عادة في الدردشة والرسائل القصيرة.
+ مثلا: كلمة خَلِيفَة تترجم 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Caliph
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang arabic_arabi
+ بالانجليزية وتكتب 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+ẖalīfaẗ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang arabic_arabi
+ (
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+ISO
+\numeric on
+233
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang arabic_arabi
+)،
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+xalyfap
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang arabic_arabi
+ (
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Buckwalter
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang arabic_arabi
+) ، 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+_halyfaT
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang arabic_arabi
+ (
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Arabtex
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang arabic_arabi
+)، 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+khalifa
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang arabic_arabi
+ أو 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+khalifah
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang arabic_arabi
+ أو 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+khaleefa
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang arabic_arabi
+ أو 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+5alifa
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang arabic_arabi
+ أو 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+7'alifa
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang arabic_arabi
+ (
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Arabizi
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang arabic_arabi
+) .
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+التلوين النحوي: 
+\series default
+تلوين أجزاء الكلمات بناءا على محلها من الكلام يسهّل عرض الآيات بالنسبة للغويين.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+الإدخال الصوتي: 
+\series default
+هذه المزيّة تستهدف العميان من المستخدمين لتمكينهم من البحث بسهولة.
+ مفيدة أيضا في الهواتف الذكية أين تكون لوحة المفاتيح صغيرة وصعبة الاستعمال.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
 البحث بالتشكيل الجزئي: 
 \series default
 مزية تعطي المستخدم فرصة تعيين بعض الحركات دون تعيين الكل.
+ مفيدة في إهمال الحركة الأخيرة التي تعبّر غالبا عن حالة إعراب الكلمة.
+ مثلا مـَلـك للبحث عن مـَلـِك, مـَلـَك ...
+ وإهمال مـُلـْك .
 \end_layout
 
-\begin_deeper
-\begin_layout Itemize
-مـَلـك للبحث عن مـَلـِك, مـَلـَك ...
- وإهمال مـُلـْك 
-\begin_inset Newline newline
-\end_inset
-
-
-\end_layout
-
-\end_deeper
 \begin_layout Itemize
 
 \series bold
 الاشتقاق متعدد المستويات: 
 \series default
-اشتقاقات الكلمات العربية يمكن أن تقسّم إلى
+مزية مفيدة في إيجاد كل أو بعض الاشتقاقات لكلمة ما ويكون هذا على
 \family roman
 \series medium
 \shape up
@@ -1260,28 +1717,10 @@ font me_Quran
 \noun default
 \color inherit
 (فأسقيناكموه)، الكلمة دون سوابق ولواحق (أسقينا)، الجذع (أسقى)، الجذر (سقي).
+ مثلا: (الكلمة: أسقينا, المستوى: كلمة دون لواصق ) للبحث عن وَأَسْقَيْنَاكُمْ
+ , لَأَسْقَيْنَاهُمْ, فَأَسْقَيْنَاكُمُوهُ .
 \end_layout
 
-\begin_deeper
-\begin_layout Itemize
-(الكلمة:سقي , المستوى: جذر) للبحث عن يَسْقُونَ, نَسْقِي, وَيَسْقِينِ , يُسْقَوْن
-َ , وَيُسْقَوْنَ, وَسُقْيَاهَا , وَأَسْقَيْنَاكُمْ , وَيُسْقَى , لَأَسْقَيْنَاهُ
-مْ , وَنُسْقِيَهُ , فَأَسْقَيْنَاكُمُوهُ , فَسَقَى , السِّقَايَةَ, نُسْقِيكُمْ,
- فَيَسْقِي, سِقَايَةَ, تَسْقِي, سَقَيْتَ, يُسْقَى, اسْتَسْقَى, اسْتَسْقَاهُ,
- وَسُقُوا.
- 
-\end_layout
-
-\begin_layout Itemize
-(الكلمة: أسقينا, المستوى: lemma ) للبحث عن وَأَسْقَيْنَاكُمْ , لَأَسْقَيْنَاهُمْ
-, فَأَسْقَيْنَاكُمُوهُ .
-\begin_inset Newline newline
-\end_inset
-
-
-\end_layout
-
-\end_deeper
 \begin_layout Itemize
 
 \series bold
@@ -1289,24 +1728,10 @@ font me_Quran
 \series default
  هذه تخصيص للمزية السابقة .
  بما أن العربية هي لغة اشتقاقية بصفة كاملة فهي تملك عمليات اشتقاق كثيرة.
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-تصريف في الماضي لفعل 'قال' للبحث عن قالت, قال, قالوا, قلن ...
+ مثلا تصريف قال في الماضي للبحث عن قالت، قال، قالوا، قلن ...إلخ.
  
 \end_layout
 
-\begin_layout Itemize
-تصريف في الأمر لفعل 'قال' للبحث عن قولوا , قل ...
- 
-\begin_inset Newline newline
-\end_inset
-
-
-\end_layout
-
-\end_deeper
 \begin_layout Itemize
 
 \series bold
@@ -1315,18 +1740,10 @@ font me_Quran
 مزية توفر طريقة ذكية للتحكم في عائلة كلمة ما بتصفية الكلمات حسب خصائص كـ:
  الجذر، الجذع، النوع، الاعراب، وزن الفعل، العدد، التأنيث والتذكير، المبني
  للمجهول والمبني للمعلوم، المفرد والجموع...إلخ.
+ مثلا }جذر:ملك، نوع:اسم، عدد: مفرد { لإيجاد جميع مشتقات الجذر ملك التي تكون
+ اسما وفي صيغة المفرد.
 \end_layout
 
-\begin_deeper
-\begin_layout Itemize
-}جذر:ملك، نوع:اسم، عدد: مفرد { 
-\begin_inset Newline newline
-\end_inset
-
-
-\end_layout
-
-\end_deeper
 \begin_layout Itemize
 
 \series bold
@@ -1352,15 +1769,11 @@ font me_Quran
 \begin_layout Itemize
 
 \series bold
-إعتبار/ إهمال الأخطاء الإملائية:
+اعتبار/إهمال الأخطاء الإملائية:
 \series default
  خاصة للحروف التي يخطئ المستخدمون في كتابتها كالهمزة التي يعتمد شكل حاملها
  على حركتها وحركة ما قبلها.
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-مءصدة
+ مثلا مءصدة تعوِّض مؤصدة، ضحي تعوِّض ضحى، جنه تعوِّض
 \family roman
 \series medium
 \shape up
@@ -1384,102 +1797,9 @@ font me_Quran
 \uwave default
 \noun default
 \color inherit
-\lang english
-==
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-\lang arabic_arabi
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-مؤصدة
+جنة.
 \end_layout
 
-\begin_layout Itemize
-ضحي 
-\lang english
-==
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-\lang arabic_arabi
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-ضحى
-\end_layout
-
-\begin_layout Itemize
-جنه 
-\lang english
-==
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-\lang arabic_arabi
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-جنة
-\begin_inset Newline newline
-\end_inset
-
-
-\end_layout
-
-\end_deeper
 \begin_layout Itemize
 
 \series bold
@@ -1490,17 +1810,19 @@ Annotations
 ): 
 \series default
 عرض التعليقات التوضيحية لكل كلمة من النتائج يساعد دارسي اللغة على تتبعها
- حسب مواقعها في الآيات كلمة بكلمة بطريقة سهلة
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-]شرح أكثر: ما هي هذه التعليقات التوضيحية[
+ حسب مواقعها في الآيات كلمة بكلمة بطريقة سهلة.
+ هذه التعليقات تضمُّ معلومات كالجذر والجذع والنوع والإعراب ووزن الفعل والعدد
+ وغير ذلك.
 \end_layout
 
-\end_inset
+\begin_layout Itemize
 
-.
+\series bold
+البحث عن الأمثلة اللغوية: 
+\series default
+هذه المزيّة تساعد الباحثين في اللغة العربية على إيجاد الأمثلة اللغوية التي
+ وردت في القرآن بطريقة سهلة.
+ مثلا الحذف البلاغي والالتفات.
 \end_layout
 
 \begin_layout Itemize
@@ -1509,13 +1831,7 @@ status collapsed
 الكتابة العثمانية للكلمات:
 \series default
  توفر خيار البحث بالكلمات حسب كتابتها الإملائية أو العثمانية.
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-بصطة 
-\lang english
-==
+ مثلا بصطة تعوِّض بسطة، نعمت تعوِّض
 \family roman
 \series medium
 \shape up
@@ -1527,7 +1843,6 @@ status collapsed
 \uwave off
 \noun off
 \color none
-\lang arabic_arabi
  
 \family default
 \series default
@@ -1540,63 +1855,10 @@ status collapsed
 \uwave default
 \noun default
 \color inherit
-بسطة
-\lang english
- 
-\end_layout
-
-\begin_layout Itemize
-نعمت 
-\lang english
-==
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-\lang arabic_arabi
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-نعمة
-\lang english
-
-\begin_inset Newline newline
-\end_inset
-
- 
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-
-\series bold
-إرجاع الضمائر الى أصلها: 
-\series default
-الضمائر غالبا ما تشير إلى كلمات أخرى تأتي قبله تعتبر المرجع.
- هذه المزية هدفها البحث بهذه المراجع لإيجاد ضمائرها.
+نعمة.
 \end_layout
 
 \begin_deeper
-\begin_layout Itemize
-لا اله إلا هو, هو ⇤ الله
-\end_layout
-
 \begin_layout Standard
 \SpecialChar \textcompwordmark{}
 
@@ -1629,40 +1891,16 @@ status collapsed
  ويمكن أن تضم أيضا أي كلمة أو ضمير يقصد به الله بصفة أكيدة.
 \end_layout
 
-\begin_deeper
-\begin_layout Itemize
-
-\lang english
-TODO:
-\end_layout
-
-\end_deeper
 \begin_layout Itemize
 
 \series bold
 إيجاد رموز التلاوة:
 \series default
- مفيدة لطلبة التجويد.
+ مفيدة لطلبة التجويد الذين ينقبون عن أمثلة لأحكام التجويد في القرآن الكريم.
+ مثلا سجدة:نعم للبحث عن الآيات التي تحتوي على سجدة.
+ 
 \end_layout
 
-\begin_deeper
-\begin_layout Itemize
-سجدة : نعم 
-\end_layout
-
-\begin_layout Itemize
-نوع _سكتة:واجبة 
-\end_layout
-
-\begin_layout Itemize
-قلقلة:نعم 
-\begin_inset Newline newline
-\end_inset
-
-
-\end_layout
-
-\end_deeper
 \begin_layout Itemize
 
 \series bold
@@ -1671,7 +1909,7 @@ TODO:
 نظرا إلى كون القرآن مقسّما إلى أجزاء و الأجزاء إلى أحزاب والأحزاب إلى أنصاف
  ...
  إلى الآيات.
- إضافة الى تقسيمات أخرى كالتقسيم إلى صفحات.
+ إضافة إلي تقسيمات أخرى كالتقسيم إلى صفحات.
 \end_layout
 
 \begin_deeper
@@ -2049,6 +2287,21 @@ Hypo(
 
 [ثَانِيَ اثْنَيْنِ إِذْ هُمَا فِي الْغَارِ إِذْ يَقُولُ لِصَاحِبِهِ لَا
  تَحْزَنْ إِنَّ اللَّـهَ مَعَنَا ] - التوبة 40 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+إرجاع الضمائر إلى أصلها: 
+\series default
+الضمائر غالبا ما تشير إلى كلمات أخرى تأتي قبله تعتبر المرجع.
+ هذه المزية هدفها البحث بهذه المراجع لإيجاد ضمائرها.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+لا اله إلا هو, هو ⇤ الله
 \end_layout
 
 \begin_layout Standard
