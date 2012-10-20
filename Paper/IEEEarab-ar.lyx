@@ -598,7 +598,10 @@ left side}{right side
 نظام الإحصاءات:
 \series default
  هذا الصنف يغطي كل الاحتياجات الإحصائية التي يمكن أن يريدها المستخدم في
- القرآن .مثلا ، البحث عن الكلمة الأكثر ورودا.
+ القرآن.
+ الإحصاءات مهمة في تصنيف الكلمات والآيات ويمكن استعمالها أيضا في التأكد
+ من صحة المعلومات التي يؤشر لها بمعجزات عددية.
+ .مثلا ، البحث عن الكلمة الأكثر ورودا.
 \end_layout
 
 \begin_layout Standard
@@ -1876,9 +1879,49 @@ Annotations
 \begin_layout Itemize
 
 \series bold
+البحث الموضعي: 
+\series default
+نظرا إلى كون القرآن مقسّما إلى أجزاء و الأجزاء إلى أحزاب والأحزاب إلى أنصاف
+ ...
+ إلى الآيات.
+ إضافة إلي تقسيمات أخرى كالتقسيم إلى صفحات.
+ هذه المزية تفيد في حصر مجال البحث.
+ مثلا صفحة: 1 للبحث في الصفحة الأولى، حزب:
+\numeric on
+60
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+لحصر البحث في الحزب الأخير.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
 تمييز ألفاظ الجلالة: 
 \series default
-تستعمل هذه الميزة في بعض المصاحف حاليا، تهدف الى عرض ألفاظ الجلالة بطريقة
+تستعمل هذه الميزة في بعض المصاحف حاليا، تهدف إلى عرض ألفاظ الجلالة بطريقة
  واضحة ومميّزة.
  ألفاظ الجلالة تضم الكتابات المختلفة لكلمة 
 \begin_inset Quotes eld
@@ -1904,96 +1947,121 @@ Annotations
 \begin_layout Itemize
 
 \series bold
-البحث الموضعي: 
-\series default
-نظرا إلى كون القرآن مقسّما إلى أجزاء و الأجزاء إلى أحزاب والأحزاب إلى أنصاف
- ...
- إلى الآيات.
- إضافة إلي تقسيمات أخرى كالتقسيم إلى صفحات.
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-صفحة: 1 
-\end_layout
-
-\begin_layout Itemize
-حزب :
-\numeric on
-60
-\numeric off
- 
-\begin_inset Newline newline
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-
-\series bold
 البحث في الترجمات:
 \series default
  مزية تساعد المستخدمين في البحث في ترجمات القرآن وبلغة الترجمة بدل النص
- العربي .
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-
+ العربي.
+ مثلا 
 \series bold
+
 \begin_inset space \thinspace{}
 \end_inset
 
 
 \series default
 \lang english
-{ text: mercy , lang: english , author: shekir }
-\begin_inset Newline newline
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-
-\series bold
-البحث بالمتشابهات
-\lang english
-
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-
-\series bold
-\lang english
- [def of mutashabih lafdi]
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-متشابهة
-\lang english
- {55,13} 
-\begin_inset Newline newline
-\end_inset
-
-
-\series bold
+{ text: mercy , lang: english }
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
 \lang arabic_arabi
-[ 
+ للبحث عن كلمة 
+\family default
 \series default
-فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+mercy
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang arabic_arabi
+ بمعنى رحمة في الترجمات الإنجليزية.
+\end_layout
+
+\begin_layout Itemize
+
 \series bold
-], 
+البحث بالمتشابهات: 
+\series default
+تمكّن دارسي القرآن من استخراج المتشابهات والتكرار سواءا كانت تقريبية أو
+ كاملة التطابق.
+ مثلا تكرار
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+{55,13}
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang arabic_arabi
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+يعطي
+\series bold
+ 
 \series default
 \lang english
 31
@@ -2021,37 +2089,36 @@ status collapsed
 \uwave default
 \noun default
 \color inherit
-متشابهة
+آية متطابقة هي: 
+\series bold
+[ 
+\series default
+فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ
+\series bold
+]
+\series default
+
 \begin_inset Newline newline
 \end_inset
 
 
 \end_layout
 
-\end_deeper
 \begin_layout Itemize
-البحث عن الناسخ والمنسوخ:
+
+\series bold
+البحث عن الناسخ والمنسوخ: 
+\series default
+معرفة النواسخ يساعد في معرفة أحكام الإسلام لذا من الأفضل توفير مزية البحث
+ عن جميع حالات النسخ مع تبيان المؤيدين والمعارضين لكل حالة.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
-البحث بالأمثال
-\lang english
-
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-
-\series bold
-\lang english
-def of mathal qurany]
-\end_layout
-
-\end_inset
-
-
+البحث بالأمثال: 
+\series default
+تعين في إيجاد واستعراض الأمثال في القرآن.
 \end_layout
 
 \begin_deeper
@@ -2084,59 +2151,34 @@ def of mathal qurany]
 \series bold
 البحث بالكلمات المرتبطة دلاليا: 
 \series default
-هناك عدة أنواع من الروابط الدلالية: 
+هذه المزية تنم عن دعم كلمة مفتاحية بمجموعة من كلمات ذات علاقة دلالية بها.
+ هناك عدة أنواع من الروابط الدلالية: المترادفات، الأضداد،
 \lang english
-Synonymy, Antonymy, Hypernym, Hyponymy, Meronymy, Holonymy, Troponymy
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-مترادف(جنة ) == جنة، نعيم، فردوس … 
-\end_layout
-
-\begin_layout Itemize
-ضدّ( جنة) == جحيم، سعير ، جهنم، سقر … 
-\lang english
-
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-
-\lang english
-Hypo( 
+ Hypernym, Hyponymy, Meronymy, Holonymy, Troponymy
 \lang arabic_arabi
-جنة
-\lang english
-) to search for 
-\lang arabic_arabi
-عدن، فردوس
-\lang english
- …
-\end_layout
-
-\end_inset
-
-
+.
+ هذه المزية ستكون سندا في إنجاز مزايا دلالية أخرى والإجابة عن بعض استفسارات
+ المستخدمين.
+ مثلا مترادف(جنة ) للبحث عن جنة، نعيم، فردوس ، ضدّ( جنة) للبحث جحيم، سعير
+ ، جهنم، سقر .
 \end_layout
 
 \begin_layout Itemize
-...
- 
-\begin_inset Newline newline
-\end_inset
 
-
+\series bold
+البحث الموضوعي
+\series default
+: هذه المزية تمكن من استعراض آيات القرآن حسب مواضيعها موزعة على مستويات
+ وبطريقة شجرية.
 \end_layout
 
-\end_deeper
 \begin_layout Itemize
 
 \series bold
 الأسئلة الطبيعية:
 \series default
- مزية تعنى بتوفير خيار طرح عبارة الإستعلام على شكل سؤال طبيعي باللغة العربية.
- الكلمات الأكثر إستعمالا في السؤال هي
+ مزية تعنى بتوفير خيار طرح عبارة الاستعلام على شكل سؤال طبيعي باللغة العربية.
+ الكلمات الأكثر استعمالا في السؤال هي
 \lang english
 :
 \lang arabic_arabi
@@ -2227,10 +2269,6 @@ Hypo(
  فَخَلَقْنَا الْمُضْغَةَ عِظَامًا فَكَسَوْنَا الْعِظَامَ لَحْمًا ثُمَّ أَنْشَأْن
 َاهُ خَلْقًا آخَرَ فَتَبَارَكَ اللَّـهُ أَحْسَنُ الْخَالِقِينَ] - المؤمنون
  14 
-\begin_inset Newline newline
-\end_inset
-
-
 \end_layout
 
 \end_deeper
@@ -2243,18 +2281,35 @@ Hypo(
  كما ذكرنا في الإشكالية.
  هذه المزية تساعد على تخطي هذه الالتباسات بمحاولة معالجتها بالتشكيل التلقائي
  قبل القيام بعملية البحث.
-\end_layout
+ مثلا 
+\begin_inset Quotes eld
+\end_inset
 
-\begin_deeper
-\begin_layout Itemize
-رسول من الله == رَسُول مِنَ اللهِ 
-\begin_inset Newline newline
+رسول من الله
+\begin_inset Quotes erd
+\end_inset
+
+ تصبح بعد التشكيل التلقائي 
+\begin_inset Quotes eld
+\end_inset
+
+ رَسُول مِنَ الله
+\begin_inset Quotes erd
 \end_inset
 
 
 \end_layout
 
-\end_deeper
+\begin_layout Itemize
+
+\series bold
+استخراج المعلومات: 
+\series default
+هذه المزية تساعد في استخراج المعلومات كالأشخاص والتواريخ والأزمنة والمسافات
+ والأعداد والأمكنة حتى وإن وردت بصور مختلفة.
+ مثلا استخراج كلمة ببكة كـ (مكان، مكة).
+\end_layout
+
 \begin_layout Itemize
 
 \series bold
@@ -2314,7 +2369,7 @@ Hypo(
 \begin_layout Itemize
 
 \series bold
-نظام الاحصاءات
+نظام الإحصاءات
 \end_layout
 
 \begin_deeper
