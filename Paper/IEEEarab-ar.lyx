@@ -1750,28 +1750,6 @@ Arabizi
 \begin_layout Itemize
 
 \series bold
-تعويض القيم العددية: 
-\series default
-تساعد في إيجاد الأعداد دون كتابتها على صورة كلمات.
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-ـ
-\lang english
-309
-\lang arabic_arabi
- تعوض ثلاثمائة وتسعة
-\begin_inset Newline newline
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-
-\series bold
 اعتبار/إهمال الأخطاء الإملائية:
 \series default
  خاصة للحروف التي يخطئ المستخدمون في كتابتها كالهمزة التي يعتمد شكل حاملها
@@ -2096,12 +2074,6 @@ mercy
 فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ
 \series bold
 ]
-\series default
-
-\begin_inset Newline newline
-\end_inset
-
-
 \end_layout
 
 \begin_layout Itemize
@@ -2345,26 +2317,6 @@ mercy
 \end_layout
 
 \end_deeper
-\begin_layout Itemize
-
-\series bold
-إرجاع الضمائر إلى أصلها: 
-\series default
-الضمائر غالبا ما تشير إلى كلمات أخرى تأتي قبله تعتبر المرجع.
- هذه المزية هدفها البحث بهذه المراجع لإيجاد ضمائرها.
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-لا اله إلا هو, هو ⇤ الله
-\end_layout
-
-\begin_layout Standard
-\SpecialChar \textcompwordmark{}
-
-\end_layout
-
-\end_deeper
 \end_deeper
 \begin_layout Itemize
 
@@ -2389,10 +2341,6 @@ mercy
 
 \begin_layout Itemize
 ما هي العشر الكلمات الأكثر ترددا في القرآن ككل.
-\begin_inset Newline newline
-\end_inset
-
-
 \end_layout
 
 \end_deeper
@@ -2433,10 +2381,6 @@ mercy
 \end_inset
 
  ستحسب أيضا.
-\begin_inset Newline newline
-\end_inset
-
-
 \end_layout
 
 \end_deeper
