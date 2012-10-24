@@ -5268,7 +5268,7 @@ Survey Participants Details
 \end_layout
 
 \begin_layout Standard
-We launch th survey for xx days and we gathered about xx takers.
+We launch the survey for xx days and we gathered about xx takers.
 \end_layout
 
 \begin_layout Standard
@@ -5827,6 +5827,23 @@ Usefulness
 
 \begin_layout Subsubsection
 Importance
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+
+\series bold
+Further discussion
+\series default
+ : +1/-1 evaluation!, Difficulty & Complexity, Required resources, Dependency
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
