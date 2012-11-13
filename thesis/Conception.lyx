@@ -810,6 +810,107 @@ Othmani Script and Text processing
 Modular Query Parser
 \end_layout
 
+\begin_layout Standard
+Extensible and Combination ability of different operations
+\end_layout
+
+\begin_layout Subsection
+
+\series bold
+Proposition of new operations
+\end_layout
+
+\begin_layout Subsubsection
+Related Words
+\end_layout
+
+\begin_layout Standard
+Syntax :Relation~word
+\end_layout
+
+\begin_layout Subsubsection
+Multi-level Derivations
+\end_layout
+
+\begin_layout Standard
+Suntax: >>> Malak
+\end_layout
+
+\begin_layout Subsubsection
+Special Derivations
+\end_layout
+
+\begin_layout Standard
+Syntax : Past(malaka), Present(Malaka), Imperative(Malaka)...
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+find a smart way to explain all of those
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Spelling on/off
+\end_layout
+
+\begin_layout Subsubsection
+Embedded Search 
+\end_layout
+
+\begin_layout Enumerate
+Word properties search
+\end_layout
+
+\begin_layout Enumerate
+Translations search
+\end_layout
+
+\begin_layout Subsubsection
+New Arabic Jokers 
+\end_layout
+
+\begin_layout Itemize
+Consents: ? *
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Hamza 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Vowels: !
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Long Vowels
+\end_layout
+
+\begin_layout Itemize
+Short Vowels
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+All: .
+\end_layout
+
+\begin_layout Subsubsection
+
+\series bold
+Word sens disambiguation:
+\end_layout
+
 \begin_layout Section
 Statistics Gathering System
 \end_layout

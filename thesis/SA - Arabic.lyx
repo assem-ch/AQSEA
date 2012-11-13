@@ -3644,19 +3644,8 @@ key "Alk99"
 
 \end_layout
 
-\begin_layout Standard
-
-\end_layout
-
 \begin_layout Subsection
-Flexional Morphology 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Mes08"
-
-\end_inset
-
- 
+Flexional Morphology
 \end_layout
 
 \begin_layout Standard
@@ -3670,7 +3659,14 @@ key "GB75"
 \end_inset
 
 .
- Generally, these flexional marks can distinguish:
+ Generally, these flexional marks can distinguish 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Mes08"
+
+\end_inset
+
+ :
 \end_layout
 
 \begin_layout Itemize
@@ -7047,13 +7043,6 @@ e, accusative or genitive according to its function in the sentence.
 
 \begin_layout Subsection
 Derivational morphology
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Mes08"
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -7061,7 +7050,14 @@ Each verb has its set of associated deverbal forms which it maintains morphologi
 cal, syntactic and semantic relations.
  The number and nature of these forms vary depending on the status of the
  verb.
- We cite some deverbal forms:
+ We cite some deverbal forms
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Mes08"
+
+\end_inset
+
+:
 \end_layout
 
 \begin_layout Subsubsection

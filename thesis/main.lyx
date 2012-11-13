@@ -66,7 +66,6 @@ minimalistic
 \paperorientation portrait
 \suppress_date false
 \use_refstyle 1
-\boxbgcolor #005500
 \index Index
 \shortcut idx
 \color #008000
@@ -520,15 +519,13 @@ thepage}
 
 %
 \backslash
-fancyhead[R]{{
+fancyhead[R]{
 \backslash
 em 
 \backslash
-footnotesize 
+LR{ 
 \backslash
-LR{  
-\backslash
-leftmark }}} 
+leftmark }} 
 \end_layout
 
 \begin_layout Plain Layout

@@ -763,7 +763,7 @@ Regex
  التعامل معها.
  مثلا 
 \emph on
-[من ا]، 
+م[ن ا]، 
 \emph default
 لاسترداد إما 
 \begin_inset Quotes eld
@@ -1967,7 +1967,7 @@ mercy
 \series default
 تمكّن دارسي القرآن من استخراج المتشابهات والتكرار سواءا كانت تقريبية أو
  كاملة التطابق.
- مثلا تكرار
+ مثلا تكرار الآية
 \family roman
 \series medium
 \shape up
@@ -2053,7 +2053,7 @@ mercy
 \series default
 فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ
 \series bold
-]
+] 
 \end_layout
 
 \begin_layout Itemize
