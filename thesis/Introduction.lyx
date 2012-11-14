@@ -120,15 +120,12 @@ Work Context
 \end_layout
 
 \begin_layout Standard
-\begin_inset Flex Initial
-status collapsed
 
-\begin_layout Plain Layout
+\series bold
+\size larger
 Q
-\end_layout
-
-\end_inset
-
+\series default
+\size default
 ur'an, in Arabic, means the read or the recitation.
  Muslim scholars define it by: the words of Allah revealed to His Prophet
  Muhammad, written in Mus'haf and transmitted by successive generations
@@ -298,7 +295,7 @@ Second Part : Analysis & Conception
 \end_layout
 
 \begin_layout Standard
-This part contains 2 chapters :
+This part contains two chapters :
 \begin_inset VSpace smallskip
 \end_inset
 
@@ -316,6 +313,8 @@ The objective of this chapter is to present the possible search features
  in Qur'an.
  It has a big importance in our work since it defines our objectives and
  our path on the work.
+ We've make a survey about Usefulness, Need, and Clarity of each feature
+ in order to validate our points of view in choosing those features.
 \end_layout
 
 \begin_layout Standard
@@ -332,9 +331,9 @@ Chapter 5 : Conception
 \end_layout
 
 \begin_layout Standard
-In this chapter, we'll propose a general schema for a Qur'anic retrieval
- system then we'll discuss how to improve it to carry out all the feasible
- search features mentioned in the previous chapter.
+In this chapter, we start by a preview on our previous work then we'll propose
+ many improvements to carry out all the feasible search features mentioned
+ in the previous chapter.
 \end_layout
 
 \begin_layout Subsection*

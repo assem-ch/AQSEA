@@ -754,7 +754,7 @@ options "bib/alpha"
 
  
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Part*
 \start_of_appendix
@@ -859,6 +859,19 @@ arabic{figure}}
 \begin_inset CommandInset include
 LatexCommand include
 filename "Annex - Translateration.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Include: Global Schema!
+\end_layout
 
 \end_inset
 
