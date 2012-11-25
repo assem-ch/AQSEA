@@ -178,16 +178,44 @@ Introduction
 
 \begin_layout Standard
 After listing all possible search features as explained in the previous
- chapter, we'll propose and discuss a retrieval system that can meet the
- most of the features.
- At first, we'll explain the general behavior, our modifications and improvement
-s on it.
- Then we'll explain main parts of the retrieval system one by one: Text
- processing, Query processing, Results processing, Suggestion system.
- After this, we'll discuss how to implement a full vocalized search and
- the road-map toward semantic search.
- Finally, we'll mention necessary Qur'anic resources and the features depending
- to each resource.
+ chapter, we will - at first - go through our previous work explaining all
+ what we have already done.
+ After that, we'll discuss many improvments that leads to a better search
+ experience.
+ We've gathered those improvements under those points:
+\end_layout
+
+\begin_layout Itemize
+Maintain a full vocalization search engine;
+\end_layout
+
+\begin_layout Itemize
+Text processing based on Uthmani script;
+\end_layout
+
+\begin_layout Itemize
+A modular and extensible query parser;
+\end_layout
+
+\begin_layout Itemize
+An accurate statistics gathering system;
+\end_layout
+
+\begin_layout Itemize
+More adequate suggestion system;
+\end_layout
+
+\begin_layout Itemize
+Ways to make a standard Quranic and Linguistic resources manager;
+\end_layout
+
+\begin_layout Itemize
+The road-map toward semantic search.
+\end_layout
+
+\begin_layout Standard
+Finally, we'll mention also in this chapter all Qur'anic resources that
+ we think it's necessary and the features depending on each resource.
 \end_layout
 
 \begin_layout Section
@@ -326,19 +354,6 @@ The behavior of Searcher
 
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-To translate the figure!
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \end_inset
 
 
@@ -391,19 +406,6 @@ status open
 
 \begin_layout Plain Layout
 Text processing
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Note Greyedout
-status open
-
-\begin_layout Plain Layout
-to translate: figure
 \end_layout
 
 \end_inset
@@ -633,7 +635,7 @@ We passed the results by many phases of processing to improve their quality
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -659,15 +661,6 @@ Results processing phases
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-To translate
-\end_layout
-
-\end_inset
-
 
 \end_layout
 

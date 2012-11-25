@@ -5553,9 +5553,10 @@ Results of survey
 \begin_inset Float table
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="4" columns="6">
 <features tabularvalignment="middle">
@@ -5566,6 +5567,15 @@ status collapsed
 <column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
 <row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ID
+\end_layout
+
+\end_inset
+</cell>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -5597,16 +5607,7 @@ Clarity
 \begin_inset Text
 
 \begin_layout Plain Layout
-Usability
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Usefulness
+Importance 
 \end_layout
 
 \end_inset
@@ -5615,7 +5616,7 @@ Usefulness
 \begin_inset Text
 
 \begin_layout Plain Layout
-Ressources needed
+Usefulness
 \end_layout
 
 \end_inset

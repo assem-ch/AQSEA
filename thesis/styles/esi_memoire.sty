@@ -6,7 +6,7 @@
 %\usepackage{setspace}
 \usepackage{fontspec}
 %\usepackage[RTLdocument]{bidi}
-\usepackage{bidi}
+
 \usepackage{polyglossia}
 \usepackage{color}
 
@@ -21,7 +21,13 @@
 \newcommand\enbox[2][]{\tikz[overlay]\node[fill=blue!10,inner sep=2pt, anchor=text, rectangle, rounded corners=1mm,#1] {#2};\phantom{#2}}
 %%%%%%%%%%%%%%%%%%%% Draw box -> end
 
+\usepackage{titlesec}
 
+%captions
+%\setlength{\intextsep}{0cm plus1cm minus1cm}
+\usepackage[font={small}]{caption}
+
+\usepackage{bidi}
 
 \def\BSML{\begin{center}\char"FB51 \char"FB52 \char"FB53\end{center}}
 
@@ -30,8 +36,6 @@
 \chead{\footnotesize\it}
 \cfoot{}
 
-
-\selectbackgroundlanguage{french}
 
 \setmainlanguage{english}
 \setotherlanguage[numerals=maghrib]{arabic}
@@ -53,7 +57,7 @@
 \renewcommand{\epigraphwidth}{300pt}
 \usepackage{graphicx} %resize tables
 \usepackage{hyperref}
-\usepackage{titlesec}
+
 \usepackage{lastpage}
 %for better resolution 
 
@@ -187,13 +191,12 @@
 %[\vspace{1ex}%
 %]
 
-%captions
-%\setlength{\intextsep}{0cm plus1cm minus1cm}
-\usepackage[font={small}]{caption}
+
 
 %\newcommand{\notocsection}[1]{% 
     %\refstepcounter{chapter}% 
  %   \chapter*{\thechapter \quad #1}}% 
+
 
 
 
