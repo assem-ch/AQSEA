@@ -5,6 +5,7 @@
 \textclass extreport
 \begin_preamble
  \usepackage{styles/esi_memoire}
+\usepackage{styles/glossary_values}
 \end_preamble
 \use_default_options true
 \begin_modules
@@ -262,7 +263,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename figures/Basic Model.png
-	scale 50
+	scale 70
 
 \end_inset
 
@@ -335,7 +336,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename figures/Searcher Behavior.png
-	scale 50
+	scale 60
 
 \end_inset
 
@@ -394,7 +395,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename figures/Text Processing.png
-	scale 50
+	scale 65
 
 \end_inset
 
@@ -548,11 +549,11 @@ with this feature, the search engine would ignore most of spelling faults
 
 \begin_deeper
 \begin_layout Itemize
-Replace Tâ' marbûta with Hâ'
+Replace Tâ' marbûta with Hâ'.
 \end_layout
 
 \begin_layout Itemize
-Replace Alef maqsûra with Yâ'
+Replace Alef maqsûra with Yâ'.
 \end_layout
 
 \begin_layout Itemize
@@ -574,7 +575,7 @@ Then, the search engine processes all indexed words and process them the
 \begin_layout Itemize
 
 \series bold
-Search by triple (root, type, pattern): 
+Search by the triple root-type-pattern: 
 \series default
 The general behavior of this propriety is that the user put a triple of
  word properties so the search engine fetch in the index all the words that
@@ -586,30 +587,27 @@ Suggestions
 \end_layout
 
 \begin_layout Standard
-A suggestion module, is broadly : take the query keywords and offer another
+A suggestion module, is broadly: takes the query keywords and offers another
  words as suggestions.
- we had mentioned two features of suggestion:
+ We had mentioned two features of suggestion:
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
-Different Spellings: 
+Different Spellings:
+\begin_inset CommandInset label
+LatexCommand label
+name "Different-Spellings:-To"
+
+\end_inset
+
+ 
 \series default
 To offer a spell correction, we used n-gram dictionaries for Qur'anic words.
- We didn't consider vocalization because it may rise some glitches: 
+ 
 \end_layout
 
-\begin_deeper
-\begin_layout Itemize
-Larger number of n-grams
-\end_layout
-
-\begin_layout Itemize
-Insignificant to have n-grams that start with vocalization marks
-\end_layout
-
-\end_deeper
 \begin_layout Itemize
 
 \series bold
@@ -657,10 +655,6 @@ Results processing phases
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -796,25 +790,618 @@ Full vocalized search engine
 \end_layout
 
 \begin_layout Standard
-Customize all Arabic keywords comparison to a vocalized comparison.
+An obvious fact is that the majority of Arabic texts are written unvocalized
+ (without 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+glstwo{diacritical marks}{diacritical marks}
+\end_layout
+
+\end_inset
+
+), this causes some confusion in the meaning, only the context of text can
+ lift the ambiguity.
+ Therefore, We had to consider the vocalization in all indexing and search
+ phases in order to achieve a Quranic retrieving system that pass over these
+ ambiguities.
+ One of the main barriers that prevent the consideration of vocalization
+ in Arabic is the lack of vocalized arabic texts among the total arabic
+ content
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+whereas the percent is nearly %%
+\end_layout
+
+\end_inset
+
+.
+ Though, since the Quran is already fully vocalized so one barrier is lifted
+ on.
+ Another barrier is comparing vocalized, partially vocalized, and unvocalized
+ texts because the ordinary comparing does not distinguish between letters
+ and diacritics and fails to discover the similarity between words.
+ For example, with ordinary comparing those words will be considered different:
+ 
+\lang arabic_arabi
+الحمد
+\lang english
+ , 
+\lang arabic_arabi
+الحَمد
+\lang english
+ , and 
+\lang arabic_arabi
+الحَمْدُ
+\lang english
+.
+ That's why we had attempted to replace it with a partial vocalization comparing
+ which is working as following:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1st word
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2nd word
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+comparing result
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+reason
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+الملْك
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+المٌلكُ
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+True
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+no conflicting diacritics
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+المَلك
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+المُلكٌ
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+False
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+conflict of diacritics
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Partial vocalization
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We've intended to use this method in the comparing between search query
+ keywords and indexed keywords but this is not sufficient for two reasons:
  
 \end_layout
 
 \begin_layout Standard
-use vocalized stop-words, these refine the list of them and give more accurate
- problem
+1.
+ This will take effect only in searching and not all operations needed in
+ indexing, statistics calculation, detecting suggestions, detecting synonyms,
+ detecting diffrent vocalizations and any operation may appear later.
 \end_layout
 
 \begin_layout Standard
-use vocalized linguistic resources and ontologies.
+2.
+ The performance will be affected since this method is not optimized compared
+ to the ordinary one.
 \end_layout
 
 \begin_layout Standard
-fix the n-gram problem with vowels, see Suggestion System ->???
+To fix those two issues , we have to improve the comparing method in the
+ lowest layers possibles: 
+\end_layout
+
+\begin_layout Itemize
+Regular expression engine: General regular expressions has no classification
+ for
+\series bold
+ 
+\series default
+neither arabic letters nor arabic diacritics while it gives special classes
+ for latin letters, digits, and symbols.
+ Introducing Arabic customized classes into the regex engine improves the
+ partial vocalization comparing performance and makes it globally available.
+ 
+\end_layout
+
+\begin_layout Itemize
+Basic string: in most programming languages, strings are objects and have
+ thier own comparing method.
+ Replacing that object method with our partial comparing operation takes
+ effect on all declared instances and all derived objects.
+\end_layout
+
+\begin_layout Standard
+One problem of changing regex engine or basic string directly in-place is
+ the possiblity of disconnecting from the main line of the programming language
+ development.
+ That should be token in consideration because if it happens the forked
+ branch will be stuck.
+ An alternative way is the prototyping instead of replacing in-place.
+ With this way, lot of conflicts -between main development branch and forked
+ branch- can be avoided.
+\end_layout
+
+\begin_layout Standard
+Ignoring vocalization has a direct influence on filtring stopwords because
+ filtring out a word like the particle 
+\lang arabic_arabi
+مِنْ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ leads to filtring the relative noun 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang arabic_arabi
+مَنْ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ and the verb 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang arabic_arabi
+مَنَّ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ .
+ Using vocalized stopwords is very recommended to avoid ambiguities and
+ to confine the filtered occurances.
+ We'll mention how we gather the stopwords in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Filtring-Stop-words:"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+In order to build a full vocalized search engine, the linguistic and quranic
+ resources that we use should be fully vocalized too.
+ Those resources could be: 
+\end_layout
+
+\begin_layout Itemize
+a text: Quranic ayahs.
+\end_layout
+
+\begin_layout Itemize
+a list of names: sura names.
+\end_layout
+
+\begin_layout Itemize
+an ontology: Quranic concepts.
+\end_layout
+
+\begin_layout Itemize
+a thesaurus: synonyms, antonyms .
+\end_layout
+
+\begin_layout Itemize
+a word mapping: Uthmani to Standard writing.
+\end_layout
+
+\begin_layout Itemize
+annotations: Quranic words annotations.
+\end_layout
+
+\begin_layout Standard
+If any necessary resource was unvocalized or partially, we could exploit
+ it using partial vocalization comparing method and proceed the operation
+ of vocalization it.
+ We'll talk about the resource manager that we propose in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Qur'anic-and-Linguistic"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The old method of generating suggestions that we have proposed in the previous
+ work didn't consider vocalization because it may rise some glitches such
+ as:
+\end_layout
+
+\begin_layout Itemize
+Larger number of n-grams.
+\end_layout
+
+\begin_layout Itemize
+It's insignificant to have n-grams that start with a vocalization mark.
+\end_layout
+
+\begin_layout Standard
+The right behaviour is to distinguish between letters and diacritics and
+ change the gram to contain the letter and the diacritc after then change
+ the similarity function to use partial vocalization comparing.
+ This keeps a small number of n-grams and avoids insignificant ones.
+ for details check 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:1.7.2-Spelling-suggestion"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Another problem emerges by ignoring the vocalization is the inaccuracy of
+ statistics.
+ For example the frequncy of the unvocalized word 
+\lang arabic_arabi
+الملك
+\lang english
+ will be the total of all those words 
+\lang arabic_arabi
+الْمُلْكُ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(meaning??????, case?????), 
+\lang arabic_arabi
+الْمَلِكُ
+\lang english
+(meaning, case), 
+\lang arabic_arabi
+الْمُلْكِ
+\lang english
+(meaning, case), 
+\lang arabic_arabi
+الْمُلْكَ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(meaning, case) and 
+\lang arabic_arabi
+الْمَلِكِ
+\lang english
+(meaning, case).
+\end_layout
+
+\begin_layout Standard
+_____
 \end_layout
 
 \begin_layout Standard
 Gather the statistics based on the Tashkeel [we'll talk about it later]
+\end_layout
+
+\begin_layout Standard
+
+\lang arabic_arabi
+الاعراب
+\end_layout
+
+\begin_layout Standard
+
+\lang arabic_arabi
+هل يمكن التعمال مع أخر تشكيل تعاملا مختلفا
 \end_layout
 
 \begin_layout Section
@@ -863,6 +1450,27 @@ Normalization:
 Stemming: 
 \lang arabic_arabi
 الليل - أليل
+\end_layout
+
+\begin_layout Subsection
+Filtring Stop words:
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Filtring-Stop-words:"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+we get a list of most frequented vocalized keywords and then choose only
+ the particles 
+\end_layout
+
+\begin_layout Standard
+This phase should be optional to let the possibility for linguists to look
+ for these keywords
 \end_layout
 
 \begin_layout Subsection
@@ -1109,7 +1717,14 @@ Suggestion System
 \end_layout
 
 \begin_layout Standard
-1.7.2 Spelling suggestion
+1.7.2 Spelling suggestion 
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:1.7.2-Spelling-suggestion"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3163,6 +3778,13 @@ Similarity between vowels
 
 \begin_layout Section
 Qur'anic and Linguistic resources manager
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Qur'anic-and-Linguistic"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3199,6 +3821,72 @@ Figure: Visio Figure of word index
 \end_deeper
 \begin_layout Section
 Toward a Semantic search engine
+\end_layout
+
+\begin_layout Standard
+Parsing Arabic texts is not an easy task to perform because of two fundamental
+ phenomena.
+ The first phenomenon is related to the particularities of that language
+ that make it more ambiguous than other natural languages (especially the
+ Indo-European ones)1.
+ These characteristics influence the different levels of Arabic language
+ processing: morphological, syntactic, and semantic.
+ We identify the following characteristics [1] that influence the parsing
+ task 0: 
+\end_layout
+
+\begin_layout Itemize
+the diacritization phenomenon and the grammatical ambiguities; 
+\end_layout
+
+\begin_layout Itemize
+the agglutination of enclitics with the simple forms; 
+\end_layout
+
+\begin_layout Itemize
+the flexible order of the components within the same sentence; 
+\end_layout
+
+\begin_layout Itemize
+the multiplicity of the syntactic interpretations for the same sentence;
+ 
+\end_layout
+
+\begin_layout Itemize
+the abundance of the embedded structures; 
+\end_layout
+
+\begin_layout Itemize
+and the problems related to the segmentation of paragraphs into sentences.
+ 
+\end_layout
+
+\begin_layout Standard
+The second phenomenon concerns the significant scarcity of the available
+ digital resources for the Arabic language, especially the grammars and
+ corpora.
+ Therefore, there have not been many research studies that have focused
+ on parsing the Arabic texts.
+ 
+\end_layout
+
+\begin_layout Standard
+Until now, it has been difficult to say that there are parsers for the Arabic
+ language that are efficient and/or marketed, while there has been much
+ research on parsing other natural languages.
+\end_layout
+
+\begin_layout Standard
+Our approche is to make a progressive parser since it proceeded by treating
+ a sentence into a number of stages equal to the number of its words.
+ At every step, the parser affects the target word with the most likely
+ patterns that represent it in the context where it is put.
+ Then, it joins the selected patterns with those collected in the previous
+ parsing steps in order to construct the representative syntactic tree(s)
+ of the whole sentence.
+ If more than one tree is proposed, all the analysis trees are sorted according
+ to their appearance frequencies in the Treebank.
+ 
 \end_layout
 
 \begin_layout Section
@@ -3241,182 +3929,6 @@ Quranic WordByWord as a resource to resolve lot of prblems
 http://en.wikipedia.org/wiki/Fuzzy_search
 \end_layout
 
-\begin_layout Section
-General Behavior
-\end_layout
-
-\begin_layout Section
-Text Processing
-\end_layout
-
-\begin_layout Subsection
-General Phases:
-\end_layout
-
-\begin_layout Subsubsection
-Tokenization
-\end_layout
-
-\begin_layout Standard
-+segmentation of pronouns
-\end_layout
-
-\begin_layout Subsubsection
-Normalisation
-\end_layout
-
-\begin_layout Standard
-+segmentation of kasheeda
-\end_layout
-
-\begin_layout Subsubsection
-Stemming 
-\end_layout
-
-\begin_layout Subsubsection
-Stop words (eliminating)
-\end_layout
-
-\begin_layout Subsection
-Using Uthmani Script
-\end_layout
-
-\begin_layout Subsubsection
-Manual Indexes (Qurany Corpus)
-\end_layout
-
-\begin_layout Subsubsection
-Considerating Stop and Recitation marks
-\end_layout
-
-\begin_layout Subsection
-New Phase: Tagging 
-\end_layout
-
-\begin_layout Subsubsection
-Pronoun Reference Resolving
-\end_layout
-
-\begin_layout Subsubsection
-Consider the different Significations
-\end_layout
-
-\begin_layout Subsubsection
-standard/uthmani word form 
-\end_layout
-
-\begin_layout Subsubsection
-Numbers Search
-\end_layout
-
-\begin_layout Section
-Query Processing
-\end_layout
-
-\begin_layout Subsection
-Related Words (Upgrade of Synonyms&Antonyms)
-\end_layout
-
-\begin_layout Standard
-Relation~word
-\end_layout
-
-\begin_layout Subsection
-Derivations (Upgrade)
-\end_layout
-
-\begin_layout Subsection
-Spelling on/off
-\end_layout
-
-\begin_layout Subsection
-Embeded Search (Upgrade of Tuple search)
-\end_layout
-
-\begin_layout Subsubsection
-Word Properties
-\end_layout
-
-\begin_layout Subsubsection
-Word Translations
-\end_layout
-
-\begin_layout Subsection
-New Arabic Jokers 
-\end_layout
-
-\begin_layout Itemize
-Consents
-\end_layout
-
-\begin_layout Itemize
-Short Voyels
-\end_layout
-
-\begin_layout Itemize
-Long Voyels
-\end_layout
-
-\begin_layout Itemize
-Hamza 
-\end_layout
-
-\begin_layout Itemize
-Diacritics
-\end_layout
-
-\begin_layout Itemize
-Voyels
-\end_layout
-
-\begin_layout Itemize
-etc.
-\end_layout
-
-\begin_layout Enumerate
-
-\series bold
-Word sens disambiguation:
-\end_layout
-
-\begin_layout Subsection
-Possible Combinaisons
-\end_layout
-
-\begin_layout Section
-Results Processing
-\end_layout
-
-\begin_layout Enumerate
-Grouping Similar Ayas (New)
-\end_layout
-
-\begin_layout Enumerate
-Sorting of Arabic Symbols
-\end_layout
-
-\begin_layout Standard
-for the alphabetical order ,we must consider the real order of:
-\end_layout
-
-\begin_layout Itemize
-Hamza forms : 
-\lang arabic_arabi
-ؤ ئ ء أ 
-\end_layout
-
-\begin_layout Itemize
-Ta’ forms: 
-\lang arabic_arabi
-ة ت 
-\end_layout
-
-\begin_layout Itemize
-Alef forms : 
-\lang arabic_arabi
-ى ا 
-\end_layout
-
 \begin_layout Standard
 \begin_inset Note Comment
 status open
@@ -3430,18 +3942,6 @@ status open
 \end_inset
 
 
-\end_layout
-
-\begin_layout Section
-Suggestions systems
-\end_layout
-
-\begin_layout Subsection
-Spelling
-\end_layout
-
-\begin_layout Subsubsection
-Using Ngrams
 \end_layout
 
 \begin_layout Standard
@@ -3473,25 +3973,17 @@ Personnaliser la distance de Levenshtein pour s'adapter avec les lettres
 
 \end_layout
 
-\begin_layout Subsubsection
-Using Spell Checkers
-\end_layout
-
 \begin_layout Standard
 \begin_inset Note Comment
 status open
 
 \begin_layout Plain Layout
-Spellchecking INTERSECT Quran_Words
+Using Spell Checkers, Spellchecking INTERSECT Quran_Words
 \end_layout
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Subsection
-Related Works
 \end_layout
 
 \begin_layout Section
@@ -3545,7 +4037,7 @@ Toward Semantic Search
 
 \begin_layout Standard
 \begin_inset Note Comment
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Semantic search seeks to improve search accuracy by understanding searcher
@@ -3596,7 +4088,7 @@ FEATURExRESSOURCE
 \begin_inset Float table
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Tabular
