@@ -786,7 +786,20 @@ include a categorization of ayahs on term of topic in a hierarchic manner.
 \end_layout
 
 \begin_layout Section
-Full vocalized search engine
+Full vocalized search engine 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+add more figures! for words
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1153,6 +1166,72 @@ One problem of changing regex engine or basic string directly in-place is
 \end_layout
 
 \begin_layout Standard
+To improve better the vocalized search, we have to distinguish between original
+ vowels and declinsion case vowels because words like 
+\lang arabic_arabi
+الْمُلْكُ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(Kingdom, nominative), 
+\lang arabic_arabi
+الْمُلْكِ
+\lang english
+ (Kingdom, genetive), 
+\lang arabic_arabi
+الْمُلْكَ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(Kingdom, accusative) are considered as one word with one meaning which
+ is Kingdom.
+ This will give best matches in search and will not oblige the user to repeat
+ the search operation with each one of the different possible declinsions.
+\end_layout
+
+\begin_layout Standard
 Ignoring vocalization has a direct influence on filtring stopwords because
  filtring out a word like the particle 
 \lang arabic_arabi
@@ -1235,6 +1314,104 @@ reference "sub:Filtring-Stop-words:"
 \end_layout
 
 \begin_layout Standard
+Another problem emerges by ignoring the vocalization is the inaccuracy of
+ statistics.
+ For example the frequncy of the unvocalized word 
+\lang arabic_arabi
+الملك
+\lang english
+ will be the total of all those words 
+\lang arabic_arabi
+الْمُلْكُ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(Kingdom, nominative), 
+\lang arabic_arabi
+الْمُلْكِ
+\lang english
+ (Kingdom, genetive), 
+\lang arabic_arabi
+الْمُلْكَ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(Kingdom, accusative), 
+\lang arabic_arabi
+الْمَلِكُ
+\lang english
+ (King, nominative), and 
+\lang arabic_arabi
+الْمَلِكِ
+\lang english
+ (King, genetive).
+ The appropriate way to gather statistics is to use the vocalized words
+ by ignoring the haraka of declension case (
+\lang arabic_arabi
+حالة الإعراب
+\lang english
+) for nouns so for the previous example we'll have two units: 
+\lang arabic_arabi
+المُلْك
+\lang english
+ (Kingdom, undefined case), 
+\lang arabic_arabi
+المَلِك
+\lang english
+ (King, undefined case).
+ We'll talk more about gathering statistics in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Statistics-Gathering-System"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
 In order to build a full vocalized search engine, the linguistic and quranic
  resources that we use should be fully vocalized too.
  Those resources could be: 
@@ -1309,103 +1486,30 @@ reference "sec:1.7.2-Spelling-suggestion"
 \end_layout
 
 \begin_layout Standard
-Another problem emerges by ignoring the vocalization is the inaccuracy of
- statistics.
- For example the frequncy of the unvocalized word 
-\lang arabic_arabi
-الملك
-\lang english
- will be the total of all those words 
-\lang arabic_arabi
-الْمُلْكُ
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-\lang english
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-(meaning??????, case?????), 
-\lang arabic_arabi
-الْمَلِكُ
-\lang english
-(meaning, case), 
-\lang arabic_arabi
-الْمُلْكِ
-\lang english
-(meaning, case), 
-\lang arabic_arabi
-الْمُلْكَ
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-\lang english
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-(meaning, case) and 
-\lang arabic_arabi
-الْمَلِكِ
-\lang english
-(meaning, case).
+As a conclusion we mention benefits gained by basing on a full vocalization
+ environment:
 \end_layout
 
-\begin_layout Standard
-_____
+\begin_layout Itemize
+Lift the ambiguities cause by ignoring vocalizations
 \end_layout
 
-\begin_layout Standard
-Gather the statistics based on the Tashkeel [we'll talk about it later]
+\begin_layout Itemize
+Make searching results, suggestions, and statitics more accurate.
 \end_layout
 
-\begin_layout Standard
-
-\lang arabic_arabi
-الاعراب
-\end_layout
-
-\begin_layout Standard
-
-\lang arabic_arabi
-هل يمكن التعمال مع أخر تشكيل تعاملا مختلفا
+\begin_layout Itemize
+Refine the meanings detection ( a first step in the semantic approach )
 \end_layout
 
 \begin_layout Section
 Othmani Script and Text processing
+\end_layout
+
+\begin_layout Standard
+Quran is writtin principally on Othmani script which has many different
+ from the standard script used usually in different media.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1681,6 +1785,13 @@ Word sens disambiguation:
 
 \begin_layout Section
 Statistics Gathering System
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Statistics-Gathering-System"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
