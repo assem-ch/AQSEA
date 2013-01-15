@@ -2213,6 +2213,13 @@ glstwo{orthography}{Orthography}
 \noun default
 \color inherit
 : 
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Knowledge-of-Orthongraphy"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -8846,6 +8853,13 @@ Overview of the index of synonyms – Taha Zerrouki
 
 \begin_layout Subsubsection
 Qur’anic Arabic Corpus 
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Qur’anic-Arabic-Corpus"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

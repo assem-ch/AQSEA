@@ -1021,6 +1021,13 @@ This is an initial classification; we have to improve it for a well exploit
 
 \begin_layout Section
 Proposals
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Proposals"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

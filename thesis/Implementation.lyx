@@ -534,64 +534,8 @@ Matt Chaput
  
 \end_layout
 
-\begin_layout Subsection
-Alfanous Project
-\end_layout
-
 \begin_layout Section
-Used Quranic & Arabic Ressources 
-\end_layout
-
-\begin_layout Standard
-Les indexes
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Comment
-status open
-
-\begin_layout Plain Layout
-For every ressource , a short definition + using details + loading(mise
- en service) details
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Comment
-status open
-
-\begin_layout Plain Layout
-In loading indexes, use dynamic fields it helps much to load ressources
- one by one
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Tanzil
-\end_layout
-
-\begin_layout Subsection
-Qurany
-\end_layout
-
-\begin_layout Subsection
-Arabic Quanic Corpus
-\end_layout
-
-\begin_layout Subsection
-Zekr Translation Models
-\end_layout
-
-\begin_layout Subsection
-VerseByVerse Recitations
+Previous Code Base
 \end_layout
 
 \begin_layout Section
@@ -651,6 +595,62 @@ Localization
 \end_layout
 
 \begin_layout Section
+Used Quranic & Arabic Ressources 
+\end_layout
+
+\begin_layout Standard
+Les indexes
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+For every ressource , a short definition + using details + loading(mise
+ en service) details
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+In loading indexes, use dynamic fields it helps much to load ressources
+ one by one
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Tanzil
+\end_layout
+
+\begin_layout Subsection
+Qurany
+\end_layout
+
+\begin_layout Subsection
+Arabic Quanic Corpus
+\end_layout
+
+\begin_layout Subsection
+Zekr Translation Models
+\end_layout
+
+\begin_layout Subsection
+VerseByVerse Recitations
+\end_layout
+
+\begin_layout Section
 Lack fo Quranic resources
 \end_layout
 
@@ -670,7 +670,7 @@ FEATURExRESOURCE
 \begin_inset Float table
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -1818,6 +1818,10 @@ FEATURExRESSOURCE
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Conclusion
 \end_layout
 
 \end_body

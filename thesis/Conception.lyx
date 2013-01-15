@@ -173,6 +173,31 @@ textit{Tim Peters, The Zen of Python}}
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO:
+\end_layout
+
+\begin_layout Enumerate
+Phase 1: Writing Basic Ideas
+\end_layout
+
+\begin_layout Enumerate
+Phase 2: Figures move
+\end_layout
+
+\begin_layout Enumerate
+Phase 3: mention related features of each one
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Introduction
 \end_layout
@@ -1509,19 +1534,500 @@ Othmani Script and Text processing
 \begin_layout Standard
 Quran is writtin principally on Othmani script which has many different
  from the standard script used usually in different media.
+ In the previous work, we adopted the quranic text written on standard script
+ but due to the diffuculties caused by the its diffrences with Othmani script,
+ we have to consider both scripts for indexing and search.
+ Among those difficulties, we mention: 
+\end_layout
+
+\begin_layout Enumerate
+Searching with an othmani writing form of a word such as
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang arabic_arabi
+بصطة
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ knowing that it written also in the form 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang arabic_arabi
+بسطة
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ in another Ayah
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+occur as 
+\lang arabic_arabi
+بصطة
+\family roman
+\series medium
+\shape up
+\size small
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+in (
+\lang arabic_arabi
+الأعراف
+\lang english
+ 69) and as 
+\lang arabic_arabi
+بسطة
+\family roman
+\series medium
+\shape up
+\size small
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+in (
+\lang arabic_arabi
+البقرة
+\lang english
+ 247) 
+\end_layout
+
+\end_inset
+
+.
+ The retrieving sytem can't distinguish between the two occurences basing
+ only on the standard script.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Calculating statistics knowing that the number of letters is different between
+ the two scripts in a big number of ayahs.
+ This difference is due to addition and removal of some letters in the Othmani
+ script (for more details see 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Knowledge-of-Orthongraphy"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Enumerate
+Matching the same Word-By-Word structure of some Quranic linguistic resources.
+ Using the Quranic word as the basic unit for linguistic resources lacks
+ for precision in some cases such in the case of two occurences of word
+ that have diffrent interpretation.
+ To resolve that, many Quranic linguistic resources (such as Quranic Arabic
+ Corpus, see 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Qur’anic-Arabic-Corpus"
+
+\end_inset
+
+) have adopted the word occurence as a basic unit a.k.a Word-By-Word Quran
+ browsing.
+ As a result for this, the resources such those have to use the words as
+ they occurred in Quran (consequently in Othmani script) because the separation
+ of some words is different between Othmani script and standard script as
+ in the word
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang arabic_arabi
+يَأَسَفَى
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+in Yusuf 84 which is separted to two words 
+\lang arabic_arabi
+يَا
+\lang english
+ + 
+\lang arabic_arabi
+أَسَفَى
+\lang english
+ in the standard script.
+\end_layout
+
+\begin_layout Standard
+As we've said, to resolve those difficulties we consider Othmani text also
+ for text processing along with standard text.
+ In addition, we propose many improvments on the text processing phases
+ to achieve many of search features that we have proposed in the previous
+ chapter (see 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Proposals"
+
+\end_inset
+
+).
+ We list in the following our improvments per phase:
+\end_layout
+
+\begin_layout Subsection
+Tokenization:
+\end_layout
+
+\begin_layout Standard
+The function of tokenization is to split a running text into tokens, so
+ that they can be fed into a the next phases for further processing.
+ We keep the space-based tokenization from our previous work as a first
+ step since it's a perfect choice and the simplest one at the same time.
  
 \end_layout
 
 \begin_layout Standard
-benefits of Othmani Script in statistics and his difficulties!
+Another choice is -after performing the space-based tokenization- separating
+ the words (tokens) into their parts (sub-tokens) so we'll have separated
+ pronouns and clitics in case we needed a special processing for them.
+ The problem with this is that it emerges lot of flaws.
+ 
 \end_layout
 
-\begin_layout Subsection
-New Phase: Substitution
+\begin_layout Standard
+Having as an example the word 
+\lang arabic_arabi
+فَأَسْقَيْنَاكُمُوهُ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+mentioned in (
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang arabic_arabi
+الحجر
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 22) 
+\end_layout
+
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ (meaning
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+English Translation of Mohammad Habib Shakir
+\end_layout
+
+\end_inset
+
+: so We give it to you to drink of) so the separated tokens would be 
+\lang arabic_arabi
+فَ
+\lang english
+ + 
+\lang arabic_arabi
+أَسْقَيْنَا 
+\lang english
++ 
+\lang arabic_arabi
+كُمُ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
++ 
+\lang arabic_arabi
+هُ
+\lang english
+ the flaws will be: 
 \end_layout
 
 \begin_layout Itemize
-Numbers to words: 
+Separating we will create a lot number of tokens that should be submitted
+ as stop words
+\end_layout
+
+\begin_layout Itemize
+some affixes change the form of word so if we have to separate them we need
+ to remove additional letters or add removed letters .
+\end_layout
+
+\begin_layout Itemize
+Tokenization is important phase and should have a very high precision 
+\end_layout
+
+\begin_layout Itemize
+loss of vocalization
+\end_layout
+
+\begin_layout Standard
+Due to those problems we recommend the space-based tokenization and تؤخر
+ معالجة to stemming
+\end_layout
+
+\begin_layout Standard
+The difference between doing that in tokenization phase or stemming phase
+ is:
+\end_layout
+
+\begin_layout Itemize
+with stemming we lose any information about the affixes so we can't specify
+ the search to an exact word.
+\end_layout
+
+\begin_layout Itemize
+with tokenization, we preserve most of information but as we mentioned about
+ it will be a very complicated operation and we can't assure a high precision
+ percent.
+ 
+\end_layout
+
+\begin_layout Standard
+--
+\end_layout
+
+\begin_layout Standard
+English dont do that , that's because the t , as in the translation a similar
+ meaning can't be written in one english word.
+ used in compound words such as , or unLadyLike
+\end_layout
+
+\begin_layout Standard
+mention Attia Arabic tokenization proposition
+\end_layout
+
+\begin_layout Standard
+space-based vs deviding words parts
+\end_layout
+
+\begin_layout Standard
+add tagging to be used in Stemming and Normalization, why? because some
+ info may be lost after the tokenization such as POS.
+ #A step to semantics
+\end_layout
+
+\begin_layout Standard
+If Noun Mu3rab , feed it to normalization
+\end_layout
+
+\begin_layout Standard
+Feed affixes, derivation information to Stemming/Lemmatization
+\end_layout
+
+\begin_layout Subsection
+Normalization:
+\end_layout
+
+\begin_layout Standard
+
+\lang arabic_arabi
+الواو والألف الخنجرية، رموز الوقف والتلاوة
+\end_layout
+
+\begin_layout Itemize
+if no deep tokenization, transliterations 
+\end_layout
+
+\begin_layout Itemize
+if no deep tokenization, Numbers to words: 
 \end_layout
 
 \begin_deeper
@@ -1538,16 +2044,8 @@ Numbers to words:
 \end_layout
 
 \end_deeper
-\begin_layout Subsection
-Tokenization: 
-\lang arabic_arabi
-رموز الوقف والتلاوة
-\end_layout
-
-\begin_layout Subsection
-Normalization: 
-\lang arabic_arabi
-الواو والألف الخنجرية
+\begin_layout Standard
+(note: searching only because no need for it in indexing)
 \end_layout
 
 \begin_layout Subsection
@@ -1578,98 +2076,21 @@ This phase should be optional to let the possibility for linguists to look
 \end_layout
 
 \begin_layout Subsection
-New Phase:Tagging
-\end_layout
-
-\begin_layout Standard
-
-\lang arabic_arabi
-لا إله إلا هو ------------ لا إله إلا الله
-\end_layout
-
-\begin_layout Standard
-
-\lang arabic_arabi
-هناك فهرس في جامعة ليدز حول إرجاع الضمائر عند الفهرسة:
-\end_layout
-
-\begin_layout Standard
-
-\lang arabic_arabi
-\begin_inset Quotes sld
-\end_inset
-
- اضافة الله كمرادف ل 
-\begin_inset Quotes sld
-\end_inset
-
-هو
-\begin_inset Quotes srd
-\end_inset
-
- عند الفهرسة لا يساعد في الهايلايت
-\begin_inset Quotes srd
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\lang arabic_arabi
-عند البحث:
-\end_layout
-
-\begin_layout Standard
-
-\lang arabic_arabi
-ليس كل ضمير 
-\begin_inset Quotes sld
-\end_inset
-
-هو
-\begin_inset Quotes srd
-\end_inset
-
- يرجع إلى 
-\begin_inset Quotes sld
-\end_inset
-
-الله
-\begin_inset Quotes srd
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\lang arabic_arabi
-الحل:
-\end_layout
-
-\begin_layout Standard
-
-\lang arabic_arabi
-عند الفهرسة: لا إله إلا هو>الله<
-\end_layout
-
-\begin_layout Standard
-
-\lang arabic_arabi
-عند البحث: تضاف لكلمة 
-\begin_inset Quotes sld
-\end_inset
-
-الله
-\begin_inset Quotes srd
-\end_inset
-
- كلمة مرادفة هي هو>الله<
+Tagging (It's with tokenizer, why? because he's the only know the position
+ of word in the phrase and by consequese the POS info )
 \end_layout
 
 \begin_layout Subsection
 Standard-Uthmani Mapping
+\end_layout
+
+\begin_layout Standard
+(move it up , it not a phj
+\end_layout
+
+\begin_layout Standard
+should base on occurences not form because some similar forms hasnt the
+ same mapping value
 \end_layout
 
 \begin_layout Enumerate
@@ -1678,12 +2099,21 @@ Standard-Uthmani Mapping
 الليل - أليل
 \end_layout
 
+\begin_layout Enumerate
+يا أسفى
+\end_layout
+
 \begin_layout Section
 Modular Query Parser
 \end_layout
 
 \begin_layout Standard
 Extensible and Combination ability of different operations
+\end_layout
+
+\begin_layout Standard
+a high benefit to add search features one by one, without ruining all the
+ parsing system
 \end_layout
 
 \begin_layout Subsection
@@ -1781,6 +2211,101 @@ All: .
 
 \series bold
 Word sens disambiguation:
+\end_layout
+
+\begin_layout Section
+Two-Steps Search: Word-Ayah
+\end_layout
+
+\begin_layout Subsection
+New Phase:Tagging (no need)
+\end_layout
+
+\begin_layout Standard
+
+\lang arabic_arabi
+لا إله إلا هو ------------ لا إله إلا الله
+\end_layout
+
+\begin_layout Standard
+
+\lang arabic_arabi
+هناك فهرس في جامعة ليدز حول إرجاع الضمائر عند الفهرسة:
+\end_layout
+
+\begin_layout Standard
+
+\lang arabic_arabi
+\begin_inset Quotes sld
+\end_inset
+
+ اضافة الله كمرادف ل 
+\begin_inset Quotes sld
+\end_inset
+
+هو
+\begin_inset Quotes srd
+\end_inset
+
+ عند الفهرسة لا يساعد في الهايلايت
+\begin_inset Quotes srd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang arabic_arabi
+عند البحث:
+\end_layout
+
+\begin_layout Standard
+
+\lang arabic_arabi
+ليس كل ضمير 
+\begin_inset Quotes sld
+\end_inset
+
+هو
+\begin_inset Quotes srd
+\end_inset
+
+ يرجع إلى 
+\begin_inset Quotes sld
+\end_inset
+
+الله
+\begin_inset Quotes srd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang arabic_arabi
+الحل:
+\end_layout
+
+\begin_layout Standard
+
+\lang arabic_arabi
+عند الفهرسة: لا إله إلا هو>الله<
+\end_layout
+
+\begin_layout Standard
+
+\lang arabic_arabi
+عند البحث: تضاف لكلمة 
+\begin_inset Quotes sld
+\end_inset
+
+الله
+\begin_inset Quotes srd
+\end_inset
+
+ كلمة مرادفة هي هو>الله<
 \end_layout
 
 \begin_layout Section

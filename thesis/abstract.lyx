@@ -98,9 +98,9 @@ bstract
 Noble Quran is different of all documents that we have known.
  It's the sacred book of Muslims.
  It contains knowledge of all aspects of life.
- With this huge quantity of information, We can extract only a small part
+ With this huge quantity of information, we can extract only a small part
  manually and this is considered insufficient compared to the size of knowledge
- contained in Quran.
+ contained by Quran.
  That raises the need for a method to extract those information because
  currently there is no efficient method except many printed lexicons and
  many tools of simple sequential search with regular expression.
@@ -211,8 +211,8 @@ Indexation/Recherche, Arabe, Coran, Recherche d'information, Moteurs de
 \lang arabic_arabi
 القرآن الكريم يختلف عن جميع الوثائق التي نعرفها فهو يحوي المعارف في جميع
  جوانب الحياة.
- مع هذا الحجم من المعلومات، لا يستطيع المرء استخراج إلا النزر اليسير يدويا.
- هذا ليس كافيا بالنسبة لحجم المعارف الواردة في القرآن الكريم.
+ مع هذا الحجم من المعلومات، لا يستطيع المرء استخراج إلا النزر اليسير يدويا
+ وهذا ليس كافيا بالنسبة لحجم المعارف الواردة في القرآن الكريم.
  ومن هنا جاءت الحاجة إلى إيجاد طريقة لاستخراج هذه المعلومات.
  لا توجد أي وسيلة حالية فعالة باستثناء بعض المعاجم المطبوعة وبعض الأدوات
  التي تعتمد البحث البسيط التسلسلي بالعبارات النمطية.
