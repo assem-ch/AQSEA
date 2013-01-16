@@ -538,32 +538,68 @@ Matt Chaput
 Previous Code Base
 \end_layout
 
+\begin_layout Standard
+We have based on the code base we've realized on 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ASSEM_MEROUANE"
+
+\end_inset
+
+...
+ are you sure! yes, indeed.
+\end_layout
+
 \begin_layout Section
 Code Architecture
 \end_layout
 
 \begin_layout Standard
-# Complete New_Output_System , it's southnance model
+# it's southnance model: New_Output_System
+\end_layout
+
+\begin_layout Standard
+Write change log, and show it as your changes!
 \end_layout
 
 \begin_layout Subsection
 Application Programming Interface
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Standard
+API, show the sample code
+\end_layout
+
+\begin_layout Standard
+For web-based interfaces use Json out put system.
+\end_layout
+
+\begin_layout Standard
+for desktop-based interfaces use Console interface.
+\end_layout
+
+\begin_layout Subsubsection
 JSON output system
 \end_layout
 
-\begin_layout Subsection
-Linux Daemon
+\begin_layout Subsubsection
+Console Interface (a Linux Daemon service)
 \end_layout
 
 \begin_layout Subsection
-Django - Jquery web interface
+Django web interface
+\end_layout
+
+\begin_layout Quote
+(Localization)
 \end_layout
 
 \begin_layout Subsection
-Third-Party User Interfaces
+Other User Interfaces
+\end_layout
+
+\begin_layout Standard
+Proves the wide use of the API abroad the multiplatforms
 \end_layout
 
 \begin_layout Subsubsection
@@ -584,14 +620,6 @@ Interfaces
 
 \begin_layout Standard
 [interfaces from github readme files]
-\end_layout
-
-\begin_layout Section
-Useful Features
-\end_layout
-
-\begin_layout Subsection
-Localization
 \end_layout
 
 \begin_layout Section
@@ -648,6 +676,10 @@ Zekr Translation Models
 
 \begin_layout Subsection
 VerseByVerse Recitations
+\end_layout
+
+\begin_layout Standard
+Qutrub
 \end_layout
 
 \begin_layout Section

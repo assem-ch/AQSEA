@@ -1828,7 +1828,7 @@ Having as an example the word
 \noun off
 \color none
 \lang english
-
+ 
 \begin_inset Foot
 status collapsed
 
@@ -1898,15 +1898,16 @@ English Translation of Mohammad Habib Shakir
 
 \end_inset
 
-: so We give it to you to drink of) so the separated tokens would be 
+: so We give it to you to drink of) so the separated sub-tokens would be
+ 
 \lang arabic_arabi
 فَ
 \lang english
  + 
 \lang arabic_arabi
-أَسْقَيْنَا 
+أَسْقَيْنَا
 \lang english
-+ 
+ + 
 \lang arabic_arabi
 كُمُ
 \family roman
@@ -1936,31 +1937,118 @@ English Translation of Mohammad Habib Shakir
 + 
 \lang arabic_arabi
 هُ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
 \lang english
- the flaws will be: 
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+( ignoring 
+\lang arabic_arabi
+و
+\lang english
+ ) and the flaws will be: 
 \end_layout
 
 \begin_layout Itemize
-Separating we will create a lot number of tokens that should be submitted
- as stop words
+Tokenization is an important phase since it's the basis for the following
+ phases.
+ Thus, it should have a very high precision while actually there is a lack
+ for accurate arabic analyzer.
 \end_layout
 
 \begin_layout Itemize
-some affixes change the form of word so if we have to separate them we need
- to remove additional letters or add removed letters .
+Some affixes change the form of word so we have to bring it to its original
+ form after separation.
+ In our example, 
+\lang arabic_arabi
+و
+\lang english
+ is an additional letter.
 \end_layout
 
 \begin_layout Itemize
-Tokenization is important phase and should have a very high precision 
-\end_layout
-
-\begin_layout Itemize
-loss of vocalization
+A lot of clitics and pronouns such as 
+\lang arabic_arabi
+فَ
+\lang english
+ should be considered as stop words because they will have a high frequece
+ and have a less need of retrieving.
 \end_layout
 
 \begin_layout Standard
-Due to those problems we recommend the space-based tokenization and تؤخر
- معالجة to stemming
+A related solution, proposed by 
+\noun on
+Mohammed A.
+ Attia 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Attia_arabictokenization"
+
+\end_inset
+
+, [TODO: Explain the work of Mohammed Attia]
+\end_layout
+
+\begin_layout Standard
+--
+\end_layout
+
+\begin_layout Standard
+English don't do that , that's because the t , as in the translation a similar
+ meaning can't be written in one english word.
+ used in compound words such as , or unLadyLike
+\end_layout
+
+\begin_layout Standard
+add tagging to be used in Stemming and Normalization, why? because some
+ info may be lost after the tokenization such as POS.
+ #A step to semantics
+\end_layout
+
+\begin_layout Standard
+If Noun Mu3rab , feed it to normalization
+\end_layout
+
+\begin_layout Standard
+Feed affixes, derivation information to Stemming/Lemmatization
+\end_layout
+
+\begin_layout Standard
+mention Attia Arabic tokenization proposition
+\end_layout
+
+\begin_layout Standard
+
+\lang arabic_arabi
+لا إله إلا هو ------------ لا إله إلا الله
+\end_layout
+
+\begin_layout Standard
+-------
+\end_layout
+
+\begin_layout Standard
+Due to those problems, we recommend the space-based tokenization and delay
+ processing to the stemming phase.
 \end_layout
 
 \begin_layout Standard
@@ -1978,38 +2066,6 @@ with tokenization, we preserve most of information but as we mentioned about
  it will be a very complicated operation and we can't assure a high precision
  percent.
  
-\end_layout
-
-\begin_layout Standard
---
-\end_layout
-
-\begin_layout Standard
-English dont do that , that's because the t , as in the translation a similar
- meaning can't be written in one english word.
- used in compound words such as , or unLadyLike
-\end_layout
-
-\begin_layout Standard
-mention Attia Arabic tokenization proposition
-\end_layout
-
-\begin_layout Standard
-space-based vs deviding words parts
-\end_layout
-
-\begin_layout Standard
-add tagging to be used in Stemming and Normalization, why? because some
- info may be lost after the tokenization such as POS.
- #A step to semantics
-\end_layout
-
-\begin_layout Standard
-If Noun Mu3rab , feed it to normalization
-\end_layout
-
-\begin_layout Standard
-Feed affixes, derivation information to Stemming/Lemmatization
 \end_layout
 
 \begin_layout Subsection
@@ -2072,12 +2128,16 @@ we get a list of most frequented vocalized keywords and then choose only
 
 \begin_layout Standard
 This phase should be optional to let the possibility for linguists to look
- for these keywords
+ for these keywords.
+\end_layout
+
+\begin_layout Standard
+avoid removing them to support phrase search لو كان البحر
 \end_layout
 
 \begin_layout Subsection
-Tagging (It's with tokenizer, why? because he's the only know the position
- of word in the phrase and by consequese the POS info )
+Tagging (It's with tokenizer, why? because he's the only one who know the
+ position of word in the phrase and by consequese the POS info )
 \end_layout
 
 \begin_layout Subsection
@@ -2085,7 +2145,7 @@ Standard-Uthmani Mapping
 \end_layout
 
 \begin_layout Standard
-(move it up , it not a phj
+(move it up , it not a phase)
 \end_layout
 
 \begin_layout Standard
@@ -2114,6 +2174,10 @@ Extensible and Combination ability of different operations
 \begin_layout Standard
 a high benefit to add search features one by one, without ruining all the
  parsing system
+\end_layout
+
+\begin_layout Standard
+read from whoosh 2.5
 \end_layout
 
 \begin_layout Subsection
@@ -2210,7 +2274,7 @@ All: .
 \begin_layout Subsubsection
 
 \series bold
-Word sens disambiguation:
+Word sens disambiguation: (that's not here)
 \end_layout
 
 \begin_layout Section
@@ -4526,7 +4590,11 @@ Our approche is to make a progressive parser since it proceeded by treating
 \end_layout
 
 \begin_layout Section
-Conception of features
+Conception of features (
+\end_layout
+
+\begin_layout Standard
+scan features and Update the section above not those!
 \end_layout
 
 \begin_layout Subsection
@@ -4632,7 +4700,7 @@ God names' number:
 
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Description
 Hints:
@@ -4649,22 +4717,6 @@ Unify all these forms in only one regular expression
 \end_inset
 
 
-\end_layout
-
-\begin_layout Section
-Full Vocalized Search Engine
-\end_layout
-
-\begin_layout Subsection
-Partial vocalization comparison
-\end_layout
-
-\begin_layout Subsection
-benefits
-\end_layout
-
-\begin_layout Itemize
-Statistics precision
 \end_layout
 
 \begin_layout Section
