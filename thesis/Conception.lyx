@@ -2043,6 +2043,11 @@ mention Attia Arabic tokenization proposition
 \end_layout
 
 \begin_layout Standard
+** Tagging (It's with tokenizer, why? because he's the only one who know
+ the position of word in the phrase and by consequese the POS info )
+\end_layout
+
+\begin_layout Standard
 -------
 \end_layout
 
@@ -2133,11 +2138,6 @@ This phase should be optional to let the possibility for linguists to look
 
 \begin_layout Standard
 avoid removing them to support phrase search لو كان البحر
-\end_layout
-
-\begin_layout Subsection
-Tagging (It's with tokenizer, why? because he's the only one who know the
- position of word in the phrase and by consequese the POS info )
 \end_layout
 
 \begin_layout Subsection

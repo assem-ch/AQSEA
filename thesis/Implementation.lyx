@@ -582,6 +582,10 @@ Write change log, and show it as your changes!
 + Search Translation:
 \end_layout
 
+\begin_layout Section
+Interfaces
+\end_layout
+
 \begin_layout Subsection
 Application Programming Interface
 \end_layout
