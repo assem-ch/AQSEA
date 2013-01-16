@@ -562,6 +562,26 @@ Code Architecture
 Write change log, and show it as your changes!
 \end_layout
 
+\begin_layout Standard
++ Suggestion Vocalizations!
+\end_layout
+
+\begin_layout Standard
++ Suggestion (Verb Conjugation+ Random Affixes) U Quranic Verbs 
+\end_layout
+
+\begin_layout Standard
++ Suggestion Synonyms
+\end_layout
+
+\begin_layout Standard
++ Search Word : 2 Steps Search
+\end_layout
+
+\begin_layout Standard
++ Search Translation:
+\end_layout
+
 \begin_layout Subsection
 Application Programming Interface
 \end_layout
@@ -588,6 +608,10 @@ Console Interface (a Linux Daemon service)
 
 \begin_layout Subsection
 Django web interface
+\end_layout
+
+\begin_layout Standard
+The our demonstration model!
 \end_layout
 
 \begin_layout Quote
@@ -623,7 +647,7 @@ Interfaces
 \end_layout
 
 \begin_layout Section
-Used Quranic & Arabic Ressources 
+Quranic & Arabic Ressources 
 \end_layout
 
 \begin_layout Standard
@@ -659,30 +683,38 @@ In loading indexes, use dynamic fields it helps much to load ressources
 \end_layout
 
 \begin_layout Subsection
+Used resources
+\end_layout
+
+\begin_layout Subsubsection
 Tanzil
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Qurany
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Arabic Quanic Corpus
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Zekr Translation Models
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 VerseByVerse Recitations
+\end_layout
+
+\begin_layout Subsection
+Resources to use
 \end_layout
 
 \begin_layout Standard
 Qutrub
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Lack fo Quranic resources
 \end_layout
 
@@ -694,7 +726,7 @@ Lack fo Quranic resources
 [How to resolve each one!]
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 FEATURExRESOURCE
 \end_layout
 
@@ -1850,6 +1882,10 @@ FEATURExRESSOURCE
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Implementation Ratio
 \end_layout
 
 \begin_layout Section
