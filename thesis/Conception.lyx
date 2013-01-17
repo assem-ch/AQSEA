@@ -1999,13 +1999,34 @@ A related solution, proposed by
 \noun on
 Mohammed A.
  Attia 
+\noun default
+
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Attia_arabictokenization"
 
 \end_inset
 
-, [TODO: Explain the work of Mohammed Attia]
+.
+ He started his idea by noting that the Arabic word can comprise up to four
+ independent tokens so he consider that the morphological knowledge needs
+ to be incorporated into the tokenizer.
+ He described a rule-based tokenizer that handles tokenization as a full-rounded
+ process with two stages: a preprocessing stage (white space normalizer),
+ and a post-processing stage (token filter).
+ He described the implemntation of 3 tokenization models:
+\end_layout
+
+\begin_layout Enumerate
+Tokenization Combined with Morphological Analysis,.
+\end_layout
+
+\begin_layout Enumerate
+Tokenization Guesser (tokenization is separated from morphological analysis)
+\end_layout
+
+\begin_layout Enumerate
+Tokenization Dependent on the Morphological Analyser
 \end_layout
 
 \begin_layout Standard
@@ -2013,8 +2034,30 @@ key "Attia_arabictokenization"
 \end_layout
 
 \begin_layout Standard
-English don't do that , that's because the t , as in the translation a similar
- meaning can't be written in one english word.
+
+\noun on
+Our choice from Attia models:
+\end_layout
+
+\begin_layout Standard
+- not 2 because not guessing
+\end_layout
+
+\begin_layout Standard
+- based on WbW manuel index, we took our tokenization,
+\end_layout
+
+\begin_layout Standard
+- may we add some tags that we need in normalization & Stemming
+\end_layout
+
+\begin_layout Standard
+----
+\end_layout
+
+\begin_layout Standard
+That is one of Arabic English don't do that , that's because the t , as
+ in the translation a similar meaning can't be written in one english word.
  used in compound words such as , or unLadyLike
 \end_layout
 
