@@ -1793,6 +1793,124 @@ reference "sec:Proposals"
 \end_layout
 
 \begin_layout Subsection
+Substitution
+\end_layout
+
+\begin_layout Standard
+This a new phase that we propose to add before tokenization.
+ Its objective is identify pre-defined patterns and replace them as a preparatio
+n for tokenization.
+ We propose these cases of substitution:
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Romanizations
+\series default
+: among the search features that we've described in the previous chapter,
+ there is the option of search using a romanized Arabic text (see 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "enu:Romanization:"
+
+\end_inset
+
+).
+ Romanized texts are latin letters and our system is defined for Arabic
+ letters.
+ That's why we have to replace them with thier appropriate 
+\noun on
+\lang arabic_arabi
+مقابل
+\noun default
+\lang english
+.
+ There are many romanization systems.
+ To provide the possibility to use more then one, we should specify a guessing
+ policy to detect what system is used in a given string.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+[Guessing Policy]
+\end_layout
+
+\begin_layout Enumerate
++example
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Numbers 
+\lang arabic_arabi
+تحويل إلى حروف
+\series default
+\lang english
+: In Quran, the numbers are mentioned 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+litterally
+\end_layout
+
+\end_inset
+
+ not as write them in current numerical systems (Arab number, or indian
+ numbers).
+ We need to translate numbers into the litteral form to make them search-able
+ in the Quran.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+rule: we ignore the waw
+\end_layout
+
+\begin_layout Enumerate
+more rules
+\end_layout
+
+\begin_layout Enumerate
++example
+\end_layout
+
+\begin_layout Itemize
+18 to 
+\lang arabic_arabi
+ثمانية عشر , ثمانية + عشرة
+\end_layout
+
+\begin_layout Itemize
+319 to 
+\lang arabic_arabi
+ثلاثمئة وتسعة وازدادوا عشرا
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+-- 
+\end_layout
+
+\begin_layout Standard
+Verify the english by internet
+\end_layout
+
+\begin_layout Standard
+(note: searching only because no need for it in indexing)
+\end_layout
+
+\begin_layout Standard
+We don't include this phase into normalization phase ( after tokenization
+ ) before those substitions are essential for a perfect tokenization.
+ Especially that the tokenization phase is not a simple space-based separation.
+ 
+\end_layout
+
+\begin_layout Subsection
 Tokenization:
 \end_layout
 
@@ -2018,19 +2136,248 @@ key "Attia_arabictokenization"
 \end_layout
 
 \begin_layout Enumerate
-Tokenization Combined with Morphological Analysis,.
+
+\series bold
+Tokenization Combined with Morphological Analysis
+\series default
+: This is the most linguistically motivated and the most common form of
+ implementation for Arabic tokenization (Habash and Rambow 2005).
+ However, it violates the design concept of modularity which requires systems
+ to have separate modules for undertaking separate tasks.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Figure
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+‫( 
+\lang arabic_arabi
+ولیشكر‬
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+waliyashkur: and to thank )
+\begin_inset Newline newline
+\end_inset
+
+‫
+\lang arabic_arabi
+و‬
+\lang english
++conj@
+\lang arabic_arabi
+‫ل
+\lang english
+‬+comp@
+\lang arabic_arabi
+شكر‬
+\lang english
++verb+pres+sg‫@
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
+
+\series bold
 Tokenization Guesser (tokenization is separated from morphological analysis)
+\series default
+: The tokenizer here only detects and demarcates clitic boundaries with
+ two additional components: a clitics guesser (integrated with the tokenizer)
+ and a clitics transducer (integrated with the morphological transducer)
+ to recover the information on what may constitute a clitic.
+ the advantages are robustness as it is able to deal with any words whether
+ they are known to the morphological transducer or not, and abiding by the
+ concept of modularity as it separates the process of tokenization from
+ morphological analysis.
+ There is the disadvantage that the morphological analyzer and the syntactic
+ parser have to deal with increased tokenization ambiguities.
+ 
 \end_layout
 
-\begin_layout Enumerate
-Tokenization Dependent on the Morphological Analyser
+\begin_deeper
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Figure
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+‫( 
+\lang arabic_arabi
+وللرجل‬
+\lang english
+ and to the man) 
 \end_layout
 
 \begin_layout Standard
-----
+@‫
+\lang arabic_arabi
+و
+\lang english
+@
+\lang arabic_arabi
+ل
+\lang english
+@
+\lang arabic_arabi
+ال
+\lang english
+@
+\lang arabic_arabi
+رجل‬
+\end_layout
+
+\begin_layout Standard
+@
+\lang arabic_arabi
+‫و
+\lang english
+@
+\lang arabic_arabi
+ل
+\lang english
+@
+\lang arabic_arabi
+الرجل
+\lang english
+‬
+\end_layout
+
+\begin_layout Standard
+@‫
+\lang arabic_arabi
+و
+\lang english
+@
+\lang arabic_arabi
+للرجل‬
+\lang english
+ 
+\end_layout
+
+\begin_layout Standard
+@‫
+\lang arabic_arabi
+وللرجل‬
+\lang english
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+‫
+\lang arabic_arabi
+و‬
+\lang english
++conj
+\begin_inset Newline newline
+\end_inset
+
+
+\lang arabic_arabi
+ل‬
+\lang english
++prep
+\begin_inset Newline newline
+\end_inset
+
+
+\lang arabic_arabi
+‫ال‬
+\lang english
++art+def
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Tokenization Dependent on the Morphological Analyser: 
+\series default
+here the word stem is not guessed, but taken as a list of actual words.
+ A possible word in the tokenizer in this model is any word found in the
+ morphological transducer.
+ The morphological transducer here is the same in the first model but with
+ one difference, that is the output does not include any morphological features,
+ but only token boundaries between clitics and stems.
+ One advantage of this implementation is that the tool becomes more deterministi
+c and more manageable in debugging.
+ Its lack of robustness makes it mostly inapplicable as no single morphological
+ transducer can claim to comprise all the words in a language.
+ 
+\begin_inset Newline newline
+\end_inset
+
+‫( 
+\lang arabic_arabi
+وللرجل‬
+\lang english
+ and to the man) 
+\begin_inset Newline newline
+\end_inset
+
+@‫
+\lang arabic_arabi
+و
+\lang english
+@
+\lang arabic_arabi
+ل
+\lang english
+@
+\lang arabic_arabi
+ال
+\lang english
+@
+\lang arabic_arabi
+رجل‬
+\end_layout
+
+\begin_layout Standard
+------
 \end_layout
 
 \begin_layout Standard
@@ -2049,6 +2396,17 @@ Our choice from Attia models:
 
 \begin_layout Standard
 - may we add some tags that we need in normalization & Stemming
+\end_layout
+
+\begin_layout Standard
+----
+\end_layout
+
+\begin_layout Standard
+[add ref , google its Bibtex ] Habash N, Rambow O (2005): Arabic Tokenization,
+ Part-of-Speech Tagging and Morphological Disam- biguation in One Fell Swoop,
+ Proceedings of ACL 2005.
+ Michigan
 \end_layout
 
 \begin_layout Standard
@@ -2126,34 +2484,12 @@ Normalization:
 الواو والألف الخنجرية، رموز الوقف والتلاوة
 \end_layout
 
-\begin_layout Itemize
-if no deep tokenization, transliterations 
-\end_layout
-
-\begin_layout Itemize
-if no deep tokenization, Numbers to words: 
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-18 to 
-\lang arabic_arabi
-ثمانية عشر , ثمانية + عشرة
-\end_layout
-
-\begin_layout Itemize
-319 to 
-\lang arabic_arabi
-ثلاثمئة وتسعة وازدادوا عشرا
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-(note: searching only because no need for it in indexing)
-\end_layout
-
 \begin_layout Subsection
 Stemming: 
+\end_layout
+
+\begin_layout Standard
+
 \lang arabic_arabi
 الليل - أليل
 \end_layout
@@ -2196,6 +2532,10 @@ should base on occurences not form because some similar forms hasnt the
  same mapping value
 \end_layout
 
+\begin_layout Standard
+based on Uthmani words as key because words like Ya asafaa
+\end_layout
+
 \begin_layout Enumerate
 
 \lang arabic_arabi
@@ -2203,6 +2543,8 @@ should base on occurences not form because some similar forms hasnt the
 \end_layout
 
 \begin_layout Enumerate
+
+\lang arabic_arabi
 يا أسفى
 \end_layout
 
@@ -4633,7 +4975,7 @@ Our approche is to make a progressive parser since it proceeded by treating
 \end_layout
 
 \begin_layout Section
-Conception of features (
+Conception of features
 \end_layout
 
 \begin_layout Standard
@@ -4819,7 +5161,7 @@ FEATURExRESSOURCE
 \begin_inset Float table
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -5960,6 +6302,13 @@ FEATURExRESSOURCE
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
 \end_inset
 
 

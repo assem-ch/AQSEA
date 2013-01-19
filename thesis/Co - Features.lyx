@@ -2528,7 +2528,14 @@ Linguistic Aspects
 \begin_layout Enumerate
 
 \series bold
-Romanization: 
+Romanization:
+\begin_inset CommandInset label
+LatexCommand label
+name "enu:Romanization:"
+
+\end_inset
+
+ 
 \series default
 or called also English transliteration, It's needed mainly by non-Arabic
  speakers
