@@ -1797,9 +1797,9 @@ Substitution
 \end_layout
 
 \begin_layout Standard
-This a new phase that we propose to add before tokenization.
- Its objective is identify pre-defined patterns and replace them as a preparatio
-n for tokenization.
+This is a new phase that we propose to be added before tokenization.
+ Its objective is to identify a list of pre-defined patterns and replace
+ them as a preparation for tokenization.
  We propose these cases of substitution:
 \end_layout
 
@@ -1833,7 +1833,8 @@ reference "enu:Romanization:"
 
 \begin_deeper
 \begin_layout Enumerate
-[Guessing Policy]
+[Guessing Policy] - creteria: used characters, priority , check existance
+ in quranic list word
 \end_layout
 
 \begin_layout Enumerate
@@ -1851,7 +1852,7 @@ Numbers
 \lang english
 : In Quran, the numbers are mentioned 
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 litterally
@@ -1867,7 +1868,11 @@ litterally
 
 \begin_deeper
 \begin_layout Enumerate
-rule: we ignore the waw
+rule: we ignore the waw .
+\end_layout
+
+\begin_layout Enumerate
+rule: use letters in  as they are.
 \end_layout
 
 \begin_layout Enumerate
@@ -1892,6 +1897,11 @@ more rules
 
 \end_deeper
 \begin_layout Standard
+Generally this phase is for processing the search query because it's not
+ needed in indexing Quranic text.
+\end_layout
+
+\begin_layout Standard
 -- 
 \end_layout
 
@@ -1900,13 +1910,14 @@ Verify the english by internet
 \end_layout
 
 \begin_layout Standard
-(note: searching only because no need for it in indexing)
+---
 \end_layout
 
 \begin_layout Standard
 We don't include this phase into normalization phase ( after tokenization
  ) before those substitions are essential for a perfect tokenization.
- Especially that the tokenization phase is not a simple space-based separation.
+ Especially that the tokenization phase is not a simple space-based separation
+ and configured to use a word-by-word corpus.
  
 \end_layout
 
@@ -2569,24 +2580,18 @@ unLadyLike
 \end_layout
 
 \begin_layout Standard
-There is a possibility to delay affix processing to the stemming phase but
- there will be a difference:
+There is a possibility to delay affix processing into the stemming phase
+ but there will be a difference:
 \end_layout
 
 \begin_layout Itemize
-with stemming we lose any information about the affixes so we can't specify
- the search to an exact word;
+with stemming we lose affixes so we can't specify the exact word search
+ ;
 \end_layout
 
 \begin_layout Itemize
-with tokenization, we preserve most of information but as we mentioned about
- it will be a very complicated operation and we can't assure a high precision
- percent.
+with tokenization, we preserve tokens and we can reproduce the whole word.
  
-\end_layout
-
-\begin_layout Standard
---------------
 \end_layout
 
 \begin_layout Standard
@@ -2598,7 +2603,9 @@ We can use the tokenization to resolve the pronouns references by creating
 \end_layout
 
 \begin_layout Standard
-[If I create extra tokens, but how that affect phrase search]
+
+\lang arabic_arabi
+هو وصاحبه 
 \end_layout
 
 \begin_layout Standard
@@ -2608,11 +2615,19 @@ We can use the tokenization to resolve the pronouns references by creating
 \end_layout
 
 \begin_layout Standard
-resolving Co-reference here.
+[If I create extra tokens, but how that affect phrase search]
 \end_layout
 
 \begin_layout Standard
--------
+-- 
+\end_layout
+
+\begin_layout Standard
+Verify the english by internet
+\end_layout
+
+\begin_layout Standard
+---
 \end_layout
 
 \begin_layout Subsection
@@ -2620,7 +2635,13 @@ Normalization:
 \end_layout
 
 \begin_layout Standard
-Othmani text has many
+Othmani Quranic Text 
+\end_layout
+
+\begin_layout Standard
+
+\lang arabic_arabi
+الواو والألف الخنجرية، رموز الوقف والتلاوة
 \end_layout
 
 \begin_layout Standard
@@ -2633,9 +2654,49 @@ choices: Standard-to-Uthmani Mapping or inverse (yes) , or Uthmani-standard
 \end_layout
 
 \begin_layout Standard
+we choose Uthmani-to-Standard because Standard is easier for Stemming and
+ Filtring stopwords.
+\end_layout
+
+\begin_layout Standard
+---
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Standard-Uthmani Mapping
+\end_layout
+
+\begin_layout Standard
+General Schema of Uthmani&Standard text processing: Where we have to merge
+ Uthmani & Standard ! before tokenization, in normalization, after stemming,
+ at the end.
+\end_layout
+
+\begin_layout Standard
+(move it up , it not a phase)
+\end_layout
+
+\begin_layout Standard
+should base on occurences not form because some similar forms hasnt the
+ same mapping value
+\end_layout
+
+\begin_layout Standard
+based on Uthmani words as key because words like Ya asafaa
+\end_layout
+
+\begin_layout Enumerate
 
 \lang arabic_arabi
-الواو والألف الخنجرية، رموز الوقف والتلاوة
+الليل - أليل
+\end_layout
+
+\begin_layout Enumerate
+
+\lang arabic_arabi
+يا أسفى
 \end_layout
 
 \begin_layout Subsection
@@ -2643,7 +2704,7 @@ Stemming:
 \end_layout
 
 \begin_layout Standard
-based on the information provided in the tokenizer ,( If it has a stem or
+based on the information provided in the tokenizer, ( If it has a stem or
  a root, based on level needed by the search system, root is not recommended
  )
 \end_layout
@@ -2679,45 +2740,6 @@ This phase should be optional to let the possibility for linguists to look
 avoid removing them to support phrase search لو كان البحر
 \end_layout
 
-\begin_layout Subsection
-Standard-Uthmani Mapping
-\end_layout
-
-\begin_layout Standard
----
-\end_layout
-
-\begin_layout Standard
-General Schema of Uthmani&Standard text processing: Where we have to merge
- Uthmani & Standard ! before tokenization, in normalization, after stemming,
- at the end.
-\end_layout
-
-\begin_layout Standard
-(move it up , it not a phase)
-\end_layout
-
-\begin_layout Standard
-should base on occurences not form because some similar forms hasnt the
- same mapping value
-\end_layout
-
-\begin_layout Standard
-based on Uthmani words as key because words like Ya asafaa
-\end_layout
-
-\begin_layout Enumerate
-
-\lang arabic_arabi
-الليل - أليل
-\end_layout
-
-\begin_layout Enumerate
-
-\lang arabic_arabi
-يا أسفى
-\end_layout
-
 \begin_layout Section
 Modular Query Parser
 \end_layout
@@ -2735,13 +2757,11 @@ a high benefit to add search features one by one, without ruining all the
 read from whoosh 2.5
 \end_layout
 
-\begin_layout Subsection
-
-\series bold
-Proposition of new operations
+\begin_layout Standard
+we proposition those new operations (some are upgraded from previous work)
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Related Words
 \end_layout
 
@@ -2753,7 +2773,7 @@ Syntax :Relation~word , ~word for all relations
 replace the synonyms and antonyms by a genral semantic related works
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Multi-level Derivations
 \end_layout
 
@@ -2761,7 +2781,7 @@ Multi-level Derivations
 Suntax: >>> Malak
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Special Derivations
 \end_layout
 
@@ -2782,23 +2802,52 @@ find a smart way to explain all of those
 
 \end_layout
 
-\begin_layout Subsubsection
-Spelling on/off
+\begin_layout Subsection
+Fuzzy Search
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Standard
+
+\lang arabic_arabi
+تقريبي
+\end_layout
+
+\begin_layout Standard
+,try to fix spelling errors and guess the right words 
+\end_layout
+
+\begin_layout Standard
+include similar words in writing or 
+\lang arabic_arabi
+نطق
+\end_layout
+
+\begin_layout Subsection
 Embedded Search 
 \end_layout
 
-\begin_layout Enumerate
-Word properties search
-\end_layout
-
-\begin_layout Enumerate
-Translations search
+\begin_layout Standard
+( it's a Two-Steps Search)
 \end_layout
 
 \begin_layout Subsubsection
+Word properties search
+\end_layout
+
+\begin_layout Standard
+first benefit to search using word properties, this include those, as we've
+ mentioned in ...
+\end_layout
+
+\begin_layout Standard
+the difference 
+\end_layout
+
+\begin_layout Subsubsection
+Translations search
+\end_layout
+
+\begin_layout Subsection
 New Arabic Jokers 
 \end_layout
 
@@ -2834,10 +2883,6 @@ All: .
 
 \series bold
 Word sens disambiguation: (That's not here)
-\end_layout
-
-\begin_layout Section
-Two-Steps Search: Word-Ayah
 \end_layout
 
 \begin_layout Subsection
