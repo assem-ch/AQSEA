@@ -2377,25 +2377,37 @@ c and more manageable in debugging.
 \end_layout
 
 \begin_layout Standard
-------
+Those models proposed by Attia are specified for Arabic, وبأننا we aim the
+ Quran we seek precision.
+ The tokenization guesser leads to increased number of ambiguites but if
+ we use hand-made WordByWord corpus we can limit those ambiguities especially
+ of Indexed Quranic content.
+ For the words not existing in the corpus, we may use any general Arabic
+ tokenization guesser.
+ 
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
 
-\noun on
-Our choice from Attia models:
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Schema gussing
 \end_layout
 
-\begin_layout Standard
-- not 2 because not guessing
+\end_inset
+
+
 \end_layout
 
-\begin_layout Standard
-- based on WbW manuel index, we took our tokenization,
-\end_layout
+\end_inset
 
-\begin_layout Standard
-- may we add some tags that we need in normalization & Stemming
+
 \end_layout
 
 \begin_layout Standard
@@ -2404,7 +2416,7 @@ Our choice from Attia models:
 
 \begin_layout Standard
 [add ref , google its Bibtex ] Habash N, Rambow O (2005): Arabic Tokenization,
- Part-of-Speech Tagging and Morphological Disam- biguation in One Fell Swoop,
+ Part-of-Speech Tagging and Morphological Disambiguation in One Fell Swoop,
  Proceedings of ACL 2005.
  Michigan
 \end_layout
@@ -2414,57 +2426,156 @@ Our choice from Attia models:
 \end_layout
 
 \begin_layout Standard
-That is one of Arabic English don't do that , that's because the t , as
- in the translation a similar meaning can't be written in one english word.
- used in compound words such as , or unLadyLike
+Tokenization تحدث a loss in token information as function and POS 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "POS"
+description "Part Of Speech"
+
+\end_inset
+
+.
+ This loss affect the semantic understanding of keywords.
+ For example the two ayahs:
 \end_layout
 
-\begin_layout Standard
-add tagging to be used in Stemming and Normalization, why? because some
- info may be lost after the tokenization such as POS.
- #A step to semantics
-\end_layout
-
-\begin_layout Standard
-If Noun Mu3rab , feed it to normalization
-\end_layout
-
-\begin_layout Standard
-Feed affixes, derivation information to Stemming/Lemmatization
-\end_layout
-
-\begin_layout Standard
-mention Attia Arabic tokenization proposition
-\end_layout
-
-\begin_layout Standard
-
+\begin_layout Enumerate
+[ 
 \lang arabic_arabi
-لا إله إلا هو ------------ لا إله إلا الله
+وَالشَّمْسِ وَضُحَاهَا
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+] -- (
+\lang arabic_arabi
+الشمس
+\lang english
+ 1) 
+\end_layout
+
+\begin_layout Enumerate
+[ 
+\lang arabic_arabi
+وَهُوَ الَّذِي خَلَقَ اللَّيْلَ وَالنَّهَارَ وَالشَّمْسَ وَالْقَمَرَ كُلٌّ
+ فِي فَلَكٍ يَسْبَحُونَ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+] -- (
+\lang arabic_arabi
+الأنبياء
+\lang english
+ 33) 
 \end_layout
 
 \begin_layout Standard
-** Tagging (It's with tokenizer, why? because he's the only one who know
- the position of word in the phrase and by consequese the POS info )
+When we tokenize the previous two Ayahs, we lose the function of the first
+ waw (
+\lang arabic_arabi
+و
+\lang english
+) as in the first ayah is for oath and in the second aya is for coordination.
+ To recover such kind of loss, we introduce some tags tha has the values
+ of important information.
+ we add tags in this phase exactly (tokenization) because it's the only
+ phase that read the word in it's phrase semantic and syntaxic context.
+ By consequence, it knows the Part-of-speech information.
+ Another reason is that we need them in the next phases : Normalization
+ and Stemming.
+ Among the tags that we think they are important, there are:
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Word declension
+\series default
+: whether the word is معربة or مبنسة.
+ We need it in Normalization phase because we intend to strip the حركة الإعراب
+ to توحيد different occurences of word.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Flexion information
+\series default
+: whether the word has a stem , a root or جامدة.
+ We need it in Stemming phase.
 \end_layout
 
 \begin_layout Standard
--------
+English language has a similar problem in the tokenization of compound nouns
+ such as the word 
+\begin_inset Quotes sld
+\end_inset
+
+homework
+\begin_inset Quotes srd
+\end_inset
+
+ or the word 
+\begin_inset Quotes sld
+\end_inset
+
+unLadyLike
+\begin_inset Quotes srd
+\end_inset
+
+ but not the same complication as in Arabic language.
+ 
 \end_layout
 
 \begin_layout Standard
-Due to those problems, we recommend the space-based tokenization and delay
- processing to the stemming phase.
-\end_layout
-
-\begin_layout Standard
-The difference between doing that in tokenization phase or stemming phase
- is:
+There is a possibility to delay affix processing to the stemming phase but
+ there will be a difference:
 \end_layout
 
 \begin_layout Itemize
 with stemming we lose any information about the affixes so we can't specify
- the search to an exact word.
+ the search to an exact word;
 \end_layout
 
 \begin_layout Itemize
@@ -2474,8 +2585,51 @@ with tokenization, we preserve most of information but as we mentioned about
  
 \end_layout
 
+\begin_layout Standard
+--------------
+\end_layout
+
+\begin_layout Standard
+We can use the tokenization to resolve the pronouns references by creating
+ an extra token for each pronoun; That token has the key value of the referenced
+ object.
+ Each referenced object should have a unique key value.
+ For example:
+\end_layout
+
+\begin_layout Standard
+[If I create extra tokens, but how that affect phrase search]
+\end_layout
+
+\begin_layout Standard
+
+\lang arabic_arabi
+لا إله إلا هو ------------ لا إله إلا الله -- 
+\end_layout
+
+\begin_layout Standard
+resolving Co-reference here.
+\end_layout
+
+\begin_layout Standard
+-------
+\end_layout
+
 \begin_layout Subsection
 Normalization:
+\end_layout
+
+\begin_layout Standard
+Othmani text has many
+\end_layout
+
+\begin_layout Standard
+---
+\end_layout
+
+\begin_layout Standard
+choices: Standard-to-Uthmani Mapping or inverse (yes) , or Uthmani-standard
+ direct!
 \end_layout
 
 \begin_layout Standard
@@ -2486,6 +2640,12 @@ Normalization:
 
 \begin_layout Subsection
 Stemming: 
+\end_layout
+
+\begin_layout Standard
+based on the information provided in the tokenizer ,( If it has a stem or
+ a root, based on level needed by the search system, root is not recommended
+ )
 \end_layout
 
 \begin_layout Standard
@@ -2521,6 +2681,16 @@ avoid removing them to support phrase search لو كان البحر
 
 \begin_layout Subsection
 Standard-Uthmani Mapping
+\end_layout
+
+\begin_layout Standard
+---
+\end_layout
+
+\begin_layout Standard
+General Schema of Uthmani&Standard text processing: Where we have to merge
+ Uthmani & Standard ! before tokenization, in normalization, after stemming,
+ at the end.
 \end_layout
 
 \begin_layout Standard
@@ -2576,7 +2746,11 @@ Related Words
 \end_layout
 
 \begin_layout Standard
-Syntax :Relation~word
+Syntax :Relation~word , ~word for all relations
+\end_layout
+
+\begin_layout Standard
+replace the synonyms and antonyms by a genral semantic related works
 \end_layout
 
 \begin_layout Subsubsection
@@ -2659,7 +2833,7 @@ All: .
 \begin_layout Subsubsection
 
 \series bold
-Word sens disambiguation: (that's not here)
+Word sens disambiguation: (That's not here)
 \end_layout
 
 \begin_layout Section
@@ -2897,7 +3071,7 @@ rule #5:
 \begin_inset Float table
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -5085,7 +5259,7 @@ God names' number:
 
 \begin_layout Standard
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Description
 Hints:
