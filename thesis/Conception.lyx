@@ -2823,7 +2823,7 @@ include similar words in writing or
 \end_layout
 
 \begin_layout Subsection
-Embedded Search 
+Word Embedded Search 
 \end_layout
 
 \begin_layout Standard
@@ -2844,7 +2844,11 @@ the difference
 \end_layout
 
 \begin_layout Subsubsection
-Translations search
+Translations search (this is not efficient , it's just an extra search engine)
+\end_layout
+
+\begin_layout Standard
+benefit to search inside the TranslatioNs
 \end_layout
 
 \begin_layout Subsection
