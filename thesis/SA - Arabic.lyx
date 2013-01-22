@@ -4351,7 +4351,7 @@ glstwo{imperative}{Imperative}}
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Greyedout
+\begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
@@ -4452,7 +4452,7 @@ glstwo{declinable}{declinables}
 
  (
 \lang arabic_arabi
-معرّبة
+معربة
 \lang english
 ) and appear in one of these three cases according to their functions in
  the sentence.

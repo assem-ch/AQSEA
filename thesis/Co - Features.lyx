@@ -1756,10 +1756,6 @@ Ayah in full diacritical marks - quran.com
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -2585,7 +2581,17 @@ Arabizi
 \noun off
 \color none
 \lang english
- (Caliph) 
+ (Caliph
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Also: Successor, Ruler
+\end_layout
+
+\end_inset
+
+) 
 \family default
 \series default
 \shape default

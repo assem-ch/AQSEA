@@ -175,7 +175,7 @@ textit{Tim Peters, The Zen of Python}}
 
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 TODO:
@@ -1610,7 +1610,7 @@ Searching with an othmani writing form of a word such as
 status open
 
 \begin_layout Plain Layout
-occur as 
+occurs as 
 \lang arabic_arabi
 بصطة
 \family roman
@@ -1800,117 +1800,12 @@ Substitution
 This is a new phase that we propose to be added before tokenization.
  Its objective is to identify a list of pre-defined patterns and replace
  them as a preparation for tokenization.
- We propose these cases of substitution:
+ 
 \end_layout
 
-\begin_layout Enumerate
-
-\series bold
-Romanizations
-\series default
-: among the search features that we've described in the previous chapter,
- there is the option of search using a romanized Arabic text (see 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "enu:Romanization:"
-
-\end_inset
-
-).
- Romanized texts are latin letters and our system is defined for Arabic
- letters.
- That's why we have to replace them with thier appropriate 
-\noun on
-\lang arabic_arabi
-مقابل
-\noun default
-\lang english
-.
- There are many romanization systems.
- To provide the possibility to use more then one, we should specify a guessing
- policy to detect what system is used in a given string.
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-[Guessing Policy] - creteria: used characters, priority , check existance
- in quranic list word
-\end_layout
-
-\begin_layout Enumerate
-+example
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-
-\series bold
-Numbers 
-\lang arabic_arabi
-تحويل إلى حروف
-\series default
-\lang english
-: In Quran, the numbers are mentioned 
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-litterally
-\end_layout
-
-\end_inset
-
- not as write them in current numerical systems (Arab number, or indian
- numbers).
- We need to translate numbers into the litteral form to make them search-able
- in the Quran.
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-rule: we ignore the waw .
-\end_layout
-
-\begin_layout Enumerate
-rule: use letters in  as they are.
-\end_layout
-
-\begin_layout Enumerate
-more rules
-\end_layout
-
-\begin_layout Enumerate
-+example
-\end_layout
-
-\begin_layout Itemize
-18 to 
-\lang arabic_arabi
-ثمانية عشر , ثمانية + عشرة
-\end_layout
-
-\begin_layout Itemize
-319 to 
-\lang arabic_arabi
-ثلاثمئة وتسعة وازدادوا عشرا
-\end_layout
-
-\end_deeper
 \begin_layout Standard
 Generally this phase is for processing the search query because it's not
  needed in indexing Quranic text.
-\end_layout
-
-\begin_layout Standard
--- 
-\end_layout
-
-\begin_layout Standard
-Verify the english by internet
-\end_layout
-
-\begin_layout Standard
----
 \end_layout
 
 \begin_layout Standard
@@ -1919,6 +1814,1385 @@ We don't include this phase into normalization phase ( after tokenization
  Especially that the tokenization phase is not a simple space-based separation
  and configured to use a word-by-word corpus.
  
+\end_layout
+
+\begin_layout Standard
+We propose these cases of substitution:
+\end_layout
+
+\begin_layout Subsubsection
+
+\series bold
+Romanizations
+\end_layout
+
+\begin_layout Standard
+Among the search features that we've described in the previous chapter,
+ there is the option of search using a romanized Arabic text (see 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "enu:Romanization:"
+
+\end_inset
+
+).
+ Romanized texts are in Latin letters and our system is defined for Arabic
+ letters.
+ That's why we have to replace each letter with its appropriate correlative.
+ There are many romanization systems.
+ To provide the possibility to use more then one, we should specify a guessing
+ policy to detect what system is used in a given string.
+ There are many critiria that could be used in guessing, we list some of
+ thme in the following:
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Nature of used characters: 
+\series default
+each romanization system uses a set of letters, numbers, or symbols to reperesen
+t the Arabic vowels and letters (including hamza forms).
+ The diffrences between those sets are remarkable.
+ For example, ISO233 norm uses أحرف منقوطة...
+ but buckwalter use instead symbols such as &.
+ Those differences could be used to guess the romanization system.
+ The following table represents the exclusive characters used by the three
+ romanization systems: ISO233, Buckwalter, and Arabtex.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Romanization system
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Exclusive characters
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ISO 233
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Buckwalter
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Arabtex
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Exclusive characters between ISO233, Buckwalter, and Arabtex
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
++xample Calif: + example: خليفة in ISO, Buckwalter, Arabtex
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Arabic valid words
+\series default
+: by interpreting the romanized word using the different romanization systems,
+ we get many correlative Arabic words.
+ We can check if each word is valid in Arabic, and eliminate non valid ones.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+example: qawol -> ...
+ in i
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Word existance in Quran: 
+\series default
+by checking the existence in the Quran of a interpreted words ناتجة from
+ a romanized word, we can detect potential ones.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+example: word valid in arabic but not in quran
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Predefined priorities: 
+\series default
+the last cretrion is the predefined priorities.
+ If the guessing system failed to limit choices to only one romanization
+ system, it should pick the first one based on predfined priorities.
+\end_layout
+
+\begin_layout Subsubsection
+
+\series bold
+Numbers into words
+\series default
+: 
+\end_layout
+
+\begin_layout Standard
+In Quran, the numbers are written in words not as we write them in the current
+ numeral systems (Arabic numerals
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Arabic numerals: (0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
+\end_layout
+
+\end_inset
+
+, or Hindi numerals
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Hindi numerals: (
+\lang arabic_arabi
+٠
+\lang english
+‎ - 
+\lang arabic_arabi
+١
+\lang english
+‎ - 
+\lang arabic_arabi
+٢
+\lang english
+‎ - 
+\lang arabic_arabi
+٣‎
+\lang english
+ - 
+\lang arabic_arabi
+٤
+\lang english
+‎ - 
+\lang arabic_arabi
+٥
+\lang english
+‎ - 
+\lang arabic_arabi
+٦
+\lang english
+‎ - 
+\lang arabic_arabi
+٧
+\lang english
+‎ - 
+\lang arabic_arabi
+٨‎
+\lang english
+ - 
+\lang arabic_arabi
+٩‎
+\lang english
+)
+\end_layout
+
+\end_inset
+
+aka Eastern Arabic numerals ).
+ We need to translate those numerals into the literal form to make them
+ search-able in the Quran.
+ In the following table , we list some numbers as they mentioned in Quran:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="12" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+N°
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ayah ID
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Number as mentioned
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Appropriate numeral
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(
+\lang arabic_arabi
+الإخلاص
+\lang english
+ 1) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+أَحَدٌ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(
+\lang arabic_arabi
+المائدة
+\lang english
+ 106)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+اثْنَانِ
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(
+\lang arabic_arabi
+مريم
+\lang english
+ 10) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+ثَلَاثَ
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(
+\lang arabic_arabi
+الأنفال
+\lang english
+ 65) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+عِشْرُونَ
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(
+\lang arabic_arabi
+البقرة
+\lang english
+ 261) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+مِائَةُ
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+100
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(
+\lang arabic_arabi
+الأنفال
+\lang english
+ 65) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+مِائَتَيْنِ
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+200
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(
+\lang arabic_arabi
+البقرة
+\lang english
+ 96) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+أَلْفَ
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1000
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(
+\lang arabic_arabi
+المعارج
+\lang english
+ 4) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+خَمْسِينَ_أَلْفَ
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+50000
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(
+\lang arabic_arabi
+يوسف
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+أَحَدَ_عَشَرَ
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(
+\lang arabic_arabi
+الكهف
+\lang english
+ 25) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+ثَلَاثَ_مِائَةٍ_سِنِينَ_وَازْدَادُوا_تِسْعًا
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+309
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(
+\lang arabic_arabi
+العنكبوت
+\lang english
+ 14) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+أَلْفَ_سَنَةٍ_إِلَّا_خَمْسِينَ_عَامًا
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+950
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Some numbers as they mentioned in Quran
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To be close to the Quranic way of writing numbers, we should respect many
+ properties.
+ We write each digit in its class: الآحاد, tens, hundreds, thousands, عشرات
+ الآلاف , مئات الآلاف and better to not write the واو العطف.
+ Zero has to be ignored because it will never be written, we don't say 
+\lang arabic_arabi
+صفر رجل
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(zero men) but we say 
+\lang arabic_arabi
+لا رجل
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(no men).
+ One never mentioned as 
+\lang arabic_arabi
+واحد
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ but as 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang arabic_arabi
+أحد
+\lang english
+.
+ Some numbers accept gender such as 
+\lang arabic_arabi
+إثنان
+\lang english
+ (2, masculine) and 
+\lang arabic_arabi
+إثنتان
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(2, feminine).
+ Other numbers change their forms in the opposite gender of 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\lang arabic_arabi
+المعدود
+\lang english
+ 
+\end_layout
+
+\end_inset
+
+such as 
+\lang arabic_arabi
+سبع سماوات
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(7 heavens, feminine) and 
+\lang arabic_arabi
+سبعة أبحر
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(7 seas, masculine).
+ a hundred 
+\lang arabic_arabi
+مئة
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+had a special writing in Quran which is 
+\lang arabic_arabi
+مِائَةُ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ with an additional Alef.
+\end_layout
+
+\begin_layout Standard
+In the example N°11 in the table, the number 309 was separated with the
+ two words but still search-able.
+ In the contrary , the example N°12 show an indirect mention of the number
+ 950.
+ That make it hard to be retrieved without understanding the Ayah semantically.
 \end_layout
 
 \begin_layout Subsection
@@ -2152,7 +3426,14 @@ key "Attia_arabictokenization"
 Tokenization Combined with Morphological Analysis
 \series default
 : This is the most linguistically motivated and the most common form of
- implementation for Arabic tokenization (Habash and Rambow 2005).
+ implementation for Arabic tokenization 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Habash05arabictokenization"
+
+\end_inset
+
+.
  However, it violates the design concept of modularity which requires systems
  to have separate modules for undertaking separate tasks.
 \begin_inset Newline newline
@@ -2388,11 +3669,14 @@ c and more manageable in debugging.
 \end_layout
 
 \begin_layout Standard
-Those models proposed by Attia are specified for Arabic, وبأننا we aim the
- Quran we seek precision.
- The tokenization guesser leads to increased number of ambiguites but if
- we use hand-made WordByWord corpus we can limit those ambiguities especially
- of Indexed Quranic content.
+Those models proposed by 
+\noun on
+Attia
+\noun default
+ are specified for Arabic, and because we aim the Quran we value the precision.
+ The tokenization guesser leads to an increased number of ambiguities but
+ if we use a hand-made word-by-word corpus we can limit those ambiguities
+ especially for the words existing in Quran.
  For the words not existing in the corpus, we may use any general Arabic
  tokenization guesser.
  
@@ -2408,7 +3692,7 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Schema gussing
+Schema guessing
 \end_layout
 
 \end_inset
@@ -2422,22 +3706,7 @@ Schema gussing
 \end_layout
 
 \begin_layout Standard
-----
-\end_layout
-
-\begin_layout Standard
-[add ref , google its Bibtex ] Habash N, Rambow O (2005): Arabic Tokenization,
- Part-of-Speech Tagging and Morphological Disambiguation in One Fell Swoop,
- Proceedings of ACL 2005.
- Michigan
-\end_layout
-
-\begin_layout Standard
-----
-\end_layout
-
-\begin_layout Standard
-Tokenization تحدث a loss in token information as function and POS 
+Tokenization cause a loss in token information as function and POS 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "POS"
@@ -2530,11 +3799,11 @@ When we tokenize the previous two Ayahs, we lose the function of the first
 ) as in the first ayah is for oath and in the second aya is for coordination.
  To recover such kind of loss, we introduce some tags tha has the values
  of important information.
- we add tags in this phase exactly (tokenization) because it's the only
+ We add tags in this phase exactly (tokenization) because it's the only
  phase that read the word in it's phrase semantic and syntaxic context.
- By consequence, it knows the Part-of-speech information.
- Another reason is that we need them in the next phases : Normalization
- and Stemming.
+ By consequence, it knows the part-of-speech information.
+ Another reason is that we need them in the next phases: Normalization and
+ Stemming.
  Among the tags that we think they are important, there are:
 \end_layout
 
@@ -2543,9 +3812,17 @@ When we tokenize the previous two Ayahs, we lose the function of the first
 \series bold
 Word declension
 \series default
-: whether the word is معربة or مبنسة.
- We need it in Normalization phase because we intend to strip the حركة الإعراب
- to توحيد different occurences of word.
+: whether the word is declinable (
+\lang arabic_arabi
+معربة
+\lang english
+) or not.
+ We need this in normalization phase because we intend to strip the declension
+ vowels (
+\lang arabic_arabi
+حركات الإعراب
+\lang english
+) to unite different occurences of a word.
 \end_layout
 
 \begin_layout Enumerate
@@ -2553,8 +3830,8 @@ Word declension
 \series bold
 Flexion information
 \series default
-: whether the word has a stem , a root or جامدة.
- We need it in Stemming phase.
+: whether the word is derivative or not.
+ We need this in Stemming phase.
 \end_layout
 
 \begin_layout Standard
@@ -2595,6 +3872,10 @@ with tokenization, we preserve tokens and we can reproduce the whole word.
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
 We can use the tokenization to resolve the pronouns references by creating
  an extra token for each pronoun; That token has the key value of the referenced
  object.
@@ -2602,32 +3883,25 @@ We can use the tokenization to resolve the pronouns references by creating
  For example:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \lang arabic_arabi
 هو وصاحبه 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \lang arabic_arabi
 لا إله إلا هو ------------ لا إله إلا الله -- 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 [If I create extra tokens, but how that affect phrase search]
 \end_layout
 
-\begin_layout Standard
--- 
-\end_layout
+\end_inset
 
-\begin_layout Standard
-Verify the english by internet
-\end_layout
 
-\begin_layout Standard
----
 \end_layout
 
 \begin_layout Subsection
@@ -2635,68 +3909,138 @@ Normalization:
 \end_layout
 
 \begin_layout Standard
-Othmani Quranic Text 
+Since we are accepting the Othmani script beside the standard script,we
+ have to specify the normalisation for the both.
+ We had to strip all recitation marks such as: ننننن .
+ The same for boundary marks such as: ننننننن ص.
+\end_layout
+
+\begin_layout Itemize
+Example: Aya in Full Uthmani --> Ayah stripped
 \end_layout
 
 \begin_layout Standard
+After stripping all extra symbols, we should either normalize othmani text
+ into standard text.
+ This operation is necessary to unify the processing for the next phases.
+ There is no benefits to continue in a separarted lines.
+ The converging into standard script makes the stemming clearer and pass
+ over some special uthmani-written words.
+ For example, the word -example-.
+ 
+\end_layout
 
+\begin_layout Standard
+To achieve that, we need a complete mapping of Quranic words between the
+ both scripts.
+ To minimize the size of mapping, we can exclude the words that are written
+ in the same manner.
+ The mapping should use the uthmani word as a unit not the standard word.
+ The reason is that some words are mapped differently from an occurence
+ to another.
+ An example for that, the word 
 \lang arabic_arabi
-الواو والألف الخنجرية، رموز الوقف والتلاوة
+بسطة
+\lang english
+ which occurs as 
+\lang arabic_arabi
+بصطة
+\family roman
+\series medium
+\shape up
+\size small
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+in (
+\lang arabic_arabi
+الأعراف
+\lang english
+ 69) and as 
+\lang arabic_arabi
+بسطة
+\family roman
+\series medium
+\shape up
+\size small
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+in (
+\lang arabic_arabi
+البقرة
+\lang english
+ 247).
+ 
 \end_layout
 
 \begin_layout Standard
----
+--
 \end_layout
 
 \begin_layout Standard
-choices: Standard-to-Uthmani Mapping or inverse (yes) , or Uthmani-standard
- direct!
-\end_layout
-
-\begin_layout Standard
-we choose Uthmani-to-Standard because Standard is easier for Stemming and
- Filtring stopwords.
-\end_layout
-
-\begin_layout Standard
----
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-Standard-Uthmani Mapping
-\end_layout
-
-\begin_layout Standard
-General Schema of Uthmani&Standard text processing: Where we have to merge
- Uthmani & Standard ! before tokenization, in normalization, after stemming,
- at the end.
-\end_layout
-
-\begin_layout Standard
-(move it up , it not a phase)
-\end_layout
-
-\begin_layout Standard
-should base on occurences not form because some similar forms hasnt the
- same mapping value
+[if it's declinable, strip the last vocalization]
 \end_layout
 
 \begin_layout Standard
 based on Uthmani words as key because words like Ya asafaa
 \end_layout
 
-\begin_layout Enumerate
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
 
-\lang arabic_arabi
-الليل - أليل
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+General Schema of Uthmani&Standard text processing.
 \end_layout
 
-\begin_layout Enumerate
+\end_inset
 
-\lang arabic_arabi
-يا أسفى
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -2704,15 +4048,9 @@ Stemming:
 \end_layout
 
 \begin_layout Standard
-based on the information provided in the tokenizer, ( If it has a stem or
- a root, based on level needed by the search system, root is not recommended
- )
-\end_layout
-
-\begin_layout Standard
-
-\lang arabic_arabi
-الليل - أليل
+based on the information provided in the tokenizer, [if it's derivable]
+ ( If it has a stem or a root, based on level needed by the search system,
+ root is not recommended )
 \end_layout
 
 \begin_layout Subsection
@@ -2790,16 +4128,7 @@ Syntax : Past(malaka), Present(Malaka), Imperative(Malaka)...
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-find a smart way to explain all of those
-\end_layout
-
-\end_inset
-
-
+Generate all possibilities Intersect Existing words 
 \end_layout
 
 \begin_layout Subsection
@@ -2843,8 +4172,16 @@ first benefit to search using word properties, this include those, as we've
 the difference 
 \end_layout
 
+\begin_layout Standard
+{{ }}
+\end_layout
+
 \begin_layout Subsubsection
-Translations search (this is not efficient , it's just an extra search engine)
+Translations search 
+\end_layout
+
+\begin_layout Standard
+Syntax like [[ ]]
 \end_layout
 
 \begin_layout Standard
@@ -2852,7 +4189,7 @@ benefit to search inside the TranslatioNs
 \end_layout
 
 \begin_layout Subsection
-New Arabic Jokers 
+New Arabic Jokers [If you think it hard , avoid it]
 \end_layout
 
 \begin_layout Itemize
@@ -2881,103 +4218,6 @@ Short Vowels
 \end_deeper
 \begin_layout Itemize
 All: .
-\end_layout
-
-\begin_layout Subsubsection
-
-\series bold
-Word sens disambiguation: (That's not here)
-\end_layout
-
-\begin_layout Subsection
-New Phase:Tagging (no need)
-\end_layout
-
-\begin_layout Standard
-
-\lang arabic_arabi
-لا إله إلا هو ------------ لا إله إلا الله
-\end_layout
-
-\begin_layout Standard
-
-\lang arabic_arabi
-هناك فهرس في جامعة ليدز حول إرجاع الضمائر عند الفهرسة:
-\end_layout
-
-\begin_layout Standard
-
-\lang arabic_arabi
-\begin_inset Quotes sld
-\end_inset
-
- اضافة الله كمرادف ل 
-\begin_inset Quotes sld
-\end_inset
-
-هو
-\begin_inset Quotes srd
-\end_inset
-
- عند الفهرسة لا يساعد في الهايلايت
-\begin_inset Quotes srd
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\lang arabic_arabi
-عند البحث:
-\end_layout
-
-\begin_layout Standard
-
-\lang arabic_arabi
-ليس كل ضمير 
-\begin_inset Quotes sld
-\end_inset
-
-هو
-\begin_inset Quotes srd
-\end_inset
-
- يرجع إلى 
-\begin_inset Quotes sld
-\end_inset
-
-الله
-\begin_inset Quotes srd
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\lang arabic_arabi
-الحل:
-\end_layout
-
-\begin_layout Standard
-
-\lang arabic_arabi
-عند الفهرسة: لا إله إلا هو>الله<
-\end_layout
-
-\begin_layout Standard
-
-\lang arabic_arabi
-عند البحث: تضاف لكلمة 
-\begin_inset Quotes sld
-\end_inset
-
-الله
-\begin_inset Quotes srd
-\end_inset
-
- كلمة مرادفة هي هو>الله<
 \end_layout
 
 \begin_layout Section
@@ -3024,6 +4264,12 @@ Calculating statistics will be during importing texts or after indexing
 Suggestion System
 \end_layout
 
+\begin_layout Enumerate
+
+\series bold
+Keyword Mapping: (This is suggestion)
+\end_layout
+
 \begin_layout Standard
 1.7.2 Spelling suggestion 
 \begin_inset CommandInset label
@@ -3056,7 +4302,7 @@ Create ngrams based on the vocalized word such as the unit will not be the
 \begin_deeper
 \begin_layout Enumerate
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
 why?
@@ -5132,6 +6378,10 @@ Toward a Semantic search engine
 \end_layout
 
 \begin_layout Standard
+--
+\end_layout
+
+\begin_layout Standard
 Parsing Arabic texts is not an easy task to perform because of two fundamental
  phenomena.
  The first phenomenon is related to the particularities of that language
@@ -5195,6 +6445,16 @@ Our approche is to make a progressive parser since it proceeded by treating
  If more than one tree is proposed, all the analysis trees are sorted according
  to their appearance frequencies in the Treebank.
  
+\end_layout
+
+\begin_layout Standard
+--
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Word sens disambiguation
 \end_layout
 
 \begin_layout Section
