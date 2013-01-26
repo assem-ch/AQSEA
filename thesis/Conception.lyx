@@ -474,6 +474,12 @@ s in further features.
 \end_layout
 
 \begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "For-stemming-previous-work"
+
+\end_inset
+
 For stemming, there are many different definitions, we had considered that
  stemming is the operation of detaching affixes without bringing the word
  back to its root origin as we may call it 
@@ -3197,6 +3203,13 @@ In the example N°11 in the table, the number 309 was separated with the
 
 \begin_layout Subsection
 Tokenization:
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Tokenization:"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -4009,15 +4022,176 @@ in (
 \end_layout
 
 \begin_layout Standard
---
+Mainly it is recommended to strip vowels in the normalization of Arabic
+ texts.
+ This means ignoring vowels during indexing and search.
+ Consequently it affects negatively the accuracy of search since the vowels
+ are an important key to detect a word meaning and distinguish it from other
+ meanings.
+ An example for that, the word 
+\lang arabic_arabi
+الملك
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+that mentioned with different meanings in Quran: 
+\lang arabic_arabi
+الْمُلْكُ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(Kingdom), 
+\lang arabic_arabi
+الْمَلِكُ
+\lang english
+ (King) and 
+\lang arabic_arabi
+الْمَلَكُ
+\lang english
+ (Angel).
+ This word, however, are mentioned in different declension cases: Nominative,
+ Accusative and Genitive.
+ The declension case has no effect on the meaning.
+ Our idea is to keep the vowels except the declension vowel.
+ This will unify all declension cases of a word.
+ This can be done by passing tags with tokens for declension info such as:
+ 
+\end_layout
+
+\begin_layout Itemize
+Declinable or not?
+\end_layout
+
+\begin_layout Itemize
+Declension case: Nominative, Accusative, Genetive and مجزوم 
+\end_layout
+
+\begin_layout Itemize
+علاماة الاعراب: علامات الاعراب
 \end_layout
 
 \begin_layout Standard
-[if it's declinable, strip the last vocalization]
+---
 \end_layout
 
 \begin_layout Standard
-based on Uthmani words as key because words like Ya asafaa
+Stripping علامات الاعراب whatever it is
+\end_layout
+
+\begin_layout Standard
+Example: the unvocalized word 
+\lang arabic_arabi
+الملك
+\lang english
+ will be the total of all those words 
+\lang arabic_arabi
+الْمُلْكُ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(Kingdom, nominative), 
+\lang arabic_arabi
+الْمُلْكِ
+\lang english
+ (Kingdom, genetive), 
+\lang arabic_arabi
+الْمُلْكَ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(Kingdom, accusative), 
+\lang arabic_arabi
+الْمَلِكُ
+\lang english
+ (King, nominative), and 
+\lang arabic_arabi
+الْمَلِكِ
+\lang english
+ (King, genetive).
 \end_layout
 
 \begin_layout Standard
@@ -4044,17 +4218,47 @@ General Schema of Uthmani&Standard text processing.
 \end_layout
 
 \begin_layout Subsection
-Stemming: 
+Stemming:
 \end_layout
 
 \begin_layout Standard
-based on the information provided in the tokenizer, [if it's derivable]
- ( If it has a stem or a root, based on level needed by the search system,
- root is not recommended )
+The Arabic word has many different level of derivations.
+ Those levels are the word, the word without affixes (Lemma), the stem,
+ or the root.
+ We proposed stripping the affixes in tokenization (see 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Tokenization:"
+
+\end_inset
+
+).
+ In Stemming we either نرجع to it's stem or root origin.
+ The roots in arabic are the basic unit.
+ There are about XXX root in Classical Arabic and about YYY in the modern
+ Arabic.
+ When pairing the root with patterns, he can generate more then ZZZ variant
+ words.
+ Generated words could have similar, independent or opposite meanings.
+ In the contrary, the stem usually generate a small set of words that have
+ a similar meaning.
+ Thus, we recommend use the stem as the معلم for this phase.
+\end_layout
+
+\begin_layout Standard
+We can use the morphology tags from the tokenization phase as feeds for
+ the stemmer.
+ Some tags are helpful.
+ We include the stem value of each word -if available- as a tag.
+ We use it to replace the word
+\end_layout
+
+\begin_layout Standard
+examle ئتل+بتنلب:: word+stem ====> stem
 \end_layout
 
 \begin_layout Subsection
-Filtring Stop words:
+Filtring stopwords:
 \begin_inset CommandInset label
 LatexCommand label
 name "sub:Filtring-Stop-words:"
@@ -4062,6 +4266,32 @@ name "sub:Filtring-Stop-words:"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+In the previous work, we discussed the جدوى of filtring stopwords for search
+ in Quran.
+ 
+\end_layout
+
+\begin_layout Standard
+----
+\end_layout
+
+\begin_layout Standard
+We made an improvement in the tokenization that affect our creteria for
+ choosing the list of stopwords.
+ This improvement is the separation of pronouns and clitics from the lemma
+ of the word.
+ 
+\end_layout
+
+\begin_layout Standard
+----
+\end_layout
+
+\begin_layout Standard
+clitics are stopwords, should ignored [a one should do the listing]
 \end_layout
 
 \begin_layout Standard
