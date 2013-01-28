@@ -175,7 +175,7 @@ textit{Tim Peters, The Zen of Python}}
 
 \begin_layout Standard
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
 TODO:
@@ -191,6 +191,10 @@ Phase 2: Figures move
 
 \begin_layout Enumerate
 Phase 3: mention related features of each one
+\end_layout
+
+\begin_layout Enumerate
+Phase 4: Highlight Arabic Words
 \end_layout
 
 \end_inset
@@ -502,6 +506,12 @@ key "ASSEM_MEROUANE"
 \end_layout
 
 \begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "For-stop-words-filtering,"
+
+\end_inset
+
 For stop-words filtering, we had discussed how to consider a Qur'anic word
  as a stop-word and we had concluded that we had to choose from the list
  of most frequent words in Qur'an the particles and the pronouns taking
@@ -818,19 +828,6 @@ include a categorization of ayahs on term of topic in a hierarchic manner.
 
 \begin_layout Section
 Full vocalized search engine 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Greyedout
-status open
-
-\begin_layout Plain Layout
-add more figures! for words
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -2959,8 +2956,13 @@ Some numbers as they mentioned in Quran
 \begin_layout Standard
 To be close to the Quranic way of writing numbers, we should respect many
  properties.
- We write each digit in its class: الآحاد, tens, hundreds, thousands, عشرات
- الآلاف , مئات الآلاف and better to not write the واو العطف.
+ We write each digit in its class: ones, tens, hundreds, thousands, tens
+ of thousands, hundreds of thousands, and better to not write the conjuction
+ waw (
+\lang arabic_arabi
+واو العطف
+\lang english
+).
  Zero has to be ignored because it will never be written, we don't say 
 \lang arabic_arabi
 صفر رجل
@@ -4269,20 +4271,53 @@ name "sub:Filtring-Stop-words:"
 \end_layout
 
 \begin_layout Standard
-In the previous work, we discussed the جدوى of filtring stopwords for search
- in Quran.
- 
+In the previous work, we discussed the feasability of filtring stopwords
+ for search in Quran (see 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "For-stop-words-filtering,"
+
+\end_inset
+
+).
+ We have proposed to select the stopwords from the list of the most frequent
+ words in Qur'an the particles and the pronouns taking in consideration
+ their diacritical marks.
 \end_layout
 
 \begin_layout Standard
-----
-\end_layout
-
-\begin_layout Standard
-We made an improvement in the tokenization that affect our creteria for
- choosing the list of stopwords.
+We made an improvement in the tokenization that affect our previous criteria
+ for choosing the list of stopwords.
  This improvement is the separation of pronouns and clitics from the lemma
  of the word.
+ Clitics such as 
+\lang arabic_arabi
+فَـ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(fa) generally has a high frequency and hasn't a self independant meaning.
  
 \end_layout
 
@@ -4291,12 +4326,24 @@ We made an improvement in the tokenization that affect our creteria for
 \end_layout
 
 \begin_layout Standard
-clitics are stopwords, should ignored [a one should do the listing]
+( google Stop words in Arabic)
 \end_layout
 
 \begin_layout Standard
-we get a list of most frequented vocalized keywords and then choose only
- the particles 
+( google Stop words in Quran)
+\end_layout
+
+\begin_layout Standard
+( google Clitics as stopwords)
+\end_layout
+
+\begin_layout Standard
+( google effect of stop words on phrase search)
+\end_layout
+
+\begin_layout Standard
+clitics are very مرشح محتمل stopwords, should ignored [a one should do the
+ listing]
 \end_layout
 
 \begin_layout Standard
@@ -4309,7 +4356,25 @@ avoid removing them to support phrase search لو كان البحر
 \end_layout
 
 \begin_layout Section
-Modular Query Parser
+Modular Query Parser 
+\end_layout
+
+\begin_layout Standard
+[google Modular Query Parser, did this exist][how to attain Modularity][isnt
+ this of implementation]
+\end_layout
+
+\begin_layout Standard
+---
+\end_layout
+
+\begin_layout Standard
+[google query parser papers, whoosh]
+\end_layout
+
+\begin_layout Standard
+An experienced challenge with the Query parser is the mixing (the combinaition)
+ of the different operations 
 \end_layout
 
 \begin_layout Standard
@@ -4329,6 +4394,18 @@ read from whoosh 2.5
 we proposition those new operations (some are upgraded from previous work)
 \end_layout
 
+\begin_layout Standard
+========
+\end_layout
+
+\begin_layout Standard
+Case, Objective, behaviour, status, needed resources
+\end_layout
+
+\begin_layout Standard
+========
+\end_layout
+
 \begin_layout Subsection
 Related Words
 \end_layout
@@ -4338,7 +4415,7 @@ Syntax :Relation~word , ~word for all relations
 \end_layout
 
 \begin_layout Standard
-replace the synonyms and antonyms by a genral semantic related works
+replace the synonyms and antonyms by a general semantic related works
 \end_layout
 
 \begin_layout Subsection
@@ -4358,7 +4435,7 @@ Syntax : Past(malaka), Present(Malaka), Imperative(Malaka)...
 \end_layout
 
 \begin_layout Standard
-Generate all possibilities Intersect Existing words 
+Generate all possibilities Intersect existing words 
 \end_layout
 
 \begin_layout Subsection
@@ -4407,7 +4484,7 @@ the difference
 \end_layout
 
 \begin_layout Subsubsection
-Translations search 
+Word Translations search 
 \end_layout
 
 \begin_layout Standard
@@ -4451,47 +4528,13 @@ All: .
 \end_layout
 
 \begin_layout Section
-Statistics Gathering System
-\begin_inset CommandInset label
-LatexCommand label
-name "sec:Statistics-Gathering-System"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-the use of vocalization will improve the quality and the accuracy of statistics
-\end_layout
-
-\begin_layout Standard
-use the Uthmani text as a default text for statistics in addition to the
- standard text
-\end_layout
-
-\begin_layout Standard
-what about Dagger-Alef, consider it?
-\end_layout
-
-\begin_layout Standard
-how to retrieve collocations?
-\end_layout
-
-\begin_layout Standard
-what words can be considered as Divine name: *لله*! , huwa or Rab when it
- refer surely to Allah?
-\end_layout
-
-\begin_layout Standard
-Calculating statistics will be during importing texts or after indexing
- them, based on whether they requires text analytics or not.
-\end_layout
-
-\begin_layout Section
 
 \series bold
 Suggestion System
+\end_layout
+
+\begin_layout Standard
++ list the other suggestions
 \end_layout
 
 \begin_layout Enumerate
@@ -6561,7 +6604,49 @@ Similarity between vowels
 \end_layout
 
 \begin_layout Section
-Qur'anic and Linguistic resources manager
+Results enhancements
+\end_layout
+
+\begin_layout Section
+Statistics Gathering System
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Statistics-Gathering-System"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+the use of vocalization will improve the quality and the accuracy of statistics
+\end_layout
+
+\begin_layout Standard
+use the Uthmani text as a default text for statistics in addition to the
+ standard text
+\end_layout
+
+\begin_layout Standard
+what about Dagger-Alef, consider it?
+\end_layout
+
+\begin_layout Standard
+how to retrieve collocations?
+\end_layout
+
+\begin_layout Standard
+what words can be considered as Divine name: *لله*! , huwa or Rab when it
+ refer surely to Allah?
+\end_layout
+
+\begin_layout Standard
+Calculating statistics will be during importing texts or after indexing
+ them, based on whether they requires text analytics or not.
+\end_layout
+
+\begin_layout Section
+Qur'anic and Linguistic resources manager [Into Implementation]
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:Qur'anic-and-Linguistic"
@@ -6688,10 +6773,14 @@ Word sens disambiguation
 \end_layout
 
 \begin_layout Section
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Section
 Conception of features
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 scan features and Update the section above not those!
 \end_layout
 
@@ -6719,19 +6808,19 @@ Alternative entry methods
 Suggestions
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 New Plan!
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Quranic WordByWord as a resource to resolve lot of prblems
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 http://en.wikipedia.org/wiki/Fuzzy_search
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Note Comment
 status open
 
@@ -6746,7 +6835,7 @@ status open
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Note Comment
 status open
 
@@ -6775,7 +6864,7 @@ Personnaliser la distance de Levenshtein pour s'adapter avec les lettres
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Note Comment
 status open
 
@@ -6796,7 +6885,7 @@ Statistics Calculating Methods
 God names' number:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Note Note
 status open
 
@@ -6821,7 +6910,7 @@ Unify all these forms in only one regular expression
 Toward Semantic Search
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Note Comment
 status open
 
@@ -6837,7 +6926,7 @@ Semantic search seeks to improve search accuracy by understanding searcher
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align left
 \begin_inset Note Comment
 status open
@@ -6861,13 +6950,18 @@ Necessary Quranic Resources
 Devine Names list
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Devine names are [def].
  [example]
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
-FEATURExRESSOURCE
+FEATURExRESSOURCE [Implementation perhaps]
 \end_layout
 
 \begin_layout Standard

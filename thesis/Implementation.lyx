@@ -527,116 +527,30 @@ key "ASSEM_MEROUANE"
 -- Changes from THE PFE PDF
 \end_layout
 
-\begin_layout Section
-Code Architecture
+\begin_layout Enumerate
+API that offer the basic operations (Search, Suggestion) and minimal information
+s in raw html input (ayah results), Could be Used only in python or in other
+ languages by using a wrapping intermediate.
 \end_layout
 
-\begin_layout Standard
-# it's southnance model: New_Output_System
+\begin_layout Enumerate
+only offer a TXT and an HTML output system
 \end_layout
 
-\begin_layout Standard
-Write change log, and show it as your changes!
+\begin_layout Enumerate
+A very stricted resource manger , can only tranfer the data from the intermediat
+e database into the document words.
+ the importing of new resources into the intermediate database is a حلقة
+ مفقودة
 \end_layout
 
-\begin_layout Standard
-+ Suggestion Vocalizations!
+\begin_layout Enumerate
+Creating a basic CGI Html interface , lack of independecy between Model,
+ View, Control [screen shot]
 \end_layout
 
-\begin_layout Standard
-+ Suggestion (Verb Conjugation+ Random Affixes) U Quranic Verbs 
-\end_layout
-
-\begin_layout Standard
-+ Suggestion Synonyms
-\end_layout
-
-\begin_layout Standard
-+ Search Word : 2 Steps Search
-\end_layout
-
-\begin_layout Standard
-+ Search Translation:
-\end_layout
-
-\begin_layout Subsection
-Application Programming Interface
-\end_layout
-
-\begin_layout Standard
-API, show the sample code
-\end_layout
-
-\begin_layout Standard
-For web-based interfaces use Json out put system.
-\end_layout
-
-\begin_layout Standard
-for desktop-based interfaces use Console interface.
-\end_layout
-
-\begin_layout Standard
-explain how it will be used to build lot of interfaces
-\end_layout
-
-\begin_layout Subsubsection
-JSON output system
-\end_layout
-
-\begin_layout Standard
-How important for Web interfaces
-\end_layout
-
-\begin_layout Subsubsection
-Console commandline (a Linux Daemon service)
-\end_layout
-
-\begin_layout Standard
-How important for Desktop interfaces
-\end_layout
-
-\begin_layout Section
-Interfaces
-\end_layout
-
-\begin_layout Subsection
-Django web interface (demonstration Interface)
-\end_layout
-
-\begin_layout Standard
-The our demonstration model!
-\end_layout
-
-\begin_layout Quote
-(Localization)
-\end_layout
-
-\begin_layout Subsection
-Other User Interfaces
-\end_layout
-
-\begin_layout Standard
-Proves the wide use of the API abroad the multiplatforms
-\end_layout
-
-\begin_layout Subsubsection
-Desktop User Interface
-\end_layout
-
-\begin_layout Subsubsection
-Smart phones
-\end_layout
-
-\begin_layout Subsubsection
-Browsers-Addons
-\end_layout
-
-\begin_layout Standard
-Interfaces
-\end_layout
-
-\begin_layout Standard
-[interfaces from github readme files]
+\begin_layout Enumerate
+Qt urgently-coded interface [french] [screenshot]
 \end_layout
 
 \begin_layout Section
@@ -727,7 +641,7 @@ FEATURExRESOURCE
 \begin_inset Float table
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -1868,21 +1782,658 @@ FEATURExRESSOURCE
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
 \end_layout
 
 \begin_layout Section
+Our improvements
+\end_layout
+
+\begin_layout Enumerate
+Rewriting a huge part of the code [undocumented changes! to add or to remove!!]
+\end_layout
+
+\begin_layout Enumerate
+Opening the source,Starting with GPL then AGPL because??
+\end_layout
+
+\begin_layout Enumerate
+libraries to read & parse thirdparty Quranic resources such as Quranic Corpus(se
+e x.x.x), VerseByVerse(see x.x.x), Zekrmodels(see x.x.x)
+\end_layout
+
+\begin_layout Enumerate
+A Centralized JSON Output system:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+First: Improving the basic html output of the API to a Json API works only
+ in Web CGI.
+\end_layout
+
+\begin_layout Enumerate
+Second: Centralizing the Output system to gain two benefits: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+easy-implementation of more data structure.
+\end_layout
+
+\begin_layout Enumerate
+the Use of the same output system in the different interfaces: Console Interface
+, CGI Interface, Desktop Interfaces, Web Interfaces.
+\end_layout
+
+\begin_layout Enumerate
+Make changes and updates in many places
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Proposing an extensible results structure # include the structure #How to
+ highlight json or python in latex.
+\end_layout
+
+\begin_layout Enumerate
+Adding statistics calculating feature, capture the flags of each request
+ .
+ Stats are in json format [get the format 
+\end_layout
+
+\begin_layout Enumerate
+offer a set of error messages in case of failed query [improve it as table]:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+-1
+\series default
+:"fail, reason unknown", 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+0
+\series default
+:"success", 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+1
+\series default
+:"no action is chosen or action undefined", 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+2
+\series default
+:"""SuperJokers are not permitted, you have to add 3 letters or more to
+ use * and 2 letters or more to use ? (؟)
+\backslash
+n -- Exceptions: ? (1), ??????????? (11) """
+\end_layout
+
+\begin_layout Enumerate
+[it's extensible]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Make many meta data available for request in the API Json output system.
+ Meta data includes:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+API information including version.
+\end_layout
+
+\begin_layout Enumerate
+Error messages
+\end_layout
+
+\begin_layout Enumerate
+Possible flags, in addition to their default values, possibe values intervals,
+ and help messages.
+\end_layout
+
+\begin_layout Enumerate
+available search fields (Arabic and English names).
+ 
+\end_layout
+
+\begin_layout Enumerate
+Available translations and recitations.
+\end_layout
+
+\begin_layout Enumerate
+Surates and topics value lists
+\end_layout
+
+\begin_layout Enumerate
+Global search hints
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Third: Fixing a lot of bugs and vulns such as:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+SuperJokers Vulnerability: Fixed by [see the code of Output.Py]
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Extracting the configurations into independent config files and Standardizing
+ them into a json format (benifits)
+\end_layout
+
+\begin_layout Enumerate
+Many new features
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Implementing basically the fuzzy search feature that works as following:
+ 
+\end_layout
+
+\begin_layout Enumerate
+Uthmani-Standard Mapping 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+created a python dictionary
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Showing previous + next ayah.
+\end_layout
+
+\begin_layout Enumerate
+Ability to choose the script of showing Ayahs:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Unvocalized Standard
+\end_layout
+
+\begin_layout Enumerate
+Vocalized Standard
+\end_layout
+
+\begin_layout Enumerate
+Vocalized Uthmani
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Different Vocalization Suggestion 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+first: Mapping the diffrent possible vocalizations to each unvocalized word
+\end_layout
+
+\begin_layout Enumerate
+second: show vocalizations in the API output results
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+include the linguisitic annotations of each query keyword in the API output
+ results.
+ We got those Annotations from Quranic Corpus.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Improving the resource importing manager & fix the الحلقة المفقودة.
+ The improved version can do:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+downloading resources:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+not needed for Quranic Corpus becuause it's GPL
+\end_layout
+
+\begin_layout Enumerate
+an obligation for tanzeel because of the license
+\end_layout
+
+\begin_layout Enumerate
+recommended for zekr translation models to benefit of updates and avoid
+ a big size source
+\end_layout
+
+\begin_layout Enumerate
+EveryVerse recitations list
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Updating auto-generated resources:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+translations list
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Importing the resources to our intermediate database
+\end_layout
+
+\begin_layout Enumerate
+Transforming resources from the database into the document indexes.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Automating the API building by a Makefile that do:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Auto-downloading of resources, 
+\end_layout
+
+\begin_layout Enumerate
+Updating of the intermediate resources
+\end_layout
+
+\begin_layout Enumerate
+Auto-building of indexes(from Wiki)
+\end_layout
+
+\begin_layout Enumerate
+Auto-installing script for API, WUI, GUI.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+A new console interface, to be used by non-python desktop applications,
+ could be run as background processus aka Daemon processus.
+ for details see 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Console-commandline"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Cleaning the previous urgently-coded desktop interface, preparing it for
+ localization, maintain it's portability and simplicity , improving it's
+ rapidity.
+ remove the old html styling of results.
+ Get the results from the API output system instead of direct access to
+ API python code
+\end_layout
+
+\begin_layout Enumerate
+Improving the html web interface in two steps.
+ the first one into an html-jquery web interface with client-side search
+ results showing.
+ the second step into a django web interface with a server-side search results
+ showing with many extra features ( see )
+\end_layout
+
+\begin_layout Enumerate
+packaging system (last one): Egg API, Source Tarball, Binary Tarball, NSIS
+ Windows Installer
+\end_layout
+
+\begin_layout Enumerate
+Fixing a huge amount of pylint code analysis warnings [score of current
+ code, more stats]
+\end_layout
+
+\begin_layout Enumerate
+Documention covering of many parts of the API:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+--
+\end_layout
+
+\begin_layout Enumerate
+a Script Sample of how to use the API #include the code #how to high light
+ python code in Latex 
+\end_layout
+
+\begin_layout Enumerate
+ومع ذلك it still has a weak documentation covering.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+A mass organization of Source code, see the current code architecture in
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Code-Architecture"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+--
+\end_layout
+
+\begin_layout Standard
++PyTanzil
+\end_layout
+
+\begin_layout Standard
+grouping the changes
+\end_layout
+
+\begin_layout Standard
+# it's southnance model: New_Output_System
+\end_layout
+
+\begin_layout Standard
+Write change log, and show it as your changes!
+\end_layout
+
+\begin_layout Standard
++ Suggestion Vocalizations!
+\end_layout
+
+\begin_layout Standard
++ Suggestion (Verb Conjugation+ Random Affixes) U Quranic Verbs 
+\end_layout
+
+\begin_layout Standard
++ Suggestion Synonyms
+\end_layout
+
+\begin_layout Standard
++ Search Word : 2 Steps Search
+\end_layout
+
+\begin_layout Standard
++ Search Translation:
+\end_layout
+
+\begin_layout Subsection
+Open Issues
+\end_layout
+
+\begin_layout Standard
+...
+ from Github!
+\end_layout
+
+\begin_layout Itemize
+Milestone #1
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+textify the database
+\end_layout
+
+\begin_layout Itemize
+Study the restrictions creteria of the API json output service
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Milestone #2
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Complete the features implementation:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+1 (list from features chapter )
+\end_layout
+
+\begin_layout Itemize
+2
+\end_layout
+
+\begin_layout Itemize
+3
+\end_layout
+
+\begin_layout Itemize
 Implementation Ratio
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+Milestone #3: Moving to Whoosh 2.X
+\end_layout
+
+\begin_layout Itemize
+Milestone #4: Moving to Python 3000
+\end_layout
+
+\begin_layout Itemize
+Milestone #5: Documentaion covering :
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+API comments & docstrings [here some stats]
+\end_layout
+
+\begin_layout Itemize
+API usage howto
+\end_layout
+
+\begin_layout Itemize
+API demos
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Milestone #6: Optimization of code & performanice
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Fix 
+\begin_inset Quotes sld
+\end_inset
+
+pylint
+\begin_inset Quotes srd
+\end_inset
+
+ code analysis.
+\end_layout
+
+\begin_layout Itemize
+Use 
+\begin_inset Quotes sld
+\end_inset
+
+profile
+\begin_inset Quotes srd
+\end_inset
+
+ to check the performance of each search feature in order to improve it.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Code Architecture 
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Code-Architecture"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Application Programming Interface
+\end_layout
+
+\begin_layout Standard
+API, show the sample code
+\end_layout
+
+\begin_layout Standard
+For web-based interfaces use Json out put system.
+\end_layout
+
+\begin_layout Standard
+for desktop-based interfaces use Console interface.
+\end_layout
+
+\begin_layout Standard
+explain how it will be used to build lot of interfaces
+\end_layout
+
+\begin_layout Subsubsection
+JSON output system
+\end_layout
+
+\begin_layout Standard
+How important for Web interfaces
+\end_layout
+
+\begin_layout Subsubsection
+Console commandline (a Linux Daemon service) 
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Console-commandline"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+How important for Desktop interfaces
+\end_layout
+
+\begin_layout Standard
+get the command inline argumens, parse them and forward them to the API
+ output system.
+ 
+\end_layout
+
+\begin_layout Section
+Interfaces
+\end_layout
+
+\begin_layout Subsection
+Django web interface (demonstration Interface)
+\end_layout
+
+\begin_layout Standard
+We use this interfce to demonstrate and test the API implemented features.
+\end_layout
+
+\begin_layout Standard
+MVC, localizable , Server side (indexed by search engines), HTML5&CSS3 valid,
+ Responsive theme with bootstrap .
+ 
+\end_layout
+
+\begin_layout Enumerate
+Clickable feature to simplify the search idea to users: User can click on
+ each information in order to search with it.
+ Clickable info includes:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Aya words
+\end_layout
+
+\begin_layout Enumerate
+[get it from the blog post] [+ScreenShot]
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Other User Interfaces
+\end_layout
+
+\begin_layout Standard
+Proves the wide use of the API abroad the multiplatforms
+\end_layout
+
+\begin_layout Subsubsection
+Desktop User Interface
+\end_layout
+
+\begin_layout Subsubsection
+MWUI
+\end_layout
+
+\begin_layout Standard
+made by sneetsher...in order to get a minimal showing as a demo 
+\end_layout
+
+\begin_layout Standard
+localizable and has independent templates
+\end_layout
+
+\begin_layout Subsubsection
+Smart phones
+\end_layout
+
+\begin_layout Subsubsection
+Browsers-Addons
+\end_layout
+
+\begin_layout Standard
+Interfaces
+\end_layout
+
+\begin_layout Standard
+[interfaces from github readme files]
 \end_layout
 
 \begin_layout Section
 Conclusion
+\end_layout
+
+\begin_layout Standard
+[In presentation , Include the wining award]
 \end_layout
 
 \end_body
