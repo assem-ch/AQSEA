@@ -553,6 +553,77 @@ Creating a basic CGI Html interface , lack of independecy between Model,
 Qt urgently-coded interface [french] [screenshot]
 \end_layout
 
+\begin_layout Enumerate
+implemented features:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Exact Word: that is the simple search, eg: فأسقيناكموه
+\end_layout
+
+\begin_layout Enumerate
+Phrase: for searching a whole phrase rather then independent words, eg:"رسول
+ الله"
+\end_layout
+
+\begin_layout Enumerate
+Logical relations Conjuction: for searching only the ayahs that contains
+ two terms or more, eg: الصلاة + الزكاة.
+ Disjunction (default): for searching all the ayahs that contains one of
+ two terms or more, eg:الصلاة | الزكاة.
+ Exception: for eleminating a term from search results, eg:الصلاة - الزكاة.
+ You can understand it as "Ayahs that contains الصلاة but doesn't contain
+ الزكاة".
+\end_layout
+
+\begin_layout Enumerate
+Wildcards or Jokers: for search all words that share many letters, we have:
+ Asterisk: replace zero or many undefined letters, eg: *نبي* Interogation
+ mark: replace one undefined letter, eg: نعم؟
+\end_layout
+
+\begin_layout Enumerate
+Fielded search: to search in more information of Quran , not only ayahs'text,
+ we cite here the most significant fields for users: aya_id or رقم_الآية
+ (Aya local ID): that's the number of ayah inside its sura, use it for example
+ to search all first ayahs (رقم_الآية:1).
+ sura_id or رقم_السورة (Sura ID): use it with aya_id to specify an exact
+ ayah,for example the first ayah of surate an-nass will be : aya_id:1 +
+ sura_id:114.
+ subject or موضوع (Topics): thats field contains all topics information,
+ it will be helpful to search for a topic,eg: موضوع:الشيطان
+\end_layout
+
+\begin_layout Enumerate
+for more fields, see: Fields
+\end_layout
+
+\begin_layout Enumerate
+Intervals: this will be helpful in statistics or positions, for example
+ search the divine name only in the first surahs: رقم_السورة :[1 الى 5 ]
+ + الله
+\end_layout
+
+\begin_layout Enumerate
+Partial vocalization: to consider given diacritics and ignore the others,
+ eg: آية_ :'مَن'.
+\end_layout
+
+\begin_layout Enumerate
+Word Properties: to search using root and type of words, type could be اسم,
+ فعل or أداة,eg: {قول،اسم}.
+\end_layout
+
+\begin_layout Enumerate
+Derivations light (using lemma): to search all the words having the same
+ lemma of the given word,eg: >ملك.
+ heavy (using root): to search all the words having the same root of the
+ given word,eg: >>ملك.
+ 
+\end_layout
+
+\end_deeper
 \begin_layout Section
 Quranic & Arabic Ressources 
 \end_layout
@@ -641,7 +712,7 @@ FEATURExRESOURCE
 \begin_inset Float table
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -1824,7 +1895,7 @@ easy-implementation of more data structure.
 \end_layout
 
 \begin_layout Enumerate
-the Use of the same output system in the different interfaces: Console Interface
+the use of the same output system in the different interfaces: Console Interface
 , CGI Interface, Desktop Interfaces, Web Interfaces.
 \end_layout
 
@@ -1838,6 +1909,28 @@ Proposing an extensible results structure # include the structure #How to
  highlight json or python in latex.
 \end_layout
 
+\begin_layout Enumerate
+Centralize the loading of necessary Data files:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Configuration files: Available recitations list, Available translations...
+\end_layout
+
+\begin_layout Enumerate
+Linguistic resources: ...
+\end_layout
+
+\begin_layout Enumerate
+Qurnaic indexes: ...
+\end_layout
+
+\begin_layout Enumerate
+[get it from Data.py] [or Output init function]
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 Adding statistics calculating feature, capture the flags of each request
  .
@@ -1927,6 +2020,11 @@ Global search hints
 
 \end_deeper
 \begin_layout Enumerate
+Controlling what to retrieve with specific flags ,the concept of predefined
+ views: minimal, normal, full, linguistic, statistical
+\end_layout
+
+\begin_layout Enumerate
 Third: Fixing a lot of bugs and vulns such as:
 \end_layout
 
@@ -1948,8 +2046,7 @@ Many new features
 
 \begin_deeper
 \begin_layout Enumerate
-Implementing basically the fuzzy search feature that works as following:
- 
+Implementing basically the fuzzy search feature.
 \end_layout
 
 \begin_layout Enumerate
@@ -2005,6 +2102,10 @@ include the linguisitic annotations of each query keyword in the API output
  
 \end_layout
 
+\begin_layout Enumerate
+Show word information in buckwalter transliteration
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
 Improving the resource importing manager & fix the الحلقة المفقودة.
@@ -2055,7 +2156,7 @@ Transforming resources from the database into the document indexes.
 
 \end_deeper
 \begin_layout Enumerate
-Automating the API building by a Makefile that do:
+Automating the API building by a well-commented Makefile that do:
 \end_layout
 
 \begin_deeper
@@ -2091,7 +2192,7 @@ reference "sub:Console-commandline"
 
 \begin_layout Enumerate
 Cleaning the previous urgently-coded desktop interface, preparing it for
- localization, maintain it's portability and simplicity , improving it's
+ localization, maintain it's portability and simplicity , improving its
  rapidity.
  remove the old html styling of results.
  Get the results from the API output system instead of direct access to
@@ -2102,18 +2203,30 @@ Cleaning the previous urgently-coded desktop interface, preparing it for
 Improving the html web interface in two steps.
  the first one into an html-jquery web interface with client-side search
  results showing.
- the second step into a django web interface with a server-side search results
+ The second step into a django web interface with a server-side search results
  showing with many extra features ( see )
 \end_layout
 
 \begin_layout Enumerate
-packaging system (last one): Egg API, Source Tarball, Binary Tarball, NSIS
- Windows Installer
+Packaging system (last one): 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Pure python setup for the API, including all necessary files inside the
+ API.
+ 
 \end_layout
 
 \begin_layout Enumerate
+Egg API, Source Tarball, Binary Tarball, NSIS Windows Installer
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
 Fixing a huge amount of pylint code analysis warnings [score of current
- code, more stats]
+ code, more stats] and improving the quality of code following also the
+ conventions explaioned in $Readability-counts
 \end_layout
 
 \begin_layout Enumerate
@@ -2206,9 +2319,27 @@ textify the database
 \end_layout
 
 \begin_layout Itemize
+Integrate Qurany for faceted thematic search
+\end_layout
+
+\begin_layout Itemize
+Develop the importing script of Boundary annotations
+\end_layout
+
+\begin_layout Itemize
+Propose a standard format for new linguistic and quranic resources
+\end_layout
+
+\begin_layout Itemize
 Study the restrictions creteria of the API json output service
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+limit the maximum of simultanos requests globally and by IP.
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Itemize
 Milestone #2
@@ -2252,7 +2383,8 @@ Milestone #5: Documentaion covering :
 
 \begin_deeper
 \begin_layout Itemize
-API comments & docstrings [here some stats]
+API comments & docstrings [here some stats] ; Cover the API modules with
+ appropriate and helpful comments
 \end_layout
 
 \begin_layout Itemize
@@ -2261,6 +2393,10 @@ API usage howto
 
 \begin_layout Itemize
 API demos
+\end_layout
+
+\begin_layout Itemize
+manpage for Alfanous linux console interface
 \end_layout
 
 \end_deeper
@@ -2305,8 +2441,16 @@ name "sec:Code-Architecture"
 
 \end_layout
 
+\begin_layout Standard
+[Copy from src.README.rst]
+\end_layout
+
 \begin_layout Subsection
 Application Programming Interface
+\end_layout
+
+\begin_layout Standard
+[Copy the src/alfanous/README.rst]
 \end_layout
 
 \begin_layout Standard
@@ -2323,6 +2467,33 @@ for desktop-based interfaces use Console interface.
 
 \begin_layout Standard
 explain how it will be used to build lot of interfaces
+\end_layout
+
+\begin_layout Standard
+API Powerful points:
+\end_layout
+
+\begin_layout Enumerate
+FREE LIBRE OPEN SOURCE: Any one can use it and any one can contribute in.
+ 
+\end_layout
+
+\begin_layout Enumerate
+A Python API: that allows anyone to create independently a web interface,
+ desktop interface , Android/Iphone/Windows phone interfaces , facebook/twitter/
+G+ applications ...and so on.
+ 
+\end_layout
+
+\begin_layout Enumerate
+The API is based on a founded base: The search process is too fast and too
+ stable other websites/applications do.
+ 
+\end_layout
+
+\begin_layout Enumerate
+It has lot of features: see Search Features.
+ 
 \end_layout
 
 \begin_layout Subsubsection
@@ -2351,7 +2522,7 @@ How important for Desktop interfaces
 \begin_layout Standard
 get the command inline argumens, parse them and forward them to the API
  output system.
- 
+ [+screen shot]
 \end_layout
 
 \begin_layout Section
@@ -2367,8 +2538,9 @@ We use this interfce to demonstrate and test the API implemented features.
 \end_layout
 
 \begin_layout Standard
-MVC, localizable , Server side (indexed by search engines), HTML5&CSS3 valid,
- Responsive theme with bootstrap .
+MVC, localizable [work perfectly for LtR and RtL languages] , Server side
+ (indexed by search engines), HTML5&CSS3 valid, Responsive theme with bootstrap
+ .
  
 \end_layout
 

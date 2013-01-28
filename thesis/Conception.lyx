@@ -4458,6 +4458,11 @@ include similar words in writing or
 نطق
 \end_layout
 
+\begin_layout Standard
+Normalizing the similar letters ha' and ta' merbouta, alef 6awila et Alif
+ maqsoura, all the forms of Hamza.
+\end_layout
+
 \begin_layout Subsection
 Word Embedded Search 
 \end_layout
@@ -6646,7 +6651,7 @@ Calculating statistics will be during importing texts or after indexing
 \end_layout
 
 \begin_layout Section
-Qur'anic and Linguistic resources manager [Into Implementation]
+Qur'anic and Linguistic resources manager[Intro Implementation]
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:Qur'anic-and-Linguistic"
