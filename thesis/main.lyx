@@ -623,7 +623,6 @@ Implementation & Tests
 \end_layout
 
 \begin_layout Standard
-\align left
 \begin_inset CommandInset include
 LatexCommand include
 filename "Implementation.lyx"
@@ -635,7 +634,6 @@ filename "Implementation.lyx"
 status collapsed
 
 \begin_layout Plain Layout
-\align left
 \begin_inset CommandInset include
 LatexCommand include
 filename "tests.lyx"

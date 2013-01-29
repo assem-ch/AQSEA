@@ -32,7 +32,7 @@ fixltx2e
 \font_tt_scale 100
 
 \graphics default
-\default_output_format default
+\default_output_format pdf4
 \output_sync 0
 \bibtex_command default
 \index_command default
@@ -204,7 +204,7 @@ Our proposal is about design a retrieval system that fit the Qur'an search
  needs.
  But to realize this objective, we must first list and classify all the
  search features that are possible and helpful.
- then we need to study how to implement each feature and what is its requirement
+ Then we need to study how to implement each feature and what is its requirement
 s.
 \end_layout
 
