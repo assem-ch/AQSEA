@@ -117,6 +117,30 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
+#change au past tense , translate into English
+\end_layout
+
+\begin_layout Plain Layout
+Our proposition
+\end_layout
+
+\begin_layout Plain Layout
+what we write
+\end_layout
+
+\begin_layout Plain Layout
+what have done
+\end_layout
+
+\begin_layout Plain Layout
+conclusion
+\end_layout
+
+\begin_layout Plain Layout
+what's rest
+\end_layout
+
+\begin_layout Plain Layout
 perspective: 
 \end_layout
 
@@ -136,65 +160,6 @@ s de recherche dans le Coran: étudier les spécifications et les possibilités,
  et si possible.
  Notre travail doit être basé sur des approches modernes de recherche d'informat
 ion pour obtenir une bonne stabilité et une recherche à grande vitesse.
-\end_layout
-
-\begin_layout Standard
-Cette proposition de recherche est liée à certains projets de l'université
- de Leeds, ces projets sont les suivants: 
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-Arabic Quranic Corpus,
-\series default
- est une ressource linguistique annotée qui montre la grammaire arabe, la
- syntaxe et la morphologie de chaque mot dans le Coran.
- Ce corpus est realisé par 
-\noun on
-Kais Dukes
-\noun default
- en 2009 à l’école d’informatique, l'université de Leeds.
- Cet index est disponible sur l'internet avec d'autres index simplifiés
- sous la licence GPL (GNU Public License).
- Nous en aurons besoin pour la réalisation de certains aspects linguistiques
- par les informations qu'il contient.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-Qurany Concepts Tool
-\series default
-, est un outil complet qui couvre tous les thèmes et les concepts mentionnés
- dans le Coran.
- Cet outil est faite par 
-\noun on
-Noorhan Abbas
-\noun default
- de l'université de Leeds.
- Mise en œuvre basée sur la structure dictionnaire de Python.
- Nous en aurons besoin pour la recherche thématique.
- 
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-Quranic Concepts Ontology, 
-\series default
-utilise la représentation des connaissances pour définir les concepts clés
- dans le Coran, et montre les relations entre ces concepts en utilisant
- la logique des prédicats.
- Nous pourrions utilisé ce système pour la suggestion de mots-clés relatifs.
-\end_layout
-
-\begin_layout Standard
-Notre travail a besoin d'une version électronique de Coran pour l'indexer
- .
- Nous trouvons que le projet Tanzil est le plus authentique, il est passé
- par plusieurs phases de vérification et vérifié manuellement par une équipe
- spécialisée.
 \end_layout
 
 \begin_layout Standard

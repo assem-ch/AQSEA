@@ -664,8 +664,74 @@ In loading indexes, use dynamic fields it helps much to load ressources
 Used resources
 \end_layout
 
+\begin_layout Standard
+
+\lang french
+Cette proposition de recherche est liée à certains projets, ces projets
+ sont les suivants: 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang french
+Arabic Quranic Corpus,
+\series default
+ est une ressource linguistique annotée qui montre la grammaire arabe, la
+ syntaxe et la morphologie de chaque mot dans le Coran.
+ Ce corpus est realisé par 
+\noun on
+Kais Dukes
+\noun default
+ en 2009 à l’école d’informatique, l'université de Leeds.
+ Cet index est disponible sur l'internet avec d'autres index simplifiés
+ sous la licence GPL (GNU Public License).
+ Nous en aurons besoin pour la réalisation de certains aspects linguistiques
+ par les informations qu'il contient.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang french
+Qurany Concepts Tool
+\series default
+, est un outil complet qui couvre tous les thèmes et les concepts mentionnés
+ dans le Coran.
+ Cet outil est faite par 
+\noun on
+Noorhan Abbas
+\noun default
+ de l'université de Leeds.
+ Mise en œuvre basée sur la structure dictionnaire de Python.
+ Nous en aurons besoin pour la recherche thématique.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang french
+Quranic Concepts Ontology, 
+\series default
+utilise la représentation des connaissances pour définir les concepts clés
+ dans le Coran, et montre les relations entre ces concepts en utilisant
+ la logique des prédicats.
+ Nous pourrions utilisé ce système pour la suggestion de mots-clés relatifs.
+\end_layout
+
 \begin_layout Subsubsection
 Tanzil
+\end_layout
+
+\begin_layout Standard
+
+\lang french
+Notre travail a besoin d'une version électronique de Coran pour l'indexer
+ .
+ Nous trouvons que le projet Tanzil est le plus authentique, il est passé
+ par plusieurs phases de vérification et vérifié manuellement par une équipe
+ spécialisée.
 \end_layout
 
 \begin_layout Subsubsection
@@ -701,14 +767,27 @@ Lack fo Quranic resources
 \end_layout
 
 \begin_layout Standard
-[How to resolve each one!]
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+[How to resolve each one! no, it's not my business]
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
 
 \begin_layout Subsection
 FEATURExRESOURCE
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Float table
 wide false
 sideways false
@@ -1858,6 +1937,11 @@ FEATURExRESSOURCE
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Our improvements
 \end_layout
@@ -1871,22 +1955,25 @@ Opening the source,Starting with GPL then AGPL because??
 \end_layout
 
 \begin_layout Enumerate
-libraries to read & parse thirdparty Quranic resources such as Quranic Corpus(se
-e x.x.x), VerseByVerse(see x.x.x), Zekrmodels(see x.x.x)
+[Commits stat, lines added.
+ lines changed]
 \end_layout
 
-\begin_layout Enumerate
-A Centralized JSON Output system:
+\begin_layout Standard
+Those are the main milestones we go through:
 \end_layout
 
-\begin_deeper
+\begin_layout Subsection
+A New Centralized JSON Output System:
+\end_layout
+
 \begin_layout Enumerate
 First: Improving the basic html output of the API to a Json API works only
  in Web CGI.
 \end_layout
 
 \begin_layout Enumerate
-Second: Centralizing the Output system to gain two benefits: 
+Second: Centralizing the Output system to gain three benefits: 
 \end_layout
 
 \begin_deeper
@@ -1900,7 +1987,7 @@ the use of the same output system in the different interfaces: Console Interface
 \end_layout
 
 \begin_layout Enumerate
-Make changes and updates in many places
+Make changes and updates in one place instead of many
 \end_layout
 
 \end_deeper
@@ -1977,11 +2064,18 @@ offer a set of error messages in case of failed query [improve it as table]:
 n -- Exceptions: ? (1), ??????????? (11) """
 \end_layout
 
+\begin_deeper
 \begin_layout Enumerate
 [it's extensible]
 \end_layout
 
 \end_deeper
+\end_deeper
+\begin_layout Enumerate
+Extracting the configurations into independent config files and Standardizing
+ them into a json format (benefits)
+\end_layout
+
 \begin_layout Enumerate
 Make many meta data available for request in the API Json output system.
  Meta data includes:
@@ -1989,7 +2083,7 @@ Make many meta data available for request in the API Json output system.
 
 \begin_deeper
 \begin_layout Enumerate
-API information including version.
+API meta information including version.
 \end_layout
 
 \begin_layout Enumerate
@@ -2034,17 +2128,10 @@ SuperJokers Vulnerability: Fixed by [see the code of Output.Py]
 \end_layout
 
 \end_deeper
-\end_deeper
-\begin_layout Enumerate
-Extracting the configurations into independent config files and Standardizing
- them into a json format (benifits)
-\end_layout
-
-\begin_layout Enumerate
+\begin_layout Subsection
 Many new features
 \end_layout
 
-\begin_deeper
 \begin_layout Enumerate
 Implementing basically the fuzzy search feature.
 \end_layout
@@ -2106,7 +2193,10 @@ include the linguisitic annotations of each query keyword in the API output
 Show word information in buckwalter transliteration
 \end_layout
 
-\end_deeper
+\begin_layout Subsection
+Resource Importing Manager
+\end_layout
+
 \begin_layout Enumerate
 Improving the resource importing manager & fix the الحلقة المفقودة.
  The improved version can do:
@@ -2147,14 +2237,25 @@ translations list
 
 \end_deeper
 \begin_layout Enumerate
-Importing the resources to our intermediate database
+Parsing & Importing the resources to our intermediate database
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+libraries to read & parse thirdparty Quranic resources such as Quranic Corpus(se
+e x.x.x), VerseByVerse(see x.x.x), Zekrmodels(see x.x.x)
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 Transforming resources from the database into the document indexes.
 \end_layout
 
 \end_deeper
+\begin_layout Subsection
+Automating the API building
+\end_layout
+
 \begin_layout Enumerate
 Automating the API building by a well-commented Makefile that do:
 \end_layout
@@ -2177,6 +2278,10 @@ Auto-installing script for API, WUI, GUI.
 \end_layout
 
 \end_deeper
+\begin_layout Subsection
+A new console interface
+\end_layout
+
 \begin_layout Enumerate
 A new console interface, to be used by non-python desktop applications,
  could be run as background processus aka Daemon processus.
@@ -2190,13 +2295,30 @@ reference "sub:Console-commandline"
 .
 \end_layout
 
-\begin_layout Enumerate
-Cleaning the previous urgently-coded desktop interface, preparing it for
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+
+\series bold
+Unneeded:
+\series default
+ Cleaning the previous urgently-coded desktop interface, preparing it for
  localization, maintain it's portability and simplicity , improving its
  rapidity.
  remove the old html styling of results.
  Get the results from the API output system instead of direct access to
  API python code
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Enhancing the web interface
 \end_layout
 
 \begin_layout Enumerate
@@ -2207,26 +2329,46 @@ Improving the html web interface in two steps.
  showing with many extra features ( see )
 \end_layout
 
-\begin_layout Enumerate
-Packaging system (last one): 
+\begin_layout Subsection
+Packaging system: 
 \end_layout
 
-\begin_deeper
 \begin_layout Enumerate
 Pure python setup for the API, including all necessary files inside the
  API.
  
 \end_layout
 
+\begin_deeper
 \begin_layout Enumerate
 Egg API, Source Tarball, Binary Tarball, NSIS Windows Installer
 \end_layout
 
 \end_deeper
+\begin_layout Subsection
+Coding Standarization
+\end_layout
+
 \begin_layout Enumerate
 Fixing a huge amount of pylint code analysis warnings [score of current
  code, more stats] and improving the quality of code following also the
  conventions explaioned in $Readability-counts
+\end_layout
+
+\begin_layout Enumerate
+A mass organization of Source code, see the current code architecture in
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Code-Architecture"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Documention covering
 \end_layout
 
 \begin_layout Enumerate
@@ -2248,65 +2390,45 @@ a Script Sample of how to use the API #include the code #how to high light
 \end_layout
 
 \end_deeper
-\begin_layout Enumerate
-A mass organization of Source code, see the current code architecture in
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sec:Code-Architecture"
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Extra TODO: +PyTanzil
+\end_layout
+
+\begin_layout Plain Layout
+grouping the changes
+\end_layout
+
+\begin_layout Plain Layout
++ Suggestion Vocalizations!
+\end_layout
+
+\begin_layout Plain Layout
++ Suggestion (Verb Conjugation+ Random Affixes) U Quranic Verbs 
+\end_layout
+
+\begin_layout Plain Layout
++ Suggestion Synonyms
+\end_layout
+
+\begin_layout Plain Layout
++ Search Word : 2 Steps Search
+\end_layout
+
+\begin_layout Plain Layout
++ Search Translation:
+\end_layout
 
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
---
-\end_layout
-
-\begin_layout Standard
-+PyTanzil
-\end_layout
-
-\begin_layout Standard
-grouping the changes
-\end_layout
-
-\begin_layout Standard
-# it's southnance model: New_Output_System
-\end_layout
-
-\begin_layout Standard
-Write change log, and show it as your changes!
-\end_layout
-
-\begin_layout Standard
-+ Suggestion Vocalizations!
-\end_layout
-
-\begin_layout Standard
-+ Suggestion (Verb Conjugation+ Random Affixes) U Quranic Verbs 
-\end_layout
-
-\begin_layout Standard
-+ Suggestion Synonyms
-\end_layout
-
-\begin_layout Standard
-+ Search Word : 2 Steps Search
-\end_layout
-
-\begin_layout Standard
-+ Search Translation:
-\end_layout
-
 \begin_layout Subsection
 Open Issues
-\end_layout
-
-\begin_layout Standard
-...
- from Github!
 \end_layout
 
 \begin_layout Itemize
@@ -2364,17 +2486,21 @@ Complete the features implementation:
 \end_layout
 
 \begin_layout Itemize
+table of FeaturesXimplemented 
+\end_layout
+
+\begin_layout Itemize
 Implementation Ratio
 \end_layout
 
 \end_deeper
 \end_deeper
 \begin_layout Itemize
-Milestone #3: Moving to Whoosh 2.X
+Milestone #3: Moving to Whoosh 2.X, why?
 \end_layout
 
 \begin_layout Itemize
-Milestone #4: Moving to Python 3000
+Milestone #4: Moving to Python 3000, why?
 \end_layout
 
 \begin_layout Itemize
@@ -2496,12 +2622,20 @@ It has lot of features: see Search Features.
  
 \end_layout
 
+\begin_layout Enumerate
+[lines of codes from Ohloh]
+\end_layout
+
 \begin_layout Subsubsection
 JSON output system
 \end_layout
 
 \begin_layout Standard
 How important for Web interfaces
+\end_layout
+
+\begin_layout Standard
+[Usage statistics from stats.alwaysdata.org]
 \end_layout
 
 \begin_layout Subsubsection
@@ -2523,10 +2657,6 @@ How important for Desktop interfaces
 get the command inline argumens, parse them and forward them to the API
  output system.
  [+screen shot]
-\end_layout
-
-\begin_layout Section
-Interfaces
 \end_layout
 
 \begin_layout Subsection
@@ -2560,11 +2690,15 @@ Aya words
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
 \begin_layout Subsection
-Other User Interfaces
+Other User Interfaces #no need for it here, just talk about them in presentation
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Proves the wide use of the API abroad the multiplatforms
 \end_layout
 
@@ -2576,11 +2710,11 @@ Desktop User Interface
 MWUI
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 made by sneetsher...in order to get a minimal showing as a demo 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 localizable and has independent templates
 \end_layout
 
@@ -2592,16 +2726,29 @@ Smart phones
 Browsers-Addons
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Interfaces
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 [interfaces from github readme files]
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
 Conclusion
+\end_layout
+
+\begin_layout Standard
+In this chapter , we talked about our implemented improvement
+\end_layout
+
+\begin_layout Standard
+we included some statistics of usage.
 \end_layout
 
 \begin_layout Standard
