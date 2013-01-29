@@ -15,19 +15,22 @@
 \makeglossary
 %%%%%%%%%%%%%%%%%%%% glossary -> end
 
-%%%%%%%%%%%%%%%%%%%% Draw box -> begin
-\usepackage{tikz}
-\newcommand\arbox[2][]{\tikz[overlay]\node[fill=blue!10,inner sep=1pt, anchor=text, rectangle, rounded corners=1mm,#1] {\begin{Arabic}#2  \end{Arabic}};\phantom{\begin{Arabic}#2 \end{Arabic}}}
-\newcommand\enbox[2][]{\tikz[overlay]\node[fill=blue!10,inner sep=2pt, anchor=text, rectangle, rounded corners=1mm,#1] {#2};\phantom{#2}}
-%%%%%%%%%%%%%%%%%%%% Draw box -> end
-
 \usepackage{titlesec}
 
 %captions
 %\setlength{\intextsep}{0cm plus1cm minus1cm}
 \usepackage[font={small}]{caption}
 
+%%%%%%%%%%%%%%%%%%%% Draw box -> begin
+\usepackage{tikz}
+\newcommand\arbox[2][]{\tikz[overlay]\node[fill=blue!10,inner sep=1pt, anchor=text, rectangle, rounded corners=1mm,#1] {\begin{Arabic}#2  \end{Arabic}};\phantom{#2 }}
+\newcommand\enbox[2][]{\tikz[overlay]\node[fill=blue!10,inner sep=2pt, anchor=text, rectangle, rounded corners=1mm,#1] {#2};\phantom{#2}}
+%%%%%%%%%%%%%%%%%%%% Draw box -> end
+
+
+
 \usepackage{bidi}
+
 
 \def\BSML{\begin{center}\char"FB51 \char"FB52 \char"FB53\end{center}}
 

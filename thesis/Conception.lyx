@@ -1846,7 +1846,7 @@ reference "enu:Romanization:"
  To provide the possibility to use more then one, we should specify a guessing
  policy to detect what system is used in a given string.
  There are many critiria that could be used in guessing, we list some of
- thme in the following:
+ them in the following:
 \end_layout
 
 \begin_layout Enumerate
@@ -1857,8 +1857,16 @@ Nature of used characters:
 each romanization system uses a set of letters, numbers, or symbols to reperesen
 t the Arabic vowels and letters (including hamza forms).
  The diffrences between those sets are remarkable.
- For example, ISO233 norm uses أحرف منقوطة...
- but buckwalter use instead symbols such as &.
+ For example, ISO233 norm uses usually some dotted letters such as ẗ for
+ 
+\lang arabic_arabi
+ة
+\lang english
+ ; In the contrary, Buckwalter uses instead symbols such as & for 
+\lang arabic_arabi
+ؤ
+\lang english
+ .
  Those differences could be used to guess the romanization system.
  The following table represents the exclusive characters used by the three
  romanization systems: ISO233, Buckwalter, and Arabtex.

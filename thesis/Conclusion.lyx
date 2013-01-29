@@ -17,7 +17,7 @@ fix-cm
 fixltx2e
 \end_modules
 \maintain_unincluded_children false
-\language french
+\language english
 \language_package default
 \inputencoding auto
 \fontencoding global
@@ -154,12 +154,16 @@ Optimization of solutions and stydying Complexity of each feature
 \end_layout
 
 \begin_layout Standard
-Notre objectif principal est de regarder à travers les fonctionnalités existante
-s de recherche dans le Coran: étudier les spécifications et les possibilités,
- en personnalisant les anciennes, et à trouver des nouvelles si nécessaire
- et si possible.
- Notre travail doit être basé sur des approches modernes de recherche d'informat
-ion pour obtenir une bonne stabilité et une recherche à grande vitesse.
+Our main objective is to design a retrieval system that fit the Qur'an search
+ needs.
+ But to realize this objective, we had to list and classify all the search
+ features that are possible and helpful.
+ Then we've proceeded how to implement most of those features and what is
+ requirements to do that.
+\end_layout
+
+\begin_layout Standard
+---
 \end_layout
 
 \begin_layout Standard
@@ -185,7 +189,7 @@ La résolution des références des pronoms, par exemple “
 \lang arabic_arabi
 لا اله الا هو
 \series default
-\lang french
+\lang english
 
 \begin_inset Quotes srd
 \end_inset
@@ -195,7 +199,7 @@ La résolution des références des pronoms, par exemple “
 \lang arabic_arabi
 هو
 \series default
-\lang french
+\lang english
  est la référence de 
 \series bold
 \lang arabic_arabi
@@ -211,7 +215,7 @@ La résolution des références des pronoms, par exemple “
 \uwave off
 \noun off
 \color none
-\lang french
+\lang english
  
 \family default
 \series default
@@ -235,7 +239,7 @@ La considération des différentes significations, par exemple
 رب
 \series default
 ّ
-\lang french
+\lang english
  avec le sens "
 \series bold
 dieu
