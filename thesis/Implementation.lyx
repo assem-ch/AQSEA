@@ -29,7 +29,7 @@ initials
 \font_tt_scale 100
 
 \graphics default
-\default_output_format default
+\default_output_format pdf4
 \output_sync 1
 \output_sync_macro "\synctex=1"
 \bibtex_command default
@@ -40,7 +40,6 @@ initials
 \use_hyperref true
 \pdf_title "Advanced Search in Quran"
 \pdf_author "Assem Chelli"
-\pdf_keywords "Business intelligence, SQL Server, SSAS, SSIS, SSRS, Sharepoint "
 \pdf_bookmarks true
 \pdf_bookmarksnumbered true
 \pdf_bookmarksopen true
@@ -768,7 +767,7 @@ Lack fo Quranic resources
 
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 [How to resolve each one! no, it's not my business]
@@ -781,7 +780,7 @@ status open
 
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Subsection
 FEATURExRESOURCE

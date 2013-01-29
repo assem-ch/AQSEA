@@ -32,7 +32,7 @@ fixltx2e
 \font_tt_scale 100
 
 \graphics default
-\default_output_format default
+\default_output_format pdf4
 \output_sync 0
 \bibtex_command default
 \index_command default
@@ -110,7 +110,7 @@ addcontentsline{toc}{part}{General Conclusion}
 
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 [ a refaire ]

@@ -630,10 +630,20 @@ filename "Implementation.lyx"
 
 \end_inset
 
+ 
+\begin_inset Note Note
+status collapsed
 
+\begin_layout Plain Layout
+\align left
 \begin_inset CommandInset include
 LatexCommand include
 filename "tests.lyx"
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
