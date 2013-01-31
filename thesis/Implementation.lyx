@@ -144,6 +144,10 @@ Introduction
 \end_layout
 
 \begin_layout Standard
+[refaire]
+\end_layout
+
+\begin_layout Standard
 Our aim in implementation is to offer an open application programming interface.
  That API must be well extensible to achieve all the search features we've
  discussed in the previous chapter.
@@ -152,7 +156,14 @@ Our aim in implementation is to offer an open application programming interface.
  the Qur'anic resources that we've used or we need.
  Otherwise, we'll explain why we decided to open the source, what are the
  advantages driving us to adopt a such approach.
- 
+\end_layout
+
+\begin_layout Standard
+---
+\end_layout
+
+\begin_layout Standard
+[+We'll talk about our impovements]
 \end_layout
 
 \begin_layout Section

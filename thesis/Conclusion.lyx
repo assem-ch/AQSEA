@@ -167,6 +167,31 @@ Our main objective is to design a retrieval system that fit the Qur'an search
 \end_layout
 
 \begin_layout Standard
+Our plan is 
+\end_layout
+
+\begin_layout Standard
+__
+\end_layout
+
+\begin_layout Standard
++Perspective: 
+\end_layout
+
+\begin_layout Standard
+- Proceeding the full conception of all the search feautures cited in [cross-ref
+]
+\end_layout
+
+\begin_layout Standard
+- Complete the Open Issues cited in [cross-ref]
+\end_layout
+
+\begin_layout Standard
+=======
+\end_layout
+
+\begin_layout Standard
 Notre plan est la construction d'un noyau de recherche simple.
  Ce dernier doit être extensible et propre.
  Cela pourrait être fait sur la base d'une bibliothèque Whoosh qui est une

@@ -253,9 +253,9 @@ Previous Work
 \end_layout
 
 \begin_layout Standard
-We've start the work on this idea of Search work as Engineer degree graduation
- project entitled "Development of a search and indexing engine for Qur'anic
- documents"
+We've started the work on the idea of search in Quran in the Engineer degree
+ graduation project entitled "Development of a search and indexing engine
+ for Qur'anic documents"
 \begin_inset Foot
 status collapsed
 
@@ -1158,7 +1158,7 @@ We've intended to use this method in the comparing between search query
 \end_layout
 
 \begin_layout Standard
-To fix those two issues , we have to improve the comparing method in the
+To fix those two issues, we have to improve the comparing method in the
  lowest layers possibles: 
 \end_layout
 
@@ -1195,7 +1195,7 @@ One problem of changing regex engine or basic string directly in-place is
 
 \begin_layout Standard
 To improve better the vocalized search, we have to distinguish between original
- vowels and declinsion case vowels because words like 
+ vowels and declension case markers because words like 
 \lang arabic_arabi
 الْمُلْكُ
 \family roman
@@ -1256,7 +1256,44 @@ To improve better the vocalized search, we have to distinguish between original
 (Kingdom, accusative) are considered as one word with one meaning which
  is Kingdom.
  This will give best matches in search and will not oblige the user to repeat
- the search operation with each one of the different possible declinsions.
+ the search operation with each one of the different possible declensions.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/strip declension.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Different possible declensions of the word 
+\lang arabic_arabi
+الملك
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1339,6 +1376,46 @@ reference "sub:Filtring-Stop-words:"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename figures/Different types.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Different types of the possible vocalizations of the word 
+\lang arabic_arabi
+من
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1531,7 +1608,7 @@ Refine the meanings detection ( a first step in the semantic approach )
 \end_layout
 
 \begin_layout Section
-Othmani Script and Text processing
+Othmani script and text processing
 \end_layout
 
 \begin_layout Standard
@@ -1684,10 +1761,95 @@ in (
  The retrieving sytem can't distinguish between the two occurences basing
  only on the standard script.
  
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Different writings of bas6a in Uthmani Script.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Different writing forms of the word 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang arabic_arabi
+بسطة
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ using Othmani script
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
-Calculating statistics knowing that the number of letters is different between
+Calculating statistics knowing that letters number is different between
  the two scripts in a big number of ayahs.
  This difference is due to addition and removal of some letters in the Othmani
  script (for more details see 
@@ -1777,6 +1939,41 @@ in Yusuf 84 which is separted to two words
 أَسَفَى
 \lang english
  in the standard script.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Attaching words in uthmani - Ya'asafa.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Merging Words in Uthmani Script
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1868,7 +2065,12 @@ t the Arabic vowels and letters (including hamza forms).
 \lang english
  .
  Those differences could be used to guess the romanization system.
- The following table represents the exclusive characters used by the three
+ 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+The following table represents the exclusive characters used by the three
  romanization systems: ISO233, Buckwalter, and Arabtex.
 \begin_inset Newline newline
 \end_inset
@@ -1880,6 +2082,7 @@ sideways false
 status collapsed
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="4" columns="2">
 <features tabularvalignment="middle">
@@ -1920,7 +2123,7 @@ ISO 233
 
 \begin_layout Plain Layout
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 TODO
@@ -1998,12 +2201,17 @@ Exclusive characters between ISO233, Buckwalter, and Arabtex
 
 \end_layout
 
-\begin_deeper
-\begin_layout Enumerate
-+xample Calif: + example: خليفة in ISO, Buckwalter, Arabtex
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+For example If we consider the three romanization systems: ISO233, Buckwalter,
+ and Arabtex, guessing the romanized word ẖalīfaẗ leads surely to ISO233
+ system because of the specfic characters ẖ, ī, ẗ.
 \end_layout
 
-\end_deeper
 \begin_layout Enumerate
 
 \series bold
@@ -2013,39 +2221,36 @@ Arabic valid words
  we get many correlative Arabic words.
  We can check if each word is valid in Arabic, and eliminate non valid ones.
  
+\begin_inset Newline newline
+\end_inset
+
+For example, guessing the romanized word xalyfap leads surely to the system
+ buckwalter because it generates the only valid Arabic word: 
+\lang arabic_arabi
+خَليفَة
+\lang english
+.
 \end_layout
 
-\begin_deeper
-\begin_layout Enumerate
-example: qawol -> ...
- in i
-\end_layout
-
-\end_deeper
 \begin_layout Enumerate
 
 \series bold
 Word existance in Quran: 
 \series default
-by checking the existence in the Quran of a interpreted words ناتجة from
+by checking the existence in the Quran of interpreted words arising from
  a romanized word, we can detect potential ones.
  
 \end_layout
 
-\begin_deeper
-\begin_layout Enumerate
-example: word valid in arabic but not in quran
-\end_layout
-
-\end_deeper
 \begin_layout Enumerate
 
 \series bold
 Predefined priorities: 
 \series default
-the last cretrion is the predefined priorities.
- If the guessing system failed to limit choices to only one romanization
+the last criterion is the predefined priorities.
+ If the guessing system failed to limit the choices to only one romanization
  system, it should pick the first one based on predfined priorities.
+ 
 \end_layout
 
 \begin_layout Subsubsection
@@ -3089,21 +3294,22 @@ To be close to the Quranic way of writing numbers, we should respect many
 \noun default
 \color inherit
 (2, feminine).
- Other numbers change their forms in the opposite gender of 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
+ Other numbers change their forms in the opposite gender of the count noun
+ (
 \lang arabic_arabi
 المعدود
 \lang english
- 
+)
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+add to glossary
 \end_layout
 
 \end_inset
 
-such as 
+ such as 
 \lang arabic_arabi
 سبع سماوات
 \family roman
@@ -3158,7 +3364,7 @@ such as
 \noun default
 \color inherit
 (7 seas, masculine).
- a hundred 
+ A hundred 
 \lang arabic_arabi
 مئة
 \family roman
@@ -3204,8 +3410,8 @@ had a special writing in Quran which is
 \end_layout
 
 \begin_layout Standard
-In the example N°11 in the table, the number 309 was separated with the
- two words but still search-able.
+In the example N°11of the table, the number 309 was separated with the two
+ words but still search-able.
  In the contrary , the example N°12 show an indirect mention of the number
  950.
  That make it hard to be retrieved without understanding the Ayah semantically.
@@ -3224,16 +3430,16 @@ name "sub:Tokenization:"
 
 \begin_layout Standard
 The function of tokenization is to split a running text into tokens, so
- that they can be fed into a the next phases for further processing.
+ that they can be fed into the next phases for further processing.
  We keep the space-based tokenization from our previous work as a first
  step since it's a perfect choice and the simplest one at the same time.
  
 \end_layout
 
 \begin_layout Standard
-Another choice is -after performing the space-based tokenization- separating
- the words (tokens) into their parts (sub-tokens) so we'll have separated
- pronouns and clitics in case we needed a special processing for them.
+After performing the space-based tokenization, We could also separate the
+ words (tokens) into their parts (sub-tokens) so we'll have separated pronouns
+ and clitics in case we needed a special processing for them.
  The problem with this is that it emerges lot of flaws.
  
 \end_layout
@@ -6617,7 +6823,7 @@ Similarity between vowels
 \end_layout
 
 \begin_layout Section
-Results enhancements
+Results enhancements [optionam]
 \end_layout
 
 \begin_layout Section
@@ -6782,7 +6988,18 @@ Our approche is to make a progressive parser since it proceeded by treating
 \begin_layout Standard
 
 \series bold
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+
+\series bold
 Word sens disambiguation
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
