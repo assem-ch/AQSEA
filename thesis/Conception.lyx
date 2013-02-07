@@ -194,7 +194,7 @@ Phase 3: mention related features of each one
 \end_layout
 
 \begin_layout Enumerate
-Phase 4: Highlight Arabic Words
+Phase 4: Highlight Arabic Words &Glossary keywords
 \end_layout
 
 \end_inset
@@ -1384,7 +1384,7 @@ wide false
 sideways false
 status open
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename figures/Different types.png
@@ -1946,7 +1946,7 @@ in Yusuf 84 which is separted to two words
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -1989,7 +1989,49 @@ reference "sec:Proposals"
 \end_inset
 
 ).
- We list in the following our improvments per phase:
+ 
+\end_layout
+
+\begin_layout Standard
+[Uthmani vs Standard] text
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Uthmani vs Standard Text Processing.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+General Schema of Uthmani and Standard text processing.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We list in the following our improvments per phase:
 \end_layout
 
 \begin_layout Subsection
@@ -3600,6 +3642,42 @@ English Translation of Mohammad Habib Shakir
  ) and the flaws will be: 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Tokenization of fasqainakomoho.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Tokenization of the word 
+\lang arabic_arabi
+فَأَسْقَيْنَٰكُمُوهُ
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Itemize
 Tokenization is an important phase since it's the basis for the following
  phases.
@@ -3665,25 +3743,7 @@ key "Habash05arabictokenization"
 .
  However, it violates the design concept of modularity which requires systems
  to have separate modules for undertaking separate tasks.
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-Figure
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-‫( 
+ For example: the word ( 
 \lang arabic_arabi
 ولیشكر‬
 \family roman
@@ -3710,11 +3770,7 @@ Figure
 \uwave default
 \noun default
 \color inherit
-waliyashkur: and to thank )
-\begin_inset Newline newline
-\end_inset
-
-‫
+, and to thank ) will be ‫
 \lang arabic_arabi
 و‬
 \lang english
@@ -3726,10 +3782,9 @@ waliyashkur: and to thank )
 \lang arabic_arabi
 شكر‬
 \lang english
-+verb+pres+sg‫@
++verb+pres+sg‫@.
 \end_layout
 
-\end_deeper
 \begin_layout Enumerate
 
 \series bold
@@ -3745,34 +3800,34 @@ Tokenization Guesser (tokenization is separated from morphological analysis)
  morphological analysis.
  There is the disadvantage that the morphological analyzer and the syntactic
  parser have to deal with increased tokenization ambiguities.
- 
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Figure
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-‫( 
+ For example: the word (
 \lang arabic_arabi
 وللرجل‬
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
 \lang english
- and to the man) 
-\end_layout
-
-\begin_layout Standard
-@‫
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+, and to the man) will be either @‫
 \lang arabic_arabi
 و
 \lang english
@@ -3787,10 +3842,8 @@ Figure
 @
 \lang arabic_arabi
 رجل‬
-\end_layout
-
-\begin_layout Standard
-@
+\lang english
+, @
 \lang arabic_arabi
 ‫و
 \lang english
@@ -3802,55 +3855,77 @@ Figure
 \lang arabic_arabi
 الرجل
 \lang english
-‬
-\end_layout
-
-\begin_layout Standard
-@‫
+‬, @‫
 \lang arabic_arabi
 و
 \lang english
 @
 \lang arabic_arabi
 للرجل‬
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
 \lang english
- 
-\end_layout
-
-\begin_layout Standard
+ , or 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
 @‫
 \lang arabic_arabi
 وللرجل‬
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
 \lang english
-
-\begin_inset Newline newline
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
+ whereas the tagging of the clitecs is 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
 ‫
 \lang arabic_arabi
 و‬
 \lang english
-+conj
-\begin_inset Newline newline
-\end_inset
-
-
++conj, 
 \lang arabic_arabi
 ل‬
 \lang english
-+prep
-\begin_inset Newline newline
-\end_inset
-
-
++prep, 
 \lang arabic_arabi
 ‫ال‬
 \lang english
-+art+def
++art+def.
 \end_layout
 
 \begin_layout Enumerate
@@ -3868,19 +3943,34 @@ here the word stem is not guessed, but taken as a list of actual words.
 c and more manageable in debugging.
  Its lack of robustness makes it mostly inapplicable as no single morphological
  transducer can claim to comprise all the words in a language.
- 
-\begin_inset Newline newline
-\end_inset
-
-‫( 
+ For example the word ‫( 
 \lang arabic_arabi
 وللرجل‬
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
 \lang english
- and to the man) 
-\begin_inset Newline newline
-\end_inset
-
-@‫
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+, and to the man) will be @‫
 \lang arabic_arabi
 و
 \lang english
@@ -3895,6 +3985,8 @@ c and more manageable in debugging.
 @
 \lang arabic_arabi
 رجل‬
+\lang english
+.
 \end_layout
 
 \begin_layout Standard
@@ -3915,13 +4007,24 @@ Attia
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Tokenization-Phase2.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Schema guessing
+Subtokens separation schema
 \end_layout
 
 \end_inset
@@ -4140,12 +4243,45 @@ Normalization:
 \begin_layout Standard
 Since we are accepting the Othmani script beside the standard script,we
  have to specify the normalisation for the both.
- We had to strip all recitation marks such as: ننننن .
- The same for boundary marks such as: ننننننن ص.
+ We had to strip all recitation marks such as the Waqf symbol 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
 \end_layout
 
-\begin_layout Itemize
-Example: Aya in Full Uthmani --> Ayah stripped
+\end_inset
+
+
+\begin_inset Formula $\mathbf{\therefore\therefore}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+ (See different Waqf symbols in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Fragmentation-into-Stops"
+
+\end_inset
+
+).
+ 
 \end_layout
 
 \begin_layout Standard
@@ -4310,117 +4446,163 @@ that mentioned with different meanings in Quran:
  This word, however, are mentioned in different declension cases: Nominative,
  Accusative and Genitive.
  The declension case has no effect on the meaning.
- Our idea is to keep the vowels except the declension vowel.
+ Our idea is to keep the vowels except the declension case ending vowel.
  This will unify all declension cases of a word.
  This can be done by passing tags with tokens for declension info such as:
+\end_layout
+
+\begin_layout Itemize
+Declinable (
+\lang arabic_arabi
+مُعرَب
+\lang english
+) or not?
+\end_layout
+
+\begin_layout Itemize
+Declension case (
+\lang arabic_arabi
+حالة الإعراب
+\lang english
+): Nominative, Accusative, and Genetive.
  
 \end_layout
 
 \begin_layout Itemize
-Declinable or not?
-\end_layout
-
-\begin_layout Itemize
-Declension case: Nominative, Accusative, Genetive and مجزوم 
-\end_layout
-
-\begin_layout Itemize
-علاماة الاعراب: علامات الاعراب
-\end_layout
-
-\begin_layout Standard
----
-\end_layout
-
-\begin_layout Standard
-Stripping علامات الاعراب whatever it is
-\end_layout
-
-\begin_layout Standard
-Example: the unvocalized word 
+Declension case markers (
 \lang arabic_arabi
-الملك
+علامات الإعراب
 \lang english
- will be the total of all those words 
-\lang arabic_arabi
-الْمُلْكُ
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-\lang english
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-(Kingdom, nominative), 
-\lang arabic_arabi
-الْمُلْكِ
-\lang english
- (Kingdom, genetive), 
-\lang arabic_arabi
-الْمُلْكَ
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-\lang english
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-(Kingdom, accusative), 
-\lang arabic_arabi
-الْمَلِكُ
-\lang english
- (King, nominative), and 
-\lang arabic_arabi
-الْمَلِكِ
-\lang english
- (King, genetive).
-\end_layout
+): Fatha, Damma, Kessra, Double-Fatha (with the additional Alef) , Double-Kessra
+, Double-Damma.
+\begin_inset Newline newline
+\end_inset
 
-\begin_layout Standard
+
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Harakat.gif
+	scale 60
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename figures/Harakatnun.gif
+	scale 60
+
+\end_inset
+
+
+\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption
 
 \begin_layout Plain Layout
-General Schema of Uthmani&Standard text processing.
+Arabic case markers
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
++Strip I3rab 
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+For example the normalization of the ayah (
+\lang arabic_arabi
+الروم
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+54) : +Strip Every Thing
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Before normalization
+\series default
+: [
+\lang arabic_arabi
+ ۞ ٱللَّـهُ ٱلَّذِى خَلَقَكُم مِّن ضَعْفٍ ثُمَّ جَعَلَ مِنۢ بَعْدِ ضَعْفٍ
+ قُوَّةً ثُمَّ جَعَلَ مِنۢ بَعْدِ قُوَّةٍ ضَعْفًا وَشَيْبَةً ۚ يَخْلُقُ
+ مَا يَشَآءُ ۖ وَهُوَ ٱلْعَلِيمُ ٱلْقَدِيرُ 
+\lang english
+]
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+After normalization
+\series default
+: [
+\lang arabic_arabi
+ اللَّـهُ الَّذِي خَلَقَكُمْ مِنْ ضَعْفٍ ثُمَّ جَعَلَ مِنْ بَعْدِ ضَعْفٍ
+ قُوَّةً ثُمَّ جَعَلَ مِنْ بَعْدِ قُوَّةٍ ضَعْفًا وَشَيْبَةً يَخْلُقُ مَا
+ يَشَاءُ وَهُوَ الْعَلِيمُ الْقَدِيرُ 
+\lang english
+]
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Preview for normalization
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -4434,7 +4616,7 @@ General Schema of Uthmani&Standard text processing.
 \end_layout
 
 \begin_layout Subsection
-Stemming:
+Lemmatization:
 \end_layout
 
 \begin_layout Standard
@@ -4449,11 +4631,11 @@ reference "sub:Tokenization:"
 \end_inset
 
 ).
- In Stemming we either نرجع to it's stem or root origin.
+ In Stemming we either bring it back into stem or root origin.
  The roots in arabic are the basic unit.
- There are about XXX root in Classical Arabic and about YYY in the modern
+ There are about XXX roots in Classical Arabic and about YYY in the modern
  Arabic.
- When pairing the root with patterns, he can generate more then ZZZ variant
+ When pairing with patterns, the root can generate more then ZZZ variant
  words.
  Generated words could have similar, independent or opposite meanings.
  In the contrary, the stem usually generate a small set of words that have
@@ -4466,11 +4648,41 @@ We can use the morphology tags from the tokenization phase as feeds for
  the stemmer.
  Some tags are helpful.
  We include the stem value of each word -if available- as a tag.
- We use it to replace the word
+ We use it to replace the word.
 \end_layout
 
 \begin_layout Standard
-examle ئتل+بتنلب:: word+stem ====> stem
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename figures/Lematization.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Examples de lemmatization
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -4495,7 +4707,7 @@ reference "For-stop-words-filtering,"
 
 ).
  We have proposed to select the stopwords from the list of the most frequent
- words in Qur'an the particles and the pronouns taking in consideration
+ words in Qur'an, the particles and the pronouns taking in consideration
  their diacritical marks.
 \end_layout
 
@@ -4567,6 +4779,10 @@ This phase should be optional to let the possibility for linguists to look
 
 \begin_layout Standard
 avoid removing them to support phrase search لو كان البحر
+\end_layout
+
+\begin_layout Section
+Quranic Words Search [Two step Search]
 \end_layout
 
 \begin_layout Section
