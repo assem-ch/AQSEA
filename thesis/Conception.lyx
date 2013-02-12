@@ -4633,14 +4633,23 @@ reference "sub:Tokenization:"
 ).
  In Stemming we either bring it back into stem or root origin.
  The roots in arabic are the basic unit.
- There are about XXX roots in Classical Arabic and about YYY in the modern
- Arabic.
- When pairing with patterns, the root can generate more then ZZZ variant
+ There are about 10000 roots
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+9273 roots in the lexicon of Lisan Al-arab.
+\end_layout
+
+\end_inset
+
+ in Arabic (about 1500 roots in Quran).
+ When pairing with patterns, the root can generate more then 1000 variant
  words.
  Generated words could have similar, independent or opposite meanings.
  In the contrary, the stem usually generate a small set of words that have
  a similar meaning.
- Thus, we recommend use the stem as the معلم for this phase.
+ Thus, we recommend use the stem as the landmark for this phase.
 \end_layout
 
 \begin_layout Standard
@@ -4657,7 +4666,7 @@ wide false
 sideways false
 status open
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename figures/Lematization.png
@@ -4744,7 +4753,14 @@ We made an improvement in the tokenization that affect our previous criteria
 \noun default
 \color inherit
 (fa) generally has a high frequency and hasn't a self independant meaning.
- 
+ Therefore, clitics are potential stopwords, should be ignored for a better
+ search experience.
+ The ignoring should be optional to let the possibility for linguists to
+ look for these keywords.
+\end_layout
+
+\begin_layout Section
+Quranic Word Search
 \end_layout
 
 \begin_layout Standard
@@ -4752,54 +4768,29 @@ We made an improvement in the tokenization that affect our previous criteria
 \end_layout
 
 \begin_layout Standard
-( google Stop words in Arabic)
+Intro: we first use ayah as a unit, now we use the quranic word as unit,
+ 
 \end_layout
 
 \begin_layout Standard
-( google Stop words in Quran)
+why: because we need it for the two steps search.
 \end_layout
 
 \begin_layout Standard
-( google Clitics as stopwords)
+what is 2stepsserch: it a method to retrieve sets of quranic words classified
+ by one or many of thiers properties : lemma, gender, position, ....
 \end_layout
 
 \begin_layout Standard
-( google effect of stop words on phrase search)
+benefits to generate special word classes.
 \end_layout
 
 \begin_layout Standard
-clitics are very مرشح محتمل stopwords, should ignored [a one should do the
- listing]
-\end_layout
-
-\begin_layout Standard
-This phase should be optional to let the possibility for linguists to look
- for these keywords.
-\end_layout
-
-\begin_layout Standard
-avoid removing them to support phrase search لو كان البحر
-\end_layout
-
-\begin_layout Section
-Quranic Words Search [Two step Search]
-\end_layout
-
-\begin_layout Section
-Modular Query Parser 
-\end_layout
-
-\begin_layout Standard
-[google Modular Query Parser, did this exist][how to attain Modularity][isnt
- this of implementation]
+We use it to improve query parser: modularity, extensibiltiy and combination
 \end_layout
 
 \begin_layout Standard
 ---
-\end_layout
-
-\begin_layout Standard
-[google query parser papers, whoosh]
 \end_layout
 
 \begin_layout Standard
@@ -4814,10 +4805,6 @@ Extensible and Combination ability of different operations
 \begin_layout Standard
 a high benefit to add search features one by one, without ruining all the
  parsing system
-\end_layout
-
-\begin_layout Standard
-read from whoosh 2.5
 \end_layout
 
 \begin_layout Standard

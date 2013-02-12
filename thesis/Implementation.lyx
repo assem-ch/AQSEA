@@ -2463,6 +2463,10 @@ Propose a standard format for new linguistic and quranic resources
 \end_layout
 
 \begin_layout Itemize
+Modular Query Parser
+\end_layout
+
+\begin_layout Itemize
 Study the restrictions creteria of the API json output service
 \end_layout
 
