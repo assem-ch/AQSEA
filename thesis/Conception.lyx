@@ -175,7 +175,7 @@ textit{Tim Peters, The Zen of Python}}
 
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 TODO:
@@ -3459,6 +3459,44 @@ In the example N°11of the table, the number 309 was separated with the two
  That make it hard to be retrieved without understanding the Ayah semantically.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Substitution Example.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Example of Substitution
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Tokenization:
 \begin_inset CommandInset label
@@ -4007,7 +4045,7 @@ Attia
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -4201,6 +4239,40 @@ with stemming we lose affixes so we can't specify the exact word search
 \begin_layout Itemize
 with tokenization, we preserve tokens and we can reproduce the whole word.
  
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Tokenization Example.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Example of tokenization
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -4524,20 +4596,76 @@ Arabic case markers
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-+Strip I3rab 
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
-For example the normalization of the ayah (
+\align center
+\begin_inset Graphics
+	filename figures/Normalization Example.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Example of normalization
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Filtering stopwords:
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Filtring-Stop-words:"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the previous work, we discussed the feasability of filtring stopwords
+ for search in Quran (see 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "For-stop-words-filtering,"
+
+\end_inset
+
+).
+ We have proposed to select the stopwords from the list of the most frequent
+ words in Qur'an, the particles and the pronouns taking in consideration
+ their diacritical marks.
+\end_layout
+
+\begin_layout Standard
+We made an improvement in the tokenization that affect our previous criteria
+ for choosing the list of stopwords.
+ This improvement is the separation of pronouns and clitics from the lemma
+ of the word.
+ Clitics such as 
 \lang arabic_arabi
-الروم
+فَـ
 \family roman
 \series medium
 \shape up
@@ -4562,47 +4690,34 @@ For example the normalization of the ayah (
 \uwave default
 \noun default
 \color inherit
-54) : +Strip Every Thing
+(fa) generally has a high frequency and hasn't a self independant meaning.
+ Therefore, clitics are potential stopwords, should be ignored for a better
+ search experience.
+ The ignoring should be optional to let the possibility for linguists to
+ look for these keywords.
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
 
-\series bold
-Before normalization
-\series default
-: [
-\lang arabic_arabi
- ۞ ٱللَّـهُ ٱلَّذِى خَلَقَكُم مِّن ضَعْفٍ ثُمَّ جَعَلَ مِنۢ بَعْدِ ضَعْفٍ
- قُوَّةً ثُمَّ جَعَلَ مِنۢ بَعْدِ قُوَّةٍ ضَعْفًا وَشَيْبَةً ۚ يَخْلُقُ
- مَا يَشَآءُ ۖ وَهُوَ ٱلْعَلِيمُ ٱلْقَدِيرُ 
-\lang english
-]
-\end_layout
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Filtring Stopwords Example.png
 
-\begin_layout Itemize
+\end_inset
 
-\series bold
-After normalization
-\series default
-: [
-\lang arabic_arabi
- اللَّـهُ الَّذِي خَلَقَكُمْ مِنْ ضَعْفٍ ثُمَّ جَعَلَ مِنْ بَعْدِ ضَعْفٍ
- قُوَّةً ثُمَّ جَعَلَ مِنْ بَعْدِ قُوَّةٍ ضَعْفًا وَشَيْبَةً يَخْلُقُ مَا
- يَشَاءُ وَهُوَ الْعَلِيمُ الْقَدِيرُ 
-\lang english
-]
+
 \end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Preview for normalization
-\end_layout
-
-\end_inset
-
-
+Example of stopword filtering 
 \end_layout
 
 \end_inset
@@ -4694,73 +4809,8 @@ Examples de lemmatization
 
 \end_layout
 
-\begin_layout Subsection
-Filtring stopwords:
-\begin_inset CommandInset label
-LatexCommand label
-name "sub:Filtring-Stop-words:"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-In the previous work, we discussed the feasability of filtring stopwords
- for search in Quran (see 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "For-stop-words-filtering,"
-
-\end_inset
-
-).
- We have proposed to select the stopwords from the list of the most frequent
- words in Qur'an, the particles and the pronouns taking in consideration
- their diacritical marks.
-\end_layout
-
-\begin_layout Standard
-We made an improvement in the tokenization that affect our previous criteria
- for choosing the list of stopwords.
- This improvement is the separation of pronouns and clitics from the lemma
- of the word.
- Clitics such as 
-\lang arabic_arabi
-فَـ
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-\lang english
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-(fa) generally has a high frequency and hasn't a self independant meaning.
- Therefore, clitics are potential stopwords, should be ignored for a better
- search experience.
- The ignoring should be optional to let the possibility for linguists to
- look for these keywords.
-\end_layout
-
 \begin_layout Section
-Quranic Word Search
+Quranic Words Search
 \end_layout
 
 \begin_layout Standard
@@ -4770,6 +4820,11 @@ Quranic Word Search
 \begin_layout Standard
 Intro: we first use ayah as a unit, now we use the quranic word as unit,
  
+\end_layout
+
+\begin_layout Standard
+we index most word properties, and pass it by the same analysers but by
+ preserving a raw field for original word
 \end_layout
 
 \begin_layout Standard
@@ -4783,6 +4838,10 @@ what is 2stepsserch: it a method to retrieve sets of quranic words classified
 
 \begin_layout Standard
 benefits to generate special word classes.
+\end_layout
+
+\begin_layout Standard
++figures: classes
 \end_layout
 
 \begin_layout Standard
@@ -4816,7 +4875,7 @@ we proposition those new operations (some are upgraded from previous work)
 \end_layout
 
 \begin_layout Standard
-Case, Objective, behaviour, status, needed resources
+Case, Objective, behaviour, status, needed resources, figure
 \end_layout
 
 \begin_layout Standard
@@ -4835,12 +4894,20 @@ Syntax :Relation~word , ~word for all relations
 replace the synonyms and antonyms by a general semantic related works
 \end_layout
 
+\begin_layout Standard
++figure: class example
+\end_layout
+
 \begin_layout Subsection
 Multi-level Derivations
 \end_layout
 
 \begin_layout Standard
 Suntax: >>> Malak
+\end_layout
+
+\begin_layout Standard
++figure: class example
 \end_layout
 
 \begin_layout Subsection
@@ -4853,6 +4920,10 @@ Syntax : Past(malaka), Present(Malaka), Imperative(Malaka)...
 
 \begin_layout Standard
 Generate all possibilities Intersect existing words 
+\end_layout
+
+\begin_layout Standard
++figure: class example
 \end_layout
 
 \begin_layout Subsection
@@ -4880,12 +4951,20 @@ Normalizing the similar letters ha' and ta' merbouta, alef 6awila et Alif
  maqsoura, all the forms of Hamza.
 \end_layout
 
+\begin_layout Standard
++figure: class example
+\end_layout
+
 \begin_layout Subsection
 Word Embedded Search 
 \end_layout
 
 \begin_layout Standard
 ( it's a Two-Steps Search)
+\end_layout
+
+\begin_layout Standard
++figure: class example
 \end_layout
 
 \begin_layout Subsubsection
@@ -4905,6 +4984,10 @@ the difference
 {{ }}
 \end_layout
 
+\begin_layout Standard
++figure: class example
+\end_layout
+
 \begin_layout Subsubsection
 Word Translations search 
 \end_layout
@@ -4916,6 +4999,14 @@ Syntax like [[ ]]
 \begin_layout Standard
 benefit to search inside the TranslatioNs
 \end_layout
+
+\begin_layout Standard
++figure: class example
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
 
 \begin_layout Subsection
 New Arabic Jokers [If you think it hard , avoid it]
@@ -4949,6 +5040,11 @@ Short Vowels
 All: .
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 
 \series bold
@@ -4962,7 +5058,7 @@ Suggestion System
 \begin_layout Enumerate
 
 \series bold
-Keyword Mapping: (This is suggestion)
+Keyword Mapping: 
 \end_layout
 
 \begin_layout Standard
@@ -7023,10 +7119,6 @@ Similarity between vowels
 \end_inset
 
 
-\end_layout
-
-\begin_layout Section
-Results enhancements [optionam]
 \end_layout
 
 \begin_layout Section
