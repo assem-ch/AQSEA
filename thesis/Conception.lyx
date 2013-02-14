@@ -3463,7 +3463,7 @@ In the example N°11of the table, the number 309 was separated with the two
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -4605,6 +4605,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename figures/Normalization Example.png
+	scale 60
 
 \end_inset
 
@@ -4707,6 +4708,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename figures/Filtring Stopwords Example.png
+	scale 60
 
 \end_inset
 
