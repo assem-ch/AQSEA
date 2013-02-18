@@ -98,7 +98,7 @@ status open
 
 %
 \backslash
-pagenumbering{arabic}
+pagenumbering{Arabic}
 \end_layout
 
 \begin_layout Plain Layout
@@ -210,7 +210,7 @@ Introduction
 After listing all possible search features as explained in the previous
  chapter, we will - at first - go through our previous work explaining all
  what we have already done.
- After that, we'll discuss many improvments that leads to a better search
+ After that, we'll discuss many improvements that leads to a better search
  experience.
  We've gathered those improvements under those points:
 \end_layout
@@ -851,7 +851,7 @@ glstwo{diacritical marks}{diacritical marks}
  phases in order to achieve a Quranic retrieving system that pass over these
  ambiguities.
  One of the main barriers that prevent the consideration of vocalization
- in Arabic is the lack of vocalized arabic texts among the total arabic
+ in Arabic is the lack of vocalized Arabic texts among the total Arabic
  content
 \begin_inset Note Note
 status collapsed
@@ -1148,7 +1148,7 @@ We've intended to use this method in the comparing between search query
 1.
  This will take effect only in searching and not all operations needed in
  indexing, statistics calculation, detecting suggestions, detecting synonyms,
- detecting diffrent vocalizations and any operation may appear later.
+ detecting different vocalizations and any operation may appear later.
 \end_layout
 
 \begin_layout Standard
@@ -1168,8 +1168,8 @@ Regular expression engine: General regular expressions has no classification
 \series bold
  
 \series default
-neither arabic letters nor arabic diacritics while it gives special classes
- for latin letters, digits, and symbols.
+neither Arabic letters nor Arabic diacritics while it gives special classes
+ for Latin letters, digits, and symbols.
  Introducing Arabic customized classes into the regex engine improves the
  partial vocalization comparing performance and makes it globally available.
  
@@ -1177,15 +1177,15 @@ neither arabic letters nor arabic diacritics while it gives special classes
 
 \begin_layout Itemize
 Basic string: in most programming languages, strings are objects and have
- thier own comparing method.
+ their own comparing method.
  Replacing that object method with our partial comparing operation takes
  effect on all declared instances and all derived objects.
 \end_layout
 
 \begin_layout Standard
-One problem of changing regex engine or basic string directly in-place is
- the possiblity of disconnecting from the main line of the programming language
- development.
+One problem of changing Regex engine or basic string directly in-place is
+ the possibility of disconnecting from the main line of the programming
+ language development.
  That should be token in consideration because if it happens the forked
  branch will be stuck.
  An alternative way is the prototyping instead of replacing in-place.
@@ -1226,7 +1226,7 @@ To improve better the vocalized search, we have to distinguish between original
 \lang arabic_arabi
 الْمُلْكِ
 \lang english
- (Kingdom, genetive), 
+ (Kingdom, genitive), 
 \lang arabic_arabi
 الْمُلْكَ
 \family roman
@@ -1297,8 +1297,8 @@ Different possible declensions of the word
 \end_layout
 
 \begin_layout Standard
-Ignoring vocalization has a direct influence on filtring stopwords because
- filtring out a word like the particle 
+Ignoring vocalization has a direct influence on filtering stop-words because
+ filtering out a word like the particle 
 \lang arabic_arabi
 مِنْ
 \family roman
@@ -1313,7 +1313,7 @@ Ignoring vocalization has a direct influence on filtring stopwords because
 \noun off
 \color none
 \lang english
- leads to filtring the relative noun 
+ leads to filtering the relative noun 
 \family default
 \series default
 \shape default
@@ -1366,9 +1366,9 @@ Ignoring vocalization has a direct influence on filtring stopwords because
 \color none
 \lang english
  .
- Using vocalized stopwords is very recommended to avoid ambiguities and
- to confine the filtered occurances.
- We'll mention how we gather the stopwords in 
+ Using vocalized stop-words is very recommended to avoid ambiguities and
+ to confine the filtered occurrences.
+ We'll mention how we gather the stop-words in 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:Filtring-Stop-words:"
@@ -1421,7 +1421,7 @@ Different types of the possible vocalizations of the word
 \begin_layout Standard
 Another problem emerges by ignoring the vocalization is the inaccuracy of
  statistics.
- For example the frequncy of the unvocalized word 
+ For example the frequency of the unvocalized word 
 \lang arabic_arabi
 الملك
 \lang english
@@ -1456,7 +1456,7 @@ Another problem emerges by ignoring the vocalization is the inaccuracy of
 \lang arabic_arabi
 الْمُلْكِ
 \lang english
- (Kingdom, genetive), 
+ (Kingdom, genitive), 
 \lang arabic_arabi
 الْمُلْكَ
 \family roman
@@ -1491,7 +1491,7 @@ Another problem emerges by ignoring the vocalization is the inaccuracy of
 \lang arabic_arabi
 الْمَلِكِ
 \lang english
- (King, genetive).
+ (King, genitive).
  The appropriate way to gather statistics is to use the vocalized words
  by ignoring the haraka of declension case (
 \lang arabic_arabi
@@ -1576,8 +1576,8 @@ It's insignificant to have n-grams that start with a vocalization mark.
 \end_layout
 
 \begin_layout Standard
-The right behaviour is to distinguish between letters and diacritics and
- change the gram to contain the letter and the diacritc after then change
+The right behavior is to distinguish between letters and diacritics and
+ change the gram to contain the letter and the diacritic after then change
  the similarity function to use partial vocalization comparing.
  This keeps a small number of n-grams and avoids insignificant ones.
  for details check 
@@ -1600,7 +1600,7 @@ Lift the ambiguities cause by ignoring vocalizations
 \end_layout
 
 \begin_layout Itemize
-Make searching results, suggestions, and statitics more accurate.
+Make searching results, suggestions, and statistics more accurate.
 \end_layout
 
 \begin_layout Itemize
@@ -1612,11 +1612,11 @@ Othmani script and text processing
 \end_layout
 
 \begin_layout Standard
-Quran is writtin principally on Othmani script which has many different
+Quran is written principally on Othmani script which has many different
  from the standard script used usually in different media.
  In the previous work, we adopted the quranic text written on standard script
- but due to the diffuculties caused by the its diffrences with Othmani script,
- we have to consider both scripts for indexing and search.
+ but due to the difficulties caused by the its differences with Othmani
+ script, we have to consider both scripts for indexing and search.
  Among those difficulties, we mention: 
 \end_layout
 
@@ -1758,7 +1758,7 @@ in (
 \end_inset
 
 .
- The retrieving sytem can't distinguish between the two occurences basing
+ The retrieving system can't distinguish between the two occurrences basing
  only on the standard script.
  
 \begin_inset Newline newline
@@ -1865,8 +1865,8 @@ reference "sub:Knowledge-of-Orthongraphy"
 \begin_layout Enumerate
 Matching the same Word-By-Word structure of some Quranic linguistic resources.
  Using the Quranic word as the basic unit for linguistic resources lacks
- for precision in some cases such in the case of two occurences of word
- that have diffrent interpretation.
+ for precision in some cases such in the case of two occurrences of word
+ that have different interpretation.
  To resolve that, many Quranic linguistic resources (such as Quranic Arabic
  Corpus, see 
 \begin_inset CommandInset ref
@@ -1875,7 +1875,7 @@ reference "sub:Qur’anic-Arabic-Corpus"
 
 \end_inset
 
-) have adopted the word occurence as a basic unit a.k.a Word-By-Word Quran
+) have adopted the word occurrence as a basic unit a.k.a Word-By-Word Quran
  browsing.
  As a result for this, the resources such those have to use the words as
  they occurred in Quran (consequently in Othmani script) because the separation
@@ -1930,7 +1930,7 @@ reference "sub:Qur’anic-Arabic-Corpus"
 \uwave default
 \noun default
 \color inherit
-in Yusuf 84 which is separted to two words 
+in Yusuf 84 which is separated to two words 
 \lang arabic_arabi
 يَا
 \lang english
@@ -1979,7 +1979,7 @@ Merging Words in Uthmani Script
 \begin_layout Standard
 As we've said, to resolve those difficulties we consider Othmani text also
  for text processing along with standard text.
- In addition, we propose many improvments on the text processing phases
+ In addition, we propose many improvements on the text processing phases
  to achieve many of search features that we have proposed in the previous
  chapter (see 
 \begin_inset CommandInset ref
@@ -2031,7 +2031,7 @@ General Schema of Uthmani and Standard text processing.
 \end_layout
 
 \begin_layout Standard
-We list in the following our improvments per phase:
+We list in the following our improvements per phase:
 \end_layout
 
 \begin_layout Subsection
@@ -2052,7 +2052,7 @@ Generally this phase is for processing the search query because it's not
 
 \begin_layout Standard
 We don't include this phase into normalization phase ( after tokenization
- ) before those substitions are essential for a perfect tokenization.
+ ) before those substitutions are essential for a perfect tokenization.
  Especially that the tokenization phase is not a simple space-based separation
  and configured to use a word-by-word corpus.
  
@@ -2084,7 +2084,7 @@ reference "enu:Romanization:"
  There are many romanization systems.
  To provide the possibility to use more then one, we should specify a guessing
  policy to detect what system is used in a given string.
- There are many critiria that could be used in guessing, we list some of
+ There are many criteria that could be used in guessing, we list some of
  them in the following:
 \end_layout
 
@@ -2093,9 +2093,9 @@ reference "enu:Romanization:"
 \series bold
 Nature of used characters: 
 \series default
-each romanization system uses a set of letters, numbers, or symbols to reperesen
-t the Arabic vowels and letters (including hamza forms).
- The diffrences between those sets are remarkable.
+each romanization system uses a set of letters, numbers, or symbols to represent
+ the Arabic vowels and letters (including hamza forms).
+ The differences between those sets are remarkable.
  For example, ISO233 norm uses usually some dotted letters such as ẗ for
  
 \lang arabic_arabi
@@ -2277,7 +2277,7 @@ For example, guessing the romanized word xalyfap leads surely to the system
 \begin_layout Enumerate
 
 \series bold
-Word existance in Quran: 
+Word existence in Quran: 
 \series default
 by checking the existence in the Quran of interpreted words arising from
  a romanized word, we can detect potential ones.
@@ -3720,7 +3720,7 @@ Tokenization of the word
 Tokenization is an important phase since it's the basis for the following
  phases.
  Thus, it should have a very high precision while actually there is a lack
- for accurate arabic analyzer.
+ for accurate Arabic analyzer.
 \end_layout
 
 \begin_layout Itemize
@@ -3738,7 +3738,7 @@ A lot of clitics and pronouns such as
 \lang arabic_arabi
 فَ
 \lang english
- should be considered as stop words because they will have a high frequece
+ should be considered as stop words because they will have a high frequency
  and have a less need of retrieving.
 \end_layout
 
@@ -3762,7 +3762,7 @@ key "Attia_arabictokenization"
  He described a rule-based tokenizer that handles tokenization as a full-rounded
  process with two stages: a preprocessing stage (white space normalizer),
  and a post-processing stage (token filter).
- He described the implemntation of 3 tokenization models:
+ He described the implementation of 3 tokenization models:
 \end_layout
 
 \begin_layout Enumerate
@@ -3939,7 +3939,7 @@ Tokenization Guesser (tokenization is separated from morphological analysis)
 \noun off
 \color none
 \lang english
- whereas the tagging of the clitecs is 
+ whereas the tagging of the clitics is 
 \family default
 \series default
 \shape default
@@ -3969,7 +3969,7 @@ Tokenization Guesser (tokenization is separated from morphological analysis)
 \begin_layout Enumerate
 
 \series bold
-Tokenization Dependent on the Morphological Analyser: 
+Tokenization Dependent on the Morphological Analyzer: 
 \series default
 here the word stem is not guessed, but taken as a list of actual words.
  A possible word in the tokenizer in this model is any word found in the
@@ -4062,7 +4062,7 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Subtokens separation schema
+Sub-tokens separation schema
 \end_layout
 
 \end_inset
@@ -4166,11 +4166,11 @@ When we tokenize the previous two Ayahs, we lose the function of the first
 \lang arabic_arabi
 و
 \lang english
-) as in the first ayah is for oath and in the second aya is for coordination.
- To recover such kind of loss, we introduce some tags tha has the values
+) as in the first ayah is for oath and in the second ayah is for coordination.
+ To recover such kind of loss, we introduce some tags that has the values
  of important information.
  We add tags in this phase exactly (tokenization) because it's the only
- phase that read the word in it's phrase semantic and syntaxic context.
+ phase that read the word in it's phrase semantic and syntactic context.
  By consequence, it knows the part-of-speech information.
  Another reason is that we need them in the next phases: Normalization and
  Stemming.
@@ -4192,7 +4192,7 @@ Word declension
 \lang arabic_arabi
 حركات الإعراب
 \lang english
-) to unite different occurences of a word.
+) to unite different occurrences of a word.
 \end_layout
 
 \begin_layout Enumerate
@@ -4314,7 +4314,7 @@ Normalization:
 
 \begin_layout Standard
 Since we are accepting the Othmani script beside the standard script,we
- have to specify the normalisation for the both.
+ have to specify the normalization for the both.
  We had to strip all recitation marks such as the Waqf symbol 
 \begin_inset ERT
 status open
@@ -4360,7 +4360,7 @@ reference "sub:Fragmentation-into-Stops"
 After stripping all extra symbols, we should either normalize othmani text
  into standard text.
  This operation is necessary to unify the processing for the next phases.
- There is no benefits to continue in a separarted lines.
+ There is no benefits to continue in a separated lines.
  The converging into standard script makes the stemming clearer and pass
  over some special uthmani-written words.
  For example, the word -example-.
@@ -4373,7 +4373,7 @@ To achieve that, we need a complete mapping of Quranic words between the
  To minimize the size of mapping, we can exclude the words that are written
  in the same manner.
  The mapping should use the uthmani word as a unit not the standard word.
- The reason is that some words are mapped differently from an occurence
+ The reason is that some words are mapped differently from an occurrence
  to another.
  An example for that, the word 
 \lang arabic_arabi
@@ -4536,7 +4536,7 @@ Declension case (
 \lang arabic_arabi
 حالة الإعراب
 \lang english
-): Nominative, Accusative, and Genetive.
+): Nominative, Accusative, and Genitive.
  
 \end_layout
 
@@ -4634,7 +4634,7 @@ Example of normalization
 \end_layout
 
 \begin_layout Subsection
-Filtering stopwords:
+Filtering stop-words:
 \begin_inset CommandInset label
 LatexCommand label
 name "sub:Filtring-Stop-words:"
@@ -4645,7 +4645,7 @@ name "sub:Filtring-Stop-words:"
 \end_layout
 
 \begin_layout Standard
-In the previous work, we discussed the feasability of filtring stopwords
+In the previous work, we discussed the feasibility of filtering stop-words
  for search in Quran (see 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -4654,14 +4654,14 @@ reference "For-stop-words-filtering,"
 \end_inset
 
 ).
- We have proposed to select the stopwords from the list of the most frequent
+ We have proposed to select the stop-words from the list of the most frequent
  words in Qur'an, the particles and the pronouns taking in consideration
  their diacritical marks.
 \end_layout
 
 \begin_layout Standard
 We made an improvement in the tokenization that affect our previous criteria
- for choosing the list of stopwords.
+ for choosing the list of stop-words.
  This improvement is the separation of pronouns and clitics from the lemma
  of the word.
  Clitics such as 
@@ -4691,8 +4691,8 @@ We made an improvement in the tokenization that affect our previous criteria
 \uwave default
 \noun default
 \color inherit
-(fa) generally has a high frequency and hasn't a self independant meaning.
- Therefore, clitics are potential stopwords, should be ignored for a better
+(fa) generally has a high frequency and hasn't a self independent meaning.
+ Therefore, clitics are potential stop-words, should be ignored for a better
  search experience.
  The ignoring should be optional to let the possibility for linguists to
  look for these keywords.
@@ -4719,7 +4719,7 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Example of stopword filtering 
+Example of stop-word filtering 
 \end_layout
 
 \end_inset
@@ -4749,7 +4749,7 @@ reference "sub:Tokenization:"
 
 ).
  In Stemming we either bring it back into stem or root origin.
- The roots in arabic are the basic unit.
+ The roots in Arabic are the basic unit.
  There are about 10000 roots
 \begin_inset Foot
 status collapsed
@@ -4798,7 +4798,7 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Examples de lemmatization
+Examples of lemmatization 
 \end_layout
 
 \end_inset
@@ -4825,7 +4825,7 @@ Intro: we first use ayah as a unit, now we use the quranic word as unit,
 \end_layout
 
 \begin_layout Standard
-we index most word properties, and pass it by the same analysers but by
+we index most word properties, and pass it by the same analyzers but by
  preserving a raw field for original word
 \end_layout
 
@@ -4835,7 +4835,7 @@ why: because we need it for the two steps search.
 
 \begin_layout Standard
 what is 2stepsserch: it a method to retrieve sets of quranic words classified
- by one or many of thiers properties : lemma, gender, position, ....
+ by one or many of theirs properties : lemma, gender, position, ....
 \end_layout
 
 \begin_layout Standard
@@ -4847,7 +4847,7 @@ benefits to generate special word classes.
 \end_layout
 
 \begin_layout Standard
-We use it to improve query parser: modularity, extensibiltiy and combination
+We use it to improve query parser: modularity, extensibility and combination
 \end_layout
 
 \begin_layout Standard
@@ -4855,7 +4855,7 @@ We use it to improve query parser: modularity, extensibiltiy and combination
 \end_layout
 
 \begin_layout Standard
-An experienced challenge with the Query parser is the mixing (the combinaition)
+An experienced challenge with the Query parser is the mixing (the combination)
  of the different operations 
 \end_layout
 
@@ -4877,7 +4877,7 @@ we proposition those new operations (some are upgraded from previous work)
 \end_layout
 
 \begin_layout Standard
-Case, Objective, behaviour, status, needed resources, figure
+Case, Objective, behavior, status, needed resources, figure
 \end_layout
 
 \begin_layout Standard
@@ -4905,7 +4905,7 @@ Multi-level Derivations
 \end_layout
 
 \begin_layout Standard
-Suntax: >>> Malak
+Syntax: >>> Malak
 \end_layout
 
 \begin_layout Standard
@@ -5079,7 +5079,7 @@ Proposal :
 \end_layout
 
 \begin_layout Itemize
-use different ngram fragmentation strategie :
+use different ngram fragmentation strategy :
 \end_layout
 
 \begin_deeper
@@ -7266,7 +7266,7 @@ Until now, it has been difficult to say that there are parsers for the Arabic
 \end_layout
 
 \begin_layout Standard
-Our approche is to make a progressive parser since it proceeded by treating
+Our approach is to make a progressive parser since it proceeded by treating
  a sentence into a number of stages equal to the number of its words.
  At every step, the parser affects the target word with the most likely
  patterns that represent it in the context where it is put.
