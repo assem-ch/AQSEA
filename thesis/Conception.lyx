@@ -286,7 +286,7 @@ To attend our objective, we had based on the general behavior of retrieval
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -1609,6 +1609,13 @@ Refine the meanings detection ( a first step in the semantic approach )
 
 \begin_layout Section
 Othmani script and text processing
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Text-processing"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -4812,80 +4819,228 @@ Examples of lemmatization
 \end_layout
 
 \begin_layout Section
-Quranic Words Search
+Quranic Word Search
 \end_layout
 
 \begin_layout Standard
-----
+Previously, we have considered the ayah as the search unit.
+ That means it was the unit of our document index or we can call it 
+\emph on
+the document
+\emph default
+.
+ The ayah being the document is yet the perfect choice.
+ However, to attend many linguistic features (mentioned in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Proposals"
+
+\end_inset
+
+) such as: 
+\end_layout
+
+\begin_layout Itemize
+Suggestion systems => Different vocalizations;
+\end_layout
+
+\begin_layout Itemize
+Linguistic Aspects => Multi-level derivation;
+\end_layout
+
+\begin_layout Itemize
+Linguistic Aspects =>
+\series bold
+ 
+\series default
+Specific-derivations
+\end_layout
+
+\begin_layout Itemize
+Linguistic Aspects =>
+\series bold
+ 
+\series default
+Word properties embedded query
+\end_layout
+
+\begin_layout Itemize
+Linguistic Aspects => Word linguistic annotations
 \end_layout
 
 \begin_layout Standard
-Intro: we first use ayah as a unit, now we use the quranic word as unit,
+We need to consider a different search unit: the Quranic word (
+\lang arabic_arabi
+اللفظ القرآني
+\lang english
+).
+ The purpose of this is to obtain a quick efficient stable method to retrieve
+ specific Quranic words.
+ To achieve that we need a corpus of Quranic words enriched with linguistic
+ properties of each word.
+ This corpus could be based on either the word form or the word occurrence.
+ The second choice is the most accurate because the word can change their
+ properties moving from an occurrence to another.
+ There are about 17 thousands of words with a total about 76 thousands of
+ occurrences
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+We calculated those statistics based on the Quran copy downloaded from Tanzil.org
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+We propose those information to be included in the schema of the word document
+ index:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Identifiers
+\series default
+: a global identifier, a secondary identifier based on the order in the
+ ayah added to ayah identifier and surah identifier;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Different forms
+\series default
+: Uthmani vocalized word (the main form), Standard vocalized word, Standard
+ unvocalized word;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Transliterations: 
+\series default
+ISO233, Buckwalter, Arabtex;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Translations: 
+\series default
+English, other languages;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Different levels of stemming
+\series default
+: Lemma, Stem, Root;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Other properties:
+\series default
+ Part Of Speech, type, state, case, mood, voice, number, gender, person.
+\end_layout
+
+\begin_layout Standard
+Then we make the inverted indexes based on the document indexes as explained
+ in the following figure:
+\end_layout
+
+\begin_layout Standard
+[+figure of indexing the word document index into inverted indexes]
+\end_layout
+
+\begin_layout Standard
+We should pass the word fields by the same text analyzing phases, we described
+ in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Text-processing"
+
+\end_inset
+
+.
+ We should also preserve a duplicate field for the original word without
+ text analyzing in order to satisfy exact search needs.
  
 \end_layout
 
 \begin_layout Standard
-we index most word properties, and pass it by the same analyzers but by
- preserving a raw field for original word
+We use the word search to improve the ayah search by introducing a 2-steps
+ search strategy.
+ First step, retrieving the best keywords set based on the user query by
+ searching in the word-as-a-unit index.
+ Second step, retrieving the corresponding ayahs using the keywords set
+ resulted from the first step.
+ we explaining the 2-steps search strategy on this figure: 
 \end_layout
 
 \begin_layout Standard
-why: because we need it for the two steps search.
+[+figure: How 2 steps strategy work , as search do in previous work]
 \end_layout
 
 \begin_layout Standard
-what is 2stepsserch: it a method to retrieve sets of quranic words classified
- by one or many of theirs properties : lemma, gender, position, ....
+The 2-steps search must also perform a second operation which is to inquire
+ a word ontology to retrieve semantically related words.
+ Semantically related words includes 
 \end_layout
 
 \begin_layout Standard
-benefits to generate special word classes.
+[+figure: Idols list example: Al-Uzza (العزى) Allat (اللات) Baal (بعل) Manat
+ (مناة) Nasr (نسر) Suwa (سواع) Wadd (واد) Yaghuth (يغوث) Yauq (يعوق) ]
 \end_layout
 
 \begin_layout Standard
-+figures: classes
+As a conclusion, the 2-steps search strategy helps in retrieving Quran words
+ classified on their origins, properties, translations, transliterations,
+ semantic relations: Synonymy, Antonymy, Hypernymy, Hyponymy, Meronymy,
+ Holonymy, Troponymy.
+ The classification goes flexibly, and fast by using inverted indexes and
+ ontologies.
+ In the next example we 
 \end_layout
 
 \begin_layout Standard
-We use it to improve query parser: modularity, extensibility and combination
+[+figures: Classification Example يقول --> تصريف في المضارع -> تصريف في
+ جميع الأزمنة -> Same root -> Synonyms ]
 \end_layout
 
 \begin_layout Standard
----
-\end_layout
-
-\begin_layout Standard
-An experienced challenge with the Query parser is the mixing (the combination)
- of the different operations 
-\end_layout
-
-\begin_layout Standard
-Extensible and Combination ability of different operations
-\end_layout
-
-\begin_layout Standard
-a high benefit to add search features one by one, without ruining all the
- parsing system
-\end_layout
-
-\begin_layout Standard
-we proposition those new operations (some are upgraded from previous work)
-\end_layout
-
-\begin_layout Standard
-========
-\end_layout
-
-\begin_layout Standard
-Case, Objective, behavior, status, needed resources, figure
-\end_layout
-
-\begin_layout Standard
-========
+Building on the 2-steps strategy we propose those new operations to be implement
+ed in the query parser:
 \end_layout
 
 \begin_layout Subsection
 Related Words
+\end_layout
+
+\begin_layout Standard
+Based on the synonyms operation in the previous work (see LABEL),
+\end_layout
+
+\begin_layout Standard
+--
+\end_layout
+
+\begin_layout Standard
+========
+\end_layout
+
+\begin_layout Standard
+Objective, behavior, status, needed resources, figure
+\end_layout
+
+\begin_layout Standard
+========
 \end_layout
 
 \begin_layout Standard
@@ -4905,6 +5060,22 @@ Multi-level Derivations
 \end_layout
 
 \begin_layout Standard
+--
+\end_layout
+
+\begin_layout Standard
+========
+\end_layout
+
+\begin_layout Standard
+Objective, behavior, status, needed resources, figure
+\end_layout
+
+\begin_layout Standard
+========
+\end_layout
+
+\begin_layout Standard
 Syntax: >>> Malak
 \end_layout
 
@@ -4914,6 +5085,22 @@ Syntax: >>> Malak
 
 \begin_layout Subsection
 Special Derivations
+\end_layout
+
+\begin_layout Standard
+--
+\end_layout
+
+\begin_layout Standard
+========
+\end_layout
+
+\begin_layout Standard
+Objective, behavior, status, needed resources, figure
+\end_layout
+
+\begin_layout Standard
+========
 \end_layout
 
 \begin_layout Standard
@@ -4930,6 +5117,22 @@ Generate all possibilities Intersect existing words
 
 \begin_layout Subsection
 Fuzzy Search
+\end_layout
+
+\begin_layout Standard
+--
+\end_layout
+
+\begin_layout Standard
+========
+\end_layout
+
+\begin_layout Standard
+Objective, behavior, status, needed resources, figure
+\end_layout
+
+\begin_layout Standard
+========
 \end_layout
 
 \begin_layout Standard
@@ -4957,20 +5160,24 @@ Normalizing the similar letters ha' and ta' merbouta, alef 6awila et Alif
 +figure: class example
 \end_layout
 
-\begin_layout Subsection
-Word Embedded Search 
-\end_layout
-
-\begin_layout Standard
-( it's a Two-Steps Search)
-\end_layout
-
-\begin_layout Standard
-+figure: class example
-\end_layout
-
 \begin_layout Subsubsection
 Word properties search
+\end_layout
+
+\begin_layout Standard
+--
+\end_layout
+
+\begin_layout Standard
+========
+\end_layout
+
+\begin_layout Standard
+Objective, behavior, status, needed resources, figure
+\end_layout
+
+\begin_layout Standard
+========
 \end_layout
 
 \begin_layout Standard
@@ -4991,7 +5198,23 @@ the difference
 \end_layout
 
 \begin_layout Subsubsection
-Word Translations search 
+Word Translation search 
+\end_layout
+
+\begin_layout Standard
+--
+\end_layout
+
+\begin_layout Standard
+========
+\end_layout
+
+\begin_layout Standard
+Objective, behavior, status, needed resources, figure
+\end_layout
+
+\begin_layout Standard
+========
 \end_layout
 
 \begin_layout Standard

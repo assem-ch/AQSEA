@@ -2356,13 +2356,17 @@ Egg API, Source Tarball, Binary Tarball, NSIS Windows Installer
 
 \end_deeper
 \begin_layout Subsection
+Multiple search units
+\end_layout
+
+\begin_layout Subsection
 Coding Standarization
 \end_layout
 
 \begin_layout Enumerate
 Fixing a huge amount of pylint code analysis warnings [score of current
  code, more stats] and improving the quality of code following also the
- conventions explaioned in $Readability-counts
+ conventions explained in $Readability-counts
 \end_layout
 
 \begin_layout Enumerate
@@ -2378,7 +2382,7 @@ reference "sec:Code-Architecture"
 \end_layout
 
 \begin_layout Subsection
-Documention covering
+Documentation covering
 \end_layout
 
 \begin_layout Enumerate
@@ -2442,7 +2446,7 @@ Open Issues
 \end_layout
 
 \begin_layout Itemize
-Milestone #1
+Milestone #1 enrishing the resources
 \end_layout
 
 \begin_deeper
@@ -2463,9 +2467,25 @@ Propose a standard format for new linguistic and quranic resources
 \end_layout
 
 \begin_layout Itemize
-Modular Query Parser
+Modular Query Parser:modularity, extensibility and combination
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+An experienced challenge with the Query parser is the mixing (the combination)
+ of the different operations 
+\end_layout
+
+\begin_layout Itemize
+Extensible and Combination ability of different operations
+\end_layout
+
+\begin_layout Itemize
+a high benefit to add search features one by one, without ruining all the
+ parsing system
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 Study the restrictions creteria of the API json output service
 \end_layout
@@ -2488,7 +2508,11 @@ Complete the features implementation:
 
 \begin_deeper
 \begin_layout Itemize
-1 (list from features chapter )
+1 2-steps search!
+\end_layout
+
+\begin_layout Itemize
+(list from features chapter )
 \end_layout
 
 \begin_layout Itemize
