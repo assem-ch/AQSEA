@@ -529,38 +529,48 @@ key "ASSEM_MEROUANE"
 
 \end_inset
 
-...
- are you sure! yes, indeed.
+.
+ The code base contained an Application Programming Interface that performs
+ the basic search operation.
+ It offers the results in a raw HTML format, could be used only in Python.
+ To be used in another programming language, it requires to write a complicated
+ wrapper.
+ There was a basic resource manager that index the Quran information stored
+ in an intermediate database.
+ The importing of new resources into this intermediate database was a missing
+ piece.
+ Two interfaces was developed for the API:
 \end_layout
 
+\begin_layout Enumerate
+A  Gui desktop interface, demonstrate perfectly the API features .
+ It is urgently coded in Python and Qt.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+[french] [screenshot]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+A basic CGI-Html interface, demonstrates in a simpler way the API features.
+ Also urgently coded and it did not respect the Model View Control.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+[screen shot]
+\end_layout
+
+\end_deeper
 \begin_layout Standard
 -- Changes from THE PFE PDF
 \end_layout
 
-\begin_layout Enumerate
-API that offer the basic operations (Search, Suggestion) and minimal information
-s in raw html input (ayah results), Could be Used only in python or in other
- languages by using a wrapping intermediate.
-\end_layout
-
-\begin_layout Enumerate
-only offer a TXT and an HTML output system
-\end_layout
-
-\begin_layout Enumerate
-A very stricted resource manger , can only tranfer the data from the intermediat
-e database into the document words.
- the importing of new resources into the intermediate database is a حلقة
- مفقودة
-\end_layout
-
-\begin_layout Enumerate
-Creating a basic CGI Html interface , lack of independecy between Model,
- View, Control [screen shot]
-\end_layout
-
-\begin_layout Enumerate
-Qt urgently-coded interface [french] [screenshot]
+\begin_layout Standard
+----
 \end_layout
 
 \begin_layout Enumerate
@@ -635,9 +645,48 @@ Derivations light (using lemma): to search all the words having the same
 
 \end_deeper
 \begin_layout Section
-Quranic & Arabic Ressources 
+Quranic & Arabic Resources 
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Qur'anic-and-Linguistic"
+
+\end_inset
+
+
 \end_layout
 
+\begin_layout Standard
+Flexible in adding new resources, 
+\end_layout
+
+\begin_layout Standard
+Collaborative<wiki indexes> to cover the uncompleted resources,
+\end_layout
+
+\begin_layout Standard
+a User A search about Q but in results he find some missed informations,
+ he want to fill the gap! so he should get authenticated to have the permission
+ for modifying.
+ the added information should pass by a verification phase before committing
+ it and pushing it to main index.
+ This may happen many times and each time may the inverted indexes should
+ be rebuilded!
+\end_layout
+
+\begin_layout Standard
+Figure: the Case VIDE
+\end_layout
+
+\begin_layout Enumerate
+Introducing WORD index 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Figure: Visio Figure of word index
+\end_layout
+
+\end_deeper
 \begin_layout Standard
 Les indexes
 \end_layout
@@ -769,7 +818,7 @@ Qutrub
 \end_layout
 
 \begin_layout Subsection
-Lack fo Quranic resources
+Lack of Quranic resources
 \end_layout
 
 \begin_layout Standard
@@ -1970,7 +2019,7 @@ Opening the source,Starting with GPL then AGPL because??
 \end_layout
 
 \begin_layout Standard
-Those are the main milestones we go through:
+Those are the main milestones we went through:
 \end_layout
 
 \begin_layout Subsection
@@ -2360,7 +2409,7 @@ Multiple search units
 \end_layout
 
 \begin_layout Subsection
-Coding Standarization
+Coding Standardization
 \end_layout
 
 \begin_layout Enumerate
@@ -2471,16 +2520,16 @@ Modular Query Parser:modularity, extensibility and combination
 \end_layout
 
 \begin_deeper
-\begin_layout Itemize
+\begin_layout Standard
 An experienced challenge with the Query parser is the mixing (the combination)
  of the different operations 
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
 Extensible and Combination ability of different operations
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
 a high benefit to add search features one by one, without ruining all the
  parsing system
 \end_layout
