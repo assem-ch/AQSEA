@@ -5463,7 +5463,7 @@ A long vowel is quite similar to its corresponding short vowel.
 
 \begin_deeper
 \begin_layout Itemize
-[remove if you dont find example]
+[remove if you don't find example]
 \end_layout
 
 \end_deeper
@@ -5890,7 +5890,11 @@ Suggestion System
 \end_layout
 
 \begin_layout Standard
-+ list the other suggestions
+[Copy from the PFE]
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \begin_layout Standard
@@ -5902,7 +5906,7 @@ How to suggestion!
 \end_layout
 
 \begin_layout Standard
-[importance, what needs, ]
+[importance, what needs, how to achieve that]
 \end_layout
 
 \begin_layout Standard
@@ -5912,37 +5916,38 @@ How to suggestion!
 \begin_layout Enumerate
 
 \series bold
-Vocalized spell correction
+Vocalized spell correction [either ngrams, Lienshtein, or spell checker]
 \end_layout
 
 \begin_layout Enumerate
 
 \series bold
-Semantically related keywords (Ontology-Based)
+Semantically related keywords (Ontology-Based) [ Ontology of semantically
+ related words]
 \end_layout
 
 \begin_layout Enumerate
 
 \series bold
-Different vocalizations
+Different vocalizations [ a mapping unvocalized-vocalized]
 \end_layout
 
 \begin_layout Enumerate
 
 \series bold
-Collocated words
+Collocated words 
 \end_layout
 
 \begin_layout Enumerate
 
 \series bold
-Different significations
+Different significations [ !! ]
 \end_layout
 
 \begin_layout Enumerate
 
 \series bold
-Keyword Mapping
+Keyword Mapping [ a mapper based on different Arabic-Latin Keyboards]
 \end_layout
 
 \begin_layout Section
