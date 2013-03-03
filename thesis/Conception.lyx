@@ -5019,8 +5019,41 @@ The 2-steps search must also perform a second operation which is to inquire
 \end_layout
 
 \begin_layout Standard
-[+figure: Idols list example: Al-Uzza (العزى) Allat (اللات) Baal (بعل) Manat
- (مناة) Nasr (نسر) Suwa (سواع) Wadd (واد) Yaghuth (يغوث) Yauq (يعوق) ]
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Idols example - ontologies.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Semantically related words : Idols
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -5035,6 +5068,34 @@ As a conclusion, the 2-steps search strategy helps in retrieving Quran words
 \begin_layout Standard
 [+figures: Classification Example يقول --> تصريف في المضارع -> تصريف في
  جميع الأزمنة -> Same root -> Synonyms ]
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Possible Classifications
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
