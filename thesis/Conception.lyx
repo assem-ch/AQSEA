@@ -224,7 +224,7 @@ Text processing based on Uthmani script;
 \end_layout
 
 \begin_layout Itemize
-A modular and extensible query parser;
+Quranic Word Search;
 \end_layout
 
 \begin_layout Itemize
@@ -233,10 +233,6 @@ An accurate statistics gathering system;
 
 \begin_layout Itemize
 More adequate suggestion system;
-\end_layout
-
-\begin_layout Itemize
-Ways to make a standard Quranic and Linguistic resources manager;
 \end_layout
 
 \begin_layout Itemize
@@ -4869,15 +4865,15 @@ reference "sec:Proposals"
 \end_layout
 
 \begin_layout Itemize
-Suggestion systems => Different vocalizations;
+Suggestion systems :: Different vocalizations;
 \end_layout
 
 \begin_layout Itemize
-Linguistic Aspects => Multi-level derivation;
+Linguistic Aspects :: Multi-level derivation;
 \end_layout
 
 \begin_layout Itemize
-Linguistic Aspects =>
+Linguistic Aspects ::
 \series bold
  
 \series default
@@ -4885,7 +4881,7 @@ Specific-derivations
 \end_layout
 
 \begin_layout Itemize
-Linguistic Aspects =>
+Linguistic Aspects ::
 \series bold
  
 \series default
@@ -4893,7 +4889,7 @@ Word properties embedded query
 \end_layout
 
 \begin_layout Itemize
-Linguistic Aspects => Word linguistic annotations
+Linguistic Aspects :: Word linguistic annotations
 \end_layout
 
 \begin_layout Standard
@@ -5318,11 +5314,11 @@ Genders and Plurals of a noun: Masculine singular , Feminine singular ,
 \end_layout
 
 \begin_layout Itemize
-مصادر of a root: أنواع المصادر
+Deverbals of a root: أنواع المصادر
 \end_layout
 
 \begin_layout Itemize
-صفات of a root: 
+Adjectives of a root: 
 \end_layout
 
 \begin_layout Itemize
@@ -5890,15 +5886,43 @@ Suggestion System
 \end_layout
 
 \begin_layout Standard
-[Copy from the PFE]
+[translate] La méthode de fonctionnement des modules de suggestion est généralem
+ent : pendre les mots-clés résultant du parseur et non pas directement de
+ la requête brute entrée par l'utilisateur car certains mots-clés sont traités
+ et leur forme change et aussi, de nouveaux mots sont ajoutés, comme dans
+ le cas des synonymes et antonymes.
+ Le module, grâce à une certaine politique, trouve les mots qui ont une
+ relation particulière avec les mots-clés.
+ 
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+how 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
 \begin_layout Standard
-How to suggestion!
+We explain many possibilities of suggestions and the way to achieve each
+ one.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -5906,7 +5930,7 @@ How to suggestion!
 \end_layout
 
 \begin_layout Standard
-[importance, what needs, how to achieve that]
+[definition, what needs, how to achieve that]
 \end_layout
 
 \begin_layout Standard
@@ -5916,20 +5940,25 @@ How to suggestion!
 \begin_layout Enumerate
 
 \series bold
-Vocalized spell correction [either ngrams, Lienshtein, or spell checker]
+Spell correction 
+\series default
+[either n-grams, Liechtenstein, or spell checker]
 \end_layout
 
 \begin_layout Enumerate
 
 \series bold
-Semantically related keywords (Ontology-Based) [ Ontology of semantically
- related words]
+Semantically related keywords
+\series default
+ (Ontology-Based) [ Ontology of semantically related words]
 \end_layout
 
 \begin_layout Enumerate
 
 \series bold
-Different vocalizations [ a mapping unvocalized-vocalized]
+Different vocalizations 
+\series default
+[ a mapping unvocalized-vocalized]
 \end_layout
 
 \begin_layout Enumerate
@@ -6290,12 +6319,32 @@ Conclusion
 
 \begin_layout Standard
 We based on our previous work, we proposed fixes for what already done ,
- and new improvements .
- we talked about ...text processing ...
+ and new improvements.
+ The improvements are about getting to a full vocalized search engine customized
+ to offer most of the features mentioned in the previous chapter.
+ We proposed a customized text processing to يناسب the properties of Quranic
+ text.
+ We introduce searching using the word as a unit in order to 
+\end_layout
+
+\begin_layout Itemize
+Quranic Word Search;
+\end_layout
+
+\begin_layout Itemize
+An accurate statistics gathering system;
+\end_layout
+
+\begin_layout Itemize
+More adequate suggestion system;
+\end_layout
+
+\begin_layout Itemize
+The road-map toward semantic search.
 \end_layout
 
 \begin_layout Standard
-in the next chapter,we'll talk about implementation details.
+In the next chapter,we'll talk about implementation details.
 \end_layout
 
 \end_body
