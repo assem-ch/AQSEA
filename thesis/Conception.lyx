@@ -1604,14 +1604,7 @@ The right behavior is to distinguish between letters and diacritics and
  change the gram to contain the letter and the diacritic after then change
  the similarity function to use partial vocalization comparing.
  This keeps a small number of n-grams and avoids insignificant ones.
- for details check 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sec:1.7.2-Spelling-suggestion"
-
-\end_inset
-
-.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -2024,14 +2017,10 @@ reference "sec:Proposals"
 \end_layout
 
 \begin_layout Standard
-[Uthmani vs Standard] text
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -3516,10 +3505,6 @@ Example of Substitution
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -5022,7 +5007,7 @@ The 2-steps search must also perform a second operation which is to inquire
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -5039,15 +5024,11 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Semantically related words : Idols
+Semantically related words : Idols in Quran
 \end_layout
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -5062,12 +5043,10 @@ As a conclusion, the 2-steps search strategy helps in retrieving Quran words
  semantic relations.
  The classification goes flexibly, and fast by using inverted indexes and
  ontologies.
- In the next example we 
+ In the next table we explain some potential useful classifications: 
 \end_layout
 
 \begin_layout Standard
-[+figures: Classification Example يقول --> تصريف في المضارع -> تصريف في
- جميع الأزمنة -> Same root -> Synonyms ]
 \begin_inset Float table
 wide false
 sideways false
@@ -5075,8 +5054,9 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Tabular
-<lyxtabular version="3" rows="4" columns="3">
+<lyxtabular version="3" rows="4" columns="4">
 <features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
@@ -5085,7 +5065,7 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
-keyword
+Keyword
 \end_layout
 
 \end_inset
@@ -5094,7 +5074,16 @@ keyword
 \begin_inset Text
 
 \begin_layout Plain Layout
+Synonyms
+\end_layout
 
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Conjugation in present
 \end_layout
 
 \end_inset
@@ -5114,7 +5103,16 @@ keyword
 \begin_inset Text
 
 \begin_layout Plain Layout
+يقول
+\end_layout
 
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+يقول
 \end_layout
 
 \end_inset
@@ -5152,6 +5150,15 @@ keyword
 \begin_inset Text
 
 \begin_layout Plain Layout
+يشهد
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -5168,6 +5175,15 @@ keyword
 </cell>
 </row>
 <row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -5212,10 +5228,6 @@ Possible Classifications
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -5501,7 +5513,9 @@ Genders and Plurals of a noun: Masculine singular , Feminine singular ,
 \end_layout
 
 \begin_layout Itemize
-Deverbals of a root: أنواع المصادر
+Deverbals s of a root: 
+\lang arabic_arabi
+أنواع المصادر
 \end_layout
 
 \begin_layout Itemize
@@ -5594,7 +5608,11 @@ The similarity between the different forms of each letter: Hamza, Ta', and
 
 \begin_deeper
 \begin_layout Itemize
-[Example مءصدة]
+[Example 
+\lang arabic_arabi
+مءصدة
+\lang english
+]
 \end_layout
 
 \end_deeper
@@ -5605,7 +5623,11 @@ An unvocalized letter is so similar to a vocalized one whatever the vowel
 
 \begin_deeper
 \begin_layout Itemize
-[example: الحمد vs vocalized]
+[example: 
+\lang arabic_arabi
+الحمد
+\lang english
+ vs vocalized]
 \end_layout
 
 \end_deeper
@@ -5615,7 +5637,11 @@ Tanwin in a vowel is roughly similar to a vowel without Tanwin.
 
 \begin_deeper
 \begin_layout Itemize
-[example: عشر kessra vs kessra tanwin]
+[example: 
+\lang arabic_arabi
+عشر
+\lang english
+ kessra vs kessra tanwin]
 \end_layout
 
 \end_deeper
@@ -5626,17 +5652,37 @@ Shedda on a letter is so similar to the letter doubled.
 
 \begin_deeper
 \begin_layout Itemize
-[ يضلله == يضلَه]
+[ 
+\lang arabic_arabi
+يضلله
+\lang english
+ == 
+\lang arabic_arabi
+يضلَه
+\lang english
+]
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
-ة and ه, alef maqsora and yah.
+a 
+\lang arabic_arabi
+ة
+\lang english
+ and 
+\lang arabic_arabi
+ه
+\lang english
+, alef maqsora and yah.
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-[الجنه الضحي]
+[
+\lang arabic_arabi
+الجنه الضحي
+\lang english
+]
 \end_layout
 
 \end_deeper
@@ -6022,7 +6068,11 @@ Proposed Syntax: as a suggestion! work automatically either always or when
 \end_layout
 
 \begin_layout Standard
-[+figure: class example هرم -- إرم, زنبجيل , الفأة ]
+[+figure: class example 
+\lang arabic_arabi
+هرم -- إرم, زنبجيل , الفأة
+\lang english
+ ]
 \end_layout
 
 \begin_layout Standard
@@ -6073,9 +6123,9 @@ Suggestion System
 \end_layout
 
 \begin_layout Standard
-[translate] La méthode de fonctionnement des modules de suggestion est généralem
-ent : pendre les mots-clés résultant du parseur et non pas directement de
- la requête brute entrée par l'utilisateur car certains mots-clés sont traités
+La méthode de fonctionnement des modules de suggestion est généralement :
+ pendre les mots-clés résultant du parseur et non pas directement de la
+ requête brute entrée par l'utilisateur car certains mots-clés sont traités
  et leur forme change et aussi, de nouveaux mots sont ajoutés, comme dans
  le cas des synonymes et antonymes.
  Le module, grâce à une certaine politique, trouve les mots qui ont une
@@ -6090,10 +6140,21 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Suggestor.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Caption
 
 \begin_layout Plain Layout
-how 
+Suggester 
 \end_layout
 
 \end_inset
@@ -6178,7 +6239,7 @@ name "sec:Statistics-Gathering-System"
 \end_layout
 
 \begin_layout Standard
-the use of vocalization will improve the quality and the accuracy of statistics
+The use of vocalization will improve the quality and the accuracy of statistics
 \end_layout
 
 \begin_layout Standard
@@ -6195,8 +6256,11 @@ how to retrieve collocations?
 \end_layout
 
 \begin_layout Standard
-what words can be considered as Divine name: *لله*! , huwa or Rab when it
- refer surely to Allah?
+what words can be considered as Divine name:
+\lang arabic_arabi
+ *لله*!
+\lang english
+ , huwa or Rab when it refer surely to Allah?
 \end_layout
 
 \begin_layout Standard
@@ -6222,6 +6286,10 @@ the accuracy must be high in order to diminish the ambiguities arisen
 \end_layout
 
 \begin_layout Standard
+(google semantic search requirements
+\end_layout
+
+\begin_layout Standard
 --
 \end_layout
 
@@ -6238,7 +6306,7 @@ Parsing Arabic texts is not an easy task to perform because of two fundamental
 \end_layout
 
 \begin_layout Itemize
-the diacritization phenomenon and the grammatical ambiguities; 
+the diacritization< phenomenon and the grammatical ambiguities; 
 \end_layout
 
 \begin_layout Itemize
@@ -6509,7 +6577,7 @@ We based on our previous work, we proposed fixes for what already done ,
  and new improvements.
  The improvements are about getting to a full vocalized search engine customized
  to offer most of the features mentioned in the previous chapter.
- We proposed a customized text processing to يناسب the properties of Quranic
+ We proposed a customized text processing to fits the properties of Quranic
  text.
  We introduce searching using the word as a unit in order to 
 \end_layout
@@ -6524,10 +6592,16 @@ An accurate statistics gathering system;
 
 \begin_layout Itemize
 More adequate suggestion system;
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+The road-map toward semantic search.
 \end_layout
 
-\begin_layout Itemize
-The road-map toward semantic search.
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

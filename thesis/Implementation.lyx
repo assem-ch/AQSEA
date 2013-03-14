@@ -144,26 +144,14 @@ Introduction
 \end_layout
 
 \begin_layout Standard
-[refaire]
-\end_layout
-
-\begin_layout Standard
 Our aim in implementation is to offer an open application programming interface.
- That API must be well extensible to achieve all the search features we've
- discussed in the previous chapter.
- we'll talk -in this chapter- about the technical details of our implementations.
- Also we list all the technologies that we've chosen in development and
- the Qur'anic resources that we've used or we need.
+ That API must be well extensible to achieve the most of the search features
+ we've discussed in the previous chapter.
+ We'll talk about the technical details of our implementation.
+ Also we list all the Quranic and linguistic resources that we've used or
+ we need in development.
  Otherwise, we'll explain why we decided to open the source, what are the
  advantages driving us to adopt a such approach.
-\end_layout
-
-\begin_layout Standard
----
-\end_layout
-
-\begin_layout Standard
-[+We'll talk about our impovements]
 \end_layout
 
 \begin_layout Section
@@ -202,7 +190,7 @@ Collaborative bug-fixing
 given enough eyeballs, all bugs are shallow
 \emph default
 ’ 
-\begin_inset Note Greyedout
+\begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
@@ -555,25 +543,53 @@ key "ASSEM_MEROUANE"
 A  Gui desktop interface, demonstrate perfectly the API features .
  It is urgently coded in Python and Qt.
  
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Screenshot.png
+	lyxscale 50
+	scale 45
+
+\end_inset
+
+
 \end_layout
 
-\begin_deeper
-\begin_layout Enumerate
-[french] [screenshot]
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Screenshot of the Qt desktop interface
 \end_layout
 
-\end_deeper
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Enumerate
 A basic CGI-Html interface, demonstrates in a simpler way the API features.
  Also urgently coded and it did not respect the Model View Control.
 \end_layout
 
-\begin_deeper
-\begin_layout Enumerate
-[screen shot]
-\end_layout
-
-\end_deeper
 \begin_layout Standard
 The API contained many implemented search features including:
 \end_layout
@@ -935,8 +951,21 @@ heavy (using root)
 
 \end_deeper
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 Finally, the code passed by many unlogged rewriting phase ...
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
 
 \begin_layout Section
 Quranic and Arabic Resources 
@@ -949,74 +978,12 @@ name "sec:Qur'anic-and-Linguistic"
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Our work requires a set of resources to make the implementation effective.
- among those resources [copy from PFE] ...
+ Among those resources we mention .
 \end_layout
-
-\begin_layout Standard
-Quranic 
-\end_layout
-
-\begin_layout Standard
-and Arabic
-\end_layout
-
-\begin_layout Standard
----
-\end_layout
-
-\begin_layout Standard
-Flexible in adding new resources, 
-\end_layout
-
-\begin_layout Standard
-Collaborative<wiki indexes> to cover the uncompleted resources,
-\end_layout
-
-\begin_layout Standard
-a User A search about Q but in results he find some missed informations,
- he want to fill the gap! so he should get authenticated to have the permission
- for modifying.
- the added information should pass by a verification phase before committing
- it and pushing it to main index.
- This may happen many times and each time may the inverted indexes should
- be rebuilded!
-\end_layout
-
-\begin_layout Standard
-Figure: the Case VIDE
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Comment
-status collapsed
 
 \begin_layout Plain Layout
-For every ressource , a short definition + using details + loading(mise
- en service) details
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Comment
-status open
-
-\begin_layout Plain Layout
-In loading indexes, use dynamic fields it helps much to load resources one
- by one
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 The following list is a list of the used resources:
 \end_layout
 
@@ -1094,15 +1061,7 @@ VerseByVerse Recitations
 Qutrub
 \end_layout
 
-\begin_layout Subsection
-Lack of Quranic resources
-\end_layout
-
-\begin_layout Standard
-[what's the resources that we need and it's not available or not complete]
-\end_layout
-
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Note Note
 status collapsed
 
@@ -1115,7 +1074,7 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Note Note
 status collapsed
 
@@ -2278,6 +2237,11 @@ FEATURExRESSOURCE
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Our improvements
 \end_layout
@@ -2293,341 +2257,2903 @@ reference "sub:License-:-AGPL"
 \end_inset
 
 ).
- 
+ The code base has had 981 commits made representing 15,243 lines of code
+ .
+ It is mostly written in Python with a well-commented source code.
+ It is a young, but established codebase took an estimated 4 years of effort
+ (COCOMO model)
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Statistic analysis from Ohloh website.
 \end_layout
 
-\begin_layout Enumerate
-[Commits stat, lines added.
- lines changed]
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-Those are the main milestones we went through:
+Those are the main milestones that we went through:
 \end_layout
 
 \begin_layout Subsection
 A New Centralized JSON Output System:
 \end_layout
 
-\begin_layout Enumerate
-First: Improving the basic html output of the API to a Json API works only
- in Web CGI.
+\begin_layout Standard
+First at all, we upgraded the output system of the API to offers the results
+ in Json data format instead of raw Html.
+ Then we centralized the output system to gain many advantages which are:
 \end_layout
 
 \begin_layout Enumerate
-Second: Centralizing the Output system to gain three benefits: 
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-easy-implementation of more data structure.
+Easy-implementation of more data structures;
 \end_layout
 
 \begin_layout Enumerate
-the use of the same output system in the different interfaces: Console Interface
-, CGI Interface, Desktop Interfaces, Web Interfaces.
+The use of the same output system in the different interfaces: Console Interface
+, CGI Interface, Desktop Interfaces, Web Interfaces;
 \end_layout
 
 \begin_layout Enumerate
-Make changes and updates in one place instead of many
+Making changes and updates only in one place instead of many.
 \end_layout
 
-\end_deeper
-\begin_layout Enumerate
-Proposing an extensible results structure # include the structure #How to
- highlight json or python in latex.
+\begin_layout Standard
+Secondly, we proposed an extended structure for results.
+ This structure is extensible: any new information can be included easily
+ without affecting the old structure and without resulting a back-incompatibilit
+y.
+ 
 \end_layout
 
-\begin_layout Enumerate
-Centralize the loading of necessary Data files:
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/JSON formatted - results of alkawthar.png
+	scale 70
+
+\end_inset
+
+
 \end_layout
 
-\begin_deeper
-\begin_layout Enumerate
-Configuration files: Available recitations list, Available translations...
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Json results of 
+\lang arabic_arabi
+الكوثر
+\lang english
+ 
 \end_layout
 
-\begin_layout Enumerate
-Linguistic resources: ...
+\end_inset
+
+
 \end_layout
 
-\begin_layout Enumerate
-Qurnaic indexes: ...
+\end_inset
+
+
 \end_layout
 
-\begin_layout Enumerate
-[get it from Data.py] [or Output init function]
+\begin_layout Standard
+Thirdly, we refine the list of request flags to allow the requester to customize
+ his request and control which information retrieved in order to gain performanc
+e and minimize the size of results and the retrieving runtime.
+ A concept of predefined configuration for requests is introduced.
+ So the requester can choose either a minimal, normal , full, linguistic,
+ or statistical view without specifying each flag value.
 \end_layout
 
-\end_deeper
-\begin_layout Enumerate
-Adding statistics calculating feature, capture the flags of each request
- .
- Stats are in json format [get the format 
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+resizebox{
+\backslash
+textwidth}{!}{
 \end_layout
 
-\begin_layout Enumerate
-offer a set of error messages in case of failed query [improve it as table]:
+\end_inset
+
+
 \end_layout
 
-\begin_deeper
-\begin_layout Enumerate
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="33" columns="7">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
 
-\series bold
--1
-\series default
-:"fail, reason unknown", 
+\begin_layout Plain Layout
+
 \end_layout
 
-\begin_layout Enumerate
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
 
-\series bold
-0
-\series default
-:"success", 
+\begin_layout Plain Layout
+Flag 
 \end_layout
 
-\begin_layout Enumerate
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+related action
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+related unit
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+description
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+default value
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+accepted values
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 
 \series bold
 1
-\series default
-:"no action is chosen or action undefined", 
 \end_layout
 
-\begin_layout Enumerate
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+action
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+<none>
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+<none>
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+action to perform
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+"search"
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+search | suggest | show
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 
 \series bold
 2
-\series default
-:"""SuperJokers are not permitted, you have to add 3 letters or more to
- use * and 2 letters or more to use ? (؟)
-\backslash
-n -- Exceptions: ? (1), ??????????? (11) """
 \end_layout
 
-\begin_deeper
-\begin_layout Enumerate
-[it's extensible]
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+unit
 \end_layout
 
-\end_deeper
-\end_deeper
-\begin_layout Enumerate
-Extracting the configurations into independent config files and Standardizing
- them into a json format (benefits)
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+search, suggest
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+<none>
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+search unit
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+"aya"
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+aya | word | translation
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+platform
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+<all>
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+<all>
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+platform used by requester
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+"undefined"
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+undefined | wp7 | s60 | android | ios | linux | windows
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+domain
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+<all>
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+<all>
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+web domain of requester if applicable
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+"undefined"
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+*
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+5a
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+query
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+search, suggest
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+<all>
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+query attached to action
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+""
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+*
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+5b
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+query
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+show
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+<all>
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+query attached to action
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+""
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+all | translations |recitations | information | hints | surates | chapters
+ | defaults | flags | fields | fields_reverse | errors | domains | help_messages
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+highlight
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+search
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+<all>
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+highlight method
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+"css"
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+css | html | genshi | bold | bbcode
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+script
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+search
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+aya, word
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+script of aya text
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+"standard"
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+standard | uthmani
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+vocalized
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+search
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+aya, word
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+enable vocalization of aya text
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+"True"
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+True | False
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+recitation
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+search
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+aya
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+recitation id
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+"1"
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1 to 30
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+translation
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+search
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+aya, trans
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+translation id
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+"none"
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+*
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+romanization
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+search
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+aya, word
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+type of romanization
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+"none"
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+none | buckwalter | iso | arabtex
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12a
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+view
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+search
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+aya, word
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+pre-defined configuration for view
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+"custom"
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+minimal | normal | full | statistic | linguistic | custom
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12b
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+view
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+search
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+translation
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+pre-defined configuration for view
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+"custom"
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+minimal | normal | full | custom
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+prev_aya
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+search
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+aya
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+enable previous aya retrieving
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+"False"
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+True | False
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+next_aya
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+search
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+aya
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+enable next aya retrieving
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+"False"
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+True | False
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+15
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+sura_info
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+search
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+aya
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+enable sura information retrieving
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+"True"
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+True | False
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+16
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+sura_stat_info
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+search
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+aya
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+enable sura stats retrieving
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+"False"
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+True | False
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+17
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+word_info
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+search
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+aya, word
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+enable word information retrieving
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+"True"
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+True | False
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+18
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+aya_position_info
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+search
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+aya
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+enable aya position information retrieving
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+"True"
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+True | False
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+19
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+aya_theme_info
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+search
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+aya
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+enable aya theme information retrieving
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+"True"
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+True | False
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+aya_stat_info
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+search
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+aya
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+enable aya stat information retrieving
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+"True"
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+True | False
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+21
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+aya_sajda_info
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+search
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+aya
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+enable aya sajda information retrieving
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+"True"
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+True | False
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+22
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+annotation_word
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+search
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+aya, word
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+enable query terms annotations retrieving
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+"False"
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+True | False
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+23
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+annotation_aya
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+search
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+aya
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+enable aya words annotations retrieving
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+"False"
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+True | False
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+24
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+sortedby
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+search
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+aya
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+sorting order of results
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+"score"
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+total | score | mushaf | tanzil | subject
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+offset
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+search
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+<all>
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+starting offset of results
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+"1"
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1 to 6236
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+26
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+range
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+search
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+<all>
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+range of results 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+"10"
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1 to 25
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+27
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+page
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+search
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+<all>
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+page number [override offset]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+"1"
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1 to 6236
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+28
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+perpage
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+search
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+<all>
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+results per page [override range]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+"10"
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1 to 25
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+29
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+fuzzy
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+search
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+aya
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+fuzzy search [exprimental]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+"False"
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+True | False
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+30
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+aya
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+search
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+word, trans
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+enable retrieving of aya text
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+"True"
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+True | False
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Search-request-flags"
+
+\end_inset
+
+Search request flags
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We also centralized the loading of necessary data files.
+ Data files now are loading automatically from a default path else if this
+ path is redefined.
+ We included the data files with API package to maintain the portability.
+ Also we export them into a Json data format as a standardization step.
+ We mean with data files, the files such as:
 \end_layout
 
 \begin_layout Enumerate
-Make many meta data available for request in the API Json output system.
- Meta data includes:
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-API meta information including version.
+Configuration files: Available recitations list, Available translations
+ list, Usage hints, Usage statistics, meta information.
 \end_layout
 
 \begin_layout Enumerate
-Error messages
-\end_layout
-
-\begin_layout Enumerate
-Possible flags, in addition to their default values, possibe values intervals,
- and help messages.
-\end_layout
-
-\begin_layout Enumerate
-available search fields (Arabic and English names).
+Linguistic resources: derivation list, vocalization list, synonym list,
+ standard-into-uthmani mapping, stop word list, word properties.
  
 \end_layout
 
 \begin_layout Enumerate
-Available translations and recitations.
+Quranic indexes: Ayah document index, Translation document index, Word document
+ index.
+ 
+\end_layout
+
+\begin_layout Standard
+A usage statistics calculating feature is implemented.
+ The statistics saved in a JSON format including usage of each flag passed
+ through the search request.
+ 
+\end_layout
+
+\begin_layout Standard
+We offered a set of error codes in case of failed search query.
+ It helps in clarifying the nature of failure.
+ This set is extensible, new error codes can be added easily.
+ Currently we define those errors:
 \end_layout
 
 \begin_layout Enumerate
-Surates and topics value lists
+
+\series bold
+Error -1
+\series default
+: "fail, reason unknown";
 \end_layout
 
 \begin_layout Enumerate
-Global search hints
-\end_layout
 
-\end_deeper
-\begin_layout Enumerate
-Controlling what to retrieve with specific flags ,the concept of predefined
- views: minimal, normal, full, linguistic, statistical
+\series bold
+Error 0
+\series default
+: "success"; 
 \end_layout
 
 \begin_layout Enumerate
-Third: Fixing a lot of bugs and vulns such as:
+
+\series bold
+Error 1
+\series default
+: "no action is chosen or action undefined"; 
 \end_layout
 
-\begin_deeper
 \begin_layout Enumerate
-SuperJokers Vulnerability: Fixed by [see the code of Output.Py]
+
+\series bold
+Error 2
+\series default
+: "super jokers are not permitted".
 \end_layout
 
-\end_deeper
+\begin_layout Standard
+We made the API meta data available for request in the output system.
+ Meta data includes:
+\end_layout
+
+\begin_layout Enumerate
+API meta information including authorship, license, description, version,
+ and release;
+\end_layout
+
+\begin_layout Enumerate
+Error messages;
+\end_layout
+
+\begin_layout Enumerate
+Possible flags, in addition to their default values, possible values intervals,
+ and help messages, see table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Search-request-flags"
+
+\end_inset
+
+ ;
+\end_layout
+
+\begin_layout Enumerate
+Available search fields (Arabic and English names), see table 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+[cross-ref]
+\end_layout
+
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+Available translations and recitations;
+\end_layout
+
+\begin_layout Enumerate
+Surah and topic values lists;
+\end_layout
+
+\begin_layout Enumerate
+Global search usage hints.
+\end_layout
+
 \begin_layout Subsection
 Many new features
 \end_layout
 
-\begin_layout Enumerate
-Implementing basically the fuzzy search feature.
-\end_layout
-
-\begin_layout Enumerate
-Uthmani-Standard Mapping 
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-created a python dictionary
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Showing previous + next ayah.
-\end_layout
-
-\begin_layout Enumerate
-Ability to choose the script of showing Ayahs:
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Unvocalized Standard
-\end_layout
-
-\begin_layout Enumerate
-Vocalized Standard
-\end_layout
-
-\begin_layout Enumerate
-Vocalized Uthmani
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Different Vocalization Suggestion 
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-first: Mapping the diffrent possible vocalizations to each unvocalized word
-\end_layout
-
-\begin_layout Enumerate
-second: show vocalizations in the API output results
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-include the linguisitic annotations of each query keyword in the API output
- results.
- We got those Annotations from Quranic Corpus.
+\begin_layout Standard
+We implemented many new features which are available within the new JSON
+ output system.
+ One of the features is the fuzzy search feature.
+ We've done a basic implementation that automates the fuzzy search to include
+ the potential synonyms of the word and also the different derivations.
  
 \end_layout
 
-\begin_layout Enumerate
-Show word information in buckwalter transliteration
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Fuzzy search example.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Fuzzy search example
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We added the possibility of retrieving the previous and next ayahs of each
+ ayah of the results.
+ Showing neighbor ayahs helps the user to know exactly the ayah position
+ in its own surah.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Next_previous ayas.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Showing adjacent ayahs
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For the ayah text, we offered the ability to choose between Vocalized and
+ Unvocalized text, and between Standard and Uthmani text.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Script example - standard unvocalized.png
+	scale 90
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Script example - standard vocalized.png
+	scale 90
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Script example - uthmani.png
+	scale 90
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Showing ayahs in different scripts
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We implemented four suggestion operations: Close spellings, Different vocalizati
+ons, Different derivations, Synonyms.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Suggestion example - v-s-d.png
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Suggestion example of Vocalizations , Derivations ,and Synonyms of 
+\lang arabic_arabi
+قول
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We also include the linguistic annotations of each query keyword in the
+ API output results.
+ We got those Annotations from the Arabic Quranic Corpus.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Annotations example.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Annotations of the keyword 
+\lang arabic_arabi
+قيمة
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We implemented the possibility of search using Buckwalter transliteration
+ and show the resulted keywords written in the same transliteration.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/buckwalter example.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Buckwalter translation example
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
 Resource Importing Manager
 \end_layout
 
-\begin_layout Enumerate
-Improving the resource importing manager & fix the الحلقة المفقودة.
+\begin_layout Standard
+An important part was missing in the old implementation of the resource
+ importing manager.
+ The missing part was the importing of the data from their original source.
+ We have fixed this missing part and improve the global behavior of the
+ resource manager.
  The improved version can do:
 \end_layout
 
-\begin_deeper
 \begin_layout Enumerate
-downloading resources:
+
+\series bold
+Downloading original resources
+\series default
+: the reason for downloading the resources rather then including them with
+ the project is to pass by the restrictions on the redistribution of those
+ resources.
+ Another reason is to keep using always the last updated versions of the
+ resources.
+ Yet another reason is avoid the optional resources with big sizes so let
+ the developer or the user choose what to download.
+ This is the list of the resources to be downloaded: 
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
-not needed for Quranic Corpus becuause it's GPL
+Tanzil Mus-haf xml file.
 \end_layout
 
 \begin_layout Enumerate
-an obligation for tanzeel because of the license
+Tanzil Quranic translations packaged as the Zekr model.
 \end_layout
 
 \begin_layout Enumerate
-recommended for zekr translation models to benefit of updates and avoid
- a big size source
-\end_layout
-
-\begin_layout Enumerate
-EveryVerse recitations list
+EveryAyah recitations list.
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
-Updating auto-generated resources:
+
+\series bold
+Parsing & Importing the data to our intermediate database: 
+\series default
+Each resource has a specific unique structure.
+ We need to parse each resources then import the data included to our intermedia
+te database.
+ The role of intermediate database is to re-organize the data in a way that
+ make the indexing easier.
+ We made two libraries:
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
-translations list
+PyCorpus: a library to parse and read the data included in the project Arabic
+ Quranic Corpus.
+\end_layout
+
+\begin_layout Enumerate
+PyZekrModels: a library to read the Quranic translations packaged as the
+ Zekr model.
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
-Parsing & Importing the resources to our intermediate database
+
+\series bold
+Indexing the database: 
+\series default
+First, we need to transform the database into document indexes .
+ Then, we need to generate the inverted indexes out of the corresponding
+ document indexes.
+ There is a table called fields in the database take the control over the
+ information to be indexed and how to indexed.
+ This is a sample example of the fields table:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/fields table.png
+	scale 60
+
+\end_inset
+
+
 \end_layout
 
-\begin_deeper
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Fields table
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Enumerate
-libraries to read & parse thirdparty Quranic resources such as Quranic Corpus(se
-e x.x.x), VerseByVerse(see x.x.x), Zekrmodels(see x.x.x)
+
+\series bold
+Updating auto-generated data files
+\series default
+: some data files need to be generated immediately after the indexing.
+ An example of that is the list of indexed translations.
 \end_layout
 
-\end_deeper
-\begin_layout Enumerate
-Transforming resources from the database into the document indexes.
-\end_layout
-
-\end_deeper
 \begin_layout Subsection
 Automating the API building
 \end_layout
 
-\begin_layout Enumerate
-Automating the API building by a well-commented Makefile that do:
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Auto-downloading of resources, 
-\end_layout
-
-\begin_layout Enumerate
-Updating of the intermediate resources
+\begin_layout Standard
+The building of resources was manual and undocumented.
+ We created a Makefile that automate now the building.
+ We fill the makefile with the appropriate number of comments in order to
+ make it clear and understandable.
+ The role of make file is to perform the following tasks:
 \end_layout
 
 \begin_layout Enumerate
-Auto-building of indexes(from Wiki)
+Auto-downloading of new versions of the used Quranic and linguistic resources;
 \end_layout
 
 \begin_layout Enumerate
-Auto-installing script for API, WUI, GUI.
+Generating and Regenerating of the intermediate generated data files;
 \end_layout
 
-\end_deeper
+\begin_layout Enumerate
+Auto-building of the document indexes in addition the inverted indexes;
+\end_layout
+
+\begin_layout Enumerate
+Auto-install and packaging of the API and different related extensions and
+ interfaces.
+\end_layout
+
 \begin_layout Subsection
 A new console interface
 \end_layout
 
-\begin_layout Enumerate
-A new console interface, to be used by non-python desktop applications,
- could be run as background processus aka Daemon processus.
- for details see 
+\begin_layout Standard
+We introduced a new console interface to be used by a non-python desktop
+ application, could be run as background service a.k.a Daemon.
+ For details see 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:Console-commandline"
@@ -2637,21 +5163,192 @@ reference "sub:Console-commandline"
 .
 \end_layout
 
+\begin_layout Subsection
+Enhancing the web interface
+\end_layout
+
 \begin_layout Standard
-\begin_inset Note Note
-status collapsed
+We improved the HTML web interface in two steps.
+ The first one into an Html-jQuery web interface with client-side search
+ results showing.
+ The second step into a Django web interface with a server-side search results
+ showing with many extra features.
+ For more details see 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Django-web-interface"
+
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Subsection
+Packaging system: 
+\end_layout
+
+\begin_layout Standard
+We implemented a packaging system to package the API for different operating
+ systems.
+ Since the API is pure python so that makes it portable through the different
+ platforms.
+ Though, many data resources should be generated and imported in the package.
+ We distribute the API as :
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Source Tarball
+\series default
+: An archive of source files created with the Unix tar utility.
+ Source-code distributions have been packaged as tarballs since the mid
+ 1980s.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Binary Tarball
+\series default
+: An archive contains the built and compiled source code.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Python
+\series default
+ 
+\series bold
+egg package
+\series default
+: a logical structure embodying the release of a specific version of a Python
+ project, comprising its code, resources, and metadata.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Debian deb package: 
+\series default
+Debian packages are standard Unix archives that include two tar archives
+ optionally compressed: one archive holds the control information and another
+ contains the program data.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Red-hat rpm package: 
+\series default
+the acronym RPM stands for Redhat package manager which is a package management
+ system.
+ It refers also to the file format used by the packages of this system.
+\end_layout
+
+\begin_layout Subsection
+Multiple search units
+\end_layout
+
+\begin_layout Standard
+The Application Programming Interface initially was made up to search only
+ in the ayahs.
+ Actually we introduced more search units.
+ To introduce any unit, we should gather the appropriate data resources,
+ define the search fields, define the search request flags, and finally
+ define the results structure.
+ We introduced two units which are:
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Translations
+\series default
+: enable the search for Quranic translations in different languages.
+ The information included are: identifier, text, language, author.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Translation Search.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Translation-as-unit search , Query: seven 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Words:
+\series default
+ enable the search for Quranic words and different linguistic annotations
+ including: word identifiers, origins (lemma, stem, root), POS, form, gender,
+ person, number, voice, aspect, state.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Word search example.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Word-as-unit json outout, Query: 
+\lang arabic_arabi
+قيمة
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \begin_layout Plain Layout
 
-\series bold
-Unneeded:
-\series default
- Cleaning the previous urgently-coded desktop interface, preparing it for
- localization, maintain it's portability and simplicity , improving its
- rapidity.
- remove the old html styling of results.
- Get the results from the API output system instead of direct access to
- API python code
 \end_layout
 
 \end_inset
@@ -2660,53 +5357,289 @@ Unneeded:
 \end_layout
 
 \begin_layout Subsection
-Enhancing the web interface
-\end_layout
-
-\begin_layout Enumerate
-Improving the html web interface in two steps.
- the first one into an html-jquery web interface with client-side search
- results showing.
- The second step into a django web interface with a server-side search results
- showing with many extra features ( see )
-\end_layout
-
-\begin_layout Subsection
-Packaging system: 
-\end_layout
-
-\begin_layout Enumerate
-Pure python setup for the API, including all necessary files inside the
- API.
- 
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Egg API, Source Tarball, Binary Tarball, NSIS Windows Installer
-\end_layout
-
-\end_deeper
-\begin_layout Subsection
-Multiple search units
-\end_layout
-
-\begin_layout Subsection
 Coding Standardization
 \end_layout
 
-\begin_layout Enumerate
-Fixing a huge amount of pylint code analysis warnings [score of current
- code, more stats] and improving the quality of code following also the
- conventions explained in $Readability-counts
+\begin_layout Standard
+We passed our code base by Pylint code analysis.
+ Pylint is a source code bug and quality checker for the Python programming
+ language.
+ It is highly configurable and can be customized as needed.
+ It includes features such as: 
 \end_layout
 
-\begin_layout Enumerate
-A mass organization of Source code, see the current code architecture in
- 
+\begin_layout Itemize
+Checking a line-code's Length ;
+\end_layout
+
+\begin_layout Itemize
+Checking if variable names are well-formed according to your coding standard
+ ;
+\end_layout
+
+\begin_layout Itemize
+Checking if declared interfaces are truly implemented, and so on.
+\end_layout
+
+\begin_layout Standard
+We have fixed a huge amount of shown up messages by Pylint including: Convention
+s, Refactors, Warnings, Errors.
+ This leads by consequence into a mass re-organization of the source code
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+, see the current code architecture in 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Code-Architecture"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+type
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+actual number
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+previous number
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+difference
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+convention
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1059
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9217
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-8242
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+refactor
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+81
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+310
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-229
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+warning
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1549
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12331
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-10782
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+error
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+79
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+412
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-333
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Pylint Analysis stats
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+1.93/10
+\end_layout
 
 \end_inset
 
@@ -2717,25 +5650,242 @@ reference "sec:Code-Architecture"
 Documentation covering
 \end_layout
 
-\begin_layout Enumerate
-Documention covering of many parts of the API:
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
---
+\begin_layout Standard
+We made the Readme files for the different parts of the project.
+ The contents of readme files typically include one or more of the following:
 \end_layout
 
 \begin_layout Enumerate
-a Script Sample of how to use the API #include the code #how to high light
- python code in Latex 
+Configuration instructions 
 \end_layout
 
 \begin_layout Enumerate
-ومع ذلك it still has a weak documentation covering.
+Installation instructions 
 \end_layout
 
-\end_deeper
+\begin_layout Enumerate
+Operating instructions 
+\end_layout
+
+\begin_layout Enumerate
+A file manifest (list of files included) 
+\end_layout
+
+\begin_layout Enumerate
+Copyright and licensing information 
+\end_layout
+
+\begin_layout Enumerate
+Contact information for the distributor or programmer 
+\end_layout
+
+\begin_layout Enumerate
+Known bugs
+\end_layout
+
+\begin_layout Enumerate
+Troubleshooting
+\end_layout
+
+\begin_layout Enumerate
+Credits and acknowledgments 
+\end_layout
+
+\begin_layout Enumerate
+A changelog (usually for programmers) 
+\end_layout
+
+\begin_layout Enumerate
+A news section (usually for users) 
+\end_layout
+
+\begin_layout Standard
+The expression "readme file" is also sometimes used descriptively and genericall
+y, whereby the files are not named "readme", but are considered types of
+ readme files.
+ The source code distributions of many free software packages, especially
+ those following the Gnits Standards, usually include a standard set of
+ readme files:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="8" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+README
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+General information
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+AUTHORS
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Credits
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+THANKS
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Acknowledgments
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ChangeLog
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A detailed changelog, intended for programmers
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+NEWS
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A basic changelog, intended for users
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+INSTALL
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Installation instructions
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+COPYING / LICENSE
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Copyright and licensing information
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+BUGS
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Known bugs and instructions on reporting new ones
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Other files commonly distributed with software include a FAQ and a TODO
+ file listing possible future changes.
+\end_layout
+
 \begin_layout Standard
 \begin_inset Note Note
 status collapsed
@@ -2777,222 +5927,1681 @@ grouping the changes
 Open Issues
 \end_layout
 
-\begin_layout Itemize
-Milestone #1 enrishing the resources
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-textify the database
-\end_layout
-
-\begin_layout Itemize
-Integrate Qurany for faceted thematic search
-\end_layout
-
-\begin_layout Itemize
-Develop the importing script of Boundary annotations
-\end_layout
-
-\begin_layout Itemize
-Propose a standard format for new linguistic and quranic resources
-\end_layout
-
-\begin_layout Itemize
-Modular Query Parser:modularity, extensibility and combination
-\end_layout
-
-\begin_deeper
 \begin_layout Standard
-An experienced challenge with the Query parser is the mixing (the combination)
- of the different operations 
+We went through many improvements.
+ Yet, however, there still lot of things to be done.
+ We'll browse the main milestones that should go through:
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Enriching the linguistic resources:
+\series default
+ the actual used resources are poor comparing to what we really need.
+ In order to get this done , we should: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Textify the binary database to enable the possibility of logging of changes
+ and take the benefits of revision control systems such as GIT.
+\end_layout
+
+\begin_layout Itemize
+Integrate Qurany project to enrich the actual faceted thematic search.
+\end_layout
+
+\begin_layout Itemize
+Integrate the boundary annotations to enable the retrieving of boundaries
+ in Quran.
+\end_layout
+
+\begin_layout Itemize
+Propose a standard format for new linguistic and Quranic resources.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Complete the features implementation: 
+\series default
+we listed lot of search features in a previous chapter (see 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Proposals"
+
+\end_inset
+
+).
+ Though, we didn't implement the whole list.
+ We list the implementation state in the next table: 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="49" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Class
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Feature
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Implementation State
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Advanced Query
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Fielded search
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yes
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+Logical relations
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yes
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Phrase search
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yes
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Interval search
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yes
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Full Regex
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Wildcards (Jokers)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Partially
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Boosting keywords weight
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yes
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Output Improvements
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Pagination
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yes
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Scoring
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yes
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sorting
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yes
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Keywords Highlight
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yes
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Real time output
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Results grouping
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Uthmani script with full diacritical marks
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yes
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Suggestion Systems
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Vocalized spell correction
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Partially
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Semantically related keywords
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Partially
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Different vocalization
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yes
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Collocated words
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Keyboard mapping
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Different significations
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Linguistic Aspects
+\series bold
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Romanization
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Partially
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Syntactic Coloration
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Vocal Search
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Partial vocalization search
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Partially
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Multi-level derivation
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yes
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Specific-derivations
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Word properties embedded query
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Partially
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Fuzzy string search
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Partially
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Word linguistic annotations
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Partially
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Linguistic examples search
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Uthmani writing way
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Qur'anic Options
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Structural options
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yes
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Recitation marks retrieving
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No (Sajda only)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Divine Names Highlight
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Translation search
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yes
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Repetitions and Allegorical ayahs 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Abrogators and Abrogated ayahs search
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ِQur'anic Parables
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Semantic Queries
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Semantically related words
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Partially
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Faceted Thematic Search
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Partially
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Questions Answering (QA)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Automatic vocalization
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Entity Extraction
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Co-reference resolution
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Statistical System
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Unvocalized word frequency
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yes
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Vocalized word frequency
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yes
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Root/Stem/Lemma frequency
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Another Qur'anic units frequency
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Implementation State of search features
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-Extensible and Combination ability of different operations
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+list of unimplemented search features; Implementation Ratio
 \end_layout
 
-\begin_layout Standard
-a high benefit to add search features one by one, without ruining all the
- parsing system
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Study the restrictions creteria of the API json output service
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-limit the maximum of simultanos requests globally and by IP.
-\end_layout
-
-\end_deeper
-\end_deeper
-\begin_layout Itemize
-Milestone #2
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Complete the features implementation:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-1 2-steps search!
-\end_layout
-
-\begin_layout Itemize
-(list from features chapter )
-\end_layout
-
-\begin_layout Itemize
-2
-\end_layout
-
-\begin_layout Itemize
-3
-\end_layout
-
-\begin_layout Itemize
-table of FeaturesXimplemented 
-\end_layout
-
-\begin_layout Itemize
-Implementation Ratio
-\end_layout
-
-\end_deeper
-\end_deeper
-\begin_layout Itemize
-Milestone #3: Moving to Whoosh 2.X, why?
-\end_layout
-
-\begin_layout Itemize
-Milestone #4: Moving to Python 3000, why?
-\end_layout
-
-\begin_layout Itemize
-Milestone #5: Documentaion covering :
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-API comments & docstrings [here some stats] ; Cover the API modules with
- appropriate and helpful comments
-\end_layout
-
-\begin_layout Itemize
-API usage howto
-\end_layout
-
-\begin_layout Itemize
-API demos
-\end_layout
-
-\begin_layout Itemize
-manpage for Alfanous linux console interface
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Milestone #6: Optimization of code & performanice
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Fix 
-\begin_inset Quotes sld
 \end_inset
 
-pylint
-\begin_inset Quotes srd
-\end_inset
 
- code analysis.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Implement the modularity for the Query Parser
+\series default
+: This is important to enable the extensibility feature and fix the problem
+ of mixing (the combination) the different operations made during parsing.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Restrict the anonymous requests to the API: 
+\series default
+restricting requests protect the API from flooding either intended or not.
+ This can be done by:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Limit the maximum of simultaneous requests globally and by IP.
 \end_layout
 
 \begin_layout Itemize
-Use 
-\begin_inset Quotes sld
-\end_inset
+Implement an identification system that works with remote clients.
+\end_layout
 
-profile
-\begin_inset Quotes srd
-\end_inset
+\end_deeper
+\begin_layout Enumerate
 
+\series bold
+Move to the last version of Whoosh library
+\series default
+: Whoosh is almost in the version 3.X in its stable release while we still
+ using an older version which is 0.3.
+ The moving to the last version is very recommended to benefit of the improvemen
+ts made.
+ Though, it will not be an easy operation since our API is intertwined with
+ the older version.
+ Especially for the Query Parser.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Move to Python 3.X: 
+\series default
+Python 2 is disappearing and sooner or later it'll be fully replaced.
+ There are many tools offer some automatic scripts to convert a code from
+ 2 into 3.
+ Though, the big part often should be done manually.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Cover with documentation
+\series default
+: the documentation is so important, it's expensive but it encourages the
+ community to involve in the project.
+ This can be done by:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Enrich the readme files;
+\end_layout
+
+\begin_layout Itemize
+Enrich the code with appropriate comments;
+\end_layout
+
+\begin_layout Itemize
+Create a usage How-To and straighten it with many demos;
+\end_layout
+
+\begin_layout Itemize
+The man page for the console interface.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Optimize code and performance: 
+\series default
+proceed the fixing of pylint code analysis warnings and use 
+\emph on
+Profile
+\emph default
  to check the performance of each search feature in order to improve it.
 \end_layout
 
-\end_deeper
 \begin_layout Section
-Code Architecture 
-\begin_inset CommandInset label
-LatexCommand label
-name "sec:Code-Architecture"
+Interfaces
+\end_layout
+
+\begin_layout Standard
+The project is working as a library offering many interfaces.
+ The main one is the Application Programming Interface or API.
+ It works as the intermediary between the library and the other interfaces.
+ There are two low-level interfaces that works with the API: 
+\end_layout
+
+\begin_layout Enumerate
+Console interface, destined for test purposes and to be used by third party
+ non-pythonic desktop interfaces.
+\end_layout
+
+\begin_layout Enumerate
+JSON web service, destined to be used by web interfaces, smart phone apps,
+ and social network apps.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Interfaces dependency hierarchy.png
+	scale 60
 
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-[Copy from src.README.rst]
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Interfaces dependency hierarchy 
 \end_layout
 
-\begin_layout Standard
-This is a quick view of the source code structure of Alfanous project explaining
- the different packages and modules.
- Packages alfanous: the main API of the project, offers the search features.
- alfanous-import: a library responsible of all management tasks of Quranic
- & Linguistic resources.
- alfanous-cgi: a small script to execute the API in a web CGI environment.
- alfanous-desktop: a desktop interface made by QT & PyQt.
- alfanous-django: a django app replaces the old web user interface and also
- the cgi script.
- alfanous-labs: all related libraries that still in alpha phase.
- alfanous-tests: scripts used to test the different modules of the API.
- PyCorpus: a library used to parse & understand Arabic Quranic Corpus.
- PyZekrModels: a library used to parse Zekr Translations Models.
- API Modules, Files (alfanous) main.py: the main module that relay all the
- modules.
- console.py: a console interface for the API.
- Outputs.py: the programming interface, responsible of the output of all
- results.
- Data.py: the manager of paths and Data reading and loading.
- TextProcessing.py: the module responsible of searched/indexed text processing.
- QueryProcessing.py: the module responsible of search query processing.
- ResultsProcessing.py: the module responsible of results processing.
- Indexing.py: the manager of the indexes reading.
- Searching.py: the module responsible of the basic search operation.
- Suggestions.py: the module responsible of suggestions.
- Romanization.py: the module responsible of romanization systems.
- Threading.py: the module responsible of multi-processing during the search.
- Constants.py: a module that contains some constants used in the API.
- Exceptions.py: a module that contains some exceptions used in the API.
- Misc.py: a pre-implementing test module.
- Support.*: Some third-party libraries.
- configs.*: Configuration files in a Json format.
- resources.*: Quranic & Lingustic data in a Json format to replace the binary
- sqlite database.
- dynamic_resources.*: Compiled linguistic data to python modules to gain
- speed.
- indexes.*: All needed indexes on Whoosh indexes format.
- setup.py: the script of installation & packaging (setuptools) ez_setup.py:
- an alternatif for setuptools library.
- Importer Modules (alfanous-import) main.py: the main module that relays
- all the modules and offers a console interface.
- Downloader.py: download online resources.
- Parser.py: parse the resources.
- Standardizer.py: convert the resources to a standard format (not implemented).
- Importer.py: import the resources into the main database.
- Transformer.py: transfer&convert the resources from the main database into
- Whoosh indexes.
- Updater.py: update the data in API based on actual resources.
- initial_importing.py: a script used the first-time to load many resources
- (deprecated).
- setup.py: the script of installation & packaging (setuptools).
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -3000,70 +7609,155 @@ Application Programming Interface
 \end_layout
 
 \begin_layout Standard
-[Copy the src/alfanous/README.rst]
+An application programming interface (API) is a protocol intended to be
+ used as an interface by software components to communicate with each other.
+ An API is a library that may include specification for routines, data structure
+s, object classes, and variables.
 \end_layout
 
 \begin_layout Standard
-API, show the sample code
-\end_layout
-
-\begin_layout Standard
-For web-based interfaces use Json out put system.
-\end_layout
-
-\begin_layout Standard
-for desktop-based interfaces use Console interface.
-\end_layout
-
-\begin_layout Standard
-explain how it will be used to build lot of interfaces
-\end_layout
-
-\begin_layout Standard
-API Powerful points:
+The powerful points of our API are:
 \end_layout
 
 \begin_layout Enumerate
-FREE LIBRE OPEN SOURCE: Any one can use it and any one can contribute in.
+
+\series bold
+Free Open Libre
+\series default
+: any one can use it, any one can contribute in.
+ That means it takes the advantage of community involvement.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+A Python API
+\series default
+: that allows anyone to create independently a web interface, desktop interface
+ , Android/Iphone/Windows phone interfaces , facebook/twitter/G+ applications
+ ...and so on.
  
 \end_layout
 
 \begin_layout Enumerate
-A Python API: that allows anyone to create independently a web interface,
- desktop interface , Android/Iphone/Windows phone interfaces , facebook/twitter/
-G+ applications ...and so on.
+
+\series bold
+A founded base
+\series default
+: The search process is too fast and too stable other websites/applications
+ do.
  
 \end_layout
 
 \begin_layout Enumerate
-The API is based on a founded base: The search process is too fast and too
- stable other websites/applications do.
+
+\series bold
+Lot of features
+\series default
+: The actual API has an important number of features and prepared to accept
+ more.
  
 \end_layout
 
-\begin_layout Enumerate
-It has lot of features: see Search Features.
- 
+\begin_layout Standard
+The next figure represent a python sample code to use the API:
 \end_layout
 
-\begin_layout Enumerate
-[lines of codes from Ohloh]
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/API using sample.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+API usage sample code
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
-JSON output system
+JSON web service
 \end_layout
 
 \begin_layout Standard
-How important for Web interfaces
+To enable the use of our API over the web, we made a web service that wrap
+ the input/output of the API.
+ The request arguments should be passed in URL and the output will be generated
+ and shown in JSON format.
+ This could be used by web interfaces, smart phone apps, social network
+ apps, and browsers addons.
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Json Output Service.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Preview of the JSON web service
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
 [Usage statistics from stats.alwaysdata.org]
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsubsection
-Console commandline (a Linux Daemon service) 
+Console interface 
 \begin_inset CommandInset label
 LatexCommand label
 name "sub:Console-commandline"
@@ -3074,24 +7768,70 @@ name "sub:Console-commandline"
 \end_layout
 
 \begin_layout Standard
-How important for Desktop interfaces
+As a test interface, we made a console interface that works on command line.
+ This interface could be used also as a wrapper to make desktop interfaces
+ that are developed under a programming language different then Python.
+ The request should be passed as in-line arguments in the command line and
+ the output will be generated & shown in JSON format.
+ High-activity desktop interfaces, working on a linux-like platform, can
+ run this interface as a Daemon service on the background.
+ 
 \end_layout
 
 \begin_layout Standard
-get the command inline argumens, parse them and forward them to the API
- output system.
- [+screen shot]
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Console interface.png
+	scale 60
+
+\end_inset
+
+
 \end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Preview of the Console interface
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
 
 \begin_layout Subsection
 Django web interface (demonstration Interface)
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Django-web-interface"
+
+\end_inset
+
+
 \end_layout
 
-\begin_layout Standard
-We use this interfce to demonstrate and test the API implemented features.
+\begin_layout Plain Layout
+We use this interface to demonstrate and test the API implemented features.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 MVC, localizable [work perfectly for LtR and RtL languages] , Server side
  (indexed by search engines), HTML5&CSS3 valid, Responsive theme with bootstrap
  .
@@ -3114,9 +7854,14 @@ Aya words
 \end_layout
 
 \end_deeper
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Subsection
 Other User Interfaces #no need for it here, just talk about them in presentation
@@ -3163,29 +7908,88 @@ Interfaces
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
 \begin_layout Section
-Conclusion
+Code Architecture 
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Code-Architecture"
+
+\end_inset
+
+
 \end_layout
 
-\begin_layout Standard
-In this chapter , we talked about our previous implementation and the improvemen
-ts that we make.
- We cite also the Quranic and linguistic resources needed for the implementation
- to run well and we browser the code architecture.
+\begin_layout Plain Layout
+This is a quick view of the source code structure of project explaining
+ the different packages and modules.
  
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
-status open
+\begin_layout Plain Layout
+API Modules, Files (alfanous) main.py: the main module that relay all the
+ modules.
+ console.py: a console interface for the API.
+ Outputs.py: the programming interface, responsible of the output of all
+ results.
+ Data.py: the manager of paths and Data reading and loading.
+ TextProcessing.py: the module responsible of searched/indexed text processing.
+ QueryProcessing.py: the module responsible of search query processing.
+ ResultsProcessing.py: the module responsible of results processing.
+ Indexing.py: the manager of the indexes reading.
+ Searching.py: the module responsible of the basic search operation.
+ Suggestions.py: the module responsible of suggestions.
+ Romanization.py: the module responsible of romanization systems.
+ Threading.py: the module responsible of multi-processing during the search.
+ Constants.py: a module that contains some constants used in the API.
+ Exceptions.py: a module that contains some exceptions used in the API.
+ Misc.py: a pre-implementing test module.
+ Support.*: Some third-party libraries.
+ configs.*: Configuration files in a Json format.
+ resources.*: Quranic & Lingustic data in a Json format to replace the binary
+ sqlite database.
+ dynamic_resources.*: Compiled linguistic data to python modules to gain
+ speed.
+ indexes.*: All needed indexes on Whoosh indexes format.
+ setup.py: the script of installation & packaging (setuptools) ez_setup.py:
+ an alternatif for setuptools library.
+ Importer Modules (alfanous-import) main.py: the main module that relays
+ all the modules and offers a console interface.
+ Downloader.py: download online resources.
+ Parser.py: parse the resources.
+ Standardizer.py: convert the resources to a standard format (not implemented).
+ Importer.py: import the resources into the main database.
+ Transformer.py: transfer&convert the resources from the main database into
+ Whoosh indexes.
+ Updater.py: update the data in API based on actual resources.
+ initial_importing.py: a script used the first-time to load many resources
+ (deprecated).
+ setup.py: the script of installation & packaging (setuptools).
+\end_layout
 
 \begin_layout Plain Layout
-[In presentation , Include the wining award]
+.
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Conclusion
+\end_layout
+
+\begin_layout Standard
+We based our work on a previous one.
+ We made lot of improvements as explained the chapter.
+ Unfortunately, there are more improvements to be done and many issues to
+ be resolved.
+ we clarified this under the subsection: Open issues.
+ We leave them as perspectives.
 \end_layout
 
 \end_body
