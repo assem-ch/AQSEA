@@ -110,7 +110,7 @@ addcontentsline{toc}{part}{General Conclusion}
 
 \begin_layout Standard
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
 [ a refaire ]
@@ -167,7 +167,7 @@ Our main objective is to design a retrieval system that fit the Qur'an search
 \end_layout
 
 \begin_layout Standard
-Our plan is 
+Our plan was
 \end_layout
 
 \begin_layout Standard
@@ -175,16 +175,33 @@ __
 \end_layout
 
 \begin_layout Standard
-+Perspective: 
+Perspective: 
 \end_layout
 
 \begin_layout Standard
-- Proceeding the full conception of all the search feautures cited in [cross-ref
-]
+- Clear the way toward a semantic Search engine.
 \end_layout
 
 \begin_layout Standard
-- Complete the Open Issues cited in [cross-ref]
+- Proceeding the full conception of all the search features cited in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Proposals"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+- Complete implementation of all the open issues cited in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Open-Issues"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard

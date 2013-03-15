@@ -4994,7 +4994,41 @@ We use the word search to improve the ayah search by introducing a 2-steps
 \end_layout
 
 \begin_layout Standard
-[+figure: How 2 steps strategy work , as search do in previous work]
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Two-steps Search.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Two-Steps search behavior
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -5043,197 +5077,84 @@ As a conclusion, the 2-steps search strategy helps in retrieving Quran words
  semantic relations.
  The classification goes flexibly, and fast by using inverted indexes and
  ontologies.
- In the next table we explain some potential useful classifications: 
+ In the following, we explain some potential useful classifications for
+ the root 
+\lang arabic_arabi
+قول
+\lang english
+ (qwl): 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Float table
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Tabular
-<lyxtabular version="3" rows="4" columns="4">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Keyword
+\begin_layout Enumerate
+Synonyms: 
+\lang arabic_arabi
+نطق
+\lang english
+, 
+\lang arabic_arabi
+كلام
+\lang english
+, 
+\lang arabic_arabi
+شهادة
+\lang english
+.
 \end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Synonyms
+\begin_layout Enumerate
+Imperative tense: 
+\lang arabic_arabi
+قل
+\lang english
+, 
+\lang arabic_arabi
+قولوا
+\lang english
+, 
+\lang arabic_arabi
+قولي
+\lang english
+.
 \end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Conjugation in present
+\begin_layout Enumerate
+Passive form: 
+\lang arabic_arabi
+يقال
+\lang english
+, 
+\lang arabic_arabi
+قيل
+\lang english
+.
 \end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
+\begin_layout Enumerate
+Past tense: 
+\lang arabic_arabi
+قال
+\lang english
+, 
+\lang arabic_arabi
+قالا
+\lang english
+, 
+\lang arabic_arabi
+قلنا
+\lang english
+, 
+\lang arabic_arabi
+قالت
+\lang english
+...etc.
 \end_layout
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-يقول
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-يقول
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-يشهد
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Possible Classifications
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
+\begin_layout Enumerate
+Noun, Plural: 
+\lang arabic_arabi
+الأقاويل
+\lang english
+.
 \end_layout
 
 \begin_layout Standard
@@ -5267,7 +5188,16 @@ reference "Search-by-the-triple"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
 [Figure: fields choosing figure]
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -5287,7 +5217,37 @@ PROPERTY_FIELDi.
 \end_layout
 
 \begin_layout Standard
-[+figure: class example 1MP = First person, Masculine, Plural ]
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Word_Properties.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Word properties search example : First person, Plural, Masculine
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -5361,12 +5321,37 @@ reference "Synonyms-&-Antonyms:"
 \end_layout
 
 \begin_layout Standard
-[+figure: behavior : user keyword --- ontology ---> related keywords -----
- ayah index --- 
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Ontology  Search.png
+	scale 60
+
+\end_inset
+
+
 \end_layout
 
-\begin_layout Standard
---> ayahs]
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Searching through an ontology
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -5392,7 +5377,41 @@ to search using an undefined relation
 \end_layout
 
 \begin_layout Standard
-[+figure: Synonymy~Jennah, Antonymy~Jennah, intmai~prophet]
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Hyponymy-prophets.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Semantically Related Words, Hyponymy of the word 
+\lang arabic_arabi
+نبي
+\lang english
+ (prophet)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
