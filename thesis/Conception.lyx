@@ -5438,7 +5438,7 @@ reference "Search-by-Derivations:"
  So the adopted form would be the reference level to our operation.
  If we adopt the stem so the root level will be the only one.
  If we adopt the lemma there would be two levels: the stem and the root.
- This operation require the origins of each Quranic word to be available.
+ This operation require the origins of each Qur'anic word to be available.
 \end_layout
 
 \begin_layout Standard
@@ -5465,34 +5465,41 @@ origin level
 \end_layout
 
 \begin_layout Standard
-+figure: 
-\lang arabic_arabi
-سميتموها
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-\lang english
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-example
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Multi-level derivation search example.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Multi-level Derivation Search example
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -5507,13 +5514,27 @@ This operation is quite similar to the previous one in the objective.
 \end_layout
 
 \begin_layout Itemize
-Conjugation of verbs in different tenses: [possible tenses]
+Conjugation of verbs in different tenses: Perfect, Imperfect, Imperative.
 \end_layout
 
 \begin_layout Itemize
-Conjugation of verbs with different pronouns: [possible pronouns]
+Conjugation of verbs with different pronouns:
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+Person: First person, Second person, Third preson;
+\end_layout
+
+\begin_layout Itemize
+Number: Singular, Dual, Plural;
+\end_layout
+
+\begin_layout Itemize
+Gender: Masculine, Feminine.
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 Conjugation of verbs in different voices: Active, Passive.
 \end_layout
@@ -5532,17 +5553,36 @@ Genders and Plurals of a noun: Masculine singular , Feminine singular ,
 \end_layout
 
 \begin_layout Itemize
-Deverbals s of a root: 
+Deverbals of a root: Active participle (
 \lang arabic_arabi
-أنواع المصادر
+اسم فاعل
+\lang english
+), Passive participle (
+\lang arabic_arabi
+اسم مفعول
+\lang english
+), Nouns of time and place (
+\lang arabic_arabi
+أسماء الزمان والمكان
+\lang english
+), Noun of instrument (
+\lang arabic_arabi
+اسم الآلة
+\lang english
+), The Nomen Vicis (
+\lang arabic_arabi
+اسم المرة
+\lang english
+), The Nomen Speciei (
+\lang arabic_arabi
+اسم الهيئة
+\lang english
+).
 \end_layout
 
 \begin_layout Itemize
-Adjectives of a root: 
-\end_layout
-
-\begin_layout Itemize
-Verbs of a root:
+Other derivations: the forms of exaggeration, The Comparative and Superlative
+ Noun.
 \end_layout
 
 \begin_layout Standard
@@ -5560,11 +5600,52 @@ We propose the query syntax OPERATION(WORD) to search for the set words
 \end_layout
 
 \begin_layout Standard
-[+figure: Imperative(
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename figures/Specific Derivation example.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Special derivations example, Imperative of 
 \lang arabic_arabi
 قال
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
 \lang english
-), filter existing words, results]
+ (to say)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -5622,99 +5703,241 @@ Any fuzzy search algorithm should consider some specific similarities in
 \begin_layout Itemize
 The similarity between the different forms of each letter: Hamza, Ta', and
  Alef.
+ For example, 
+\lang arabic_arabi
+مءصدة
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(Hamza on the line) and 
+\lang arabic_arabi
+مؤصدة
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(Hamza on waw).
  
 \end_layout
 
-\begin_deeper
-\begin_layout Itemize
-[Example 
-\lang arabic_arabi
-مءصدة
-\lang english
-]
-\end_layout
-
-\end_deeper
 \begin_layout Itemize
 An unvocalized letter is so similar to a vocalized one whatever the vowel
  is.
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-[example: 
+ For example, 
 \lang arabic_arabi
 الحمد
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
 \lang english
- vs vocalized]
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(unvocalized) and 
+\lang arabic_arabi
+الحَمْدُ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(vocalized).
 \end_layout
 
-\end_deeper
 \begin_layout Itemize
 Tanwin in a vowel is roughly similar to a vowel without Tanwin.
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-[example: 
+ For example, 
 \lang arabic_arabi
-عشر
+عشرِ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
 \lang english
- kessra vs kessra tanwin]
+ (kessra) 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+and 
+\lang arabic_arabi
+عشرٍ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(tanwin kessra).
 \end_layout
 
-\end_deeper
 \begin_layout Itemize
 Shedda on a letter is so similar to the letter doubled.
- 
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-[ 
-\lang arabic_arabi
-يضلله
-\lang english
- == 
+ For example, 
 \lang arabic_arabi
 يضلَه
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
 \lang english
-]
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-a 
+ (Shedda on Lam) and 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
 \lang arabic_arabi
-ة
+يضلله
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
 \lang english
- and 
-\lang arabic_arabi
-ه
-\lang english
-, alef maqsora and yah.
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(doubled Lam).
 \end_layout
 
-\begin_deeper
-\begin_layout Itemize
-[
-\lang arabic_arabi
-الجنه الضحي
-\lang english
-]
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-A long vowel is quite similar to its corresponding short vowel.
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-[remove if you don't find example]
-\end_layout
-
-\end_deeper
 \begin_layout Standard
 The fuzzy search algorithms could be strengthened by coupling it with a
  Phonetic algorithm.
@@ -5722,7 +5945,17 @@ The fuzzy search algorithms could be strengthened by coupling it with a
  to the same code, which allows phonetic similarity based word set comparison
  and indexing.
  Usually used for proper names where there is no unified spelling for the
- word [REF].
+ word 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+[REF]
+\end_layout
+
+\end_inset
+
+.
  One of the first algorithms was Soundtex invented in the 1910s by 
 \noun on
 Robert Russell
@@ -5730,42 +5963,268 @@ Robert Russell
 .
  Its working principle is based on the partition of consonants in groups
  with ordinal numbers, which are then compiled to the resulting value.
- By applying soundtex on Arabic, we gets a table as the following:
+ The following table represents one of the applications of Soundtex on Arabic:
 \end_layout
 
 \begin_layout Standard
-----
-\end_layout
-
-\begin_layout Standard
-[Google Soundtext table for Arabic]
 \begin_inset Float table
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="10" columns="3">
+<lyxtabular version="3" rows="8" columns="2">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Group
+Code
 \end_layout
 
 \end_inset
 </cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Letters
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+omit
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang arabic_arabi
+ا
+\lang english
+ 
+\lang arabic_arabi
+و
+\lang english
+ 
+\lang arabic_arabi
+ي
+\lang english
+ 
+\lang arabic_arabi
+ع
+\lang english
+ 
+\lang arabic_arabi
+ح
+\lang english
+ 
+\lang arabic_arabi
+ه
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang arabic_arabi
+ف
+\lang english
+ 
+\lang arabic_arabi
+ب
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang arabic_arabi
+خ
+\lang english
+ 
+\lang arabic_arabi
+ج
+\lang english
+ 
+\lang arabic_arabi
+ز
+\lang english
+ 
+\lang arabic_arabi
+س
+\lang english
+ 
+\lang arabic_arabi
+ص
+\lang english
+ 
+\lang arabic_arabi
+ظ
+\lang english
+ 
+\lang arabic_arabi
+ق
+\lang english
+ 
+\lang arabic_arabi
+ك
+\lang english
+ 
+\lang arabic_arabi
+غ
+\lang english
+ 
+\lang arabic_arabi
+ش
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang arabic_arabi
+ت
+\lang english
+ 
+\lang arabic_arabi
+ث
+\lang english
+ 
+\lang arabic_arabi
+د
+\lang english
+ 
+\lang arabic_arabi
+ذ
+\lang english
+ 
+\lang arabic_arabi
+ض
+\lang english
+ 
+\lang arabic_arabi
+ط
+\lang english
+ 
+\lang arabic_arabi
+ة
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang arabic_arabi
+ل
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang arabic_arabi
+ن
+\lang english
+ 
+\lang arabic_arabi
+م
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Group ID
+6
 \end_layout
 
 \end_inset
@@ -5775,267 +6234,10 @@ Group ID
 
 \begin_layout Plain Layout
 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
+\lang arabic_arabi
+ر
+\lang english
+ 
 \end_layout
 
 \end_inset
@@ -6052,7 +6254,7 @@ Group ID
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Soundtex table for Arabic
+Soundtex table for Arabic [REF]
 \end_layout
 
 \end_inset
@@ -6066,32 +6268,95 @@ Soundtex table for Arabic
 \end_layout
 
 \begin_layout Standard
-The soundtex method should be customized for Arabic to work with vowels
+Generally the fuzzy search should be implemented to work automatically either
+ always or when there is a lack of results.
+ Another case is to show the possibilities as suggestions.
 \end_layout
 
 \begin_layout Standard
-========
+Those are some examples of fuzzy search:
 \end_layout
 
-\begin_layout Standard
-behavior, status, needed resources, figure
-\end_layout
-
-\begin_layout Standard
-========
-\end_layout
-
-\begin_layout Standard
-Proposed Syntax: as a suggestion! work automatically either always or when
- lack of results
-\end_layout
-
-\begin_layout Standard
-[+figure: class example 
+\begin_layout Enumerate
+Mis-order of letters: 
 \lang arabic_arabi
-هرم -- إرم, زنبجيل , الفأة
+زنبجيل
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
 \lang english
- ]
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+for 
+\lang arabic_arabi
+زنجبيل
+\lang english
+.
+\end_layout
+
+\begin_layout Enumerate
+Phonetic similarity: 
+\lang arabic_arabi
+هرم
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+for 
+\lang arabic_arabi
+إرم
+\lang english
+.
+\end_layout
+
+\begin_layout Enumerate
+Spelling similarity: 
+\lang arabic_arabi
+الضحي
+\lang english
+ for 
+\lang arabic_arabi
+الضحى
+\lang english
+.
 \end_layout
 
 \begin_layout Standard
@@ -6135,13 +6400,19 @@ All: .
 
 \end_layout
 
+\begin_layout Standard
+
+\series bold
+\begin_inset Note Note
+status collapsed
+
 \begin_layout Section
 
 \series bold
 Suggestion System
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 La méthode de fonctionnement des modules de suggestion est généralement :
  pendre les mots-clés résultant du parseur et non pas directement de la
  requête brute entrée par l'utilisateur car certains mots-clés sont traités
@@ -6152,7 +6423,7 @@ La méthode de fonctionnement des modules de suggestion est généralement :
  
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Float figure
 wide false
 sideways false
@@ -6186,21 +6457,21 @@ Suggester
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 We explain many possibilities of suggestions and the way to achieve each
  one.
  
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 ===============
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 [definition, what needs, how to achieve that]
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 ===============
 \end_layout
 
@@ -6257,24 +6528,24 @@ name "sec:Statistics-Gathering-System"
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 The use of vocalization will improve the quality and the accuracy of statistics
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 use the Uthmani text as a default text for statistics in addition to the
  standard text
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 what about Dagger-Alef, consider it?
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 how to retrieve collocations?
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 what words can be considered as Divine name:
 \lang arabic_arabi
  *لله*!
@@ -6282,7 +6553,7 @@ what words can be considered as Divine name:
  , huwa or Rab when it refer surely to Allah?
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Calculating statistics will be during importing texts or after indexing
  them, based on whether they requires text analytics or not.
 \end_layout
@@ -6291,28 +6562,28 @@ Calculating statistics will be during importing texts or after indexing
 Toward a Semantic search engine
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 ---
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Semantic search require the implementation of basic linguistic operations
  , 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 the accuracy must be high in order to diminish the ambiguities arisen 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 (google semantic search requirements
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 --
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Parsing Arabic texts is not an easy task to perform because of two fundamental
  phenomena.
  The first phenomenon is related to the particularities of that language
@@ -6350,7 +6621,7 @@ and the problems related to the segmentation of paragraphs into sentences.
  
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 The second phenomenon concerns the significant scarcity of the available
  digital resources for the Arabic language, especially the grammars and
  corpora.
@@ -6359,13 +6630,13 @@ The second phenomenon concerns the significant scarcity of the available
  
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Until now, it has been difficult to say that there are parsers for the Arabic
  language that are efficient and/or marketed, while there has been much
  research on parsing other natural languages.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Our approach is to make a progressive parser since it proceeded by treating
  a sentence into a number of stages equal to the number of its words.
  At every step, the parser affects the target word with the most likely
@@ -6378,8 +6649,13 @@ Our approach is to make a progressive parser since it proceeded by treating
  
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 --
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -6598,8 +6874,13 @@ We based on our previous work, we proposed fixes for what already done ,
  to offer most of the features mentioned in the previous chapter.
  We proposed a customized text processing to fits the properties of Quranic
  text.
- We introduce searching using the word as a unit in order to 
+ We introduce searching using the word as a unit in order to achieve a set
+ of search features that requires the manipulation of word sets.
 \end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
 
 \begin_layout Itemize
 Quranic Word Search;
@@ -6611,10 +6892,9 @@ An accurate statistics gathering system;
 
 \begin_layout Itemize
 More adequate suggestion system;
-\begin_inset Note Note
-status open
+\end_layout
 
-\begin_layout Plain Layout
+\begin_layout Itemize
 The road-map toward semantic search.
 \end_layout
 
