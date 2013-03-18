@@ -7991,8 +7991,11 @@ Conclusion
 \end_layout
 
 \begin_layout Standard
-We based our work on a previous one.
- We made lot of improvements as explained the chapter.
+[enrich]
+\end_layout
+
+\begin_layout Standard
+We made lot of improvements as explained in the chapter.
  Unfortunately, there are more improvements to be done and many issues to
  be resolved.
  we clarified this under the subsection: Open issues.

@@ -110,7 +110,7 @@ addcontentsline{toc}{part}{General Conclusion}
 
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 [ a refaire ]
@@ -154,32 +154,58 @@ Optimization of solutions and stydying Complexity of each feature
 \end_layout
 
 \begin_layout Standard
-Our main objective is to design a retrieval system that fit the Qur'an search
+Our proposal was about design a retrieval system that fit the Qur'an search
  needs.
- But to realize this objective, we had to list and classify all the search
- features that are possible and helpful.
- Then we've proceeded how to implement most of those features and what is
- requirements to do that.
+ But to realize this objective, we had to first list and classify all the
+ search features that are possible and helpful.
+ Then we needed to make a global conception for a retrieval system as a
+ first stone to achieve each search feature.
 \end_layout
 
 \begin_layout Standard
----
+We started by three chapters for the state of art.
+ The first is about search engines and how they works.
+ The second is about Arabic language and its properties.
+ The third is about Quran and its properties including its indexes and many
+ search tools.
 \end_layout
 
 \begin_layout Standard
-Our plan was
+To clarify our proposal, we have enlisted the search features in Quran that
+ are helpful.
+ To facilitate the enlisting, we have classified those features depending
+ on the nature of the problem.
+ That list will help us to make a detailed retrieval system that fit perfectly
+ the needs of the Quran.
+ We conducted a survey about usefulness, usability and clarity of each feature
+ and we have got very helpful feedbacks.
+ Each feature has a different level of complexity: could be implemented
+ easily or may lead to vast problem that need a deeper study.
+ 
 \end_layout
 
 \begin_layout Standard
-__
+For conception, We based on our previous work, we proposed fixes for what
+ already done , and new improvements.
+ The improvements are about getting to a full vocalized search engine customized
+ to offer most of the features mentioned in the previous chapter.
+ We proposed a customized text processing to fits the properties of Quranic
+ text.
+ We introduce searching using the word as a unit in order to achieve a set
+ of search features that requires the manipulation of word sets.
+ [++]
 \end_layout
 
 \begin_layout Standard
-Perspective: 
+We went through the implementation of many search features that we previously
+ enlisted .
+ Unfortunately, there are more improvements to be done and many issues to
+ be resolved.
+ we left them as perspectives: 
 \end_layout
 
 \begin_layout Standard
-- Clear the way toward a semantic Search engine.
+- Clear the way toward a semantic search engine.
 \end_layout
 
 \begin_layout Standard
@@ -202,156 +228,6 @@ reference "sub:Open-Issues"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-=======
-\end_layout
-
-\begin_layout Standard
-Notre plan est la construction d'un noyau de recherche simple.
- Ce dernier doit être extensible et propre.
- Cela pourrait être fait sur la base d'une bibliothèque Whoosh qui est une
- bibliothèque de programmation pour créer un moteur de recherche, il est
- évident pour les besoins d’études.
-\end_layout
-
-\begin_layout Standard
-Ensuite nous passerons à travers le traitement de texte, faire quelques
- améliorations comme: la normalisation personnalisées en script Uthmani,
- la lemmatisation en prévenant les marques de récitation et se basant sur
- les index manuels.
- Aussi nous allons réfléchir à la mise en œuvre de ces nouvelles fonctionnalités
-:
-\end_layout
-
-\begin_layout Itemize
-La résolution des références des pronoms, par exemple “
-\series bold
-\lang arabic_arabi
-لا اله الا هو
-\series default
-\lang english
-
-\begin_inset Quotes srd
-\end_inset
-
-, 
-\series bold
-\lang arabic_arabi
-هو
-\series default
-\lang english
- est la référence de 
-\series bold
-\lang arabic_arabi
-الله
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-\lang english
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-;
-\end_layout
-
-\begin_layout Itemize
-La considération des différentes significations, par exemple 
-\lang arabic_arabi
- 
-\series bold
-رب
-\series default
-ّ
-\lang english
- avec le sens "
-\series bold
-dieu
-\series default
-" et non pas le sens de "
-\series bold
-maître
-\series default
-" 
-\end_layout
-
-\begin_layout Itemize
-Respecter l’écriture Uthmani des mots clés pendant la recherche .
-\end_layout
-
-\begin_layout Itemize
-La recherche des valeurs numériques, par exemple 
-\series bold
-309
-\series default
- remplacée by
-\lang arabic_arabi
- 
-\series bold
-تسعمائة و تسعة
-\series default
- 
-\end_layout
-
-\begin_layout Standard
-Aussi, nous allons améliorer les phases de traitement des requêtes afin
- de mieux s'accorder aux dérivations et aux propriétés de la langue Arabe.
- Nous suggérons d'introduire de nouveaux Jokers (pour la recherche par expressio
-ns régulières) spéciales pour l'arabe par exemple, un Joker pour des lettres
- et un autre pour diacritiques.
- Nous devons également avoir la capacité pour un utilisateur de limiter
- la famille d'un mot arabe en basant en ces propriétés.
- 
-\end_layout
-
-\begin_layout Standard
-Nous allons rechercher sur les meilleures méthodes de calcul pour recueillir
- des statistiques coranique.
- Quelles statistiques peut-on prélever? Avons-nous besoin des index manuels?
- Et comment le faire avec une meilleure précision? 
-\end_layout
-
-\begin_layout Standard
-Outre, nous allons essayer de réaliser un moteur de recherche plein vocalisé
- ce qui est très important pour obtenir la précision de recherche et des
- statistiques.
- 
-\end_layout
-
-\begin_layout Standard
-Enfin, étudier les possibilités de mise à niveau du moteur de recherche
- vers un moteur de recherche sémantique.
- La recherche sémantique vise à améliorer l'exactitude de recherche par
- la compréhension de l'intention de chercheur et la signification contextuelle
- des termes tels qu'ils apparaissent dans le Coran pour générer des résultats
- plus pertinents.
-\end_layout
-
-\begin_layout Standard
-Le projet sera Open Source afin que nous pouvons recevoir les feedbacks
- de la communauté open source et ceci rend plus facile la fixation des bogues
- et accélére la tâche de développement.
- l'Open source protègent également le projet de l'abandon et réduire le
- coût de mise en œuvre.
- 
 \end_layout
 
 \end_body
