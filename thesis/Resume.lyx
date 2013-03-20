@@ -1,0 +1,466 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass extreport
+\begin_preamble
+
+ 
+\usepackage{styles/esi_memoire}
+\end_preamble
+\use_default_options true
+\begin_modules
+hanging
+minimalistic
+initials
+fix-cm
+fixltx2e
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format pdf4
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref true
+\pdf_title "Advanced search engine for Holy-Quran"
+\pdf_author "Assem Chelli"
+\pdf_subject "Thesis"
+\pdf_keywords "Indexing/Search, Arabic, Holy Quran, Information retrieval, Search engines.  "
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 4
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_amsmath 0
+\use_esint 0
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic true
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3cm
+\topmargin 3cm
+\rightmargin 3cm
+\bottommargin 3cm
+\secnumdepth 3
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language swedish
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\bullet 1 0 9 -1
+\tracking_changes false
+\output_changes true
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+La resumé pour 
+\end_layout
+
+\begin_layout Author
+Assem Chelli
+\end_layout
+
+\begin_layout Abstract
+Noble Quran is different of all documents that we have known.
+ It's the sacred book of Muslims.
+ It contains knowledge of all aspects of life.
+ With this huge quantity of information, we can extract only a small part
+ manually and this is considered insufficient compared to the size of knowledge
+ contained by Quran.
+ That raises the need for a method to extract those information because
+ currently there is no efficient method except many printed lexicons and
+ many tools of simple sequential search with regular expression.
+ Due to this limitation, the Quran requires us to find new ways to interact.
+\end_layout
+
+\begin_layout Abstract
+The goal through this work is to propose a system for advanced research
+ in all of the information contained in the Quran by considering the morphology
+ of the Arabic language and the properties of the Qur'anic text.
+ It should be based on modern methods of information retrieval for good
+ stability and high speed search.
+ It would be very useful for researchers and could be generalized to cover
+ all the content in Arabic.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Keywords :
+\series default
+ Indexing/Search, Arabic, Holy Quran, Information retrieval, Search engines.
+ 
+\end_layout
+
+\begin_layout Section*
+Work Context
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\size larger
+Q
+\series default
+\size default
+ur'an, in Arabic, means the read or the recitation.
+ Muslim scholars define it as: the words of Allah revealed to His Prophet
+ Muhammad, written in Mus'haf and transmitted by successive generations
+ (
+\lang arabic_arabi
+التواتر
+\lang english
+)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Meh73"
+
+\end_inset
+
+.
+ The Qur'an is also known by other names such as: Al-Furkān , Al-kitāb ,
+ Al-dhikr , Al-wahy and Al-rōuh .
+ It is the sacred book of all Muslims and the first reference to Islamic
+ law.
+ It's more then 14 centuries passed since its revelation, and the Muslims
+ are still studying it, teaching it, writing books about it and recently
+ developing applications for it.
+\end_layout
+
+\begin_layout Standard
+Qur'an is an important source of information that contains various information
+ about all aspects of life: Scientific, Social, Historic, Politic...etc.
+ 
+\end_layout
+
+\begin_layout Section*
+Problematic
+\end_layout
+
+\begin_layout Standard
+Due to the large amount of information held in the Qur'an, it has become
+ extremely difficult for regular search engines to successfully extract
+ key information.
+ For example, When searching for a book related to English grammar, you’ll
+ simply Google it, select a PDF file and download it.
+ That’s all! Search engines (like Google) are used generally on Latin letters
+ and for searching general information of document like content, title,
+ author…etc.
+ However, searching through Qu'ranic text is a much more complicated; It's
+ procedure that's requiring a much more in depth solution as there is a
+ lot of information that needs to be extracted to fulfill Qur'an scholar's
+ needs.
+ Before the creation of computer, Qur'an scholars were using printed lexicons
+ made manually.
+ The printed lexicons can’t help much since many search process waste the
+ time and the force of the searcher.
+ Each lexicon is written to reply to a specific query which is generally
+ simple.
+ Nowadays, there are applications that are specific for search needs; most
+ of applications that were developed for Qur'an had the search feature but
+ in a simply way: sequential search with regular expressions.
+ 
+\end_layout
+
+\begin_layout Standard
+The simple search using exact query does not offer better options and still
+ inefficient to move toward Thematic search by example.
+ Full text search is the new approach of search that replaced the sequential
+ search and which is used in search engines.
+ Unfortunately, this approach is not applied yet on Qur'an.
+ The question is why we need this approach? Why search engines? Do applications
+ of search in Qur'an really need to be implemented as search engines? 
+\end_layout
+
+\begin_layout Section*
+Objectives
+\end_layout
+
+\begin_layout Standard
+Our proposal is about design a retrieval system that fit the Qur'an search
+ needs.
+ But to realize this objective, we must first list and classify all the
+ search features that are possible and helpful.
+ Then we need to study how to implement each feature and what is its requirement
+s.
+\end_layout
+
+\begin_layout Section*
+Report organization
+\end_layout
+
+\begin_layout Standard
+We organized the report as follows:
+\end_layout
+
+\begin_layout Subsection*
+First Part : Art State
+\end_layout
+
+\begin_layout Standard
+This part contains 3 chapters:
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Chapter 1 : Search Engines
+\end_layout
+
+\begin_layout Standard
+To design a powerful search engine, it is essential to understand how search
+ engines work, in this chapter we discuss the different parts of a search
+ engine, namely: the crawling, indexing and querying .
+ And the definition of basic concepts in the field of information retrieval
+ systems.
+ This chapter contains an introduction to the semantic approach.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Chapter 2 : Arabic Language
+\end_layout
+
+\begin_layout Standard
+The objective of this chapter is to present the properties of the Arabic
+ language, Its spells, Its morphology and introduce some ambiguities issues
+ that raise due to Arabic nature ...
+ etc.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Chapter 3 : The Qur'an
+\end_layout
+
+\begin_layout Standard
+This chapter presents an overview of the Qur'an and its sciences, it has
+ a historical background on the evolution of the Qur'an, the structure of
+ the Mus'haf, and the main problems of computerization of the Qur'an, including
+ the script Uthmani and authentication Qu'ranic texts.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Second Part : Analysis & Conception
+\end_layout
+
+\begin_layout Standard
+This part contains two chapters :
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Chapter 4 : Qur'anic search features
+\end_layout
+
+\begin_layout Standard
+The objective of this chapter is to present the possible search features
+ in Qur'an.
+ It has a big importance in our work since it defines our objectives and
+ our path on the work.
+ We've make a survey about Usefulness, Need, and Clarity of each feature
+ in order to validate our points of view in choosing those features.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Chapter 5 : Conception
+\end_layout
+
+\begin_layout Standard
+In this chapter, we start by a preview on our previous work then we'll propose
+ many improvements to carry out all the feasible search features mentioned
+ in the previous chapter.
+\end_layout
+
+\begin_layout Subsection*
+Third Part : Implementation and Tests
+\end_layout
+
+\begin_layout Standard
+This part contains the different steps of implementation of our retrieval
+ system.
+ It includes one chapter:
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Chapter 6 : Implementation and tests
+\end_layout
+
+\begin_layout Standard
+This chapter describes the choice of technologies and development tools
+ and also presents the prototype with a description of various features.
+ Also, we'll analyze the quality of code and the documentation coverage
+ with some statistics of usage.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Finally, we will finish the report with a conclusion that summarizes our
+ work.
+\end_layout
+
+\begin_layout Section*
+Conclusion
+\end_layout
+
+\begin_layout Standard
+Our proposal was about design a retrieval system that fit the Qur'an search
+ needs.
+ But to realize this objective, we had to first list and classify all the
+ search features that are possible and helpful.
+ Then we needed to make a global conception for a retrieval system as a
+ first stone to achieve each search feature.
+\end_layout
+
+\begin_layout Standard
+We started by three chapters for the state of art.
+ The first is about search engines and how they works.
+ The second is about Arabic language and its properties.
+ The third is about Quran and its properties including its indexes and many
+ search tools.
+\end_layout
+
+\begin_layout Standard
+To clarify our proposal, we have enlisted the search features in Quran that
+ are helpful.
+ To facilitate the enlisting, we have classified those features depending
+ on the nature of the problem.
+ That list will help us to make a detailed retrieval system that fit perfectly
+ the needs of the Quran.
+ We conducted a survey about usefulness, usability and clarity of each feature
+ and we have got very helpful feedbacks.
+ Each feature has a different level of complexity: could be implemented
+ easily or may lead to vast problem that need a deeper study.
+ 
+\end_layout
+
+\begin_layout Standard
+For conception, We based on our previous work, we proposed fixes for what
+ already done , and new improvements.
+ The improvements are about getting to a full vocalized search engine customized
+ to offer most of the features mentioned in the previous chapter.
+ We proposed a customized text processing to fits the properties of Quranic
+ text.
+ We introduce searching using the word as a unit in order to achieve a set
+ of search features that requires the manipulation of word sets.
+ [++]
+\end_layout
+
+\begin_layout Standard
+We went through the implementation of many search features that we previously
+ enlisted .
+ Unfortunately, there are more improvements to be done and many issues to
+ be resolved.
+ we left them as perspectives: 
+\end_layout
+
+\begin_layout Standard
+- Clear the way toward a semantic search engine.
+\end_layout
+
+\begin_layout Standard
+- Proceeding the full conception of all the search features cited in chapter
+ 4.
+\end_layout
+
+\begin_layout Standard
+- Complete implementation of all the open issues cited in chapter 6.
+\end_layout
+
+\end_body
+\end_document

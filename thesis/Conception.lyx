@@ -6388,7 +6388,7 @@ All: .
 
 \series bold
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Section
 
@@ -6544,6 +6544,20 @@ Calculating statistics will be during importing texts or after indexing
 
 \begin_layout Section
 Toward a Semantic search engine
+\end_layout
+
+\begin_layout Standard
+Question answering system requeire a resource like WORDNET that defines
+ the semantic relations between all words of quran, in addition to accurate
+ linguistic analysers.
+\end_layout
+
+\begin_layout Plain Layout
+---
+\end_layout
+
+\begin_layout Plain Layout
+faceted thematic search to refine the concepts search by questions
 \end_layout
 
 \begin_layout Plain Layout
