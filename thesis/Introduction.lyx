@@ -340,7 +340,7 @@ In this chapter, we start by a preview on our previous work then we'll propose
 \end_layout
 
 \begin_layout Subsection*
-Third Part : Implementation and Tests
+Third Part : Implementation
 \end_layout
 
 \begin_layout Standard
@@ -359,14 +359,24 @@ This part contains the different steps of implementation of our retrieval
 \begin_layout Standard
 
 \series bold
-Chapter 6 : Implementation and tests
+Chapter 6 : Implementation
 \end_layout
 
 \begin_layout Standard
 This chapter describes the choice of technologies and development tools
  and also presents the prototype with a description of various features.
- Also, we'll analyze the quality of code and the documentation coverage
- with some statistics of usage.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Also, we'll analyze the quality of code and the documentation coverage with
+ some statistics of usage.
+\end_layout
+
+\end_inset
+
+
 \begin_inset Newline newline
 \end_inset
 

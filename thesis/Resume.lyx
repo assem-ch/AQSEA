@@ -112,6 +112,7 @@ Noble Quran is different of all documents that we have known.
  Due to this limitation, the Quran requires us to find new ways to interact.
 \end_layout
 
+\begin_deeper
 \begin_layout Abstract
 The goal through this work is to propose a system for advanced research
  in all of the information contained in the Quran by considering the morphology
@@ -120,17 +121,22 @@ The goal through this work is to propose a system for advanced research
  stability and high speed search.
  It would be very useful for researchers and could be generalized to cover
  all the content in Arabic.
-\end_layout
+\begin_inset Newline newline
+\end_inset
 
-\begin_layout Standard
+
+\begin_inset Newline newline
+\end_inset
+
 
 \series bold
-Keywords :
+Keywords:
 \series default
  Indexing/Search, Arabic, Holy Quran, Information retrieval, Search engines.
  
 \end_layout
 
+\end_deeper
 \begin_layout Section*
 Work Context
 \end_layout
@@ -149,14 +155,7 @@ ur'an, in Arabic, means the read or the recitation.
 \lang arabic_arabi
 التواتر
 \lang english
-)
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Meh73"
-
-\end_inset
-
-.
+).
  The Qur'an is also known by other names such as: Al-Furkān , Al-kitāb ,
  Al-dhikr , Al-wahy and Al-rōuh .
  It is the sacred book of all Muslims and the first reference to Islamic
@@ -356,7 +355,7 @@ In this chapter, we start by a preview on our previous work then we'll propose
 \end_layout
 
 \begin_layout Subsection*
-Third Part : Implementation and Tests
+Third Part : Implementation
 \end_layout
 
 \begin_layout Standard
@@ -375,23 +374,17 @@ This part contains the different steps of implementation of our retrieval
 \begin_layout Standard
 
 \series bold
-Chapter 6 : Implementation and tests
+Chapter 6 : Implementation 
 \end_layout
 
 \begin_layout Standard
 This chapter describes the choice of technologies and development tools
  and also presents the prototype with a description of various features.
- Also, we'll analyze the quality of code and the documentation coverage
- with some statistics of usage.
+ 
 \begin_inset Newline newline
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-Finally, we will finish the report with a conclusion that summarizes our
- work.
 \end_layout
 
 \begin_layout Section*
@@ -421,7 +414,7 @@ To clarify our proposal, we have enlisted the search features in Quran that
  To facilitate the enlisting, we have classified those features depending
  on the nature of the problem.
  That list will help us to make a detailed retrieval system that fit perfectly
- the needs of the Quran.
+ the needs of the Qur'an.
  We conducted a survey about usefulness, usability and clarity of each feature
  and we have got very helpful feedbacks.
  Each feature has a different level of complexity: could be implemented
@@ -430,15 +423,15 @@ To clarify our proposal, we have enlisted the search features in Quran that
 \end_layout
 
 \begin_layout Standard
-For conception, We based on our previous work, we proposed fixes for what
- already done , and new improvements.
+For conception, we based on our previous work, we proposed fixes for what
+ already done, and new improvements.
  The improvements are about getting to a full vocalized search engine customized
  to offer most of the features mentioned in the previous chapter.
- We proposed a customized text processing to fits the properties of Quranic
+ We proposed a customized text processing to fits the properties of Qur'anic
  text.
  We introduce searching using the word as a unit in order to achieve a set
  of search features that requires the manipulation of word sets.
- [++]
+ 
 \end_layout
 
 \begin_layout Standard
@@ -449,17 +442,25 @@ We went through the implementation of many search features that we previously
  we left them as perspectives: 
 \end_layout
 
-\begin_layout Standard
-- Clear the way toward a semantic search engine.
+\begin_layout Itemize
+Conception of the suggestion system.
 \end_layout
 
-\begin_layout Standard
-- Proceeding the full conception of all the search features cited in chapter
+\begin_layout Itemize
+Improvement of the statistic system.
+\end_layout
+
+\begin_layout Itemize
+Clear the way toward a semantic search engine.
+\end_layout
+
+\begin_layout Itemize
+Proceeding the full conception of all the search features cited in chapter
  4.
 \end_layout
 
-\begin_layout Standard
-- Complete implementation of all the open issues cited in chapter 6.
+\begin_layout Itemize
+Complete implementation of all the open issues cited in chapter 6.
 \end_layout
 
 \end_body

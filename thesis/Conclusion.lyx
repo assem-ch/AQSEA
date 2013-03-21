@@ -193,23 +193,31 @@ For conception, We based on our previous work, we proposed fixes for what
  text.
  We introduce searching using the word as a unit in order to achieve a set
  of search features that requires the manipulation of word sets.
- [++]
+ 
 \end_layout
 
 \begin_layout Standard
 We went through the implementation of many search features that we previously
- enlisted .
+ enlisted.
  Unfortunately, there are more improvements to be done and many issues to
  be resolved.
- we left them as perspectives: 
+ We left them as perspectives: 
 \end_layout
 
-\begin_layout Standard
-- Clear the way toward a semantic search engine.
+\begin_layout Itemize
+Conception of a suggestion system.
 \end_layout
 
-\begin_layout Standard
-- Proceeding the full conception of all the search features cited in 
+\begin_layout Itemize
+Improvement of a statistic system.
+\end_layout
+
+\begin_layout Itemize
+Clear the way toward a semantic search engine.
+\end_layout
+
+\begin_layout Itemize
+Proceeding the full conception of all the search features cited in 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Proposals"
@@ -219,8 +227,8 @@ reference "sec:Proposals"
 .
 \end_layout
 
-\begin_layout Standard
-- Complete implementation of all the open issues cited in 
+\begin_layout Itemize
+Complete implementation of all the open issues cited in 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:Open-Issues"
