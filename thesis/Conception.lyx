@@ -1570,14 +1570,6 @@ annotations: Quranic words annotations.
 If any necessary resource was unvocalized or partially, we could exploit
  it using partial vocalization comparing method and proceed the operation
  of vocalization it.
- We'll talk about the resource manager that we propose in 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sec:Qur'anic-and-Linguistic"
-
-\end_inset
-
-.
  
 \end_layout
 
@@ -1632,8 +1624,8 @@ name "sec:Text-processing"
 \end_layout
 
 \begin_layout Standard
-Quran is written principally on Othmani script which has many different
- from the standard script used usually in different media.
+Quran is written principally on Othmani script which has many differences
+ compared to the standard script used usually in different media.
  In the previous work, we adopted the quranic text written on standard script
  but due to the difficulties caused by the its differences with Othmani
  script, we have to consider both scripts for indexing and search.
@@ -5487,7 +5479,7 @@ Multi-level Derivation Search example
 \end_layout
 
 \begin_layout Subsection
-Special Derivations
+Specific Derivations
 \end_layout
 
 \begin_layout Standard
@@ -5589,7 +5581,7 @@ wide false
 sideways false
 status open
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename figures/Specific Derivation example.png
@@ -6388,7 +6380,7 @@ All: .
 
 \series bold
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Section
 
@@ -6546,7 +6538,7 @@ Calculating statistics will be during importing texts or after indexing
 Toward a Semantic search engine
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Question answering system requeire a resource like WORDNET that defines
  the semantic relations between all words of quran, in addition to accurate
  linguistic analysers.
@@ -6902,7 +6894,7 @@ The road-map toward semantic search.
 \end_layout
 
 \begin_layout Standard
-In the next chapter,we'll talk about implementation details.
+In the next chapter, we'll talk about implementation details.
 \end_layout
 
 \end_body

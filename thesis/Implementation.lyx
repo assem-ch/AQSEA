@@ -2360,7 +2360,7 @@ e and minimize the size of results and the retrieving runtime.
 \begin_inset Float table
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset ERT
@@ -2856,8 +2856,8 @@ query attached to action
 \begin_inset Text
 
 \begin_layout Plain Layout
-all | translations |recitations | information | hints | surates | chapters
- | defaults | flags | fields | fields_reverse | errors | domains | help_messages
+all | translations | chapters | flags | fields ...
+ etc.
 \end_layout
 
 \end_inset
@@ -5386,7 +5386,7 @@ We have fixed a huge amount of shown up messages by Pylint including: Convention
 s, Refactors, Warnings, Errors.
  This leads by consequence into a mass re-organization of the source code
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 , see the current code architecture in 
@@ -5408,7 +5408,7 @@ reference "sec:Code-Architecture"
 \begin_inset Float table
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -7581,7 +7581,7 @@ JSON web service, destined to be used by web interfaces, smart phone apps,
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -7680,6 +7680,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename figures/API using sample.png
+	scale 70
 
 \end_inset
 
@@ -7789,7 +7790,7 @@ As a test interface, we made a console interface that works on command line.
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -7991,22 +7992,12 @@ Conclusion
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Comment
-status open
-
-\begin_layout Plain Layout
-[enrich]
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-We made lot of improvements as explained in the chapter.
- Unfortunately, there are more improvements to be done and many issues to
- be resolved.
+The chapter contains an explanation for why we have chosen the open source
+ approach.
+ We talked about the code base that we have started from.
+ Also, we talked the improvements that we have done.
+ We made a lot but unfortunately, there are more improvements to be done
+ and many issues to be resolved.
  we clarified this under the subsection: Open issues.
  We leave them as perspectives.
 \end_layout

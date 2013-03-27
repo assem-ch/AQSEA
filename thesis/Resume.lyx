@@ -92,11 +92,12 @@ fixltx2e
 \begin_body
 
 \begin_layout Title
-La resumé pour 
+Proposal of an Advanced Retrieval System for Noble Qur'an
 \end_layout
 
 \begin_layout Author
-Assem Chelli
+Assem Chelli, Pr.
+ Amar Balla
 \end_layout
 
 \begin_layout Abstract
@@ -109,13 +110,9 @@ Noble Quran is different of all documents that we have known.
  That raises the need for a method to extract those information because
  currently there is no efficient method except many printed lexicons and
  many tools of simple sequential search with regular expression.
- Due to this limitation, the Quran requires us to find new ways to interact.
-\end_layout
-
-\begin_deeper
-\begin_layout Abstract
-The goal through this work is to propose a system for advanced research
- in all of the information contained in the Quran by considering the morphology
+ Due to this limitation, the Quran requires us to find new ways to interact.The
+ goal through this work is to propose a system for advanced research in
+ all of the information contained in the Quran by considering the morphology
  of the Arabic language and the properties of the Qur'anic text.
  It should be based on modern methods of information retrieval for good
  stability and high speed search.
@@ -136,7 +133,91 @@ Keywords:
  
 \end_layout
 
-\end_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagestyle{fancy}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fancyhf{}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fancyfoot[C]{}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fancyfoot[R]{
+\backslash
+footnotesize 
+\backslash
+thepage}
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+fancyhead[R]{
+\backslash
+em 
+\backslash
+LR{ 
+\backslash
+leftmark }} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fancyhead[L]{
+\backslash
+LR{{
+\backslash
+scshape  
+\backslash
+footnotesize Chapter }{
+\backslash
+scshape 
+\backslash
+footnotesize 
+\backslash
+thechapter}}}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter*
+Introduction
+\end_layout
+
 \begin_layout Section*
 Work Context
 \end_layout
@@ -387,7 +468,7486 @@ This chapter describes the choice of technologies and development tools
 
 \end_layout
 
-\begin_layout Section*
+\begin_layout Chapter
+Classification & Proposition of Qur'anic Search Features
+\end_layout
+
+\begin_layout Standard
+Our proposal is to design an information retrieval system that fits to the
+ specific needs of the Quran.
+ But to realize this objective, we must first list and classify all the
+ search features that are possible and helpful, this chapter has been written
+ to explain this point.
+ It contains a listing for all search features that we have collected and
+ a classification depending on the nature of feature.
+ 
+\end_layout
+
+\begin_layout Section
+Search in Quran difficulties 
+\end_layout
+
+\begin_layout Standard
+To clarify the vision about the problematic of this paper, we are describing
+ the challenges that face the search in Quran: 
+\end_layout
+
+\begin_layout Itemize
+First, as a general search need;
+\end_layout
+
+\begin_layout Itemize
+Second, as an Arabic search challenge; 
+\end_layout
+
+\begin_layout Itemize
+Third, Quran as a special source of information.
+ 
+\end_layout
+
+\begin_layout Standard
+We start explaining the first point, the search in Quran is by theory has
+ the same challenges of search in any other documents.
+ The search in documents has passed by different phases in its evolution
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+ref: search evolution, exact word, regular expression, sequencial search,
+ full text search, semantic aproche 
+\end_layout
+
+\end_inset
+
+.
+ At the beginning, the search was sequential based an exact keyword before
+ the regular expressions were introduced.
+ Full text search was invented to avoid the sequential search limitations
+ on huge documents.
+ The full text search introduces some new mechanisms for text analysis that
+ include tokenization, normalization, and stemming...etc.
+ Gathering Statistics make now a part of search process, it helps to improve
+ the order of results and the suggestions.
+ After the raising of the web semantic, the search is heading to a semantic
+ approach where the to improve search accuracy by understanding searcher
+ intent and the contextual meaning of terms as they appear in the search-able
+ data-space to generate more relevant results
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+ref: semantic search, google the phrase 
+\end_layout
+
+\end_inset
+
+.
+ To get more user experience, the search engines try to improve the behavior
+ of showing the results by sorting it based on their relevance in the documents
+ , more sorting criteria, Highlighting the keywords, Pagination, Filtering
+ and Expanding
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+ref: Search engines highligh, pagunation
+\end_layout
+
+\end_inset
+
+.
+ Moreover, improve the query input by introducing different input methods
+ (ex: Vocal input) and suggesting related keywords.
+ Till now, most of these features are not implemented to use on Quran.
+ And many of them need to be customized to fit the Arabic properties that
+ what explained in the next point.
+ 
+\end_layout
+
+\begin_layout Standard
+Secondly, Quran’s language is considered as the classical Arabic
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Shah07"
+
+\end_inset
+
+.
+ Arabic is a specific language because its morphology and orthography
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+ref: google it arabic specific morphp and ortho
+\end_layout
+
+\end_inset
+
+, and this must be taken into consideration in text analyzing phases.
+ For instance, letters shaping (specially the Hamza 
+\lang arabic_arabi
+-ء-
+\lang english
+), the vocalization, the different levels of stemming and types of derivations...et
+c.
+ That must be taken into consideration in search features by example: the
+ regular expressions are badly misrepresenting the Arabic letters since
+ the vocalization diacritics are not distinct from letters.
+ The absence of vocalization issues some ambiguities 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Alb09"
+
+\end_inset
+
+ in understanding the words:
+\end_layout
+
+\begin_layout Itemize
+The word 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{الملك}
+\end_layout
+
+\end_inset
+
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+could be understood as
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
+\lang arabic_arabi
+المَلَك
+\lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (the angel), 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
+\lang arabic_arabi
+المَلِك
+\lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (the king) or 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
+\lang arabic_arabi
+المُلْك
+\lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ (the kingdom)
+\end_layout
+
+\begin_layout Itemize
+The word 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
+\lang arabic_arabi
+وعد
+\lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ could be understood as 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
+\lang arabic_arabi
+وَعَدَ
+\lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(*he* promise) or 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
+\lang arabic_arabi
+وَ+عَدَّ
+\lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(and + *he* count)
+\end_layout
+
+\begin_layout Itemize
+The word 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
+\lang arabic_arabi
+وله
+\lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ could be understood as 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
+\lang arabic_arabi
+وَلَهَ
+\lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(admire) or 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
+\lang arabic_arabi
+وَلِّ+ه
+\lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+( crown him ) or 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
+\lang arabic_arabi
+وَ+لَ+هُ
+\lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+( and + he + has ) 
+\end_layout
+
+\begin_layout Standard
+Trying to resolve these problems as a generic Arabic problem is really hard
+ since it hasn’t linguistic resources to make strict lexical analyzers
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+ref:Arabic google the phrase
+\end_layout
+
+\end_inset
+
+.
+ By the contrary, Quran has a limited count of words and that means that
+ it’s possible to write manually morphological indexes and use it to replace
+ lexical analyzers.
+ Finally, we explain in this point what the specific challenges faced in
+ search in order of the particular characteristic of Quran.
+ El-Mus-haf , the book of Quran, is written on the Uthmani script .
+ This last is full of recitation marks and spells some words in a different
+ way than the standard way.
+ By example, the word 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
+\lang arabic_arabi
+بسطة
+\lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ is spelled 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arbox{
+\end_layout
+
+\end_inset
+
+
+\lang arabic_arabi
+بصطة
+\lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ in Uthmani.
+ The Uthmani script requires considering its specifications in Text analyzing
+ phases: Normalization, Stemming.
+ Quran is structured in many analytic levels
+\lang french
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "BnJ"
+
+\end_inset
+
+
+\lang english
+:
+\end_layout
+
+\begin_layout Itemize
+Main structure: Sura, Aya, word, letter.
+\end_layout
+
+\begin_layout Itemize
+Special emplacements: Sura's start, Sura's end.
+ Aya's end.
+ Sajdah, Waqf , Facilah;
+\end_layout
+
+\begin_layout Itemize
+Mushaf structure: page, thumn, rubu', nisf, hizb, juz';
+\end_layout
+
+\begin_layout Itemize
+Quran writing: sawāmit, harakāt, hamza, diacritics, signes of distinction
+ between similar letters, phonetic signs;
+\end_layout
+
+\begin_layout Itemize
+Incorporeal structure: word, keyword, expression, objective unit
+\end_layout
+
+\begin_layout Itemize
+Revelation: order, place, calender, cause, context...etc
+\lang french
+.
+
+\lang english
+ 
+\end_layout
+
+\begin_layout Standard
+The users may need to search, filter results or group them based on one
+ of those structures.
+ There are many sciences related to Quran, named Quranic Sciences: Tafsir,
+ Translation, Recitation, Similitude and Abrogation…etc.
+ 
+\end_layout
+
+\begin_layout Section
+Classification
+\end_layout
+
+\begin_layout Standard
+To make the listing of search features easier, we classified them in many
+ classes based on their objectives.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Advanced Query
+\series default
+: This class contains the modifications on simple Query in order to give
+ the user the ability of formulating his query in a précised way.
+ By example: Phrase search, Logical relations, Jokers.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Output Improvement
+\series default
+: Those are to improve the results before showing it to users.
+ The results must pass by many phases: Scoring, Sorting, Pagination, Highlightin
+g...etc.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Suggestion Systems
+\series default
+: This class contains all options that aims to offer a suggestion that help
+ users to correct, extend the results by improving the queries.
+ For example, suggest correction of misspelled keywords or suggest relative-word
+s.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Linguistic Aspects
+\series default
+: This is about all features that are related to linguistic Aspects like
+ stemming, Selection & filtering stop words, normalization.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Quranic Options
+\series default
+: It’s related to the properties of the book and the information included
+ inside.
+ As we mentioned in the problematic, the book of Quran (al-mushaf) is written
+ in uthmani script full of diacritical symbols and structured in many ways.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Semantic Queries
+\series default
+: Semantic approach is about to allow the users to pose their queries in
+ natural language to get more relevant results implicitly.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Statistical System
+\series default
+: This class covers all the statistical needs of users.
+ Statistics are helpful in classifications of words and ayahs and can be
+ used also to verify validity of the facts designated as Numerical miracles.
+ An example of statistics, searching the most frequented word.
+\end_layout
+
+\begin_layout Standard
+This is an initial classification; we have to improve it for a well exploit
+ of all possible search features.
+ 
+\end_layout
+
+\begin_layout Section
+Proposals
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Proposals"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In this point, we enlist all possible search features based on the classificatio
+n we mentioned before.
+ These entire features express a search need: general, related to Arabic
+ or related to Quran.
+ We have collected the basic ideas from: 
+\end_layout
+
+\begin_layout Itemize
+Classic & Semantic search engines: Google, 
+\end_layout
+
+\begin_layout Itemize
+Arabic search engines: Taya it, 
+\end_layout
+
+\begin_layout Itemize
+Quranic search tools: Zekr application, al-monaqeb alqurany, 
+\end_layout
+
+\begin_layout Itemize
+Indexing/Search programming libraries: Whoosh, Lucene 
+\end_layout
+
+\begin_layout Itemize
+Quranic Paper lexicons: The indexed mu'jam of words of the Holy Quran(
+\series bold
+\lang arabic_arabi
+ المعجم المفهرس لألفاظ القرآن الكريم
+\lang english
+) by 
+\series default
+\noun on
+Mohammed Fouad Abd El-bāki
+\end_layout
+
+\begin_layout Standard
+We have manipulated those ideas to fit the context of Arabic and Quran.
+ There are many features that are totally new , we propose them to fulfill
+ a search need or resolve a specific problem.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Note:
+\series default
+ the listing is included in the thesis.
+\end_layout
+
+\begin_layout Chapter
+Conception
+\end_layout
+
+\begin_layout Standard
+After listing all possible search features as explained in the previous
+ chapter, we will - at first - go through our previous work explaining all
+ what we have already done.
+ After that, we'll discuss many improvements that leads to a better search
+ experience.
+ We've gathered those improvements under those points:
+\end_layout
+
+\begin_layout Itemize
+Maintain a full vocalization search engine;
+\end_layout
+
+\begin_layout Itemize
+Text processing based on Uthmani script;
+\end_layout
+
+\begin_layout Itemize
+Quranic Word Search;
+\end_layout
+
+\begin_layout Section
+Full vocalized search engine 
+\end_layout
+
+\begin_layout Standard
+An obvious fact is that the majority of Arabic texts are written unvocalized
+ (without diacritical marks), this causes some confusion in the meaning,
+ only the context of text can lift the ambiguity.
+ Therefore, We had to consider the vocalization in all indexing and search
+ phases in order to achieve a Quranic retrieving system that pass over these
+ ambiguities.
+ One of the main barriers that prevent the consideration of vocalization
+ in Arabic is the lack of vocalized Arabic texts among the total Arabic
+ content
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+whereas the percent is nearly %%
+\end_layout
+
+\end_inset
+
+.
+ Though, since the Quran is already fully vocalized so one barrier is lifted
+ on.
+ Another barrier is comparing vocalized, partially vocalized, and unvocalized
+ texts because the ordinary comparing does not distinguish between letters
+ and diacritics and fails to discover the similarity between words.
+ For example, with ordinary comparing those words will be considered different:
+ 
+\lang arabic_arabi
+الحمد
+\lang english
+ , 
+\lang arabic_arabi
+الحَمد
+\lang english
+ , and 
+\lang arabic_arabi
+الحَمْدُ
+\lang english
+.
+ That's why we had attempted to replace it with a partial vocalization comparing
+ which is working as following:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1st word
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2nd word
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+comparing result
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+reason
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+الملْك
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+المٌلكُ
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+True
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+no conflicting diacritics
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+المَلك
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+المُلكٌ
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+False
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+conflict of diacritics
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Partial vocalization
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We've intended to use this method in the comparing between search query
+ keywords and indexed keywords but this is not sufficient for two reasons:
+ 
+\end_layout
+
+\begin_layout Standard
+1.
+ This will take effect only in searching and not all operations needed in
+ indexing, statistics calculation, detecting suggestions, detecting synonyms,
+ detecting different vocalizations and any operation may appear later.
+\end_layout
+
+\begin_layout Standard
+2.
+ The performance will be affected since this method is not optimized compared
+ to the ordinary one.
+\end_layout
+
+\begin_layout Standard
+To fix those two issues, we have to improve the comparing method in the
+ lowest layers possibles: 
+\end_layout
+
+\begin_layout Itemize
+Regular expression engine: General regular expressions has no classification
+ for
+\series bold
+ 
+\series default
+neither Arabic letters nor Arabic diacritics while it gives special classes
+ for Latin letters, digits, and symbols.
+ Introducing Arabic customized classes into the regex engine improves the
+ partial vocalization comparing performance and makes it globally available.
+ 
+\end_layout
+
+\begin_layout Itemize
+Basic string: in most programming languages, strings are objects and have
+ their own comparing method.
+ Replacing that object method with our partial comparing operation takes
+ effect on all declared instances and all derived objects.
+\end_layout
+
+\begin_layout Standard
+One problem of changing Regex engine or basic string directly in-place is
+ the possibility of disconnecting from the main line of the programming
+ language development.
+ That should be token in consideration because if it happens the forked
+ branch will be stuck.
+ An alternative way is the prototyping instead of replacing in-place.
+ With this way, lot of conflicts -between main development branch and forked
+ branch- can be avoided.
+\end_layout
+
+\begin_layout Standard
+To improve better the vocalized search, we have to distinguish between original
+ vowels and declension case markers because words like 
+\lang arabic_arabi
+الْمُلْكُ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(Kingdom, nominative), 
+\lang arabic_arabi
+الْمُلْكِ
+\lang english
+ (Kingdom, genitive), 
+\lang arabic_arabi
+الْمُلْكَ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(Kingdom, accusative) are considered as one word with one meaning which
+ is Kingdom.
+ This will give best matches in search and will not oblige the user to repeat
+ the search operation with each one of the different possible declensions.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/strip declension.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Different possible declensions of the word 
+\lang arabic_arabi
+الملك
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ignoring vocalization has a direct influence on filtering stop-words because
+ filtering out a word like the particle 
+\lang arabic_arabi
+مِنْ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ leads to filtering the relative noun 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang arabic_arabi
+مَنْ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ and the verb 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang arabic_arabi
+مَنَّ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ .
+ Using vocalized stop-words is very recommended to avoid ambiguities and
+ to confine the filtered occurrences.
+ We'll mention how we gather the stop-words in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Filtring-Stop-words:"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Different types.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Different types of the possible vocalizations of the word 
+\lang arabic_arabi
+من
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Another problem emerges by ignoring the vocalization is the inaccuracy of
+ statistics.
+ For example the frequency of the unvocalized word 
+\lang arabic_arabi
+الملك
+\lang english
+ will be the total of all those words 
+\lang arabic_arabi
+الْمُلْكُ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(Kingdom, nominative), 
+\lang arabic_arabi
+الْمُلْكِ
+\lang english
+ (Kingdom, genitive), 
+\lang arabic_arabi
+الْمُلْكَ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(Kingdom, accusative), 
+\lang arabic_arabi
+الْمَلِكُ
+\lang english
+ (King, nominative), and 
+\lang arabic_arabi
+الْمَلِكِ
+\lang english
+ (King, genitive).
+ The appropriate way to gather statistics is to use the vocalized words
+ by ignoring the haraka of declension case (
+\lang arabic_arabi
+حالة الإعراب
+\lang english
+) for nouns so for the previous example we'll have two units: 
+\lang arabic_arabi
+المُلْك
+\lang english
+ (Kingdom, undefined case), 
+\lang arabic_arabi
+المَلِك
+\lang english
+ (King, undefined case).
+ We'll talk more about gathering statistics in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Statistics-Gathering-System"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+In order to build a full vocalized search engine, the linguistic and quranic
+ resources that we use should be fully vocalized too.
+ Those resources could be: 
+\end_layout
+
+\begin_layout Itemize
+a text: Quranic ayahs.
+\end_layout
+
+\begin_layout Itemize
+a list of names: sura names.
+\end_layout
+
+\begin_layout Itemize
+an ontology: Quranic concepts.
+\end_layout
+
+\begin_layout Itemize
+a thesaurus: synonyms, antonyms .
+\end_layout
+
+\begin_layout Itemize
+a word mapping: Uthmani to Standard writing.
+\end_layout
+
+\begin_layout Itemize
+annotations: Quranic words annotations.
+\end_layout
+
+\begin_layout Standard
+If any necessary resource was unvocalized or partially, we could exploit
+ it using partial vocalization comparing method and proceed the operation
+ of vocalization it.
+ 
+\end_layout
+
+\begin_layout Standard
+The old method of generating suggestions that we have proposed in the previous
+ work didn't consider vocalization because it may rise some glitches such
+ as:
+\end_layout
+
+\begin_layout Itemize
+Larger number of n-grams.
+\end_layout
+
+\begin_layout Itemize
+It's insignificant to have n-grams that start with a vocalization mark.
+\end_layout
+
+\begin_layout Standard
+The right behavior is to distinguish between letters and diacritics and
+ change the gram to contain the letter and the diacritic after then change
+ the similarity function to use partial vocalization comparing.
+ This keeps a small number of n-grams and avoids insignificant ones.
+ 
+\end_layout
+
+\begin_layout Standard
+As a conclusion we mention benefits gained by basing on a full vocalization
+ environment:
+\end_layout
+
+\begin_layout Itemize
+Lift the ambiguities cause by ignoring vocalizations
+\end_layout
+
+\begin_layout Itemize
+Make searching results, suggestions, and statistics more accurate.
+\end_layout
+
+\begin_layout Itemize
+Refine the meanings detection ( a first step in the semantic approach )
+\end_layout
+
+\begin_layout Section
+Othmani script and text processing
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Text-processing"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Quran is written principally on Othmani script which has many different
+ from the standard script used usually in different media.
+ In the previous work, we adopted the quranic text written on standard script
+ but due to the difficulties caused by the its differences with Othmani
+ script, we have to consider both scripts for indexing and search.
+ Among those difficulties, we mention: 
+\end_layout
+
+\begin_layout Enumerate
+Searching with an othmani writing form of a word such as
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang arabic_arabi
+بصطة
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ knowing that it written also in the form 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang arabic_arabi
+بسطة
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ in another Ayah
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+occurs as 
+\lang arabic_arabi
+بصطة
+\family roman
+\series medium
+\shape up
+\size small
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+in (
+\lang arabic_arabi
+الأعراف
+\lang english
+ 69) and as 
+\lang arabic_arabi
+بسطة
+\family roman
+\series medium
+\shape up
+\size small
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+in (
+\lang arabic_arabi
+البقرة
+\lang english
+ 247) 
+\end_layout
+
+\end_inset
+
+.
+ The retrieving system can't distinguish between the two occurrences basing
+ only on the standard script.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Different writings of bas6a in Uthmani Script.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Different writing forms of the word 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang arabic_arabi
+بسطة
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ using Othmani script
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Calculating statistics knowing that letters number is different between
+ the two scripts in a big number of ayahs.
+ This difference is due to addition and removal of some letters in the Othmani
+ script.
+\end_layout
+
+\begin_layout Enumerate
+Matching the same Word-By-Word structure of some Quranic linguistic resources.
+ Using the Quranic word as the basic unit for linguistic resources lacks
+ for precision in some cases such in the case of two occurrences of word
+ that have different interpretation.
+ To resolve that, many Quranic linguistic resources have adopted the word
+ occurrence as a basic unit a.k.a Word-By-Word Quran browsing.
+ As a result for this, the resources such those have to use the words as
+ they occurred in Quran (consequently in Othmani script) because the separation
+ of some words is different between Othmani script and standard script as
+ in the word
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang arabic_arabi
+يَأَسَفَى
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+in Yusuf 84 which is separated to two words 
+\lang arabic_arabi
+يَا
+\lang english
+ + 
+\lang arabic_arabi
+أَسَفَى
+\lang english
+ in the standard script.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Attaching words in uthmani - Ya'asafa.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Merging Words in Uthmani Script
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As we've said, to resolve those difficulties we consider Othmani text also
+ for text processing along with standard text.
+ In addition, we propose many improvements on the text processing phases
+ to achieve many of search features.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Uthmani vs Standard Text Processing.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+General Schema of Uthmani and Standard text processing.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We list in the following our improvements per phase:
+\end_layout
+
+\begin_layout Subsection
+Substitution
+\end_layout
+
+\begin_layout Standard
+This is a new phase that we propose to be added before tokenization.
+ Its objective is to identify a list of pre-defined patterns and replace
+ them as a preparation for tokenization.
+ 
+\end_layout
+
+\begin_layout Standard
+Generally this phase is for processing the search query because it's not
+ needed in indexing Quranic text.
+\end_layout
+
+\begin_layout Standard
+We don't include this phase into normalization phase ( after tokenization
+ ) before those substitutions are essential for a perfect tokenization.
+ Especially that the tokenization phase is not a simple space-based separation
+ and configured to use a word-by-word corpus.
+ 
+\end_layout
+
+\begin_layout Standard
+We propose these cases of substitution:
+\end_layout
+
+\begin_layout Subsubsection
+
+\series bold
+Romanizations
+\end_layout
+
+\begin_layout Standard
+Among the search features that we've described in the previous chapter,
+ there is the option of search using a romanized Arabic text (see 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "enu:Romanization:"
+
+\end_inset
+
+).
+ Romanized texts are in Latin letters and our system is defined for Arabic
+ letters.
+ That's why we have to replace each letter with its appropriate correlative.
+ There are many romanization systems.
+ To provide the possibility to use more then one, we should specify a guessing
+ policy to detect what system is used in a given string.
+ There are many criteria that could be used in guessing, we list some of
+ them in the following:
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Nature of used characters: 
+\series default
+each romanization system uses a set of letters, numbers, or symbols to represent
+ the Arabic vowels and letters (including hamza forms).
+ The differences between those sets are remarkable.
+ For example, ISO233 norm uses usually some dotted letters such as ẗ for
+ 
+\lang arabic_arabi
+ة
+\lang english
+ ; In the contrary, Buckwalter uses instead symbols such as & for 
+\lang arabic_arabi
+ؤ
+\lang english
+ .
+ Those differences could be used to guess the romanization system.
+ 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+The following table represents the exclusive characters used by the three
+ romanization systems: ISO233, Buckwalter, and Arabtex.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Romanization system
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Exclusive characters
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ISO 233
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+TODO
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Buckwalter
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Arabtex
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Exclusive characters between ISO233, Buckwalter, and Arabtex
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+For example If we consider the three romanization systems: ISO233, Buckwalter,
+ and Arabtex, guessing the romanized word ẖalīfaẗ leads surely to ISO233
+ system because of the specfic characters ẖ, ī, ẗ.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Arabic valid words
+\series default
+: by interpreting the romanized word using the different romanization systems,
+ we get many correlative Arabic words.
+ We can check if each word is valid in Arabic, and eliminate non valid ones.
+ 
+\begin_inset Newline newline
+\end_inset
+
+For example, guessing the romanized word xalyfap leads surely to the system
+ buckwalter because it generates the only valid Arabic word: 
+\lang arabic_arabi
+خَليفَة
+\lang english
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Word existence in Quran: 
+\series default
+by checking the existence in the Quran of interpreted words arising from
+ a romanized word, we can detect potential ones.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Predefined priorities: 
+\series default
+the last criterion is the predefined priorities.
+ If the guessing system failed to limit the choices to only one romanization
+ system, it should pick the first one based on predefined priorities.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+
+\series bold
+Numbers into words
+\series default
+: 
+\end_layout
+
+\begin_layout Standard
+In Quran, the numbers are written in words not as we write them in the current
+ numeral systems (Arabic numerals
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Arabic numerals: (0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
+\end_layout
+
+\end_inset
+
+, or Hindi numerals
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Hindi numerals: (
+\lang arabic_arabi
+٠
+\lang english
+‎ - 
+\lang arabic_arabi
+١
+\lang english
+‎ - 
+\lang arabic_arabi
+٢
+\lang english
+‎ - 
+\lang arabic_arabi
+٣‎
+\lang english
+ - 
+\lang arabic_arabi
+٤
+\lang english
+‎ - 
+\lang arabic_arabi
+٥
+\lang english
+‎ - 
+\lang arabic_arabi
+٦
+\lang english
+‎ - 
+\lang arabic_arabi
+٧
+\lang english
+‎ - 
+\lang arabic_arabi
+٨‎
+\lang english
+ - 
+\lang arabic_arabi
+٩‎
+\lang english
+)
+\end_layout
+
+\end_inset
+
+aka Eastern Arabic numerals ).
+ We need to translate those numerals into the literal form to make them
+ search-able in the Quran.
+ In the following table , we list some numbers as they mentioned in Quran:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="12" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+N°
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ayah ID
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Number as mentioned
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Appropriate numeral
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(
+\lang arabic_arabi
+الإخلاص
+\lang english
+ 1) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+أَحَدٌ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(
+\lang arabic_arabi
+المائدة
+\lang english
+ 106)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+اثْنَانِ
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(
+\lang arabic_arabi
+مريم
+\lang english
+ 10) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+ثَلَاثَ
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(
+\lang arabic_arabi
+الأنفال
+\lang english
+ 65) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+عِشْرُونَ
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(
+\lang arabic_arabi
+البقرة
+\lang english
+ 261) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+مِائَةُ
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+100
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(
+\lang arabic_arabi
+الأنفال
+\lang english
+ 65) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+مِائَتَيْنِ
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+200
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(
+\lang arabic_arabi
+البقرة
+\lang english
+ 96) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+أَلْفَ
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1000
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(
+\lang arabic_arabi
+المعارج
+\lang english
+ 4) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+خَمْسِينَ_أَلْفَ
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+50000
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(
+\lang arabic_arabi
+يوسف
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+أَحَدَ_عَشَرَ
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(
+\lang arabic_arabi
+الكهف
+\lang english
+ 25) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+ثَلَاثَ_مِائَةٍ_سِنِينَ_وَازْدَادُوا_تِسْعًا
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+309
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(
+\lang arabic_arabi
+العنكبوت
+\lang english
+ 14) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+أَلْفَ_سَنَةٍ_إِلَّا_خَمْسِينَ_عَامًا
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+950
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Some numbers as they mentioned in Quran
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To be close to the Quranic way of writing numbers, we should respect many
+ properties.
+ We write each digit in its class: ones, tens, hundreds, thousands, tens
+ of thousands, hundreds of thousands, and better to not write the conjuction
+ waw (
+\lang arabic_arabi
+واو العطف
+\lang english
+).
+ Zero has to be ignored because it will never be written, we don't say 
+\lang arabic_arabi
+صفر رجل
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(zero men) but we say 
+\lang arabic_arabi
+لا رجل
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(no men).
+ One never mentioned as 
+\lang arabic_arabi
+واحد
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ but as 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang arabic_arabi
+أحد
+\lang english
+.
+ Some numbers accept gender such as 
+\lang arabic_arabi
+إثنان
+\lang english
+ (2, masculine) and 
+\lang arabic_arabi
+إثنتان
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(2, feminine).
+ Other numbers change their forms in the opposite gender of the count noun
+ (
+\lang arabic_arabi
+المعدود
+\lang english
+)
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+add to glossary
+\end_layout
+
+\end_inset
+
+ such as 
+\lang arabic_arabi
+سبع سماوات
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(7 heavens, feminine) and 
+\lang arabic_arabi
+سبعة أبحر
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(7 seas, masculine).
+ A hundred 
+\lang arabic_arabi
+مئة
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+had a special writing in Quran which is 
+\lang arabic_arabi
+مِائَةُ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ with an additional Alef.
+\end_layout
+
+\begin_layout Standard
+In the example N°11of the table, the number 309 was separated with the two
+ words but still search-able.
+ In the contrary , the example N°12 show an indirect mention of the number
+ 950.
+ That make it hard to be retrieved without understanding the Ayah semantically.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Substitution Example.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Example of Substitution
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Tokenization:
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Tokenization:"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The function of tokenization is to split a running text into tokens, so
+ that they can be fed into the next phases for further processing.
+ We keep the space-based tokenization from our previous work as a first
+ step since it's a perfect choice and the simplest one at the same time.
+ 
+\end_layout
+
+\begin_layout Standard
+After performing the space-based tokenization, We could also separate the
+ words (tokens) into their parts (sub-tokens) so we'll have separated pronouns
+ and clitics in case we needed a special processing for them.
+ The problem with this is that it emerges lot of flaws.
+ 
+\end_layout
+
+\begin_layout Standard
+Having as an example the word 
+\lang arabic_arabi
+فَأَسْقَيْنَاكُمُوهُ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+mentioned in (
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang arabic_arabi
+الحجر
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 22) 
+\end_layout
+
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ (meaning
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+English Translation of Mohammad Habib Shakir
+\end_layout
+
+\end_inset
+
+: so We give it to you to drink of) so the separated sub-tokens would be
+ 
+\lang arabic_arabi
+فَ
+\lang english
+ + 
+\lang arabic_arabi
+أَسْقَيْنَا
+\lang english
+ + 
+\lang arabic_arabi
+كُمُ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
++ 
+\lang arabic_arabi
+هُ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+( ignoring 
+\lang arabic_arabi
+و
+\lang english
+ ) and the flaws will be: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Tokenization of fasqainakomoho.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Tokenization of the word 
+\lang arabic_arabi
+فَأَسْقَيْنَٰكُمُوهُ
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Tokenization is an important phase since it's the basis for the following
+ phases.
+ Thus, it should have a very high precision while actually there is a lack
+ for accurate Arabic analyzer.
+\end_layout
+
+\begin_layout Itemize
+Some affixes change the form of word so we have to bring it to its original
+ form after separation.
+ In our example, 
+\lang arabic_arabi
+و
+\lang english
+ is an additional letter.
+\end_layout
+
+\begin_layout Itemize
+A lot of clitics and pronouns such as 
+\lang arabic_arabi
+فَ
+\lang english
+ should be considered as stop words because they will have a high frequency
+ and have a less need of retrievingBecause we aim the Quran, we value the
+ accuracy.
+ The tokenization guesser leads to an increased number of ambiguities but
+ if we use a hand-made word-by-word corpus, we can limit those ambiguities
+ especially for the words existing in Quran.
+ For the words not existing in the corpus, we may use any general Arabic
+ tokenization guesser.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Tokenization-Phase2.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Sub-tokens separation schema
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Tokenization cause a loss in token information as function and POS 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "POS"
+description "Part Of Speech"
+
+\end_inset
+
+.
+ This loss affect the semantic understanding of keywords.
+ For example the two ayahs:
+\end_layout
+
+\begin_layout Enumerate
+[ 
+\lang arabic_arabi
+وَالشَّمْسِ وَضُحَاهَا
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+] -- (
+\lang arabic_arabi
+الشمس
+\lang english
+ 1) 
+\end_layout
+
+\begin_layout Enumerate
+[ 
+\lang arabic_arabi
+وَهُوَ الَّذِي خَلَقَ اللَّيْلَ وَالنَّهَارَ وَالشَّمْسَ وَالْقَمَرَ كُلٌّ
+ فِي فَلَكٍ يَسْبَحُونَ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+] -- (
+\lang arabic_arabi
+الأنبياء
+\lang english
+ 33) 
+\end_layout
+
+\begin_layout Standard
+When we tokenize the previous two Ayahs, we lose the function of the first
+ waw (
+\lang arabic_arabi
+و
+\lang english
+) as in the first ayah is for oath and in the second ayah is for coordination.
+ To recover such kind of loss, we introduce some tags that has the values
+ of important information.
+ We add tags in this phase exactly (tokenization) because it's the only
+ phase that read the word in it's phrase semantic and syntactic context.
+ By consequence, it knows the part-of-speech information.
+ Another reason is that we need them in the next phases: Normalization and
+ Stemming.
+ Among the tags that we think they are important, there are:
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Word declension
+\series default
+: whether the word is declinable (
+\lang arabic_arabi
+معربة
+\lang english
+) or not.
+ We need this in normalization phase because we intend to strip the declension
+ vowels (
+\lang arabic_arabi
+حركات الإعراب
+\lang english
+) to unite different occurrences of a word.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Flexion information
+\series default
+: whether the word is derivative or not.
+ We need this in Stemming phase.
+\end_layout
+
+\begin_layout Standard
+English language has a similar problem in the tokenization of compound nouns
+ such as the word 
+\begin_inset Quotes sld
+\end_inset
+
+homework
+\begin_inset Quotes srd
+\end_inset
+
+ or the word 
+\begin_inset Quotes sld
+\end_inset
+
+unLadyLike
+\begin_inset Quotes srd
+\end_inset
+
+ but not the same complication as in Arabic language.
+ 
+\end_layout
+
+\begin_layout Standard
+There is a possibility to delay affix processing into the stemming phase
+ but there will be a difference:
+\end_layout
+
+\begin_layout Itemize
+with stemming we lose affixes so we can't specify the exact word search
+ ;
+\end_layout
+
+\begin_layout Itemize
+with tokenization, we preserve tokens and we can reproduce the whole word.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Tokenization Example.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Example of tokenization
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+We can use the tokenization to resolve the pronouns references by creating
+ an extra token for each pronoun; That token has the key value of the referenced
+ object.
+ Each referenced object should have a unique key value.
+ For example:
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang arabic_arabi
+هو وصاحبه 
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang arabic_arabi
+لا إله إلا هو ------------ لا إله إلا الله -- 
+\end_layout
+
+\begin_layout Plain Layout
+[If I create extra tokens, but how that affect phrase search]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Normalization:
+\end_layout
+
+\begin_layout Standard
+Since we are accepting the Othmani script beside the standard script,we
+ have to specify the normalization for the both.
+ We had to strip all recitation marks such as the Waqf symbol 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Arabic}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{\therefore\therefore}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Arabic}
+\end_layout
+
+\end_inset
+
+ (See different Waqf symbols in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Fragmentation-into-Stops"
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+After stripping all extra symbols, we should either normalize othmani text
+ into standard text.
+ This operation is necessary to unify the processing for the next phases.
+ There is no benefits to continue in a separated lines.
+ The converging into standard script makes the stemming clearer and pass
+ over some special uthmani-written words.
+ For example, the word -example-.
+ 
+\end_layout
+
+\begin_layout Standard
+To achieve that, we need a complete mapping of Quranic words between the
+ both scripts.
+ To minimize the size of mapping, we can exclude the words that are written
+ in the same manner.
+ The mapping should use the uthmani word as a unit not the standard word.
+ The reason is that some words are mapped differently from an occurrence
+ to another.
+ An example for that, the word 
+\lang arabic_arabi
+بسطة
+\lang english
+ which occurs as 
+\lang arabic_arabi
+بصطة
+\family roman
+\series medium
+\shape up
+\size small
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+in (
+\lang arabic_arabi
+الأعراف
+\lang english
+ 69) and as 
+\lang arabic_arabi
+بسطة
+\family roman
+\series medium
+\shape up
+\size small
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+in (
+\lang arabic_arabi
+البقرة
+\lang english
+ 247).
+ 
+\end_layout
+
+\begin_layout Standard
+Mainly it is recommended to strip vowels in the normalization of Arabic
+ texts.
+ This means ignoring vowels during indexing and search.
+ Consequently it affects negatively the accuracy of search since the vowels
+ are an important key to detect a word meaning and distinguish it from other
+ meanings.
+ An example for that, the word 
+\lang arabic_arabi
+الملك
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+that mentioned with different meanings in Quran: 
+\lang arabic_arabi
+الْمُلْكُ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(Kingdom), 
+\lang arabic_arabi
+الْمَلِكُ
+\lang english
+ (King) and 
+\lang arabic_arabi
+الْمَلَكُ
+\lang english
+ (Angel).
+ This word, however, are mentioned in different declension cases: Nominative,
+ Accusative and Genitive.
+ The declension case has no effect on the meaning.
+ Our idea is to keep the vowels except the declension case ending vowel.
+ This will unify all declension cases of a word.
+ This can be done by passing tags with tokens for declension info such as:
+\end_layout
+
+\begin_layout Itemize
+Declinable (
+\lang arabic_arabi
+مُعرَب
+\lang english
+) or not?
+\end_layout
+
+\begin_layout Itemize
+Declension case (
+\lang arabic_arabi
+حالة الإعراب
+\lang english
+): Nominative, Accusative, and Genitive.
+ 
+\end_layout
+
+\begin_layout Itemize
+Declension case markers (
+\lang arabic_arabi
+علامات الإعراب
+\lang english
+): Fatha, Damma, Kessra, Double-Fatha (with the additional Alef) , Double-Kessra
+, Double-Damma.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Normalization Example.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Example of normalization
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Filtering stop-words:
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Filtring-Stop-words:"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the previous work, we discussed the feasibility of filtering stop-words
+ for search in Quran (see 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "For-stop-words-filtering,"
+
+\end_inset
+
+).
+ We have proposed to select the stop-words from the list of the most frequent
+ words in Qur'an, the particles and the pronouns taking in consideration
+ their diacritical marks.
+\end_layout
+
+\begin_layout Standard
+We made an improvement in the tokenization that affect our previous criteria
+ for choosing the list of stop-words.
+ This improvement is the separation of pronouns and clitics from the lemma
+ of the word.
+ Clitics such as 
+\lang arabic_arabi
+فَـ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(fa) generally has a high frequency and hasn't a self independent meaning.
+ Therefore, clitics are potential stop-words, should be ignored for a better
+ search experience.
+ The ignoring should be optional to let the possibility for linguists to
+ look for these keywords.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Filtring Stopwords Example.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Example of stop-word filtering 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Lemmatization:
+\end_layout
+
+\begin_layout Standard
+The Arabic word has many different level of derivations.
+ Those levels are the word, the word without affixes (Lemma), the stem,
+ or the root.
+ We proposed stripping the affixes in tokenization (see 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Tokenization:"
+
+\end_inset
+
+).
+ In Stemming we either bring it back into stem or root origin.
+ The roots in Arabic are the basic unit.
+ There are about 10000 roots
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+9273 roots in the lexicon of Lisan Al-arab.
+\end_layout
+
+\end_inset
+
+ in Arabic (about 1500 roots in Quran).
+ When pairing with patterns, the root can generate more then 1000 variant
+ words.
+ Generated words could have similar, independent or opposite meanings.
+ In the contrary, the stem usually generate a small set of words that have
+ a similar meaning.
+ Thus, we recommend use the stem as the landmark for this phase.
+\end_layout
+
+\begin_layout Standard
+We can use the morphology tags from the tokenization phase as feeds for
+ the stemmer.
+ Some tags are helpful.
+ We include the stem value of each word -if available- as a tag.
+ We use it to replace the word.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Lematization.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Examples of lemmatization 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Qur'anic Word Search
+\end_layout
+
+\begin_layout Standard
+Previously, we have considered the ayah as the search unit.
+ That means it was the unit of our document index or we can call it 
+\emph on
+the document
+\emph default
+.
+ The ayah being the document is yet the perfect choice.
+ However, to attend many linguistic features (mentioned in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Proposals"
+
+\end_inset
+
+) such as: 
+\end_layout
+
+\begin_layout Itemize
+Suggestion systems :: Different vocalizations;
+\end_layout
+
+\begin_layout Itemize
+Linguistic Aspects :: Multi-level derivation;
+\end_layout
+
+\begin_layout Itemize
+Linguistic Aspects ::
+\series bold
+ 
+\series default
+Specific-derivations
+\end_layout
+
+\begin_layout Itemize
+Linguistic Aspects ::
+\series bold
+ 
+\series default
+Word properties embedded query
+\end_layout
+
+\begin_layout Itemize
+Linguistic Aspects :: Word linguistic annotations
+\end_layout
+
+\begin_layout Standard
+We need to consider a different search unit: the Quranic word (
+\lang arabic_arabi
+اللفظ القرآني
+\lang english
+).
+ The purpose of this is to obtain a quick efficient stable method to retrieve
+ specific Quranic words.
+ To achieve that we need a corpus of Quranic words enriched with linguistic
+ properties of each word.
+ This corpus could be based on either the word form or the word occurrence.
+ The second choice is the most accurate because the word can change their
+ properties moving from an occurrence to another.
+ There are about 17 thousands of words with a total about 76 thousands of
+ occurrences
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+We calculated those statistics based on the Quran copy downloaded from Tanzil.org
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+We propose those information to be included in the schema of the word document
+ index:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Identifiers
+\series default
+: a global identifier, a secondary identifier based on the order in the
+ ayah added to ayah identifier and surah identifier;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Different forms
+\series default
+: Uthmani vocalized word (the main form), Standard vocalized word, Standard
+ unvocalized word;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Transliterations: 
+\series default
+ISO233, Buckwalter, Arabtex;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Translations: 
+\series default
+English, other languages;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Different levels of stemming
+\series default
+: Lemma, Stem, Root;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Other properties:
+\series default
+ Part Of Speech, type, state, case, mood, voice, number, gender, person.
+\end_layout
+
+\begin_layout Standard
+We should pass the word fields by the same text analyzing phases, we described
+ in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Text-processing"
+
+\end_inset
+
+.
+ We should also preserve a duplicate field for the original word without
+ text analyzing in order to satisfy exact search needs.
+ 
+\end_layout
+
+\begin_layout Standard
+We use the word search to improve the ayah search by introducing a 2-steps
+ search strategy.
+ First step, retrieving the best keywords set based on the user query by
+ searching in the word-as-a-unit index.
+ Second step, retrieving the corresponding ayahs using the keywords set
+ resulted from the first step.
+ we explaining the 2-steps search strategy on this figure: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Two-steps Search.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Two-Steps search behavior
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The 2-steps search must also perform a second operation which is to inquire
+ a word ontology to retrieve semantically related words.
+ Semantically related words includes 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Idols example - ontologies.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Semantically related words : Idols in Quran
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As a conclusion, the 2-steps search strategy helps in retrieving Quran words
+ classified on their origins, properties, translations, transliterations,
+ semantic relations.
+ The classification goes flexibly, and fast by using inverted indexes and
+ ontologies.
+ In the following, we explain some potential useful classifications for
+ the root 
+\lang arabic_arabi
+قول
+\lang english
+ (qwl): 
+\end_layout
+
+\begin_layout Enumerate
+Synonyms: 
+\lang arabic_arabi
+نطق
+\lang english
+, 
+\lang arabic_arabi
+كلام
+\lang english
+, 
+\lang arabic_arabi
+شهادة
+\lang english
+.
+\end_layout
+
+\begin_layout Enumerate
+Imperative tense: 
+\lang arabic_arabi
+قل
+\lang english
+, 
+\lang arabic_arabi
+قولوا
+\lang english
+, 
+\lang arabic_arabi
+قولي
+\lang english
+.
+\end_layout
+
+\begin_layout Enumerate
+Passive form: 
+\lang arabic_arabi
+يقال
+\lang english
+, 
+\lang arabic_arabi
+قيل
+\lang english
+.
+\end_layout
+
+\begin_layout Enumerate
+Past tense: 
+\lang arabic_arabi
+قال
+\lang english
+, 
+\lang arabic_arabi
+قالا
+\lang english
+, 
+\lang arabic_arabi
+قلنا
+\lang english
+, 
+\lang arabic_arabi
+قالت
+\lang english
+...etc.
+\end_layout
+
+\begin_layout Enumerate
+Noun, Plural: 
+\lang arabic_arabi
+الأقاويل
+\lang english
+.
+\end_layout
+
+\begin_layout Standard
+Building on the 2-steps strategy we propose those new operations to be implement
+ed in the query parser:
+\end_layout
+
+\begin_layout Subsection
+Word properties search
+\end_layout
+
+\begin_layout Standard
+This operation replaces the search by the triple root-type-pattern in the
+ previous work (see 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Search-by-the-triple"
+
+\end_inset
+
+).
+ Its objective is to allow the users to locate ayahs based on a set of keywords
+ chosen by linguistic properties such as Part Of Speech, type, state, case,
+ mood, voice, number, gender, person.
+ All what we need for the implementation of this operation is the word document
+ index with the ability of fielded search.
+ A fielded search is an advanced query feature that enables users to select
+ and associate the different document fields to which he wishes to limit
+ the query, to then use the required keywords within these fields.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Word_Properties.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Word properties search example : First person, Plural, Masculine
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Subsection
+Word Translation search 
+\end_layout
+
+\begin_layout Plain Layout
+One of search features that we've mentioned in the previous chapter ()
+\end_layout
+
+\begin_layout Plain Layout
+---
+\end_layout
+
+\begin_layout Plain Layout
+========
+\end_layout
+
+\begin_layout Plain Layout
+Objective, behavior, status, needed resources, figure
+\end_layout
+
+\begin_layout Plain Layout
+========
+\end_layout
+
+\begin_layout Plain Layout
+Syntax like [[ ]]
+\end_layout
+
+\begin_layout Plain Layout
+benefit to search inside the TranslatioNs
+\end_layout
+
+\begin_layout Plain Layout
++figure: class example
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Semantically Related Words
+\end_layout
+
+\begin_layout Standard
+This operation replaces the synonyms and antonyms operation in the previous
+ work (see 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Synonyms-&-Antonyms:"
+
+\end_inset
+
+).
+ Its objective is to offer the related words of a keyword entered by the
+ user.
+ The user can specify which semantic relation to inquire: Synonymy, Antonymy,
+ Hypernymy, Hyponymy, Meronymy, Holonymy, Troponymy.
+ This operation requires an ontology that clarify the relations between
+ different Quranic words.
+ It is performed firstly by inquiring the ontology for related words and
+ secondly by using those keywords to retrieve the corresponding ayahs.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Hyponymy-prophets.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Semantically Related Words, Hyponymy of the word 
+\lang arabic_arabi
+نبي
+\lang english
+ (prophet)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Multi-level Derivations
+\end_layout
+
+\begin_layout Standard
+This operation replaces the derivation search operation in the previous
+ work (see 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Search-by-Derivations:"
+
+\end_inset
+
+).
+ The objective of this operation is to get a set of words that share the
+ same origin such as stem and root.
+ The user has to specify the word and a level of derivation.
+ The operation will recover the origin of the word in the specified derivation
+ level and retrieve all the set of words that share this origin.
+ Since we can adopt the lemma or the stem as the form to save the words
+ in indexing phase (after text analyzing).
+ So the adopted form would be the reference level to our operation.
+ If we adopt the stem so the root level will be the only one.
+ If we adopt the lemma there would be two levels: the stem and the root.
+ This operation require the origins of each Qur'anic word to be available.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Multi-level derivation search example.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Multi-level Derivation Search example
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Specific Derivations
+\end_layout
+
+\begin_layout Standard
+This operation is quite similar to the previous one in the objective.
+ Although, this is about find the words resultants of applying a specific
+ derivation operation on the user given word.
+ Among the possible derivations, we mention:
+\end_layout
+
+\begin_layout Itemize
+Conjugation of verbs in different tenses: Perfect, Imperfect, Imperative.
+\end_layout
+
+\begin_layout Itemize
+Conjugation of verbs with different pronouns:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Person: First person, Second person, Third preson;
+\end_layout
+
+\begin_layout Itemize
+Number: Singular, Dual, Plural;
+\end_layout
+
+\begin_layout Itemize
+Gender: Masculine, Feminine.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Conjugation of verbs in different voices: Active, Passive.
+\end_layout
+
+\begin_layout Itemize
+Genders and Plurals of a noun: Masculine singular , Feminine singular ,
+ Masculine Dual (
+\lang arabic_arabi
+مثنى
+\lang english
+), Feminine Dual (
+\lang arabic_arabi
+مثنى
+\lang english
+), Masculine Plural, Feminine Plural, Broken Plural, Plural of Plural.
+\end_layout
+
+\begin_layout Itemize
+Deverbals of a root: Active participle (
+\lang arabic_arabi
+اسم فاعل
+\lang english
+), Passive participle (
+\lang arabic_arabi
+اسم مفعول
+\lang english
+), Nouns of time and place (
+\lang arabic_arabi
+أسماء الزمان والمكان
+\lang english
+), Noun of instrument (
+\lang arabic_arabi
+اسم الآلة
+\lang english
+), The Nomen Vicis (
+\lang arabic_arabi
+اسم المرة
+\lang english
+), The Nomen Speciei (
+\lang arabic_arabi
+اسم الهيئة
+\lang english
+).
+\end_layout
+
+\begin_layout Itemize
+Other derivations: the forms of exaggeration, The Comparative and Superlative
+ Noun.
+\end_layout
+
+\begin_layout Standard
+The user should enter the keyword and specify which derivation he seeks.
+ We generate the set of derived words either by fetching in the word index
+ or using linguistic tools such as verb conjugators.
+ If it's the second case, the generated set could be filtered as a second
+ step by intersection with the set of Quranic words.
+ The resulted set will be used to locate the corresponding ayahs.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Specific Derivation example.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Special derivations example, Imperative of 
+\lang arabic_arabi
+قال
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ (to say)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Fuzzy Search
+\end_layout
+
+\begin_layout Standard
+This operation replaces the Considering/Ignoring spell errors operation
+ in the previous work .
+ Its objective is to fetch using the set of words that are nearly similar
+ to the input word in writing or pronunciation.
+ Usually useful to guess the right spellings of a misspelled word.
+ There are many methods to implement fuzzy search, some are designed for
+ search against previously unknown text such as Liechtenstein distance method
+ and other not such as ngrams and spell-checker methods.
+ Since we are applying on a previously known text, so that means both of
+ the two types is feasible.
+
+\series bold
+ 
+\series default
+Nevertheless, methods such Liechtenstein distance and ngrams lack for good
+ handling for Arabic vowels (
+\lang arabic_arabi
+حركات
+\lang english
+).
+ They consider the vowels the same as letters and this leads to an important
+ decrease of efficiency.
+ To pass on this weakness, those methods should consider any letter followed
+ by a vowel as one unit.
+ In Arabic, the vocalized letter is considered as one letter whilst in computer
+ this still considered as two characters.
+ In the other hand, Lam-alef (
+\lang arabic_arabi
+لا
+\lang english
+) which is actually two letters still consider as one character in many
+ computer writing systems.
+ 
+\end_layout
+
+\begin_layout Standard
+Any fuzzy search algorithm should consider some specific similarities in
+ Arabic:
+\end_layout
+
+\begin_layout Itemize
+The similarity between the different forms of each letter: Hamza, Ta', and
+ Alef.
+ For example, 
+\lang arabic_arabi
+مءصدة
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(Hamza on the line) and 
+\lang arabic_arabi
+مؤصدة
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(Hamza on waw).
+ 
+\end_layout
+
+\begin_layout Itemize
+An unvocalized letter is so similar to a vocalized one whatever the vowel
+ is.
+ For example, 
+\lang arabic_arabi
+الحمد
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(unvocalized) and 
+\lang arabic_arabi
+الحَمْدُ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(vocalized).
+\end_layout
+
+\begin_layout Itemize
+Tanwin in a vowel is roughly similar to a vowel without Tanwin.
+ For example, 
+\lang arabic_arabi
+عشرِ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ (kessra) 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+and 
+\lang arabic_arabi
+عشرٍ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(tanwin kessra).
+\end_layout
+
+\begin_layout Itemize
+Shedda on a letter is so similar to the letter doubled.
+ For example, 
+\lang arabic_arabi
+يضلَه
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ (Shedda on Lam) and 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang arabic_arabi
+يضلله
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(doubled Lam).
+\end_layout
+
+\begin_layout Standard
+The fuzzy search algorithms could be strengthened by coupling it with a
+ Phonetic algorithm.
+ A phonetic algorithm matches two different words with similar pronunciation
+ to the same code, which allows phonetic similarity based word set comparison
+ and indexing.
+ Usually used for proper names where there is no unified spelling for the
+ word 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+[REF]
+\end_layout
+
+\end_inset
+
+.
+ One of the first algorithms was Soundtex invented in the 1910s by 
+\noun on
+Robert Russell
+\noun default
+.
+ Its working principle is based on the partition of consonants in groups
+ with ordinal numbers, which are then compiled to the resulting value.
+ 
+\end_layout
+
+\begin_layout Standard
+Generally the fuzzy search should be implemented to work automatically either
+ always or when there is a lack of results.
+ Another case is to show the possibilities as suggestions.
+\end_layout
+
+\begin_layout Standard
+Those are some examples of fuzzy search:
+\end_layout
+
+\begin_layout Enumerate
+Mis-order of letters: 
+\lang arabic_arabi
+زنبجيل
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+for 
+\lang arabic_arabi
+زنجبيل
+\lang english
+.
+\end_layout
+
+\begin_layout Enumerate
+Phonetic similarity: 
+\lang arabic_arabi
+هرم
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+for 
+\lang arabic_arabi
+إرم
+\lang english
+.
+\end_layout
+
+\begin_layout Enumerate
+Spelling similarity: 
+\lang arabic_arabi
+الضحي
+\lang english
+ for 
+\lang arabic_arabi
+الضحى
+\lang english
+.
+\end_layout
+
+\begin_layout Chapter
+Implementation
+\end_layout
+
+\begin_layout Standard
+Our aim in implementation is to offer an open application programming interface.
+ That API must be well extensible to achieve the most of the search features
+ we've discussed in the previous chapter.
+ We'll talk about the technical details of our implementation.
+ Also we list all the Quranic and linguistic resources that we've used or
+ we need in development.
+ Otherwise, we'll explain why we decided to open the source, what are the
+ advantages driving us to adopt a such approach.
+\end_layout
+
+\begin_layout Section
+Previous Code Base
+\end_layout
+
+\begin_layout Standard
+We have based on the code base we've realized on 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ASSEM_MEROUANE"
+
+\end_inset
+
+.
+ The code base was licensed under the GPL open license as a result of using
+ the library whoosh licensed under the same license.
+ It contained an Application Programming Interface that performs the basic
+ search operation.
+ It offers the results in a raw HTML format, could be used only in Python.
+ To be used in another programming language, it requires to write a complicated
+ wrapper.
+ There was a basic resource manager that index the Quran information stored
+ in an intermediate database.
+ The importing of new resources into this intermediate database was a missing
+ piece.
+ Two interfaces was developed for the API:
+\end_layout
+
+\begin_layout Enumerate
+A  Gui desktop interface, demonstrate perfectly the API features .
+ It is urgently coded in Python and Qt.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+A basic CGI-Html interface, demonstrates in a simpler way the API features.
+ Also urgently coded and it did not respect the Model View Control.
+\end_layout
+
+\begin_layout Section
+Our improvements
+\end_layout
+
+\begin_layout Standard
+As a first step, we change the license into the GNU Affero General Public
+ License which aims to protect libraries that usually used in servers .
+ The code base has had 981 commits made representing 15,243 lines of code
+ .
+ It is mostly written in Python with a well-commented source code.
+ It is a young, but established codebase took an estimated 4 years of effort
+ (COCOMO model)
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Statistic analysis from Ohloh website.
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Those are the main milestones that we went through:
+\end_layout
+
+\begin_layout Subsection
+A New Centralized JSON Output System:
+\end_layout
+
+\begin_layout Standard
+First at all, we upgraded the output system of the API to offers the results
+ in Json data format instead of raw Html.
+ Then we centralized the output system to gain many advantages which are:
+\end_layout
+
+\begin_layout Enumerate
+Easy-implementation of more data structures;
+\end_layout
+
+\begin_layout Enumerate
+The use of the same output system in the different interfaces: Console Interface
+, CGI Interface, Desktop Interfaces, Web Interfaces;
+\end_layout
+
+\begin_layout Enumerate
+Making changes and updates only in one place instead of many.
+\end_layout
+
+\begin_layout Standard
+Secondly, we proposed an extended structure for results.
+ This structure is extensible: any new information can be included easily
+ without affecting the old structure and without resulting a back-incompatibilit
+y.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/JSON formatted - results of alkawthar.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Json results of 
+\lang arabic_arabi
+الكوثر
+\lang english
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thirdly, we refine the list of request flags to allow the requester to customize
+ his request and control which information retrieved in order to gain performanc
+e and minimize the size of results and the retrieving runtime.
+ A concept of predefined configuration for requests is introduced.
+ So the requester can choose either a minimal, normal , full, linguistic,
+ or statistical view without specifying each flag value.
+\end_layout
+
+\begin_layout Standard
+We also centralized the loading of necessary data files.
+ Data files now are loading automatically from a default path else if this
+ path is redefined.
+ We included the data files with API package to maintain the portability.
+ Also we export them into a Json data format as a standardization step.
+ We mean with data files, the files such as:
+\end_layout
+
+\begin_layout Enumerate
+Configuration files: Available recitations list, Available translations
+ list, Usage hints, Usage statistics, meta information.
+\end_layout
+
+\begin_layout Enumerate
+Linguistic resources: derivation list, vocalization list, synonym list,
+ standard-into-uthmani mapping, stop word list, word properties.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Quranic indexes: Ayah document index, Translation document index, Word document
+ index.
+ 
+\end_layout
+
+\begin_layout Standard
+A usage statistics calculating feature is implemented.
+ The statistics saved in a JSON format including usage of each flag passed
+ through the search request.
+ 
+\end_layout
+
+\begin_layout Standard
+We offered a set of error codes in case of failed search query.
+ It helps in clarifying the nature of failure.
+ This set is extensible, new error codes can be added easily.
+ 
+\end_layout
+
+\begin_layout Standard
+We made the API meta data available for request in the output system.
+ Meta data includes:
+\end_layout
+
+\begin_layout Enumerate
+API meta information including authorship, license, description, version,
+ and release;
+\end_layout
+
+\begin_layout Enumerate
+Error messages;
+\end_layout
+
+\begin_layout Enumerate
+Possible flags, in addition to their default values, possible values intervals,
+ and help messages, see table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Search-request-flags"
+
+\end_inset
+
+ ;
+\end_layout
+
+\begin_layout Enumerate
+Available search fields (Arabic and English names), see table 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+[cross-ref]
+\end_layout
+
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+Available translations and recitations;
+\end_layout
+
+\begin_layout Enumerate
+Surah and topic values lists;
+\end_layout
+
+\begin_layout Enumerate
+Global search usage hints.
+\end_layout
+
+\begin_layout Subsection
+Many new features
+\end_layout
+
+\begin_layout Standard
+We implemented many new features which are available within the new JSON
+ output system.
+ One of the features is the fuzzy search feature.
+ We've done a basic implementation that automates the fuzzy search to include
+ the potential synonyms of the word and also the different derivations.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Fuzzy search example.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Fuzzy search example
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We added the possibility of retrieving the previous and next ayahs of each
+ ayah of the results.
+ Showing neighbor ayahs helps the user to know exactly the ayah position
+ in its own surah.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Next_previous ayas.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Showing adjacent ayahs
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For the ayah text, we offered the ability to choose between Vocalized and
+ Unvocalized text, and between Standard and Uthmani text.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Script example - standard unvocalized.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Script example - standard vocalized.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Script example - uthmani.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Showing ayahs in different scripts
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We implemented four suggestion operations: Close spellings, Different vocalizati
+ons, Different derivations, Synonyms.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Suggestion example - v-s-d.png
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Suggestion example of Vocalizations , Derivations ,and Synonyms of 
+\lang arabic_arabi
+قول
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We also include the linguistic annotations of each query keyword in the
+ API output results.
+ We got those Annotations from the Arabic Quranic Corpus.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Annotations example.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Annotations of the keyword 
+\lang arabic_arabi
+قيمة
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We implemented the possibility of search using Buckwalter transliteration
+ and show the resulted keywords written in the same transliteration.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/buckwalter example.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Buckwalter translation example
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Resource Importing Manager
+\end_layout
+
+\begin_layout Standard
+An important part was missing in the old implementation of the resource
+ importing manager.
+ The missing part was the importing of the data from their original source.
+ We have fixed this missing part and improve the global behavior of the
+ resource manager.
+ The improved version can do:
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Downloading original resources
+\series default
+: the reason for downloading the resources rather then including them with
+ the project is to pass by the restrictions on the redistribution of those
+ resources.
+ Another reason is to keep using always the last updated versions of the
+ resources.
+ Yet another reason is avoid the optional resources with big sizes so let
+ the developer or the user choose what to download.
+ This is the list of the resources to be downloaded: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Tanzil Mus-haf xml file.
+\end_layout
+
+\begin_layout Enumerate
+Tanzil Quranic translations packaged as the Zekr model.
+\end_layout
+
+\begin_layout Enumerate
+EveryAyah recitations list.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Parsing & Importing the data to our intermediate database: 
+\series default
+Each resource has a specific unique structure.
+ We need to parse each resources then import the data included to our intermedia
+te database.
+ The role of intermediate database is to re-organize the data in a way that
+ make the indexing easier.
+ We made two libraries:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+PyCorpus: a library to parse and read the data included in the project Arabic
+ Quranic Corpus.
+\end_layout
+
+\begin_layout Enumerate
+PyZekrModels: a library to read the Quranic translations packaged as the
+ Zekr model.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Indexing the database: 
+\series default
+First, we need to transform the database into document indexes .
+ Then, we need to generate the inverted indexes out of the corresponding
+ document indexes.
+ There is a table called fields in the database take the control over the
+ information to be indexed and how to indexed.
+ This is a sample example of the fields table:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/fields table.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Fields table
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Updating auto-generated data files
+\series default
+: some data files need to be generated immediately after the indexing.
+ An example of that is the list of indexed translations.
+\end_layout
+
+\begin_layout Subsection
+Automating the API building
+\end_layout
+
+\begin_layout Standard
+The building of resources was manual and undocumented.
+ We created a Makefile that automate now the building.
+ We fill the makefile with the appropriate number of comments in order to
+ make it clear and understandable.
+ The role of make file is to perform the following tasks:
+\end_layout
+
+\begin_layout Enumerate
+Auto-downloading of new versions of the used Quranic and linguistic resources;
+\end_layout
+
+\begin_layout Enumerate
+Generating and Regenerating of the intermediate generated data files;
+\end_layout
+
+\begin_layout Enumerate
+Auto-building of the document indexes in addition the inverted indexes;
+\end_layout
+
+\begin_layout Enumerate
+Auto-install and packaging of the API and different related extensions and
+ interfaces.
+\end_layout
+
+\begin_layout Subsection
+A new console interface
+\end_layout
+
+\begin_layout Standard
+We introduced a new console interface to be used by a non-python desktop
+ application, could be run as background service a.k.a Daemon.
+ For details see 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Console-commandline"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Packaging system: 
+\end_layout
+
+\begin_layout Standard
+We implemented a packaging system to package the API for different operating
+ systems.
+ Since the API is pure python so that makes it portable through the different
+ platforms.
+ Though, many data resources should be generated and imported in the package.
+ We distribute the API as :
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Source Tarball
+\series default
+: An archive of source files created with the Unix tar utility.
+ Source-code distributions have been packaged as tarballs since the mid
+ 1980s.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Binary Tarball
+\series default
+: An archive contains the built and compiled source code.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Python
+\series default
+ 
+\series bold
+egg package
+\series default
+: a logical structure embodying the release of a specific version of a Python
+ project, comprising its code, resources, and metadata.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Debian deb package: 
+\series default
+Debian packages are standard Unix archives that include two tar archives
+ optionally compressed: one archive holds the control information and another
+ contains the program data.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Red-hat rpm package: 
+\series default
+the acronym RPM stands for Redhat package manager which is a package management
+ system.
+ It refers also to the file format used by the packages of this system.
+\end_layout
+
+\begin_layout Subsection
+Multiple search units
+\end_layout
+
+\begin_layout Standard
+The Application Programming Interface initially was made up to search only
+ in the ayahs.
+ Actually we introduced more search units.
+ To introduce any unit, we should gather the appropriate data resources,
+ define the search fields, define the search request flags, and finally
+ define the results structure.
+ We introduced two units which are:
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Translations
+\series default
+: enable the search for Quranic translations in different languages.
+ The information included are: identifier, text, language, author.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Translation Search.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Translation-as-unit search , Query: seven 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Words:
+\series default
+ enable the search for Quranic words and different linguistic annotations
+ including: word identifiers, origins (lemma, stem, root), POS, form, gender,
+ person, number, voice, aspect, state.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Word search example.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Word-as-unit json outout, Query: 
+\lang arabic_arabi
+قيمة
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Coding Standardization
+\end_layout
+
+\begin_layout Standard
+We passed our code base by Pylint code analysis.
+ Pylint is a source code bug and quality checker for the Python programming
+ language.
+ It is highly configurable and can be customized as needed.
+ It includes features such as: 
+\end_layout
+
+\begin_layout Itemize
+Checking a line-code's Length ;
+\end_layout
+
+\begin_layout Itemize
+Checking if variable names are well-formed according to your coding standard
+ ;
+\end_layout
+
+\begin_layout Itemize
+Checking if declared interfaces are truly implemented, and so on.
+\end_layout
+
+\begin_layout Standard
+We have fixed a huge amount of shown up messages by Pylint including: Convention
+s, Refactors, Warnings, Errors.
+ This leads by consequence into a mass re-organization of the source code
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+, see the current code architecture in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Code-Architecture"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+type
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+actual number
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+previous number
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+difference
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+convention
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1059
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9217
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-8242
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+refactor
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+81
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+310
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-229
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+warning
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1549
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12331
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-10782
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+error
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+79
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+412
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-333
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Pylint Analysis stats
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+1.93/10
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Documentation covering
+\end_layout
+
+\begin_layout Standard
+We made the Readme files for the different parts of the project.
+ The contents of readme files typically include one or more of the following:
+\end_layout
+
+\begin_layout Enumerate
+Configuration instructions 
+\end_layout
+
+\begin_layout Enumerate
+Installation instructions 
+\end_layout
+
+\begin_layout Enumerate
+Operating instructions 
+\end_layout
+
+\begin_layout Enumerate
+A file manifest (list of files included) 
+\end_layout
+
+\begin_layout Enumerate
+Copyright and licensing information 
+\end_layout
+
+\begin_layout Enumerate
+Contact information for the distributor or programmer 
+\end_layout
+
+\begin_layout Enumerate
+Known bugs
+\end_layout
+
+\begin_layout Enumerate
+Troubleshooting
+\end_layout
+
+\begin_layout Enumerate
+Credits and acknowledgments 
+\end_layout
+
+\begin_layout Enumerate
+A changelog (usually for programmers) 
+\end_layout
+
+\begin_layout Enumerate
+A news section (usually for users) 
+\end_layout
+
+\begin_layout Standard
+The expression "readme file" is also sometimes used descriptively and genericall
+y, whereby the files are not named "readme", but are considered types of
+ readme files.
+ The source code distributions of many free software packages, especially
+ those following the Gnits Standards, usually include a standard set of
+ readme files:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="8" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+README
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+General information
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+AUTHORS
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Credits
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+THANKS
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Acknowledgments
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ChangeLog
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A detailed changelog, intended for programmers
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+NEWS
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A basic changelog, intended for users
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+INSTALL
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Installation instructions
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+COPYING / LICENSE
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Copyright and licensing information
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+BUGS
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Known bugs and instructions on reporting new ones
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Other files commonly distributed with software include a FAQ and a TODO
+ file listing possible future changes.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Extra TODO: +PyTanzil
+\end_layout
+
+\begin_layout Plain Layout
+grouping the changes
+\end_layout
+
+\begin_layout Plain Layout
++ Suggestion Vocalizations!
+\end_layout
+
+\begin_layout Plain Layout
++ Suggestion (Verb Conjugation+ Random Affixes) U Quranic Verbs 
+\end_layout
+
+\begin_layout Plain Layout
++ Suggestion Synonyms
+\end_layout
+
+\begin_layout Plain Layout
++ Search Word : 2 Steps Search
+\end_layout
+
+\begin_layout Plain Layout
++ Search Translation:
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Open Issues
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Open-Issues"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We went through many improvements.
+ Yet, however, there still lot of things to be done.
+ We'll browse the main milestones that should go through:
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Enriching the linguistic resources:
+\series default
+ the actual used resources are poor comparing to what we really need.
+ In order to get this done , we should: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Textify the binary database to enable the possibility of logging of changes
+ and take the benefits of revision control systems such as GIT.
+\end_layout
+
+\begin_layout Itemize
+Integrate Qurany project to enrich the actual faceted thematic search.
+\end_layout
+
+\begin_layout Itemize
+Integrate the boundary annotations to enable the retrieving of boundaries
+ in Quran.
+\end_layout
+
+\begin_layout Itemize
+Propose a standard format for new linguistic and Quranic resources.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Complete the features implementation: 
+\series default
+we listed lot of search features in a previous chapter (see 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Proposals"
+
+\end_inset
+
+).
+ Though, we didn't implement the whole list.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+list of unimplemented search features; Implementation Ratio
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Implement the modularity for the Query Parser
+\series default
+: This is important to enable the extensibility feature and fix the problem
+ of mixing (the combination) the different operations made during parsing.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Restrict the anonymous requests to the API: 
+\series default
+restricting requests protect the API from flooding either intended or not.
+ This can be done by:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Limit the maximum of simultaneous requests globally and by IP.
+\end_layout
+
+\begin_layout Itemize
+Implement an identification system that works with remote clients.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Move to the last version of Whoosh library
+\series default
+: Whoosh is almost in the version 3.X in its stable release while we still
+ using an older version which is 0.3.
+ The moving to the last version is very recommended to benefit of the improvemen
+ts made.
+ Though, it will not be an easy operation since our API is intertwined with
+ the older version.
+ Especially for the Query Parser.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Move to Python 3.X: 
+\series default
+Python 2 is disappearing and sooner or later it'll be fully replaced.
+ There are many tools offer some automatic scripts to convert a code from
+ 2 into 3.
+ Though, the big part often should be done manually.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Cover with documentation
+\series default
+: the documentation is so important, it's expensive but it encourages the
+ community to involve in the project.
+ This can be done by:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Enrich the readme files;
+\end_layout
+
+\begin_layout Itemize
+Enrich the code with appropriate comments;
+\end_layout
+
+\begin_layout Itemize
+Create a usage How-To and straighten it with many demos;
+\end_layout
+
+\begin_layout Itemize
+The man page for the console interface.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Optimize code and performance: 
+\series default
+proceed the fixing of pylint code analysis warnings and use 
+\emph on
+Profile
+\emph default
+ to check the performance of each search feature in order to improve it.
+\end_layout
+
+\begin_layout Section
+Interfaces
+\end_layout
+
+\begin_layout Standard
+The project is working as a library offering many interfaces.
+ The main one is the Application Programming Interface or API.
+ It works as the intermediary between the library and the other interfaces.
+ There are two low-level interfaces that works with the API: 
+\end_layout
+
+\begin_layout Enumerate
+Console interface, destined for test purposes and to be used by third party
+ non-pythonic desktop interfaces.
+\end_layout
+
+\begin_layout Enumerate
+JSON web service, destined to be used by web interfaces, smart phone apps,
+ and social network apps.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Interfaces dependency hierarchy.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Interfaces dependency hierarchy 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Application Programming Interface
+\end_layout
+
+\begin_layout Standard
+An application programming interface (API) is a protocol intended to be
+ used as an interface by software components to communicate with each other.
+ An API is a library that may include specification for routines, data structure
+s, object classes, and variables.
+\end_layout
+
+\begin_layout Standard
+The powerful points of our API are:
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Free Open Libre
+\series default
+: any one can use it, any one can contribute in.
+ That means it takes the advantage of community involvement.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+A Python API
+\series default
+: that allows anyone to create independently a web interface, desktop interface
+ , Android/Iphone/Windows phone interfaces , facebook/twitter/G+ applications
+ ...and so on.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+A founded base
+\series default
+: The search process is too fast and too stable other websites/applications
+ do.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Lot of features
+\series default
+: The actual API has an important number of features and prepared to accept
+ more.
+ 
+\end_layout
+
+\begin_layout Standard
+The next figure represent a python sample code to use the API:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/API using sample.png
+	scale 65
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+API usage sample code
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+JSON web service
+\end_layout
+
+\begin_layout Standard
+To enable the use of our API over the web, we made a web service that wrap
+ the input/output of the API.
+ The request arguments should be passed in URL and the output will be generated
+ and shown in JSON format.
+ This could be used by web interfaces, smart phone apps, social network
+ apps, and browsers addons.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Json Output Service.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Preview of the JSON web service
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+[Usage statistics from stats.alwaysdata.org]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Console interface 
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Console-commandline"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As a test interface, we made a console interface that works on command line.
+ This interface could be used also as a wrapper to make desktop interfaces
+ that are developed under a programming language different then Python.
+ The request should be passed as in-line arguments in the command line and
+ the output will be generated & shown in JSON format.
+ High-activity desktop interfaces, working on a linux-like platform, can
+ run this interface as a Daemon service on the background.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Console interface.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Preview of the Console interface
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter*
 Conclusion
 \end_layout
 
@@ -423,15 +7983,72 @@ To clarify our proposal, we have enlisted the search features in Quran that
 \end_layout
 
 \begin_layout Standard
-For conception, we based on our previous work, we proposed fixes for what
- already done, and new improvements.
- The improvements are about getting to a full vocalized search engine customized
- to offer most of the features mentioned in the previous chapter.
- We proposed a customized text processing to fits the properties of Qur'anic
- text.
- We introduce searching using the word as a unit in order to achieve a set
- of search features that requires the manipulation of word sets.
+For conception, we based our work on a previous one, we went through the
+ explanation of what's already done.
+ Then, we proposed many fixes, and many improvements on it.
+\end_layout
+
+\begin_layout Standard
+First improvement is about achieving a full vocalized search engine customized
+ to offer most of the features mentioned in the chapter.
+ The full vocalization is a very important improvement to get over the ambiguiti
+es and lack of accuracy arisen from ignoring the vowels (
+\lang arabic_arabi
+حركات
+\lang english
+).
+\end_layout
+
+\begin_layout Standard
+Second improvement is a proposal of a customized text processing that fits
+ the properties of the Quranic text.
+ We've introduced the use of Othmani script side by side with the Standard
+ script.
+ We added a pre-tokenization phase that substitute some patterns of the
+ query by their appropriate correspondent.
+ This is useful to implement search features such as romanizations, and
+ numbers-as-words search.
+ We suggested a change in the tokenization phase, which is adding a second
+ operation right after the space-based tokenization.
+ The role of this new second operation is to separate the resulted tokens
+ (the words) into sub-tokens (words' parts) in order to have a specific
+ processing for each part of the word.
+ For normalization, we discussed the processing of the Othmani text.
+ We discussed also some changes on the way how to filter stop words and
+ how to do the lemmatization (stemming).
+\end_layout
+
+\begin_layout Standard
+The third improvement, we considered the word as a new unit for search in
+ addition to the ayah as the main unit.
+ The objective of that is to achieve a set of search features that requires
+ the manipulation of word sets.
+ The word-as-a-unit search helps directly or indirectly in many feature:
  
+\end_layout
+
+\begin_layout Itemize
+Word properties search
+\end_layout
+
+\begin_layout Itemize
+Semantically-related words
+\end_layout
+
+\begin_layout Itemize
+Multi-level derivations
+\end_layout
+
+\begin_layout Itemize
+Specific derivations
+\end_layout
+
+\begin_layout Itemize
+Fuzzy Search
+\end_layout
+
+\begin_layout Standard
+We have discussed the implementation of each one of those last features.
 \end_layout
 
 \begin_layout Standard
@@ -443,15 +8060,15 @@ We went through the implementation of many search features that we previously
 \end_layout
 
 \begin_layout Itemize
-Conception of the suggestion system.
+Conception an accurate statistics gathering system;
 \end_layout
 
 \begin_layout Itemize
-Improvement of the statistic system.
+Implementation of a more adequate suggestion system;
 \end_layout
 
 \begin_layout Itemize
-Clear the way toward a semantic search engine.
+Clear the road-map toward a semantic search engine.
 \end_layout
 
 \begin_layout Itemize

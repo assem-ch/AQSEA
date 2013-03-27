@@ -185,15 +185,68 @@ To clarify our proposal, we have enlisted the search features in Quran that
 \end_layout
 
 \begin_layout Standard
-For conception, We based on our previous work, we proposed fixes for what
- already done , and new improvements.
- The improvements are about getting to a full vocalized search engine customized
- to offer most of the features mentioned in the previous chapter.
- We proposed a customized text processing to fits the properties of Quranic
- text.
- We introduce searching using the word as a unit in order to achieve a set
- of search features that requires the manipulation of word sets.
+For conception, we based our work on a previous one, we went through the
+ explanation of what's already done.
+ Then, we proposed many fixes, and many improvements on it.
+\end_layout
+
+\begin_layout Standard
+First improvement is about achieving a full vocalized search engine customized
+ to offer most of the features mentioned in the chapter.
+ The full vocalization is a very important improvement to get over the ambiguiti
+es and lack of accuracy arisen from ignoring the vowels (
+\lang arabic_arabi
+حركات
+\lang english
+).
+\end_layout
+
+\begin_layout Standard
+Second improvement is a proposal of a customized text processing that fits
+ the properties of the Quranic text.
+ We've introduced the use of Othmani script side by side with the Standard
+ script.
+ We added a pre-tokenization phase that substitute some patterns of the
+ query by their appropriate correspondent.
+ This is useful to implement search features such as romanizations, and
+ numbers-as-words search.
+ We suggested a change in the tokenization phase, which is adding a second
+ operation right after the space-based tokenization.
+ The role of this new second operation is to separate the resulted tokens
+ (the words) into sub-tokens (words' parts) in order to have a specific
+ processing for each part of the word.
+ For normalization, we discussed the processing of the Othmani text.
+ We discussed also some changes on the way how to filter stop words and
+ how to do the lemmatization (stemming).
+\end_layout
+
+\begin_layout Standard
+The third improvement, we considered the word as a new unit for search in
+ addition to the ayah as the main unit.
+ The objective of that is to achieve a set of search features that requires
+ the manipulation of word sets.
+ The word-as-a-unit search helps directly or indirectly in many feature:
  
+\end_layout
+
+\begin_layout Itemize
+Word properties search
+\end_layout
+
+\begin_layout Itemize
+Semantically-related words
+\end_layout
+
+\begin_layout Itemize
+Multi-level derivations
+\end_layout
+
+\begin_layout Itemize
+Specific derivations
+\end_layout
+
+\begin_layout Itemize
+Fuzzy Search
 \end_layout
 
 \begin_layout Standard
@@ -205,11 +258,11 @@ We went through the implementation of many search features that we previously
 \end_layout
 
 \begin_layout Itemize
-Conception of a suggestion system.
+Achieving an accurate statistics gathering system;
 \end_layout
 
 \begin_layout Itemize
-Improvement of a statistic system.
+Implementation of a more adequate suggestion system;
 \end_layout
 
 \begin_layout Itemize
