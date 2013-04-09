@@ -118,5 +118,22 @@ addcontentsline{toc}{part}{Dedication}
 
 \end_layout
 
+\begin_layout Standard
+\align center
+\begin_inset VSpace 3cm*
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size small
+...
+ and say: O my Lord! have compassion on them, as they brought me up (when
+ I was) little.
+ -- Al-isra' 24
+\end_layout
+
 \end_body
 \end_document

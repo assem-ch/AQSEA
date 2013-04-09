@@ -5324,17 +5324,20 @@ We launch the survey for 45 days and we gathered about 37 takers.
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Standard
+\align center
 \begin_inset Graphics
 	filename figures/takers_by_age.png
+	scale 60
 
 \end_inset
 
 
 \begin_inset Graphics
 	filename figures/Takers by Gender.png
+	scale 60
 
 \end_inset
 
@@ -5345,16 +5348,14 @@ status collapsed
 \align center
 \begin_inset Graphics
 	filename figures/Takers_by_country.png
+	scale 60
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
-\align center
 \begin_inset Graphics
 	filename figures/Takers_by_native_language.png
+	scale 60
 
 \end_inset
 
@@ -5365,6 +5366,7 @@ status collapsed
 \align center
 \begin_inset Graphics
 	filename figures/takers_by_religion.png
+	scale 60
 
 \end_inset
 
@@ -5456,7 +5458,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename figures/Survey results.png
-	scale 80
+	scale 60
 
 \end_inset
 

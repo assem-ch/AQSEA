@@ -817,16 +817,14 @@ myPage
 
 
 \backslash
-fancyhead[R]{
-\backslash
-em Transliteration }
+fancyhead[R]{Paper Abstracts}
 \end_layout
 
 \begin_layout Plain Layout
 
 
 \backslash
-fancyhead[L]{Appendix A}
+fancyhead[L]{Appendix}
 \end_layout
 
 \begin_layout Plain Layout

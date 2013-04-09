@@ -5939,14 +5939,19 @@ Robert Russell
 .
  Its working principle is based on the partition of consonants in groups
  with ordinal numbers, which are then compiled to the resulting value.
- The following table represents one of the applications of Soundtex on Arabic:
+ 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+The following table represents one of the applications of Soundtex on Arabic:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Float table
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -6231,6 +6236,11 @@ omit
 
 \begin_layout Plain Layout
 Soundtex table for Arabic [REF]
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
