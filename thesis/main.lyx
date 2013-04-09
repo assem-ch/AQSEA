@@ -762,11 +762,6 @@ options "bib/alpha"
 \end_inset
 
  
-\begin_inset Note Note
-status open
-
-\begin_layout Part*
-\start_of_appendix
 \begin_inset ERT
 status open
 
@@ -782,7 +777,7 @@ addcontentsline{toc}{part}{Appendices}
 Appendices
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -864,6 +859,10 @@ arabic{figure}}
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
 \begin_layout Plain Layout
 \begin_inset CommandInset include
 LatexCommand include
@@ -874,7 +873,22 @@ filename "Annex - Translateration.lyx"
 
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "Papers.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Note
 status open
 
@@ -887,7 +901,7 @@ Include: Global Schema!
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset Note Note
 status collapsed
 
@@ -966,11 +980,6 @@ arabic{figure}}
 \begin_inset CommandInset include
 LatexCommand include
 filename "sample - Annex.lyx"
-
-\end_inset
-
-
-\end_layout
 
 \end_inset
 

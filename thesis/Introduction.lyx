@@ -367,7 +367,7 @@ This chapter describes the choice of technologies and development tools
  and also presents the prototype with a description of various features.
  
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Also, we'll analyze the quality of code and the documentation coverage with
@@ -384,8 +384,85 @@ Also, we'll analyze the quality of code and the documentation coverage with
 \end_layout
 
 \begin_layout Standard
-Finally, we will finish the report with a conclusion that summarizes our
- work.
+Finally, we finish the report with a conclusion that summarizes our work.
+ We include an appendix that describes the papers published about this work.
+ Actually there are two papers:
+\end_layout
+
+\begin_layout Itemize
+An Arabic paper in NITS 2011 KSA entitled 
+\begin_inset Quotes sld
+\end_inset
+
+
+\emph on
+An Application Programming Interface for indexing and search in Noble Quran
+\emph default
+
+\begin_inset Quotes srd
+\end_inset
+
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Arabic title: 
+\lang arabic_arabi
+مكتبة برمجية للفهرسة والبحث في القرآن الكريم
+\lang english
+ 
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Chelli-Nits"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+An English paper in a pre-conference workshop in LREC 2012 Turkey which
+ is about 
+\begin_inset Quotes sld
+\end_inset
+
+
+\emph on
+LRE-Rel: Language Resource and Evaluation for Religious Texts
+\emph default
+
+\begin_inset Quotes sld
+\end_inset
+
+.
+ The paper was entitled 
+\begin_inset Quotes sld
+\end_inset
+
+
+\emph on
+Advanced Search in Quran: Classification and Proposition of All Possible
+ Features
+\emph default
+
+\begin_inset Quotes sld
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Chelli-LREC"
+
+\end_inset
+
+.
+ 
 \end_layout
 
 \end_body

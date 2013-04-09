@@ -152,7 +152,18 @@ pagestyle{fancy}
 
 
 \backslash
-fancyhf{}
+fancyhf{} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fancyfoot[R]{
+\backslash
+footnotesize 
+\backslash
+thepage} 
 \end_layout
 
 \begin_layout Plain Layout
@@ -166,43 +177,14 @@ fancyfoot[C]{}
 
 
 \backslash
-fancyfoot[R]{
-\backslash
-footnotesize 
-\backslash
-thepage}
-\end_layout
-
-\begin_layout Plain Layout
-
-%
-\backslash
-fancyhead[R]{
-\backslash
-em 
-\backslash
-LR{ 
-\backslash
-leftmark }} 
+fancyhead[R]{}
 \end_layout
 
 \begin_layout Plain Layout
 
 
 \backslash
-fancyhead[L]{
-\backslash
-LR{{
-\backslash
-scshape  
-\backslash
-footnotesize Chapter }{
-\backslash
-scshape 
-\backslash
-footnotesize 
-\backslash
-thechapter}}}
+fancyhead[L]{}
 \end_layout
 
 \begin_layout Plain Layout
@@ -462,10 +444,79 @@ Chapter 6 : Implementation
 This chapter describes the choice of technologies and development tools
  and also presents the prototype with a description of various features.
  
-\begin_inset Newline newline
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace smallskip
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+We have published, about this work, two papers in two conferences:
+\end_layout
+
+\begin_layout Itemize
+An Arabic paper in NITS 2011 KSA entitled 
+\begin_inset Quotes sld
+\end_inset
+
+
+\emph on
+An Application Programming Interface for indexing and search in Noble Quran
+\emph default
+
+\begin_inset Quotes srd
+\end_inset
+
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Arabic title: 
+\lang arabic_arabi
+مكتبة برمجية للفهرسة والبحث في القرآن الكريم
+\lang english
+ 
+\end_layout
+
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Itemize
+An English paper in a pre-conference workshop in LREC 2012 Turkey which
+ is about 
+\begin_inset Quotes sld
+\end_inset
+
+
+\emph on
+LRE-Rel: Language Resource and Evaluation for Religious Texts
+\emph default
+
+\begin_inset Quotes sld
+\end_inset
+
+.
+ The paper was entitled 
+\begin_inset Quotes sld
+\end_inset
+
+
+\emph on
+Advanced Search in Quran: Classification and Proposition of All Possible
+ Features
+\emph default
+
+\begin_inset Quotes sld
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Chapter
@@ -2516,40 +2567,6 @@ As we've said, to resolve those difficulties we consider Othmani text also
  In addition, we propose many improvements on the text processing phases
  to achieve many of search features.
  
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename figures/Uthmani vs Standard Text Processing.png
-	scale 60
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-General Schema of Uthmani and Standard text processing.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -5448,7 +5465,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename figures/Hyponymy-prophets.png
-	scale 60
+	scale 40
 
 \end_inset
 
@@ -6300,28 +6317,11 @@ Error messages;
 
 \begin_layout Enumerate
 Possible flags, in addition to their default values, possible values intervals,
- and help messages, see table 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "tab:Search-request-flags"
-
-\end_inset
-
- ;
+ and help messages ;
 \end_layout
 
 \begin_layout Enumerate
-Available search fields (Arabic and English names), see table 
-\begin_inset Note Comment
-status open
-
-\begin_layout Plain Layout
-[cross-ref]
-\end_layout
-
-\end_inset
-
-;
+Available search fields (Arabic and English names);
 \end_layout
 
 \begin_layout Enumerate
@@ -6685,42 +6685,6 @@ First, we need to transform the database into document indexes .
  document indexes.
  There is a table called fields in the database take the control over the
  information to be indexed and how to indexed.
- This is a sample example of the fields table:
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename figures/fields table.png
-	scale 60
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Fields table
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Enumerate
@@ -6788,58 +6752,19 @@ We implemented a packaging system to package the API for different operating
  Since the API is pure python so that makes it portable through the different
  platforms.
  Though, many data resources should be generated and imported in the package.
- We distribute the API as :
-\end_layout
-
-\begin_layout Enumerate
-
+ We distribute the API as : Source Tarball, Binary Tarball
 \series bold
-Source Tarball
+, 
 \series default
-: An archive of source files created with the Unix tar utility.
- Source-code distributions have been packaged as tarballs since the mid
- 1980s.
-\end_layout
-
-\begin_layout Enumerate
-
-\series bold
-Binary Tarball
-\series default
-: An archive contains the built and compiled source code.
-\end_layout
-
-\begin_layout Enumerate
-
-\series bold
 Python
-\series default
+\series bold
  
-\series bold
+\series default
 egg package
-\series default
-: a logical structure embodying the release of a specific version of a Python
- project, comprising its code, resources, and metadata.
-\end_layout
-
-\begin_layout Enumerate
-
 \series bold
-Debian deb package: 
+, 
 \series default
-Debian packages are standard Unix archives that include two tar archives
- optionally compressed: one archive holds the control information and another
- contains the program data.
-\end_layout
-
-\begin_layout Enumerate
-
-\series bold
-Red-hat rpm package: 
-\series default
-the acronym RPM stands for Redhat package manager which is a package management
- system.
- It refers also to the file format used by the packages of this system.
+Debian deb package, Red-hat rpm package.
 \end_layout
 
 \begin_layout Subsection
@@ -6932,7 +6857,7 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Word-as-unit json outout, Query: 
+Word-as-unit json output, Query: 
 \lang arabic_arabi
 قيمة
 \end_layout
@@ -6977,7 +6902,7 @@ We have fixed a huge amount of shown up messages by Pylint including: Convention
 s, Refactors, Warnings, Errors.
  This leads by consequence into a mass re-organization of the source code
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 , see the current code architecture in 
@@ -7224,19 +7149,6 @@ Pylint Analysis stats
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-1.93/10
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Subsection
 Documentation covering
 \end_layout
@@ -7244,274 +7156,11 @@ Documentation covering
 \begin_layout Standard
 We made the Readme files for the different parts of the project.
  The contents of readme files typically include one or more of the following:
-\end_layout
-
-\begin_layout Enumerate
-Configuration instructions 
-\end_layout
-
-\begin_layout Enumerate
-Installation instructions 
-\end_layout
-
-\begin_layout Enumerate
-Operating instructions 
-\end_layout
-
-\begin_layout Enumerate
-A file manifest (list of files included) 
-\end_layout
-
-\begin_layout Enumerate
-Copyright and licensing information 
-\end_layout
-
-\begin_layout Enumerate
-Contact information for the distributor or programmer 
-\end_layout
-
-\begin_layout Enumerate
-Known bugs
-\end_layout
-
-\begin_layout Enumerate
-Troubleshooting
-\end_layout
-
-\begin_layout Enumerate
-Credits and acknowledgments 
-\end_layout
-
-\begin_layout Enumerate
-A changelog (usually for programmers) 
-\end_layout
-
-\begin_layout Enumerate
-A news section (usually for users) 
-\end_layout
-
-\begin_layout Standard
-The expression "readme file" is also sometimes used descriptively and genericall
-y, whereby the files are not named "readme", but are considered types of
- readme files.
- The source code distributions of many free software packages, especially
- those following the Gnits Standards, usually include a standard set of
- readme files:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Tabular
-<lyxtabular version="3" rows="8" columns="2">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-README
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-General information
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-AUTHORS
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Credits
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-THANKS
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Acknowledgments
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-ChangeLog
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-A detailed changelog, intended for programmers
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-NEWS
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-A basic changelog, intended for users
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-INSTALL
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Installation instructions
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-COPYING / LICENSE
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Copyright and licensing information
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-BUGS
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Known bugs and instructions on reporting new ones
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Other files commonly distributed with software include a FAQ and a TODO
- file listing possible future changes.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-Extra TODO: +PyTanzil
-\end_layout
-
-\begin_layout Plain Layout
-grouping the changes
-\end_layout
-
-\begin_layout Plain Layout
-+ Suggestion Vocalizations!
-\end_layout
-
-\begin_layout Plain Layout
-+ Suggestion (Verb Conjugation+ Random Affixes) U Quranic Verbs 
-\end_layout
-
-\begin_layout Plain Layout
-+ Suggestion Synonyms
-\end_layout
-
-\begin_layout Plain Layout
-+ Search Word : 2 Steps Search
-\end_layout
-
-\begin_layout Plain Layout
-+ Search Translation:
-\end_layout
-
-\end_inset
-
-
+ Configuration instructions, Installation instructions, Operating instructions,
+ A file manifest (list of files included), Copyright and licensing information,
+ Contact information for the distributor or programmer, Known bugs, Troubleshoot
+ing, Credits and acknowledgments, A changelog (usually for programmers),
+ A news section (usually for users).
 \end_layout
 
 \begin_layout Subsection
@@ -7528,159 +7177,7 @@ name "sub:Open-Issues"
 \begin_layout Standard
 We went through many improvements.
  Yet, however, there still lot of things to be done.
- We'll browse the main milestones that should go through:
-\end_layout
-
-\begin_layout Enumerate
-
-\series bold
-Enriching the linguistic resources:
-\series default
- the actual used resources are poor comparing to what we really need.
- In order to get this done , we should: 
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Textify the binary database to enable the possibility of logging of changes
- and take the benefits of revision control systems such as GIT.
-\end_layout
-
-\begin_layout Itemize
-Integrate Qurany project to enrich the actual faceted thematic search.
-\end_layout
-
-\begin_layout Itemize
-Integrate the boundary annotations to enable the retrieving of boundaries
- in Quran.
-\end_layout
-
-\begin_layout Itemize
-Propose a standard format for new linguistic and Quranic resources.
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-
-\series bold
-Complete the features implementation: 
-\series default
-we listed lot of search features in a previous chapter (see 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sec:Proposals"
-
-\end_inset
-
-).
- Though, we didn't implement the whole list.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-list of unimplemented search features; Implementation Ratio
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-
-\series bold
-Implement the modularity for the Query Parser
-\series default
-: This is important to enable the extensibility feature and fix the problem
- of mixing (the combination) the different operations made during parsing.
-\end_layout
-
-\begin_layout Enumerate
-
-\series bold
-Restrict the anonymous requests to the API: 
-\series default
-restricting requests protect the API from flooding either intended or not.
- This can be done by:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Limit the maximum of simultaneous requests globally and by IP.
-\end_layout
-
-\begin_layout Itemize
-Implement an identification system that works with remote clients.
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-
-\series bold
-Move to the last version of Whoosh library
-\series default
-: Whoosh is almost in the version 3.X in its stable release while we still
- using an older version which is 0.3.
- The moving to the last version is very recommended to benefit of the improvemen
-ts made.
- Though, it will not be an easy operation since our API is intertwined with
- the older version.
- Especially for the Query Parser.
-\end_layout
-
-\begin_layout Enumerate
-
-\series bold
-Move to Python 3.X: 
-\series default
-Python 2 is disappearing and sooner or later it'll be fully replaced.
- There are many tools offer some automatic scripts to convert a code from
- 2 into 3.
- Though, the big part often should be done manually.
-\end_layout
-
-\begin_layout Enumerate
-
-\series bold
-Cover with documentation
-\series default
-: the documentation is so important, it's expensive but it encourages the
- community to involve in the project.
- This can be done by:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Enrich the readme files;
-\end_layout
-
-\begin_layout Itemize
-Enrich the code with appropriate comments;
-\end_layout
-
-\begin_layout Itemize
-Create a usage How-To and straighten it with many demos;
-\end_layout
-
-\begin_layout Itemize
-The man page for the console interface.
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-
-\series bold
-Optimize code and performance: 
-\series default
-proceed the fixing of pylint code analysis warnings and use 
-\emph on
-Profile
-\emph default
- to check the performance of each search feature in order to improve it.
+ We browsed the main milestones that should go through in the full thesis.
 \end_layout
 
 \begin_layout Section
@@ -7708,7 +7205,7 @@ JSON web service, destined to be used by web interfaces, smart phone apps,
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -7791,44 +7288,6 @@ Lot of features
 : The actual API has an important number of features and prepared to accept
  more.
  
-\end_layout
-
-\begin_layout Standard
-The next figure represent a python sample code to use the API:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename figures/API using sample.png
-	scale 65
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-API usage sample code
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsubsection
@@ -7917,7 +7376,7 @@ As a test interface, we made a console interface that works on command line.
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -7979,6 +7438,34 @@ To clarify our proposal, we have enlisted the search features in Quran that
  and we have got very helpful feedbacks.
  Each feature has a different level of complexity: could be implemented
  easily or may lead to vast problem that need a deeper study.
+ A primary version of this list of search features is published as paper
+ in an LREC 2012 pre-conference workshop which is about 
+\begin_inset Quotes sld
+\end_inset
+
+
+\emph on
+LRE-Rel: Language Resource and Evaluation for Religious Texts
+\emph default
+
+\begin_inset Quotes sld
+\end_inset
+
+.
+ The paper was entitled 
+\begin_inset Quotes sld
+\end_inset
+
+
+\emph on
+Advanced Search in Quran: Classification and Proposition of All Possible
+ Features
+\emph default
+
+\begin_inset Quotes sld
+\end_inset
+
+.
  
 \end_layout
 

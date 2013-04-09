@@ -181,6 +181,41 @@ To clarify our proposal, we have enlisted the search features in Quran that
  and we have got very helpful feedbacks.
  Each feature has a different level of complexity: could be implemented
  easily or may lead to vast problem that need a deeper study.
+ A primary version of this list of search features is published as a paper
+ in an LREC 2012 pre-conference workshop which is about 
+\begin_inset Quotes sld
+\end_inset
+
+
+\emph on
+LRE-Rel: Language Resource and Evaluation for Religious Texts
+\emph default
+
+\begin_inset Quotes sld
+\end_inset
+
+.
+ The paper was entitled 
+\begin_inset Quotes sld
+\end_inset
+
+
+\emph on
+Advanced Search in Quran: Classification and Proposition of All Possible
+ Features
+\emph default
+
+\begin_inset Quotes sld
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Chelli-LREC"
+
+\end_inset
+
+.
  
 \end_layout
 
