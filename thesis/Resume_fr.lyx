@@ -17,7 +17,7 @@ fix-cm
 fixltx2e
 \end_modules
 \maintain_unincluded_children false
-\language english
+\language french
 \language_package default
 \inputencoding auto
 \fontencoding global
@@ -92,11 +92,11 @@ fixltx2e
 \begin_body
 
 \begin_layout Title
-Proposal of an Advanced Retrieval System for Noble Qur'an
+Proposition d'un systeme avancé de recherche dans le Saint Coran
 \end_layout
 
 \begin_layout Author
-Assem Chelli, Supervisor: Pr.
+Assem Chelli, Pr.
  Amar Balla
 \end_layout
 
@@ -114,35 +114,42 @@ status open
 \end_layout
 
 \begin_layout Abstract
-Noble Qurbavan is different of all documents that we have known.
- It's the sacred book of Muslims.
- It contains knowledge of all aspects of life.
- With this huge quantity of information, we can extract only a small part
- manually and this is considered insufficient compared to the size of knowledge
- contained by Quran.
- That raises the need for a method to extract those information because
- currently there is no efficient method except many printed lexicons and
- many tools of simple sequential search with regular expression.
- Due to this limitation, the Quran requires us to find new ways to interact.The
- goal through this work is to propose a system for advanced research in
- all of the information contained in the Quran by considering the morphology
- of the Arabic language and the properties of the Qur'anic text.
- It should be based on modern methods of information retrieval for good
- stability and high speed search.
- It would be very useful for researchers and could be generalized to cover
- all the content in Arabic.
-\begin_inset Newline newline
-\end_inset
+Le Coran est différent de tous les documents que nous connaissons .
+ C'est le livre sacré des musulmans.
+ Il comporte des connaissances sur tous les aspects de la vie.
+ Avec un tel volume d'informations, on ne peut y extraire qu'une infime
+ partie manuellement.
+ Ceci s'avère être insuffisant vue la quantité de connaissances que contient
+ le Coran.
+ D'où la nécessité de trouver une méthode pour extraire ces informations.
+ Or il n'existe aucun outil à utiliser sauf quelques lexiques imprimés et
+ quelques outils de recherche simple et séquentielle par les expressions
+ régulières.
+ En raison de cette limitation, le Coran nous oblige à trouver de nouvelles
+ façons d'interaction.
+\end_layout
 
+\begin_layout Abstract
+Le but recherché à travers ce travail est de proposer un système de recherche
+ avancée dans l'ensemble des informations contenues dans le Coran en prenant
+ en considération la morphologie de la langue Arabe et les propriétés du
+ texte coranique.
+ Elle doit être fondée sur les méthodes modernes de recherche d'informations
+ pour obtenir une bonne stabilité et une recherche de grande vitesse.
+ Elle serait trés utile pour les chercheurs et pourrait être généralisée
+ pour couvrir l'ensemble du contenu en arabe.
+\lang english
 
 \begin_inset Newline newline
 \end_inset
 
 
 \series bold
-Keywords:
+\lang french
+Mots clés : 
 \series default
- Indexing/Search, Arabic, Holy Quran, Information retrieval, Search engines.
+Indexation/Recherche, Arabe, Coran, Recherche d'information, Moteurs de
+ recherche.
  
 \end_layout
 
@@ -214,76 +221,74 @@ Introduction
 \end_layout
 
 \begin_layout Section*
-Work Context
+Conteste du travaille 
 \end_layout
 
 \begin_layout Standard
-
-\series bold
-\size larger
-Q
-\series default
-\size default
-ur'an, in Arabic, means the read or the recitation.
- Muslim scholars define it as: the words of Allah revealed to His Prophet
- Muhammad, written in Mus'haf and transmitted by successive generations
- (
+Le Coran, en Arabe, a le sense de la lecture ou la recitation.
+ Les érudits musulmans le définissent comme: les paroles d'Allah révélées
+ à Son Prophète Muhammad, écrit en Mus'haf et transmis par les générations
+ successives (
 \lang arabic_arabi
 التواتر
-\lang english
+\lang french
 ).
- The Qur'an is also known by other names such as: Al-Furkān , Al-kitāb ,
- Al-dhikr , Al-wahy and Al-rōuh .
- It is the sacred book of all Muslims and the first reference to Islamic
- law.
- It's more then 14 centuries passed since its revelation, and the Muslims
- are still studying it, teaching it, writing books about it and recently
- developing applications for it.
+ Le Coran est également connu sous d'autres noms tels que: Al-Furkan, Al-Kitab
+ Al-dhikr, Al-wahy et Al-Rouh.
+ Il est le livre sacré de tous les musulmans et la première référence à
+ la loi islamique.
+ C'est plus de 14 siècles écoulés depuis sa révélation, et les musulmans
+ sont encore étudier, enseigner, écrire des livres à ce sujet et développer
+ récemment des applications pour lui.
 \end_layout
 
 \begin_layout Standard
-Qur'an is an important source of information that contains various information
- about all aspects of life: Scientific, Social, Historic, Politic...etc.
- 
+Coran est une source importante d'informations qui contient diverses information
+s sur tous les aspects de la vie: scientifique, sociale, historique, Politique
+ ...
+ etc.
 \end_layout
 
 \begin_layout Section*
-Problematic
+Problématique 
 \end_layout
 
 \begin_layout Standard
-Due to the large amount of information held in the Qur'an, it has become
- extremely difficult for regular search engines to successfully extract
- key information.
- For example, When searching for a book related to English grammar, you’ll
- simply Google it, select a PDF file and download it.
- That’s all! Search engines (like Google) are used generally on Latin letters
- and for searching general information of document like content, title,
- author…etc.
- However, searching through Qu'ranic text is a much more complicated; It's
- procedure that's requiring a much more in depth solution as there is a
- lot of information that needs to be extracted to fulfill Qur'an scholar's
- needs.
- Before the creation of computer, Qur'an scholars were using printed lexicons
- made manually.
- The printed lexicons can’t help much since many search process waste the
- time and the force of the searcher.
- Each lexicon is written to reply to a specific query which is generally
- simple.
- Nowadays, there are applications that are specific for search needs; most
- of applications that were developed for Qur'an had the search feature but
- in a simply way: sequential search with regular expressions.
+En raison de la grande quantité d'informations contenues dans le Coran,
+ il est devenu extrêmement difficile pour les moteurs de recherche régulières
+ pour extraire avec succès les informations essentielles.
+ Par exemple, lorsque vous recherchez un livre lié à la grammaire anglaise,
+ vous aurez simplement le googler, sélectionnez un fichier PDF et le télécharger.
+ C'est tout! Les moteurs de recherche (comme Google) sont généralement utilisés
+ sur les lettres latines et de recherche d'informations générales sur le
+ document comme contenu, titre, auteur etc ...
+ Cependant, la recherche dans le texte coranique est beaucoup plus compliqué,
+ c'est la procédure qui est exigeant beaucoup plus en solution approfondie
+ car il ya beaucoup d'informations qui doit être extrait pour répondre aux
+ besoins de Coran érudits.
+ Avant la création de l'ordinateur, les savants du Coran utilisaient des
+ lexiques imprimés faites manuellement.
+ Les lexiques imprimés peuvent pas aider beaucoup depuis plusieurs processus
+ de recherche gaspille le temps et la force du chercheur.
+ Chaque lexique est écrit pour répondre à une requête spécifique qui est
+ généralement simple.
+ Aujourd'hui, il ya des applications qui sont spécifiques pour les besoins
+ de la recherche, la plupart des applications qui ont été développées pour
+ Qur'an eu la fonction de recherche, mais dans une simple façon: recherche
+ séquentielle avec des expressions régulières.
  
 \end_layout
 
 \begin_layout Standard
-The simple search using exact query does not offer better options and still
- inefficient to move toward Thematic search by example.
- Full text search is the new approach of search that replaced the sequential
- search and which is used in search engines.
- Unfortunately, this approach is not applied yet on Qur'an.
- The question is why we need this approach? Why search engines? Do applications
- of search in Qur'an really need to be implemented as search engines? 
+La recherche simple en utilisant la requête exact n'offre pas de meilleures
+ options et toujours inefficace à se déplacer vers la recherche thématique
+ par exemple.
+ Recherche plein texte est la nouvelle approche de la recherche, qui a remplacé
+ la recherche séquentielle et qui est utilisé dans les moteurs de recherche.
+ Malheureusement, cette approche n'est pas encore appliquée sur Coran.
+ La question est pourquoi nous avons besoin de cette approche? Pourquoi
+ les moteurs de recherche? Est-ce que vraiment les applications de recherche
+ dans le Coran ont besoin d'être mis en œuvre comme des moteurs de recherche?
 \end_layout
 
 \begin_layout Section*
@@ -291,50 +296,28 @@ Objectives
 \end_layout
 
 \begin_layout Standard
-Our proposal is about design a retrieval system that fit the Qur'an search
- needs.
- But to realize this objective, we must first list and classify all the
- search features that are possible and helpful.
- Then we need to study how to implement each feature and what is its requirement
-s.
+Notre proposition est sur ​​la conception d'un système de recherche qui
+ répondent aux besoins de la recherche du Coran.
+ Mais pour réaliser cet objectif, nous devons d'abord énumérer et classer
+ toutes les fonctionnalités de recherche qui sont possibles et utiles.
+ Ensuite, nous devons étudier comment mettre en œuvre chaque fonction et
+ ce qui est de ses besoins.
 \end_layout
 
 \begin_layout Section*
-Report organization
+Organisation de Rapport 
 \end_layout
 
 \begin_layout Standard
-We organized the report as follows:
+Nous avons organisé le rapport comme suits:
 \end_layout
 
 \begin_layout Subsection*
-First Part : Art State
+Première partie: Etat de l'art
 \end_layout
 
 \begin_layout Standard
-This part contains 3 chapters:
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace smallskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-Chapter 1 : Search Engines
-\end_layout
-
-\begin_layout Standard
-To design a powerful search engine, it is essential to understand how search
- engines work, in this chapter we discuss the different parts of a search
- engine, namely: the crawling, indexing and querying .
- And the definition of basic concepts in the field of information retrieval
- systems.
- This chapter contains an introduction to the semantic approach.
+Cette partie contient 3 chapitres:
 \end_layout
 
 \begin_layout Standard
@@ -347,13 +330,36 @@ To design a powerful search engine, it is essential to understand how search
 \begin_layout Standard
 
 \series bold
-Chapter 2 : Arabic Language
+Chapitre 1 : Moteurs de recherche
 \end_layout
 
 \begin_layout Standard
-The objective of this chapter is to present the properties of the Arabic
- language, Its spells, Its morphology and introduce some ambiguities issues
- that raise due to Arabic nature ...
+Pour concevoir un puissant moteur de recherche, il est essentiel de comprendre
+ comment les moteurs de recherche fonctionnent, dans ce chapitre, nous discutons
+ les différentes parties d'un moteur de recherche, à savoir: l'exploration,
+ l'indexation et l'interrogation.
+ Et la définition des concepts de base dans le domaine des systèmes de recherche
+ d'information.
+ Ce chapitre contient une introduction à l'approche sémantique.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Chapitre 2: Langue arabe
+\end_layout
+
+\begin_layout Standard
+L'objectif de ce chapitre est de présenter les propriétés de la langue arabe,
+ ses charmes, sa morphologie et introduire quelques questions qui soulèvent
+ des ambiguïtés en raison de la nature arabe ...
  etc.
 \end_layout
 
@@ -367,14 +373,14 @@ The objective of this chapter is to present the properties of the Arabic
 \begin_layout Standard
 
 \series bold
-Chapter 3 : The Qur'an
+Chapitre 3 : Le Coran
 \end_layout
 
 \begin_layout Standard
-This chapter presents an overview of the Qur'an and its sciences, it has
- a historical background on the evolution of the Qur'an, the structure of
- the Mus'haf, and the main problems of computerization of the Qur'an, including
- the script Uthmani and authentication Qu'ranic texts.
+Ce chapitre présente un aperçu du Coran et ses sciences, il a un historique
+ sur l'évolution du Coran, la structure de la Mus'haf, et les problèmes
+ principaux de l'informatisation du Coran, y compris le Script Uthmani et
+ l'authentification des textes coraniques.
 \end_layout
 
 \begin_layout Standard
@@ -385,11 +391,11 @@ This chapter presents an overview of the Qur'an and its sciences, it has
 \end_layout
 
 \begin_layout Subsection*
-Second Part : Analysis & Conception
+Deuxième partie: Analyse et Conception
 \end_layout
 
 \begin_layout Standard
-This part contains two chapters :
+Cette partie contient deux chapitres:
 \begin_inset VSpace smallskip
 \end_inset
 
@@ -399,16 +405,17 @@ This part contains two chapters :
 \begin_layout Standard
 
 \series bold
-Chapter 4 : Qur'anic search features
+Chapitre 4: les fonctionnalités de recherche coraniques
 \end_layout
 
 \begin_layout Standard
-The objective of this chapter is to present the possible search features
- in Qur'an.
- It has a big importance in our work since it defines our objectives and
- our path on the work.
- We've make a survey about Usefulness, Need, and Clarity of each feature
- in order to validate our points of view in choosing those features.
+L'objectif de ce chapitre est de présenter les fonctionalitées de recherche
+ possibles dans le Coran.
+ Il a une grande importance dans notre travail, car il définit nos objectifs
+ et notre chemin sur le travail.
+ Nous avons fait une enquête sur l'utilité, le besoin et la clarté de chaque
+ fonctionnalité afin de valider nos points de vue dans le choix de ces fonctionn
+alitées.
 \end_layout
 
 \begin_layout Standard
@@ -421,23 +428,24 @@ The objective of this chapter is to present the possible search features
 \begin_layout Standard
 
 \series bold
-Chapter 5 : Conception
+Chapitre 5: la Conception
 \end_layout
 
 \begin_layout Standard
-In this chapter, we start by a preview on our previous work then we'll propose
- many improvements to carry out all the feasible search features mentioned
- in the previous chapter.
+Dans ce chapitre, nous commençons par un aperçu de notre travail précédent
+ alors nous vous proposons de nombreuses améliorations à effectuer toutes
+ les fonctionalitées de recherche possibles mentionnés dans le chapitre
+ précédent.
 \end_layout
 
 \begin_layout Subsection*
-Third Part : Implementation
+Troisième Partie: l'implémentation
 \end_layout
 
 \begin_layout Standard
-This part contains the different steps of implementation of our retrieval
- system.
- It includes one chapter:
+Cette partie contient les différentes étapes de l'implémentation de notre
+ système de recherche.
+ Il comprend un chapitre:
 \begin_inset VSpace smallskip
 \end_inset
 
@@ -447,12 +455,15 @@ This part contains the different steps of implementation of our retrieval
 \begin_layout Standard
 
 \series bold
-Chapter 6 : Implementation 
+Chapitre 6 : l'implémentation
+\series default
+ 
 \end_layout
 
 \begin_layout Standard
-This chapter describes the choice of technologies and development tools
- and also presents the prototype with a description of various features.
+Ce chapitre décrit le choix des technologies et des outils de développement
+ et présente également le prototype avec une description des différentes
+ fonctionnalités.
  
 \end_layout
 
@@ -464,17 +475,18 @@ This chapter describes the choice of technologies and development tools
 \end_layout
 
 \begin_layout Standard
-We have published, about this work, two papers in two conferences:
+Nous avons publié, au sujet de ce travail, deux articles dans deux conférences:
 \end_layout
 
 \begin_layout Itemize
-An Arabic paper in NITS 2011 KSA entitled 
+Un article en Arabe NITS 2011 a l'Arabie saoudite intitulé 
 \begin_inset Quotes sld
 \end_inset
 
 
 \emph on
-An Application Programming Interface for indexing and search in Noble Quran
+Une interface de programmation pour l'indexation et la recherche dans Noble
+ Coran
 \emph default
 
 \begin_inset Quotes srd
@@ -482,13 +494,13 @@ An Application Programming Interface for indexing and search in Noble Quran
 
 
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
-Arabic title: 
+Titre en Arabe: 
 \lang arabic_arabi
 مكتبة برمجية للفهرسة والبحث في القرآن الكريم
-\lang english
+\lang french
  
 \end_layout
 
@@ -498,31 +510,34 @@ Arabic title:
 \end_layout
 
 \begin_layout Itemize
-An English paper in a pre-conference workshop in LREC 2012 Turkey which
- is about 
+Un article en Anglais dans un atelier pré-conférence dans LREC 2012 en Turquie
+ qui est sur le point 
 \begin_inset Quotes sld
 \end_inset
 
-
-\emph on
-LRE-Rel: Language Resource and Evaluation for Religious Texts
-\emph default
-
-\begin_inset Quotes sld
+LRE-Rel: les ressources et l'évaluation linguistiques pour les textes religieux
+\begin_inset Quotes srd
 \end_inset
 
 .
- The paper was entitled 
+ Le document était intitulé 
 \begin_inset Quotes sld
 \end_inset
 
+La recherche avancée dans le Coran: Classification et Proposition de toutes
+ les fonctionnalités possibles
+\begin_inset Quotes srd
+\end_inset
 
-\emph on
-Advanced Search in Quran: Classification and Proposition of All Possible
- Features
-\emph default
+ 
+\begin_inset Foot
+status open
 
-\begin_inset Quotes sld
+\begin_layout Plain Layout
+English title: Advanced Search in Quran: Classification and Proposition
+ of All Possible Features
+\end_layout
+
 \end_inset
 
 .
@@ -530,142 +545,96 @@ Advanced Search in Quran: Classification and Proposition of All Possible
 \end_layout
 
 \begin_layout Chapter
-Classification & Proposition of Qur'anic Search Features
+Classification et Proposition des fonctionnalités de recherche coraniques
+ 
 \end_layout
 
 \begin_layout Standard
-Our proposal is to design an information retrieval system that fits to the
- specific needs of the Quran.
- But to realize this objective, we must first list and classify all the
- search features that are possible and helpful, this chapter has been written
- to explain this point.
- It contains a listing for all search features that we have collected and
- a classification depending on the nature of feature.
+Notre proposition est de concevoir un système de recherche d'information
+ qui s'adapte aux besoins spécifiques du Coran.
+ Mais pour réaliser cet objectif, nous devons d'abord lister et classer
+ toutes les fonctionnalités de recherche qui sont possible et utile, ce
+ chapitre a été écrit pour expliquer ce point.
+ Il contient une liste de toutes les fonctionnalités de la recherche que
+ nous avons recueillies et une classification en fonction de la nature de
+ la fonctionalités.
  
 \end_layout
 
 \begin_layout Section
-Search in Quran difficulties 
+Les difficultées de la recherche dans le Coran
 \end_layout
 
 \begin_layout Standard
-To clarify the vision about the problematic of this paper, we are describing
- the challenges that face the search in Quran: 
+Afin de clarifier la vision sur la problématique de cet article, nous décrivons
+ les défis auxquels est confrontée la recherche dans le Coran: 
 \end_layout
 
 \begin_layout Itemize
-First, as a general search need;
+Tout d'abord, comme un besoin de recherche général;
 \end_layout
 
 \begin_layout Itemize
-Second, as an Arabic search challenge; 
+Deuxièmement, comme un défi de recherche arabe;
 \end_layout
 
 \begin_layout Itemize
-Third, Quran as a special source of information.
+Troisièmement, le Coran comme une source particulière d'information.
+\end_layout
+
+\begin_layout Standard
+Nous commençons à expliquer le premier point, la recherche dans le Coran
+ est theoriquement a les mêmes défis de la recherche dans les autres documents.
+ La recherche dans les documents est passée par différentes phases dans
+ son évolution.
+ Au début, la recherche était séquentiel en fonction d'un mot clé exact
+ avant que les expressions régulières ont été introduits.
+ Recherche plein texte a été inventé pour éviter les limitations de la recherche
+ séquentielles sur des documents énormes.
+ La recherche plein texte introduit quelques nouveaux mécanismes d'analyse
+ de texte qui incluent tokenization, normalisation, et lemmatisation etc
+ ...
+ Collecte de statistiques font désormais partie du processus de recherche,
+ elle contribue à améliorer l'ordre des résultats et des suggestions.
+ Après la levée de la sémantique web, la recherche se dirige vers une approche
+ sémantique où l'd'améliorer la précision de la recherche par la compréhension
+ de l'intention du chercheur et la signification contextuelle des termes
+ tels qu'ils apparaissent dans un espace de données recherche-capable pour
+ générer des résultats plus pertinents.
+ Pour obtenir plus d'expérience de l'utilisateur, les moteurs de recherche
+ tentent d'améliorer le comportement de montrer les résultats en le tri
+ en fonction de leur pertinence dans les documents, plusieurs critères de
+ tri, en soulignant les mots-clés, la pagination, le filtrage.
+ En outre, d'améliorer l'entrée de requête en introduisant différentes méthodes
+ d'entrée (ex: entrée vocale) et en suggérant des mots clés connexes.
+ Jusqu'à présent, la plupart de ces fonctionnalités ne sont pas mis en œuvre
+ pour utiliser le Coran.
+ Et beaucoup d'entre eux doivent être personnalisées pour s'adapter aux
+ propriétés arabes que ce expliquées dans le point suivant.
  
 \end_layout
 
 \begin_layout Standard
-We start explaining the first point, the search in Quran is by theory has
- the same challenges of search in any other documents.
- The search in documents has passed by different phases in its evolution
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-ref: search evolution, exact word, regular expression, sequencial search,
- full text search, semantic aproche 
-\end_layout
-
-\end_inset
-
-.
- At the beginning, the search was sequential based an exact keyword before
- the regular expressions were introduced.
- Full text search was invented to avoid the sequential search limitations
- on huge documents.
- The full text search introduces some new mechanisms for text analysis that
- include tokenization, normalization, and stemming...etc.
- Gathering Statistics make now a part of search process, it helps to improve
- the order of results and the suggestions.
- After the raising of the web semantic, the search is heading to a semantic
- approach where the to improve search accuracy by understanding searcher
- intent and the contextual meaning of terms as they appear in the search-able
- data-space to generate more relevant results
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-ref: semantic search, google the phrase 
-\end_layout
-
-\end_inset
-
-.
- To get more user experience, the search engines try to improve the behavior
- of showing the results by sorting it based on their relevance in the documents
- , more sorting criteria, Highlighting the keywords, Pagination, Filtering
- and Expanding
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-ref: Search engines highligh, pagunation
-\end_layout
-
-\end_inset
-
-.
- Moreover, improve the query input by introducing different input methods
- (ex: Vocal input) and suggesting related keywords.
- Till now, most of these features are not implemented to use on Quran.
- And many of them need to be customized to fit the Arabic properties that
- what explained in the next point.
- 
-\end_layout
-
-\begin_layout Standard
-Secondly, Quran’s language is considered as the classical Arabic
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Shah07"
-
-\end_inset
-
-.
- Arabic is a specific language because its morphology and orthography
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-ref: google it arabic specific morphp and ortho
-\end_layout
-
-\end_inset
-
-, and this must be taken into consideration in text analyzing phases.
- For instance, letters shaping (specially the Hamza 
+Deuxièmement, la langue du Coran est considéré comme l'arabe classique.
+ L'arabe est une langue spécifique, car sa morphologie et son orthographe,
+ et cela doit être pris en considération dans les phases d'analyse de texte.
+ Par exemple, façonnage des lettres (spécialement le Hamza 
 \lang arabic_arabi
 -ء-
-\lang english
-), the vocalization, the different levels of stemming and types of derivations...et
-c.
- That must be taken into consideration in search features by example: the
- regular expressions are badly misrepresenting the Arabic letters since
- the vocalization diacritics are not distinct from letters.
- The absence of vocalization issues some ambiguities 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Alb09"
-
-\end_inset
-
- in understanding the words:
+\lang french
+), la vocalisation, les différents niveaux de lemmatisation et les types
+ de dérivations ...
+ etc.
+ Cela doit être pris en considération dans les fonctions de recherche par
+ exemple: les expressions régulières mal dénaturent les lettres arabes étant
+ donné que les signes diacritiques de vocalisation sont pas distincte de
+ lettres.
+ L'absence de vocalisation émettre certaines ambiguïtés dans la compréhension
+ des mots:
 \end_layout
 
 \begin_layout Itemize
-The word 
+Le mot 
 \family roman
 \series medium
 \shape up
@@ -702,7 +671,7 @@ arbox{الملك}
 \uwave default
 \noun default
 \color inherit
-could be understood as
+pourrait être compris comme
 \family roman
 \series medium
 \shape up
@@ -742,7 +711,7 @@ arbox{
 
 \lang arabic_arabi
 المَلَك
-\lang english
+\lang french
 
 \begin_inset ERT
 status open
@@ -754,7 +723,7 @@ status open
 
 \end_inset
 
- (the angel), 
+ (l'ange), 
 \begin_inset ERT
 status open
 
@@ -770,7 +739,7 @@ arbox{
 
 \lang arabic_arabi
 المَلِك
-\lang english
+\lang french
 
 \begin_inset ERT
 status open
@@ -782,7 +751,7 @@ status open
 
 \end_inset
 
- (the king) or 
+ (le roi) ou 
 \begin_inset ERT
 status open
 
@@ -798,7 +767,7 @@ arbox{
 
 \lang arabic_arabi
 المُلْك
-\lang english
+\lang french
 
 \begin_inset ERT
 status open
@@ -822,11 +791,11 @@ status open
 \uwave off
 \noun off
 \color none
- (the kingdom)
+ (le royaume)
 \end_layout
 
 \begin_layout Itemize
-The word 
+Le mot 
 \begin_inset ERT
 status open
 
@@ -842,7 +811,7 @@ arbox{
 
 \lang arabic_arabi
 وعد
-\lang english
+\lang french
 
 \begin_inset ERT
 status open
@@ -854,7 +823,7 @@ status open
 
 \end_inset
 
- could be understood as 
+ pourrait être compris comme 
 \begin_inset ERT
 status open
 
@@ -870,7 +839,7 @@ arbox{
 
 \lang arabic_arabi
 وَعَدَ
-\lang english
+\lang french
 
 \begin_inset ERT
 status open
@@ -906,7 +875,7 @@ status open
 \uwave default
 \noun default
 \color inherit
-(*he* promise) or 
+(*il* a promis) ou 
 \begin_inset ERT
 status open
 
@@ -922,7 +891,7 @@ arbox{
 
 \lang arabic_arabi
 وَ+عَدَّ
-\lang english
+\lang french
 
 \begin_inset ERT
 status open
@@ -958,11 +927,11 @@ status open
 \uwave default
 \noun default
 \color inherit
-(and + *he* count)
+(et + *il* compte)
 \end_layout
 
 \begin_layout Itemize
-The word 
+Le mot 
 \begin_inset ERT
 status open
 
@@ -978,7 +947,7 @@ arbox{
 
 \lang arabic_arabi
 وله
-\lang english
+\lang french
 
 \begin_inset ERT
 status open
@@ -990,7 +959,7 @@ status open
 
 \end_inset
 
- could be understood as 
+ pourrait être compris comme 
 \begin_inset ERT
 status open
 
@@ -1006,7 +975,7 @@ arbox{
 
 \lang arabic_arabi
 وَلَهَ
-\lang english
+\lang french
 
 \begin_inset ERT
 status open
@@ -1042,7 +1011,7 @@ status open
 \uwave default
 \noun default
 \color inherit
-(admire) or 
+(admirer) ou 
 \begin_inset ERT
 status open
 
@@ -1058,7 +1027,7 @@ arbox{
 
 \lang arabic_arabi
 وَلِّ+ه
-\lang english
+\lang french
 
 \begin_inset ERT
 status open
@@ -1094,7 +1063,7 @@ status open
 \uwave default
 \noun default
 \color inherit
-( crown him ) or 
+( couronne + lui ) ou 
 \begin_inset ERT
 status open
 
@@ -1110,7 +1079,7 @@ arbox{
 
 \lang arabic_arabi
 وَ+لَ+هُ
-\lang english
+\lang french
 
 \begin_inset ERT
 status open
@@ -1146,31 +1115,22 @@ status open
 \uwave default
 \noun default
 \color inherit
-( and + he + has ) 
+( et + il + a ) 
 \end_layout
 
 \begin_layout Standard
-Trying to resolve these problems as a generic Arabic problem is really hard
- since it hasn’t linguistic resources to make strict lexical analyzers
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-ref:Arabic google the phrase
-\end_layout
-
-\end_inset
-
-.
- By the contrary, Quran has a limited count of words and that means that
- it’s possible to write manually morphological indexes and use it to replace
- lexical analyzers.
- Finally, we explain in this point what the specific challenges faced in
- search in order of the particular characteristic of Quran.
- El-Mus-haf , the book of Quran, is written on the Uthmani script .
- This last is full of recitation marks and spells some words in a different
- way than the standard way.
- By example, the word 
+Tenter de résoudre ces problèmes comme un problème arabe générique est vraiment
+ difficile car il n'a pas les ressources linguistiques pour faire des analyseurs
+ lexicaux strictes.
+ En revanche, le Coran a un nombre limité de mots, ce qui signifie qu'il
+ est possible d'écrire manuellement indices morphologiques et l'utiliser
+ pour remplacer les analyseurs lexicaux.
+ Enfin, nous expliquons en ce moment quels sont les défis spécifiques rencontrés
+ dans la recherche en vue de la caractéristique particulière du Coran.
+ El-MusHaf, le livre de Coran, est écrit sur le script Uthmani.
+ Ce dernier est plein de marques de récitation et ecrit quelques mots d'une
+ manière différente de la façon standard.
+ Par example, le mot 
 \begin_inset ERT
 status open
 
@@ -1186,7 +1146,7 @@ arbox{
 
 \lang arabic_arabi
 بسطة
-\lang english
+\lang french
 
 \begin_inset ERT
 status open
@@ -1198,7 +1158,7 @@ status open
 
 \end_inset
 
- is spelled 
+ est ecrit 
 \begin_inset ERT
 status open
 
@@ -1214,7 +1174,7 @@ arbox{
 
 \lang arabic_arabi
 بصطة
-\lang english
+\lang french
 
 \begin_inset ERT
 status open
@@ -1226,60 +1186,47 @@ status open
 
 \end_inset
 
- in Uthmani.
- The Uthmani script requires considering its specifications in Text analyzing
- phases: Normalization, Stemming.
- Quran is structured in many analytic levels
-\lang french
-
-\begin_inset CommandInset citation
-LatexCommand cite
-key "BnJ"
-
-\end_inset
-
-
-\lang english
-:
+ dans le script Uthmani.
+ Le script Uthmani exige le compte tenu de ses spécifications dans les phases
+ d'analyse de texte: la normalisation, la lemmatization.
+ le Coran est structuré en plusieurs niveaux d'analyse:
 \end_layout
 
 \begin_layout Itemize
-Main structure: Sura, Aya, word, letter.
+La structure principale: Surah, Ayah, Mot, lettre.
 \end_layout
 
 \begin_layout Itemize
-Special emplacements: Sura's start, Sura's end.
- Aya's end.
- Sajdah, Waqf , Facilah;
+Emplacements spéciaux: Le début de la sourate, la fin de la sourate.
+ La fin de Aya.
+ Sajda, Waqf, Facilah;
 \end_layout
 
 \begin_layout Itemize
-Mushaf structure: page, thumn, rubu', nisf, hizb, juz';
+La structure de Mushaf: page, thumn, rubu', nisf, hizb, juz';
 \end_layout
 
 \begin_layout Itemize
-Quran writing: sawāmit, harakāt, hamza, diacritics, signes of distinction
- between similar letters, phonetic signs;
+L'ecriture de Coran: sawāmit, harakāt, hamza, signes de distinction entre
+ les lettres semblables, les signes phonétiques;
 \end_layout
 
 \begin_layout Itemize
-Incorporeal structure: word, keyword, expression, objective unit
+La structure incorporel: mot, mot-clé, expression, l'unité objectif.
 \end_layout
 
 \begin_layout Itemize
-Revelation: order, place, calender, cause, context...etc
-\lang french
-.
-
-\lang english
+Révélation: ordre, lieu, calendrier, cause, contexte ...
+ etc.
  
 \end_layout
 
 \begin_layout Standard
-The users may need to search, filter results or group them based on one
- of those structures.
- There are many sciences related to Quran, named Quranic Sciences: Tafsir,
- Translation, Recitation, Similitude and Abrogation…etc.
+Les utilisateurs peuvent avoir besoin de rechercher, filtrer les résultats
+ ou les groupes basés sur une de ces structures.
+ Il ya beaucoup de sciences liées au Coran, nommé sciences coraniques: Tafsir,
+ traduction, récitation, Similitudes et Abrogations ...
+ etc.
  
 \end_layout
 
@@ -1288,94 +1235,100 @@ Classification
 \end_layout
 
 \begin_layout Standard
-To make the listing of search features easier, we classified them in many
- classes based on their objectives.
+Pour faire la liste des fonctionnalités de recherche plus facile, nous les
+ avons classés en plusieurs catégories en fonction de leurs objectifs.
  
 \end_layout
 
 \begin_layout Enumerate
 
 \series bold
-Advanced Query
+Requête avancée
 \series default
-: This class contains the modifications on simple Query in order to give
- the user the ability of formulating his query in a précised way.
- By example: Phrase search, Logical relations, Jokers.
+: Cette classe contient les modifications sur la requête simple afin de
+ donner à l'utilisateur la possibilité de formuler sa requête d'une manière
+ précisée.
+ Par exemple: La recherche d'expressions, les relations logiques, les Jokers.
  
 \end_layout
 
 \begin_layout Enumerate
 
 \series bold
-Output Improvement
+Amélioration de sortie
 \series default
-: Those are to improve the results before showing it to users.
- The results must pass by many phases: Scoring, Sorting, Pagination, Highlightin
-g...etc.
+: Ce sont pour améliorer les résultats avant de la montrer aux utilisateurs.
+ Les résultats doivent passer par plusieurs phases: Scoring, le tri, la
+ pagination, mise en evidence ...
+ etc.
  
 \end_layout
 
 \begin_layout Enumerate
 
 \series bold
-Suggestion Systems
+Systèmes de suggestion
 \series default
-: This class contains all options that aims to offer a suggestion that help
- users to correct, extend the results by improving the queries.
- For example, suggest correction of misspelled keywords or suggest relative-word
-s.
+: Cette classe contient toutes les options qui vise à offrir une suggestion
+ qui aident les utilisateurs à corriger, étendre les résultats en améliorant
+ les requêtes.
+ Par exemple, suggérer correction de mots-clés mal orthographiés ou suggérer
+ des mots-connexes.
 \end_layout
 
 \begin_layout Enumerate
 
 \series bold
-Linguistic Aspects
+Aspects linguistiques
 \series default
-: This is about all features that are related to linguistic Aspects like
- stemming, Selection & filtering stop words, normalization.
+: Aspects linguistiques: Il s'agit de toutes les fonctionnalités qui sont
+ liées aux aspects linguistiques comme stemming, filtrage des mots vides,
+ la normalisation.
  
 \end_layout
 
 \begin_layout Enumerate
 
 \series bold
-Quranic Options
+Les options coraniques
 \series default
-: It’s related to the properties of the book and the information included
- inside.
- As we mentioned in the problematic, the book of Quran (al-mushaf) is written
- in uthmani script full of diacritical symbols and structured in many ways.
+: Il est lié aux propriétés de l'ouvrage et l'information incluse à l'intérieur.
+ Comme nous l'avons mentionné dans la problématique, le livre de Coran (al-musha
+f) est écrit dans le script Uthmani pleine de diacritiques et structuré
+ en plusieurs façons.
 \end_layout
 
 \begin_layout Enumerate
 
 \series bold
-Semantic Queries
+Les requêtes sémantiques
 \series default
-: Semantic approach is about to allow the users to pose their queries in
- natural language to get more relevant results implicitly.
+: l'approche sémantique est sur le point de permettre aux utilisateurs de
+ poser leurs questions en langage naturel pour obtenir des résultats plus
+ pertinents implicitement.
  
 \end_layout
 
 \begin_layout Enumerate
 
 \series bold
-Statistical System
+Le système statistique
 \series default
-: This class covers all the statistical needs of users.
- Statistics are helpful in classifications of words and ayahs and can be
- used also to verify validity of the facts designated as Numerical miracles.
- An example of statistics, searching the most frequented word.
+: Cette classe couvre tous les besoins statistiques des utilisateurs.
+ Les statistiques sont utiles pour la classification des mots et des ayahs
+ et peuvent aussi être utilisés pour vérifier la validité des faits désignés
+ comme des miracles numériques.
+ Un exemple de statistiques, la recherche du mot le plus fréquenté.
 \end_layout
 
 \begin_layout Standard
-This is an initial classification; we have to improve it for a well exploit
- of all possible search features.
+C'est une première classification, nous devons l'améliorer pour un bon exploit
+ de toutes les fonctionnalités de recherche possibles.
  
 \end_layout
 
 \begin_layout Section
-Proposals
+Propositions
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:Proposals"
@@ -1386,54 +1339,62 @@ name "sec:Proposals"
 \end_layout
 
 \begin_layout Standard
-In this point, we enlist all possible search features based on the classificatio
-n we mentioned before.
- These entire features express a search need: general, related to Arabic
- or related to Quran.
- We have collected the basic ideas from: 
+En ce moment, nous faisons appel à toutes les fonctionnalités de recherche
+ possibles en fonction de la classification nous l'avons mentionné auparavant.
+ Ces fonctions entières expriment un besoin de recherche: général, liée
+ à l'arabe ou liée à Coran.
+ Nous avons recueilli les idées de base à partir de: 
 \end_layout
 
 \begin_layout Itemize
-Classic & Semantic search engines: Google, 
+Les moteurs de recherche classiques et sémantiques : Google, 
 \end_layout
 
 \begin_layout Itemize
-Arabic search engines: Taya it, 
+Les moteurs de recherche arabe: Taya it, 
 \end_layout
 
 \begin_layout Itemize
-Quranic search tools: Zekr application, al-monaqeb alqurany, 
+Les outils de recherche coraniques: Zekr, al-monaqeb alqurany, 
 \end_layout
 
 \begin_layout Itemize
-Indexing/Search programming libraries: Whoosh, Lucene 
+Bibliothèques de programmation pour l'indexation / la recherche: Whoosh,
+ Lucene 
 \end_layout
 
 \begin_layout Itemize
-Quranic Paper lexicons: The indexed mu'jam of words of the Holy Quran(
+Lexiques coraniques (en papier): La Mu'jam indexé des mots du Saint Coran
+ (
 \series bold
 \lang arabic_arabi
  المعجم المفهرس لألفاظ القرآن الكريم
-\lang english
-) by 
+\lang french
+) 
+\series default
+par
+\series bold
+ 
 \series default
 \noun on
 Mohammed Fouad Abd El-bāki
 \end_layout
 
 \begin_layout Standard
-We have manipulated those ideas to fit the context of Arabic and Quran.
- There are many features that are totally new , we propose them to fulfill
- a search need or resolve a specific problem.
+Nous avons manipulé ces idées pour s'adapter au contexte de l'arabe et le
+ Coran.
+ Il ya beaucoup de fonctionnalités qui sont tout à fait nouveau, nous leur
+ proposons pour répondre à un besoin de recherche ou pour résoudre un problème
+ spécifique.
  
 \end_layout
 
 \begin_layout Standard
 
 \series bold
-Note:
+Remarque:
 \series default
- the listing and a survey about it, are included in the thesis.
+ la liste et un sondage à ce sujet, sont inclus dans la thèse.
 \end_layout
 
 \begin_layout Chapter
@@ -1441,28 +1402,28 @@ Conception
 \end_layout
 
 \begin_layout Standard
-After listing all possible search features as explained in the previous
- chapter, we will - at first - go through our previous work explaining all
- what we have already done.
- After that, we'll discuss many improvements that leads to a better search
- experience.
- We've gathered those improvements under those points:
+Après avoir énuméré toutes les fonctionnalités de recherche possibles, comme
+ expliqué dans le chapitre précédent, nous allons - au premier abord - passer
+ par notre précédent travail expliquant tout ce que nous avons déjà fait.
+ Après cela, nous allons discuter de nombreuses améliorations qui conduit
+ à une meilleure expérience de recherche.
+ Nous avons rassemblé ces améliorations dans les points:
 \end_layout
 
 \begin_layout Itemize
-Maintain a full vocalization search engine;
+Implementation d'un moteur de recherche plein vocalisé;
 \end_layout
 
 \begin_layout Itemize
-Text processing based on Uthmani script;
+Traitement de texte basé sur le script Uthmani;
 \end_layout
 
 \begin_layout Itemize
-Quranic Word Search;
+Recherche sur les mots coraniques;
 \end_layout
 
 \begin_layout Section
-Full vocalized search engine 
+Un moteur de recherche plein vocalisé
 \end_layout
 
 \begin_layout Standard
@@ -1474,17 +1435,7 @@ An obvious fact is that the majority of Arabic texts are written unvocalized
  ambiguities.
  One of the main barriers that prevent the consideration of vocalization
  in Arabic is the lack of vocalized Arabic texts among the total Arabic
- content
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-whereas the percent is nearly %%
-\end_layout
-
-\end_inset
-
-.
+ content.
  Though, since the Quran is already fully vocalized so one barrier is lifted
  on.
  Another barrier is comparing vocalized, partially vocalized, and unvocalized
@@ -1494,15 +1445,15 @@ whereas the percent is nearly %%
  
 \lang arabic_arabi
 الحمد
-\lang english
+\lang french
  , 
 \lang arabic_arabi
 الحَمد
-\lang english
+\lang french
  , and 
 \lang arabic_arabi
 الحَمْدُ
-\lang english
+\lang french
 .
  That's why we had attempted to replace it with a partial vocalization comparing
  which is working as following:
@@ -1831,7 +1782,7 @@ To improve better the vocalized search, we have to distinguish between original
 \uwave off
 \noun off
 \color none
-\lang english
+\lang french
  
 \family default
 \series default
@@ -1847,7 +1798,7 @@ To improve better the vocalized search, we have to distinguish between original
 (Kingdom, nominative), 
 \lang arabic_arabi
 الْمُلْكِ
-\lang english
+\lang french
  (Kingdom, genitive), 
 \lang arabic_arabi
 الْمُلْكَ
@@ -1862,7 +1813,7 @@ To improve better the vocalized search, we have to distinguish between original
 \uwave off
 \noun off
 \color none
-\lang english
+\lang french
  
 \family default
 \series default
@@ -1897,7 +1848,7 @@ Ignoring vocalization has a direct influence on filtering stop-words because
 \uwave off
 \noun off
 \color none
-\lang english
+\lang french
  leads to filtering the relative noun 
 \family default
 \series default
@@ -1923,7 +1874,7 @@ Ignoring vocalization has a direct influence on filtering stop-words because
 \uwave off
 \noun off
 \color none
-\lang english
+\lang french
  and the verb 
 \family default
 \series default
@@ -1949,7 +1900,7 @@ Ignoring vocalization has a direct influence on filtering stop-words because
 \uwave off
 \noun off
 \color none
-\lang english
+\lang french
  .
  Using vocalized stop-words is very recommended to avoid ambiguities and
  to confine the filtered occurrences.
@@ -2074,7 +2025,7 @@ Searching with an othmani writing form of a word such as
 \uwave off
 \noun off
 \color none
-\lang english
+\lang french
  knowing that it written also in the form 
 \family default
 \series default
@@ -2100,7 +2051,7 @@ Searching with an othmani writing form of a word such as
 \uwave off
 \noun off
 \color none
-\lang english
+\lang french
  in another Ayah
 \begin_inset Foot
 status open
@@ -2120,7 +2071,7 @@ occurs as
 \uwave off
 \noun off
 \color none
-\lang english
+\lang french
  
 \family default
 \series default
@@ -2136,7 +2087,7 @@ occurs as
 in (
 \lang arabic_arabi
 الأعراف
-\lang english
+\lang french
  69) and as 
 \lang arabic_arabi
 بسطة
@@ -2151,7 +2102,7 @@ in (
 \uwave off
 \noun off
 \color none
-\lang english
+\lang french
  
 \family default
 \series default
@@ -2167,7 +2118,7 @@ in (
 in (
 \lang arabic_arabi
 البقرة
-\lang english
+\lang french
  247) 
 \end_layout
 
@@ -2250,7 +2201,7 @@ Different writing forms of the word
 \uwave off
 \noun off
 \color none
-\lang english
+\lang french
  using Othmani script
 \end_layout
 
@@ -2318,7 +2269,7 @@ Matching the same Word-By-Word structure of some Quranic linguistic resources.
 \uwave off
 \noun off
 \color none
-\lang english
+\lang french
  
 \family default
 \series default
@@ -2334,11 +2285,11 @@ Matching the same Word-By-Word structure of some Quranic linguistic resources.
 in Yusuf 84 which is separated to two words 
 \lang arabic_arabi
 يَا
-\lang english
+\lang french
  + 
 \lang arabic_arabi
 أَسَفَى
-\lang english
+\lang french
  in the standard script.
 \begin_inset Newline newline
 \end_inset
@@ -2502,7 +2453,7 @@ Having as an example the word
 \uwave off
 \noun off
 \color none
-\lang english
+\lang french
  
 \begin_inset Foot
 status collapsed
@@ -2545,7 +2496,7 @@ mentioned in (
 \uwave off
 \noun off
 \color none
-\lang english
+\lang french
  22) 
 \end_layout
 
@@ -2577,11 +2528,11 @@ English Translation of Mohammad Habib Shakir
  
 \lang arabic_arabi
 فَ
-\lang english
+\lang french
  + 
 \lang arabic_arabi
 أَسْقَيْنَا
-\lang english
+\lang french
  + 
 \lang arabic_arabi
 كُمُ
@@ -2596,7 +2547,7 @@ English Translation of Mohammad Habib Shakir
 \uwave off
 \noun off
 \color none
-\lang english
+\lang french
  
 \family default
 \series default
@@ -2623,7 +2574,7 @@ English Translation of Mohammad Habib Shakir
 \uwave off
 \noun off
 \color none
-\lang english
+\lang french
  
 \family default
 \series default
@@ -2639,7 +2590,7 @@ English Translation of Mohammad Habib Shakir
 ( ignoring 
 \lang arabic_arabi
 و
-\lang english
+\lang french
  ) and the flaws will be: 
 \end_layout
 
@@ -2692,7 +2643,7 @@ Some affixes change the form of word so we have to bring it to its original
  In our example, 
 \lang arabic_arabi
 و
-\lang english
+\lang french
  is an additional letter.
 \end_layout
 
@@ -2700,7 +2651,7 @@ Some affixes change the form of word so we have to bring it to its original
 A lot of clitics and pronouns such as 
 \lang arabic_arabi
 فَ
-\lang english
+\lang french
  should be considered as stop words because they will have a high frequency
  and have a less need of retrievingBecause we aim the Quran, we value the
  accuracy.
@@ -2741,7 +2692,7 @@ description "Part Of Speech"
 \uwave off
 \noun off
 \color none
-\lang english
+\lang french
  
 \family default
 \series default
@@ -2757,7 +2708,7 @@ description "Part Of Speech"
 ] -- (
 \lang arabic_arabi
 الشمس
-\lang english
+\lang french
  1) 
 \end_layout
 
@@ -2777,7 +2728,7 @@ description "Part Of Speech"
 \uwave off
 \noun off
 \color none
-\lang english
+\lang french
  
 \family default
 \series default
@@ -2793,7 +2744,7 @@ description "Part Of Speech"
 ] -- (
 \lang arabic_arabi
 الأنبياء
-\lang english
+\lang french
  33) 
 \end_layout
 
@@ -2802,7 +2753,7 @@ When we tokenize the previous two Ayahs, we lose the function of the first
  waw (
 \lang arabic_arabi
 و
-\lang english
+\lang french
 ) as in the first ayah is for oath and in the second ayah is for coordination.
  To recover such kind of loss, we introduce some tags that has the values
  of important information.
@@ -2822,13 +2773,13 @@ Word declension
 : whether the word is declinable (
 \lang arabic_arabi
 معربة
-\lang english
+\lang french
 ) or not.
  We need this in normalization phase because we intend to strip the declension
  vowels (
 \lang arabic_arabi
 حركات الإعراب
-\lang english
+\lang french
 ) to unite different occurrences of a word.
 \end_layout
 
@@ -3008,7 +2959,7 @@ To achieve that, we need a complete mapping of Quranic words between the
  An example for that, the word 
 \lang arabic_arabi
 بسطة
-\lang english
+\lang french
  which occurs as 
 \lang arabic_arabi
 بصطة
@@ -3023,7 +2974,7 @@ To achieve that, we need a complete mapping of Quranic words between the
 \uwave off
 \noun off
 \color none
-\lang english
+\lang french
  
 \family default
 \series default
@@ -3039,7 +2990,7 @@ To achieve that, we need a complete mapping of Quranic words between the
 in (
 \lang arabic_arabi
 الأعراف
-\lang english
+\lang french
  69) and as 
 \lang arabic_arabi
 بسطة
@@ -3054,7 +3005,7 @@ in (
 \uwave off
 \noun off
 \color none
-\lang english
+\lang french
  
 \family default
 \series default
@@ -3070,7 +3021,7 @@ in (
 in (
 \lang arabic_arabi
 البقرة
-\lang english
+\lang french
  247).
  
 \end_layout
@@ -3096,7 +3047,7 @@ Mainly it is recommended to strip vowels in the normalization of Arabic
 \uwave off
 \noun off
 \color none
-\lang english
+\lang french
  
 \family default
 \series default
@@ -3123,7 +3074,7 @@ that mentioned with different meanings in Quran:
 \uwave off
 \noun off
 \color none
-\lang english
+\lang french
  
 \family default
 \series default
@@ -3139,11 +3090,11 @@ that mentioned with different meanings in Quran:
 (Kingdom), 
 \lang arabic_arabi
 الْمَلِكُ
-\lang english
+\lang french
  (King) and 
 \lang arabic_arabi
 الْمَلَكُ
-\lang english
+\lang french
  (Angel).
  This word, however, are mentioned in different declension cases: Nominative,
  Accusative and Genitive.
@@ -3157,7 +3108,7 @@ that mentioned with different meanings in Quran:
 Declinable (
 \lang arabic_arabi
 مُعرَب
-\lang english
+\lang french
 ) or not?
 \end_layout
 
@@ -3165,7 +3116,7 @@ Declinable (
 Declension case (
 \lang arabic_arabi
 حالة الإعراب
-\lang english
+\lang french
 ): Nominative, Accusative, and Genitive.
  
 \end_layout
@@ -3174,7 +3125,7 @@ Declension case (
 Declension case markers (
 \lang arabic_arabi
 علامات الإعراب
-\lang english
+\lang french
 ): Fatha, Damma, Kessra, Double-Fatha (with the additional Alef) , Double-Kessra
 , Double-Damma.
 \end_layout
@@ -3251,7 +3202,7 @@ We made an improvement in the tokenization that affect our previous criteria
 \uwave off
 \noun off
 \color none
-\lang english
+\lang french
  
 \family default
 \series default
@@ -3438,7 +3389,7 @@ Linguistic Aspects :: Word linguistic annotations
 We need to consider a different search unit: the Quranic word (
 \lang arabic_arabi
 اللفظ القرآني
-\lang english
+\lang french
 ).
  The purpose of this is to obtain a quick efficient stable method to retrieve
  specific Quranic words.
@@ -3625,7 +3576,7 @@ As a conclusion, the 2-steps search strategy helps in retrieving Quran words
  the root 
 \lang arabic_arabi
 قول
-\lang english
+\lang french
  (qwl): 
 \end_layout
 
@@ -3633,15 +3584,15 @@ As a conclusion, the 2-steps search strategy helps in retrieving Quran words
 Synonyms: 
 \lang arabic_arabi
 نطق
-\lang english
+\lang french
 , 
 \lang arabic_arabi
 كلام
-\lang english
+\lang french
 , 
 \lang arabic_arabi
 شهادة
-\lang english
+\lang french
 .
 \end_layout
 
@@ -3649,15 +3600,15 @@ Synonyms:
 Imperative tense: 
 \lang arabic_arabi
 قل
-\lang english
+\lang french
 , 
 \lang arabic_arabi
 قولوا
-\lang english
+\lang french
 , 
 \lang arabic_arabi
 قولي
-\lang english
+\lang french
 .
 \end_layout
 
@@ -3665,11 +3616,11 @@ Imperative tense:
 Passive form: 
 \lang arabic_arabi
 يقال
-\lang english
+\lang french
 , 
 \lang arabic_arabi
 قيل
-\lang english
+\lang french
 .
 \end_layout
 
@@ -3677,19 +3628,19 @@ Passive form:
 Past tense: 
 \lang arabic_arabi
 قال
-\lang english
+\lang french
 , 
 \lang arabic_arabi
 قالا
-\lang english
+\lang french
 , 
 \lang arabic_arabi
 قلنا
-\lang english
+\lang french
 , 
 \lang arabic_arabi
 قالت
-\lang english
+\lang french
 ...etc.
 \end_layout
 
@@ -3697,7 +3648,7 @@ Past tense:
 Noun, Plural: 
 \lang arabic_arabi
 الأقاويل
-\lang english
+\lang french
 .
 \end_layout
 
@@ -3852,7 +3803,7 @@ status open
 Semantically Related Words, Hyponymy of the word 
 \lang arabic_arabi
 نبي
-\lang english
+\lang french
  (prophet)
 \end_layout
 
@@ -3962,11 +3913,11 @@ Genders and Plurals of a noun: Masculine singular , Feminine singular ,
  Masculine Dual (
 \lang arabic_arabi
 مثنى
-\lang english
+\lang french
 ), Feminine Dual (
 \lang arabic_arabi
 مثنى
-\lang english
+\lang french
 ), Masculine Plural, Feminine Plural, Broken Plural, Plural of Plural.
 \end_layout
 
@@ -3974,27 +3925,27 @@ Genders and Plurals of a noun: Masculine singular , Feminine singular ,
 Deverbals of a root: Active participle (
 \lang arabic_arabi
 اسم فاعل
-\lang english
+\lang french
 ), Passive participle (
 \lang arabic_arabi
 اسم مفعول
-\lang english
+\lang french
 ), Nouns of time and place (
 \lang arabic_arabi
 أسماء الزمان والمكان
-\lang english
+\lang french
 ), Noun of instrument (
 \lang arabic_arabi
 اسم الآلة
-\lang english
+\lang french
 ), The Nomen Vicis (
 \lang arabic_arabi
 اسم المرة
-\lang english
+\lang french
 ), The Nomen Speciei (
 \lang arabic_arabi
 اسم الهيئة
-\lang english
+\lang french
 ).
 \end_layout
 
@@ -4047,7 +3998,7 @@ Special derivations example, Imperative of
 \uwave off
 \noun off
 \color none
-\lang english
+\lang french
  (to say)
 \end_layout
 
@@ -4084,7 +4035,7 @@ Nevertheless, methods such Liechtenstein distance and ngrams lack for good
  handling for Arabic vowels (
 \lang arabic_arabi
 حركات
-\lang english
+\lang french
 ).
  They consider the vowels the same as letters and this leads to an important
  decrease of efficiency.
@@ -4095,7 +4046,7 @@ Nevertheless, methods such Liechtenstein distance and ngrams lack for good
  In the other hand, Lam-alef (
 \lang arabic_arabi
 لا
-\lang english
+\lang french
 ) which is actually two letters still consider as one character in many
  computer writing systems.
  
@@ -4123,7 +4074,7 @@ The similarity between the different forms of each letter: Hamza, Ta', and
 \uwave off
 \noun off
 \color none
-\lang english
+\lang french
  
 \family default
 \series default
@@ -4150,7 +4101,7 @@ The similarity between the different forms of each letter: Hamza, Ta', and
 \uwave off
 \noun off
 \color none
-\lang english
+\lang french
  
 \family default
 \series default
@@ -4184,7 +4135,7 @@ An unvocalized letter is so similar to a vocalized one whatever the vowel
 \uwave off
 \noun off
 \color none
-\lang english
+\lang french
  
 \family default
 \series default
@@ -4211,7 +4162,7 @@ An unvocalized letter is so similar to a vocalized one whatever the vowel
 \uwave off
 \noun off
 \color none
-\lang english
+\lang french
  
 \family default
 \series default
@@ -4243,7 +4194,7 @@ Tanwin in a vowel is roughly similar to a vowel without Tanwin.
 \uwave off
 \noun off
 \color none
-\lang english
+\lang french
  (kessra) 
 \family default
 \series default
@@ -4270,7 +4221,7 @@ and
 \uwave off
 \noun off
 \color none
-\lang english
+\lang french
  
 \family default
 \series default
@@ -4302,7 +4253,7 @@ Shedda on a letter is so similar to the letter doubled.
 \uwave off
 \noun off
 \color none
-\lang english
+\lang french
  (Shedda on Lam) and 
 \family default
 \series default
@@ -4328,7 +4279,7 @@ Shedda on a letter is so similar to the letter doubled.
 \uwave off
 \noun off
 \color none
-\lang english
+\lang french
  
 \family default
 \series default
@@ -4397,7 +4348,7 @@ Mis-order of letters:
 \uwave off
 \noun off
 \color none
-\lang english
+\lang french
  
 \family default
 \series default
@@ -4413,7 +4364,7 @@ Mis-order of letters:
 for 
 \lang arabic_arabi
 زنجبيل
-\lang english
+\lang french
 .
 \end_layout
 
@@ -4432,7 +4383,7 @@ Phonetic similarity:
 \uwave off
 \noun off
 \color none
-\lang english
+\lang french
  
 \family default
 \series default
@@ -4448,7 +4399,7 @@ Phonetic similarity:
 for 
 \lang arabic_arabi
 إرم
-\lang english
+\lang french
 .
 \end_layout
 
@@ -4456,11 +4407,11 @@ for
 Spelling similarity: 
 \lang arabic_arabi
 الضحي
-\lang english
+\lang french
  for 
 \lang arabic_arabi
 الضحى
-\lang english
+\lang french
 .
 \end_layout
 
@@ -4469,22 +4420,23 @@ Implementation
 \end_layout
 
 \begin_layout Standard
-Our aim in implementation is to offer an open application programming interface.
- That API must be well extensible to achieve the most of the search features
- we've discussed in the previous chapter.
- We'll talk about the technical details of our implementation.
- Also we list all the Quranic and linguistic resources that we've used or
- we need in development.
- Otherwise, we'll explain why we decided to open the source, what are the
- advantages driving us to adopt a such approach.
+Notre objectif dans l'mplementation est d'offrir une interface de programmation
+ d'application.
+ Cette API doit être bien extensible pour atteindre le maximum des fonctionnalit
+és de recherche que nous avons discuté dans le chapitre précédent.
+ Nous allons parler des détails techniques de notre implémentation.
+ Nous aussi lister toutes les ressources coraniques et linguistique que
+ nous avons utilisés ou dont nous avons besoin dans le développement.
+ Aussi, nous allons expliquer pourquoi nous avons décidé d'ouvrir le code
+ source, quels sont les avantages qui nous conduit à adopter une telle approche.
 \end_layout
 
 \begin_layout Section
-Previous Code Base
+Base de code précédente
 \end_layout
 
 \begin_layout Standard
-We have based on the code base we've realized on 
+Nous nous sommes basés sur la base de code que nous avons réalisé dans 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "ASSEM_MEROUANE"
@@ -4492,23 +4444,25 @@ key "ASSEM_MEROUANE"
 \end_inset
 
 .
- The code base was licensed under the GPL open license as a result of using
- the library whoosh licensed under the same license.
- It contained an Application Programming Interface that performs the basic
- search operation.
- It offers the results in a raw HTML format, could be used only in Python.
- To be used in another programming language, it requires to write a complicated
- wrapper.
- There was a basic resource manager that index the Quran information stored
- in an intermediate database.
- The importing of new resources into this intermediate database was a missing
- piece.
- Two interfaces was developed for the API:
+ Le code de base a été publiée sous la licence GPL à la suite de l'utilisation
+ de la bibliothèque whoosh sous la même licence.
+ Il contient une interface de programmation d'application qui exécute l'opératio
+n de recherche de base.
+ Il offre les résultats dans un format HTML brut, pourraient être utilisés
+ seulement en Python.
+ Pour être utilisé dans un autre langage de programmation, il faut écrire
+ un wrapper compliqué.
+ Il y avait un gestionnaire de ressources de base qu'indique les informations
+ stockées dans une base de données intermédiaire.
+ L'importation de nouvelles ressources dans cette base de données intermédiaire
+ est une pièce manquante.
+ Deux interfaces ont été développées pour l'API:
 \end_layout
 
 \begin_layout Enumerate
-A Gui desktop interface, demonstrate perfectly the API features .
- It is urgently coded in Python and Qt.
+Une interface de bureau , démontrent parfaitement les fonctionnalités de
+ l'API.
+ Il est codé en urgence en Python et Qt.
  
 \begin_inset Newline newline
 \end_inset
@@ -4517,22 +4471,23 @@ A Gui desktop interface, demonstrate perfectly the API features .
 \end_layout
 
 \begin_layout Enumerate
-A basic CGI-Html interface, demonstrates in a simpler way the API features.
- Also urgently coded and it did not respect the Model View Control.
+Une interface CGI-Html démontre d'une manière plus simple les fonctionnalités
+ de l'API.
+ Aussi codé en urgence et il n'a pas respecté l'approche Model View Control
+ (MVC).
 \end_layout
 
 \begin_layout Section
-Our improvements
+Nos améliorations
 \end_layout
 
 \begin_layout Standard
-As a first step, we change the license into the GNU Affero General Public
- License which aims to protect libraries that usually used in servers .
- The code base has had 981 commits made representing 15,243 lines of code
- .
- It is mostly written in Python with a well-commented source code.
- It is a young, but established codebase took an estimated 4 years of effort
- (COCOMO model)
+Dans un premier temps, nous changeons la licence au Affero General Public
+ License, qui vise à protéger les bibliothèques qui habituellement utilisés
+ dans les serveurs.
+ Le code de base a eu 981 commits représentant 15 243 lignes de code.
+ Il est principalement écrit en Python avec un code source bien commenté.
+ C'est une base de code établie a environ 4 ans d'effort (COCOMO modèle)
 \begin_inset Foot
 status collapsed
 
@@ -4546,37 +4501,43 @@ Statistic analysis from Ohloh website.
 \end_layout
 
 \begin_layout Standard
-Those are the main milestones that we went through:
+Voici les étapes principales que nous avons traversées:
 \end_layout
 
 \begin_layout Subsection
-A New Centralized JSON Output System:
+Un nouveau système de sortie centralisé:
 \end_layout
 
 \begin_layout Standard
-First at all, we upgraded the output system of the API to offers the results
- in Json data format instead of raw Html.
- Then we centralized the output system to gain many advantages which are:
-\end_layout
-
-\begin_layout Enumerate
-Easy-implementation of more data structures;
-\end_layout
-
-\begin_layout Enumerate
-The use of the same output system in the different interfaces: Console Interface
-, CGI Interface, Desktop Interfaces, Web Interfaces;
-\end_layout
-
-\begin_layout Enumerate
-Making changes and updates only in one place instead of many.
+Premièrement, nous avons amélioré le système de sortie de l'API pour proposer
+ les résultats au format de données JSON au lieu de HTML brut.
+ Ensuite, nous avons centralisé le système de sortie pour gagner de nombreux
+ avantages qui sont:
 \end_layout
 
 \begin_layout Standard
-Secondly, we proposed an extended structure for results.
- This structure is extensible: any new information can be included easily
- without affecting the old structure and without resulting a back-incompatibilit
-y.
+1.
+ Implémentation facile de plus de structures de données;
+\end_layout
+
+\begin_layout Standard
+2.
+ L'utilisation du même système de sortie dans les différentes interfaces:
+ interface console, l'interface CGI, interfaces de bureau, les interfaces
+ Web;
+\end_layout
+
+\begin_layout Standard
+3.
+ Apporter des modifications et mises à jour qu'à un seul endroit au lieu
+ de plusieurs.
+\end_layout
+
+\begin_layout Standard
+Deuxièmement, nous avons proposé une structure étendue des résultats.
+ Cette structure est extensible: toute nouvelle information peut être inclus
+ facilement sans affecter la structure ancienne et sans qu'il en résulte
+ un incompatibilité.
  
 \end_layout
 
@@ -4601,10 +4562,10 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Json results of 
+Les resultats de 
 \lang arabic_arabi
 الكوثر
-\lang english
+\lang french
  
 \end_layout
 
@@ -4619,72 +4580,81 @@ Json results of
 \end_layout
 
 \begin_layout Standard
-Thirdly, we refine the list of request flags to allow the requester to customize
- his request and control which information retrieved in order to gain performanc
-e and minimize the size of results and the retrieving runtime.
- A concept of predefined configuration for requests is introduced.
- So the requester can choose either a minimal, normal , full, linguistic,
- or statistical view without specifying each flag value.
+Troisièmement, nous affinons la liste des drapeaux de demande pour permettre
+ au demandeur de personnaliser sa demande et de contrôle des informations
+ récupérées afin de gagner en performance et réduire la taille des résultats
+ et l'durée récupéré.
+ Un concept de configuration prédéfinie pour les demandes est introduit.
+ Ainsi, le demandeur peut choisir entre une vue minimal, normal, plein,
+ linguistiques ou statistiques, sans préciser la valeur de chaque drapeau.
 \end_layout
 
 \begin_layout Standard
-We also centralized the loading of necessary data files.
- Data files now are loading automatically from a default path else if this
- path is redefined.
- We included the data files with API package to maintain the portability.
- Also we export them into a Json data format as a standardization step.
- We mean with data files, the files such as:
+Nous centralisons aussi le chargement des fichiers de données nécessaires.
+ Les fichiers de données sont maintenant chargé automatiquement à partir
+ d'un chemin par défaut sinon si ce chemin est redéfini.
+ Nous avons inclus les fichiers de données avec le paquet API pour maintenir
+ la portabilité.
+ Aussi, nous les exportons dans un format de données JSON comme une étape
+ de normalisation.
+ Nous entendons des fichiers de données, les fichiers tels que:
 \end_layout
 
 \begin_layout Enumerate
-Configuration files: Available recitations list, Available translations
- list, Usage hints, Usage statistics, meta information.
+Les fichiers de configuration: liste des récitations disponibles, liste
+ des traductions disponibles, conseils d'utilisation, statistiques d'utilisation
+, méta-informations.
 \end_layout
 
 \begin_layout Enumerate
-Linguistic resources: derivation list, vocalization list, synonym list,
- standard-into-uthmani mapping, stop word list, word properties.
+Les ressources linguistiques: liste de dérivations, liste de vocalisations,
+ liste des synonymes, standard-en-uthmani , liste de mots vides, liste des
+ propriétés de texte.
  
 \end_layout
 
 \begin_layout Enumerate
-Quranic indexes: Ayah document index, Translation document index, Word document
- index.
+Les index coraniques: Index des documents pour la Ayah, Index des documents
+ de la traduction, Index de document Word.
  
 \end_layout
 
 \begin_layout Standard
-A usage statistics calculating feature is implemented.
- The statistics saved in a JSON format including usage of each flag passed
- through the search request.
+Une fonctionnalité de calcul des statistiques d'utilisation est implémentée.
+ Les statistiques sont enregistrées dans un format JSON y compris l'utilisation
+ de chaque drapeau traversèrent la requête de recherche.
  
 \end_layout
 
 \begin_layout Standard
-We offered a set of error codes in case of failed search query.
- It helps in clarifying the nature of failure.
- This set is extensible, new error codes can be added easily.
+Nous avons proposé un ensemble de codes d'erreur en cas de requête de recherche
+ échoué.
+ Il contribue à clarifier la nature de la défaillance.
+ Cet ensemble est extensible, de nouveaux codes d'erreur peuvent être ajoutés
+ facilement.
  
 \end_layout
 
 \begin_layout Standard
-We made the API meta data available for request in the output system.
- Meta data includes: authorship, license, description, version, and release;
- Error messages; Possible flags, their default values, possible values intervals
-, and help messages ; Available search fields; Available translations and
- recitations; Surah and topic values lists; Global search usage hints.
+Nous avons fait les métadonnées API disponible pour la demande dans le système
+ de sortie.
+ Métadonnées comprennent: l'auteur, la licence, la description, la version
+ , les messages d'erreur, drapeaux possibles, leurs valeurs par défaut,
+ possible intervalles de valeurs et les messages d'aide, les champs de recherche
+ disponibles, les traductions et les récitations disponibles.
 \end_layout
 
 \begin_layout Subsection
-Many new features
+Nouvelles fonctionnalités
 \end_layout
 
 \begin_layout Standard
-We implemented many new features which are available within the new JSON
- output system.
- One of the features is the fuzzy search feature.
- We've done a basic implementation that automates the fuzzy search to include
- the potential synonyms of the word and also the different derivations.
+Nous avons implémenté de nombreuses nouvelles fonctionnalités qui sont disponibl
+es dans le nouveau système de sortie JSON.
+ L'une des fonctionnalités est la fonctionnalité de la recherche floue.
+ Nous avons fait une implémentation de base qui automatise la recherche
+ floue pour inclure les synonymes possibles du mot et également les différentes
+ dérivations du mot.
  
 \end_layout
 
@@ -4692,7 +4662,7 @@ We implemented many new features which are available within the new JSON
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -4709,7 +4679,7 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Fuzzy search example
+La recherche floue
 \end_layout
 
 \end_inset
@@ -4723,10 +4693,10 @@ Fuzzy search example
 \end_layout
 
 \begin_layout Standard
-We added the possibility of retrieving the previous and next ayahs of each
- ayah of the results.
- Showing neighbor ayahs helps the user to know exactly the ayah position
- in its own surah.
+Nous avons ajouté la possibilité de récupérer les ayahs précédentes et suivantes
+ de chaque Ayah des résultats.
+ Montrant les ayahs voisins permet à l'utilisateur de savoir exactement
+ la position Ayah dans son propre sourate.
  
 \end_layout
 
@@ -4734,7 +4704,7 @@ We added the possibility of retrieving the previous and next ayahs of each
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -4751,7 +4721,7 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Showing adjacent ayahs
+Affichage des ayahs adjacentes
 \end_layout
 
 \end_inset
@@ -4765,15 +4735,15 @@ Showing adjacent ayahs
 \end_layout
 
 \begin_layout Standard
-For the ayah text, we offered the ability to choose between Vocalized and
- Unvocalized text, and between Standard and Uthmani text.
+Pour le texte de Ayah, nous avons offert la possibilité de choisir entre
+ le texte vocalisé ou non vocalisé, et entre le texte standard ou Uthmani.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -4812,7 +4782,7 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Showing ayahs in different scripts
+Affichage ayahs dans différents formats
 \end_layout
 
 \end_inset
@@ -4826,15 +4796,15 @@ Showing ayahs in different scripts
 \end_layout
 
 \begin_layout Standard
-We implemented four suggestion operations: Close spellings, Different vocalizati
-ons, Different derivations, Synonyms.
+Nous avons mis quatre opérations de suggestion: Proche orthographes, différentes
+ vocalisations, différentes dérivations, synonymes.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -4851,7 +4821,8 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Suggestion example of Vocalizations , Derivations ,and Synonyms of 
+Exemple de suggestion de vocalisations, dérivations et synonymes du mot
+ 
 \lang arabic_arabi
 قول
 \end_layout
@@ -4867,8 +4838,9 @@ Suggestion example of Vocalizations , Derivations ,and Synonyms of
 \end_layout
 
 \begin_layout Standard
-We implemented the possibility of search using Buckwalter transliteration
- and show the resulted keywords written in the same transliteration.
+Nous avons implémenté la possibilité de recherche en utilisant la translittérati
+on de Buckwalter montrons les mots-clés abouti écrites dans la même translittéra
+tion.
 \end_layout
 
 \begin_layout Standard
@@ -4892,7 +4864,7 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Buckwalter translation example
+Exemple de la translittération de Buckwalter
 \end_layout
 
 \end_inset
@@ -4906,162 +4878,74 @@ Buckwalter translation example
 \end_layout
 
 \begin_layout Subsection
-Resource Importing Manager
+Gestionnaire d'importation de ressources
 \end_layout
 
 \begin_layout Standard
-An important part was missing in the old implementation of the resource
- importing manager.
- The missing part was the importing of the data from their original source.
- We have fixed this missing part and improve the global behavior of the
- resource manager.
- The improved version can do:
-\end_layout
-
-\begin_layout Enumerate
-
-\series bold
-Downloading original resources
-\series default
-: the reason for downloading the resources rather then including them with
- the project is to pass by the restrictions on the redistribution of those
- resources.
- Another reason is to keep using always the last updated versions of the
- resources.
- Yet another reason is avoid the optional resources with big sizes so let
- the developer or the user choose what to download.
- This is the list of the resources to be downloaded: 
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Tanzil Mus-haf xml file.
-\end_layout
-
-\begin_layout Enumerate
-Tanzil Quranic translations packaged as the Zekr model.
-\end_layout
-
-\begin_layout Enumerate
-EveryAyah recitations list.
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-
-\series bold
-Parsing & Importing the data to our intermediate database: 
-\series default
-Each resource has a specific unique structure.
- We need to parse each resources then import the data included to our intermedia
-te database.
- The role of intermediate database is to re-organize the data in a way that
- make the indexing easier.
- We made two libraries:
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-PyCorpus: a library to parse and read the data included in the project Arabic
- Quranic Corpus.
-\end_layout
-
-\begin_layout Enumerate
-PyZekrModels: a library to read the Quranic translations packaged as the
- Zekr model.
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-
-\series bold
-Indexing the database: 
-\series default
-First, we need to transform the database into document indexes .
- Then, we need to generate the inverted indexes out of the corresponding
- document indexes.
- There is a table called fields in the database take the control over the
- information to be indexed and how to indexed.
-\end_layout
-
-\begin_layout Enumerate
-
-\series bold
-Updating auto-generated data files
-\series default
-: some data files need to be generated immediately after the indexing.
- An example of that is the list of indexed translations.
-\end_layout
-
-\begin_layout Subsection
-Automating the API building
-\end_layout
-
-\begin_layout Standard
-The building of resources was manual and undocumented.
- We created a Makefile that automate now the building.
- We fill the makefile with the appropriate number of comments in order to
- make it clear and understandable.
- The role of make file is to perform the following tasks:
-\end_layout
-
-\begin_layout Enumerate
-Auto-downloading of new versions of the used Quranic and linguistic resources;
-\end_layout
-
-\begin_layout Enumerate
-Generating and Regenerating of the intermediate generated data files;
-\end_layout
-
-\begin_layout Enumerate
-Auto-building of the document indexes in addition the inverted indexes;
-\end_layout
-
-\begin_layout Enumerate
-Auto-install and packaging of the API and different related extensions and
- interfaces.
-\end_layout
-
-\begin_layout Subsection
-A new console interface
-\end_layout
-
-\begin_layout Standard
-We introduced a new console interface to be used by a non-python desktop
- application, could be run as background service a.k.a Daemon.
- For details see 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:Console-commandline"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Subsection
-Packaging system: 
-\end_layout
-
-\begin_layout Standard
-We implemented a packaging system to package the API for different operating
- systems.
- Since the API is pure python so that makes it portable through the different
- platforms.
- Though, many data resources should be generated and imported in the package.
- We distribute the API as : Source Tarball, Binary Tarball
-\series bold
-, 
-\series default
-Python
-\series bold
+Une partie importante manquait dans l'ancienne implémentation du gestionnaire
+ d'importation de ressources.
+ La partie manquante est l'importation des données à partir de leur source
+ d'origine.
+ Nous avons fixé cette partie manquante et d'améliorer le comportement global
+ du gestionnaire de ressources.
+ Plus de détails dans le rapport complet.
  
-\series default
-egg package
-\series bold
-, 
-\series default
-Debian deb package, Red-hat rpm package.
+\end_layout
+
+\begin_layout Subsection
+Automatisation de l'opération de generations des ressources
+\end_layout
+
+\begin_layout Standard
+La generation des ressources était manuel et non documentés.
+ Nous avons créé un Makefile pour automatiser maintenant le bâtiment.
+ Nous remplissons le makefile avec le nombre approprié de commentaires pour
+ le rendre clair et compréhensible.
+ Le rôle du makefile est d'effectuer les tâches suivantes:
+\end_layout
+
+\begin_layout Enumerate
+Téléchargement automatique des nouvelles versions utilisées des ressources
+ linguistiques et coraniques;
+\end_layout
+
+\begin_layout Enumerate
+La création et la régénération des fichiers de données générés intermédiaires;
+\end_layout
+
+\begin_layout Enumerate
+Auto-construction des index de documents, en plus de les index inversés;
+\end_layout
+
+\begin_layout Enumerate
+Auto-installation et emballage de l'API et des extensions connexes et des
+ interfaces API liées et différent.
+\end_layout
+
+\begin_layout Subsection
+Une nouvelle interface de console
+\end_layout
+
+\begin_layout Standard
+Nous avons introduit une nouvelle interface de console pour être utilisé
+ par l'application de bureau développée sous une autre langue que Python,
+ pourrait fonctionner comme service arrière-plan caché , alias: Daemon.
+ 
+\end_layout
+
+\begin_layout Subsection
+Système d'emballage: 
+\end_layout
+
+\begin_layout Standard
+Nous avons implementé un système d'emballage pour emballer l'API pour différents
+ systèmes d'exploitation.
+ Puisque l'API est pur python de sorte que le rend facilement transportable
+ à travers les différentes plates-formes.
+ Bien que de nombreuses ressources de données doivent être produite et importée
+ dans l'emballage.
+ Nous distribuons de l'API comme: archive source, binaire compressée, paquet
+ egg de Python, paquet deb de Debian, paquet rpm de Red Hat.
 \end_layout
 
 \begin_layout Subsection
@@ -5408,160 +5292,147 @@ Conclusion
 \end_layout
 
 \begin_layout Standard
-Our proposal was about design a retrieval system that fit the Qur'an search
- needs.
- But to realize this objective, we had to first list and classify all the
- search features that are possible and helpful.
- Then we needed to make a global conception for a retrieval system as a
- first stone to achieve each search feature.
+Notre proposition a été sur la conception d'un système de recherche qui
+ répondent aux besoins de la recherche sur le Coran.
+ Mais pour réaliser cet objectif, nous devions premièrement lister et classer
+ toutes les fonctions de recherche qui sont possibles et utiles.
+ Ensuite, nous avons besoin de faire une conception globale d'un système
+ de recherche comme une première pierre pour la réalisation de chaque fonction
+ de recherche.
 \end_layout
 
 \begin_layout Standard
-We started by three chapters for the state of art.
- The first is about search engines and how they works.
- The second is about Arabic language and its properties.
- The third is about Quran and its properties including its indexes and many
- search tools.
+Nous avons commencé par trois chapitres sur l'état de l'art.
+ La première porte sur les moteurs de recherche et la façon dont ils fonctionne.
+ Le second est sur ​​la langue arabe et ses propriétés.
+ Le troisième est sur ​​le Coran et ses propriétés, y compris ses index
+ et de nombreux outils de la recherche.
 \end_layout
 
 \begin_layout Standard
-To clarify our proposal, we have enlisted the search features in Quran that
- are helpful.
- To facilitate the enlisting, we have classified those features depending
- on the nature of the problem.
- That list will help us to make a detailed retrieval system that fit perfectly
- the needs of the Qur'an.
- We conducted a survey about usefulness, usability and clarity of each feature
- and we have got very helpful feedbacks.
- Each feature has a different level of complexity: could be implemented
- easily or may lead to vast problem that need a deeper study.
- A primary version of this list of search features is published as paper
- in an LREC 2012 pre-conference workshop which is about 
+Pour clarifier notre proposition, nous avons demandé les fonctions de recherche
+ dans le Coran qui sont utiles.
+ Afin de faciliter l'enrôlement, nous avons classé ces caractéristiques
+ en fonction de la nature du problème.
+ Cette liste va nous aider à faire un système de recherche détaillée qui
+ s'adaptent parfaitement aux besoins du Coran.
+ Nous avons mené une enquête sur l'utilité, la convivialité et la clarté
+ de chaque option et nous avons des feedbacks très utiles.
+ Chaque caractéristique a un niveau différent de complexité: pourrait être
+ mis en œuvre facilement ou peuvent conduire à un vaste problème nécessitant
+ une étude plus approfondie.
+ Une version primaire de cette liste de fonctions de recherche est publié
+ en tant que papier dans un atelier de pré-conférence LREC 2012, qui est
+ sur le point "LRE-Rel: les ressources et l'évaluation linguistiques des
+ textes religieux".
+ Le document était intitulé 
 \begin_inset Quotes sld
 \end_inset
 
-
-\emph on
-LRE-Rel: Language Resource and Evaluation for Religious Texts
-\emph default
-
-\begin_inset Quotes sld
-\end_inset
-
-.
- The paper was entitled 
-\begin_inset Quotes sld
-\end_inset
-
-
-\emph on
-Advanced Search in Quran: Classification and Proposition of All Possible
- Features
-\emph default
-
-\begin_inset Quotes sld
-\end_inset
-
-.
+Recherche avancée dans le Coran: Classification et Proposition de toutes
+ les fonctionnalités possibles".
  
 \end_layout
 
 \begin_layout Standard
-For conception, we based our work on a previous one, we went through the
- explanation of what's already done.
- Then, we proposed many fixes, and many improvements on it.
+Pour la conception, nous avons basé notre travail sur un exercice antérieur,
+ nous sommes allés à travers de l'explication de ce qui est déjà fait.
+ Ensuite, nous avons proposé de nombreux correctifs, et de nombreuses améliorati
+ons à ce sujet.
 \end_layout
 
 \begin_layout Standard
-First improvement is about achieving a full vocalized search engine customized
- to offer most of the features mentioned in the chapter.
- The full vocalization is a very important improvement to get over the ambiguiti
-es and lack of accuracy arisen from ignoring the vowels (
+Première amélioration est d'atteindre un moteur de recherche plein vocalisé
+ adapté pour offrir plus des caractéristiques mentionnées dans ce chapitre.
+ La vocalisation complet est une amélioration très importante pour franchir
+ les ambiguïtés et l'absence de précision surgi d'ignorer les voyelles (
 \lang arabic_arabi
 حركات
-\lang english
+\lang french
 ).
 \end_layout
 
 \begin_layout Standard
-Second improvement is a proposal of a customized text processing that fits
- the properties of the Quranic text.
- We've introduced the use of Othmani script side by side with the Standard
- script.
- We added a pre-tokenization phase that substitute some patterns of the
- query by their appropriate correspondent.
- This is useful to implement search features such as romanizations, and
- numbers-as-words search.
- We suggested a change in the tokenization phase, which is adding a second
- operation right after the space-based tokenization.
- The role of this new second operation is to separate the resulted tokens
- (the words) into sub-tokens (words' parts) in order to have a specific
- processing for each part of the word.
- For normalization, we discussed the processing of the Othmani text.
- We discussed also some changes on the way how to filter stop words and
- how to do the lemmatization (stemming).
+Deuxième amélioration est une proposition d'un traitement de texte personnalisé
+ qui répond aux propriétés du texte coranique.
+ Nous avons mis en place l'utilisation de script Othmani côté à côte avec
+ le script standard.
+ Nous avons ajouté une phase de pré-tokenization qui substituent des motifs
+ de la requête par leur correspondant approprié.
+ Ceci est utile pour implémenter des fonctionnalités de recherche tels que
+ romanizations et numéros-comme-mots .
+ Nous avons suggéré un changement dans la phase de tokenization, ce qui
+ ajoute une deuxième opération juste après la tokenization basé sur les
+ espaces.
+ Le rôle de cette nouvelle seconde opération est de séparer les tokens donné
+ (les mots) en sous-jetons (les parties de mots) afin d'avoir un traitement
+ spécifique pour chaque partie du mot.
+ Pour la normalisation, nous avons discuté du traitement du texte Othmani.
+ Nous avons discuté aussi quelques changements sur la façon comment filtrer
+ des mots vides et la façon de faire la lemmatisation (stemming).
 \end_layout
 
 \begin_layout Standard
-The third improvement, we considered the word as a new unit for search in
- addition to the ayah as the main unit.
- The objective of that is to achieve a set of search features that requires
- the manipulation of word sets.
- The word-as-a-unit search helps directly or indirectly in many feature:
- 
+La troisième amélioration, nous avons considéré le mot comme une nouvelle
+ unité de recherche en plus du Ayah comme l'unité principale.
+ L'objectif de cette est de parvenir à un ensemble de fonctionnalités de
+ recherche que nécessite la manipulation d'ensembles de mots.
+ La recherche mot-as-a-unité contribue directement ou indirectement dans
+ fonctionnalités nombreuses: 
 \end_layout
 
 \begin_layout Itemize
-Word properties search
+Recherche par les propriétés des mots;
 \end_layout
 
 \begin_layout Itemize
-Semantically-related words
+Recherche par les mots liés-sémantiquement;
 \end_layout
 
 \begin_layout Itemize
-Multi-level derivations
+Recherche par les dérivations-a-niveaux;
 \end_layout
 
 \begin_layout Itemize
-Specific derivations
+Recherche par les dérivations spécifiques;
 \end_layout
 
 \begin_layout Itemize
-Fuzzy Search
+La recherche floue.
 \end_layout
 
 \begin_layout Standard
-We have discussed the implementation of each one of those last features.
+Nous avons discuté l'implementation de chacun de ces dernières fonctionalités.
 \end_layout
 
 \begin_layout Standard
-We went through the implementation of many search features that we previously
- enlisted .
- Unfortunately, there are more improvements to be done and many issues to
- be resolved.
- we left them as perspectives: 
+Nous sommes allés à travers l'implementation de beaucoup des fonctionnalités
+ de recherche que nous avons retenu précédemment.
+ Malheureusement, il ya plus d'améliorations à faire et des problèmes à
+ résoudre.
+ nous leur avons laissé comme des perspectives: 
 \end_layout
 
 \begin_layout Itemize
-Conception an accurate statistics gathering system;
+Conception d'un système de collecte de statistiques précises;
 \end_layout
 
 \begin_layout Itemize
-Implementation of a more adequate suggestion system;
+L'implémentation d'un système de suggestion plus adéquate;
 \end_layout
 
 \begin_layout Itemize
-Clear the road-map toward a semantic search engine.
+Clarifier la feuille de route vers un moteur de recherche sémantique.
 \end_layout
 
 \begin_layout Itemize
-Proceeding the full conception of all the search features cited in chapter
- 4.
+Procéder de la conception complète de toutes les fonctionnalités de la recherche
+ cités dans le chapitre 4.
 \end_layout
 
 \begin_layout Itemize
-Complete implementation of all the open issues cited in chapter 6.
+L'implementation complète de toutes les problèmes non encore traités cités
+ dans le chapitre 6.
 \end_layout
 
 \end_body
