@@ -230,8 +230,8 @@ ref: search evolution, exact word, regular expression, sequencial search,
  the order of results and the suggestions.
  After the raising of the web semantic, the search is heading to a semantic
  approach where the to improve search accuracy by understanding searcher
- intent and the contextual meaning of terms as they appear in the searchable
- dataspace to generate more relevant results
+ intent and the contextual meaning of terms as they appear in the search-able
+ data-space to generate more relevant results
 \begin_inset Note Note
 status collapsed
 
@@ -893,7 +893,7 @@ Special emplacements: Sura's start, Sura's end.
 \end_layout
 
 \begin_layout Itemize
-Musha f structure: page, thumn, rubu', nisf, hizb, juz';
+Mushaf structure: page, thumn, rubu', nisf, hizb, juz';
 \end_layout
 
 \begin_layout Itemize
@@ -902,7 +902,7 @@ Quran writing: sawāmit, harakāt, hamza, diacritics, signes of distinction
 \end_layout
 
 \begin_layout Itemize
-Incorporeal structure: word, keyword, expression, objectif unit
+Incorporeal structure: word, keyword, expression, objective unit
 \end_layout
 
 \begin_layout Itemize
@@ -1073,13 +1073,12 @@ We have manipulated those ideas to fit the context of Arabic and Quran.
  In addition to simple search, these are our proposals:
 \end_layout
 
-\begin_layout Enumerate
+\begin_layout Subsection
 
 \series bold
 Advanced Query
 \end_layout
 
-\begin_deeper
 \begin_layout Enumerate
 \paragraph_spacing onehalf
 \align block
@@ -1496,14 +1495,12 @@ Boosting keywords weight:
  (all hearing, all knowing).
 \end_layout
 
-\end_deeper
-\begin_layout Enumerate
+\begin_layout Subsection
 
 \series bold
 Output Improvements
 \end_layout
 
-\begin_deeper
 \begin_layout Enumerate
 
 \series bold
@@ -1762,14 +1759,12 @@ Ayah in full diacritical marks - quran.com
 \end_layout
 
 \end_deeper
-\end_deeper
-\begin_layout Enumerate
+\begin_layout Subsection
 
 \series bold
 Suggestion Systems
 \end_layout
 
-\begin_deeper
 \begin_layout Enumerate
 
 \series bold
@@ -2455,7 +2450,7 @@ Keyboard mapping Arabic to English in Google.com
 \end_layout
 
 \end_deeper
-\begin_layout Standard
+\begin_layout Enumerate
 
 \series bold
 Different significations: 
@@ -2511,8 +2506,7 @@ nd
 
 \end_layout
 
-\end_deeper
-\begin_layout Enumerate
+\begin_layout Subsection
 
 \series bold
 Linguistic Aspects
@@ -2520,7 +2514,6 @@ Linguistic Aspects
  
 \end_layout
 
-\begin_deeper
 \begin_layout Enumerate
 
 \series bold
@@ -2612,7 +2605,7 @@ could be written as ẖalīfaẗ (ISO233), xalyfap (Buckwalter), _halyfaT (Arabt
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -2647,7 +2640,7 @@ Different romanizations for the word
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -3339,10 +3332,11 @@ may replace
 \begin_layout Enumerate
 
 \series bold
-Word Annotations
+Word linguistic annotations
 \series default
-: Attaching annotations to each word of results (ayahs) will help linguistics
- students to get information about the word easily and word_by_word.
+: Attaching linguistuc annotations to each word of results (ayahs) will
+ help linguistics students to get information about the word easily and
+ word_by_word.
  This annotation contains information like root, lemma, mood, aspect, gender,
  number , voice , case and so on.
  
@@ -3508,7 +3502,6 @@ the sky
  verb.
 \end_layout
 
-\end_deeper
 \begin_layout Standard
 \begin_inset Float figure
 wide false
@@ -3551,6 +3544,7 @@ target "http://corpus.quran.com/"
 
 \end_layout
 
+\end_deeper
 \end_deeper
 \begin_layout Enumerate
 
@@ -3650,20 +3644,18 @@ Uthmani writing way:
 \end_layout
 
 \end_deeper
-\end_deeper
-\begin_layout Enumerate
+\begin_layout Subsection
 
 \series bold
 Qur'anic Options
 \end_layout
 
-\begin_deeper
 \begin_layout Enumerate
 
 \series bold
 Structural options
 \series default
-: since Quran is divided to parts and the part to Hizbs and Hizb to Halfs
+: since Quran is divided to parts and the part to Hizbs and Hizb to Halves
  ...
  till we get Ayahs.There is also other structures of Qur'an such as to pages
  ...etc.
@@ -4049,14 +4041,12 @@ Translation: Their parable is like the parable of one who kindled a fire,
 \end_layout
 
 \end_deeper
-\end_deeper
-\begin_layout Enumerate
+\begin_layout Subsection
 
 \series bold
 Semantic Queries
 \end_layout
 
-\begin_deeper
 \begin_layout Enumerate
 
 \series bold
@@ -5028,6 +5018,7 @@ Translation: ...
  said to his companion: Grieve not, surely Allah is with us ...
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
 \SpecialChar \textcompwordmark{}
 
@@ -5035,13 +5026,12 @@ Translation: ...
 
 \end_deeper
 \end_deeper
-\begin_layout Enumerate
+\begin_layout Subsection
 
 \series bold
 Statistical System
 \end_layout
 
-\begin_deeper
 \begin_layout Enumerate
 
 \series bold
@@ -5073,11 +5063,13 @@ How many words of
 ?
 \end_layout
 
+\begin_deeper
 \begin_layout Itemize
 What the first ten words which are the most frequently cited words in the
  whole Qur'an? 
 \end_layout
 
+\end_deeper
 \end_deeper
 \begin_layout Enumerate
 
@@ -5242,7 +5234,6 @@ What's the longest Ayah?
 How many Marks of Sajdah in the whole Qur'an?
 \end_layout
 
-\end_deeper
 \end_deeper
 \begin_layout Section
 Discussion

@@ -98,7 +98,7 @@ status open
 
 %
 \backslash
-pagenumbering{arabic}
+pagenumbering{Arabic}
 \end_layout
 
 \begin_layout Plain Layout
@@ -175,7 +175,7 @@ textit{Tim Peters, The Zen of Python}}
 
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 TODO:
@@ -210,7 +210,7 @@ Introduction
 After listing all possible search features as explained in the previous
  chapter, we will - at first - go through our previous work explaining all
  what we have already done.
- After that, we'll discuss many improvments that leads to a better search
+ After that, we'll discuss many improvements that leads to a better search
  experience.
  We've gathered those improvements under those points:
 \end_layout
@@ -224,7 +224,7 @@ Text processing based on Uthmani script;
 \end_layout
 
 \begin_layout Itemize
-A modular and extensible query parser;
+Quranic Word Search;
 \end_layout
 
 \begin_layout Itemize
@@ -233,10 +233,6 @@ An accurate statistics gathering system;
 
 \begin_layout Itemize
 More adequate suggestion system;
-\end_layout
-
-\begin_layout Itemize
-Ways to make a standard Quranic and Linguistic resources manager;
 \end_layout
 
 \begin_layout Itemize
@@ -286,7 +282,7 @@ To attend our objective, we had based on the general behavior of retrieval
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -540,7 +536,14 @@ We had benefited of the advanced query in the implementation of some new
 \series bold
 Synonyms & Antonyms
 \series default
-: it's a simple replacement operation of word by the set of its synonyms
+:
+\begin_inset CommandInset label
+LatexCommand label
+name "Synonyms-&-Antonyms:"
+
+\end_inset
+
+ it's a simple replacement operation of word by the set of its synonyms
  or antonyms.
  
 \end_layout
@@ -548,7 +551,14 @@ Synonyms & Antonyms
 \begin_layout Itemize
 
 \series bold
-Search by Derivations: 
+Search by Derivations:
+\begin_inset CommandInset label
+LatexCommand label
+name "Search-by-Derivations:"
+
+\end_inset
+
+ 
 \series default
 it's a linguistic option aims to extract derivations of a given word based
  on a defined derivation level, that works on 3 steps:
@@ -581,7 +591,14 @@ We've implemented the previous actions using specific indexes that contains
 \begin_layout Itemize
 
 \series bold
-Considering/Ignoring Spelling faults: 
+Considering/Ignoring Spelling faults:
+\begin_inset CommandInset label
+LatexCommand label
+name "Considering/Ignoring-Spelling-fa"
+
+\end_inset
+
+ 
 \series default
 with this feature, the search engine would ignore most of spelling faults
  that are frequently in Arabic.
@@ -616,7 +633,14 @@ Then, the search engine processes all indexed words and process them the
 \begin_layout Itemize
 
 \series bold
-Search by the triple root-type-pattern: 
+Search by the triple root-type-pattern:
+\begin_inset CommandInset label
+LatexCommand label
+name "Search-by-the-triple"
+
+\end_inset
+
+ 
 \series default
 The general behavior of this propriety is that the user put a triple of
  word properties so the search engine fetch in the index all the words that
@@ -851,7 +875,7 @@ glstwo{diacritical marks}{diacritical marks}
  phases in order to achieve a Quranic retrieving system that pass over these
  ambiguities.
  One of the main barriers that prevent the consideration of vocalization
- in Arabic is the lack of vocalized arabic texts among the total arabic
+ in Arabic is the lack of vocalized Arabic texts among the total Arabic
  content
 \begin_inset Note Note
 status collapsed
@@ -1148,7 +1172,7 @@ We've intended to use this method in the comparing between search query
 1.
  This will take effect only in searching and not all operations needed in
  indexing, statistics calculation, detecting suggestions, detecting synonyms,
- detecting diffrent vocalizations and any operation may appear later.
+ detecting different vocalizations and any operation may appear later.
 \end_layout
 
 \begin_layout Standard
@@ -1168,8 +1192,8 @@ Regular expression engine: General regular expressions has no classification
 \series bold
  
 \series default
-neither arabic letters nor arabic diacritics while it gives special classes
- for latin letters, digits, and symbols.
+neither Arabic letters nor Arabic diacritics while it gives special classes
+ for Latin letters, digits, and symbols.
  Introducing Arabic customized classes into the regex engine improves the
  partial vocalization comparing performance and makes it globally available.
  
@@ -1177,15 +1201,15 @@ neither arabic letters nor arabic diacritics while it gives special classes
 
 \begin_layout Itemize
 Basic string: in most programming languages, strings are objects and have
- thier own comparing method.
+ their own comparing method.
  Replacing that object method with our partial comparing operation takes
  effect on all declared instances and all derived objects.
 \end_layout
 
 \begin_layout Standard
-One problem of changing regex engine or basic string directly in-place is
- the possiblity of disconnecting from the main line of the programming language
- development.
+One problem of changing Regex engine or basic string directly in-place is
+ the possibility of disconnecting from the main line of the programming
+ language development.
  That should be token in consideration because if it happens the forked
  branch will be stuck.
  An alternative way is the prototyping instead of replacing in-place.
@@ -1226,7 +1250,7 @@ To improve better the vocalized search, we have to distinguish between original
 \lang arabic_arabi
 الْمُلْكِ
 \lang english
- (Kingdom, genetive), 
+ (Kingdom, genitive), 
 \lang arabic_arabi
 الْمُلْكَ
 \family roman
@@ -1297,8 +1321,8 @@ Different possible declensions of the word
 \end_layout
 
 \begin_layout Standard
-Ignoring vocalization has a direct influence on filtring stopwords because
- filtring out a word like the particle 
+Ignoring vocalization has a direct influence on filtering stop-words because
+ filtering out a word like the particle 
 \lang arabic_arabi
 مِنْ
 \family roman
@@ -1313,7 +1337,7 @@ Ignoring vocalization has a direct influence on filtring stopwords because
 \noun off
 \color none
 \lang english
- leads to filtring the relative noun 
+ leads to filtering the relative noun 
 \family default
 \series default
 \shape default
@@ -1366,9 +1390,9 @@ Ignoring vocalization has a direct influence on filtring stopwords because
 \color none
 \lang english
  .
- Using vocalized stopwords is very recommended to avoid ambiguities and
- to confine the filtered occurances.
- We'll mention how we gather the stopwords in 
+ Using vocalized stop-words is very recommended to avoid ambiguities and
+ to confine the filtered occurrences.
+ We'll mention how we gather the stop-words in 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:Filtring-Stop-words:"
@@ -1421,7 +1445,7 @@ Different types of the possible vocalizations of the word
 \begin_layout Standard
 Another problem emerges by ignoring the vocalization is the inaccuracy of
  statistics.
- For example the frequncy of the unvocalized word 
+ For example the frequency of the unvocalized word 
 \lang arabic_arabi
 الملك
 \lang english
@@ -1456,7 +1480,7 @@ Another problem emerges by ignoring the vocalization is the inaccuracy of
 \lang arabic_arabi
 الْمُلْكِ
 \lang english
- (Kingdom, genetive), 
+ (Kingdom, genitive), 
 \lang arabic_arabi
 الْمُلْكَ
 \family roman
@@ -1491,7 +1515,7 @@ Another problem emerges by ignoring the vocalization is the inaccuracy of
 \lang arabic_arabi
 الْمَلِكِ
 \lang english
- (King, genetive).
+ (King, genitive).
  The appropriate way to gather statistics is to use the vocalized words
  by ignoring the haraka of declension case (
 \lang arabic_arabi
@@ -1576,8 +1600,8 @@ It's insignificant to have n-grams that start with a vocalization mark.
 \end_layout
 
 \begin_layout Standard
-The right behaviour is to distinguish between letters and diacritics and
- change the gram to contain the letter and the diacritc after then change
+The right behavior is to distinguish between letters and diacritics and
+ change the gram to contain the letter and the diacritic after then change
  the similarity function to use partial vocalization comparing.
  This keeps a small number of n-grams and avoids insignificant ones.
  for details check 
@@ -1600,7 +1624,7 @@ Lift the ambiguities cause by ignoring vocalizations
 \end_layout
 
 \begin_layout Itemize
-Make searching results, suggestions, and statitics more accurate.
+Make searching results, suggestions, and statistics more accurate.
 \end_layout
 
 \begin_layout Itemize
@@ -1609,14 +1633,21 @@ Refine the meanings detection ( a first step in the semantic approach )
 
 \begin_layout Section
 Othmani script and text processing
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Text-processing"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-Quran is writtin principally on Othmani script which has many different
+Quran is written principally on Othmani script which has many different
  from the standard script used usually in different media.
  In the previous work, we adopted the quranic text written on standard script
- but due to the diffuculties caused by the its diffrences with Othmani script,
- we have to consider both scripts for indexing and search.
+ but due to the difficulties caused by the its differences with Othmani
+ script, we have to consider both scripts for indexing and search.
  Among those difficulties, we mention: 
 \end_layout
 
@@ -1758,7 +1789,7 @@ in (
 \end_inset
 
 .
- The retrieving sytem can't distinguish between the two occurences basing
+ The retrieving system can't distinguish between the two occurrences basing
  only on the standard script.
  
 \begin_inset Newline newline
@@ -1865,8 +1896,8 @@ reference "sub:Knowledge-of-Orthongraphy"
 \begin_layout Enumerate
 Matching the same Word-By-Word structure of some Quranic linguistic resources.
  Using the Quranic word as the basic unit for linguistic resources lacks
- for precision in some cases such in the case of two occurences of word
- that have diffrent interpretation.
+ for precision in some cases such in the case of two occurrences of word
+ that have different interpretation.
  To resolve that, many Quranic linguistic resources (such as Quranic Arabic
  Corpus, see 
 \begin_inset CommandInset ref
@@ -1875,7 +1906,7 @@ reference "sub:Qur’anic-Arabic-Corpus"
 
 \end_inset
 
-) have adopted the word occurence as a basic unit a.k.a Word-By-Word Quran
+) have adopted the word occurrence as a basic unit a.k.a Word-By-Word Quran
  browsing.
  As a result for this, the resources such those have to use the words as
  they occurred in Quran (consequently in Othmani script) because the separation
@@ -1930,7 +1961,7 @@ reference "sub:Qur’anic-Arabic-Corpus"
 \uwave default
 \noun default
 \color inherit
-in Yusuf 84 which is separted to two words 
+in Yusuf 84 which is separated to two words 
 \lang arabic_arabi
 يَا
 \lang english
@@ -1979,7 +2010,7 @@ Merging Words in Uthmani Script
 \begin_layout Standard
 As we've said, to resolve those difficulties we consider Othmani text also
  for text processing along with standard text.
- In addition, we propose many improvments on the text processing phases
+ In addition, we propose many improvements on the text processing phases
  to achieve many of search features that we have proposed in the previous
  chapter (see 
 \begin_inset CommandInset ref
@@ -2031,7 +2062,7 @@ General Schema of Uthmani and Standard text processing.
 \end_layout
 
 \begin_layout Standard
-We list in the following our improvments per phase:
+We list in the following our improvements per phase:
 \end_layout
 
 \begin_layout Subsection
@@ -2052,7 +2083,7 @@ Generally this phase is for processing the search query because it's not
 
 \begin_layout Standard
 We don't include this phase into normalization phase ( after tokenization
- ) before those substitions are essential for a perfect tokenization.
+ ) before those substitutions are essential for a perfect tokenization.
  Especially that the tokenization phase is not a simple space-based separation
  and configured to use a word-by-word corpus.
  
@@ -2084,7 +2115,7 @@ reference "enu:Romanization:"
  There are many romanization systems.
  To provide the possibility to use more then one, we should specify a guessing
  policy to detect what system is used in a given string.
- There are many critiria that could be used in guessing, we list some of
+ There are many criteria that could be used in guessing, we list some of
  them in the following:
 \end_layout
 
@@ -2093,9 +2124,9 @@ reference "enu:Romanization:"
 \series bold
 Nature of used characters: 
 \series default
-each romanization system uses a set of letters, numbers, or symbols to reperesen
-t the Arabic vowels and letters (including hamza forms).
- The diffrences between those sets are remarkable.
+each romanization system uses a set of letters, numbers, or symbols to represent
+ the Arabic vowels and letters (including hamza forms).
+ The differences between those sets are remarkable.
  For example, ISO233 norm uses usually some dotted letters such as ẗ for
  
 \lang arabic_arabi
@@ -2277,7 +2308,7 @@ For example, guessing the romanized word xalyfap leads surely to the system
 \begin_layout Enumerate
 
 \series bold
-Word existance in Quran: 
+Word existence in Quran: 
 \series default
 by checking the existence in the Quran of interpreted words arising from
  a romanized word, we can detect potential ones.
@@ -3459,6 +3490,44 @@ In the example N°11of the table, the number 309 was separated with the two
  That make it hard to be retrieved without understanding the Ayah semantically.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Substitution Example.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Example of Substitution
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Tokenization:
 \begin_inset CommandInset label
@@ -3682,7 +3751,7 @@ Tokenization of the word
 Tokenization is an important phase since it's the basis for the following
  phases.
  Thus, it should have a very high precision while actually there is a lack
- for accurate arabic analyzer.
+ for accurate Arabic analyzer.
 \end_layout
 
 \begin_layout Itemize
@@ -3700,7 +3769,7 @@ A lot of clitics and pronouns such as
 \lang arabic_arabi
 فَ
 \lang english
- should be considered as stop words because they will have a high frequece
+ should be considered as stop words because they will have a high frequency
  and have a less need of retrieving.
 \end_layout
 
@@ -3724,7 +3793,7 @@ key "Attia_arabictokenization"
  He described a rule-based tokenizer that handles tokenization as a full-rounded
  process with two stages: a preprocessing stage (white space normalizer),
  and a post-processing stage (token filter).
- He described the implemntation of 3 tokenization models:
+ He described the implementation of 3 tokenization models:
 \end_layout
 
 \begin_layout Enumerate
@@ -3901,7 +3970,7 @@ Tokenization Guesser (tokenization is separated from morphological analysis)
 \noun off
 \color none
 \lang english
- whereas the tagging of the clitecs is 
+ whereas the tagging of the clitics is 
 \family default
 \series default
 \shape default
@@ -3931,7 +4000,7 @@ Tokenization Guesser (tokenization is separated from morphological analysis)
 \begin_layout Enumerate
 
 \series bold
-Tokenization Dependent on the Morphological Analyser: 
+Tokenization Dependent on the Morphological Analyzer: 
 \series default
 here the word stem is not guessed, but taken as a list of actual words.
  A possible word in the tokenizer in this model is any word found in the
@@ -4007,7 +4076,7 @@ Attia
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -4024,7 +4093,7 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Subtokens separation schema
+Sub-tokens separation schema
 \end_layout
 
 \end_inset
@@ -4128,11 +4197,11 @@ When we tokenize the previous two Ayahs, we lose the function of the first
 \lang arabic_arabi
 و
 \lang english
-) as in the first ayah is for oath and in the second aya is for coordination.
- To recover such kind of loss, we introduce some tags tha has the values
+) as in the first ayah is for oath and in the second ayah is for coordination.
+ To recover such kind of loss, we introduce some tags that has the values
  of important information.
  We add tags in this phase exactly (tokenization) because it's the only
- phase that read the word in it's phrase semantic and syntaxic context.
+ phase that read the word in it's phrase semantic and syntactic context.
  By consequence, it knows the part-of-speech information.
  Another reason is that we need them in the next phases: Normalization and
  Stemming.
@@ -4154,7 +4223,7 @@ Word declension
 \lang arabic_arabi
 حركات الإعراب
 \lang english
-) to unite different occurences of a word.
+) to unite different occurrences of a word.
 \end_layout
 
 \begin_layout Enumerate
@@ -4204,6 +4273,40 @@ with tokenization, we preserve tokens and we can reproduce the whole word.
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Tokenization Example.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Example of tokenization
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Note
 status collapsed
 
@@ -4242,7 +4345,7 @@ Normalization:
 
 \begin_layout Standard
 Since we are accepting the Othmani script beside the standard script,we
- have to specify the normalisation for the both.
+ have to specify the normalization for the both.
  We had to strip all recitation marks such as the Waqf symbol 
 \begin_inset ERT
 status open
@@ -4288,7 +4391,7 @@ reference "sub:Fragmentation-into-Stops"
 After stripping all extra symbols, we should either normalize othmani text
  into standard text.
  This operation is necessary to unify the processing for the next phases.
- There is no benefits to continue in a separarted lines.
+ There is no benefits to continue in a separated lines.
  The converging into standard script makes the stemming clearer and pass
  over some special uthmani-written words.
  For example, the word -example-.
@@ -4301,7 +4404,7 @@ To achieve that, we need a complete mapping of Quranic words between the
  To minimize the size of mapping, we can exclude the words that are written
  in the same manner.
  The mapping should use the uthmani word as a unit not the standard word.
- The reason is that some words are mapped differently from an occurence
+ The reason is that some words are mapped differently from an occurrence
  to another.
  An example for that, the word 
 \lang arabic_arabi
@@ -4464,7 +4567,7 @@ Declension case (
 \lang arabic_arabi
 حالة الإعراب
 \lang english
-): Nominative, Accusative, and Genetive.
+): Nominative, Accusative, and Genitive.
  
 \end_layout
 
@@ -4524,20 +4627,77 @@ Arabic case markers
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-+Strip I3rab 
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
-For example the normalization of the ayah (
+\align center
+\begin_inset Graphics
+	filename figures/Normalization Example.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Example of normalization
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Filtering stop-words:
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Filtring-Stop-words:"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the previous work, we discussed the feasibility of filtering stop-words
+ for search in Quran (see 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "For-stop-words-filtering,"
+
+\end_inset
+
+).
+ We have proposed to select the stop-words from the list of the most frequent
+ words in Qur'an, the particles and the pronouns taking in consideration
+ their diacritical marks.
+\end_layout
+
+\begin_layout Standard
+We made an improvement in the tokenization that affect our previous criteria
+ for choosing the list of stop-words.
+ This improvement is the separation of pronouns and clitics from the lemma
+ of the word.
+ Clitics such as 
 \lang arabic_arabi
-الروم
+فَـ
 \family roman
 \series medium
 \shape up
@@ -4562,47 +4722,35 @@ For example the normalization of the ayah (
 \uwave default
 \noun default
 \color inherit
-54) : +Strip Every Thing
+(fa) generally has a high frequency and hasn't a self independent meaning.
+ Therefore, clitics are potential stop-words, should be ignored for a better
+ search experience.
+ The ignoring should be optional to let the possibility for linguists to
+ look for these keywords.
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
 
-\series bold
-Before normalization
-\series default
-: [
-\lang arabic_arabi
- ۞ ٱللَّـهُ ٱلَّذِى خَلَقَكُم مِّن ضَعْفٍ ثُمَّ جَعَلَ مِنۢ بَعْدِ ضَعْفٍ
- قُوَّةً ثُمَّ جَعَلَ مِنۢ بَعْدِ قُوَّةٍ ضَعْفًا وَشَيْبَةً ۚ يَخْلُقُ
- مَا يَشَآءُ ۖ وَهُوَ ٱلْعَلِيمُ ٱلْقَدِيرُ 
-\lang english
-]
-\end_layout
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Filtring Stopwords Example.png
+	scale 60
 
-\begin_layout Itemize
+\end_inset
 
-\series bold
-After normalization
-\series default
-: [
-\lang arabic_arabi
- اللَّـهُ الَّذِي خَلَقَكُمْ مِنْ ضَعْفٍ ثُمَّ جَعَلَ مِنْ بَعْدِ ضَعْفٍ
- قُوَّةً ثُمَّ جَعَلَ مِنْ بَعْدِ قُوَّةٍ ضَعْفًا وَشَيْبَةً يَخْلُقُ مَا
- يَشَاءُ وَهُوَ الْعَلِيمُ الْقَدِيرُ 
-\lang english
-]
+
 \end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Preview for normalization
-\end_layout
-
-\end_inset
-
-
+Example of stop-word filtering 
 \end_layout
 
 \end_inset
@@ -4632,7 +4780,7 @@ reference "sub:Tokenization:"
 
 ).
  In Stemming we either bring it back into stem or root origin.
- The roots in arabic are the basic unit.
+ The roots in Arabic are the basic unit.
  There are about 10000 roots
 \begin_inset Foot
 status collapsed
@@ -4681,7 +4829,7 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Examples de lemmatization
+Examples of lemmatization 
 \end_layout
 
 \end_inset
@@ -4694,390 +4842,241 @@ Examples de lemmatization
 
 \end_layout
 
-\begin_layout Subsection
-Filtring stopwords:
-\begin_inset CommandInset label
-LatexCommand label
-name "sub:Filtring-Stop-words:"
-
-\end_inset
-
-
+\begin_layout Section
+Qur'anic Word Search
 \end_layout
 
 \begin_layout Standard
-In the previous work, we discussed the feasability of filtring stopwords
- for search in Quran (see 
+Previously, we have considered the ayah as the search unit.
+ That means it was the unit of our document index or we can call it 
+\emph on
+the document
+\emph default
+.
+ The ayah being the document is yet the perfect choice.
+ However, to attend many linguistic features (mentioned in 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "For-stop-words-filtering,"
+reference "sec:Proposals"
 
 \end_inset
 
-).
- We have proposed to select the stopwords from the list of the most frequent
- words in Qur'an, the particles and the pronouns taking in consideration
- their diacritical marks.
+) such as: 
 \end_layout
 
-\begin_layout Standard
-We made an improvement in the tokenization that affect our previous criteria
- for choosing the list of stopwords.
- This improvement is the separation of pronouns and clitics from the lemma
- of the word.
- Clitics such as 
-\lang arabic_arabi
-فَـ
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-\lang english
+\begin_layout Itemize
+Suggestion systems :: Different vocalizations;
+\end_layout
+
+\begin_layout Itemize
+Linguistic Aspects :: Multi-level derivation;
+\end_layout
+
+\begin_layout Itemize
+Linguistic Aspects ::
+\series bold
  
-\family default
 \series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-(fa) generally has a high frequency and hasn't a self independant meaning.
- Therefore, clitics are potential stopwords, should be ignored for a better
- search experience.
- The ignoring should be optional to let the possibility for linguists to
- look for these keywords.
+Specific-derivations
 \end_layout
 
-\begin_layout Section
-Quranic Word Search
-\end_layout
-
-\begin_layout Standard
-----
-\end_layout
-
-\begin_layout Standard
-Intro: we first use ayah as a unit, now we use the quranic word as unit,
+\begin_layout Itemize
+Linguistic Aspects ::
+\series bold
  
+\series default
+Word properties embedded query
+\end_layout
+
+\begin_layout Itemize
+Linguistic Aspects :: Word linguistic annotations
 \end_layout
 
 \begin_layout Standard
-why: because we need it for the two steps search.
-\end_layout
-
-\begin_layout Standard
-what is 2stepsserch: it a method to retrieve sets of quranic words classified
- by one or many of thiers properties : lemma, gender, position, ....
-\end_layout
-
-\begin_layout Standard
-benefits to generate special word classes.
-\end_layout
-
-\begin_layout Standard
-We use it to improve query parser: modularity, extensibiltiy and combination
-\end_layout
-
-\begin_layout Standard
----
-\end_layout
-
-\begin_layout Standard
-An experienced challenge with the Query parser is the mixing (the combinaition)
- of the different operations 
-\end_layout
-
-\begin_layout Standard
-Extensible and Combination ability of different operations
-\end_layout
-
-\begin_layout Standard
-a high benefit to add search features one by one, without ruining all the
- parsing system
-\end_layout
-
-\begin_layout Standard
-we proposition those new operations (some are upgraded from previous work)
-\end_layout
-
-\begin_layout Standard
-========
-\end_layout
-
-\begin_layout Standard
-Case, Objective, behaviour, status, needed resources
-\end_layout
-
-\begin_layout Standard
-========
-\end_layout
-
-\begin_layout Subsection
-Related Words
-\end_layout
-
-\begin_layout Standard
-Syntax :Relation~word , ~word for all relations
-\end_layout
-
-\begin_layout Standard
-replace the synonyms and antonyms by a general semantic related works
-\end_layout
-
-\begin_layout Subsection
-Multi-level Derivations
-\end_layout
-
-\begin_layout Standard
-Suntax: >>> Malak
-\end_layout
-
-\begin_layout Subsection
-Special Derivations
-\end_layout
-
-\begin_layout Standard
-Syntax : Past(malaka), Present(Malaka), Imperative(Malaka)...
-\end_layout
-
-\begin_layout Standard
-Generate all possibilities Intersect existing words 
-\end_layout
-
-\begin_layout Subsection
-Fuzzy Search
-\end_layout
-
-\begin_layout Standard
-
+We need to consider a different search unit: the Quranic word (
 \lang arabic_arabi
-تقريبي
-\end_layout
-
-\begin_layout Standard
-,try to fix spelling errors and guess the right words 
-\end_layout
-
-\begin_layout Standard
-include similar words in writing or 
-\lang arabic_arabi
-نطق
-\end_layout
-
-\begin_layout Standard
-Normalizing the similar letters ha' and ta' merbouta, alef 6awila et Alif
- maqsoura, all the forms of Hamza.
-\end_layout
-
-\begin_layout Subsection
-Word Embedded Search 
-\end_layout
-
-\begin_layout Standard
-( it's a Two-Steps Search)
-\end_layout
-
-\begin_layout Subsubsection
-Word properties search
-\end_layout
-
-\begin_layout Standard
-first benefit to search using word properties, this include those, as we've
- mentioned in ...
-\end_layout
-
-\begin_layout Standard
-the difference 
-\end_layout
-
-\begin_layout Standard
-{{ }}
-\end_layout
-
-\begin_layout Subsubsection
-Word Translations search 
-\end_layout
-
-\begin_layout Standard
-Syntax like [[ ]]
-\end_layout
-
-\begin_layout Standard
-benefit to search inside the TranslatioNs
-\end_layout
-
-\begin_layout Subsection
-New Arabic Jokers [If you think it hard , avoid it]
-\end_layout
-
-\begin_layout Itemize
-Consents: ? *
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Hamza 
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Vowels: !
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Long Vowels
-\end_layout
-
-\begin_layout Itemize
-Short Vowels
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-All: .
-\end_layout
-
-\begin_layout Section
-
-\series bold
-Suggestion System
-\end_layout
-
-\begin_layout Standard
-+ list the other suggestions
-\end_layout
-
-\begin_layout Enumerate
-
-\series bold
-Keyword Mapping: (This is suggestion)
-\end_layout
-
-\begin_layout Standard
-1.7.2 Spelling suggestion 
-\begin_inset CommandInset label
-LatexCommand label
-name "sec:1.7.2-Spelling-suggestion"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Proposal : 
-\end_layout
-
-\begin_layout Itemize
-use different ngram fragmentation strategie :
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Create ngrams based on the unvocalized word
-\end_layout
-
-\begin_layout Enumerate
-Create ngrams based on the vocalized word such as the unit will not be the
- letter but the letter with the vowel that follows him
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-\begin_inset Note Note
-status open
+اللفظ القرآني
+\lang english
+).
+ The purpose of this is to obtain a quick efficient stable method to retrieve
+ specific Quranic words.
+ To achieve that we need a corpus of Quranic words enriched with linguistic
+ properties of each word.
+ This corpus could be based on either the word form or the word occurrence.
+ The second choice is the most accurate because the word can change their
+ properties moving from an occurrence to another.
+ There are about 17 thousands of words with a total about 76 thousands of
+ occurrences
+\begin_inset Foot
+status collapsed
 
 \begin_layout Plain Layout
-why?
-\lang arabic_arabi
- الحرف العربي المشكول يعتبر في اللغة العربية حرفا واحدا ألا يحق لنا نتساءل
- لماذا لا يمكن اعتبار الحرف المشكول حرفا واحدا في الحاسوب
+We calculated those statistics based on the Quran copy downloaded from Tanzil.org
 \end_layout
 
 \end_inset
 
-
+.
 \end_layout
 
-\end_deeper
-\end_deeper
-\begin_layout Enumerate
-Improve levanshtein distance:
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-table of similarity between Arabic letters (if the letter has always 0%
- to others, 100% to himself so can be avoided from the table to reduce the
- size)
-\end_layout
-
-\begin_layout Enumerate
-table of similarity between different forms of each letter: hamza, ta',
- Alef (can be included in the previous table)
-\end_layout
-
-\begin_layout Enumerate
-Table of similarity between Vowels :
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-rule #1: unvocalized letter is so similar to a vocalized one whatever the
- vowel is.
-\end_layout
-
-\begin_layout Enumerate
-rule #2: Tanwin in a vowel is very similar to that vowel without tanwin
-\end_layout
-
-\begin_layout Enumerate
-rule #3: Alef 6awila and maqsoura is roughly the same letter
-\end_layout
-
-\begin_layout Enumerate
-rule #4: the inverse relation is not the same forcely
-\end_layout
-
-\begin_layout Enumerate
-rule #5:
-\end_layout
-
-\end_deeper
-\end_deeper
 \begin_layout Standard
-\begin_inset Float table
+We propose those information to be included in the schema of the word document
+ index:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Identifiers
+\series default
+: a global identifier, a secondary identifier based on the order in the
+ ayah added to ayah identifier and surah identifier;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Different forms
+\series default
+: Uthmani vocalized word (the main form), Standard vocalized word, Standard
+ unvocalized word;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Transliterations: 
+\series default
+ISO233, Buckwalter, Arabtex;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Translations: 
+\series default
+English, other languages;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Different levels of stemming
+\series default
+: Lemma, Stem, Root;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Other properties:
+\series default
+ Part Of Speech, type, state, case, mood, voice, number, gender, person.
+\end_layout
+
+\begin_layout Standard
+Then we make the inverted indexes based on the document indexes as explained
+ in the following figure:
+\end_layout
+
+\begin_layout Standard
+[+figure of indexing the word document index into inverted indexes]
+\end_layout
+
+\begin_layout Standard
+We should pass the word fields by the same text analyzing phases, we described
+ in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Text-processing"
+
+\end_inset
+
+.
+ We should also preserve a duplicate field for the original word without
+ text analyzing in order to satisfy exact search needs.
+ 
+\end_layout
+
+\begin_layout Standard
+We use the word search to improve the ayah search by introducing a 2-steps
+ search strategy.
+ First step, retrieving the best keywords set based on the user query by
+ searching in the word-as-a-unit index.
+ Second step, retrieving the corresponding ayahs using the keywords set
+ resulted from the first step.
+ we explaining the 2-steps search strategy on this figure: 
+\end_layout
+
+\begin_layout Standard
+[+figure: How 2 steps strategy work , as search do in previous work]
+\end_layout
+
+\begin_layout Standard
+The 2-steps search must also perform a second operation which is to inquire
+ a word ontology to retrieve semantically related words.
+ Semantically related words includes 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
 wide false
 sideways false
 status collapsed
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Idols example - ontologies.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Semantically related words : Idols
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As a conclusion, the 2-steps search strategy helps in retrieving Quran words
+ classified on their origins, properties, translations, transliterations,
+ semantic relations.
+ The classification goes flexibly, and fast by using inverted indexes and
+ ontologies.
+ In the next example we 
+\end_layout
+
+\begin_layout Standard
+[+figures: Classification Example يقول --> تصريف في المضارع -> تصريف في
+ جميع الأزمنة -> Same root -> Synonyms ]
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
 \begin_inset Tabular
-<lyxtabular version="3" rows="15" columns="14">
+<lyxtabular version="3" rows="4" columns="3">
 <features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
@@ -5086,7 +5085,7 @@ status collapsed
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+keyword
 \end_layout
 
 \end_inset
@@ -5095,106 +5094,7 @@ status collapsed
 \begin_inset Text
 
 \begin_layout Plain Layout
-ق
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-قا
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-قى
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-قو
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-قي
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-قَ
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-قُ
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-قِ
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-قً
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-قٍ
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-قُُ
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-قْ
 \end_layout
 
 \end_inset
@@ -5203,240 +5103,13 @@ status collapsed
 \begin_inset Text
 
 \begin_layout Plain Layout
-قّ
+
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-ق
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.5
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.5
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.5
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.5
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.9
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.9
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.9
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.9
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.9
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.9
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.8
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-قا
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.9
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.4
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.4
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.6
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.2
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.2
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -5470,105 +5143,6 @@ status collapsed
 \begin_inset Text
 
 \begin_layout Plain Layout
-قى
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -5594,1385 +5168,6 @@ status collapsed
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-قو
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-قَ
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-قُ
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-قِ
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-قً
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-قٍ
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-قُُ
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-قْ
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-قّ
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -7012,12 +5207,858 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Similarity between vowels
+Possible Classifications
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Building on the 2-steps strategy we propose those new operations to be implement
+ed in the query parser:
+\end_layout
+
+\begin_layout Subsection
+Word properties search
+\end_layout
+
+\begin_layout Standard
+This operation replaces the search by the triple root-type-pattern in the
+ previous work (see 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Search-by-the-triple"
+
+\end_inset
+
+).
+ Its objective is to allow the users to locate ayahs based on a set of keywords
+ chosen by linguistic properties such as Part Of Speech, type, state, case,
+ mood, voice, number, gender, person.
+ All what we need for the implementation of this operation is the word document
+ index with the ability of fielded search.
+ A fielded search is an advanced query feature that enables users to select
+ and associate the different document fields to which he wishes to limit
+ the query, to then use the required keywords within these fields.
+ 
+\end_layout
+
+\begin_layout Standard
+[Figure: fields choosing figure]
+\end_layout
+
+\begin_layout Standard
+We propose the query syntax 
+\emph on
+{{ PROPERTY_FIELDi:PROPERTY_VALUEi, ...
+ }}
+\emph default
+ to search for the set of words that have the value 
+\emph on
+PROPERTY_VALUEi
+\emph default
+ for the property 
+\emph on
+PROPERTY_FIELDi.
+ 
+\end_layout
+
+\begin_layout Standard
+[+figure: class example 1MP = First person, Masculine, Plural ]
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Subsection
+Word Translation search 
+\end_layout
+
+\begin_layout Plain Layout
+One of search features that we've mentioned in the previous chapter ()
+\end_layout
+
+\begin_layout Plain Layout
+---
+\end_layout
+
+\begin_layout Plain Layout
+========
+\end_layout
+
+\begin_layout Plain Layout
+Objective, behavior, status, needed resources, figure
+\end_layout
+
+\begin_layout Plain Layout
+========
+\end_layout
+
+\begin_layout Plain Layout
+Syntax like [[ ]]
+\end_layout
+
+\begin_layout Plain Layout
+benefit to search inside the TranslatioNs
+\end_layout
+
+\begin_layout Plain Layout
++figure: class example
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Semantically Related Words
+\end_layout
+
+\begin_layout Standard
+This operation replaces the synonyms and antonyms operation in the previous
+ work (see 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Synonyms-&-Antonyms:"
+
+\end_inset
+
+).
+ Its objective is to offer the related words of a keyword entered by the
+ user.
+ The user can specify which semantic relation to inquire: Synonymy, Antonymy,
+ Hypernymy, Hyponymy, Meronymy, Holonymy, Troponymy.
+ This operation requires an ontology that clarify the relations between
+ different Quranic words.
+ It is performed firstly by inquiring the ontology for related words and
+ secondly by using those keywords to retrieve the corresponding ayahs.
+ 
+\end_layout
+
+\begin_layout Standard
+[+figure: behavior : user keyword --- ontology ---> related keywords -----
+ ayah index --- 
+\end_layout
+
+\begin_layout Standard
+--> ayahs]
+\end_layout
+
+\begin_layout Standard
+We propose the query syntax 
+\emph on
+RELATION~WORD 
+\emph default
+to search for the words related to the word 
+\emph on
+WORD 
+\emph default
+by the semantic relation 
+\emph on
+RELATION
+\emph default
+, or 
+\emph on
+~WORD 
+\emph default
+to search using an undefined relation
+\emph on
+.
+\end_layout
+
+\begin_layout Standard
+[+figure: Synonymy~Jennah, Antonymy~Jennah, intmai~prophet]
+\end_layout
+
+\begin_layout Subsection
+Multi-level Derivations
+\end_layout
+
+\begin_layout Standard
+This operation replaces the derivation search operation in the previous
+ work (see 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Search-by-Derivations:"
+
+\end_inset
+
+).
+ The objective of this operation is to get a set of words that share the
+ same origin such as stem and root.
+ The user has to specify the word and a level of derivation.
+ The operation will recover the origin of the word in the specified derivation
+ level and retrieve all the set of words that share this origin.
+ Since we can adopt the lemma or the stem as the form to save the words
+ in indexing phase (after text analyzing).
+ So the adopted form would be the reference level to our operation.
+ If we adopt the stem so the root level will be the only one.
+ If we adopt the lemma there would be two levels: the stem and the root.
+ This operation require the origins of each Quranic word to be available.
+\end_layout
+
+\begin_layout Standard
+We propose the query syntax 
+\emph on
+ORIGIN_LEVEL>WORD
+\emph default
+ to search for the set of words with the same origin of the word 
+\emph on
+WORD 
+\emph default
+in the level 
+\emph on
+ORIGIN_LEVEL.
+ 
+\emph default
+The syntax could be simplified into
+\emph on
+ >WORD, >>WORD or >>>WORD depending on the 
+\emph default
+origin level
+\emph on
+.
+\end_layout
+
+\begin_layout Standard
++figure: 
+\lang arabic_arabi
+سميتموها
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+example
+\end_layout
+
+\begin_layout Subsection
+Special Derivations
+\end_layout
+
+\begin_layout Standard
+This operation is quite similar to the previous one in the objective.
+ Although, this is about find the words resultants of applying a specific
+ derivation operation on the user given word.
+ Among the possible derivations, we mention:
+\end_layout
+
+\begin_layout Itemize
+Conjugation of verbs in different tenses: [possible tenses]
+\end_layout
+
+\begin_layout Itemize
+Conjugation of verbs with different pronouns: [possible pronouns]
+\end_layout
+
+\begin_layout Itemize
+Conjugation of verbs in different voices: Active, Passive.
+\end_layout
+
+\begin_layout Itemize
+Genders and Plurals of a noun: Masculine singular , Feminine singular ,
+ Masculine Dual (
+\lang arabic_arabi
+مثنى
+\lang english
+), Feminine Dual (
+\lang arabic_arabi
+مثنى
+\lang english
+), Masculine Plural, Feminine Plural, Broken Plural, Plural of Plural.
+\end_layout
+
+\begin_layout Itemize
+Deverbals of a root: أنواع المصادر
+\end_layout
+
+\begin_layout Itemize
+Adjectives of a root: 
+\end_layout
+
+\begin_layout Itemize
+Verbs of a root:
+\end_layout
+
+\begin_layout Standard
+The user should enter the keyword and specify which derivation he seeks.
+ We generate the set of derived words either by fetching in the word index
+ or using linguistic tools such as verb conjugators.
+ If it's the second case, the generated set could be filtered as a second
+ step by intersection with the set of Quranic words.
+ The resulted set will be used to locate the corresponding ayahs.
+\end_layout
+
+\begin_layout Standard
+We propose the query syntax OPERATION(WORD) to search for the set words
+ generated from the word WORD by applying the operation OPERATION.
+\end_layout
+
+\begin_layout Standard
+[+figure: Imperative(
+\lang arabic_arabi
+قال
+\lang english
+), filter existing words, results]
+\end_layout
+
+\begin_layout Subsection
+Fuzzy Search
+\end_layout
+
+\begin_layout Standard
+This operation replaces the Considering/Ignoring spell errors operation
+ in the previous work (see 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Considering/Ignoring-Spelling-fa"
+
+\end_inset
+
+).
+ Its objective is to fetch using the set of words that are nearly similar
+ to the input word in writing or pronunciation.
+ Usually useful to guess the right spellings of a misspelled word.
+ There are many methods to implement fuzzy search, some are designed for
+ search against previously unknown text such as Liechtenstein distance method
+ and other not such as ngrams and spell-checker methods.
+ Since we are applying on a previously known text, so that means both of
+ the two types is feasible.
+
+\series bold
+ 
+\series default
+Nevertheless, methods such Liechtenstein distance and ngrams lack for good
+ handling for Arabic vowels (
+\lang arabic_arabi
+حركات
+\lang english
+).
+ They consider the vowels the same as letters and this leads to an important
+ decrease of efficiency.
+ To pass on this weakness, those methods should consider any letter followed
+ by a vowel as one unit.
+ In Arabic, the vocalized letter is considered as one letter whilst in computer
+ this still considered as two characters.
+ In the other hand, Lam-alef (
+\lang arabic_arabi
+لا
+\lang english
+) which is actually two letters still consider as one character in many
+ computer writing systems.
+ 
+\end_layout
+
+\begin_layout Standard
+Any fuzzy search algorithm should consider some specific similarities in
+ Arabic:
+\end_layout
+
+\begin_layout Itemize
+The similarity between the different forms of each letter: Hamza, Ta', and
+ Alef.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+[Example مءصدة]
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+An unvocalized letter is so similar to a vocalized one whatever the vowel
+ is.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+[example: الحمد vs vocalized]
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Tanwin in a vowel is roughly similar to a vowel without Tanwin.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+[example: عشر kessra vs kessra tanwin]
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Shedda on a letter is so similar to the letter doubled.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+[ يضلله == يضلَه]
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+ة and ه, alef maqsora and yah.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+[الجنه الضحي]
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+A long vowel is quite similar to its corresponding short vowel.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+[remove if you don't find example]
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+The fuzzy search algorithms could be strengthened by coupling it with a
+ Phonetic algorithm.
+ A phonetic algorithm matches two different words with similar pronunciation
+ to the same code, which allows phonetic similarity based word set comparison
+ and indexing.
+ Usually used for proper names where there is no unified spelling for the
+ word [REF].
+ One of the first algorithms was Soundtex invented in the 1910s by 
+\noun on
+Robert Russell
+\noun default
+.
+ Its working principle is based on the partition of consonants in groups
+ with ordinal numbers, which are then compiled to the resulting value.
+ By applying soundtex on Arabic, we gets a table as the following:
+\end_layout
+
+\begin_layout Standard
+----
+\end_layout
+
+\begin_layout Standard
+[Google Soundtext table for Arabic]
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="10" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Group
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Group ID
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Soundtex table for Arabic
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The soundtex method should be customized for Arabic to work with vowels
+\end_layout
+
+\begin_layout Standard
+========
+\end_layout
+
+\begin_layout Standard
+behavior, status, needed resources, figure
+\end_layout
+
+\begin_layout Standard
+========
+\end_layout
+
+\begin_layout Standard
+Proposed Syntax: as a suggestion! work automatically either always or when
+ lack of results
+\end_layout
+
+\begin_layout Standard
+[+figure: class example هرم -- إرم, زنبجيل , الفأة ]
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Subsection
+New Arabic Jokers [If you think it hard , avoid it]
+\end_layout
+
+\begin_layout Itemize
+Consents: ? *
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Hamza 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Vowels: !
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Long Vowels
+\end_layout
+
+\begin_layout Itemize
+Short Vowels
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+All: .
 \end_layout
 
 \end_inset
@@ -7026,7 +6067,103 @@ Similarity between vowels
 \end_layout
 
 \begin_layout Section
-Results enhancements [optionam]
+
+\series bold
+Suggestion System
+\end_layout
+
+\begin_layout Standard
+[translate] La méthode de fonctionnement des modules de suggestion est généralem
+ent : pendre les mots-clés résultant du parseur et non pas directement de
+ la requête brute entrée par l'utilisateur car certains mots-clés sont traités
+ et leur forme change et aussi, de nouveaux mots sont ajoutés, comme dans
+ le cas des synonymes et antonymes.
+ Le module, grâce à une certaine politique, trouve les mots qui ont une
+ relation particulière avec les mots-clés.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+how 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We explain many possibilities of suggestions and the way to achieve each
+ one.
+ 
+\end_layout
+
+\begin_layout Standard
+===============
+\end_layout
+
+\begin_layout Standard
+[definition, what needs, how to achieve that]
+\end_layout
+
+\begin_layout Standard
+===============
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Spell correction 
+\series default
+[either n-grams, Liechtenstein, or spell checker]
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Semantically related keywords
+\series default
+ (Ontology-Based) [ Ontology of semantically related words]
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Different vocalizations 
+\series default
+[ a mapping unvocalized-vocalized]
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Collocated words 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Different significations [ !! ]
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Keyword Mapping [ a mapper based on different Arabic-Latin Keyboards]
 \end_layout
 
 \begin_layout Section
@@ -7068,50 +6205,20 @@ Calculating statistics will be during importing texts or after indexing
 \end_layout
 
 \begin_layout Section
-Qur'anic and Linguistic resources manager[Intro Implementation]
-\begin_inset CommandInset label
-LatexCommand label
-name "sec:Qur'anic-and-Linguistic"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Flexible in adding new resources, 
-\end_layout
-
-\begin_layout Standard
-Collaborative<wiki indexes> to cover the uncompleted resources,
-\end_layout
-
-\begin_layout Standard
-a User A search about Q but in results he find some missed informations,
- he want to fill the gap! so he should get authenticated to have the permission
- for modifying.
- the added information should pass by a verification phase before committing
- it and pushing it to main index.
- This may happen many times and each time may the inverted indexes should
- be rebuilded!
-\end_layout
-
-\begin_layout Standard
-Figure: the Case VIDE
-\end_layout
-
-\begin_layout Enumerate
-Introducing WORD index 
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Figure: Visio Figure of word index
-\end_layout
-
-\end_deeper
-\begin_layout Section
 Toward a Semantic search engine
+\end_layout
+
+\begin_layout Standard
+---
+\end_layout
+
+\begin_layout Standard
+Semantic search require the implementation of basic linguistic operations
+ , 
+\end_layout
+
+\begin_layout Standard
+the accuracy must be high in order to diminish the ambiguities arisen 
 \end_layout
 
 \begin_layout Standard
@@ -7172,7 +6279,7 @@ Until now, it has been difficult to say that there are parsers for the Arabic
 \end_layout
 
 \begin_layout Standard
-Our approche is to make a progressive parser since it proceeded by treating
+Our approach is to make a progressive parser since it proceeded by treating
  a sentence into a number of stages equal to the number of its words.
  At every step, the parser affects the target word with the most likely
  patterns that represent it in the context where it is put.
@@ -7398,13 +6505,33 @@ Conclusion
 \end_layout
 
 \begin_layout Standard
-We based on our previous work , we proposed fixes for what already done
- , and new improvements .
- we talked about ...text processing ...
+We based on our previous work, we proposed fixes for what already done ,
+ and new improvements.
+ The improvements are about getting to a full vocalized search engine customized
+ to offer most of the features mentioned in the previous chapter.
+ We proposed a customized text processing to يناسب the properties of Quranic
+ text.
+ We introduce searching using the word as a unit in order to 
+\end_layout
+
+\begin_layout Itemize
+Quranic Word Search;
+\end_layout
+
+\begin_layout Itemize
+An accurate statistics gathering system;
+\end_layout
+
+\begin_layout Itemize
+More adequate suggestion system;
+\end_layout
+
+\begin_layout Itemize
+The road-map toward semantic search.
 \end_layout
 
 \begin_layout Standard
-in the next chapter,we'll talk about implementation details ...
+In the next chapter,we'll talk about implementation details.
 \end_layout
 
 \end_body

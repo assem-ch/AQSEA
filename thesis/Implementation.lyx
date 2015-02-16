@@ -304,6 +304,13 @@ Cost:
 
 \begin_layout Subsection
 License : AGPL 
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:License-:-AGPL"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -529,122 +536,461 @@ key "ASSEM_MEROUANE"
 
 \end_inset
 
-...
- are you sure! yes, indeed.
-\end_layout
-
-\begin_layout Standard
--- Changes from THE PFE PDF
-\end_layout
-
-\begin_layout Enumerate
-API that offer the basic operations (Search, Suggestion) and minimal information
-s in raw html input (ayah results), Could be Used only in python or in other
- languages by using a wrapping intermediate.
-\end_layout
-
-\begin_layout Enumerate
-only offer a TXT and an HTML output system
+.
+ The code base was licensed under the GPL open license as a result of using
+ the library whoosh licensed under the same license.
+ It contained an Application Programming Interface that performs the basic
+ search operation.
+ It offers the results in a raw HTML format, could be used only in Python.
+ To be used in another programming language, it requires to write a complicated
+ wrapper.
+ There was a basic resource manager that index the Quran information stored
+ in an intermediate database.
+ The importing of new resources into this intermediate database was a missing
+ piece.
+ Two interfaces was developed for the API:
 \end_layout
 
 \begin_layout Enumerate
-A very stricted resource manger , can only tranfer the data from the intermediat
-e database into the document words.
- the importing of new resources into the intermediate database is a حلقة
- مفقودة
-\end_layout
-
-\begin_layout Enumerate
-Creating a basic CGI Html interface , lack of independecy between Model,
- View, Control [screen shot]
-\end_layout
-
-\begin_layout Enumerate
-Qt urgently-coded interface [french] [screenshot]
-\end_layout
-
-\begin_layout Enumerate
-implemented features:
+A  Gui desktop interface, demonstrate perfectly the API features .
+ It is urgently coded in Python and Qt.
+ 
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
-Exact Word: that is the simple search, eg: فأسقيناكموه
+[french] [screenshot]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+A basic CGI-Html interface, demonstrates in a simpler way the API features.
+ Also urgently coded and it did not respect the Model View Control.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+[screen shot]
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+The API contained many implemented search features including:
 \end_layout
 
 \begin_layout Enumerate
-Phrase: for searching a whole phrase rather then independent words, eg:"رسول
- الله"
+
+\series bold
+Search by exact word:
+\series default
+ that is the simple search, eg: 
+\lang arabic_arabi
+فأسقيناكموه
+\lang english
+.
 \end_layout
 
 \begin_layout Enumerate
-Logical relations Conjuction: for searching only the ayahs that contains
- two terms or more, eg: الصلاة + الزكاة.
- Disjunction (default): for searching all the ayahs that contains one of
- two terms or more, eg:الصلاة | الزكاة.
- Exception: for eleminating a term from search results, eg:الصلاة - الزكاة.
- You can understand it as "Ayahs that contains الصلاة but doesn't contain
- الزكاة".
+
+\series bold
+Search by phrase:
+\series default
+ for searching a whole phrase rather then independent words, eg: 
+\lang arabic_arabi
+"رسول الله"
+\lang english
+.
 \end_layout
 
 \begin_layout Enumerate
-Wildcards or Jokers: for search all words that share many letters, we have:
- Asterisk: replace zero or many undefined letters, eg: *نبي* Interogation
- mark: replace one undefined letter, eg: نعم؟
+
+\series bold
+Logical relations:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Conjuction:
+\series default
+ for searching only the ayahs that contains two terms or more, eg: 
+\lang arabic_arabi
+الصلاة + الزكاة
+\lang english
+.
+ 
 \end_layout
 
 \begin_layout Enumerate
-Fielded search: to search in more information of Quran , not only ayahs'text,
- we cite here the most significant fields for users: aya_id or رقم_الآية
- (Aya local ID): that's the number of ayah inside its sura, use it for example
- to search all first ayahs (رقم_الآية:1).
- sura_id or رقم_السورة (Sura ID): use it with aya_id to specify an exact
- ayah,for example the first ayah of surate an-nass will be : aya_id:1 +
- sura_id:114.
- subject or موضوع (Topics): thats field contains all topics information,
- it will be helpful to search for a topic,eg: موضوع:الشيطان
+
+\series bold
+Disjunction (default):
+\series default
+ for searching all the ayahs that contains one of two terms or more, eg:
+ 
+\lang arabic_arabi
+الصلاة | الزكاة
+\lang english
+.
+ 
 \end_layout
 
 \begin_layout Enumerate
-for more fields, see: Fields
+
+\series bold
+Exception:
+\series default
+ for eliminating a term from search results, eg:
+\lang arabic_arabi
+الصلاة - الزكاة
+\lang english
+.
+ You can understand it as "Ayahs that contains 
+\lang arabic_arabi
+الصلاة
+\lang english
+ but doesn't contain 
+\lang arabic_arabi
+الزكاة
+\lang english
+".
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Wildcards (Jokers)
+\series default
+: for search all words that share many letters, we have: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Asterisk:
+\series default
+ replace zero or many undefined letters, eg: 
+\lang arabic_arabi
+*نبي*
+\lang english
+.
 \end_layout
 
 \begin_layout Enumerate
-Intervals: this will be helpful in statistics or positions, for example
- search the divine name only in the first surahs: رقم_السورة :[1 الى 5 ]
- + الله
+
+\series bold
+Interogation mark: 
+\series default
+replace one undefined letter, eg: 
+\lang arabic_arabi
+نعم؟
+\lang english
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Fielded search:
+\series default
+ to search in more information of Quran , not only ayahs' text, we cite
+ here the most significant fields for users: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+aya_id or 
+\lang arabic_arabi
+رقم_الآية
+\lang english
+ (Aya local ID):
+\series default
+ that's the number of ayah inside its sura, use it for example to search
+ all first ayahs (aya_id:1).
+ 
 \end_layout
 
 \begin_layout Enumerate
-Partial vocalization: to consider given diacritics and ignore the others,
- eg: آية_ :'مَن'.
+
+\series bold
+sura_id or 
+\lang arabic_arabi
+رقم_السورة
+\lang english
+ (Sura ID): 
+\series default
+use it with aya_id to specify an exact ayah,for example the first ayah of
+ surate an-nass will be: 
+\emph on
+aya_id:1 + sura_id:114
+\emph default
+.
+ 
 \end_layout
 
 \begin_layout Enumerate
-Word Properties: to search using root and type of words, type could be اسم,
- فعل or أداة,eg: {قول،اسم}.
+
+\series bold
+subject or 
+\lang arabic_arabi
+موضوع
+\lang english
+ (Topics):
+\series default
+ thats field contains all topics information, it will be helpful to search
+ for a topic, eg: 
+\emph on
+subject:
+\lang arabic_arabi
+الشيطان
+\lang english
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Intervals:
+\series default
+ this will be helpful in statistics or positions, for example search the
+ divine name only in the first surahs: 
+\emph on
+aya_id:[1 to 5]
 \end_layout
 
 \begin_layout Enumerate
-Derivations light (using lemma): to search all the words having the same
- lemma of the given word,eg: >ملك.
- heavy (using root): to search all the words having the same root of the
- given word,eg: >>ملك.
+
+\series bold
+Partial vocalization:
+\series default
+ to consider given diacritics and ignore the others, eg:
+\emph on
+ aya_:
+\lang arabic_arabi
+'مَن'
+\emph default
+\lang english
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Word Properties:
+\series default
+ to search using root and type of words, type could be
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang arabic_arabi
+اسم
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(noun), 
+\lang arabic_arabi
+فعل
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(verb) or 
+\lang arabic_arabi
+أداة
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(particle), eg: {
+\lang arabic_arabi
+قول
+\lang english
+ ،
+\lang arabic_arabi
+اسم
+\lang english
+}.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Derivations 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+light (using lemma)
+\series default
+: to search all the words having the same lemma of the given word,eg: >
+\lang arabic_arabi
+ملك
+\lang english
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+heavy (using root)
+\series default
+: to search all the words having the same root of the given word,eg: >>
+\lang arabic_arabi
+ملك
+\lang english
+.
  
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+Finally, the code passed by many unlogged rewriting phase ...
+\end_layout
+
 \begin_layout Section
-Quranic & Arabic Ressources 
+Quranic and Arabic Resources 
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Qur'anic-and-Linguistic"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-Les indexes
+Our work requires a set of resources to make the implementation effective.
+ among those resources [copy from PFE] ...
+\end_layout
+
+\begin_layout Standard
+Quranic 
+\end_layout
+
+\begin_layout Standard
+and Arabic
+\end_layout
+
+\begin_layout Standard
+---
+\end_layout
+
+\begin_layout Standard
+Flexible in adding new resources, 
+\end_layout
+
+\begin_layout Standard
+Collaborative<wiki indexes> to cover the uncompleted resources,
+\end_layout
+
+\begin_layout Standard
+a User A search about Q but in results he find some missed informations,
+ he want to fill the gap! so he should get authenticated to have the permission
+ for modifying.
+ the added information should pass by a verification phase before committing
+ it and pushing it to main index.
+ This may happen many times and each time may the inverted indexes should
+ be rebuilded!
+\end_layout
+
+\begin_layout Standard
+Figure: the Case VIDE
 \end_layout
 
 \begin_layout Standard
 \begin_inset Note Comment
-status open
+status collapsed
 
 \begin_layout Plain Layout
 For every ressource , a short definition + using details + loading(mise
@@ -661,8 +1007,8 @@ For every ressource , a short definition + using details + loading(mise
 status open
 
 \begin_layout Plain Layout
-In loading indexes, use dynamic fields it helps much to load ressources
- one by one
+In loading indexes, use dynamic fields it helps much to load resources one
+ by one
 \end_layout
 
 \end_inset
@@ -670,18 +1016,11 @@ In loading indexes, use dynamic fields it helps much to load ressources
 
 \end_layout
 
-\begin_layout Subsection
-Used resources
-\end_layout
-
 \begin_layout Standard
-
-\lang french
-Cette proposition de recherche est liée à certains projets, ces projets
- sont les suivants: 
+The following list is a list of the used resources:
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Enumerate
 
 \series bold
 \lang french
@@ -700,7 +1039,7 @@ Kais Dukes
  par les informations qu'il contient.
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Enumerate
 
 \series bold
 \lang french
@@ -718,7 +1057,7 @@ Noorhan Abbas
  
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Enumerate
 
 \series bold
 \lang french
@@ -730,46 +1069,33 @@ utilise la représentation des connaissances pour définir les concepts clés
  Nous pourrions utilisé ce système pour la suggestion de mots-clés relatifs.
 \end_layout
 
-\begin_layout Subsubsection
-Tanzil
-\end_layout
+\begin_layout Enumerate
 
-\begin_layout Standard
-
+\series bold
+Tanzil Mushaf version,
+\series default
 \lang french
-Notre travail a besoin d'une version électronique de Coran pour l'indexer
+ Notre travail a besoin d'une version électronique de Coran pour l'indexer
  .
  Nous trouvons que le projet Tanzil est le plus authentique, il est passé
  par plusieurs phases de vérification et vérifié manuellement par une équipe
  spécialisée.
 \end_layout
 
-\begin_layout Subsubsection
-Qurany
-\end_layout
-
-\begin_layout Subsubsection
-Arabic Quanic Corpus
-\end_layout
-
-\begin_layout Subsubsection
+\begin_layout Enumerate
 Zekr Translation Models
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Enumerate
 VerseByVerse Recitations
 \end_layout
 
-\begin_layout Subsection
-Resources to use
-\end_layout
-
-\begin_layout Standard
+\begin_layout Enumerate
 Qutrub
 \end_layout
 
 \begin_layout Subsection
-Lack fo Quranic resources
+Lack of Quranic resources
 \end_layout
 
 \begin_layout Standard
@@ -1956,12 +2282,18 @@ FEATURExRESSOURCE
 Our improvements
 \end_layout
 
-\begin_layout Enumerate
-Rewriting a huge part of the code [undocumented changes! to add or to remove!!]
-\end_layout
+\begin_layout Standard
+As a first step, we change the license into the GNU Affero General Public
+ License which aims to protect libraries that usually used in servers (for
+ more details, see 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:License-:-AGPL"
 
-\begin_layout Enumerate
-Opening the source,Starting with GPL then AGPL because??
+\end_inset
+
+).
+ 
 \end_layout
 
 \begin_layout Enumerate
@@ -1970,7 +2302,7 @@ Opening the source,Starting with GPL then AGPL because??
 \end_layout
 
 \begin_layout Standard
-Those are the main milestones we go through:
+Those are the main milestones we went through:
 \end_layout
 
 \begin_layout Subsection
@@ -2356,13 +2688,17 @@ Egg API, Source Tarball, Binary Tarball, NSIS Windows Installer
 
 \end_deeper
 \begin_layout Subsection
-Coding Standarization
+Multiple search units
+\end_layout
+
+\begin_layout Subsection
+Coding Standardization
 \end_layout
 
 \begin_layout Enumerate
 Fixing a huge amount of pylint code analysis warnings [score of current
  code, more stats] and improving the quality of code following also the
- conventions explaioned in $Readability-counts
+ conventions explained in $Readability-counts
 \end_layout
 
 \begin_layout Enumerate
@@ -2378,7 +2714,7 @@ reference "sec:Code-Architecture"
 \end_layout
 
 \begin_layout Subsection
-Documention covering
+Documentation covering
 \end_layout
 
 \begin_layout Enumerate
@@ -2442,7 +2778,7 @@ Open Issues
 \end_layout
 
 \begin_layout Itemize
-Milestone #1
+Milestone #1 enrishing the resources
 \end_layout
 
 \begin_deeper
@@ -2463,9 +2799,25 @@ Propose a standard format for new linguistic and quranic resources
 \end_layout
 
 \begin_layout Itemize
-Modular Query Parser
+Modular Query Parser:modularity, extensibility and combination
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+An experienced challenge with the Query parser is the mixing (the combination)
+ of the different operations 
+\end_layout
+
+\begin_layout Standard
+Extensible and Combination ability of different operations
+\end_layout
+
+\begin_layout Standard
+a high benefit to add search features one by one, without ruining all the
+ parsing system
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 Study the restrictions creteria of the API json output service
 \end_layout
@@ -2488,7 +2840,11 @@ Complete the features implementation:
 
 \begin_deeper
 \begin_layout Itemize
-1 (list from features chapter )
+1 2-steps search!
+\end_layout
+
+\begin_layout Itemize
+(list from features chapter )
 \end_layout
 
 \begin_layout Itemize
@@ -2583,6 +2939,60 @@ name "sec:Code-Architecture"
 
 \begin_layout Standard
 [Copy from src.README.rst]
+\end_layout
+
+\begin_layout Standard
+This is a quick view of the source code structure of Alfanous project explaining
+ the different packages and modules.
+ Packages alfanous: the main API of the project, offers the search features.
+ alfanous-import: a library responsible of all management tasks of Quranic
+ & Linguistic resources.
+ alfanous-cgi: a small script to execute the API in a web CGI environment.
+ alfanous-desktop: a desktop interface made by QT & PyQt.
+ alfanous-django: a django app replaces the old web user interface and also
+ the cgi script.
+ alfanous-labs: all related libraries that still in alpha phase.
+ alfanous-tests: scripts used to test the different modules of the API.
+ PyCorpus: a library used to parse & understand Arabic Quranic Corpus.
+ PyZekrModels: a library used to parse Zekr Translations Models.
+ API Modules, Files (alfanous) main.py: the main module that relay all the
+ modules.
+ console.py: a console interface for the API.
+ Outputs.py: the programming interface, responsible of the output of all
+ results.
+ Data.py: the manager of paths and Data reading and loading.
+ TextProcessing.py: the module responsible of searched/indexed text processing.
+ QueryProcessing.py: the module responsible of search query processing.
+ ResultsProcessing.py: the module responsible of results processing.
+ Indexing.py: the manager of the indexes reading.
+ Searching.py: the module responsible of the basic search operation.
+ Suggestions.py: the module responsible of suggestions.
+ Romanization.py: the module responsible of romanization systems.
+ Threading.py: the module responsible of multi-processing during the search.
+ Constants.py: a module that contains some constants used in the API.
+ Exceptions.py: a module that contains some exceptions used in the API.
+ Misc.py: a pre-implementing test module.
+ Support.*: Some third-party libraries.
+ configs.*: Configuration files in a Json format.
+ resources.*: Quranic & Lingustic data in a Json format to replace the binary
+ sqlite database.
+ dynamic_resources.*: Compiled linguistic data to python modules to gain
+ speed.
+ indexes.*: All needed indexes on Whoosh indexes format.
+ setup.py: the script of installation & packaging (setuptools) ez_setup.py:
+ an alternatif for setuptools library.
+ Importer Modules (alfanous-import) main.py: the main module that relays
+ all the modules and offers a console interface.
+ Downloader.py: download online resources.
+ Parser.py: parse the resources.
+ Standardizer.py: convert the resources to a standard format (not implemented).
+ Importer.py: import the resources into the main database.
+ Transformer.py: transfer&convert the resources from the main database into
+ Whoosh indexes.
+ Updater.py: update the data in API based on actual resources.
+ initial_importing.py: a script used the first-time to load many resources
+ (deprecated).
+ setup.py: the script of installation & packaging (setuptools).
 \end_layout
 
 \begin_layout Subsection
@@ -2758,15 +3168,24 @@ Conclusion
 \end_layout
 
 \begin_layout Standard
-In this chapter , we talked about our implemented improvement
+In this chapter , we talked about our previous implementation and the improvemen
+ts that we make.
+ We cite also the Quranic and linguistic resources needed for the implementation
+ to run well and we browser the code architecture.
+ 
 \end_layout
 
 \begin_layout Standard
-we included some statistics of usage.
-\end_layout
+\begin_inset Note Note
+status open
 
-\begin_layout Standard
+\begin_layout Plain Layout
 [In presentation , Include the wining award]
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body
